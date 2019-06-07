@@ -11,6 +11,7 @@ import bg04 from './images/bg04.png';
 import bg05 from './images/bg05.png';
 import bg06 from './images/bg06.png';
 import fusemap from './images/fusemap.png';
+import downArrow from './images/ic_arrow_forward.png';
 
 function App() {
   return (
@@ -23,19 +24,24 @@ function App() {
               <div className="section" id="first">
                 <img src={bgImage} alt="bgImage" className="bg-image" />
                 <div className="first-content">
-                  <div className="first-title">
-                    Pixoul<br/>
-                    Agency & Consultancy
+                  <div className="first-content__wrapper">
+                    <div className="first-title">
+                      Pixoul<br/>
+                      Agency & Consultancy
+                    </div>
+                    <div className="first-description">
+                      We’re a UX design agency, full-stack development shop, and strategic consulting group—ready to bring your digital vision to life.
+                    </div>
                   </div>
-                  <div className="first-description">
-                    We’re a UX design agency, full-stack development shop, and strategic consulting group—ready to bring your digital vision to life.
-                  </div>
+                  <button onClick={() => fullpageApi.moveSectionDown()}>
+                    <img src={downArrow} alt="downArrow" />
+                  </button>
                 </div>
               </div>
               <div className="section">
                 <div className="content" id="content-second">
                   <span className="label">Corporate Site</span>
-                  <span className="title">IKARŪS</span>
+                  <span className="title">IKAR<span className="lucida-title">Ū</span>S</span>
                   <span className="subtitle">is redefining the business marketplace.</span>
                 </div>
                 <img src={bg01} alt="bg01" id="bg01" />
