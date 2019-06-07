@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: 'Montserrat', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +10,138 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#first {
+  overflow: hidden;
+  color: #374050;
+}
+
+.bg-image {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.logo {
+  position: fixed;
+  z-index: 1;
+  left: 38px;
+  top: 44px;
+  width: 128px;
+}
+
+.first-content {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 368px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-title {
+  font-size: 45px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.first-description {
+  font-size: 25px;
+  font-weight: bold;
+  max-width: 460px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  left: 79px;
+  position: absolute;
+}
+
+.label {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2EC986;
+}
+
+.title {
+  font-size: 62.25px;
+  color: #374050;
+  margin-top: 16px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #374050;
+  margin-top: 4px;
+}
+
+#content-second {
+  max-width: 294px;
+}
+
+.watermark {
+  font-size: 522px;
+  color: #374050;
+  opacity: 0.1;
+  position: absolute;
+  line-height: 689px;
+  top: 121px;
+  left: -210px;
+}
+
+#bg01 {
+  position: absolute;
+  left: 410px;
+  right: 63px;
+  transform: translate(0%, -50%);
+  top: 50%;
+}
+
+#bg02 {
+  position: absolute;
+  left: 410px;
+  right: 63px;
+  transform: translate(0%, -50%);
+  top: 50%;
+}
+
+#bg03 {
+  position: absolute;
+  left: 410px;
+  right: 63px;
+  transform: translate(0%, -50%);
+  top: 50%;
+}
+
+#bg04 {
+  position: absolute;
+  left: 410px;
+  right: 63px;
+  transform: translate(0%, -50%);
+  top: 50%;
+}
+
+#bg05 {
+  position: absolute;
+  left: 410px;
+  right: 63px;
+  transform: translate(0%, -50%);
+  top: 50%;
+}
+
+#bg06 {
+  position: absolute;
+  left: 410px;
+  right: 63px;
+  transform: translate(0%, -50%);
+  top: 50%;
 }
