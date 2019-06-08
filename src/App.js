@@ -2,7 +2,8 @@ import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import './App.css';
 import bgImage from './images/bg.png';
-import logo from './images/logo.png';
+
+import { Header } from './components';
 
 import bg01 from './images/bg01.png';
 import bg02 from './images/bg02.png';
@@ -16,7 +17,7 @@ import downArrow from './images/ic_arrow_forward.png';
 function App() {
   return (
     <div>
-      <img className="logo" src={logo} alt="logoTitle" />
+      <Header />
       <ReactFullpage
         render={({ state, fullpageApi }) => {
           console.log('state---', state);

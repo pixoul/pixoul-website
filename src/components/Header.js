@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from '../images/logo.png';
 
-const PageIndex = (props) => {
+const Header = (props) => {
   return <img className="logo" src={logo} alt="logoTitle" />;
 }
 
-export default PageIndex;
+export default Header;
