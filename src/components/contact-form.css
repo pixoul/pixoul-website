@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap');
+
+.contact_section_container {
+    height: 100%;
+    width: 100%;
+}
+
+.contact_section_img_container {}
+
+.contact_section_img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.contact_section_heading_container {}
+
+.contact_section_heading {
+    font-family: 'Poppins', sans-seri;
+    font-weight: 500;
+    font-size: 2.3rem;
+    color: #3180FB;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
