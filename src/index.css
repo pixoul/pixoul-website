@@ -74,6 +74,11 @@ code {
   top: calc(322 / 843 * 100%);
   left: 79px;
   position: absolute;
+  z-index: 2;
+}
+
+.bg-img {
+  z-index: 1;
 }
 
 .label {
@@ -124,10 +129,8 @@ code {
 
 #bg02 {
   position: absolute;
-  left: 410px;
-  right: 63px;
-  transform: translate(0%, -50%);
-  top: 50%;
+  right: 0px;
+  bottom: 0px;
 }
 
 #bg03 {

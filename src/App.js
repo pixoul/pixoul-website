@@ -45,7 +45,7 @@ function App() {
                   <span className="title">IKAR<span className="lucida-title">Ū</span>S</span>
                   <span className="subtitle">is redefining the business marketplace.</span>
                 </div>
-                <img src={bg01} alt="bg01" id="bg01" />
+                <img src={bg01} alt="bg01" id="bg01" class="bg-img" />
                 <span className="watermark">
                   01
                 </span>
@@ -56,7 +56,7 @@ function App() {
                   <span className="title"><img src={fusemap} alt="fusemap" /></span>
                   <span className="subtitle">is thinking smarter about how we power the world.</span>
                 </div>
-                <img src={bg02} alt="bg02" id="bg02" />
+                <img src={bg02} alt="bg02" id="bg02" class="bg-img" />
                 <span className="watermark">
                   02
                 </span>
@@ -67,7 +67,7 @@ function App() {
                   <span className="title">hcp</span>
                   <span className="subtitle">is setting the standard in healthcare—literally.</span>
                 </div>
-                <img src={bg03} alt="bg03" id="bg03" />
+                <img src={bg03} alt="bg03" id="bg03" class="bg-img" />
                 <span className="watermark">
                   03
                 </span>
@@ -78,7 +78,7 @@ function App() {
                   <span className="title">Swank</span>
                   <span className="subtitle">is financing the future of personal banking loans.</span>
                 </div>
-                <img src={bg04} alt="bg04" id="bg04" />
+                <img src={bg04} alt="bg04" id="bg04" class="bg-img" />
                 <span className="watermark">
                   04
                 </span>
@@ -89,7 +89,7 @@ function App() {
                   <span className="title">MODA</span>
                   <span className="subtitle">is reworking your wardrobe, one piece at a time.</span>
                 </div>
-                <img src={bg05} alt="bg05" id="bg05" />
+                <img src={bg05} alt="bg05" id="bg05" class="bg-img" />
                 <span className="watermark">
                   05
                 </span>
@@ -100,7 +100,7 @@ function App() {
                   <span className="title">Artisan</span>
                   <span className="subtitle">is making a treat of wholesale subscriptions.</span>
                 </div>
-                <img src={bg06} alt="bg06" id="bg06" />
+                <img src={bg06} alt="bg06" id="bg06" class="bg-img" />
                 <span className="watermark">
                   06
                 </span>
