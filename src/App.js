@@ -39,7 +39,10 @@ function App() {
                       vision to life.
                     </div>
                   </div>
-                  <button onClick={() => fullpageApi.moveSectionDown()}>
+                  <button
+                    className="pixoul_button"
+                    onClick={() => fullpageApi.moveSectionDown()}
+                  >
                     <img src={downArrow} alt="downArrow" />
                   </button>
                 </div>

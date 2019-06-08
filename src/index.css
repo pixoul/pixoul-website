@@ -1,126 +1,130 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.pixoul_button {
+	cursor: pointer;
 }
 
 #first {
-  overflow: hidden;
-  color: #374050;
+	overflow: hidden;
+	color: #374050;
 }
 
 .bg-image {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
 }
 
 .first-content {
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
 }
 
 .first-content__wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 368px;
+	display: flex;
+	flex-direction: column;
+	height: 368px;
 }
 
 .first-content button {
-  background: transparent;
-  border: none;
-  align-self: flex-start;
-  margin-top: 10%;
+	background: transparent;
+	border: none;
+	align-self: flex-start;
+	margin-top: 10%;
 }
 
 .first-title {
-  font-size: 45px;
-  font-weight: bold;
-  flex: 1;
+	font-size: 45px;
+	font-weight: bold;
+	flex: 1;
 }
 
 .first-description {
-  font-size: 25px;
-  font-weight: bold;
-  max-width: 460px;
+	font-size: 25px;
+	font-weight: bold;
+	max-width: 460px;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  top: calc(322 / 843 * 100%);
-  left: 79px;
-  position: absolute;
-  z-index: 2;
-  width: 281px;
+	display: flex;
+	flex-direction: column;
+	top: calc(322 / 843 * 100%);
+	left: 79px;
+	position: absolute;
+	z-index: 2;
+	width: 281px;
 }
 
 .bg-img {
-  z-index: 1;
-  width: 894px;
-  height: 553px;
-  position: absolute;
-  right: 63px;
-  transform: translate(0%, -50%);
-  top: 50%;
-  border-radius: 15px;
-  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+	z-index: 1;
+	width: 894px;
+	height: 553px;
+	position: absolute;
+	right: 63px;
+	transform: translate(0%, -50%);
+	top: 50%;
+	border-radius: 15px;
+	box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
 }
 
 .label {
-  position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  color: #2EC986;
+	position: absolute;
+	font-size: 20px;
+	font-weight: bold;
+	color: #2EC986;
 }
 
 .title {
-  font-size: 62.25px;
-  color: #374050;
-  margin-top: 26px;
-  font-weight: bold;
+	font-size: 62.25px;
+	color: #374050;
+	margin-top: 26px;
+	font-weight: bold;
 }
 
 .lucida-title {
-  font-family: "Lucida Grande";
-  font-weight: 400;
+	font-family: "Lucida Grande";
+	font-weight: 400;
 }
 
 .subtitle {
-  font-size: 20px;
-  color: #374050;
-  margin-top: 4px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+	font-size: 20px;
+	color: #374050;
+	margin-top: 4px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
 }
 
 #content-02 {
-  max-width: 294px;
+	max-width: 294px;
 }
 
 .watermark {
-  font-size: 522px;
-  color: #374050;
-  opacity: 0.1;
-  position: absolute;
-  line-height: 689px;
-  top: 121px;
-  left: -210px;
+	font-size: 522px;
+	color: #374050;
+	opacity: 0.1;
+	position: absolute;
+	line-height: 689px;
+	top: 121px;
+	left: -210px;
 }
 
 /* Animation */
@@ -131,117 +135,167 @@ code {
 	animation-fill-mode: both;
 }
 
-	@keyframes stuckSlideShownH3 {
-		from {height: 0;}
-		to {height: 22px;}
+@keyframes stuckSlideShownH3 {
+	from {
+		height: 0;
 	}
 
-.stuck-preview.shown h2 span{
+	to {
+		height: 22px;
+	}
+}
+
+.stuck-preview.shown h2 span {
 	animation-name: stuckSlideShownH2;
 	animation-delay: .05s;
 	animation-duration: .3s;
 	animation-fill-mode: both;
 }
 
-	@keyframes stuckSlideShownH2 {
-		from {height: 0;}
-		to {height: 95px;}
+@keyframes stuckSlideShownH2 {
+	from {
+		height: 0;
 	}
 
-.stuck-preview:not(.main-slider-preview).shown h4{
+	to {
+		height: 95px;
+	}
+}
+
+.stuck-preview:not(.main-slider-preview).shown h4 {
 	animation-name: stuckSlideShownH4;
 	animation-delay: .35s;
 	animation-duration: .6s;
 	animation-fill-mode: both;
 }
 
-	@keyframes stuckSlideShownH4 {
-		from {width: 0;}
-		to {width: 100%;}
+@keyframes stuckSlideShownH4 {
+	from {
+		width: 0;
 	}
 
-	@keyframes stuckSlideShownH4240 {
-		from {width: 0;}
-		to {width: 240px;}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes stuckSlideShownH4240 {
+	from {
+		width: 0;
 	}
 
-	@keyframes stuckSlideShownH4350 {
-		from {width: 0;}
-		to {width: 350px;}
+	to {
+		width: 240px;
+	}
+}
+
+@keyframes stuckSlideShownH4350 {
+	from {
+		width: 0;
 	}
 
-.stuck-preview:not(.main-slider-preview).shown p{
+	to {
+		width: 350px;
+	}
+}
+
+.stuck-preview:not(.main-slider-preview).shown p {
 	animation-name: stuckSlideShownH4;
 	animation-delay: .35s;
 	animation-duration: .6s;
 	animation-fill-mode: both;
 }
 
-.stuck-preview.shown .slide-down{
+.stuck-preview.shown .slide-down {
 	animation-name: stuckSlideShownSlideDown;
 	animation-delay: .05s;
 	animation-duration: .3s;
 	animation-fill-mode: both;
 }
 
-	@keyframes stuckSlideShownSlideDown {
-		from {height: 0;}
-		to {height: 385px;}
+@keyframes stuckSlideShownSlideDown {
+	from {
+		height: 0;
 	}
 
+	to {
+		height: 385px;
+	}
+}
 
 
-.stuck-preview.hidden-prepare h2 span{
+
+.stuck-preview.hidden-prepare h2 span {
 	animation-name: stuckSlideHiddenH2;
 	animation-duration: .3s;
 	animation-fill-mode: both;
 }
 
-	@keyframes stuckSlideHiddenH2 {
-		from {height: 95px;}
-		to {height: 0;}
+@keyframes stuckSlideHiddenH2 {
+	from {
+		height: 95px;
 	}
 
-.stuck-preview.hidden-prepare h3 span{
+	to {
+		height: 0;
+	}
+}
+
+.stuck-preview.hidden-prepare h3 span {
 	animation-name: stuckSlideHiddenH3;
 	animation-duration: .1s;
 	animation-delay: .25s;
 	animation-fill-mode: both;
 }
 
-	@keyframes stuckSlideHiddenH3 {
-		from {height: 20px;}
-		to {height: 0;}
+@keyframes stuckSlideHiddenH3 {
+	from {
+		height: 20px;
 	}
 
-.stuck-preview.hidden-prepare:not(.main-slider-preview) h4{
+	to {
+		height: 0;
+	}
+}
+
+.stuck-preview.hidden-prepare:not(.main-slider-preview) h4 {
 	animation-name: stuckSlideHiddenH4;
 	animation-delay: .3s;
 	animation-duration: .6s;
 	animation-fill-mode: both;
 }
 
-	@keyframes stuckSlideHiddenH4 {
-		from {width: 100%;}
-		to {width: 0;}
+@keyframes stuckSlideHiddenH4 {
+	from {
+		width: 100%;
 	}
 
-.stuck-preview.hidden-prepare:not(.main-slider-preview) p{
+	to {
+		width: 0;
+	}
+}
+
+.stuck-preview.hidden-prepare:not(.main-slider-preview) p {
 	animation-name: stuckSlideHiddenH4;
 	animation-delay: .3s;
 	animation-duration: .6s;
 	animation-fill-mode: both;
 }
 
-.stuck-preview.hidden-prepare .slide-down{
+.stuck-preview.hidden-prepare .slide-down {
 	animation-name: stuckSlideHiddenSlideDown;
 	animation-duration: .3s;
 	animation-fill-mode: both;
 }
 
-	@keyframes stuckSlideHiddenSlideDown {
-		from {height: 385px;}
-		to {height: 0;}
+@keyframes stuckSlideHiddenSlideDown {
+	from {
+		height: 385px;
 	}
+
+	to {
+		height: 0;
+	}
+}
 
 /* Animation */
