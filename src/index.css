@@ -85,8 +85,9 @@ code {
 .label {
   position: absolute;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
   color: #2EC986;
+  font-family: 'Poppins', sans-serif;
 }
 
 .title {
@@ -94,6 +95,7 @@ code {
   color: #374050;
   margin-top: 26px;
   font-weight: bold;
+  font-family: 'Lato', sans-serif;
 }
 
 .lucida-title {
