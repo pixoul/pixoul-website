@@ -40,7 +40,7 @@ function App() {
                 </div>
               </div>
               <div className="section">
-                <div className="content" id="content-second">
+                <div className="content" id="content-01">
                   <span className="label">Corporate Site</span>
                   <span className="title">IKAR<span className="lucida-title">Ū</span>S</span>
                   <span className="subtitle">is redefining the business marketplace.</span>
@@ -51,7 +51,7 @@ function App() {
                 </span>
               </div>
               <div className="section">
-                <div className="content" id="content-second">
+                <div className="content" id="content-02">
                   <span className="label">Enterprise System</span>
                   <span className="title"><img src={fusemap} alt="fusemap" /></span>
                   <span className="subtitle">is thinking smarter about how we power the world.</span>
@@ -62,7 +62,7 @@ function App() {
                 </span>
               </div>
               <div className="section">
-                <div className="content" id="content-second">
+                <div className="content" id="content-03">
                   <span className="label">Dashboard Matrix</span>
                   <span className="title">hcp</span>
                   <span className="subtitle">is setting the standard in healthcare—literally.</span>
@@ -73,7 +73,7 @@ function App() {
                 </span>
               </div>
               <div className="section">
-                <div className="content" id="content-second">
+                <div className="content" id="content-04">
                   <span className="label">Mobile App</span>
                   <span className="title">Swank</span>
                   <span className="subtitle">is financing the future of personal banking loans.</span>
@@ -84,7 +84,7 @@ function App() {
                 </span>
               </div>
               <div className="section">
-                <div className="content" id="content-second">
+                <div className="content" id="content-05">
                   <span className="label">Mobile App</span>
                   <span className="title">MODA</span>
                   <span className="subtitle">is reworking your wardrobe, one piece at a time.</span>
@@ -95,7 +95,7 @@ function App() {
                 </span>
               </div>
               <div className="section">
-                <div className="content" id="content-second">
+                <div className="content" id="content-06">
                   <span className="label">E-Commerce Site</span>
                   <span className="title">Artisan</span>
                   <span className="subtitle">is making a treat of wholesale subscriptions.</span>
