@@ -18,10 +18,10 @@
 .contact_section_heading {
     font-family: 'Poppins', sans-seri;
     font-weight: 500;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     color: #3180FB;
     position: absolute;
-    top: 27%;
+    top: 23%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
@@ -30,12 +30,12 @@
 
 .contact_section_form_container {
     position: absolute;
-    min-width: 39%;
+    min-width: 573px;
     background: white;
-    min-height: 35%;
+    min-height: 416px;
     right: 7%;
-    top: 42%;
+    top: 39%;
     border-radius: 4%;
-    box-shadow: -1px 3px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: -1px 3px 20px rgba(0, 0, 0, 0.19), 0 2px 3px rgba(0, 0, 0, 0.23);
     z-index: 999;
 }
