@@ -19,6 +19,7 @@ function App() {
       <img className="logo" src={logo} alt="logoTitle" />
       <ReactFullpage
         render={({ state, fullpageApi }) => {
+          console.log('state---', state);
           return (
             <ReactFullpage.Wrapper>
               <div className="section" id="first">
