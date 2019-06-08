@@ -26,3 +26,16 @@
     transform: translateX(-50%);
     z-index: 999;
 }
+
+
+.contact_section_form_container {
+    position: absolute;
+    min-width: 39%;
+    background: white;
+    min-height: 35%;
+    right: 7%;
+    top: 42%;
+    border-radius: 4%;
+    box-shadow: -1px 3px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    z-index: 999;
+}
