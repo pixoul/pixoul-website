@@ -1,4 +1,4 @@
-import Header from './Header';
+import { Header } from './Header/index';
 import PageIndex from './PageIndex';
 
 export {

@@ -29,14 +29,6 @@ code {
   object-fit: cover;
 }
 
-.logo {
-  position: fixed;
-  z-index: 1;
-  left: 38px;
-  top: 44px;
-  width: 128px;
-}
-
 .first-content {
   left: 50%;
   transform: translate(-50%, -50%);
