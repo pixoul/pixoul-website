@@ -51,7 +51,7 @@ class PixoulContactForm extends Component {
                 Phone <span class="asterix">*</span>
               </label>
             </div>
-            <div class="group">
+            <div class="group group_last_child">
               <input
                 type="text"
                 id="contact_form_interest"
