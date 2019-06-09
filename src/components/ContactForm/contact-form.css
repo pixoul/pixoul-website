@@ -57,7 +57,7 @@
     width: 100%;
 }
 
-label {
+.contact_section_form label {
     position: absolute;
     top: 7px;
     font: 200 15px Roboto;
@@ -66,7 +66,7 @@ label {
     font-family: 'Poppins', sans-serif;
 }
 
-input {
+.contact_section_form input {
     background: linear-gradient(to bottom, transparent 92%, #3180fb 8%) no-repeat;
     background-position: -300px 0;
     background-size: 300px 105%;
@@ -81,18 +81,18 @@ input {
     font-family: 'Poppins', sans-serif;
 }
 
-input:-webkit-autofill {
+.contact_section_form input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #f9f9f9 inset;
 }
 
-input:focus,
-input:valid {
+.contact_section_form input:focus,
+.contact_section_form input:valid {
     background-position: 0 0;
     outline: none;
 }
 
-input:focus~label,
-input:valid~label {
+.contact_section_form input:focus~label,
+.contact_section_form input:valid~label {
     top: -10px;
     color: #3180fb;
     font-size: 12px;
