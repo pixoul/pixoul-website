@@ -23,6 +23,11 @@
   font-size: 22px;
   font-family: 'Poppins', sans-serif;
   margin-right: 56px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactus-button:hover {
+  transform: translateY(-3px);
 }
 
 .hamburger-button {
