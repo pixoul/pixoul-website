@@ -44,7 +44,8 @@ code {
 }
 
 .first-content {
-	left: 50%;
+	left: 40%;
+	/* TODO: check with Devon to see if they want this centered...mockup currently is slightly left aligned*/
 	transform: translate(-50%, -50%);
 	position: absolute;
 }
