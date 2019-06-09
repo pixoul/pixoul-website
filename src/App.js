@@ -32,6 +32,7 @@ function App() {
                       Pixoul
                       <br />
                       Agency & Consultancy
+                      <div className="blue_line_under_title" />
                     </div>
                     <div className="first-description">
                       We’re a UX design agency, full-stack development shop, and

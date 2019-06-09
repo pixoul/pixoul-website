@@ -16,6 +16,16 @@ code {
 	cursor: pointer;
 }
 
+.blue_line_under_title {
+	position: absolute;
+	background: #3180FB;
+	width: 175px;
+	height: 5px;
+	top: 27%;
+	left: 0;
+	border-radius: 15px;
+}
+
 #first {
 	overflow: hidden;
 	color: #374050;
