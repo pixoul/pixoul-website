@@ -112,9 +112,9 @@ input:valid~label {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     background-color: #3180fb;
-    width: 120px;
-    height: 44px;
-    font-size: 22px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
