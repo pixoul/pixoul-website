@@ -1,6 +1,6 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-import PixoulContactForm from "./components/ContactForm";
+import PixoulContactForm from "./components/ContactForm/index";
 import "./App.css";
 import bgImage from "./images/bg.png";
 

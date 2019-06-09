@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import "./contact-form.css";
 
+const contactFormImages = {
+  envelope: require("../../images/contactFormEnvelope.png")
+};
+
 class PixoulContactForm extends Component {
   render() {
     const { heading } = this.props;
@@ -72,9 +76,5 @@ class PixoulContactForm extends Component {
     );
   }
 }
-
-const contactFormImages = {
-  envelope: require("../images/contactFormEnvelope.png")
-};
 
 export default PixoulContactForm;
