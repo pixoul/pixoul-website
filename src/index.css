@@ -19,7 +19,7 @@ code {
 .blue_line_under_title {
 	position: relative;
 	background: #3180FB;
-	width: 175px;
+	width: 170px;
 	height: 5px;
 	top: 10%;
 	left: 0;
@@ -64,14 +64,14 @@ code {
 
 .first-title {
 	font-size: 45px;
-	font-weight: bold;
-	flex: 1;
+	font-weight: 500;
+	flex: 0.9;
 }
 
 .first-description {
 	font-size: 25px;
-	font-weight: bold;
-	max-width: 460px;
+	font-weight: 300;
+	max-width: 455px;
 }
 
 .content {
