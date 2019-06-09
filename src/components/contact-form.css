@@ -30,12 +30,91 @@
 
 .contact_section_form_container {
     position: absolute;
-    min-width: 573px;
+    width: 573px;
     background: white;
-    min-height: 416px;
     right: 7%;
     top: 39%;
-    border-radius: 4%;
+    border-radius: 10px;
     box-shadow: -1px 3px 20px rgba(0, 0, 0, 0.19), 0 2px 3px rgba(0, 0, 0, 0.23);
     z-index: 999;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.contact_section_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.group {
+    width: calc(100% / 2 - 4%);
+    margin: 0 2%;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: 7px;
+    font: 200 15px Roboto;
+    cursor: text;
+    transition: 0.2s;
+}
+
+input {
+    background: linear-gradient(to bottom, transparent 92%, #3180fb 8%) no-repeat;
+    background-position: -300px 0;
+    background-size: 300px 105%;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0 30px;
+    border: none;
+    border-bottom: solid 2px black;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #f9f9f9 inset;
+}
+
+input:focus,
+input:valid {
+    background-position: 0 0;
+    outline: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -10px;
+    color: #3180fb;
+    font-size: 12px;
+}
+
+.asterix {
+    color: #3180fb;
+}
+
+.contact_form_submit_btn_container {
+    width: 100%;
+}
+
+.contact_form_submit_btn {
+    display: block;
+    margin: 10px auto 0 0;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #3180fb;
+    width: 120px;
+    height: 44px;
+    font-size: 22px;
+}
+
+.contact_form_submit_btn:hover {
+    transform: translateY(-3px);
 }

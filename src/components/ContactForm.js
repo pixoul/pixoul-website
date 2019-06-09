@@ -17,8 +17,56 @@ class PixoulContactForm extends Component {
             alt="Contact Form Envelope"
           />
         </div>
-        <div className="contact_section_form_container">
-          <form className="contact_section_form" />
+        <div class="contact_section_form_container">
+          <form class="contact_section_form">
+            <div class="group">
+              <input
+                type="text"
+                id="contact_form_first_name"
+                required="required"
+              />
+              <label for="contact_form_first_name">
+                First Name <span class="asterix">*</span>
+              </label>
+            </div>
+            <div class="group">
+              <input
+                type="text"
+                id="contact_form_last_name"
+                required="required"
+              />
+              <label for="contact_form_last_name">
+                Last Name <span class="asterix">*</span>
+              </label>
+            </div>
+            <div class="group">
+              <input type="text" id="contact_form_email" required="required" />
+              <label for="contact_form_email">
+                Email <span class="asterix">*</span>
+              </label>
+            </div>
+            <div class="group">
+              <input type="text" id="contact_form_phone" required="required" />
+              <label for="contact_form_phone">
+                Phone <span class="asterix">*</span>
+              </label>
+            </div>
+            <div class="group">
+              <input
+                type="text"
+                id="contact_form_interest"
+                required="required"
+              />
+              <label for="contact_form_interest">
+                I'm Interested In...<span class="asterix">*</span>
+              </label>
+            </div>
+            <div class="contact_form_submit_btn_container">
+              <button class="contact_form_submit_btn" value="submit">
+                Send
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     );
