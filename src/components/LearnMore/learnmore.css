@@ -4,9 +4,14 @@
   justify-content: stretch;
   align-items: center;
   position: absolute;
+  transition: opacity .5s;
+  animation-name: anchorLinkParallax;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
 }
 
-.learn-more > div {
+.learn-more>div {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -14,7 +19,7 @@
   margin-left: 11px;
 }
 
-.learn-more > div span {
+.learn-more>div span {
   height: 21px;
   font-family: 'Poppins';
   font-weight: 500;
@@ -26,3 +31,52 @@
   border-radius: 1.5px;
   background-color: #374050;
 }
+
+/* ZAC WILL CONTINUE BELOW */
+.more-img,
+.separator {
+  transition: 0.2s;
+}
+
+.learn-more:hover .more-img {
+  transform: rotate(90deg);
+}
+
+.learn-more:hover .seperator {
+  transform: rotate(90deg);
+}
+
+@keyframes anchorLinkParallax {
+  from {
+    transform: translate3d(0, -100px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+/* .wrap-1 .image .anchor-link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 145px;
+  height: 2px;
+  background: #fff;
+  transition: 1s;
+}
+
+.wrap-1 .image .anchor-link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-position: -98px -5px;
+} */
+
+/* ZAC WILL CONTINUE ABOVE */
