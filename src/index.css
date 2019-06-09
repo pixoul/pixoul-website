@@ -9,7 +9,8 @@ body {
 		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
+  color: #374050;
 }
 
 code {
@@ -103,7 +104,6 @@ code {
 }
 
 .label {
-	position: absolute;
 	font-size: 20px;
 	font-weight: 500;
 	color: #2EC986;
@@ -113,9 +113,14 @@ code {
 .title {
 	font-size: 62.25px;
 	color: #374050;
-	margin-top: 26px;
+	margin-top: 38px;
 	font-weight: bold;
-	font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 4px;
+}
+
+.description {
+  font-weight: 500;
 }
 
 .lucida-title {
@@ -127,10 +132,20 @@ code {
   font-family: ikarosFont;
 }
 
+#content-04 .title {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 0px;
+}
+
+#content-04 .description {
+  margin-left: 35px;
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+
 .subtitle {
 	font-size: 20px;
 	color: #374050;
-	margin-top: 4px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 }

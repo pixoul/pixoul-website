@@ -89,6 +89,7 @@ function App() {
                 <div className="content" id="content-04">
                   <span className="label">Mobile App</span>
                   <span className="title">Swank</span>
+                  <span className="description">loans & financing</span>
                   <span className="subtitle">
                     is financing the future of personal banking loans.
                   </span>
