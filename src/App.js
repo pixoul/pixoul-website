@@ -74,6 +74,7 @@ function App() {
                   </span>
                 </div>
                 <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
+                <LearnMore style={{ bottom: '148px', left: '361px' }} />
                 <span className="watermark">02</span>
               </div>
               <div className="section">
@@ -85,6 +86,7 @@ function App() {
                   </span>
                 </div>
                 <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
+                <LearnMore style={{ bottom: '148px', left: '361px' }} />
                 <span className="watermark">03</span>
               </div>
               <div className="section">
@@ -97,6 +99,7 @@ function App() {
                   </span>
                 </div>
                 <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
+                <LearnMore style={{ bottom: '148px', left: '361px' }} />
                 <span className="watermark">04</span>
               </div>
               <div className="section">
@@ -108,6 +111,7 @@ function App() {
                   </span>
                 </div>
                 <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
+                <LearnMore style={{ bottom: '148px', left: '361px' }} />
                 <span className="watermark">05</span>
               </div>
               <div className="section">
@@ -121,6 +125,7 @@ function App() {
                   </span>
                 </div>
                 <img src={bg06} alt="bg06" id="bg06" className="bg-img" />
+                <LearnMore style={{ bottom: '148px', left: '361px' }} />
                 <span className="watermark">06</span>
               </div>
               <div className="section">
