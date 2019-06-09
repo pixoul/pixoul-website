@@ -50,7 +50,7 @@ function App() {
               <div className="section">
                 <div className="content" id="content-01">
                   <span className="label">Corporate Site</span>
-                  <span className="title">
+                  <span className="title" id="title-01">
                     IKAR<span className="lucida-title">Ū</span>S
                   </span>
                   <span className="subtitle">
