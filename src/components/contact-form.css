@@ -59,6 +59,7 @@ label {
     font: 200 15px Roboto;
     cursor: text;
     transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
 }
 
 input {
@@ -73,6 +74,7 @@ input {
     border-bottom: solid 2px black;
     font-size: 15px;
     transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
 }
 
 input:-webkit-autofill {
@@ -113,6 +115,7 @@ input:valid~label {
     width: 120px;
     height: 44px;
     font-size: 22px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact_form_submit_btn:hover {
