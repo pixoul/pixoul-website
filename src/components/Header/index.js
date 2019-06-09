@@ -8,7 +8,7 @@ const Header = props => {
     <div className="header">
       <img className="logo" src={logo} alt="logoTitle" />
       <button className="pixoul_button contactus-button">Contact Us</button>
-      <button className="pixoul_button hamburger-button">
+      <button className="pixoul_button hamburger-button" onClick={props.onMenuPressed}>
         <img src={HamburgerMenuImg} alt="Hamburger" />
       </button>
     </div>

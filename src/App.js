@@ -1,5 +1,6 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
+import { CSSTransition } from 'react-transition-group';
 import PixoulContactForm from "./components/ContactForm/index";
 import "./App.css";
 import bgImage from "./images/bg.png";
@@ -19,137 +20,152 @@ import artisanLogo from "./images/artisanLogo.png";
 class App extends React.Component {
   state = {
     page: 0,
+    showMenu: false,
   };
 
+  setShowMenu = (showMenu) => {
+    this.setState({ showMenu });
+  }
+
   onLeave = (origin, destination, direction) => {
-    // arguments are mapped in order of fullpage.js callback arguments do something
-    // with the event
     this.setState({ page: destination.index });
   }
 
+  onMenuButtonClicked = () => {
+    this.setShowMenu(!this.state.showMenu);
+  }
+
   render() {
+    const { showMenu } = this.state;
     const pageIndex = ['00', '01', '02', '03', '04', '05', '06', 'Contact'];
     return (
-      <div>
-        <Header />
-        <PageIndex style={{ right: 44, bottom: 67 }} selected={pageIndex[this.state.page]} />
-        <ReactFullpage
-          anchors={['firstPage', 'secondPage', 'thirdPage']}
-          onLeave={this.onLeave}
-          render={({ state, fullpageApi }) => {
-            return (
-              <ReactFullpage.Wrapper>
-                <div className="section" id="first">
-                  <img src={bgImage} alt="bgImage" className="bg-image" />
-                  <div className="first-content">
-                    <div className="first-content__wrapper">
-                      <div className="first-title">
-                        Pixoul
-                        <br />
-                        Agency & Consultancy
-                        <div className="blue_line_under_title" />
+      <CSSTransition
+        in={!showMenu}
+        timeout={1000}
+        classNames="main"
+        onEnter={() => {}}
+        onExited={() => {}}
+      >
+        <div className={showMenu ? 'main__exited' : ''}>
+          <Header onMenuPressed={this.onMenuButtonClicked} />
+          <PageIndex style={{ right: 44, bottom: 67 }} selected={pageIndex[this.state.page]} />
+          <ReactFullpage
+            onLeave={this.onLeave}
+            render={({ state, fullpageApi }) => {
+              return (
+                <ReactFullpage.Wrapper>
+                  <div className="section" id="first">
+                    <img src={bgImage} alt="bgImage" className="bg-image" />
+                    <div className="first-content">
+                      <div className="first-content__wrapper">
+                        <div className="first-title">
+                          Pixoul
+                          <br />
+                          Agency & Consultancy
+                          <div className="blue_line_under_title" />
+                        </div>
+                        <div className="first-description">
+                          We’re a UX design agency, full-stack development shop, and
+                          strategic consulting group—ready to bring your digital
+                          vision to life.
+                        </div>
                       </div>
-                      <div className="first-description">
-                        We’re a UX design agency, full-stack development shop, and
-                        strategic consulting group—ready to bring your digital
-                        vision to life.
-                      </div>
+                      <button
+                        className="pixoul_button"
+                        onClick={() => fullpageApi.moveSectionDown()}
+                      >
+                        <img src={downArrow} alt="downArrow" />
+                      </button>
                     </div>
-                    <button
-                      className="pixoul_button"
-                      onClick={() => fullpageApi.moveSectionDown()}
-                    >
-                      <img src={downArrow} alt="downArrow" />
-                    </button>
                   </div>
-                </div>
-                <div className="section">
-                  <div className="content" id="content-01">
-                    <span className="label">Corporate Site</span>
-                    <span className="title" id="title-01">
-                      IKAR<span className="lucida-title">Ū</span>S
-                    </span>
-                    <span className="subtitle">
-                      is redefining the business marketplace.
-                    </span>
+                  <div className="section">
+                    <div className="content" id="content-01">
+                      <span className="label">Corporate Site</span>
+                      <span className="title" id="title-01">
+                        IKAR<span className="lucida-title">Ū</span>S
+                      </span>
+                      <span className="subtitle">
+                        is redefining the business marketplace.
+                      </span>
+                    </div>
+                    <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
+                    <LearnMore style={{ bottom: '148px', left: '361px' }} />
+                    <span className="watermark">01</span>
                   </div>
-                  <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
-                  <LearnMore style={{ bottom: '148px', left: '361px' }} />
-                  <span className="watermark">01</span>
-                </div>
-                <div className="section">
-                  <div className="content" id="content-02">
-                    <span className="label">Enterprise System</span>
-                    <span className="title">
-                      <img src={fusemap} alt="fusemap" />
-                    </span>
-                    <span className="subtitle">
-                      is thinking smarter about how we power the world.
-                    </span>
+                  <div className="section">
+                    <div className="content" id="content-02">
+                      <span className="label">Enterprise System</span>
+                      <span className="title">
+                        <img src={fusemap} alt="fusemap" />
+                      </span>
+                      <span className="subtitle">
+                        is thinking smarter about how we power the world.
+                      </span>
+                    </div>
+                    <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
+                    <LearnMore style={{ bottom: '148px', left: '361px' }} />
+                    <span className="watermark">02</span>
                   </div>
-                  <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
-                  <LearnMore style={{ bottom: '148px', left: '361px' }} />
-                  <span className="watermark">02</span>
-                </div>
-                <div className="section">
-                  <div className="content" id="content-03">
-                    <span className="label">Dashboard Matrix</span>
-                    <span className="title">hcp</span>
-                    <span className="subtitle">
-                      is setting the standard in healthcare—literally.
-                    </span>
+                  <div className="section">
+                    <div className="content" id="content-03">
+                      <span className="label">Dashboard Matrix</span>
+                      <span className="title">hcp</span>
+                      <span className="subtitle">
+                        is setting the standard in healthcare—literally.
+                      </span>
+                    </div>
+                    <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
+                    <LearnMore style={{ bottom: '148px', left: '361px' }} />
+                    <span className="watermark">03</span>
                   </div>
-                  <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
-                  <LearnMore style={{ bottom: '148px', left: '361px' }} />
-                  <span className="watermark">03</span>
-                </div>
-                <div className="section">
-                  <div className="content" id="content-04">
-                    <span className="label">Mobile App</span>
-                    <span className="title">Swank</span>
-                    <span className="description">loans & financing</span>
-                    <span className="subtitle">
-                      is financing the future of personal banking loans.
-                    </span>
+                  <div className="section">
+                    <div className="content" id="content-04">
+                      <span className="label">Mobile App</span>
+                      <span className="title">Swank</span>
+                      <span className="description">loans & financing</span>
+                      <span className="subtitle">
+                        is financing the future of personal banking loans.
+                      </span>
+                    </div>
+                    <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
+                    <LearnMore style={{ bottom: '148px', left: '361px' }} />
+                    <span className="watermark">04</span>
                   </div>
-                  <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
-                  <LearnMore style={{ bottom: '148px', left: '361px' }} />
-                  <span className="watermark">04</span>
-                </div>
-                <div className="section">
-                  <div className="content" id="content-05">
-                    <span className="label">Mobile App</span>
-                    <span className="title">MODA</span>
-                    <span className="subtitle">
-                      is reworking your wardrobe, one piece at a time.
-                    </span>
+                  <div className="section">
+                    <div className="content" id="content-05">
+                      <span className="label">Mobile App</span>
+                      <span className="title">MODA</span>
+                      <span className="subtitle">
+                        is reworking your wardrobe, one piece at a time.
+                      </span>
+                    </div>
+                    <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
+                    <LearnMore style={{ bottom: '148px', left: '361px' }} />
+                    <span className="watermark">05</span>
                   </div>
-                  <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
-                  <LearnMore style={{ bottom: '148px', left: '361px' }} />
-                  <span className="watermark">05</span>
-                </div>
-                <div className="section">
-                  <div className="content" id="content-06">
-                    <span className="label">E-Commerce Site</span>
-                    <span className="title">
-                      <img src={artisanLogo} alt="artisan" />
-                    </span>
-                    <span className="subtitle">
-                      is making a treat of wholesale subscriptions.
-                    </span>
+                  <div className="section">
+                    <div className="content" id="content-06">
+                      <span className="label">E-Commerce Site</span>
+                      <span className="title">
+                        <img src={artisanLogo} alt="artisan" />
+                      </span>
+                      <span className="subtitle">
+                        is making a treat of wholesale subscriptions.
+                      </span>
+                    </div>
+                    <img src={bg06} alt="bg06" id="bg06" className="bg-img" />
+                    <LearnMore style={{ bottom: '148px', left: '361px' }} />
+                    <span className="watermark">06</span>
                   </div>
-                  <img src={bg06} alt="bg06" id="bg06" className="bg-img" />
-                  <LearnMore style={{ bottom: '148px', left: '361px' }} />
-                  <span className="watermark">06</span>
-                </div>
-                <div className="section">
-                  <PixoulContactForm heading="Let's get to work." />
-                </div>
-              </ReactFullpage.Wrapper>
-            );
-          }}
-        />
-      </div>
+                  <div className="section">
+                    <PixoulContactForm heading="Let's get to work." />
+                  </div>
+                </ReactFullpage.Wrapper>
+              );
+            }}
+          />
+        </div>
+      </CSSTransition>
     );
   }
 }
