@@ -4,7 +4,7 @@ import PixoulContactForm from "./components/ContactForm/index";
 import "./App.css";
 import bgImage from "./images/bg.png";
 
-import { Header } from "./components";
+import { Header, LearnMore } from "./components";
 
 import bg01 from "./images/bg01.png";
 import bg02 from "./images/bg02.png";
@@ -59,7 +59,8 @@ function App() {
                     is redefining the business marketplace.
                   </span>
                 </div>
-                <img src={bg01} alt="bg01" id="bg01" class="bg-img" />
+                <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
+                <LearnMore style={{ bottom: '148px', left: '361px' }} />
                 <span className="watermark">01</span>
               </div>
               <div className="section">
@@ -72,7 +73,7 @@ function App() {
                     is thinking smarter about how we power the world.
                   </span>
                 </div>
-                <img src={bg02} alt="bg02" id="bg02" class="bg-img" />
+                <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
                 <span className="watermark">02</span>
               </div>
               <div className="section">
@@ -83,7 +84,7 @@ function App() {
                     is setting the standard in healthcare—literally.
                   </span>
                 </div>
-                <img src={bg03} alt="bg03" id="bg03" class="bg-img" />
+                <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
                 <span className="watermark">03</span>
               </div>
               <div className="section">
@@ -95,7 +96,7 @@ function App() {
                     is financing the future of personal banking loans.
                   </span>
                 </div>
-                <img src={bg04} alt="bg04" id="bg04" class="bg-img" />
+                <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
                 <span className="watermark">04</span>
               </div>
               <div className="section">
@@ -106,7 +107,7 @@ function App() {
                     is reworking your wardrobe, one piece at a time.
                   </span>
                 </div>
-                <img src={bg05} alt="bg05" id="bg05" class="bg-img" />
+                <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
                 <span className="watermark">05</span>
               </div>
               <div className="section">
@@ -119,7 +120,7 @@ function App() {
                     is making a treat of wholesale subscriptions.
                   </span>
                 </div>
-                <img src={bg06} alt="bg06" id="bg06" class="bg-img" />
+                <img src={bg06} alt="bg06" id="bg06" className="bg-img" />
                 <span className="watermark">06</span>
               </div>
               <div className="section">
