@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ikarosFont;
+  src: url(fonts/Ikaros-Regular.otf);
+}
+
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -118,6 +123,10 @@ code {
 	font-weight: 400;
 }
 
+#title-01 {
+  font-family: ikarosFont;
+}
+
 .subtitle {
 	font-size: 20px;
 	color: #374050;
@@ -235,8 +244,6 @@ code {
 		height: 385px;
 	}
 }
-
-
 
 .stuck-preview.hidden-prepare h2 span {
 	animation-name: stuckSlideHiddenH2;
