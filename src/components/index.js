@@ -1,5 +1,5 @@
 import { Header } from './Header/index';
-import PageIndex from './PageIndex';
+import { PageIndex } from './PageIndex/index';
 import { LearnMore } from './LearnMore';
 
 export {

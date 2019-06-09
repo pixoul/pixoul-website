@@ -29,7 +29,7 @@ class PixoulContactForm extends Component {
                 id="contact_form_first_name"
                 required="required"
               />
-              <label for="contact_form_first_name">
+              <label htmlFor="contact_form_first_name">
                 First Name <span className="asterix">*</span>
               </label>
             </div>
@@ -39,19 +39,19 @@ class PixoulContactForm extends Component {
                 id="contact_form_last_name"
                 required="required"
               />
-              <label for="contact_form_last_name">
+              <label htmlFor="contact_form_last_name">
                 Last Name <span className="asterix">*</span>
               </label>
             </div>
             <div className="group">
               <input type="text" id="contact_form_email" required="required" />
-              <label for="contact_form_email">
+              <label htmlFor="contact_form_email">
                 Email <span className="asterix">*</span>
               </label>
             </div>
             <div className="group">
               <input type="text" id="contact_form_phone" required="required" />
-              <label for="contact_form_phone">
+              <label htmlFor="contact_form_phone">
                 Phone <span className="asterix">*</span>
               </label>
             </div>
@@ -61,7 +61,7 @@ class PixoulContactForm extends Component {
                 id="contact_form_interest"
                 required="required"
               />
-              <label for="contact_form_interest">
+              <label htmlFor="contact_form_interest">
                 I'm Interested In...<span className="asterix">*</span>
               </label>
             </div>

@@ -1,0 +1,33 @@
+.page-index {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  width: 29px;
+}
+
+.index-item {
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #374050;
+  font-size: 20px;
+  padding: 0;
+  margin-bottom: 22px;
+  cursor: pointer;
+}
+
+.index__selected {
+  color: #3180fb;
+}
+
+.index-separator {
+  background-color: #3180fb;
+  width: 2px;
+  height: 88px;
+  border-radius: 1px;
+  margin-bottom: 22px;
+}
+
+.index-contact {
+  transform: translateY(100%) rotate(90deg);
+}
