@@ -14,6 +14,7 @@ import bg05 from "./images/bg05.png";
 import bg06 from "./images/bg06.png";
 import fusemap from "./images/fusemap.png";
 import downArrow from "./images/ic_arrow_forward.png";
+import artisanLogo from "./images/artisanLogo.png";
 
 function App() {
   return (
@@ -111,7 +112,9 @@ function App() {
               <div className="section">
                 <div className="content" id="content-06">
                   <span className="label">E-Commerce Site</span>
-                  <span className="title">Artisan</span>
+                  <span className="title">
+                    <img src={artisanLogo} alt="artisan" />
+                  </span>
                   <span className="subtitle">
                     is making a treat of wholesale subscriptions.
                   </span>

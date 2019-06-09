@@ -141,6 +141,12 @@ code {
   margin-left: 35px;
   font-size: 25px;
   margin-bottom: 4px;
+  margin-top: -10px;
+}
+
+#content-05 .title {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 16px;
 }
 
 .subtitle {
