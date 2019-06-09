@@ -106,8 +106,8 @@ class App extends React.Component {
                         id="bg01"
                         className="Tilt-inner bg-img"
                       />
+                      <LearnMore style={{ top: "212px", left: "428px" }} />
                     </Tilt>
-                    <LearnMore style={{ bottom: "148px", left: "361px" }} />
                     <span className="watermark">01</span>
                   </div>
                   <div className="section">
@@ -134,8 +134,8 @@ class App extends React.Component {
                         id="bg02"
                         className="Tilt-inner bg-img"
                       />
+                      <LearnMore style={{ top: "212px", left: "428px" }} />
                     </Tilt>
-                    <LearnMore style={{ bottom: "148px", left: "361px" }} />
                     <span className="watermark">02</span>
                   </div>
                   <div className="section">
@@ -160,8 +160,8 @@ class App extends React.Component {
                         id="bg03"
                         className="Tilt-inner bg-img"
                       />
+                      <LearnMore style={{ top: "212px", left: "428px" }} />
                     </Tilt>
-                    <LearnMore style={{ bottom: "148px", left: "361px" }} />
                     <span className="watermark">03</span>
                   </div>
                   <div className="section">
@@ -187,8 +187,8 @@ class App extends React.Component {
                         id="bg04"
                         className="Tilt-inner bg-img"
                       />
+                      <LearnMore style={{ top: "212px", left: "428px" }} />
                     </Tilt>
-                    <LearnMore style={{ bottom: "148px", left: "361px" }} />
                     <span className="watermark">04</span>
                   </div>
                   <div className="section">
@@ -213,8 +213,8 @@ class App extends React.Component {
                         id="bg05"
                         className="Tilt-inner bg-img"
                       />
+                      <LearnMore style={{ top: "212px", left: "428px" }} />
                     </Tilt>
-                    <LearnMore style={{ bottom: "148px", left: "361px" }} />
                     <span className="watermark">05</span>
                   </div>
                   <div className="section">
@@ -232,7 +232,8 @@ class App extends React.Component {
                       options={{
                         max: 15,
                         perspective: 8000,
-                        scale: 1
+                        scale: 1,
+                        Y: null
                       }}
                     >
                       <img
@@ -241,8 +242,8 @@ class App extends React.Component {
                         id="bg06"
                         className="Tilt-inner bg-img"
                       />
+                      <LearnMore style={{ top: "212px", left: "428px" }} />
                     </Tilt>
-                    <LearnMore style={{ bottom: "148px", left: "361px" }} />
                     <span className="watermark">06</span>
                   </div>
                   <div className="section">
