@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Tilt from "react-tilt";
 import { CSSTransition } from "react-transition-group";
@@ -46,6 +46,8 @@ class App extends React.Component {
 
   render() {
     const { showMenu, page, pageLoaded } = this.state;
+    console.log('page loaded---', pageLoaded);
+    console.log('page--', page);
     const pageIndex = ["00", "01", "02", "03", "04", "05", "06", "Contact"];
     return (
       <CSSTransition
@@ -70,30 +72,41 @@ class App extends React.Component {
                       <div className="first-content__wrapper">
                         <CSSTransition
                           in={page === 0}
-                          timeout={1000}
-                          classNames="title-animation"
+                   
+                          classNames="mainTitle-animation"
                           onEnter={() => {}}
                           onExited={() => {}}
                         >
-                          <div className="first-title">
+                          <div className="first-title mainTitle-animation-enter">
                             Pixoul
                             <br />
                             Agency & Consultancy
                             <div className="blue_line_under_title" />
                           </div>
                         </CSSTransition>
-                        <div className="first-description">
-                          We’re a UX design agency, full-stack development shop,
-                          and strategic consulting group—ready to bring your
-                          digital vision to life.
-                        </div>
+                        <CSSTransition
+                          in={page === 0}
+                          timeout={1000}
+                          classNames="subtitle-animation"
+                          onEnter={() => {}}
+                          onExited={() => {}}
+                        >
+                          <div className="first-description subtitle-animation-enter">
+                            We’re a UX design agency, full-stack<br/>development shop,
+                            and strategic<br/>consulting group—ready to bring your<br/>
+                            digital vision to life.
+                          </div>
+                        </CSSTransition>
                       </div>
+ 
                       <button
                         className="pixoul_button"
+                        style={{width: 0}}
                         onClick={() => fullpageApi.moveSectionDown()}
                       >
                         <img src={downArrow} alt="downArrow" />
                       </button>
+
                     </div>
                   </div>
                   <div className="section">
@@ -118,9 +131,17 @@ class App extends React.Component {
                           IKAR<span className="lucida-title">Ū</span>S
                         </span>
                       </CSSTransition>
-                      <span className="subtitle">
-                        is redefining the business marketplace.
-                      </span>
+                      <CSSTransition
+                        in={page === 1 && pageLoaded}
+                        timeout={1000}
+                        classNames="subtitle-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="subtitle">
+                          is redefining the business<br/> marketplace.
+                        </span>
+                      </CSSTransition>
                     </div>
                     <Tilt
                       className="Tilt"
@@ -146,12 +167,28 @@ class App extends React.Component {
                       >
                         <span className="label">Enterprise System</span>
                       </CSSTransition>
-                      <span className="title">
-                        <img src={fusemap} alt="fusemap" />
-                      </span>
-                      <span className="subtitle">
-                        is thinking smarter about how we power the world.
-                      </span>
+                      <CSSTransition
+                        in={page === 2 && pageLoaded}
+                        timeout={1000}
+                        classNames="title-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="title">
+                          <img src={fusemap} alt="fusemap" />
+                        </span>
+                      </CSSTransition>
+                      <CSSTransition
+                        in={page === 2 && pageLoaded}
+                        timeout={1000}
+                        classNames="subtitle-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="subtitle">
+                          is thinking smarter about how <br/>we power the world.
+                        </span>
+                      </CSSTransition>
                     </div>
                     <Tilt
                       className="Tilt"
@@ -177,10 +214,26 @@ class App extends React.Component {
                       >
                         <span className="label">Dashboard Matrix</span>
                       </CSSTransition>
-                      <span className="title">hcp</span>
-                      <span className="subtitle">
-                        is setting the standard in healthcare—literally.
-                      </span>
+                      <CSSTransition
+                        in={page === 3 && pageLoaded}
+                        timeout={1000}
+                        classNames="title-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="title">hcp</span>
+                      </CSSTransition>
+                      <CSSTransition
+                        in={page === 3 && pageLoaded}
+                        timeout={1000}
+                        classNames="subtitle-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="subtitle">
+                          is setting the standard in <br/>healthcare—literally.
+                        </span>
+                      </CSSTransition>
                     </div>
                     <Tilt
                       className="Tilt"
@@ -206,11 +259,26 @@ class App extends React.Component {
                       >
                         <span className="label">Mobile App</span>
                       </CSSTransition>
-                      <span className="title">Swank</span>
-                      <span className="description">loans & financing</span>
-                      <span className="subtitle">
-                        is financing the future of personal banking loans.
-                      </span>
+                      <CSSTransition
+                        in={page === 4 && pageLoaded}
+                        timeout={1000}
+                        classNames="title-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <div className="title">Swank<div className="description">loans & financing</div></div>
+                      </CSSTransition>
+                      <CSSTransition
+                        in={page === 4 && pageLoaded}
+                        timeout={1000}
+                        classNames="subtitle-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="subtitle">
+                          is financing the future of<br/>personal banking loans.
+                        </span>
+                      </CSSTransition>
                     </div>
                     <Tilt
                       className="Tilt"
@@ -236,10 +304,26 @@ class App extends React.Component {
                       >
                         <span className="label">Mobile App</span>
                       </CSSTransition>
-                      <span className="title">MODA</span>
-                      <span className="subtitle">
-                        is reworking your wardrobe, one piece at a time.
-                      </span>
+                      <CSSTransition
+                        in={page === 5 && pageLoaded}
+                        timeout={1000}
+                        classNames="title-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="title">MODA</span>
+                      </CSSTransition>
+                      <CSSTransition
+                        in={page === 5 && pageLoaded}
+                        timeout={1000}
+                        classNames="subtitle-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="subtitle">
+                          is reworking your wardrobe, one<br/>piece at a time.
+                        </span>
+                      </CSSTransition>
                     </div>
                     <Tilt
                       className="Tilt"
@@ -265,12 +349,28 @@ class App extends React.Component {
                       >
                         <span className="label">E-Commerce Site</span>
                       </CSSTransition>
-                      <span className="title">
-                        <img src={artisanLogo} alt="artisan" />
-                      </span>
-                      <span className="subtitle">
-                        is making a treat of wholesale subscriptions.
-                      </span>
+                      <CSSTransition
+                        in={page === 6 && pageLoaded}
+                        timeout={1000}
+                        classNames="title-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="title">
+                          <img src={artisanLogo} alt="artisan" />
+                        </span>
+                      </CSSTransition>
+                      <CSSTransition
+                        in={page === 6 && pageLoaded}
+                        timeout={1000}
+                        classNames="subtitle-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="subtitle">
+                          is making a treat of wholesale<br/>subscriptions.
+                        </span>
+                      </CSSTransition>
                     </div>
                     <Tilt
                       className="Tilt"

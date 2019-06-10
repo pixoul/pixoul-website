@@ -55,7 +55,7 @@
 	background: #3180FB;
 	width: 170px;
 	height: 5px;
-	top: 10%;
+	margin-top: 10%;
 	left: 0;
 	border-radius: 15px;
 }
@@ -84,12 +84,6 @@
 	position: absolute;
 }
 
-.first-content__wrapper {
-	display: flex;
-	flex-direction: column;
-	height: 368px;
-}
-
 .first-content button {
 	background: transparent;
 	border: none;
@@ -101,12 +95,18 @@
 	font-size: 45px;
 	font-weight: 500;
 	flex: 0.9;
+	overflow: hidden;
+	margin-bottom: 90px;
+	transform: translateY(-20vh);
 }
 
 .first-description {
 	font-size: 25px;
 	font-weight: 300;
 	max-width: 455px;
+	width: 0;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .content {
@@ -186,6 +186,9 @@
 	color: #374050;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
+	width: 0;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 #content-02 {
@@ -224,6 +227,46 @@
   to {height: 0;}
 }
 
+@keyframes stuckSlideShownH4 {
+	from {width: 0;}
+	to {width: 100%;}
+}
+
+@keyframes stuckSlideHiddenH4 {
+	from {width: 100%;}
+	to {width: 0;}
+}
+
+@keyframes mainSliderH2Show {
+	from {
+		transform: translateY(-20vh);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes mainSliderH2Hide {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-20vh);
+	}
+}
+
+.mainTitle-animation-enter {
+	animation-name: mainSliderH2Show;
+}
+
+.mainTitle-animation-exit {
+	animation-name: mainSliderH2Hide;
+	animation-duration: .75s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
 .label-animation-enter {
   animation-name: stuckSlideShownH3;
 	animation-duration: .1s;
@@ -250,8 +293,29 @@
 	animation-fill-mode: both; 
 }
 
+.subtitle-animation-enter {
+  animation-name: stuckSlideShownH4;
+	animation-delay: .35s;
+	animation-duration: .6s;
+	animation-fill-mode: both;
+}
+
+.subtitle-animation-exit {
+  animation-name: stuckSlideHiddenH4;
+	animation-delay: .3s;
+	animation-duration: .6s;
+	animation-fill-mode: both;
+}
+
 .label-animation-enter-done, .title-animation-enter-done {
   height: 100%;
 }
 
+.subtitle-animation-enter-done {
+	width: max-content;
+}
+
+.mainTitle-animation-enter-done {
+	transform: translateY(0);
+}
 /* Animation */
