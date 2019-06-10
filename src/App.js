@@ -59,20 +59,20 @@ class App extends React.Component {
                     <img src={bgImage} alt="bgImage" className="bg-image" />
                     <div className="first-content">
                       <div className="first-content__wrapper">
-                      <CSSTransition
-                        in={page === 0}
-                        timeout={1000}
-                        classNames="title-animation"
-                        onEnter={() => {}}
-                        onExited={() => {}}
-                      >
-                        <div className="first-title">
-                          Pixoul
-                          <br />
-                          Agency & Consultancy
-                          <div className="blue_line_under_title" />
-                        </div>
-                      </CSSTransition>
+                        <CSSTransition
+                          in={page === 0}
+                          timeout={1000}
+                          classNames="title-animation"
+                          onEnter={() => {}}
+                          onExited={() => {}}
+                        >
+                          <div className="first-title">
+                            Pixoul
+                            <br />
+                            Agency & Consultancy
+                            <div className="blue_line_under_title" />
+                          </div>
+                        </CSSTransition>
                         <div className="first-description">
                           We’re a UX design agency, full-stack development shop,
                           and strategic consulting group—ready to bring your
@@ -108,18 +108,13 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 15,
-                        perspective: 8000,
-                        scale: 1
+                        max: 20,
+                        scale: 1,
+                        axis: "x"
                       }}
                     >
-                      <img
-                        src={bg01}
-                        alt="bg01"
-                        id="bg01"
-                        className="Tilt-inner bg-img"
-                      />
-                      <LearnMore style={{ top: "212px", left: "428px" }} />
+                      <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
+                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
                     <span className="watermark">01</span>
                   </div>
@@ -136,18 +131,13 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 15,
-                        perspective: 8000,
-                        scale: 1
+                        max: 20,
+                        scale: 1,
+                        axis: "x"
                       }}
                     >
-                      <img
-                        src={bg02}
-                        alt="bg02"
-                        id="bg02"
-                        className="Tilt-inner bg-img"
-                      />
-                      <LearnMore style={{ top: "212px", left: "428px" }} />
+                      <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
+                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
                     <span className="watermark">02</span>
                   </div>
@@ -162,18 +152,13 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 15,
-                        perspective: 8000,
-                        scale: 1
+                        max: 20,
+                        scale: 1,
+                        axis: "x"
                       }}
                     >
-                      <img
-                        src={bg03}
-                        alt="bg03"
-                        id="bg03"
-                        className="Tilt-inner bg-img"
-                      />
-                      <LearnMore style={{ top: "212px", left: "428px" }} />
+                      <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
+                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
                     <span className="watermark">03</span>
                   </div>
@@ -189,18 +174,13 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 15,
-                        perspective: 8000,
-                        scale: 1
+                        max: 20,
+                        scale: 1,
+                        axis: "x"
                       }}
                     >
-                      <img
-                        src={bg04}
-                        alt="bg04"
-                        id="bg04"
-                        className="Tilt-inner bg-img"
-                      />
-                      <LearnMore style={{ top: "212px", left: "428px" }} />
+                      <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
+                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
                     <span className="watermark">04</span>
                   </div>
@@ -215,18 +195,13 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 15,
-                        perspective: 8000,
-                        scale: 1
+                        max: 20,
+                        scale: 1,
+                        axis: "x"
                       }}
                     >
-                      <img
-                        src={bg05}
-                        alt="bg05"
-                        id="bg05"
-                        className="Tilt-inner bg-img"
-                      />
-                      <LearnMore style={{ top: "212px", left: "428px" }} />
+                      <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
+                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
                     <span className="watermark">05</span>
                   </div>
@@ -243,19 +218,13 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 15,
-                        perspective: 8000,
+                        max: 20,
                         scale: 1,
-                        Y: null,
+                        axis: "x"
                       }}
                     >
-                      <img
-                        src={bg06}
-                        alt="bg06"
-                        id="bg06"
-                        className="Tilt-inner bg-img"
-                      />
-                      <LearnMore style={{ top: "212px", left: "428px" }} />
+                      <img src={bg06} alt="bg06" id="bg06" className="bg-img" />
+                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
                     <span className="watermark">06</span>
                   </div>
