@@ -246,7 +246,7 @@ class App extends React.Component {
                         max: 15,
                         perspective: 8000,
                         scale: 1,
-                        Y: null
+                        Y: null,
                       }}
                     >
                       <img

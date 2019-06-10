@@ -3,7 +3,7 @@
   display: flex;
   justify-content: stretch;
   align-items: center;
-  position: absolute;
+  position: relative;
   transition: opacity .5s;
   animation-name: anchorLinkParallax;
   animation-duration: 1s;
