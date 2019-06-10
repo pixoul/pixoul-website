@@ -37,7 +37,7 @@ class App extends React.Component {
   };
 
   render() {
-    const { showMenu } = this.state;
+    const { showMenu, page } = this.state;
     const pageIndex = ["00", "01", "02", "03", "04", "05", "06", "Contact"];
     return (
       <CSSTransition
@@ -50,7 +50,7 @@ class App extends React.Component {
         <div className={showMenu ? "main__exited" : ""}>
           <Header onMenuPressed={this.onMenuButtonClicked} />
           <PageIndex
-            style={{ right: 44, bottom: 67 }}
+            style={{ right: 44, bottom: -67 }}
             selected={pageIndex[this.state.page]}
           />
           <ReactFullpage
@@ -62,12 +62,20 @@ class App extends React.Component {
                     <img src={bgImage} alt="bgImage" className="bg-image" />
                     <div className="first-content">
                       <div className="first-content__wrapper">
+                      <CSSTransition
+                        in={page === 0}
+                        timeout={1000}
+                        classNames="title-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
                         <div className="first-title">
                           Pixoul
                           <br />
                           Agency & Consultancy
                           <div className="blue_line_under_title" />
                         </div>
+                      </CSSTransition>
                         <div className="first-description">
                           We’re a UX design agency, full-stack development shop,
                           and strategic consulting group—ready to bring your
@@ -85,9 +93,17 @@ class App extends React.Component {
                   <div className="section">
                     <div className="content" id="content-01">
                       <span className="label">Corporate Site</span>
-                      <span className="title" id="title-01">
-                        IKAR<span className="lucida-title">Ū</span>S
-                      </span>
+                      <CSSTransition
+                        in={page === 1}
+                        timeout={1000}
+                        classNames="title-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="title" id="title-01">
+                          IKAR<span className="lucida-title">Ū</span>S
+                        </span>
+                      </CSSTransition>
                       <span className="subtitle">
                         is redefining the business marketplace.
                       </span>
