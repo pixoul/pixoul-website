@@ -21,7 +21,8 @@ import artisanLogo from "./images/artisanLogo.png";
 class App extends React.Component {
   state = {
     page: 0,
-    showMenu: false
+    showMenu: false,
+    pageLoaded: true,
   };
 
   setShowMenu = showMenu => {
@@ -29,15 +30,22 @@ class App extends React.Component {
   };
 
   onLeave = (origin, destination, direction) => {
-    this.setState({ page: destination.index });
+
+    this.setState({ page: destination.index, pageLoaded: false });
+    console.log('leave')
   };
+
+  onSlideLoad = (section, origin, destination, direction) => {
+    console.log('loaded');
+    this.setState({ pageLoaded: true });
+  }
 
   onMenuButtonClicked = () => {
     this.setShowMenu(!this.state.showMenu);
   };
 
   render() {
-    const { showMenu, page } = this.state;
+    const { showMenu, page, pageLoaded } = this.state;
     const pageIndex = ["00", "01", "02", "03", "04", "05", "06", "Contact"];
     return (
       <CSSTransition
@@ -52,6 +60,7 @@ class App extends React.Component {
           <ReactFullpage
             anchors={pageIndex}
             onLeave={this.onLeave}
+            afterLoad={this.onSlideLoad}
             render={({ state, fullpageApi }) => {
               return (
                 <ReactFullpage.Wrapper>
@@ -89,9 +98,17 @@ class App extends React.Component {
                   </div>
                   <div className="section">
                     <div className="content" id="content-01">
-                      <span className="label">Corporate Site</span>
                       <CSSTransition
-                        in={page === 1}
+                        in={page === 1 && pageLoaded}
+                        timeout={1000}
+                        classNames="label-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="label">Corporate Site</span>
+                      </CSSTransition>
+                      <CSSTransition
+                        in={page === 1 && pageLoaded}
                         timeout={1000}
                         classNames="title-animation"
                         onEnter={() => {}}
@@ -120,7 +137,15 @@ class App extends React.Component {
                   </div>
                   <div className="section">
                     <div className="content" id="content-02">
-                      <span className="label">Enterprise System</span>
+                      <CSSTransition
+                        in={page === 2 && pageLoaded}
+                        timeout={1000}
+                        classNames="label-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="label">Enterprise System</span>
+                      </CSSTransition>
                       <span className="title">
                         <img src={fusemap} alt="fusemap" />
                       </span>
@@ -143,7 +168,15 @@ class App extends React.Component {
                   </div>
                   <div className="section">
                     <div className="content" id="content-03">
-                      <span className="label">Dashboard Matrix</span>
+                      <CSSTransition
+                        in={page === 3 && pageLoaded}
+                        timeout={1000}
+                        classNames="label-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="label">Dashboard Matrix</span>
+                      </CSSTransition>
                       <span className="title">hcp</span>
                       <span className="subtitle">
                         is setting the standard in healthcare—literally.
@@ -164,7 +197,15 @@ class App extends React.Component {
                   </div>
                   <div className="section">
                     <div className="content" id="content-04">
-                      <span className="label">Mobile App</span>
+                      <CSSTransition
+                        in={page === 4 && pageLoaded}
+                        timeout={1000}
+                        classNames="label-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="label">Mobile App</span>
+                      </CSSTransition>
                       <span className="title">Swank</span>
                       <span className="description">loans & financing</span>
                       <span className="subtitle">
@@ -186,7 +227,15 @@ class App extends React.Component {
                   </div>
                   <div className="section">
                     <div className="content" id="content-05">
-                      <span className="label">Mobile App</span>
+                      <CSSTransition
+                        in={page === 5 && pageLoaded}
+                        timeout={1000}
+                        classNames="label-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="label">Mobile App</span>
+                      </CSSTransition>
                       <span className="title">MODA</span>
                       <span className="subtitle">
                         is reworking your wardrobe, one piece at a time.
@@ -207,7 +256,15 @@ class App extends React.Component {
                   </div>
                   <div className="section">
                     <div className="content" id="content-06">
-                      <span className="label">E-Commerce Site</span>
+                      <CSSTransition
+                        in={page === 6 && pageLoaded}
+                        timeout={1000}
+                        classNames="label-animation"
+                        onEnter={() => {}}
+                        onExited={() => {}}
+                      >
+                        <span className="label">E-Commerce Site</span>
+                      </CSSTransition>
                       <span className="title">
                         <img src={artisanLogo} alt="artisan" />
                       </span>
