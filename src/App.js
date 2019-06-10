@@ -49,11 +49,8 @@ class App extends React.Component {
       >
         <div className={showMenu ? "main__exited" : ""}>
           <Header onMenuPressed={this.onMenuButtonClicked} />
-          <PageIndex
-            style={{ right: 44, bottom: -67 }}
-            selected={pageIndex[this.state.page]}
-          />
           <ReactFullpage
+            anchors={pageIndex}
             onLeave={this.onLeave}
             render={({ state, fullpageApi }) => {
               return (
@@ -268,6 +265,10 @@ class App extends React.Component {
                 </ReactFullpage.Wrapper>
               );
             }}
+          />
+          <PageIndex
+            style={{ right: 44, bottom: -267 }}
+            selected={pageIndex[this.state.page]}
           />
         </div>
       </CSSTransition>

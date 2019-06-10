@@ -22,14 +22,18 @@ const PageIndex = (props) => {
         {
           pageIndex.map(item => (
             props.selected === item ? (
-              <button className="index-item index__selected"><span>{item}</span></button>
-            ) : (<button className="index-item"><span>{item}</span></button>)
+              <a href={`#${item}`} key={item} className="index-item index__selected"><span>{item}</span></a>
+            ) : (
+              <a href={`#${item}`} key={item} className="index-item"><span>{item}</span></a>
+            )
           ))
         }
         <div className="index-separator" />
-        <button className={props.selected === 'Contact' ? 'index__selected index-item-contact index-item' : 'index-item-contact index-item'}>
+        <a href='#Contact'
+          className={props.selected === 'Contact' ? 'index__selected index-item-contact index-item' : 'index-item-contact index-item'}
+        >
           <span>Contact</span>
-        </button>
+        </a>
       </div>
     </Transition>
   );

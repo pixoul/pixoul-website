@@ -9,6 +9,7 @@
 
 .index-0 {
   transform: translateY(0px);
+  z-index: -1;
 }
 
 .index-1 {
@@ -40,6 +41,7 @@
 }
 
 .index-item {
+  text-decoration: none;
   font-family: 'Poppins';
   font-weight: 500;
   color: #374050;
