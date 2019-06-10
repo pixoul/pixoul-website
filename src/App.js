@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Tilt from "react-tilt";
 import { CSSTransition } from "react-transition-group";
@@ -30,13 +30,10 @@ class App extends React.Component {
   };
 
   onLeave = (origin, destination, direction) => {
-
     this.setState({ page: destination.index, pageLoaded: false });
-    console.log('leave')
   };
 
   onSlideLoad = (section, origin, destination, direction) => {
-    console.log('loaded');
     this.setState({ pageLoaded: true });
   }
 
@@ -46,8 +43,6 @@ class App extends React.Component {
 
   render() {
     const { showMenu, page, pageLoaded } = this.state;
-    console.log('page loaded---', pageLoaded);
-    console.log('page--', page);
     const pageIndex = ["00", "01", "02", "03", "04", "05", "06", "Contact"];
     return (
       <CSSTransition
@@ -386,14 +381,17 @@ class App extends React.Component {
                     <span className="watermark">06</span>
                   </div>
                   <div className="section">
-                    <PixoulContactForm heading="Let's get to work." />
+                    <PixoulContactForm
+                      heading="Let's get to work."
+                      isVisible={page === 7}
+                    />
                   </div>
                 </ReactFullpage.Wrapper>
               );
             }}
           />
           <PageIndex
-            style={{ right: 44, bottom: -267 }}
+            style={{ right: 44, bottom: -167 }}
             selected={pageIndex[this.state.page]}
           />
         </div>

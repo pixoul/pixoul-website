@@ -5,7 +5,8 @@
     width: 100%;
 }
 
-.contact_section_img_container {}
+.contact_section_img_container {
+}
 
 .contact_section_img {
     position: absolute;
@@ -13,7 +14,11 @@
     bottom: 0;
 }
 
-.contact_section_heading_container {}
+.contact_section_heading_container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
 
 .contact_section_heading {
     font-family: 'Poppins', sans-seri;
@@ -37,14 +42,17 @@
     border-radius: 10px;
     box-shadow: -1px 3px 20px rgba(0, 0, 0, 0.19), 0 2px 3px rgba(0, 0, 0, 0.23);
     z-index: 999;
-    padding: 40px 30px;
+    padding: 0px 0px;
     box-sizing: border-box;
+    height: 0;
+    overflow: hidden;
 }
 
 .contact_section_form {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+
 }
 
 .group {
@@ -124,4 +132,65 @@
 
 .contact_form_submit_btn:hover {
     transform: translateY(-3px);
+}
+
+@keyframes stuckSlideShownH2 {
+    from {height: 0;}
+    to {height: 100%;}
+}
+
+@keyframes stuckSlideHiddenH2 {
+    from {height: 100%;}
+    to {height: 0;}
+}
+
+@keyframes contactsFormToTop{
+    from {
+        bottom: 0;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes contactsFormToBottom{
+    from {
+        bottom: inherit;
+        top: 0;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+.title-animation-enter {
+    animation-name: stuckSlideShownH2;
+    animation-delay: .05s;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+}
+  
+.title-animation-exit {
+    animation-name: stuckSlideHiddenH2;
+    animation-duration: .3s;
+    animation-fill-mode: both; 
+}
+
+.form-animation-enter {
+    animation-name: contactsFormToBottom;
+    animation-delay: .5s;
+    animation-duration: .1s;
+    animation-fill-mode: both;
+}
+
+.form-animation-exit {
+    animation-name: contactsFormToTop;
+    animation-delay: 0s;
+    animation-duration: .05s;
+    animation-fill-mode: both;
+}
+
+.form-animation-enter-done {
+    height: auto;
+    padding: 40px 30px;
 }

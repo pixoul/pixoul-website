@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { CSSTransition } from "react-transition-group";
 import "./contact-form.css";
 
 const contactFormImages = {
@@ -11,9 +12,17 @@ class PixoulContactForm extends Component {
 
     return (
       <div className="contact_section_container">
-        <div className="contact_section_heading_container">
-          <span className="contact_section_heading">{heading}</span>
-        </div>
+        <CSSTransition
+          in={this.props.isVisible}
+          timeout={1000}
+          classNames="title-animation"
+          onEnter={() => {}}
+          onExited={() => {}}
+        >
+          <div className="contact_section_heading_container">
+            <span className="contact_section_heading">{heading}</span>
+          </div>
+        </CSSTransition>
         <div className="contact_section_img_container">
           <img
             src={contactFormImages.envelope}
@@ -21,7 +30,15 @@ class PixoulContactForm extends Component {
             alt="Contact Form Envelope"
           />
         </div>
+        <CSSTransition
+            in={this.props.isVisible}
+            timeout={1000}
+            classNames="form-animation"
+            onEnter={() => {}}
+            onExited={() => {}}
+          >
         <div className="contact_section_form_container">
+         
           <form className="contact_section_form">
             <div className="group">
               <input
@@ -71,7 +88,9 @@ class PixoulContactForm extends Component {
               </button>
             </div>
           </form>
+          
         </div>
+        </CSSTransition>
       </div>
     );
   }
