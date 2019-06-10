@@ -72,7 +72,7 @@ class App extends React.Component {
                       <div className="first-content__wrapper">
                         <CSSTransition
                           in={page === 0}
-                   
+                          timeout={1000}
                           classNames="mainTitle-animation"
                           onEnter={() => {}}
                           onExited={() => {}}
@@ -87,11 +87,11 @@ class App extends React.Component {
                         <CSSTransition
                           in={page === 0}
                           timeout={1000}
-                          classNames="subtitle-animation"
+                          classNames="mainText-animation"
                           onEnter={() => {}}
                           onExited={() => {}}
                         >
-                          <div className="first-description subtitle-animation-enter">
+                          <div className="first-description mainText-animation-enter">
                             We’re a UX design agency, full-stack<br/>development shop,
                             and strategic<br/>consulting group—ready to bring your<br/>
                             digital vision to life.
