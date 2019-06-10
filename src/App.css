@@ -33,7 +33,7 @@
 }
 
 .main-enter-active {
-  transform: translateX(0);
+  transform: scale(0.9);
   transition: transform 300ms;
 }
 
@@ -147,6 +147,38 @@
   margin-bottom: 4px;
 }
 
+@keyframes stuckSlideShownH2 {
+  from {height: 0;}
+  to {height: 100%;}
+}
+
+@keyframes stuckSlideShownH3 {
+  from {height: 0;}
+  to {height: 20px;}
+}
+
+.title-animation-enter {
+  animation-name: stuckSlideShownH2;
+	animation-delay: .05s;
+	animation-duration: .3s;
+	animation-fill-mode: both;
+}
+
+.title-animation-enter-active {
+
+}
+
+.title-animation-exit {
+
+}
+
+.title-animation-exit-active {
+  animation-name: stuckSlideShownH2;
+	animation-delay: .05s;
+	animation-duration: .3s;
+	animation-fill-mode: both;
+}
+  
 .description {
   font-weight: 500;
 }

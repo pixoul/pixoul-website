@@ -1,22 +1,37 @@
 import React from 'react';
+import { Transition } from 'react-transition-group';
 import './pageIndex.css';
 
 const PageIndex = (props) => {
   const pageIndex = ['01', '02', '03', '04', '05', '06'];
+  const cn = require('classnames');
+
+  const indexClass = cn('page-index', {
+    'index-1': props.selected === '01',
+    'index-0': props.selected === '00',
+    'index-2': props.selected === '02',
+    'index-3': props.selected === '03',
+    'index-4': props.selected === '04',
+    'index-5': props.selected === '05',
+    'index-6': props.selected === '06',
+    'index-contact': props.selected === 'Contact',
+  });
   return (
-    <div className="page-index" style={props.style}>
-      {
-        pageIndex.map(item => (
-          props.selected === item ? (
-            <button className="index-item index__selected"><span>{item}</span></button>
-          ) : (<button className="index-item"><span>{item}</span></button>)
-        ))
-      }
-      <div className="index-separator" />
-      <button className={props.selected === 'Contact' ? 'index__selected index-contact index-item' : 'index-contact index-item'}>
-        <span>Contact</span>
-      </button>
-    </div>
+    <Transition in={true} timeout={500}>
+      <div className={indexClass} style={props.style}>
+        {
+          pageIndex.map(item => (
+            props.selected === item ? (
+              <button className="index-item index__selected"><span>{item}</span></button>
+            ) : (<button className="index-item"><span>{item}</span></button>)
+          ))
+        }
+        <div className="index-separator" />
+        <button className={props.selected === 'Contact' ? 'index__selected index-item-contact index-item' : 'index-item-contact index-item'}>
+          <span>Contact</span>
+        </button>
+      </div>
+    </Transition>
   );
 }
 
