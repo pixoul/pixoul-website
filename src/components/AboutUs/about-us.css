@@ -1,0 +1,44 @@
+.green_heading {
+    color: #2EC986;
+}
+
+.pink_heading {
+    color: pink;
+    /* TODO: figure out actual color */
+}
+
+.blue_heading {
+    color: #3180fb;
+}
+
+.purple_heading {
+    color: purple;
+    /* TODO: figure out actual color */
+}
+
+.orange_heading {
+    color: orange;
+    /* TODO: figure out actual color */
+}
+
+.light_blue_heading {
+    color: lightblue;
+    /* TODO: figure out actual color */
+}
+
+
+.pixoul_section_heading {}
+
+.pixoul_section_heading h1 {}
+
+.pixoul_section_heading h2 {}
+
+.pixoul_four_grid {}
+
+.pixoul_four_grid_item {}
+
+.pixoul_four_grid_item img {}
+
+.pixoul_four_grid_item h3 {}
+
+.pixoul_four_grid_item h4 {}
