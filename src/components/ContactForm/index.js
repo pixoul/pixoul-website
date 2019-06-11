@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import { CSSTransition } from "react-transition-group";
 import "./contact-form.css";
-
-const contactFormImages = {
-  envelope: require("../../images/contactFormEnvelope.png")
-};
+import envelope from "../../images/contactFormEnvelope.png";
 
 class PixoulContactForm extends Component {
   render() {
@@ -25,7 +22,7 @@ class PixoulContactForm extends Component {
         </CSSTransition>
         <div className="contact_section_img_container">
           <img
-            src={contactFormImages.envelope}
+            src={envelope}
             className="contact_section_img"
             alt="Contact Form Envelope"
           />
@@ -90,6 +87,7 @@ class PixoulContactForm extends Component {
           </form>
           
         </div>
+          </div>
         </CSSTransition>
       </div>
     );
