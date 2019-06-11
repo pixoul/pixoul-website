@@ -28,65 +28,70 @@ class PixoulContactForm extends Component {
           />
         </div>
         <CSSTransition
-            in={this.props.isVisible}
-            timeout={1000}
-            classNames="form-animation"
-            onEnter={() => {}}
-            onExited={() => {}}
-          >
-        <div className="contact_section_form_container">
-         
-          <form className="contact_section_form">
-            <div className="group">
-              <input
-                type="text"
-                id="contact_form_first_name"
-                required="required"
-              />
-              <label htmlFor="contact_form_first_name">
-                First Name <span className="asterix">*</span>
-              </label>
-            </div>
-            <div className="group">
-              <input
-                type="text"
-                id="contact_form_last_name"
-                required="required"
-              />
-              <label htmlFor="contact_form_last_name">
-                Last Name <span className="asterix">*</span>
-              </label>
-            </div>
-            <div className="group">
-              <input type="text" id="contact_form_email" required="required" />
-              <label htmlFor="contact_form_email">
-                Email <span className="asterix">*</span>
-              </label>
-            </div>
-            <div className="group">
-              <input type="text" id="contact_form_phone" required="required" />
-              <label htmlFor="contact_form_phone">
-                Phone <span className="asterix">*</span>
-              </label>
-            </div>
-            <div className="group group_last_child">
-              <input
-                type="text"
-                id="contact_form_interest"
-                required="required"
-              />
-              <label htmlFor="contact_form_interest">
-                I'm Interested In...<span className="asterix">*</span>
-              </label>
-            </div>
-            <div className="contact_form_submit_btn_container">
-              <button className="contact_form_submit_btn" value="submit">
-                Send
-              </button>
-            </div>
-          </form>
-          
-        </div>
+          in={this.props.isVisible}
+          timeout={1000}
+          classNames="form-animation"
+          onEnter={() => {}}
+          onExited={() => {}}
+        >
+          <div className="contact_section_form_container">
+            <form className="contact_section_form">
+              <div className="group">
+                <input
+                  type="text"
+                  id="contact_form_first_name"
+                  required="required"
+                />
+                <label htmlFor="contact_form_first_name">
+                  First Name <span className="asterix">*</span>
+                </label>
+              </div>
+              <div className="group">
+                <input
+                  type="text"
+                  id="contact_form_last_name"
+                  required="required"
+                />
+                <label htmlFor="contact_form_last_name">
+                  Last Name <span className="asterix">*</span>
+                </label>
+              </div>
+              <div className="group">
+                <input
+                  type="text"
+                  id="contact_form_email"
+                  required="required"
+                />
+                <label htmlFor="contact_form_email">
+                  Email <span className="asterix">*</span>
+                </label>
+              </div>
+              <div className="group">
+                <input
+                  type="text"
+                  id="contact_form_phone"
+                  required="required"
+                />
+                <label htmlFor="contact_form_phone">
+                  Phone <span className="asterix">*</span>
+                </label>
+              </div>
+              <div className="group group_last_child">
+                <input
+                  type="text"
+                  id="contact_form_interest"
+                  required="required"
+                />
+                <label htmlFor="contact_form_interest">
+                  I'm Interested In...<span className="asterix">*</span>
+                </label>
+              </div>
+              <div className="contact_form_submit_btn_container">
+                <button className="contact_form_submit_btn" value="submit">
+                  Send
+                </button>
+              </div>
+            </form>
           </div>
         </CSSTransition>
       </div>
