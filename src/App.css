@@ -388,6 +388,7 @@
 .label-animation-enter {
 	animation-name: stuckSlideShownH3;
 	animation-duration: .1s;
+	animation-delay: .9s;
 	animation-fill-mode: both;
 }
 
@@ -400,7 +401,7 @@
 
 .title-animation-enter {
 	animation-name: stuckSlideShownH2;
-	animation-delay: .05s;
+	animation-delay: .95s;
 	animation-duration: .3s;
 	animation-fill-mode: both;
 }
@@ -413,7 +414,7 @@
 
 .subtitle-animation-enter {
 	animation-name: stuckSlideShownH4;
-	animation-delay: .35s;
+	animation-delay: 1.25s;
 	animation-duration: .6s;
 	animation-fill-mode: both;
 }
@@ -464,3 +465,7 @@
 	}
 }
 /* Responsive */
+
+#fullpage {
+	 transition-delay: 0.9s !important;
+}

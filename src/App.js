@@ -1,4 +1,5 @@
 import React from "react";
+
 import ReactFullpage from "@fullpage/react-fullpage";
 import Tilt from "react-tilt";
 import { CSSTransition } from "react-transition-group";
@@ -58,6 +59,7 @@ class App extends React.Component {
             anchors={pageIndex}
             onLeave={this.onLeave}
             afterLoad={this.onSlideLoad}
+            scrollingSpeed={500}
             render={({ state, fullpageApi }) => {
               return (
                 <ReactFullpage.Wrapper>
@@ -108,7 +110,11 @@ class App extends React.Component {
                     <div className="content" id="content-01">
                       <CSSTransition
                         in={page === 1 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1000,
+                          exit: 350,
+                        }}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -117,7 +123,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 1 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1250,
+                          exit: 300,
+                        }}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -128,7 +138,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 1 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1850,
+                          exit: 900,
+                        }}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -157,7 +171,11 @@ class App extends React.Component {
                     <div className="content" id="content-02">
                       <CSSTransition
                         in={page === 2 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1000,
+                          exit: 350,
+                        }}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -166,7 +184,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 2 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1250,
+                          exit: 300,
+                        }}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -177,7 +199,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 2 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1850,
+                          exit: 900,
+                        }}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -207,7 +233,11 @@ class App extends React.Component {
                     <div className="content" id="content-03">
                       <CSSTransition
                         in={page === 3 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1000,
+                          exit: 350,
+                        }}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -216,7 +246,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 3 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1250,
+                          exit: 300,
+                        }}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -225,7 +259,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 3 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1850,
+                          exit: 900,
+                        }}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -254,7 +292,11 @@ class App extends React.Component {
                     <div className="content" id="content-04">
                       <CSSTransition
                         in={page === 4 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1000,
+                          exit: 350,
+                        }}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -263,7 +305,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 4 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1250,
+                          exit: 300,
+                        }}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -272,7 +318,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 4 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1850,
+                          exit: 900,
+                        }}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -301,7 +351,11 @@ class App extends React.Component {
                     <div className="content" id="content-05">
                       <CSSTransition
                         in={page === 5 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1000,
+                          exit: 350,
+                        }}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -310,7 +364,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 5 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1250,
+                          exit: 300,
+                        }}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -319,7 +377,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 5 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1850,
+                          exit: 900,
+                        }}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -348,7 +410,11 @@ class App extends React.Component {
                     <div className="content" id="content-06">
                       <CSSTransition
                         in={page === 6 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1000,
+                          exit: 350,
+                        }}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -357,7 +423,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 6 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1250,
+                          exit: 300,
+                        }}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -368,7 +438,11 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 6 && pageLoaded}
-                        timeout={1000}
+                        timeout={{
+                          appear: 0,
+                          enter: 1850,
+                          exit: 900,
+                        }}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
