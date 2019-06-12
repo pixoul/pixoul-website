@@ -28,6 +28,10 @@
 	src: url(fonts/Ikaros-Regular.otf);
 }
 
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
 .main-enter {
 	transform: scale(0.9);
 }
