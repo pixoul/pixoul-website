@@ -58,7 +58,7 @@ class PixoulContactForm extends Component {
               </div>
               <div className="group">
                 <input
-                  type="text"
+                  type="email"
                   id="contact_form_email"
                   required="required"
                   autocomplete="email"
@@ -69,7 +69,7 @@ class PixoulContactForm extends Component {
               </div>
               <div className="group">
                 <input
-                  type="text"
+                  type="tel"
                   id="contact_form_phone"
                   required="required"
                   autocomplete="tel"
