@@ -135,13 +135,18 @@
 	width: 281px;
 }
 
-.tilt {
+.Tilt {
 	position: absolute;
 	right: 136px;
 	top: calc(50% - 553px / 2);
 	max-width: 894px;
 	width: 90%;
 	height: 553px;
+	transform-style: preserve-3d;
+}
+
+.Tilt-inner {
+	transform: translateZ(50px);
 }
 
 .bg-img {
@@ -415,13 +420,13 @@
 	.section {
     padding: 0 20px;
 	}
-	.tilt {
+	.Tilt {
 		right: 5%;
 	}
 }
 
 @media (max-width: 767px) {
-	.tilt {
+	.Tilt {
 		position: relative;
 		width: 100%;
 		right: 0;
