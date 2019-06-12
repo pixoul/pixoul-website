@@ -174,7 +174,7 @@
 
 .title-animation-enter {
     animation-name: stuckSlideShownH2;
-    animation-delay: .05s;
+    animation-delay: .95s;
     animation-duration: .3s;
     animation-fill-mode: both;
 }
@@ -187,7 +187,7 @@
 
 .form-animation-enter {
     animation-name: contactsFormToBottom;
-    animation-delay: .5s;
+    animation-delay: 1.4s;
     animation-duration: .1s;
     animation-fill-mode: both;
 }
