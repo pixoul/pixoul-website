@@ -139,16 +139,16 @@ class App extends React.Component {
                       </CSSTransition>
                     </div>
                     <Tilt
-                      className="Tilt"
+                      className="tilt"
                       options={{
                         max: 20,
+                        axis: "x",
                         scale: 1,
-                        axis: "x"
                       }}
                     >
                       <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
-                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
+                    <LearnMore style={{ top: "212px", left: "32vw" }} />
                     <span className="watermark">01</span>
                   </div>
                   <div className="section">
@@ -186,7 +186,7 @@ class App extends React.Component {
                       </CSSTransition>
                     </div>
                     <Tilt
-                      className="Tilt"
+                      className="tilt"
                       options={{
                         max: 20,
                         scale: 1,
@@ -194,8 +194,8 @@ class App extends React.Component {
                       }}
                     >
                       <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
-                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
+                    <LearnMore style={{ top: "212px", left: "32vw" }} />
                     <span className="watermark">02</span>
                   </div>
                   <div className="section">
@@ -231,7 +231,7 @@ class App extends React.Component {
                       </CSSTransition>
                     </div>
                     <Tilt
-                      className="Tilt"
+                      className="tilt"
                       options={{
                         max: 20,
                         scale: 1,
@@ -239,8 +239,8 @@ class App extends React.Component {
                       }}
                     >
                       <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
-                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
+                    <LearnMore style={{ top: "212px", left: "32vw" }} />
                     <span className="watermark">03</span>
                   </div>
                   <div className="section">
@@ -276,7 +276,7 @@ class App extends React.Component {
                       </CSSTransition>
                     </div>
                     <Tilt
-                      className="Tilt"
+                      className="tilt"
                       options={{
                         max: 20,
                         scale: 1,
@@ -284,8 +284,8 @@ class App extends React.Component {
                       }}
                     >
                       <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
-                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
+                    <LearnMore style={{ top: "212px", left: "32vw" }} />
                     <span className="watermark">04</span>
                   </div>
                   <div className="section">
@@ -321,7 +321,7 @@ class App extends React.Component {
                       </CSSTransition>
                     </div>
                     <Tilt
-                      className="Tilt"
+                      className="tilt"
                       options={{
                         max: 20,
                         scale: 1,
@@ -329,8 +329,8 @@ class App extends React.Component {
                       }}
                     >
                       <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
-                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
+                    <LearnMore style={{ top: "212px", left: "32vw" }} />
                     <span className="watermark">05</span>
                   </div>
                   <div className="section">
@@ -368,7 +368,7 @@ class App extends React.Component {
                       </CSSTransition>
                     </div>
                     <Tilt
-                      className="Tilt"
+                      className="tilt"
                       options={{
                         max: 20,
                         scale: 1,
@@ -376,8 +376,8 @@ class App extends React.Component {
                       }}
                     >
                       <img src={bg06} alt="bg06" id="bg06" className="bg-img" />
-                      <LearnMore style={{ top: "212px", left: "32vw" }} />
                     </Tilt>
+                    <LearnMore style={{ top: "212px", left: "32vw" }} />
                     <span className="watermark">06</span>
                   </div>
                   <div className="section">

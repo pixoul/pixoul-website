@@ -66,3 +66,9 @@
 .index-item-contact {
   transform: translateY(100%) rotate(90deg);
 }
+
+@media (max-width: 1199px) {
+	.page-index {
+		display: none;
+	}
+}
