@@ -61,6 +61,7 @@ class PixoulContactForm extends Component {
                   type="text"
                   id="contact_form_email"
                   required="required"
+                  autocomplete="email"
                 />
                 <label htmlFor="contact_form_email">
                   Email <span className="asterix">*</span>
@@ -71,6 +72,7 @@ class PixoulContactForm extends Component {
                   type="text"
                   id="contact_form_phone"
                   required="required"
+                  autocomplete="tel"
                 />
                 <label htmlFor="contact_form_phone">
                   Phone <span className="asterix">*</span>
