@@ -5,7 +5,7 @@ import "./learnmore.css";
 const LearnMore = props => {
   return (
     <button
-      className="Tilt-inner learn-more pixoul_button"
+      className="learn-more pixoul_button"
       style={props.style}
       onClick={props.onClick}
     >

@@ -3,7 +3,6 @@
   display: flex;
   justify-content: stretch;
   align-items: center;
-  position: relative;
   transition: opacity .5s;
   animation-name: anchorLinkParallax;
   animation-duration: 1s;
@@ -57,4 +56,10 @@
   to {
     transform: translate3d(0, 0, 0)
   }
+}
+
+@media (max-width: 1199px) {
+	.learn-more {
+    display: none;
+	}
 }

@@ -139,9 +139,9 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 20,
-                        axis: "x",
+                        max: 15,
                         scale: 1,
+                        reverse: true,
                       }}
                     >
                       <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
@@ -188,9 +188,9 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 20,
-                        axis: "x",
+                        max: 15,
                         scale: 1,
+                        reverse: true,
                       }}
                     >
                       <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
@@ -237,8 +237,8 @@ class App extends React.Component {
                       className="Tilt"
                       options={{
                         max: '20',
-                        axis: "x",
                         scale: 1,
+                        reverse: true,
                       }}
                     >
                       <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
@@ -283,9 +283,9 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 20,
-                        axis: "x",
+                        max: 15,
                         scale: 1,
+                        reverse: true,
                       }}
                     >
                       <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
@@ -330,9 +330,9 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 20,
-                        axis: "x",
+                        max: 15,
                         scale: 1,
+                        reverse: true,
                       }}
                     >
                       <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
@@ -379,9 +379,9 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: 20,
-                        axis: "x",
+                        max: 15,
                         scale: 1,
+                        reverse: true,
                       }}
                     >
                       <img src={bg06} alt="bg06" id="bg06" className="bg-img" />

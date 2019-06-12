@@ -146,6 +146,7 @@
 }
 
 .Tilt-inner {
+	position: relative;
 	transform: translateZ(50px);
 	top: -62px;
 	left: -49px;
@@ -230,6 +231,7 @@
 	line-height: 689px;
 	top: 121px;
 	left: -210px;
+	z-index: -1;
 }
 
 /* Animation */
