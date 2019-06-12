@@ -17,10 +17,10 @@
 .contactus-button {
   border-radius: 26px;
   background-color: #3180fb;
-  width: 170px;
-  height: 44px;
+  width: 120px;
+  height: 28px;
   color: white;
-  font-size: 22px;
+  font-size: 15px;
   font-family: 'Poppins', sans-serif;
   margin-right: 56px;
   transition: all 0.3s ease-in-out;
@@ -32,7 +32,7 @@
 
 .hamburger-button {
   width: 39px;
-  height: 23px;
+  height: 28px;
 }
 
 button {
