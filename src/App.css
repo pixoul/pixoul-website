@@ -1,49 +1,49 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+	animation: App-logo-spin infinite 20s linear;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @font-face {
-  font-family: ikarosFont;
-  src: url(fonts/Ikaros-Regular.otf);
+	font-family: ikarosFont;
+	src: url(fonts/Ikaros-Regular.otf);
 }
 
 .main-enter {
-  transform: scale(0.9);
+	transform: scale(0.9);
 }
 
 .main-enter-active {
-  transform: scale(0.9);
-  transition: transform 300ms;
+	transform: scale(0.9);
+	transition: transform 300ms;
 }
 
 .main-exit {
-  transform: scale(0.9) ;
-  transition: transform 300ms;
+	transform: scale(0.9);
+	transition: transform 300ms;
 }
 
 .main__exited {
-  transform: scale(0.9);
+	transform: scale(0.9);
 }
 
 .pixoul_button {
@@ -141,9 +141,9 @@
 	font-size: 20px;
 	font-weight: 500;
 	color: #2EC986;
-  font-family: 'Poppins', sans-serif;
-  height: 0;
-  overflow: hidden;
+	font-family: 'Poppins', sans-serif;
+	height: 0;
+	overflow: hidden;
 }
 
 .title {
@@ -151,14 +151,14 @@
 	color: #374050;
 	margin-top: 38px;
 	font-weight: bold;
-  font-family: 'Lato', sans-serif;
-  margin-bottom: 4px;
-  overflow: hidden;
-  height: 0;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 4px;
+	overflow: hidden;
+	height: 0;
 }
 
 .description {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 .lucida-title {
@@ -167,24 +167,24 @@
 }
 
 #title-01 {
-  font-family: ikarosFont;
+	font-family: ikarosFont;
 }
 
 #content-04 .title {
-  font-family: 'Raleway', sans-serif;
-  margin-bottom: 0px;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 0px;
 }
 
 #content-04 .description {
-  margin-left: 35px;
-  font-size: 25px;
-  margin-bottom: 4px;
-  margin-top: -10px;
+	margin-left: 35px;
+	font-size: 25px;
+	margin-bottom: 4px;
+	margin-top: -10px;
 }
 
 #content-05 .title {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 16px;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 16px;
 }
 
 .subtitle {
@@ -214,39 +214,70 @@
 /* Animation */
 
 @keyframes stuckSlideShownH2 {
-  from {height: 0;}
-  to {height: 100%;}
+	from {
+		height: 0;
+	}
+
+	to {
+		height: 100%;
+	}
 }
 
 @keyframes stuckSlideHiddenH2 {
-  from {height: 100%;}
-  to {height: 0;}
+	from {
+		height: 100%;
+	}
+
+	to {
+		height: 0;
+	}
 }
 
 @keyframes stuckSlideShownH3 {
-  from {height: 0;}
-  to {height: 100%;}
+	from {
+		height: 0;
+	}
+
+	to {
+		height: 100%;
+	}
 }
 
 @keyframes stuckSlideHiddenH3 {
-  from {height: 100%;}
-  to {height: 0;}
+	from {
+		height: 100%;
+	}
+
+	to {
+		height: 0;
+	}
 }
 
 @keyframes stuckSlideShownH4 {
-	from {width: 0;}
-	to {width: 100%;}
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
 }
 
 @keyframes stuckSlideHiddenH4 {
-	from {width: 100%;}
-	to {width: 0;}
+	from {
+		width: 100%;
+	}
+
+	to {
+		width: 0;
+	}
 }
 
 @keyframes mainSliderH2Show {
 	from {
 		transform: translateY(-20vh);
 	}
+
 	to {
 		transform: translateY(0);
 	}
@@ -256,6 +287,7 @@
 	from {
 		transform: translateY(0);
 	}
+
 	to {
 		transform: translateY(-20vh);
 	}
@@ -266,6 +298,7 @@
 		transform: translateX(-250px);
 		opacity: 0;
 	}
+
 	to {
 		transform: translateX(0);
 		opacity: 1;
@@ -277,6 +310,7 @@
 		transform: translateX(0);
 		opacity: 1;
 	}
+
 	to {
 		transform: translateX(-250px);
 		opacity: 0;
@@ -302,47 +336,48 @@
 }
 
 .label-animation-enter {
-  animation-name: stuckSlideShownH3;
+	animation-name: stuckSlideShownH3;
 	animation-duration: .1s;
 	animation-fill-mode: both;
 }
 
 .label-animation-exit {
-  animation-name: stuckSlideHiddenH3;
+	animation-name: stuckSlideHiddenH3;
 	animation-duration: .1s;
 	animation-delay: .25s;
 	animation-fill-mode: both;
 }
 
 .title-animation-enter {
-  animation-name: stuckSlideShownH2;
+	animation-name: stuckSlideShownH2;
 	animation-delay: .05s;
 	animation-duration: .3s;
 	animation-fill-mode: both;
 }
 
 .title-animation-exit {
-  animation-name: stuckSlideHiddenH2;
+	animation-name: stuckSlideHiddenH2;
 	animation-duration: .3s;
-	animation-fill-mode: both; 
+	animation-fill-mode: both;
 }
 
 .subtitle-animation-enter {
-  animation-name: stuckSlideShownH4;
+	animation-name: stuckSlideShownH4;
 	animation-delay: .35s;
 	animation-duration: .6s;
 	animation-fill-mode: both;
 }
 
 .subtitle-animation-exit {
-  animation-name: stuckSlideHiddenH4;
+	animation-name: stuckSlideHiddenH4;
 	animation-delay: .3s;
 	animation-duration: .6s;
 	animation-fill-mode: both;
 }
 
-.label-animation-enter-done, .title-animation-enter-done {
-  height: 100%;
+.label-animation-enter-done,
+.title-animation-enter-done {
+	height: 100%;
 }
 
 .subtitle-animation-enter-done {
