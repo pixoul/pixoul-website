@@ -101,10 +101,8 @@
 	flex: 0.9;
 	overflow: hidden;
 	margin-bottom: 90px;
-	animation-duration: .75s;
-	animation-delay: 0s;
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	transform: translateY(-20vh);
+	visibility: hidden;
 }
 
 .first-description {
@@ -113,10 +111,8 @@
 	max-width: 455px;
 	overflow: hidden;
 	white-space: nowrap;
-	animation-duration: .75s;
-	animation-delay: 0s;
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	transform: translateX(-250px);
+	opacity: 0;
 }
 
 .section {
@@ -347,10 +343,9 @@
 .mainTitle-animation-enter {
 	animation-name: mainSliderH2Show;
 	animation-duration: .75s;
-	animation-delay: 0s;
+	animation-delay: .9s;
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-	
 }
 
 .mainTitle-animation-exit {
@@ -361,14 +356,15 @@
 	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-.mainTitle-animation-exit-done {
-	animation-name: mainSliderH2Hide;
+.mainTitle-animation-enter-done {
+	transform: translateY(0);
+	visibility: visible;
 }
 
 .mainText-animation-enter {
 	animation-name: mainSliderTextShow;
 	animation-duration: .75s;
-	animation-delay: 0s;
+	animation-delay: .9s;
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -381,8 +377,9 @@
 	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-.mainText-animation-exit-done {
-	animation-name: mainSliderTextHide;
+.mainText-animation-enter-done {
+	transform: translateX(0);
+	opacity: 1;
 }
 
 .label-animation-enter {
@@ -442,6 +439,10 @@
 .mainText-animation-enter-done {
 	transform: translateX(0);
 	opacity: 1;
+}
+
+.no-delay {
+	animation-delay: 0s;
 }
 
 /* Animation */

@@ -69,8 +69,11 @@ class App extends React.Component {
                       <div className="first-content__wrapper">
                         <CSSTransition
                           in={page === 0 && pageLoaded}
-                          timeout={750}
-                          mountOnEnter
+                          timeout={{
+                            appear: 0,
+                            enter: 1650,
+                            exit: 750,
+                          }}
                           classNames="mainTitle-animation"
                           onEnter={() => {}}
                           onExited={() => {}}
@@ -83,9 +86,12 @@ class App extends React.Component {
                           </div>
                         </CSSTransition>
                         <CSSTransition
-                          mountOnEnter
                           in={page === 0 && pageLoaded}
-                          timeout={750}
+                          timeout={{
+                            appear: 0,
+                            enter: 1650,
+                            exit: 750,
+                          }}
                           classNames="mainText-animation"
                           onEnter={() => {}}
                           onExited={() => {}}
