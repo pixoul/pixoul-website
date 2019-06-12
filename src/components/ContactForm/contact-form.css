@@ -5,8 +5,7 @@
     width: 100%;
 }
 
-.contact_section_img_container {
-}
+.contact_section_img_container {}
 
 .contact_section_img {
     position: absolute;
@@ -135,29 +134,41 @@
 }
 
 @keyframes stuckSlideShownH2 {
-    from {height: 0;}
-    to {height: 100%;}
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
 }
 
 @keyframes stuckSlideHiddenH2 {
-    from {height: 100%;}
-    to {height: 0;}
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 0;
+    }
 }
 
-@keyframes contactsFormToTop{
+@keyframes contactsFormToTop {
     from {
         bottom: 0;
     }
+
     to {
         top: 0;
     }
 }
 
-@keyframes contactsFormToBottom{
+@keyframes contactsFormToBottom {
     from {
         bottom: inherit;
         top: 0;
     }
+
     to {
         bottom: 0;
     }
@@ -169,11 +180,11 @@
     animation-duration: .3s;
     animation-fill-mode: both;
 }
-  
+
 .title-animation-exit {
     animation-name: stuckSlideHiddenH2;
     animation-duration: .3s;
-    animation-fill-mode: both; 
+    animation-fill-mode: both;
 }
 
 .form-animation-enter {
