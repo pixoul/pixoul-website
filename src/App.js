@@ -93,7 +93,6 @@ class App extends React.Component {
                           </div>
                         </CSSTransition>
                       </div>
- 
                       <button
                         className="pixoul_button"
                         style={{width: 0}}
@@ -101,7 +100,6 @@ class App extends React.Component {
                       >
                         <img src={downArrow} alt="downArrow" />
                       </button>
-
                     </div>
                   </div>
                   <div className="section">
@@ -141,15 +139,14 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: '20',
+                        max: 20,
                         axis: "x",
                         scale: 1,
                       }}
-                      style={{ backgroundColor: 'red'}}
                     >
                       <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore style={{ top: '-212px', left: '-20px' }} />
+                        <LearnMore />
                       </div>
                     </Tilt>
                     <span className="watermark">01</span>
@@ -191,15 +188,14 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: '20',
+                        max: 20,
                         axis: "x",
                         scale: 1,
                       }}
-                      style={{ backgroundColor: 'red'}}
                     >
-                      <img src={bg01} alt="bg02" id="bg02" className="bg-img" />
+                      <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore style={{ top: '-212px', left: '-20px' }} />
+                        <LearnMore />
                       </div>
                     </Tilt>
                     
@@ -244,11 +240,10 @@ class App extends React.Component {
                         axis: "x",
                         scale: 1,
                       }}
-                      style={{ backgroundColor: 'red'}}
                     >
-                      <img src={bg01} alt="bg03" id="bg03" className="bg-img" />
+                      <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore style={{ top: '-212px', left: '-20px' }} />
+                        <LearnMore />
                       </div>
                     </Tilt>
                     <span className="watermark">03</span>
@@ -288,15 +283,14 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: '20',
+                        max: 20,
                         axis: "x",
                         scale: 1,
                       }}
-                      style={{ backgroundColor: 'red'}}
                     >
-                      <img src={bg01} alt="bg04" id="bg04" className="bg-img" />
+                      <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore style={{ top: '-212px', left: '-20px' }} />
+                        <LearnMore />
                       </div>
                     </Tilt>
                     <span className="watermark">04</span>
@@ -336,15 +330,14 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: '20',
+                        max: 20,
                         axis: "x",
                         scale: 1,
                       }}
-                      style={{ backgroundColor: 'red'}}
                     >
-                      <img src={bg01} alt="bg05" id="bg05" className="bg-img" />
+                      <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore style={{ top: '-212px', left: '-20px' }} />
+                        <LearnMore />
                       </div>
                     </Tilt>
                     <span className="watermark">05</span>
@@ -386,15 +379,14 @@ class App extends React.Component {
                     <Tilt
                       className="Tilt"
                       options={{
-                        max: '20',
+                        max: 20,
                         axis: "x",
                         scale: 1,
                       }}
-                      style={{ backgroundColor: 'red'}}
                     >
-                      <img src={bg01} alt="bg06" id="bg06" className="bg-img" />
+                      <img src={bg06} alt="bg06" id="bg06" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore style={{ top: '-212px', left: '-20px' }} />
+                        <LearnMore />
                       </div>
                     </Tilt>
                     <span className="watermark">06</span>

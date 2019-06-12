@@ -147,6 +147,8 @@
 
 .Tilt-inner {
 	transform: translateZ(50px);
+	top: -62px;
+	left: -49px;
 }
 
 .bg-img {
