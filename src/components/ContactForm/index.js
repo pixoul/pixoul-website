@@ -12,11 +12,11 @@ class PixoulContactForm extends Component {
         <CSSTransition
           in={this.props.isVisible}
           timeout={{
-            appear: 0,
+            appear: 900,
             enter: 1250,
             exit: 300,
           }}
-          classNames="title-animation"
+          classNames="contact-title-animation"
           onEnter={() => {}}
           onExited={() => {}}
         >
@@ -34,7 +34,7 @@ class PixoulContactForm extends Component {
         <CSSTransition
           in={this.props.isVisible}
           timeout={{
-            appear: 0,
+            appear: 900,
             enter: 1500,
             exit: 50,
           }}
@@ -42,6 +42,7 @@ class PixoulContactForm extends Component {
           onEnter={() => {}}
           onExited={() => {}}
         >
+
           <div className="contact_section_form_container">
             <form className="contact_section_form">
               <div className="group">
@@ -103,6 +104,7 @@ class PixoulContactForm extends Component {
               </div>
             </form>
           </div>
+ 
         </CSSTransition>
       </div>
     );

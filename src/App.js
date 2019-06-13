@@ -45,6 +45,30 @@ class App extends React.Component {
   render() {
     const { showMenu, page, pageLoaded } = this.state;
     const pageIndex = ["00", "01", "02", "03", "04", "05", "06", "Contact"];
+    const labelTimeout = {
+      appear: 900,
+      enter: 1000,
+      exit: 350,
+    };
+
+    const titleTimeout = {
+      appear: 900,
+      enter: 1250,
+      exit: 300,
+    };
+
+    const subtitleTimeout={
+      appear: 900,
+      enter: 1850,
+      exit: 900,
+    };
+
+    const tiltOption = {
+      max: 15,
+      scale: 1,
+      reverse: true,
+    };
+
     return (
       <CSSTransition
         in={!showMenu}
@@ -70,7 +94,7 @@ class App extends React.Component {
                         <CSSTransition
                           in={page === 0 && pageLoaded}
                           timeout={{
-                            appear: 0,
+                            appear: 900,
                             enter: 1650,
                             exit: 750,
                           }}
@@ -88,7 +112,7 @@ class App extends React.Component {
                         <CSSTransition
                           in={page === 0 && pageLoaded}
                           timeout={{
-                            appear: 0,
+                            appear: 900,
                             enter: 1650,
                             exit: 750,
                           }}
@@ -116,11 +140,7 @@ class App extends React.Component {
                     <div className="content" id="content-01">
                       <CSSTransition
                         in={page === 1 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1000,
-                          exit: 350,
-                        }}
+                        timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -129,11 +149,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 1 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1250,
-                          exit: 300,
-                        }}
+                        timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -144,11 +160,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 1 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1850,
-                          exit: 900,
-                        }}
+                        timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -160,11 +172,7 @@ class App extends React.Component {
                     </div>
                     <Tilt
                       className="Tilt"
-                      options={{
-                        max: 15,
-                        scale: 1,
-                        reverse: true,
-                      }}
+                      options={tiltOption}
                     >
                       <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
                       <div className="Tilt-inner">
@@ -177,11 +185,7 @@ class App extends React.Component {
                     <div className="content" id="content-02">
                       <CSSTransition
                         in={page === 2 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1000,
-                          exit: 350,
-                        }}
+                        timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -190,11 +194,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 2 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1250,
-                          exit: 300,
-                        }}
+                        timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -205,11 +205,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 2 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1850,
-                          exit: 900,
-                        }}
+                        timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -221,11 +217,7 @@ class App extends React.Component {
                     </div>
                     <Tilt
                       className="Tilt"
-                      options={{
-                        max: 15,
-                        scale: 1,
-                        reverse: true,
-                      }}
+                      options={tiltOption}
                     >
                       <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
                       <div className="Tilt-inner">
@@ -239,11 +231,7 @@ class App extends React.Component {
                     <div className="content" id="content-03">
                       <CSSTransition
                         in={page === 3 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1000,
-                          exit: 350,
-                        }}
+                        timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -252,11 +240,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 3 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1250,
-                          exit: 300,
-                        }}
+                        timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -265,11 +249,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 3 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1850,
-                          exit: 900,
-                        }}
+                        timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -281,11 +261,7 @@ class App extends React.Component {
                     </div>
                     <Tilt
                       className="Tilt"
-                      options={{
-                        max: '20',
-                        scale: 1,
-                        reverse: true,
-                      }}
+                      options={tiltOption}
                     >
                       <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
                       <div className="Tilt-inner">
@@ -298,11 +274,7 @@ class App extends React.Component {
                     <div className="content" id="content-04">
                       <CSSTransition
                         in={page === 4 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1000,
-                          exit: 350,
-                        }}
+                        timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -311,11 +283,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 4 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1250,
-                          exit: 300,
-                        }}
+                        timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -324,11 +292,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 4 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1850,
-                          exit: 900,
-                        }}
+                        timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -340,11 +304,7 @@ class App extends React.Component {
                     </div>
                     <Tilt
                       className="Tilt"
-                      options={{
-                        max: 15,
-                        scale: 1,
-                        reverse: true,
-                      }}
+                      options={tiltOption}
                     >
                       <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
                       <div className="Tilt-inner">
@@ -357,11 +317,7 @@ class App extends React.Component {
                     <div className="content" id="content-05">
                       <CSSTransition
                         in={page === 5 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1000,
-                          exit: 350,
-                        }}
+                        timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -370,11 +326,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 5 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1250,
-                          exit: 300,
-                        }}
+                        timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -383,11 +335,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 5 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1850,
-                          exit: 900,
-                        }}
+                        timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -399,11 +347,7 @@ class App extends React.Component {
                     </div>
                     <Tilt
                       className="Tilt"
-                      options={{
-                        max: 15,
-                        scale: 1,
-                        reverse: true,
-                      }}
+                      options={tiltOption}
                     >
                       <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
                       <div className="Tilt-inner">
@@ -416,11 +360,7 @@ class App extends React.Component {
                     <div className="content" id="content-06">
                       <CSSTransition
                         in={page === 6 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1000,
-                          exit: 350,
-                        }}
+                        timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -429,11 +369,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 6 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1250,
-                          exit: 300,
-                        }}
+                        timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -444,11 +380,7 @@ class App extends React.Component {
                       </CSSTransition>
                       <CSSTransition
                         in={page === 6 && pageLoaded}
-                        timeout={{
-                          appear: 0,
-                          enter: 1850,
-                          exit: 900,
-                        }}
+                        timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
                         onExited={() => {}}
@@ -460,11 +392,7 @@ class App extends React.Component {
                     </div>
                     <Tilt
                       className="Tilt"
-                      options={{
-                        max: 15,
-                        scale: 1,
-                        reverse: true,
-                      }}
+                      options={tiltOption}
                     >
                       <img src={bg06} alt="bg06" id="bg06" className="bg-img" />
                       <div className="Tilt-inner">

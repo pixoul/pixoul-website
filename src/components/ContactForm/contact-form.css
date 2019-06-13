@@ -172,15 +172,31 @@
     }
 }
 
-.title-animation-enter {
+@keyframes stuckSlideShownSlideDown {
+    from {height: 0;}
+    to {height: auto;}
+}
+
+.contact-title-animation-enter {
     animation-name: stuckSlideShownH2;
     animation-delay: .95s;
     animation-duration: .3s;
     animation-fill-mode: both;
 }
 
-.title-animation-exit {
+.contact-title-animation-exit {
     animation-name: stuckSlideHiddenH2;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+}
+
+.contact-title-animation-enter-done {
+    height: 100%;
+}
+
+.form-slide-animation-enter {
+    animation-name: stuckSlideShownSlideDown;
+    animation-delay: .95s;
     animation-duration: .3s;
     animation-fill-mode: both;
 }
@@ -199,7 +215,7 @@
     animation-fill-mode: both;
 }
 
-.form-animation-enter-done {
+.form-slide-animation-enter-done, .form-animation-enter-done {
     height: auto;
     padding: 40px 30px;
 }
