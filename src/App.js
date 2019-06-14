@@ -95,7 +95,10 @@ class App extends React.Component {
         onExited={() => {}}
       >
         <div className={showMenu ? "main__exited" : ""}>
-          <Header onMenuPressed={this.onMenuButtonClicked} />
+          <Header
+            onMenuPressed={this.onMenuButtonClicked}
+            isAnimated={width > 1199}
+          />
           <ReactFullpage
             anchors={pageIndex}
             onLeave={this.onLeave}
@@ -435,7 +438,7 @@ class App extends React.Component {
                   <div className="section">
                     <PixoulContactForm
                       heading="Let's get to work."
-                      isVisible={page === 7 && width > 1199}
+                      isAnimated={page === 7 && width > 1199}
                     />
                   </div>
                 </ReactFullpage.Wrapper>

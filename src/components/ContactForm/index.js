@@ -5,12 +5,12 @@ import envelope from "../../images/contactFormEnvelope.png";
 
 class PixoulContactForm extends Component {
   render() {
-    const { heading } = this.props;
+    const { heading, isAnimated } = this.props;
 
     return (
       <div className="contact_section_container">
         <CSSTransition
-          in={this.props.isVisible}
+          in={isAnimated}
           timeout={{
             appear: 900,
             enter: 1250,
@@ -30,7 +30,7 @@ class PixoulContactForm extends Component {
           />
         </div>
         <CSSTransition
-          in={this.props.isVisible}
+          in={isAnimated}
           timeout={{
             appear: 900,
             enter: 1500,
@@ -40,7 +40,6 @@ class PixoulContactForm extends Component {
           onEnter={() => {}}
           onExited={() => {}}
         >
-
           <div className="contact_section_form_container">
             <form className="contact_section_form">
               <div className="group">

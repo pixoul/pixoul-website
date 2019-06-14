@@ -5,25 +5,30 @@ import logo from "../../images/logo.svg";
 import "./header.css";
 
 const Header = props => {
+  const { isAnimated } = props;
   return (
     <div className="header">
       <img className="logo" src={logo} alt="logoTitle" />
       <button className="pixoul_button contactus-button">
-        <Scramble
-          text="Contact Us"
-          mouseEnterTrigger="restart"
-          steps={[
-            {
-              roll: 3,
-              action: '+',
-              type: 'all',
-            },
-            {
-              action: '-',
-              type: 'forward',
-            },
-          ]}
-        />
+        {
+          isAnimated ? <Scramble
+            text="Contact Us"
+            mouseEnterTrigger="restart"
+            steps={[
+              {
+                roll: 3,
+                action: '+',
+                type: 'all',
+              },
+              {
+                action: '-',
+                type: 'forward',
+              },
+            ]}
+          /> : (
+            <span>Contact Us</span>
+          )
+        }
       </button>
       <button
         className="pixoul_button hamburger-button"
