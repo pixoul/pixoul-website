@@ -166,7 +166,7 @@ class App extends React.Component {
                   <div className="section">
                     <div className="content" id="content-01">
                       <CSSTransition
-                        in={page === 1 && pageLoaded}
+                        in={page === 1 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
@@ -175,7 +175,7 @@ class App extends React.Component {
                         <span className="label">Corporate Site</span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 1 && pageLoaded}
+                        in={page === 1 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
@@ -186,7 +186,7 @@ class App extends React.Component {
                         </span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 1 && pageLoaded}
+                        in={page === 1 && pageLoaded && width > 1199}
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
@@ -211,7 +211,7 @@ class App extends React.Component {
                   <div className="section">
                     <div className="content" id="content-02">
                       <CSSTransition
-                        in={page === 2 && pageLoaded}
+                        in={page === 2 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
@@ -220,7 +220,7 @@ class App extends React.Component {
                         <span className="label">Enterprise System</span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 2 && pageLoaded}
+                        in={page === 2 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
@@ -231,7 +231,7 @@ class App extends React.Component {
                         </span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 2 && pageLoaded}
+                        in={page === 2 && pageLoaded && width > 1199}
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
@@ -257,7 +257,7 @@ class App extends React.Component {
                   <div className="section">
                     <div className="content" id="content-03">
                       <CSSTransition
-                        in={page === 3 && pageLoaded}
+                        in={page === 3 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
@@ -266,7 +266,7 @@ class App extends React.Component {
                         <span className="label">Dashboard Matrix</span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 3 && pageLoaded}
+                        in={page === 3 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
@@ -275,7 +275,7 @@ class App extends React.Component {
                         <span className="title">hcp</span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 3 && pageLoaded}
+                        in={page === 3 && pageLoaded && width > 1199}
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
@@ -300,7 +300,7 @@ class App extends React.Component {
                   <div className="section">
                     <div className="content" id="content-04">
                       <CSSTransition
-                        in={page === 4 && pageLoaded}
+                        in={page === 4 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
@@ -309,7 +309,7 @@ class App extends React.Component {
                         <span className="label">Mobile App</span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 4 && pageLoaded}
+                        in={page === 4 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
@@ -318,7 +318,7 @@ class App extends React.Component {
                         <div className="title">Swank<div className="description">loans & financing</div></div>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 4 && pageLoaded}
+                        in={page === 4 && pageLoaded && width > 1199}
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
@@ -343,7 +343,7 @@ class App extends React.Component {
                   <div className="section">
                     <div className="content" id="content-05">
                       <CSSTransition
-                        in={page === 5 && pageLoaded}
+                        in={page === 5 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
@@ -352,7 +352,7 @@ class App extends React.Component {
                         <span className="label">Mobile App</span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 5 && pageLoaded}
+                        in={page === 5 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
@@ -361,7 +361,7 @@ class App extends React.Component {
                         <span className="title">MODA</span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 5 && pageLoaded}
+                        in={page === 5 && pageLoaded && width > 1199}
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
@@ -386,7 +386,7 @@ class App extends React.Component {
                   <div className="section">
                     <div className="content" id="content-06">
                       <CSSTransition
-                        in={page === 6 && pageLoaded}
+                        in={page === 6 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
@@ -395,7 +395,7 @@ class App extends React.Component {
                         <span className="label">E-Commerce Site</span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 6 && pageLoaded}
+                        in={page === 6 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
@@ -406,7 +406,7 @@ class App extends React.Component {
                         </span>
                       </CSSTransition>
                       <CSSTransition
-                        in={page === 6 && pageLoaded}
+                        in={page === 6 && pageLoaded && width > 1199}
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEnter={() => {}}
