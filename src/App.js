@@ -24,11 +24,25 @@ class App extends React.Component {
     page: 0,
     showMenu: false,
     pageLoaded: true,
+    autoScrolling: true,
+    width: window.innerWidth,
   };
 
   setShowMenu = showMenu => {
     this.setState({ showMenu });
   };
+
+  componentDidMount() {
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({ width: window.innerWidth });
+  }
 
   onLeave = (origin, destination, direction) => {
     this.setState({ page: destination.index, pageLoaded: false });
@@ -43,7 +57,7 @@ class App extends React.Component {
   };
 
   render() {
-    const { showMenu, page, pageLoaded } = this.state;
+    const { showMenu, page, pageLoaded, autoScrolling, width } = this.state;
     const pageIndex = ["00", "01", "02", "03", "04", "05", "06", "Contact"];
     const labelTimeout = {
       appear: 900,
@@ -68,7 +82,7 @@ class App extends React.Component {
       scale: 1,
       reverse: true,
     };
-
+    
     return (
       <CSSTransition
         in={!showMenu}
@@ -84,7 +98,21 @@ class App extends React.Component {
             onLeave={this.onLeave}
             afterLoad={this.onSlideLoad}
             scrollingSpeed={500}
+            autoScrolling={ autoScrolling }
             render={({ state, fullpageApi }) => {
+              if(fullpageApi) {
+                if(width > 1199 && !autoScrolling) {
+                  this.setState({ autoScrolling: true }, () => {
+                    fullpageApi.setAutoScrolling(true);
+                  });
+                }
+                else if(width <= 1199 && autoScrolling) {
+                  this.setState({ autoScrolling: false }, () => {
+                    fullpageApi.setAutoScrolling(false);
+                  });
+                }
+              }
+              
               return (
                 <ReactFullpage.Wrapper>
                   <div className="section" id="first">
