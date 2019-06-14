@@ -225,7 +225,7 @@
     .contact_section_form_container {
         width: 100%;
         right: 0;
-       
+        box-shadow: none;
     }
     .contact_section_img_container {
         display: none;
