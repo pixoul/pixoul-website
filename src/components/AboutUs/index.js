@@ -14,8 +14,8 @@ class AboutUsPage extends React.Component {
     return (
       <div className="about_us_page">
         <div className="section">
-          <div className="first-content">
-            <div className="first-content__wrapper">
+          <div className="">
+            <div className="">
               <CSSTransition
                 //   in={page === 0}
                 timeout={1000}
@@ -23,7 +23,7 @@ class AboutUsPage extends React.Component {
                 onEnter={() => {}}
                 onExited={() => {}}
               >
-                <div className="green_heading mainTitle-animation-enter">
+                <div className="green_heading top_about_us_heading mainTitle-animation-enter">
                   Hey there, neighbor.
                 </div>
               </CSSTransition>
@@ -34,7 +34,7 @@ class AboutUsPage extends React.Component {
                 onEnter={() => {}}
                 onExited={() => {}}
               >
-                <div className="first-description mainText-animation-enter">
+                <div className="top_about_us_heading_text mainText-animation-enter">
                   We’re here to bring life to your digital
                   <br />
                   vision. Got a project in mind?
@@ -45,9 +45,8 @@ class AboutUsPage extends React.Component {
             </div>
 
             <button
-              className="pixoul_button"
-              style={{ width: 0 }}
               onClick={() => fullpageApi.moveSectionDown()}
+              className="page_down_button_centered pixoul_button"
             >
               <img src={downArrow} alt="downArrow" />
             </button>
@@ -58,13 +57,17 @@ class AboutUsPage extends React.Component {
             <h1>What we value.</h1>
             <h2>
               Our work belongs to the digital world, but our hearts belong to
-              you. Building digital products takes a little planning, a dash of
-              percision, and a whole lotta love.
+              you. Building digital
+              <br />
+              products takes a little planning, a dash of percision, and a whole
+              lotta love.
             </h2>
           </div>
           <div className="pixoul_four_grid">
             <div className="pixoul_four_grid_item">
-              <img src={spaceship} alt="Spaceship" />
+              <div className="pixoul_four_grid_item_img_container">
+                <img src={spaceship} alt="Spaceship" />
+              </div>
               <h3 className="blue_heading">We strive for innovation.</h3>
               <h4>
                 We make useful, long-lasting products that set the standard for
@@ -72,7 +75,9 @@ class AboutUsPage extends React.Component {
               </h4>
             </div>
             <div className="pixoul_four_grid_item">
-              <img src={people} alt="People" />
+              <div className="pixoul_four_grid_item_img_container">
+                <img src={people} alt="People" />
+              </div>
               <h3 className="blue_heading">You're our first priority.</h3>
               <h4>
                 Our main goal always lies at the intersection of your user's
@@ -80,7 +85,9 @@ class AboutUsPage extends React.Component {
               </h4>
             </div>
             <div className="pixoul_four_grid_item">
-              <img src={cloud} alt="Cloud data" />
+              <div className="pixoul_four_grid_item_img_container">
+                <img src={cloud} alt="Cloud data" />
+              </div>
               <h3 className="blue_heading">Solutions should be simple.</h3>
               <h4>
                 Our work will bring about novel, custom solutions to fit your
@@ -88,7 +95,9 @@ class AboutUsPage extends React.Component {
               </h4>
             </div>
             <div className="pixoul_four_grid_item">
-              <img src={thumbsup} alt="Thumbs up" />
+              <div className="pixoul_four_grid_item_img_container">
+                <img src={thumbsup} alt="Thumbs up" />
+              </div>
               <h3 className="blue_heading">Good design is minimal design.</h3>
               <h4>
                 We craft with a purposeful, simple, and minimal design
@@ -115,7 +124,11 @@ class AboutUsPage extends React.Component {
             <div className="pixoul_adjustable_columns_item">
               <h3 className="pink_heading">IoT Devices</h3>
               <h4>"Hey Alexa..."</h4>
-              <img src={alexadevices} alt="Alexa devices" />
+              <img
+                className="alex_devices_img"
+                src={alexadevices}
+                alt="Alexa devices"
+              />
             </div>
             <div className="pixoul_adjustable_columns_item">
               <h3 className="blue_heading">Sites & Apps</h3>
@@ -136,6 +149,9 @@ class AboutUsPage extends React.Component {
               <h3 className="light_blue_heading">Wearables and Beyond</h3>
               <h4>From WatchOS to AR/VR technologies, we've seen it all.</h4>
             </div>
+          </div>
+          <div className="pixoul_button_section">
+            <button className="green_button pixoul_button">Recent Work</button>
           </div>
         </div>
         <div className="section">

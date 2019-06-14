@@ -32,6 +32,11 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+.page_down_button_centered {
+	margin: 10rem auto 12rem;
+	display: block;
+}
+
 .main-enter {
 	transform: scale(0.9);
 }
@@ -447,12 +452,13 @@
 
 /* Animation */
 
-/* Responsive */ 
+/* Responsive */
 
 @media (max-width: 1199px) {
 	.section {
-    padding: 0 20px;
+		padding: 0 20px;
 	}
+
 	.Tilt {
 		right: 5%;
 	}
@@ -465,8 +471,9 @@
 		right: 0;
 	}
 }
+
 /* Responsive */
 
 #fullpage {
-	 transition-delay: 0.9s !important; 
+	transition-delay: 0.9s !important;
 }
