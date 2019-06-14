@@ -461,8 +461,13 @@
 	.title, .label {
 		height: auto;
 	}
+	
 	.subtitle {
 		width: auto;
+	}
+
+	.watermark {
+		display: none;
 	}
 }
 
