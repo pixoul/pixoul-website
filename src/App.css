@@ -465,6 +465,16 @@
 }
 
 @media (max-width: 767px) {
+	.first-content {
+		position: relative;
+		left: 0;
+		transform: none;
+	}
+	
+	.first-description {
+		white-space: normal;
+	}
+
 	.Tilt {
 		position: relative;
 		width: 100%;
