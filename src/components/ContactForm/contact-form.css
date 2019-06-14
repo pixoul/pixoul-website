@@ -127,10 +127,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.contact_form_submit_btn:hover {
-    transform: translateY(-3px);
-}
-
 @keyframes stuckSlideShownH2 {
     from {
         height: 0;
