@@ -1,7 +1,7 @@
 import React from "react";
 import Scramble from 'react-scramble'
 import logo from "../../images/logo.svg";
-import HamburgerMenuImg from "../../images/HamburgerMenu.png";
+
 import "./header.css";
 
 const Header = props => {
@@ -29,7 +29,11 @@ const Header = props => {
         className="pixoul_button hamburger-button"
         onClick={props.onMenuPressed}
       >
-        <img src={HamburgerMenuImg} alt="Hamburger" />
+        <div>
+          <span id="span-1"></span>
+          <span id="span-2"></span>
+          <span id="span-3"></span>
+        </div>
       </button>
     </div>
   );
