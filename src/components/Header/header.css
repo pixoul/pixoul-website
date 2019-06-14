@@ -46,6 +46,53 @@
 .hamburger-button {
   width: 39px;
   height: 28px;
+  padding: 0;
+}
+
+.hamburger-button div {
+  position: relative;
+  width: 100%;
+}
+
+.hamburger-button div span {
+  left: 0;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #374050;
+  transition: .3s;
+  overflow: hidden;
+  border-radius: 1.5px;
+}
+
+.hamburger-button:hover div span:before {
+  transform: translateX(39px);
+}
+
+.hamburger-button div span:before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 3px;
+  background: white;
+  transition: .6s;
+  transform: translateX(-3px);
+}
+
+.hamburger-button div span#span-2:before {
+  transition: .8s;
+}
+.hamburger-button div span#span-3:before {
+  transition: 1s;
+}
+
+#span-2 {
+  margin-top: 7px;
+}
+
+#span-3 {
+  margin-top: 7px;
+  width: 29px;
 }
 
 button {
