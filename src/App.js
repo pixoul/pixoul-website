@@ -1,6 +1,7 @@
 import React from "react";
 
 import ReactFullpage from "@fullpage/react-fullpage";
+
 import Tilt from "react-tilt";
 import { CSSTransition } from "react-transition-group";
 import PixoulContactForm from "./components/ContactForm/index";
@@ -18,6 +19,7 @@ import bg06 from "./images/bg06.png";
 import fusemap from "./images/fusemap.png";
 import downArrow from "./images/ic_arrow_forward.png";
 import artisanLogo from "./images/artisanLogo.png";
+var cn = require('classnames');
 
 class App extends React.Component {
   state = {
@@ -83,6 +85,7 @@ class App extends React.Component {
       reverse: true,
     };
     
+
     return (
       <CSSTransition
         in={!showMenu}
@@ -122,7 +125,7 @@ class App extends React.Component {
                     <div className="first-content">
                       <div className="first-content__wrapper">
                         <CSSTransition
-                          in={page === 0 && pageLoaded && width > 1199}
+                          in={page === 0 && pageLoaded}
                           timeout={{
                             appear: 900,
                             enter: 1650,
@@ -138,7 +141,7 @@ class App extends React.Component {
                           </div>
                         </CSSTransition>
                         <CSSTransition
-                          in={page === 0 && pageLoaded && width > 1199}
+                          in={page === 0 && pageLoaded}
                           timeout={{
                             appear: 900,
                             enter: 1650,
