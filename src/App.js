@@ -19,7 +19,6 @@ import bg06 from "./images/bg06.png";
 import fusemap from "./images/fusemap.png";
 import downArrow from "./images/ic_arrow_forward.png";
 import artisanLogo from "./images/artisanLogo.png";
-var cn = require('classnames');
 
 class App extends React.Component {
   state = {
@@ -179,7 +178,7 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="label">Corporate Site</span>
+                        <div className="label">Corporate Site</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 1 && pageLoaded && width > 1199}
@@ -188,9 +187,9 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="title" id="title-01">
+                        <div className="title" id="title-01">
                           IKAR<span className="lucida-title">Ū</span>S
-                        </span>
+                        </div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 1 && pageLoaded && width > 1199}
@@ -199,9 +198,9 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="subtitle">
+                        <div className="subtitle">
                           is redefining the business<br/> marketplace.
-                        </span>
+                        </div>
                       </CSSTransition>
                     </div>
                     <Tilt
@@ -224,7 +223,7 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="label">Enterprise System</span>
+                        <div className="label">Enterprise System</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 2 && pageLoaded && width > 1199}
@@ -233,9 +232,9 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="title">
+                        <div className="title">
                           <img src={fusemap} alt="fusemap" />
-                        </span>
+                        </div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 2 && pageLoaded && width > 1199}
@@ -244,9 +243,9 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="subtitle">
+                        <div className="subtitle">
                           is thinking smarter about how <br/>we power the world.
-                        </span>
+                        </div>
                       </CSSTransition>
                     </div>
                     <Tilt
@@ -270,7 +269,7 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="label">Dashboard Matrix</span>
+                        <div className="label">Dashboard Matrix</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 3 && pageLoaded && width > 1199}
@@ -279,7 +278,7 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="title">hcp</span>
+                        <div className="title">hcp</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 3 && pageLoaded && width > 1199}
@@ -288,9 +287,9 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="subtitle">
+                        <div className="subtitle">
                           is setting the standard in <br/>healthcare—literally.
-                        </span>
+                        </div>
                       </CSSTransition>
                     </div>
                     <Tilt
@@ -313,7 +312,7 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="label">Mobile App</span>
+                        <div className="label">Mobile App</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 4 && pageLoaded && width > 1199}
@@ -331,9 +330,9 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="subtitle">
+                        <div className="subtitle">
                           is financing the future of<br/>personal banking loans.
-                        </span>
+                        </div>
                       </CSSTransition>
                     </div>
                     <Tilt
@@ -356,7 +355,7 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="label">Mobile App</span>
+                        <div className="label">Mobile App</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 5 && pageLoaded && width > 1199}
@@ -365,7 +364,7 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="title">MODA</span>
+                        <div className="title">MODA</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 5 && pageLoaded && width > 1199}
@@ -374,9 +373,9 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="subtitle">
+                        <div className="subtitle">
                           is reworking your wardrobe, one<br/>piece at a time.
-                        </span>
+                        </div>
                       </CSSTransition>
                     </div>
                     <Tilt
@@ -399,7 +398,7 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="label">E-Commerce Site</span>
+                        <div className="label">E-Commerce Site</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 6 && pageLoaded && width > 1199}
@@ -408,9 +407,9 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="title">
+                        <div className="title">
                           <img src={artisanLogo} alt="artisan" />
-                        </span>
+                        </div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 6 && pageLoaded && width > 1199}
@@ -419,9 +418,9 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <span className="subtitle">
+                        <div className="subtitle">
                           is making a treat of wholesale<br/>subscriptions.
-                        </span>
+                        </div>
                       </CSSTransition>
                     </div>
                     <Tilt
