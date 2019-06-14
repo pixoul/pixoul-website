@@ -26,8 +26,21 @@
   transition: all 0.3s ease-in-out;
 }
 
-.contactus-button:hover {
-  transform: translateY(-3px);
+.contactus-button span:after {
+  content: "";
+  position: relative;
+  width: 0;
+  height: 1px;
+  display: block;
+  z-index: 100;
+  background-color: #fff;
+  transition: .3s ease-out all;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contactus-button span:hover:after {
+  width: 80%;
 }
 
 .hamburger-button {
