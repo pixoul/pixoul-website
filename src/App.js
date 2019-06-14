@@ -99,6 +99,7 @@ class App extends React.Component {
             afterLoad={this.onSlideLoad}
             scrollingSpeed={500}
             autoScrolling={ autoScrolling }
+            fitToSection={false}
             render={({ state, fullpageApi }) => {
               if(fullpageApi) {
                 if(width > 1199 && !autoScrolling) {
@@ -120,15 +121,13 @@ class App extends React.Component {
                     <div className="first-content">
                       <div className="first-content__wrapper">
                         <CSSTransition
-                          in={page === 0 && pageLoaded}
+                          in={page === 0 && pageLoaded && width > 1199}
                           timeout={{
                             appear: 900,
                             enter: 1650,
                             exit: 750,
                           }}
                           classNames="mainTitle-animation"
-                          onEnter={() => {}}
-                          onExited={() => {}}
                         >
                           <div className="first-title mainTitle-animation-enter">
                             Pixoul
@@ -138,7 +137,7 @@ class App extends React.Component {
                           </div>
                         </CSSTransition>
                         <CSSTransition
-                          in={page === 0 && pageLoaded}
+                          in={page === 0 && pageLoaded && width > 1199}
                           timeout={{
                             appear: 900,
                             enter: 1650,
