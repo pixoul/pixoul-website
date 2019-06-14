@@ -100,6 +100,7 @@ class App extends React.Component {
             scrollingSpeed={500}
             autoScrolling={ autoScrolling }
             fitToSection={false}
+
             render={({ state, fullpageApi }) => {
               if(fullpageApi) {
                 if(width > 1199 && !autoScrolling) {
@@ -431,7 +432,7 @@ class App extends React.Component {
                   <div className="section">
                     <PixoulContactForm
                       heading="Let's get to work."
-                      isVisible={page === 7}
+                      isVisible={page === 7 && width > 1199}
                     />
                   </div>
                 </ReactFullpage.Wrapper>

@@ -122,7 +122,6 @@
 
 .section {
 	width: 100%;
-	padding: 0 80px;
 	box-sizing: border-box;
 }
 
@@ -455,10 +454,6 @@
 /* Responsive */
 
 @media (max-width: 1199px) {
-	.section {
-		padding: 0 20px;
-	}
-
 	.Tilt {
 		right: 5%;
 	}
@@ -472,6 +467,14 @@
 }
 
 @media (max-width: 767px) {
+	.content {
+		position: static;
+	}
+
+	.section {
+		padding: 0 20px;
+	}
+
 	.first-content {
 		position: relative;
 		left: 0;
@@ -486,6 +489,8 @@
 		position: relative;
 		width: 100%;
 		right: 0;
+		top: 0;
+		height: auto;
 	}
 }
 
