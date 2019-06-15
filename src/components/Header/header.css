@@ -99,3 +99,9 @@ button {
   border: none;
   background-color: transparent;
 }
+
+@media (max-width: 1199px) {
+  .header {
+    position: absolute;
+  }
+}
