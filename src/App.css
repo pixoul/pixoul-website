@@ -94,7 +94,6 @@
 
 .first-content {
 	left: 40%;
-	/* TODO: check with Devon to see if they want this centered...mockup currently is slightly left aligned*/
 	transform: translate(-50%, -50%);
 	position: absolute;
 }
@@ -104,6 +103,12 @@
 	border: none;
 	align-self: flex-start;
 	margin-top: 10%;
+	padding-left: 0;
+}
+
+.landing-page-button img:hover {
+	transform: translateY(5px);
+	transition: transform 300ms;
 }
 
 .first-title {
@@ -378,7 +383,7 @@
 .landing-page-blue-line-animation {
 	animation-name: landingPageBlueLine;
 	animation-duration: .75s;
-	animation-delay: .9s;
+	animation-delay: .4s;
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -386,7 +391,7 @@
 .landing-page-button-animation {
 	animation-name: landingPageButton;
 	animation-duration: .75s;
-	animation-delay: .9s;
+	animation-delay: 1s;
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
