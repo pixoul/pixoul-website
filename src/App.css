@@ -62,11 +62,17 @@
 .blue_line_under_title {
 	position: relative;
 	background: #3180FB;
-	width: 170px;
+	width: 0px;
 	height: 5px;
 	margin-top: 10%;
 	left: 0;
 	border-radius: 15px;
+	opacity: 0;
+}
+
+.landing-page-button {
+	transform: translateY(-50px);
+	opacity: 0;
 }
 
 #first {
@@ -106,8 +112,8 @@
 	flex: 0.9;
 	overflow: hidden;
 	margin-bottom: 90px;
-	transform: translateY(-20vh);
-	visibility: hidden;
+	/* transform: translateY(-20vh); */
+	/* visibility: hidden; */
 }
 
 .first-description {
@@ -116,8 +122,8 @@
 	max-width: 455px;
 	overflow: hidden;
 	white-space: nowrap;
-	transform: translateX(-250px);
-	opacity: 0;
+	/* transform: translateX(-250px); */
+	/* opacity: 0; */
 }
 
 .section {
@@ -345,6 +351,46 @@
 	}
 }
 
+@keyframes landingPageBlueLine {
+	from {
+		width: 0;
+		opacity: 0;
+	}
+
+	to {
+		width: 170px;
+		opacity: 1;
+	}
+}
+
+@keyframes landingPageButton {
+	from {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.landing-page-blue-line-animation {
+	animation-name: landingPageBlueLine;
+	animation-duration: .75s;
+	animation-delay: .9s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.landing-page-button-animation {
+	animation-name: landingPageButton;
+	animation-duration: .75s;
+	animation-delay: .9s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
 .mainTitle-animation-enter {
 	animation-name: mainSliderH2Show;
 	animation-duration: .75s;
@@ -459,7 +505,8 @@
 		right: 5%;
 	}
 
-	.title, .label {
+	.title,
+	.label {
 		height: auto;
 	}
 
@@ -486,7 +533,7 @@
 		left: 0;
 		transform: none;
 	}
-	
+
 	.first-description {
 		white-space: normal;
 	}

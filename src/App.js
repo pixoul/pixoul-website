@@ -26,7 +26,7 @@ class App extends React.Component {
     showMenu: false,
     pageLoaded: true,
     autoScrolling: true,
-    width: window.innerWidth,
+    width: window.innerWidth
   };
 
   setShowMenu = showMenu => {
@@ -34,16 +34,16 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener("resize", this.updateWindowDimensions);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
+    window.removeEventListener("resize", this.updateWindowDimensions);
   }
 
   updateWindowDimensions = () => {
     this.setState({ width: window.innerWidth });
-  }
+  };
 
   onLeave = (origin, destination, direction) => {
     this.setState({ page: destination.index, pageLoaded: false });
@@ -51,7 +51,7 @@ class App extends React.Component {
 
   onSlideLoad = (section, origin, destination, direction) => {
     this.setState({ pageLoaded: true });
-  }
+  };
 
   onMenuButtonClicked = () => {
     this.setShowMenu(!this.state.showMenu);
@@ -63,27 +63,26 @@ class App extends React.Component {
     const labelTimeout = {
       appear: 900,
       enter: 1000,
-      exit: 350,
+      exit: 350
     };
 
     const titleTimeout = {
       appear: 900,
       enter: 1250,
-      exit: 300,
+      exit: 300
     };
 
-    const subtitleTimeout={
+    const subtitleTimeout = {
       appear: 900,
       enter: 1850,
-      exit: 900,
+      exit: 900
     };
 
     const tiltOption = {
       max: 15,
       scale: 1,
-      reverse: true,
+      reverse: true
     };
-    
 
     return (
       <CSSTransition
@@ -103,70 +102,70 @@ class App extends React.Component {
             onLeave={this.onLeave}
             afterLoad={this.onSlideLoad}
             scrollingSpeed={500}
-            autoScrolling={ autoScrolling }
+            autoScrolling={autoScrolling}
             fitToSection={false}
-
             render={({ state, fullpageApi }) => {
-              if(fullpageApi) {
-                if(width > 1199 && !autoScrolling) {
+              if (fullpageApi) {
+                if (width > 1199 && !autoScrolling) {
                   this.setState({ autoScrolling: true }, () => {
                     fullpageApi.setAutoScrolling(true);
                   });
-                }
-                else if(width <= 1199 && autoScrolling) {
+                } else if (width <= 1199 && autoScrolling) {
                   this.setState({ autoScrolling: false }, () => {
                     fullpageApi.setAutoScrolling(false);
                   });
                 }
               }
-              
+
               return (
                 <ReactFullpage.Wrapper>
                   <div className="section" id="first">
                     <img src={bgImage} alt="bgImage" className="bg-image" />
                     <div className="first-content">
                       <div className="first-content__wrapper">
-                        <CSSTransition
-                          in={page === 0 && pageLoaded}
-                          timeout={{
-                            appear: 900,
-                            enter: 1650,
-                            exit: 750,
-                          }}
-                          classNames="mainTitle-animation"
-                        >
-                          <div className="first-title mainTitle-animation-enter">
-                            Pixoul
-                            <br />
-                            Agency & Consultancy
-                            <div className="blue_line_under_title" />
-                          </div>
-                        </CSSTransition>
-                        <CSSTransition
-                          in={page === 0 && pageLoaded}
-                          timeout={{
-                            appear: 900,
-                            enter: 1650,
-                            exit: 750,
-                          }}
-                          classNames="mainText-animation"
-                          onEnter={() => {}}
-                          onExited={() => {}}
-                        >
-                          <div className="first-description mainText-animation-enter">
-                            We’re a UX design agency, full-stack<br/>development shop,
-                            and strategic<br/>consulting group—ready to bring your<br/>
-                            digital vision to life.
-                          </div>
-                        </CSSTransition>
+                        <div className="first-title">
+                          Pixoul
+                          <br />
+                          Agency & Consultancy
+                          <CSSTransition
+                            in={page === 0 && pageLoaded}
+                            timeout={{
+                              appear: 900,
+                              enter: 1650,
+                              exit: 750
+                            }}
+                            classNames=""
+                          >
+                            <div className="blue_line_under_title landing-page-blue-line-animation" />
+                          </CSSTransition>
+                        </div>
+                        <div className="first-description">
+                          We’re a UX design agency, full-stack
+                          <br />
+                          development shop, and strategic
+                          <br />
+                          consulting group—ready to bring your
+                          <br />
+                          digital vision to life.
+                        </div>
                       </div>
-                      <button
-                        className="pixoul_button"
-                        style={{width: 0}}
-                        onClick={() => fullpageApi.moveSectionDown()}
+                      <CSSTransition
+                        in={page === 0 && pageLoaded}
+                        timeout={{
+                          appear: 900,
+                          enter: 1650,
+                          exit: 750
+                        }}
+                        classNames=""
                       >
-                        <img src={downArrow} alt="downArrow" />
-                      </button>
+                        <button
+                          className="pixoul_button landing-page-button landing-page-button-animation"
+                          style={{ width: 0 }}
+                          onClick={() => fullpageApi.moveSectionDown()}
+                        >
+                          <img src={downArrow} alt="downArrow" />
+                        </button>
+                      </CSSTransition>
                     </div>
                   </div>
                   <div className="section">
@@ -199,14 +198,12 @@ class App extends React.Component {
                         onExited={() => {}}
                       >
                         <div className="subtitle">
-                          is redefining the business<br/> marketplace.
+                          is redefining the business
+                          <br /> marketplace.
                         </div>
                       </CSSTransition>
                     </div>
-                    <Tilt
-                      className="Tilt"
-                      options={tiltOption}
-                    >
+                    <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
                       <div className="Tilt-inner">
                         <LearnMore />
@@ -244,20 +241,18 @@ class App extends React.Component {
                         onExited={() => {}}
                       >
                         <div className="subtitle">
-                          is thinking smarter about how <br/>we power the world.
+                          is thinking smarter about how <br />
+                          we power the world.
                         </div>
                       </CSSTransition>
                     </div>
-                    <Tilt
-                      className="Tilt"
-                      options={tiltOption}
-                    >
+                    <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
                       <div className="Tilt-inner">
                         <LearnMore />
                       </div>
                     </Tilt>
-                    
+
                     <span className="watermark">02</span>
                   </div>
                   <div className="section">
@@ -288,14 +283,12 @@ class App extends React.Component {
                         onExited={() => {}}
                       >
                         <div className="subtitle">
-                          is setting the standard in <br/>healthcare—literally.
+                          is setting the standard in <br />
+                          healthcare—literally.
                         </div>
                       </CSSTransition>
                     </div>
-                    <Tilt
-                      className="Tilt"
-                      options={tiltOption}
-                    >
+                    <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
                       <div className="Tilt-inner">
                         <LearnMore />
@@ -321,7 +314,10 @@ class App extends React.Component {
                         onEnter={() => {}}
                         onExited={() => {}}
                       >
-                        <div className="title">Swank<div className="description">loans & financing</div></div>
+                        <div className="title">
+                          Swank
+                          <div className="description">loans & financing</div>
+                        </div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 4 && pageLoaded && width > 1199}
@@ -331,14 +327,13 @@ class App extends React.Component {
                         onExited={() => {}}
                       >
                         <div className="subtitle">
-                          is financing the future of<br/>personal banking loans.
+                          is financing the future of
+                          <br />
+                          personal banking loans.
                         </div>
                       </CSSTransition>
                     </div>
-                    <Tilt
-                      className="Tilt"
-                      options={tiltOption}
-                    >
+                    <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
                       <div className="Tilt-inner">
                         <LearnMore />
@@ -374,14 +369,13 @@ class App extends React.Component {
                         onExited={() => {}}
                       >
                         <div className="subtitle">
-                          is reworking your wardrobe, one<br/>piece at a time.
+                          is reworking your wardrobe, one
+                          <br />
+                          piece at a time.
                         </div>
                       </CSSTransition>
                     </div>
-                    <Tilt
-                      className="Tilt"
-                      options={tiltOption}
-                    >
+                    <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
                       <div className="Tilt-inner">
                         <LearnMore />
@@ -419,14 +413,13 @@ class App extends React.Component {
                         onExited={() => {}}
                       >
                         <div className="subtitle">
-                          is making a treat of wholesale<br/>subscriptions.
+                          is making a treat of wholesale
+                          <br />
+                          subscriptions.
                         </div>
                       </CSSTransition>
                     </div>
-                    <Tilt
-                      className="Tilt"
-                      options={tiltOption}
-                    >
+                    <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg06} alt="bg06" id="bg06" className="bg-img" />
                       <div className="Tilt-inner">
                         <LearnMore />
