@@ -531,6 +531,11 @@
 		position: static;
 	}
 
+	.contactus-button {
+		width: 104px;
+		margin-right: 9px;
+	}
+
 	.section {
 		padding: 0 20px;
 	}
@@ -538,6 +543,7 @@
 	.first-content {
 		position: relative;
 		left: 0;
+		top: 100px;
 		transform: none;
 	}
 
