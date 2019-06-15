@@ -527,15 +527,16 @@
 }
 
 @media (max-width: 767px) {
-	.content {
-		position: static;
+	.first-title {
+		font-size: 28px;
 	}
 
-	.contactus-button {
-		width: 104px !important;
-		margin-right: 20px !important;
-		margin-left: 20px;
-		font-size: 12px !important;
+	br:not(.keep_visible_on_mobile) {
+		display: none;
+	}
+
+	.content {
+		position: static;
 	}
 
 	.section {
@@ -545,7 +546,7 @@
 	.first-content {
 		position: relative;
 		left: 0;
-		top: 100px;
+		top: 0;
 		transform: none;
 	}
 

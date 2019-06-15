@@ -124,8 +124,8 @@ class App extends React.Component {
                     <div className="first-content">
                       <div className="first-content__wrapper">
                         <div className="first-title">
-                          Pixoul
-                          <br />
+                          Pixoul&nbsp;
+                          <br className="keep_visible_on_mobile" />
                           Agency & Consultancy
                           <CSSTransition
                             in={page === 0 && pageLoaded}
@@ -140,11 +140,11 @@ class App extends React.Component {
                           </CSSTransition>
                         </div>
                         <div className="first-description">
-                          We’re a UX design agency, full-stack
+                          We’re a UX design agency, full-stack&nbsp;
                           <br />
-                          development shop, and strategic
+                          development shop, and strategic&nbsp;
                           <br />
-                          consulting group—ready to bring your
+                          consulting group—ready to bring your&nbsp;
                           <br />
                           digital vision to life.
                         </div>

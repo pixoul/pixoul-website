@@ -82,6 +82,7 @@
 .hamburger-button div span#span-2:before {
   transition: .8s;
 }
+
 .hamburger-button div span#span-3:before {
   transition: 1s;
 }
@@ -103,5 +104,19 @@ button {
 @media (max-width: 1199px) {
   .header {
     position: absolute;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: 87%;
+    left: 20px;
+  }
+
+  .contactus-button {
+    width: 104px !important;
+    margin-right: 20px !important;
+    margin-left: 20px;
+    font-size: 12px !important;
   }
 }
