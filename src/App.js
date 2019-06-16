@@ -97,6 +97,10 @@ class App extends React.Component {
             onMenuPressed={this.onMenuButtonClicked}
             isAnimated={width > 1199}
           />
+          {
+            page < 7 && page > 0 && <span className="watermark">{pageIndex[page]}</span>
+          }
+          
           <ReactFullpage
             anchors={pageIndex}
             onLeave={this.onLeave}
@@ -208,7 +212,6 @@ class App extends React.Component {
                         <LearnMore />
                       </div>
                     </Tilt>
-                    <span className="watermark">01</span>
                   </div>
                   <div className="section">
                     <div className="content" id="content-02">
@@ -251,8 +254,6 @@ class App extends React.Component {
                         <LearnMore />
                       </div>
                     </Tilt>
-
-                    <span className="watermark">02</span>
                   </div>
                   <div className="section">
                     <div className="content" id="content-03">
@@ -293,7 +294,6 @@ class App extends React.Component {
                         <LearnMore />
                       </div>
                     </Tilt>
-                    <span className="watermark">03</span>
                   </div>
                   <div className="section">
                     <div className="content" id="content-04">
@@ -338,7 +338,6 @@ class App extends React.Component {
                         <LearnMore />
                       </div>
                     </Tilt>
-                    <span className="watermark">04</span>
                   </div>
                   <div className="section">
                     <div className="content" id="content-05">
@@ -380,7 +379,6 @@ class App extends React.Component {
                         <LearnMore />
                       </div>
                     </Tilt>
-                    <span className="watermark">05</span>
                   </div>
                   <div className="section">
                     <div className="content" id="content-06">
@@ -424,7 +422,6 @@ class App extends React.Component {
                         <LearnMore />
                       </div>
                     </Tilt>
-                    <span className="watermark">06</span>
                   </div>
                   <div className="section">
                     <PixoulContactForm
