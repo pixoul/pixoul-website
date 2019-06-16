@@ -3,6 +3,7 @@ import PixoulContactForm from "../ContactForm/index";
 import { CSSTransition } from "react-transition-group";
 import downArrow from "../../images/ic_arrow_forward.png";
 import "./about-us.css";
+import { Header } from "../../components";
 
 import spaceship from "../../images/spaceship.png";
 import people from "../../images/people.png";
@@ -11,9 +12,22 @@ import thumbsup from "../../images/thumbsup.png";
 import alexadevices from "../../images/alexadevices.png";
 
 class AboutUsPage extends React.Component {
+  state = {
+    width: window.innerWidth
+  };
+
+  updateWindowDimensions = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
   render() {
+    const { width } = this.state;
     return (
       <div className="about_us_page">
+        <Header
+          onMenuPressed={this.onMenuButtonClicked}
+          isAnimated={width > 1199}
+        />
         <div className="section">
           <div className="">
             <div className="">
@@ -156,7 +170,10 @@ class AboutUsPage extends React.Component {
           </div>
         </div>
         <div className="section">
-          <PixoulContactForm heading="Let's get to work." isVisible={true} />
+          <PixoulContactForm
+            heading="Let's get to work."
+            isAnimated={width > 1199} // TODO: animate when section is in view
+          />
         </div>
       </div>
     );
