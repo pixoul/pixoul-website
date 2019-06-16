@@ -8,8 +8,8 @@ import AboutUsPage from "./components/AboutUs/index";
 const routing = (
   <BrowserRouter>
     <div>
-      <Route path="/" component={App} />
-      <Route path="/aboutus" component={AboutUsPage} />
+      <Route exact path="/" component={App} />
+      <Route exact path="/aboutus" component={AboutUsPage} />
     </div>
   </BrowserRouter>
 );
