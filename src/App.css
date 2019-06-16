@@ -519,6 +519,7 @@
 
 	.subtitle {
 		width: auto;
+		white-space: normal;
 	}
 
 	.watermark {
@@ -547,7 +548,7 @@
 	.first-content {
 		position: relative;
 		left: 0;
-		top: -60px;
+		top: -25px;
 		transform: none;
 	}
 

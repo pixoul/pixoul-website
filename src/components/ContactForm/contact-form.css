@@ -164,8 +164,13 @@
 }
 
 @keyframes stuckSlideShownSlideDown {
-    from {height: 0;}
-    to {height: auto;}
+    from {
+        height: 0;
+    }
+
+    to {
+        height: auto;
+    }
 }
 
 .contact-title-animation-enter {
@@ -206,7 +211,8 @@
     animation-fill-mode: both;
 }
 
-.form-slide-animation-enter-done, .form-animation-enter-done {
+.form-slide-animation-enter-done,
+.form-animation-enter-done {
     height: auto;
     padding: 40px 30px;
 }
@@ -216,6 +222,7 @@
         height: auto;
         padding: 40px 30px;
     }
+
     .contact_section_heading {
         height: auto;
     }
@@ -227,11 +234,18 @@
         right: 0;
         box-shadow: none;
     }
+
+    .contact_section_heading {
+        font-size: 1.6rem;
+        width: 100%;
+        text-align: center;
+    }
+
     .contact_section_img_container {
         display: none;
     }
+
     .group {
         width: 100%;
     }
 }
-
