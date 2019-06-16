@@ -3,6 +3,7 @@
 .contact_section_container {
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .contact_section_img_container {}
