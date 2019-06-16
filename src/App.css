@@ -529,6 +529,7 @@
 @media (max-width: 767px) {
 	.first-title {
 		font-size: 28px;
+		margin-bottom: 54px;
 	}
 
 	br:not(.keep_visible_on_mobile) {
@@ -552,6 +553,7 @@
 
 	.first-description {
 		white-space: normal;
+		font-size: 22px;
 	}
 
 	.Tilt {
