@@ -1,5 +1,6 @@
 import React from "react";
 import PixoulContactForm from "../ContactForm/index";
+import { CSSTransition } from "react-transition-group";
 import downArrow from "../../images/ic_arrow_forward.png";
 import "./about-us.css";
 
@@ -45,7 +46,7 @@ class AboutUsPage extends React.Component {
             </div>
 
             <button
-              onClick={() => fullpageApi.moveSectionDown()}
+              onClick={() => {}}
               className="page_down_button_centered pixoul_button"
             >
               <img src={downArrow} alt="downArrow" />
