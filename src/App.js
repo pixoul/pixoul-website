@@ -97,10 +97,13 @@ class App extends React.Component {
             onMenuPressed={this.onMenuButtonClicked}
             isAnimated={width > 1199}
           />
-          {
-            page < 7 && page > 0 && <span className="watermark">{pageIndex[page]}</span>
-          }
           
+          {
+            page < 7 && page > 0 && 
+              <span className="watermark">
+                <span className="num">{pageIndex[page]}</span>
+              </span>
+          }
           <ReactFullpage
             anchors={pageIndex}
             onLeave={this.onLeave}

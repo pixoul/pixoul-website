@@ -246,6 +246,14 @@
 	top: 121px;
 	left: -210px;
 	z-index: -1;
+	animation-duration: .75s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.watermark .num {
+	transition: .5s;
 }
 
 /* Animation */
@@ -382,6 +390,24 @@
 	}
 }
 
+@keyframes mainSliderNumHide {
+	from {
+		opacity: .1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes mainSliderNumShow {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: .1;
+	}
+}
+
 .landing-page-blue-line-animation {
 	animation-name: landingPageBlueLine;
 	animation-duration: .75s;
@@ -497,6 +523,19 @@
 .mainText-animation-enter-done {
 	transform: translateX(0);
 	opacity: 1;
+}
+
+.index-animation-enter {
+	animation-name: mainSliderNumShow;
+}
+
+.index-animation-exit {
+	
+	animation-name: mainSliderNumHide;
+}
+
+.index-animation-exit-done {
+	opacity: 0.1;
 }
 
 .no-delay {
