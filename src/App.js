@@ -160,7 +160,6 @@ class App extends React.Component {
                       >
                         <button
                           className="pixoul_button landing-page-button landing-page-button-animation"
-                          style={{ width: 0 }}
                           onClick={() => fullpageApi.moveSectionDown()}
                         >
                           <img src={downArrow} alt="downArrow" />
