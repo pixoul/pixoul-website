@@ -528,8 +528,8 @@
 
 @media (max-width: 767px) {
 	.first-title {
-		font-size: 28px;
-		margin-bottom: 54px;
+		font-size: 24px;
+		margin-bottom: 32px;
 	}
 
 	br:not(.keep_visible_on_mobile) {
@@ -547,7 +547,7 @@
 	.first-content {
 		position: relative;
 		left: 0;
-		top: 0;
+		top: -60px;
 		transform: none;
 	}
 
