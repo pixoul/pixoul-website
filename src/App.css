@@ -46,7 +46,7 @@
 	transition: 300ms;
 	top: 0;
 	position: absolute;
-	overflow: hidden;
+	overflow: visible;
 	max-height: 100vh;
 }
 
