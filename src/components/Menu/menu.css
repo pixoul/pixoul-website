@@ -1,14 +1,49 @@
-.menu {
+.menu-container {
   right: 0;
   width: 39.5vw;
   height: 0;
   border-bottom: 100vh solid #3180fb;
   border-left: calc(60vw - 39.5vw) solid transparent;
   position: absolute;
-  z-index: -1;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  width: 320px;
+  top: 103px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
 }
 
 .menu-item {
-  text-decoration: none;
-  color: white;
+  font-size: 35px;
+  margin-bottom: 22px;
+  display: block;
+}
+
+.menu-contact-section {
+  margin-top: 64px;
+  margin-bottom: 75px;
+}
+
+.menu-link-section {
+  margin-top: 29px;
+  font-size: 15px;
+}
+
+.menu-contact-button {
+  color:#3180fb!important;
+  font-size: 22px;
+  background-color: white;
+  border-radius: 22px;
+}
+
+.small-menu-item {
+  margin-top: 13px;
 }
