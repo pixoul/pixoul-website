@@ -13,27 +13,27 @@
 }
 
 .index-1 {
-  transform: translateY(-55px);
+  transform: translateY(0px);
 }
 
 .index-2 {
-  transform: translateY(-110px);
+  transform: translateY(0px);
 }
 
 .index-3 {
-  transform: translateY(-165px);
+  transform: translateY(0px);
 }
 
 .index-4 {
-  transform: translateY(-220px);
+  transform: translateY(-55px);
 }
 
 .index-5 {
-  transform: translateY(-275px);
+  transform: translateY(-110px);
 }
 
 .index-6 {
-  transform: translateY(-330px);
+  transform: translateY(-165px);
 }
 
 .index-contact {
