@@ -39,23 +39,20 @@
 
 .main {
 	background-color: white;
+	max-height: 100vh;
 }
 
 .main-enter {
 	transform: scale(1) translateX(0)!important;
 	transition: 300ms;
-	top: 0;
 	position: absolute;
 	overflow: visible;
-	max-height: 100vh;
 }
 
 .main__exited {
 	transform: scale(.8) translateX(-253px)!important;
 	transition: 300ms;
 	overflow: hidden;
-	max-height: 80vh;
-	top: 10vh;
 	position: absolute;
 }
 
