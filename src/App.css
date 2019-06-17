@@ -45,7 +45,6 @@
 .main-enter {
 	transform: scale(1) translateX(0)!important;
 	transition: 300ms;
-	position: absolute;
 	overflow: visible;
 }
 
@@ -53,7 +52,6 @@
 	transform: scale(.8) translateX(-253px)!important;
 	transition: 300ms;
 	overflow: hidden;
-	position: absolute;
 }
 
 .no-pointer {

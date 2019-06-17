@@ -116,10 +116,12 @@ class App extends React.Component {
               anchors={pageIndex}
               onLeave={this.onLeave}
               afterLoad={this.onSlideLoad}
+              onResize={this.updateWindowDimensions}
               scrollingSpeed={500}
               touchSensitivity={10}
               animateAnchor={false}
               recordHistory={false}
+              autoScrolling={autoScrolling}
               render={({ state, fullpageApi }) => {
                 if (fullpageApi) {
                   if (width > 1199 && !autoScrolling) {
