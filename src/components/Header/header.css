@@ -31,8 +31,12 @@
   justify-content: center;
 }
 
+.contactus-button:hover {
+  opacity: 0.85;
+}
+
 .contactus-button span:after {
-  content: "";
+  /* content: "";
   position: relative;
   width: 0;
   height: 1px;
@@ -41,7 +45,8 @@
   background-color: #fff;
   transition: .3s ease-out all;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
+  
 }
 
 .contactus-button span:hover:after {
