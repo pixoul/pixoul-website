@@ -17,7 +17,6 @@ class AboutUsPage extends React.Component {
     page: 0,
     showMenu: false,
     pageLoaded: true,
-    autoScrolling: true,
     width: window.innerWidth
   };
 
@@ -42,7 +41,7 @@ class AboutUsPage extends React.Component {
   };
 
   render() {
-    const { page, pageLoaded, autoScrolling, width } = this.state;
+    const { page, pageLoaded, width } = this.state;
     const pageIndex = ["00", "01", "02", "Contact"];
     return (
       <div className="about_us_page">
@@ -90,10 +89,8 @@ class AboutUsPage extends React.Component {
                       classNames="mainText-animation"
                     >
                       <div className="top_about_us_heading_text mainText-animation-enter">
-                        We’re here to bring life to your digital
-                        <br />
-                        vision. Got a project in mind?
-                        <br />
+                        We’re here to bring life to your digital vision. <br/>
+                        Got a project in mind? <br />
                         Let's talk.
                       </div>
                     </CSSTransition>
@@ -211,7 +208,6 @@ class AboutUsPage extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="clear" />
                 <div className="pixoul_button_section">
                   <button className="green_button pixoul_button">Recent Work</button>
                 </div>

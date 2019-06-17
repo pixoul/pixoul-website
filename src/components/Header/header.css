@@ -119,9 +119,6 @@ button {
   }
 
   .contactus-button {
-    width: 104px !important;
-    margin-right: 20px !important;
-    margin-left: 20px;
-    font-size: 12px !important;
+    display: none;
   }
 }

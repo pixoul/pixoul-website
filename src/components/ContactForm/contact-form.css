@@ -80,6 +80,7 @@
     font-size: 15px;
     transition: all 0.3s;
     font-family: 'Poppins', sans-serif;
+    border-radius: 0;
 }
 
 .contact_section_form input:-webkit-autofill {

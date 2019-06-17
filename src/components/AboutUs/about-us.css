@@ -161,7 +161,12 @@
     .pixoul_adjustable_column {
         padding: 0;
     }
+    
     .pixoul_adjustable_columns_item {
         margin: 5px;
+    }
+
+    .top_about_us_heading_text {
+        white-space: normal;
     }
 }
