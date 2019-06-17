@@ -37,22 +37,30 @@
 	display: block;
 }
 
+.main {
+	background-color: white;
+}
+
 .main-enter {
-	transform: scale(0.9);
-}
-
-.main-enter-active {
-	transform: scale(0.9);
-	transition: transform 300ms;
-}
-
-.main-exit {
-	transform: scale(0.9);
-	transition: transform 300ms;
+	transform: scale(1) translateX(0)!important;
+	transition: 300ms;
+	top: 0;
+	position: absolute;
+	overflow: hidden;
+	max-height: 100vh;
 }
 
 .main__exited {
-	transform: scale(0.9);
+	transform: scale(.8) translateX(-253px)!important;
+	transition: 300ms;
+	overflow: hidden;
+	max-height: 80vh;
+	top: 10vh;
+	position: absolute;
+}
+
+.no-pointer {
+	pointer-events: none;
 }
 
 .pixoul_button {

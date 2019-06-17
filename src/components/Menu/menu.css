@@ -1,0 +1,14 @@
+.menu {
+  right: 0;
+  width: 39.5vw;
+  height: 0;
+  border-bottom: 100vh solid #3180fb;
+  border-left: calc(60vw - 39.5vw) solid transparent;
+  position: absolute;
+  z-index: -1;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: white;
+}
