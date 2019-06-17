@@ -20,7 +20,7 @@ class PixoulContactForm extends Component {
           onEnter={() => {}}
           onExited={() => {}}
         >
-            <span className="contact_section_heading">{heading}</span>
+          <span className="contact_section_heading">{heading}</span>
         </CSSTransition>
         <div className="contact_section_img_container">
           <img

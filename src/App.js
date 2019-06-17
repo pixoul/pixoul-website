@@ -87,7 +87,7 @@ class App extends React.Component {
     };
 
     const tiltOption = {
-      max: 15,
+      max: 10,
       scale: 1,
       reverse: true
     };

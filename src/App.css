@@ -257,6 +257,7 @@
 }
 
 .watermark .num {
+	font-weight: bold;
 	transition: .5s;
 }
 
@@ -611,7 +612,7 @@
 		top: 0;
 		height: auto;
 	}
-	
+
 	.main__exited {
 		transform: scale(.8) translateX(-380px)!important;
 	}
