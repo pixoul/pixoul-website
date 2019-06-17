@@ -1,18 +1,16 @@
 import React from "react";
 import Scramble from 'react-scramble';
+import { Link } from 'react-router-dom';
 import logo from "../../images/logo.svg";
 
 import "./header.css";
 
 const Header = props => {
   const { isAnimated } = props;
-  let link = '#Contact';
-  if(!props.isHome) {
-    link = '/' + link; 
-  }
+  const link = '#Contact';
   return (
     <div className="header">
-      <img className="logo" src={logo} alt="logoTitle" />
+      <Link className="logo" to='/'><img src={logo} alt="logoTitle" /></Link>
       <a className="pixoul_button contactus-button" href={link}>
         {
           isAnimated ? <Scramble

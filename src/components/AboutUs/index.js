@@ -75,22 +75,18 @@ class AboutUsPage extends React.Component {
                 <div className="">
                   <div className="">
                     <CSSTransition
-                      //   in={page === 0}
+                      in={page === 0 && pageLoaded && width > 1199}
                       timeout={1000}
                       classNames="mainTitle-animation"
-                      onEnter={() => {}}
-                      onExited={() => {}}
                     >
                       <div className="green_heading top_about_us_heading mainTitle-animation-enter">
                         Hey there, neighbor.
                       </div>
                     </CSSTransition>
                     <CSSTransition
-                      //   in={page === 0}
+                      in={page === 0 && pageLoaded && width > 1199}
                       timeout={1000}
                       classNames="mainText-animation"
-                      onEnter={() => {}}
-                      onExited={() => {}}
                     >
                       <div className="top_about_us_heading_text mainText-animation-enter">
                         We’re here to bring life to your digital
@@ -103,7 +99,7 @@ class AboutUsPage extends React.Component {
                   </div>
 
                   <button
-                    onClick={() => {}}
+                    onClick={() => fullpageApi.moveSectionDown()}
                     className="page_down_button_centered pixoul_button"
                   >
                     <img src={downArrow} alt="downArrow" />
@@ -215,7 +211,7 @@ class AboutUsPage extends React.Component {
               <div className="section">
                 <PixoulContactForm
                   heading="Let's get to work."
-                  isAnimated={width > 1199} // TODO: animate when section is in view
+                  isAnimated={width > 1199 && page === 4 && pageLoaded}
                 />
               </div>
             </ReactFullpage.Wrapper>
