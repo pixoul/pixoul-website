@@ -1,6 +1,5 @@
 import React from "react";
 import Scramble from 'react-scramble';
-import { Link } from 'react-router-dom';
 import logo from "../../images/logo.svg";
 
 import "./header.css";
@@ -11,7 +10,6 @@ const Header = props => {
   if(!props.isHome) {
     link = '/' + link; 
   }
-  console.log(link);
   return (
     <div className="header">
       <img className="logo" src={logo} alt="logoTitle" />
