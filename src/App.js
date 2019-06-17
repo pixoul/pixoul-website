@@ -24,7 +24,7 @@ class App extends React.Component {
   state = {
     page: 0,
     showMenu: false,
-    pageLoaded: true,
+    pageLoaded: false,
     autoScrolling: true,
     width: window.innerWidth
   };
@@ -141,7 +141,7 @@ class App extends React.Component {
                               enter: 1650,
                               exit: 750
                             }}
-                            classNames=""
+                            classNames="landing-page-blue-line-animation"
                           >
                             <div className="blue_line_under_title landing-page-blue-line-animation" />
                           </CSSTransition>

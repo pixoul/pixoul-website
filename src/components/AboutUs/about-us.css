@@ -103,19 +103,19 @@
     margin-top: 0;
 }
 
-.pixoul_adjustable_columns {
+.pixoul_columns_row {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    max-height: 800px;
-    max-width: 100%;
+    justify-content: center;
+}
+
+.pixoul_adjustable_column {
     overflow: hidden;
-    align-items: center;
     padding: 2rem;
 }
 
 .pixoul_adjustable_columns_item {
-    width: 280px;
+    max-width: 360px;
     background: white;
     box-shadow: -1px 3px 20px rgba(0, 0, 0, 0.19), 0 2px 3px rgba(0, 0, 0, 0.23);
     border-radius: 20px;
@@ -143,6 +143,10 @@
     font-size: 1.4rem;
 }
 
+.pixel_button_section:before {
+    clear: both;
+}
+
 .pixoul_button_section {
     margin: 3rem auto;
 }
@@ -150,4 +154,14 @@
 .pixoul_button_section button {
     margin: auto;
     display: block;
+}
+
+
+@media (max-width: 767px) {
+    .pixoul_adjustable_column {
+        padding: 0;
+    }
+    .pixoul_adjustable_columns_item {
+        margin: 5px;
+    }
 }

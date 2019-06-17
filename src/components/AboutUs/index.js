@@ -56,18 +56,19 @@ class AboutUsPage extends React.Component {
           afterLoad={this.onSlideLoad}
           scrollingSpeed={500}
           touchSensitivity={10}
+          autoScrolling={false}
           render={({ state, fullpageApi }) => {
-            if (fullpageApi) {
-              if (width > 1199 && !autoScrolling) {
-                this.setState({ autoScrolling: true }, () => {
-                  fullpageApi.setAutoScrolling(true);
-                });
-              } else if (width <= 1199 && autoScrolling) {
-                this.setState({ autoScrolling: false }, () => {
-                  fullpageApi.setAutoScrolling(false);
-                });
-              }
-            }
+            // if (fullpageApi) {
+            //   if (width > 1199 && !autoScrolling) {
+            //     this.setState({ autoScrolling: true }, () => {
+            //       fullpageApi.setAutoScrolling(true);
+            //     });
+            //   } else if (width <= 1199 && autoScrolling) {
+            //     this.setState({ autoScrolling: false }, () => {
+            //       fullpageApi.setAutoScrolling(false);
+            //     });
+            //   }
+            // }
           
           return (
             <ReactFullpage.Wrapper>
@@ -167,43 +168,50 @@ class AboutUsPage extends React.Component {
                     We're always pushing the envelope and dreaming of what's possible.
                   </h2>
                 </div>
-                <div className="pixoul_adjustable_columns">
-                  <div className="pixoul_adjustable_columns_item">
-                    <h3 className="green_heading">Enterprise Systems</h3>
-                    <h4>
-                      Big business doesn't scare us. We're ready to implement your
-                      next large-scale project.
-                    </h4>
+                <div className="pixoul_columns_row">
+                  <div className="pixoul_adjustable_column">
+                    <div className="pixoul_adjustable_columns_item">
+                      <h3 className="green_heading">Enterprise Systems</h3>
+                      <h4>
+                        Big business doesn't scare us. We're ready to implement your
+                        next large-scale project.
+                      </h4>
+                    </div>
+                    <div className="pixoul_adjustable_columns_item">
+                      <h3 className="pink_heading">IoT Devices</h3>
+                      <h4>"Hey Alexa..."</h4>
+                      <img
+                        className="alex_devices_img"
+                        src={alexadevices}
+                        alt="Alexa devices"
+                      />
+                    </div>
                   </div>
-                  <div className="pixoul_adjustable_columns_item">
-                    <h3 className="pink_heading">IoT Devices</h3>
-                    <h4>"Hey Alexa..."</h4>
-                    <img
-                      className="alex_devices_img"
-                      src={alexadevices}
-                      alt="Alexa devices"
-                    />
+                  <div className="pixoul_adjustable_column">
+                    <div className="pixoul_adjustable_columns_item">
+                      <h3 className="blue_heading">Sites & Apps</h3>
+                      <h4>Need we say more?</h4>
+                    </div>
+                    <div className="pixoul_adjustable_columns_item">
+                      <h3 className="purple_heading">Custom Creations</h3>
+                      <h4>
+                        We'll work with you to create unique solutions that fit your
+                        exact requirements.
+                      </h4>
+                    </div>
                   </div>
-                  <div className="pixoul_adjustable_columns_item">
-                    <h3 className="blue_heading">Sites & Apps</h3>
-                    <h4>Need we say more?</h4>
-                  </div>
-                  <div className="pixoul_adjustable_columns_item">
-                    <h3 className="purple_heading">Custom Creations</h3>
-                    <h4>
-                      We'll work with you to create unique solutions that fit your
-                      exact requirements.
-                    </h4>
-                  </div>
-                  <div className="pixoul_adjustable_columns_item">
-                    <h3 className="orange_heading">Blockchain & Emerging Tech</h3>
-                    <h4>We'll simplify the complex.</h4>
-                  </div>
-                  <div className="pixoul_adjustable_columns_item">
-                    <h3 className="light_blue_heading">Wearables and Beyond</h3>
-                    <h4>From WatchOS to AR/VR technologies, we've seen it all.</h4>
+                  <div className="pixoul_adjustable_column">
+                    <div className="pixoul_adjustable_columns_item">
+                      <h3 className="orange_heading">Blockchain & Emerging Tech</h3>
+                      <h4>We'll simplify the complex.</h4>
+                    </div>
+                    <div className="pixoul_adjustable_columns_item">
+                      <h3 className="light_blue_heading">Wearables and Beyond</h3>
+                      <h4>From WatchOS to AR/VR technologies, we've seen it all.</h4>
+                    </div>
                   </div>
                 </div>
+                <div className="clear" />
                 <div className="pixoul_button_section">
                   <button className="green_button pixoul_button">Recent Work</button>
                 </div>
@@ -211,7 +219,7 @@ class AboutUsPage extends React.Component {
               <div className="section">
                 <PixoulContactForm
                   heading="Let's get to work."
-                  isAnimated={width > 1199 && page === 4 && pageLoaded}
+                  isAnimated={width > 1199 && page === 3 && pageLoaded}
                 />
               </div>
             </ReactFullpage.Wrapper>
