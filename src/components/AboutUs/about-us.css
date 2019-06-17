@@ -35,7 +35,7 @@
 
 .top_about_us_heading {
     text-align: center;
-    margin: 10% auto 20px;
+    margin: 15vh auto 20px;
     font-size: 20px;
 }
 
@@ -161,7 +161,7 @@
     .pixoul_adjustable_column {
         padding: 0;
     }
-    
+
     .pixoul_adjustable_columns_item {
         margin: 5px;
     }
