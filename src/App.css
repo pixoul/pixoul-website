@@ -49,6 +49,7 @@
 }
 
 .main__exited {
+	pointer-events: none;
 	transform: scale(.8) translateX(-253px)!important;
 	transition: 300ms;
 	overflow: hidden;
@@ -567,6 +568,10 @@
 	.watermark {
 		display: none;
 	}
+
+	.main__exited {
+		transform: scale(.8) translateX(-350px)!important;
+	}
 }
 
 @media (max-width: 767px) {
@@ -605,6 +610,10 @@
 		right: 0;
 		top: 0;
 		height: auto;
+	}
+	
+	.main__exited {
+		transform: scale(.8) translateX(-380px)!important;
 	}
 }
 

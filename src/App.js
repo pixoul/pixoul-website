@@ -36,11 +36,18 @@ class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener("resize", this.updateWindowDimensions);
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateWindowDimensions);
+    window.removeEventListener('scroll', this.handleScroll);
   }
+
+  handleScroll = (e) => {
+    console.log('scroll');
+
+  };
 
   updateWindowDimensions = () => {
     this.setState({ width: window.innerWidth });
@@ -97,7 +104,6 @@ class App extends React.Component {
     return (
       <div>
         <Menu />
-
           <div className={mainClass}>
             <Header
               onMenuPressed={this.onMenuButtonClicked}
@@ -121,6 +127,7 @@ class App extends React.Component {
               touchSensitivity={10}
               animateAnchor={false}
               recordHistory={false}
+              onScroll={this.handleScroll}
               autoScrolling={autoScrolling}
               render={({ state, fullpageApi }) => {
                 if (fullpageApi) {
@@ -138,7 +145,7 @@ class App extends React.Component {
                 return (
                   <ReactFullpage.Wrapper>
                     <div className="section" id="first">
-                      <img src={bgImage} alt="bgImage" className="bg-image" />
+                      <img data-src={bgImage} alt="bgImage" className="bg-image" />
                       <div className="first-content">
                         <div className="first-content__wrapper">
                           <div className="first-title">
