@@ -234,12 +234,14 @@
         width: 100%;
         right: 0;
         box-shadow: none;
+        position: static;
     }
 
     .contact_section_heading {
         font-size: 1.6rem;
         width: 100%;
         text-align: center;
+        position: static;
     }
 
     .contact_section_img_container {
