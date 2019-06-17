@@ -16,7 +16,7 @@ const Menu = props => {
           <p>(616) 914-9356</p>
           <p>hello@pixoulagency.com</p>
         </div>
-        <a className="menu-contact-button" href="#Contact">Contact Us</a>
+        <a className="menu-contact-button" href="#Contact"><div>Contact Us</div></a>
         
         <div className="menu-link-section">
           <div>&copy; 2019 Pixoul. All rights reserved.</div>
