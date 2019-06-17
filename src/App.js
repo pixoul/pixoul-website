@@ -152,17 +152,8 @@ class App extends React.Component {
                             Pixoul&nbsp;
                             <br className="keep_visible_on_mobile" />
                             Agency & Consultancy
-                            <CSSTransition
-                              in={page === 0 && pageLoaded}
-                              timeout={{
-                                appear: 900,
-                                enter: 1650,
-                                exit: 750
-                              }}
-                              classNames="landing-page-blue-line-animation"
-                            >
-                              <div className="blue_line_under_title landing-page-blue-line-animation" />
-                            </CSSTransition>
+                            <div className="blue_line_under_title landing-page-blue-line-animation" />
+
                           </div>
                           <div className="first-description">
                             We’re a UX design agency, full-stack&nbsp;
@@ -174,22 +165,13 @@ class App extends React.Component {
                             digital vision to life.
                           </div>
                         </div>
-                        <CSSTransition
-                          in={page === 0 && pageLoaded}
-                          timeout={{
-                            appear: 900,
-                            enter: 1650,
-                            exit: 750
-                          }}
-                          classNames=""
+
+                        <button
+                          className="pixoul_button landing-page-button landing-page-button-animation"
+                          onClick={() => fullpageApi.moveSectionDown()}
                         >
-                          <button
-                            className="pixoul_button landing-page-button landing-page-button-animation"
-                            onClick={() => fullpageApi.moveSectionDown()}
-                          >
-                            <img src={downArrow} alt="downArrow" />
-                          </button>
-                        </CSSTransition>
+                          <img src={downArrow} alt="downArrow" />
+                        </button>
                       </div>
                     </div>
                     <div className="section">

@@ -415,16 +415,16 @@
 
 .landing-page-blue-line-animation {
 	animation-name: landingPageBlueLine;
-	animation-duration: .75s;
-	animation-delay: .4s;
+	animation-duration: 1s;
+	animation-delay: .8s;
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .landing-page-button-animation {
 	animation-name: landingPageButton;
-	animation-duration: .75s;
-	animation-delay: 1s;
+	animation-duration: 1s;
+	animation-delay: .8s;
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
