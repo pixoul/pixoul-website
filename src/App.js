@@ -1,9 +1,9 @@
 import React from "react";
 
 import ReactFullpage from "@fullpage/react-fullpage";
-
 import Tilt from "react-tilt";
 import { CSSTransition } from "react-transition-group";
+
 import PixoulContactForm from "./components/ContactForm/index";
 import "./App.css";
 import bgImage from "./images/bg.png";
@@ -96,6 +96,7 @@ class App extends React.Component {
           <Header
             onMenuPressed={this.onMenuButtonClicked}
             isAnimated={width > 1199}
+            isHome={true}
           />
           
           {

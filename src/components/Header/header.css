@@ -24,6 +24,11 @@
   font-family: 'Poppins', sans-serif;
   margin-right: 56px;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactus-button span:after {
@@ -40,7 +45,7 @@
 }
 
 .contactus-button span:hover:after {
-  width: 80%;
+  width: 100%;
 }
 
 .hamburger-button {

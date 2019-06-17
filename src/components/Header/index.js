@@ -1,15 +1,21 @@
 import React from "react";
-import Scramble from 'react-scramble'
+import Scramble from 'react-scramble';
+import { Link } from 'react-router-dom';
 import logo from "../../images/logo.svg";
 
 import "./header.css";
 
 const Header = props => {
   const { isAnimated } = props;
+  let link = '#Contact';
+  if(!props.isHome) {
+    link = '/' + link; 
+  }
+  console.log(link);
   return (
     <div className="header">
       <img className="logo" src={logo} alt="logoTitle" />
-      <button className="pixoul_button contactus-button">
+      <a className="pixoul_button contactus-button" href={link}>
         {
           isAnimated ? <Scramble
             text="Contact Us"
@@ -29,7 +35,7 @@ const Header = props => {
             <span>Contact Us</span>
           )
         }
-      </button>
+      </a>
       <button
         className="pixoul_button hamburger-button"
         onClick={props.onMenuPressed}
