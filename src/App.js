@@ -27,7 +27,8 @@ class App extends React.Component {
     showMenu: false,
     pageLoaded: false,
     autoScrolling: true,
-    width: window.innerWidth
+    width: window.innerWidth,
+    readyToMove: true,
   };
 
   setShowMenu = showMenu => {
@@ -47,11 +48,14 @@ class App extends React.Component {
   };
 
   onLeave = (origin, destination, direction) => {
-    this.setState({ page: destination.index, pageLoaded: false });
+    this.setState({ page: destination.index, pageLoaded: false, readyToMove: false });
   };
 
-  onSlideLoad = (section, origin, destination, direction) => {
-    this.setState({ pageLoaded: true });
+  onSlideLoad = (section, origin, origindestination, direction) => {
+    this.setState({ pageLoaded: true  });
+    if(origin.index === 7 || origin.index === 0) {
+      this.setState({ readyToMove: true });
+    }
   };
 
   toggleMenu = () => {
@@ -59,7 +63,7 @@ class App extends React.Component {
   };
 
   render() {
-    const { showMenu, page, pageLoaded, autoScrolling, width } = this.state;
+    const { readyToMove, showMenu, page, pageLoaded, autoScrolling, width } = this.state;
     
     const pageIndex = ["00", "01", "02", "03", "04", "05", "06", "Contact"];
     const labelTimeout = {
@@ -124,7 +128,7 @@ class App extends React.Component {
               autoScrolling={autoScrolling}
               render={({ state, fullpageApi }) => {
                 if (fullpageApi) {
-                  fullpageApi.setAllowScrolling(pageLoaded);
+                  fullpageApi.setAllowScrolling(readyToMove);
                   if (width > 1199 && !autoScrolling) {
                     this.setState({ autoScrolling: true }, () => {
                       fullpageApi.setAutoScrolling(true);
@@ -147,7 +151,6 @@ class App extends React.Component {
                             <br className="keep_visible_on_mobile" />
                             Agency & Consultancy
                             <div className="blue_line_under_title landing-page-blue-line-animation" />
-
                           </div>
                           <div className="first-description">
                             We’re a UX design agency, full-stack&nbsp;
@@ -194,7 +197,7 @@ class App extends React.Component {
                           in={page === 1 && pageLoaded && width > 1199}
                           timeout={subtitleTimeout}
                           classNames="subtitle-animation"
-                          onEnter={() => {}}
+                          onEntered={() => this.setState({ readyToMove: true })}
                           onExited={() => {}}
                         >
                           <div className="subtitle">
@@ -236,7 +239,7 @@ class App extends React.Component {
                           in={page === 2 && pageLoaded && width > 1199}
                           timeout={subtitleTimeout}
                           classNames="subtitle-animation"
-                          onEnter={() => {}}
+                          onEntered={() => this.setState({ readyToMove: true })}
                           onExited={() => {}}
                         >
                           <div className="subtitle">
@@ -276,7 +279,7 @@ class App extends React.Component {
                           in={page === 3 && pageLoaded && width > 1199}
                           timeout={subtitleTimeout}
                           classNames="subtitle-animation"
-                          onEnter={() => {}}
+                          onEntered={() => this.setState({ readyToMove: true })}
                           onExited={() => {}}
                         >
                           <div className="subtitle">
@@ -319,7 +322,7 @@ class App extends React.Component {
                           in={page === 4 && pageLoaded && width > 1199}
                           timeout={subtitleTimeout}
                           classNames="subtitle-animation"
-                          onEnter={() => {}}
+                          onEntered={() => this.setState({ readyToMove: true })}
                           onExited={() => {}}
                         >
                           <div className="subtitle">
@@ -360,7 +363,7 @@ class App extends React.Component {
                           in={page === 5 && pageLoaded && width > 1199}
                           timeout={subtitleTimeout}
                           classNames="subtitle-animation"
-                          onEnter={() => {}}
+                          onEntered={() => this.setState({ readyToMove: true })}
                           onExited={() => {}}
                         >
                           <div className="subtitle">
@@ -403,7 +406,7 @@ class App extends React.Component {
                           in={page === 6 && pageLoaded && width > 1199}
                           timeout={subtitleTimeout}
                           classNames="subtitle-animation"
-                          onEnter={() => {}}
+                          onEntered={() => this.setState({ readyToMove: true })}
                           onExited={() => {}}
                         >
                           <div className="subtitle">
