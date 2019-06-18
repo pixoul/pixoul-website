@@ -128,7 +128,7 @@ class App extends React.Component {
               autoScrolling={autoScrolling}
               render={({ state, fullpageApi }) => {
                 if (fullpageApi) {
-                  fullpageApi.setAllowScrolling(readyToMove);
+                  fullpageApi.setAllowScrolling(readyToMove || width <= 1199);
                   if (width > 1199 && !autoScrolling) {
                     this.setState({ autoScrolling: true }, () => {
                       fullpageApi.setAutoScrolling(true);
