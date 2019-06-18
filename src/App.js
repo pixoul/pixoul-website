@@ -36,18 +36,11 @@ class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener("resize", this.updateWindowDimensions);
-    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateWindowDimensions);
-    window.removeEventListener('scroll', this.handleScroll);
   }
-
-  handleScroll = (e) => {
-    console.log('scroll');
-
-  };
 
   updateWindowDimensions = () => {
     this.setState({ width: window.innerWidth });
@@ -62,12 +55,12 @@ class App extends React.Component {
   };
 
   toggleMenu = () => {
-    console.log('here');
     this.setShowMenu(!this.state.showMenu);
   };
 
   render() {
     const { showMenu, page, pageLoaded, autoScrolling, width } = this.state;
+    
     const pageIndex = ["00", "01", "02", "03", "04", "05", "06", "Contact"];
     const labelTimeout = {
       appear: 900,
@@ -124,14 +117,14 @@ class App extends React.Component {
               onLeave={this.onLeave}
               afterLoad={this.onSlideLoad}
               onResize={this.updateWindowDimensions}
-              scrollingSpeed={500}
+              scrollingSpeed={700}
               touchSensitivity={10}
               animateAnchor={false}
               recordHistory={false}
-              onScroll={this.handleScroll}
               autoScrolling={autoScrolling}
               render={({ state, fullpageApi }) => {
                 if (fullpageApi) {
+                  fullpageApi.setAllowScrolling(pageLoaded);
                   if (width > 1199 && !autoScrolling) {
                     this.setState({ autoScrolling: true }, () => {
                       fullpageApi.setAutoScrolling(true);
