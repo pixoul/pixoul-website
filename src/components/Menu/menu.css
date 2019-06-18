@@ -75,7 +75,7 @@
   justify-content: center;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 2px rgba(0, 0, 0, 0.14), 0 1px 18px 0px rgba(0, 0, 0, 0.12);
   position: absolute;
-  right: calc(10vw + 253 * 0.8px);
+  right: calc(10vw + 300 * 0.8px);
   top: 50vh;
   transform: translate(50%, -50%);
   transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1) 0s;
@@ -101,6 +101,10 @@
 
 @media (max-width: 767px) {
 	.menu-close-button  {
-		right: calc(10vw + 380 * 0.8px);
-	}
+		right: calc(10vw + 360 * 0.8px);
+  }
+
+  .menu {
+    width: 260px;
+  }
 }

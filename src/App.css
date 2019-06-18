@@ -50,7 +50,7 @@
 
 .main__exited {
 	pointer-events: none;
-	transform: scale(.8) translateX(-253px)!important;
+	transform: scale(.8) translateX(-300px)!important;
 	transition: 300ms;
 	overflow: hidden;
 }
@@ -616,7 +616,7 @@
 	}
 
 	.main__exited {
-		transform: scale(.8) translateX(-380px)!important;
+		transform: scale(.8) translateX(-360px)!important;
 	}
 }
 
