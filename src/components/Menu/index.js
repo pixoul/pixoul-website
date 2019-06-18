@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
+import ic_close from '../../images/ic_close.png';
 import "./menu.css";
+const cn = require('classnames');
 
 const Menu = props => {
+  const buttonClass = cn('menu-close-button', {
+    'button_visible': props.isVisible,
+  });
   return (
     <div className="menu-container">
       <div className="menu">
@@ -23,6 +27,9 @@ const Menu = props => {
           <Link className="small-menu-item" to='/privacy-policy'>Privacy Policy</Link> | <Link className="small-menu-item" to='/tos'>Terms of Service</Link>
         </div>
       </div>
+      <button className={buttonClass} onClick={props.onMenuClose}>
+        <img src={ic_close} alt="ic_close" />
+      </button>
     </div>
   );
 };

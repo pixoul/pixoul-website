@@ -14,7 +14,7 @@ const Header = props => {
       </a>
       <button
         className="pixoul_button hamburger-button"
-        onClick={props.onMenuPressed}
+        onClick={props.onMenuClick}
       >
         <div>
           <span id="span-1"></span>

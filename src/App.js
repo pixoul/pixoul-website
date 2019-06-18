@@ -61,7 +61,8 @@ class App extends React.Component {
     this.setState({ pageLoaded: true });
   };
 
-  onMenuButtonClicked = () => {
+  toggleMenu = () => {
+    console.log('here');
     this.setShowMenu(!this.state.showMenu);
   };
 
@@ -103,10 +104,10 @@ class App extends React.Component {
 
     return (
       <div>
-        <Menu />
+        <Menu isVisible={showMenu} onMenuClose={this.toggleMenu} />
           <div className={mainClass}>
             <Header
-              onMenuPressed={this.onMenuButtonClicked}
+              onMenuClick={this.toggleMenu}
               isAnimated={width > 1199}
               isHome={true}
             />
