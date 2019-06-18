@@ -154,7 +154,7 @@
 .Tilt {
 	position: absolute;
 	right: 136px;
-	top: calc(50% - 553px / 2);
+	top: calc((100% + 80px) / 2 - 553px / 2);
 	max-width: 894px;
 	width: 90%;
 	height: 553px;

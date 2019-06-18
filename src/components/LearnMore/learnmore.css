@@ -21,6 +21,8 @@
 
 .learn-more>div span {
   height: 21px;
+  font-size: 15px;
+  margin-bottom: 3px;
   font-family: 'Poppins';
   font-weight: 500;
 }
