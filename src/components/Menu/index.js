@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import ic_close from '../../images/ic_close.png';
+import ic_close from '../../images/ic_close.svg';
 import "./menu.css";
 const cn = require('classnames');
 
