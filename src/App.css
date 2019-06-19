@@ -157,7 +157,8 @@
 	top: calc((100% + 80px) / 2 - 553px / 2);
 	max-width: 894px;
 	width: 90%;
-	height: 553px;
+	height: 80vh;
+	max-height: 553px;
 	transform-style: preserve-3d;
 }
 
@@ -620,6 +621,12 @@
 	}
 }
 
+
+@media (max-height: 568px) {
+	.Tilt {
+		top: calc(50% - 80vh / 2);
+	}
+}
 /* Responsive */
 
 #fullpage {
