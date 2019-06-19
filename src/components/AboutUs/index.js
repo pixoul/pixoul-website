@@ -45,7 +45,6 @@ class AboutUsPage extends React.Component {
     return (
       <div className="about-us-page">
         <ReactFullpage
-          anchors={pageIndex}
           onLeave={this.onLeave}
           afterLoad={this.onSlideLoad}
           scrollingSpeed={500}
@@ -69,26 +68,14 @@ class AboutUsPage extends React.Component {
               <div className="section">
                 <div className="">
                   <div className="">
-                    <CSSTransition
-                      in={page === 0 && pageLoaded && width > 1199}
-                      timeout={1000}
-                      classNames="mainTitle-animation"
-                    >
                       <div className="green_heading top_about_us_heading mainTitle-animation-enter">
                         How can we help?
                       </div>
-                    </CSSTransition>
-                    <CSSTransition
-                      in={page === 0 && pageLoaded && width > 1199}
-                      timeout={1000}
-                      classNames="mainText-animation"
-                    >
                       <div className="top_about_us_heading_text mainText-animation-enter">
                         We’re here to bring life to your digital<br/>
                         &nbsp;vision. Got a project in mind?<br/>
                         &nbsp;Let's talk.
                       </div>
-                    </CSSTransition>
                   </div>
 
                   <button
