@@ -434,7 +434,7 @@ class App extends React.Component {
             />
             </div>
             <PageIndex
-              style={{ right: 44, bottom: -167 }}
+              style={{ right: 44 }}
               selected={pageIndex[this.state.page]}
             />
           </div>

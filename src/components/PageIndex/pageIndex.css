@@ -5,7 +5,7 @@
   align-items: center;
   width: 29px;
   transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
-  top: calc(50% + 80px);
+  top: calc(50% + 40px);
   transform: translateY(-50%);
 }
 
