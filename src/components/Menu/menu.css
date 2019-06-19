@@ -28,6 +28,7 @@
   font-size: 35px;
   margin-bottom: 22px;
   display: block;
+  height: 49px;
 }
 
 .menu-contact-section {
@@ -120,6 +121,18 @@
   .menu-contact-section {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
 
+  .menu-contact-button {
+    line-height: 34px;
+  }
+
+  .menu-contact-button div {
+    font-size: 15px;
+    height: 34px;
+  }
+
+  .menu-link-section {
+    margin-top: 20px;
   }
 }

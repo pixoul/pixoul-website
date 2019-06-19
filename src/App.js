@@ -121,11 +121,10 @@ class App extends React.Component {
               onLeave={this.onLeave}
               afterLoad={this.onSlideLoad}
               onResize={this.updateWindowDimensions}
-              scrollingSpeed={700}
-              touchSensitivity={10}
-              animateAnchor={false}
+              scrollingSpeed={500}
               recordHistory={false}
               autoScrolling={autoScrolling}
+              fitToSection={false}
               render={({ state, fullpageApi }) => {
                 if (fullpageApi) {
                   fullpageApi.setAllowScrolling(readyToMove || width <= 1199);
