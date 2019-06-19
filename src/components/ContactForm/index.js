@@ -9,6 +9,7 @@ class PixoulContactForm extends Component {
 
     return (
       <div className="contact_section_container">
+        <div className="contact-background" />
         <CSSTransition
           in={isAnimated}
           timeout={{
@@ -22,13 +23,7 @@ class PixoulContactForm extends Component {
         >
           <span className="contact_section_heading">{heading}</span>
         </CSSTransition>
-        <div className="contact_section_img_container">
-          <img
-            src={envelope}
-            className="contact_section_img"
-            alt="Contact Form Envelope"
-          />
-        </div>
+
         <CSSTransition
           in={isAnimated}
           timeout={{

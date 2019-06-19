@@ -424,7 +424,7 @@ class App extends React.Component {
                     </div>
                     <div className="section">
                       <PixoulContactForm
-                        heading="Let's get to work."
+                        heading="Contact us."
                         isAnimated={page === 7 && width > 1199 && pageLoaded}
                       />
                     </div>

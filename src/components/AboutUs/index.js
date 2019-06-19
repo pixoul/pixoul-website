@@ -54,7 +54,6 @@ class AboutUsPage extends React.Component {
           onLeave={this.onLeave}
           afterLoad={this.onSlideLoad}
           scrollingSpeed={500}
-          touchSensitivity={10}
           autoScrolling={false}
           render={({ state, fullpageApi }) => {
             // if (fullpageApi) {

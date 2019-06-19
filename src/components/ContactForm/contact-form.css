@@ -6,13 +6,14 @@
     position: relative;
 }
 
-.contact_section_img_container {}
-
-.contact_section_img {
-    position: absolute;
-    left: 0;
+.contact-background {
+    right: 0;
+    width: 39.5vw;
+    height: 0;
     bottom: 0;
-    max-height: 70%;
+    border-bottom: 100vh solid #f9f9f9;
+    border-left: calc(60vw - 39.5vw) solid transparent;
+    position: absolute;
 }
 
 .contact_section_heading {
