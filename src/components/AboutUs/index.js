@@ -10,7 +10,7 @@ import spaceship from "../../images/spaceship.png";
 import people from "../../images/people.png";
 import cloud from "../../images/cloud.png";
 import thumbsup from "../../images/thumbsup.png";
-import alexadevices from "../../images/alexadevices.png";
+import map from "../../images/map.svg";
 
 class AboutUsPage extends React.Component {
   state = {
@@ -160,53 +160,13 @@ class AboutUsPage extends React.Component {
               </div>
               <div className="section">
                 <div className="pixoul_section_heading">
-                  <h1>What we design & build.</h1>
+                  <h1>Our partner network.</h1>
                   <h2>
-                    We're always pushing the envelope and dreaming of what's possible.
+                    Headquarted in Dalls, we're a global network with team members across North America, and clients around the world.
                   </h2>
                 </div>
-                <div className="pixoul_columns_row">
-                  <div className="pixoul_adjustable_column">
-                    <div className="pixoul_adjustable_columns_item">
-                      <h3 className="green_heading">Enterprise Systems</h3>
-                      <h4>
-                        Big business doesn't scare us. We're ready to implement your
-                        next large-scale project.
-                      </h4>
-                    </div>
-                    <div className="pixoul_adjustable_columns_item">
-                      <h3 className="pink_heading">IoT Devices</h3>
-                      <h4>"Hey Alexa..."</h4>
-                      <img
-                        className="alex_devices_img"
-                        src={alexadevices}
-                        alt="Alexa devices"
-                      />
-                    </div>
-                  </div>
-                  <div className="pixoul_adjustable_column">
-                    <div className="pixoul_adjustable_columns_item">
-                      <h3 className="blue_heading">Sites & Apps</h3>
-                      <h4>Need we say more?</h4>
-                    </div>
-                    <div className="pixoul_adjustable_columns_item">
-                      <h3 className="purple_heading">Custom Creations</h3>
-                      <h4>
-                        We'll work with you to create unique solutions that fit your
-                        exact requirements.
-                      </h4>
-                    </div>
-                  </div>
-                  <div className="pixoul_adjustable_column">
-                    <div className="pixoul_adjustable_columns_item">
-                      <h3 className="orange_heading">Blockchain & Emerging Tech</h3>
-                      <h4>We'll simplify the complex.</h4>
-                    </div>
-                    <div className="pixoul_adjustable_columns_item">
-                      <h3 className="light_blue_heading">Wearables and Beyond</h3>
-                      <h4>From WatchOS to AR/VR technologies, we've seen it all.</h4>
-                    </div>
-                  </div>
+                <div className="about-map-row">
+                  <img src={map} alt="map" />
                 </div>
                 <div className="pixoul_button_section">
                   <button className="green_button pixoul_button">Recent Work</button>
