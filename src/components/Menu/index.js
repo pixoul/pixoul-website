@@ -11,11 +11,11 @@ const Menu = props => {
   return (
     <div className="menu-container">
       <div className="menu">
-        <Link className="menu-item" to='/'>Home</Link>
-        <Link className="menu-item" to='/work'>Work</Link>
-        <Link className="menu-item" to='/aboutus'>About</Link>
-        <Link className="menu-item" to='/services'>Services</Link>
-        <Link className="menu-item" to='/blog'>Blog</Link>
+        <Link className="menu-item" to='/' onClick={props.onMenuClose}>Home</Link>
+        <Link className="menu-item" to='/work' onClick={props.onMenuClose}>Work</Link>
+        <Link className="menu-item" to='/aboutus' onClick={props.onMenuClose}>About</Link>
+        <Link className="menu-item" to='/services' onClick={props.onMenuClose}>Services</Link>
+        <Link className="menu-item" to='/blog' onClick={props.onMenuClose}>Blog</Link>
         <div className="menu-contact-section">
           <p>(616) 914-9356</p>
           <p>hello@pixoulagency.com</p>

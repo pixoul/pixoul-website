@@ -26,9 +26,17 @@ class Home extends React.Component {
     page: 0,
     pageLoaded: false,
     autoScrolling: true,
-    width: window.innerWidth,
     readyToMove: true,
+    width: window.innerWidth,
   };
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions);
+  }
 
   updateWindowDimensions = () => {
     this.setState({ width: window.innerWidth });
@@ -91,6 +99,7 @@ class Home extends React.Component {
             recordHistory={false}
             autoScrolling={autoScrolling}
             fitToSection={false}
+            paddingTop={0}
             render={({ state, fullpageApi }) => {
               if (fullpageApi) {
                 fullpageApi.setAllowScrolling(readyToMove || width <= 1199);

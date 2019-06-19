@@ -232,6 +232,10 @@
 }
 
 @media (max-width: 767px) {
+    .contact_section_container {
+        position: static;
+    }
+    
     .contact_section_form_container {
         width: 100%;
         right: 0;
