@@ -74,7 +74,7 @@ class Home extends React.Component {
     };
 
     return (
-      <div>
+      <div className="home-page">
         {
           page < 7 && page > 0 && 
             <span className="watermark">

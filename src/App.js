@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Route, BrowserRouter } from "react-router-dom";
+import AboutUsPage from "./components/AboutUs/index";
 import "./App.css";
 
 import { Header, Menu, Home } from "./components";
@@ -48,7 +50,12 @@ class App extends React.Component {
             isAnimated={width > 1199}
             isHome={true}
           />
-          <Home />
+          <BrowserRouter>
+            <div>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/aboutus" component={AboutUsPage} />
+            </div>
+          </BrowserRouter>
         </div>
       </div>
     );

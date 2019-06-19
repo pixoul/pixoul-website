@@ -4,7 +4,6 @@ import PixoulContactForm from "../ContactForm/index";
 import { CSSTransition } from "react-transition-group";
 import downArrow from "../../images/ic_arrow_forward.png";
 import "./about-us.css";
-import { Header } from "../../components";
 
 import spaceship from "../../images/spaceship.png";
 import people from "../../images/people.png";
@@ -44,17 +43,14 @@ class AboutUsPage extends React.Component {
     const { page, pageLoaded, width } = this.state;
     const pageIndex = ["00", "01", "02", "Contact"];
     return (
-      <div className="about_us_page">
-        <Header
-          onMenuPressed={this.onMenuButtonClicked}
-          isAnimated={width > 1199}
-        />
+      <div className="about-us-page">
         <ReactFullpage
           anchors={pageIndex}
           onLeave={this.onLeave}
           afterLoad={this.onSlideLoad}
           scrollingSpeed={500}
           autoScrolling={false}
+          fitToSection={false}
           render={({ state, fullpageApi }) => {
             // if (fullpageApi) {
             //   if (width > 1199 && !autoScrolling) {
