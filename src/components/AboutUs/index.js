@@ -1,7 +1,6 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import PixoulContactForm from "../ContactForm/index";
-import { CSSTransition } from "react-transition-group";
 import downArrow from "../../images/ic_arrow_forward.png";
 import "./about-us.css";
 
@@ -41,7 +40,6 @@ class AboutUsPage extends React.Component {
 
   render() {
     const { page, pageLoaded, width } = this.state;
-    const pageIndex = ["00", "01", "02", "Contact"];
     return (
       <div className="about-us-page">
         <ReactFullpage
@@ -51,18 +49,7 @@ class AboutUsPage extends React.Component {
           autoScrolling={false}
           fitToSection={false}
           render={({ state, fullpageApi }) => {
-            // if (fullpageApi) {
-            //   if (width > 1199 && !autoScrolling) {
-            //     this.setState({ autoScrolling: true }, () => {
-            //       fullpageApi.setAutoScrolling(true);
-            //     });
-            //   } else if (width <= 1199 && autoScrolling) {
-            //     this.setState({ autoScrolling: false }, () => {
-            //       fullpageApi.setAutoScrolling(false);
-            //     });
-            //   }
-            // }
-          
+
           return (
             <ReactFullpage.Wrapper>
               <div className="section">

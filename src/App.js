@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route } from "react-router-dom";
 import AboutUsPage from "./components/AboutUs/index";
 import "./App.css";
 

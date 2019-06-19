@@ -47,6 +47,7 @@ class Home extends React.Component {
   };
 
   onSlideLoad = (section, origin, origindestination, direction) => {
+    
     this.setState({ pageLoaded: true  });
     if(origin.index === 7 || origin.index === 0) {
       this.setState({ readyToMove: true });
@@ -94,12 +95,10 @@ class Home extends React.Component {
             anchors={pageIndex}
             onLeave={this.onLeave}
             afterLoad={this.onSlideLoad}
-            onResize={this.updateWindowDimensions}
             scrollingSpeed={500}
             recordHistory={false}
             autoScrolling={autoScrolling}
             fitToSection={false}
-            paddingTop={0}
             render={({ state, fullpageApi }) => {
               if (fullpageApi) {
                 fullpageApi.setAllowScrolling(readyToMove || width <= 1199);
@@ -152,7 +151,6 @@ class Home extends React.Component {
                         timeout={labelTimeout}
                         classNames="label-animation"
                         onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="label">Corporate Site</div>
                       </CSSTransition>
@@ -161,7 +159,6 @@ class Home extends React.Component {
                         timeout={titleTimeout}
                         classNames="title-animation"
                         onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="title" id="title-01">
                           IKAR<span className="lucida-title">Ū</span>S
@@ -172,7 +169,6 @@ class Home extends React.Component {
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEntered={() => this.setState({ readyToMove: true })}
-                        onExited={() => {}}
                       >
                         <div className="subtitle">
                           is redefining the business
@@ -193,8 +189,6 @@ class Home extends React.Component {
                         in={page === 2 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
-                        onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="label">Enterprise System</div>
                       </CSSTransition>
@@ -202,8 +196,6 @@ class Home extends React.Component {
                         in={page === 2 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
-                        onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="title">
                           <img src={fusemap} alt="fusemap" />
@@ -214,7 +206,6 @@ class Home extends React.Component {
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEntered={() => this.setState({ readyToMove: true })}
-                        onExited={() => {}}
                       >
                         <div className="subtitle">
                           is thinking smarter about how <br />
@@ -235,8 +226,6 @@ class Home extends React.Component {
                         in={page === 3 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
-                        onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="label">Dashboard Matrix</div>
                       </CSSTransition>
@@ -244,8 +233,6 @@ class Home extends React.Component {
                         in={page === 3 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
-                        onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="title">hcp</div>
                       </CSSTransition>
@@ -254,7 +241,6 @@ class Home extends React.Component {
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEntered={() => this.setState({ readyToMove: true })}
-                        onExited={() => {}}
                       >
                         <div className="subtitle">
                           is setting the standard in <br />
@@ -275,8 +261,6 @@ class Home extends React.Component {
                         in={page === 4 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
-                        onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="label">Mobile App</div>
                       </CSSTransition>
@@ -284,8 +268,6 @@ class Home extends React.Component {
                         in={page === 4 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
-                        onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="title">
                           Swank
@@ -297,7 +279,6 @@ class Home extends React.Component {
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEntered={() => this.setState({ readyToMove: true })}
-                        onExited={() => {}}
                       >
                         <div className="subtitle">
                           is financing the future of
@@ -319,8 +300,6 @@ class Home extends React.Component {
                         in={page === 5 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
-                        onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="label">Mobile App</div>
                       </CSSTransition>
@@ -328,8 +307,6 @@ class Home extends React.Component {
                         in={page === 5 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
-                        onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="title">MODA</div>
                       </CSSTransition>
@@ -360,8 +337,6 @@ class Home extends React.Component {
                         in={page === 6 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
-                        onEnter={() => {}}
-                        onExited={() => {}}
                       >
                         <div className="label">E-Commerce Site</div>
                       </CSSTransition>
@@ -381,7 +356,6 @@ class Home extends React.Component {
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEntered={() => this.setState({ readyToMove: true })}
-                        onExited={() => {}}
                       >
                         <div className="subtitle">
                           is making a treat of wholesale
