@@ -2,7 +2,7 @@ import React from "react";
 import moreImg from "../../images/moreImg.png";
 import "./learnmore.css";
 
-const LearnMore = props => {
+export const LearnMore = props => {
   return (
     <button
       className="learn-more pixoul_button"
@@ -18,4 +18,4 @@ const LearnMore = props => {
   );
 };
 
-export { LearnMore };
+export default LearnMore;

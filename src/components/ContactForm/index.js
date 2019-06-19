@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { CSSTransition } from "react-transition-group";
 import "./contact-form.css";
-import envelope from "../../images/contactFormEnvelope.png";
 
 class PixoulContactForm extends Component {
   render() {
