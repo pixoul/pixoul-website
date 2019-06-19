@@ -9,6 +9,10 @@
   transform: translateY(-50%);
 }
 
+.index-0 {
+  z-index: -1;
+}
+
 .index-contact {
   transform: translateY(-220px);
 }
