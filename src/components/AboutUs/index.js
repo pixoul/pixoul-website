@@ -80,7 +80,7 @@ class AboutUsPage extends React.Component {
                       classNames="mainTitle-animation"
                     >
                       <div className="green_heading top_about_us_heading mainTitle-animation-enter">
-                        Hey there, neighbor.
+                        How can we help?
                       </div>
                     </CSSTransition>
                     <CSSTransition
@@ -89,9 +89,9 @@ class AboutUsPage extends React.Component {
                       classNames="mainText-animation"
                     >
                       <div className="top_about_us_heading_text mainText-animation-enter">
-                        We’re here to bring life to your digital vision. <br/>
-                        Got a project in mind? <br />
-                        Let's talk.
+                        We’re here to bring life to your digital<br/>
+                        &nbsp;vision. Got a project in mind?<br/>
+                        &nbsp;Let's talk.
                       </div>
                     </CSSTransition>
                   </div>
@@ -108,11 +108,9 @@ class AboutUsPage extends React.Component {
                 <div className="pixoul_section_heading">
                   <h1>What we value.</h1>
                   <h2>
-                    Our work belongs to the digital world, but our hearts belong to
-                    you. Building digital
+                    Our design-centric approach means our products focus on real data and business
                     <br />
-                    products takes a little planning, a dash of percision, and a whole
-                    lotta love.
+                    &nbsp;goals, bringing value and creativity into every solution.
                   </h2>
                 </div>
                 <div className="pixoul_four_grid">
@@ -122,8 +120,7 @@ class AboutUsPage extends React.Component {
                     </div>
                     <h3 className="blue_heading">We strive for innovation.</h3>
                     <h4>
-                      We make useful, long-lasting products that set the standard for
-                      innovation.
+                      We make useful, long-lasting products that set the industry standard.
                     </h4>
                   </div>
                   <div className="pixoul_four_grid_item">
@@ -162,7 +159,7 @@ class AboutUsPage extends React.Component {
                 <div className="pixoul_section_heading">
                   <h1>Our partner network.</h1>
                   <h2>
-                    Headquarted in Dalls, we're a global network with team members across North America, and clients around the world.
+                    Headquartered in Dallas, we're a global network with team members across North America, and clients around the world.
                   </h2>
                 </div>
                 <div className="about-map-row">

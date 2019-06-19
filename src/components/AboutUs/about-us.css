@@ -34,17 +34,19 @@
 }
 
 .top_about_us_heading {
+    font-weight: 500;
     text-align: center;
     margin: 15vh auto 20px;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .top_about_us_heading_text {
-    font-size: 28px;
+    margin: 0 auto;;
+    font-size: 38px;
     font-weight: 300;
     overflow: hidden;
-    white-space: nowrap;
     text-align: center;
+    max-width: 721px;
 }
 
 .pixoul_section_heading {
@@ -54,18 +56,17 @@
 .pixoul_section_heading h1 {
     font-weight: 500;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 45px;
     margin: 20px auto;
 }
 
 .pixoul_section_heading h2 {
     max-width: 1035px;
-    overflow-wrap: break-word;
     width: 80%;
     margin: auto;
     text-align: center;
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 25px;
 }
 
 .pixoul_four_grid {
@@ -94,14 +95,14 @@
 }
 
 .pixoul_four_grid_item h3 {
-    font-weight: 400;
-    font-size: 23px;
+    font-weight: 500;
+    font-size: 25px;
     margin: 10px auto 5px;
 }
 
 .pixoul_four_grid_item h4 {
     font-weight: 300;
-    font-size: 23px;
+    font-size: 25px;
     margin-top: 0;
 }
 
