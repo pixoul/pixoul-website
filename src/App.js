@@ -117,7 +117,6 @@ class App extends React.Component {
             }
             <div className={sectionClass}>
             <ReactFullpage
-              anchors={pageIndex}
               onLeave={this.onLeave}
               afterLoad={this.onSlideLoad}
               onResize={this.updateWindowDimensions}
