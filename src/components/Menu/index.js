@@ -20,7 +20,7 @@ const Menu = props => {
           <p><a href='tel:6169149356'>(616) 914-9356</a></p>
           <p><a href='mailto:hello@pixoulagency.com'>hello@pixoulagency.com</a></p>
         </div>
-        <a className="menu-contact-button" href="#Contact">
+        <a className="menu-contact-button" href="#Contact" onClick={props.onMenuClose}>
           <div>Contact Us</div>
         </a>
         <div className="menu-link-section">

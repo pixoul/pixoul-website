@@ -40,6 +40,7 @@ class AboutUsPage extends React.Component {
   };
 
   render() {
+    const pageIndex = ["00", "01", "02", "Contact"];
     const { page, pageLoaded, width } = this.state;
     const titleTimeout = {
       appear: 900,
@@ -62,13 +63,15 @@ class AboutUsPage extends React.Component {
     return (
       <div className="about-us-page">
         <ReactFullpage
+          anchors={pageIndex}
           onLeave={this.onLeave}
           afterLoad={this.onSlideLoad}
           scrollingSpeed={500}
           autoScrolling={false}
           fitToSection={false}
+          bigSectionsDestination={'top'}
           render={({ state, fullpageApi }) => {
-
+          
           return (
             <ReactFullpage.Wrapper>
               <div className="section">

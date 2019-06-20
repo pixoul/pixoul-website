@@ -58,7 +58,7 @@ class PixoulContactForm extends Component {
               onEnter={() => {}}
               onExited={() => {}}
             >
-              <div class="form-animation-container">
+              <div className="form-animation-container">
               <form className="contact_section_form" autoComplete="on">
                 <div className="group">
                   <input
