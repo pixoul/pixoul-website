@@ -86,7 +86,7 @@ class AboutUsPage extends React.Component {
 
                   <button
                     onClick={() => fullpageApi.moveSectionDown()}
-                    className="page_down_button_centered pixoul_button"
+                    className="page_down_button_centered pixoul_button about-page-button-animation"
                   >
                     <img src={downArrow} alt="downArrow" />
                   </button>
