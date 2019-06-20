@@ -128,13 +128,14 @@
 	color: #2EC986;
 	font-family: 'Poppins', sans-serif;
 	height: 0;
-	overflow: hidden;
+  overflow: hidden;
+  position: absolute;
 }
 
 .title {
 	font-size: 62.25px;
 	color: #374050;
-	margin-top: 38px;
+	margin-top: 68px;
 	font-weight: bold;
 	font-family: 'Lato', sans-serif;
 	margin-bottom: 4px;
@@ -181,7 +182,7 @@
 	width: 0;
 	overflow: hidden;
 	white-space: nowrap;
-	margin-top: 131px;
+	margin-top: 161px;
 }
 
 #content-02 {
@@ -216,13 +217,13 @@
 	}
 
 	to {
-		height: 100%;
+		height: auto;
 	}
 }
 
 @keyframes stuckSlideHiddenH2 {
 	from {
-		height: 100%;
+		height: auto;
 	}
 
 	to {
@@ -236,13 +237,13 @@
 	}
 
 	to {
-		height: 100%;
+		height: auto;
 	}
 }
 
 @keyframes stuckSlideHiddenH3 {
 	from {
-		height: 100%;
+		height: auto;
 	}
 
 	to {
