@@ -41,7 +41,7 @@
 .top_about_us_heading {
     font-weight: 500;
     text-align: center;
-    margin: 15vh auto 20px;
+    margin: 25vh auto 20px;
     font-size: 28px;
 }
 
@@ -87,6 +87,7 @@
     margin: 4% 8%;
     position: relative;
     opacity: 0;
+    display: flex;
 }
 
 .pixoul_four_grid_item_img_container {
@@ -95,22 +96,18 @@
 }
 
 .pixoul_four_grid_item_img_container img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    min-height: 50px
+    width: 95px;
 }
 
 .pixoul_four_grid_item h3 {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 19px;
     margin: 10px auto 5px;
 }
 
 .pixoul_four_grid_item h4 {
     font-weight: 300;
-    font-size: 25px;
+    font-size: 19px;
     margin-top: 0;
 }
 

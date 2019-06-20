@@ -17,13 +17,12 @@ const Menu = props => {
         <Link className="menu-item" to='/services' onClick={props.onMenuClose}>Services</Link>
         <Link className="menu-item" to='/blog' onClick={props.onMenuClose}>Blog</Link>
         <div className="menu-contact-section">
-          <p>(616) 914-9356</p>
-          <p>hello@pixoulagency.com</p>
+          <p><a href='tel:6169149356'>(616) 914-9356</a></p>
+          <p><a href='mailto:hello@pixoulagency.com'>hello@pixoulagency.com</a></p>
         </div>
         <a className="menu-contact-button" href="#Contact">
           <div>Contact Us</div>
         </a>
-        
         <div className="menu-link-section">
           <div>&copy; 2019 Pixoul. All rights reserved.</div>
           <Link className="small-menu-item" to='/privacy-policy'>Privacy Policy</Link> | <Link className="small-menu-item" to='/tos'>Terms of Service</Link>

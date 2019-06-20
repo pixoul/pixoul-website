@@ -26,7 +26,7 @@
     text-align: center;
     position: absolute;
     left: 50%;
-    top: 13%;
+    top: 14%;
     transform: translateX(-50%);
 }
 
@@ -37,7 +37,7 @@
     max-width: 1168px;
     width: 90%;
     display: flex;
-    top: calc(119px + 13%);
+    top: 35%;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -128,6 +128,7 @@
 
 .contact_form_submit_btn_container {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .contact_form_submit_btn {
@@ -290,9 +291,15 @@
 @media (max-width: 1199px) {
     .contact_section_form_container h2, .contact_section_form_container h3 {
         white-space: normal;
+        width: auto;
     }
     .contact_section_heading {
        height: auto;
+    }
+
+    .form-animation-container {
+        height: auto;
+        opacity: 1;
     }
 }
 @media (max-width: 767px) {
