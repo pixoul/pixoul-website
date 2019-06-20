@@ -90,11 +90,12 @@
     position: relative;
     opacity: 0;
     display: flex;
+    min-height: 155px;
+    align-items: center;
 }
 
 .pixoul_four_grid_item_img_container {
     position: relative;
-    height: 155px;
     margin-right: 41.5px;
 }
 
