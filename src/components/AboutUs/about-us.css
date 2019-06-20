@@ -58,6 +58,7 @@
     text-align: center;
     font-size: 45px;
     margin: 20px auto;
+    opacity: 0;
 }
 
 .pixoul_section_heading h2 {
@@ -67,6 +68,7 @@
     text-align: center;
     font-weight: 300;
     font-size: 25px;
+    opacity: 0;
 }
 
 .pixoul_four_grid {
@@ -79,6 +81,7 @@
     width: 370px;
     margin: 4% 8%;
     position: relative;
+    opacity: 0;
 }
 
 .pixoul_four_grid_item_img_container {
@@ -107,6 +110,7 @@
 }
 
 .about-map-row {
+    transform: scale(0);
     max-width: 1184px;
     width: 90%;
     margin: 0 auto;
@@ -142,6 +146,7 @@
 }
 
 .pixoul_button_section {
+    transform: scale(0);
     margin: 3rem auto;
 }
 
@@ -150,6 +155,54 @@
     display: block;
 }
 
+@keyframes textAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.about-title-animation-enter {
+    animation-name: textAnimation;
+    animation-delay: .05s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.about-text-animation-enter {
+    animation-name: textAnimation;
+    animation-delay: .55s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes imageAnimation {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.about-image-animation-enter {
+    animation-name: imageAnimation;
+    animation-delay: .95s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.about-image-animation-enter-done {
+    transform: scale(1)!important;
+}
+
+.about-title-animation-enter-done, .about-text-animation-enter-done {
+    opacity: 1!important;
+}
 
 @media (max-width: 767px) {
     .pixoul_adjustable_column {

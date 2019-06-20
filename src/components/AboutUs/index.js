@@ -2,6 +2,7 @@ import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import PixoulContactForm from "../ContactForm/index";
 import downArrow from "../../images/ic_arrow_forward.png";
+import { CSSTransition } from "react-transition-group";
 import "./about-us.css";
 
 import spaceship from "../../images/spaceship.png";
@@ -40,6 +41,24 @@ class AboutUsPage extends React.Component {
 
   render() {
     const { page, pageLoaded, width } = this.state;
+    const titleTimeout = {
+      appear: 900,
+      enter: 1950,
+      exit: 50,
+    };
+
+    const textTimeout = {
+      appear: 900,
+      enter: 2450,
+      exit: 50,
+    };
+    
+    const imgTimeout = {
+      appear: 900,
+      enter: 2750,
+      exit: 50,
+    };
+
     return (
       <div className="about-us-page">
         <ReactFullpage
@@ -75,68 +94,148 @@ class AboutUsPage extends React.Component {
               </div>
               <div className="section">
                 <div className="pixoul_section_heading">
+                <CSSTransition
+                  in={page === 1 && pageLoaded && width > 1199}
+                  timeout={titleTimeout}
+                  classNames="about-title-animation"
+                  onEnter={() => {}}
+                  onExited={() => {}}
+                >
                   <h1>What we value.</h1>
+                </CSSTransition>
+                <CSSTransition
+                  in={page === 1 && pageLoaded && width > 1199}
+                  timeout={{
+                    appear: 900,
+                    enter: 1950,
+                    exit: 50,
+                  }}
+                  classNames="about-text-animation"
+                  onEnter={() => {}}
+                  onExited={() => {}}
+                >
                   <h2>
                     Our design-centric approach means our products focus on real data and business
                     <br />
                     &nbsp;goals, bringing value and creativity into every solution.
                   </h2>
+                  </CSSTransition>
                 </div>
                 <div className="pixoul_four_grid">
-                  <div className="pixoul_four_grid_item">
-                    <div className="pixoul_four_grid_item_img_container">
-                      <img src={spaceship} alt="Spaceship" />
+                  <CSSTransition
+                    in={page === 1 && pageLoaded && width > 1199}
+                    timeout={textTimeout}
+                    classNames="about-title-animation"
+                    onEnter={() => {}}
+                    onExited={() => {}}
+                  >
+                    <div className="pixoul_four_grid_item">
+                      <div className="pixoul_four_grid_item_img_container">
+                        <img src={spaceship} alt="Spaceship" />
+                      </div>
+                      <h3 className="blue_heading">We strive for innovation.</h3>
+                      <h4>
+                        We make useful, long-lasting products that set the industry standard.
+                      </h4>
                     </div>
-                    <h3 className="blue_heading">We strive for innovation.</h3>
-                    <h4>
-                      We make useful, long-lasting products that set the industry standard.
-                    </h4>
-                  </div>
-                  <div className="pixoul_four_grid_item">
-                    <div className="pixoul_four_grid_item_img_container">
-                      <img src={people} alt="People" />
+                  </CSSTransition>
+                  <CSSTransition
+                    in={page === 1 && pageLoaded && width > 1199}
+                    timeout={titleTimeout}
+                    classNames="about-title-animation"
+                    onEnter={() => {}}
+                    onExited={() => {}}
+                  >
+                    <div className="pixoul_four_grid_item">
+                      <div className="pixoul_four_grid_item_img_container">
+                        <img src={people} alt="People" />
+                      </div>
+                      <h3 className="blue_heading">You're our first priority.</h3>
+                      <h4>
+                        Our main goal always lies at the intersection of your user's
+                        needs and your business' goals.
+                      </h4>
                     </div>
-                    <h3 className="blue_heading">You're our first priority.</h3>
-                    <h4>
-                      Our main goal always lies at the intersection of your user's
-                      needs and your business' goals.
-                    </h4>
-                  </div>
-                  <div className="pixoul_four_grid_item">
-                    <div className="pixoul_four_grid_item_img_container">
-                      <img src={cloud} alt="Cloud data" />
+                  </CSSTransition>
+                  <CSSTransition
+                    in={page === 1 && pageLoaded && width > 1199}
+                    timeout={textTimeout}
+                    classNames="about-text-animation"
+                    onEnter={() => {}}
+                    onExited={() => {}}
+                  >
+                    <div className="pixoul_four_grid_item">
+                      <div className="pixoul_four_grid_item_img_container">
+                        <img src={cloud} alt="Cloud data" />
+                      </div>
+                      <h3 className="blue_heading">Solutions should be simple.</h3>
+                      <h4>
+                        Our work will bring about novel, custom solutions to fit your
+                        unique objectives.
+                      </h4>
                     </div>
-                    <h3 className="blue_heading">Solutions should be simple.</h3>
-                    <h4>
-                      Our work will bring about novel, custom solutions to fit your
-                      unique objectives.
-                    </h4>
-                  </div>
-                  <div className="pixoul_four_grid_item">
-                    <div className="pixoul_four_grid_item_img_container">
-                      <img src={thumbsup} alt="Thumbs up" />
+                  </CSSTransition>
+                  <CSSTransition
+                    in={page === 1 && pageLoaded && width > 1199}
+                    timeout={textTimeout}
+                    classNames="about-text-animation"
+                    onEnter={() => {}}
+                    onExited={() => {}}
+                  >
+                    <div className="pixoul_four_grid_item">
+                      <div className="pixoul_four_grid_item_img_container">
+                        <img src={thumbsup} alt="Thumbs up" />
+                      </div>
+                      <h3 className="blue_heading">Good design is minimal design.</h3>
+                      <h4>
+                        We craft with a purposeful, simple, and minimal design
+                        aesthetic.
+                      </h4>
                     </div>
-                    <h3 className="blue_heading">Good design is minimal design.</h3>
-                    <h4>
-                      We craft with a purposeful, simple, and minimal design
-                      aesthetic.
-                    </h4>
-                  </div>
+                  </CSSTransition>
                 </div>
               </div>
               <div className="section">
                 <div className="pixoul_section_heading">
-                  <h1>Our partner network.</h1>
-                  <h2>
-                    Headquartered in Dallas, we're a global network with team members across North America, and clients around the world.
-                  </h2>
+                  <CSSTransition
+                      in={page === 2 && pageLoaded && width > 1199}
+                      timeout={titleTimeout}
+                      classNames="about-title-animation"
+                      onEnter={() => {}}
+                      onExited={() => {}}
+                    >
+                    <h1>Our partner network.</h1>
+                  </CSSTransition>
+                  <CSSTransition
+                      in={page === 2 && pageLoaded && width > 1199}
+                      timeout={textTimeout}
+                      classNames="about-text-animation"
+                      onEnter={() => {}}
+                      onExited={() => {}}
+                  >
+                    <h2>
+                      Headquartered in Dallas, we're a global network with team members across North America, and clients around the world.
+                    </h2>
+                  </CSSTransition>
                 </div>
-                <div className="about-map-row">
-                  <img src={map} alt="map" />
-                </div>
+                <CSSTransition
+                    in={page === 2 && pageLoaded && width > 1199}
+                    timeout={imgTimeout}
+                    classNames="about-image-animation"
+                >
+                  <div className="about-map-row">
+                    <img src={map} alt="map" />
+                  </div>
+                </CSSTransition>
+                <CSSTransition
+                  in={page === 2 && pageLoaded && width > 1199}
+                  timeout={imgTimeout}
+                  classNames="about-image-animation"
+                >
                 <div className="pixoul_button_section">
                   <button className="green_button pixoul_button">Recent Work</button>
                 </div>
+                </CSSTransition>
               </div>
               <div className="section">
                 <PixoulContactForm
