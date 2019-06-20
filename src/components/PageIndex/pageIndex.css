@@ -51,7 +51,7 @@
 }
 
 
-@media (max-height: 768px) {
+@media (max-height: 567px) {
 	.page-index {
     margin-top: 155px;
 		bottom: -67px;
