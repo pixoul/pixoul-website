@@ -482,8 +482,8 @@
 @media (max-width: 1199px) {
 	.Tilt {
 		right: 5%;
-	}
-
+  }
+  
 	.title,
 	.label {
 		height: auto;
@@ -535,7 +535,12 @@
 		right: 0;
 		top: 0;
 		height: auto;
-	}
+  }
+  
+  .label, .title, .subtitle {
+    position: static;
+    margin-top: 10px;
+  }
 }
 
 
