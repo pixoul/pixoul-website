@@ -140,7 +140,7 @@ class AboutUsPage extends React.Component {
               </div>
               <div className="section">
                 <PixoulContactForm
-                  heading="Let's get to work."
+                  heading="Contact us."
                   isAnimated={width > 1199 && page === 3 && pageLoaded}
                 />
               </div>

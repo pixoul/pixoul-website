@@ -51,6 +51,7 @@ class App extends React.Component {
             isHome={true}
           />
           <Route exact path="/" component={Home} />
+          <Route exact path="/work" component={Home} />
           <Route exact path="/aboutus" component={AboutUsPage} />
         </div>
       </div>
