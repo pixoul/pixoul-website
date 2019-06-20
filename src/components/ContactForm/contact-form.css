@@ -48,17 +48,21 @@
 }
 
 .contact_section_form_container h2 {
-    font-size: 30px;
+    font-size: 25px;
     color: #3180FB;
     font-weight: 500;
     margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .contact_section_form_container h3 {
-    font-size: 26px;
+    font-size: 19px;
     color: #374050;
     font-weight: 300;
     margin-top: 35px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .contact_section_form {
@@ -208,6 +212,11 @@
     height: 63px;
 }
 
+.form-animation-container {
+    position: absolute;
+    overflow: hidden;
+}
+
 .form-slide-animation-enter {
     animation-name: stuckSlideShownSlideDown;
     animation-delay: .95s;
@@ -231,10 +240,27 @@
 
 .form-slide-animation-enter-done,
 .form-animation-enter-done {
-    height: 100%;
+    height: auto;
+}
+
+.subtitle-animation-enter {
+	animation-name: stuckSlideShownH4;
+	animation-delay: 1.25s;
+	animation-duration: .6s;
+	animation-fill-mode: both;
+}
+
+.subtitle-animation-exit {
+	animation-name: stuckSlideHiddenH4;
+	animation-delay: .3s;
+	animation-duration: .6s;
+	animation-fill-mode: both;
 }
 
 @media (max-width: 1199px) {
+    .contact_section_form_container h2, .contact_section_form_container h3 {
+        white-space: normal;
+    }
     .contact_section_heading {
        height: auto;
     }

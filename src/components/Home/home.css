@@ -250,26 +250,6 @@
 	}
 }
 
-@keyframes stuckSlideShownH4 {
-	from {
-		width: 0;
-	}
-
-	to {
-		width: 100%;
-	}
-}
-
-@keyframes stuckSlideHiddenH4 {
-	from {
-		width: 100%;
-	}
-
-	to {
-		width: 0;
-	}
-}
-
 @keyframes mainSliderH2Show {
 	from {
 		transform: translateY(-20vh);
