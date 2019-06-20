@@ -133,10 +133,12 @@ class AboutUsPage extends React.Component {
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={spaceship} alt="Spaceship" />
                       </div>
-                      <h3 className="blue_heading">We strive for innovation.</h3>
-                      <h4>
-                        We make useful, long-lasting products that set the industry standard.
-                      </h4>
+                      <div>
+                        <h3 className="blue_heading">We strive for innovation.</h3>
+                        <h4>
+                          We make useful, long-lasting products that set the industry standard.
+                        </h4>
+                      </div>
                     </div>
                   </CSSTransition>
                   <CSSTransition
@@ -150,11 +152,13 @@ class AboutUsPage extends React.Component {
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={people} alt="People" />
                       </div>
-                      <h3 className="blue_heading">You're our first priority.</h3>
-                      <h4>
-                        Our main goal always lies at the intersection of your user's
-                        needs and your business' goals.
-                      </h4>
+                      <div>
+                        <h3 className="blue_heading">You're our first priority.</h3>
+                        <h4>
+                          Our main goal always lies at the intersection of your user's
+                          needs and your business' goals.
+                        </h4>
+                      </div>
                     </div>
                   </CSSTransition>
                   <CSSTransition
@@ -168,11 +172,13 @@ class AboutUsPage extends React.Component {
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={cloud} alt="Cloud data" />
                       </div>
-                      <h3 className="blue_heading">Solutions should be simple.</h3>
-                      <h4>
-                        Our work will bring about novel, custom solutions to fit your
-                        unique objectives.
-                      </h4>
+                      <div>
+                        <h3 className="blue_heading">Solutions should be simple.</h3>
+                        <h4>
+                          Our work will bring about novel, custom solutions to fit your
+                          unique objectives.
+                        </h4>
+                      </div>
                     </div>
                   </CSSTransition>
                   <CSSTransition
@@ -186,11 +192,13 @@ class AboutUsPage extends React.Component {
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={thumbsup} alt="Thumbs up" />
                       </div>
-                      <h3 className="blue_heading">Good design is minimal design.</h3>
-                      <h4>
-                        We craft with a purposeful, simple, and minimal design
-                        aesthetic.
-                      </h4>
+                      <div>
+                        <h3 className="blue_heading">Good design is minimal design.</h3>
+                        <h4>
+                          We craft with a purposeful, simple, and minimal design
+                          aesthetic.
+                        </h4>
+                      </div>
                     </div>
                   </CSSTransition>
                 </div>

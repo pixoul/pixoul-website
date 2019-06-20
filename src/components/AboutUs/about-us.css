@@ -79,12 +79,14 @@
 .pixoul_four_grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .pixoul_four_grid_item {
-    width: 370px;
-    margin: 4% 8%;
+    width: calc((100% - 83.5px) / 2);
+    min-width: 414.5px;
     position: relative;
     opacity: 0;
     display: flex;
@@ -93,6 +95,7 @@
 .pixoul_four_grid_item_img_container {
     position: relative;
     height: 155px;
+    margin-right: 41.5px;
 }
 
 .pixoul_four_grid_item_img_container img {
@@ -224,6 +227,15 @@
 	animation-delay: .8s;
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media (max-width: 1199px) {
+    h1, h2, .pixoul_four_grid_item {
+        opacity: 1!important;
+    }
+    .about-map-row, .pixoul_button_section {
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 767px) {
