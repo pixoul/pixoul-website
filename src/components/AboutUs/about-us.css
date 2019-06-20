@@ -13,6 +13,11 @@
     transition: all 0.3s ease-in-out;
 }
 
+.page_down_button_centered img:hover {
+    transform: translateY(5px);
+	transition: transform 300ms;
+}
+
 .pink_heading {
     color: #C92E85;
 }

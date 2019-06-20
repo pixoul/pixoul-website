@@ -49,7 +49,10 @@
 .menu-contact-button {
   text-align: center;
   line-height: 44px;
-  
+}
+
+.menu-contact-button div:hover {
+  opacity: 0.85;
 }
 
 .menu-contact-button div {
