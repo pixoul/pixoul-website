@@ -16,7 +16,8 @@ class AboutUsPage extends React.Component {
     page: 0,
     showMenu: false,
     pageLoaded: true,
-    width: window.innerWidth
+    progress: 0,
+    width: window.innerWidth,
   };
 
   componentDidMount() {
@@ -41,7 +42,7 @@ class AboutUsPage extends React.Component {
 
   render() {
     const pageIndex = ["00", "01", "02", "Contact"];
-    const { page, pageLoaded, width } = this.state;
+    const { page, pageLoaded, width, progress } = this.state;
     const titleTimeout = {
       appear: 900,
       enter: 1950,
@@ -98,21 +99,17 @@ class AboutUsPage extends React.Component {
               <div className="section">
                 <div className="pixoul_section_heading">
                 <CSSTransition
-                  in={page === 1 && pageLoaded && width > 1199}
+                  in={page === 1 && pageLoaded && width > 1199 && progress < 1}
                   timeout={titleTimeout}
                   classNames="about-title-animation"
                   onEnter={() => {}}
-                  onExited={() => {}}
+                  onExited={() => {this.setState({progress: 1})}}
                 >
                   <h1>What we value.</h1>
                 </CSSTransition>
                 <CSSTransition
-                  in={page === 1 && pageLoaded && width > 1199}
-                  timeout={{
-                    appear: 900,
-                    enter: 1950,
-                    exit: 50,
-                  }}
+                  in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                  timeout={textTimeout}
                   classNames="about-text-animation"
                   onEnter={() => {}}
                   onExited={() => {}}
@@ -126,9 +123,9 @@ class AboutUsPage extends React.Component {
                 </div>
                 <div className="pixoul_four_grid">
                   <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199}
+                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
                     timeout={textTimeout}
-                    classNames="about-title-animation"
+                    classNames="about-text-animation"
                     onEnter={() => {}}
                     onExited={() => {}}
                   >
@@ -145,9 +142,9 @@ class AboutUsPage extends React.Component {
                     </div>
                   </CSSTransition>
                   <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199}
+                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
                     timeout={titleTimeout}
-                    classNames="about-title-animation"
+                    classNames="about-text-animation"
                     onEnter={() => {}}
                     onExited={() => {}}
                   >
@@ -165,7 +162,7 @@ class AboutUsPage extends React.Component {
                     </div>
                   </CSSTransition>
                   <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199}
+                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
                     timeout={textTimeout}
                     classNames="about-text-animation"
                     onEnter={() => {}}
@@ -185,11 +182,11 @@ class AboutUsPage extends React.Component {
                     </div>
                   </CSSTransition>
                   <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199}
+                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
                     timeout={textTimeout}
                     classNames="about-text-animation"
                     onEnter={() => {}}
-                    onExited={() => {}}
+                    onExited={() => {this.setState({progress: 2})}}
                   >
                     <div className="pixoul_four_grid_item">
                       <div className="pixoul_four_grid_item_img_container">
@@ -254,6 +251,7 @@ class AboutUsPage extends React.Component {
                   isAnimated={width > 1199 && page === 3 && pageLoaded}
                 />
               </div>
+
             </ReactFullpage.Wrapper>
             );
           }}

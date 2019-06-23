@@ -1,5 +1,5 @@
 import React from "react";
-
+import { CSSTransition } from "react-transition-group";
 import { Route } from "react-router-dom";
 import AboutUsPage from "./components/AboutUs/index";
 import "./App.css";
@@ -35,16 +35,20 @@ class App extends React.Component {
 
   render() {
     const { showMenu, width } = this.state;
-    
-    const mainClass = cn('main', {
-      'main__exited': showMenu,
-      'main-enter': !showMenu,
+
+    const mainClass = cn('', {
+      'main-exit-animation-enter-done': showMenu,
     });
 
     return (
       <div>
         <Menu isVisible={showMenu} onMenuClose={this.toggleMenu} />
-        <div className={mainClass}>
+        <CSSTransition
+          in={showMenu}
+          timeout={300}
+          classNames="main-exit-animation"
+        >
+          <div className={mainClass}>
           <Header
             onMenuClick={this.toggleMenu}
             isAnimated={width > 1199}
@@ -53,7 +57,9 @@ class App extends React.Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/work" component={Home} />
           <Route exact path="/aboutus" component={AboutUsPage} />
-        </div>
+          </div>
+        </CSSTransition>
+
       </div>
     );
   }

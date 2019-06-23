@@ -36,23 +36,36 @@ input {
 	background-color: transparent;
 }
 
-.main {
+.section {
 	background-color: white;
-	max-height: 100vh;
 }
 
-.main-enter {
+.main {
+	max-height: 100%;
+}
+
+.main-exit-animation-exit-active {
 	transform: scale(1) translateX(0)!important;
 	transition: 300ms;
 	overflow: visible;
 }
 
-.main__exited {
-	pointer-events: none;
+.main-exit-animation-exit {
+	max-height: 100%;
+}
+
+.main-exit-animation-enter {
 	transform: scale(.8) translateX(-300px)!important;
 	transition: 300ms;
-	overflow: hidden;
 }
+
+.main-exit-animation-enter-done {
+	transform: scale(.8) translateX(-300px)!important;
+	pointer-events: none;
+	overflow: hidden;
+	max-height: 100vh;
+}
+
 
 .no-pointer {
 	pointer-events: none;
