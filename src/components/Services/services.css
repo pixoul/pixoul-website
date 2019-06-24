@@ -181,11 +181,12 @@ transition: transform 300ms;
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .services-row > div {
-  max-width: 519px;
   width: 50%;
+  min-width: 300px;
 }
 
 .services-row h1 {
@@ -206,6 +207,11 @@ transition: transform 300ms;
 
 .services-row a:hover {
   text-decoration: underline;
+}
+
+.services-link-row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @keyframes textAnimation {
@@ -297,5 +303,14 @@ animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 
   .top_about_us_heading_text {
       white-space: normal;
+  }
+
+  .services-row > div {
+    width: 100%!important;
+  }
+
+  .service-button-section {
+    margin: 30px auto;
+    text-align: center
   }
 }

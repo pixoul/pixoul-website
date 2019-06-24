@@ -242,7 +242,7 @@ class ServicesPage extends React.Component {
                     <div>
                       <h1>Excellence in action</h1> 
                       <h2>From internal tools, to consumer facing products and B2B sales-we've got you covered.</h2>
-                      <div>
+                      <div className="services-link-row">
                         <Link to="#">Business</Link>
                         <Link to="#">FinTech</Link>
                         <Link to="#">Insurance</Link>
