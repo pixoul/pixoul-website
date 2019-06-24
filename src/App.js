@@ -2,6 +2,7 @@ import React from "react";
 import { CSSTransition } from "react-transition-group";
 import { Route } from "react-router-dom";
 import AboutUsPage from "./components/AboutUs/index";
+import ServicesPage from "./components/Services/index";
 import "./App.css";
 
 import { Header, Menu, Home } from "./components";
@@ -57,6 +58,7 @@ class App extends React.Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/work" component={Home} />
           <Route exact path="/aboutus" component={AboutUsPage} />
+          <Route exact path="/services" component={ServicesPage} />
           </div>
         </CSSTransition>
 
