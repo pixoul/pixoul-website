@@ -69,18 +69,17 @@ class AboutUsPage extends React.Component {
     };
 
     const gridClass = cn('pixoul_four_grid_item', {
-      'about-text-animation-enter-done': progress >= 1,
+      'about-text-animation-enter-done': progress >= 1 || width <= 1199,
     });
 
     const mapClass = cn('about-map-row', {
-      'about-image-animation-enter-done': progress >= 5,
+      'about-image-animation-enter-done': progress >= 5 || width <= 1199,
     });
 
     const buttonClass = cn('pixoul_button_section', {
-      'about-image-animation-enter-done': progress >= 5,
+      'about-image-animation-enter-done': progress >= 5 || width <= 1199,
     });
 
-    console.log('progress----', progress);
     return (
       <div className="about-us-page">
         <ReactFullpage
@@ -125,7 +124,7 @@ class AboutUsPage extends React.Component {
                   onEnter={() => {}}
                   onExited={() => {this.setProgress(1)}}
                 >
-                  <h1 className={progress >= 1 ? 'about-title-animation-enter-done' : ''}>
+                  <h1 className={progress >= 1 || width <= 1199 ? 'about-title-animation-enter-done' : ''}>
                     What we value.
                   </h1>
                 </CSSTransition>
@@ -136,7 +135,7 @@ class AboutUsPage extends React.Component {
                   onEnter={() => {}}
                   onExited={() => {}}
                 >
-                  <h2 className={progress >= 1 ? 'about-text-animation-enter-done' : ''}>
+                  <h2 className={progress >= 1 || width <= 1199 ? 'about-text-animation-enter-done' : ''}>
                     Our design-centric approach means our products focus on real data and business
                     <br />
                     &nbsp;goals, bringing value and creativity into every solution.
@@ -234,7 +233,7 @@ class AboutUsPage extends React.Component {
                       onEnter={() => {}}
                       onExited={() => {this.setProgress(3)}}
                     >
-                    <h1 className={progress >= 3 ? 'about-title-animation-enter-done' : ''}>Our partner network.</h1>
+                    <h1 className={progress >= 3 || width <= 1199 ? 'about-title-animation-enter-done' : ''}>Our partner network.</h1>
                   </CSSTransition>
                   <CSSTransition
                       in={page === 2 && pageLoaded && width > 1199 && progress < 4}
@@ -243,7 +242,7 @@ class AboutUsPage extends React.Component {
                       onEnter={() => {}}
                       onExited={() => {this.setProgress(4)}}
                   >
-                    <h2 className={progress >= 4 ? 'about-text-animation-enter-done' : ''}>
+                    <h2 className={progress >= 4 || width <= 1199 ? 'about-text-animation-enter-done' : ''}>
                       Headquartered in Dallas, we're a global network with team members across North America, and clients around the world.
                     </h2>
                   </CSSTransition>
