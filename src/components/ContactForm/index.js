@@ -63,8 +63,9 @@ class PixoulContactForm extends Component {
                 <div className="group">
                   <input
                     type="text"
-                    id="contact_form_first_name"
+                    id="given-name"
                     required="required"
+                    name="name"
                   />
                   <label htmlFor="contact_form_first_name">
                     First Name <span className="asterix">*</span>
@@ -73,8 +74,9 @@ class PixoulContactForm extends Component {
                 <div className="group">
                   <input
                     type="text"
-                    id="contact_form_last_name"
+                    id="family-name"
                     required="required"
+                    name="name"
                   />
                   <label htmlFor="contact_form_last_name">
                     Last Name <span className="asterix">*</span>
@@ -83,7 +85,8 @@ class PixoulContactForm extends Component {
                 <div className="group">
                   <input
                     type="email"
-                    id="contact_form_email"
+                    name="email"
+                    id="email"
                     required="required"
                     autoComplete="email"
                   />
@@ -94,6 +97,7 @@ class PixoulContactForm extends Component {
                 <div className="group">
                   <input
                     type="tel"
+                    name="tel"
                     id="contact_form_phone"
                     required="required"
                     autoComplete="tel"
