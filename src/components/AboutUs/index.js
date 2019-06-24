@@ -10,7 +10,7 @@ import people from "../../images/people.png";
 import cloud from "../../images/cloud.png";
 import thumbsup from "../../images/thumbsup.png";
 import map from "../../images/map.svg";
-
+const cn = require('classnames');
 class AboutUsPage extends React.Component {
   state = {
     page: 0,
@@ -40,6 +40,13 @@ class AboutUsPage extends React.Component {
     this.setState({ pageLoaded: true });
   };
 
+  setProgress = (newProgress) => {
+    const { progress } = this.state;
+    if(newProgress > progress) {
+      this.setState({ progress: newProgress });
+    }
+  }
+
   render() {
     const pageIndex = ["00", "01", "02", "Contact"];
     const { page, pageLoaded, width, progress } = this.state;
@@ -60,6 +67,18 @@ class AboutUsPage extends React.Component {
       enter: 2750,
       exit: 50,
     };
+
+    const gridClass = cn('pixoul_four_grid_item', {
+      'about-text-animation-enter-done': progress >= 1,
+    });
+
+    const mapClass = cn('about-map-row', {
+      'about-image-animation-enter-done': progress >= 2,
+    });
+
+    const buttonClass = cn('pixoul_button_section', {
+      'about-image-animation-enter-done': progress >= 2,
+    });
 
     return (
       <div className="about-us-page">
@@ -103,9 +122,11 @@ class AboutUsPage extends React.Component {
                   timeout={titleTimeout}
                   classNames="about-title-animation"
                   onEnter={() => {}}
-                  onExited={() => {this.setState({progress: 1})}}
+                  onExited={() => {this.setProgress(1)}}
                 >
-                  <h1>What we value.</h1>
+                  <h1 className={progress >= 1 && 'about-title-animation-enter-done'}>
+                    What we value.
+                  </h1>
                 </CSSTransition>
                 <CSSTransition
                   in={page === 1 && pageLoaded && width > 1199 && progress < 2}
@@ -114,7 +135,7 @@ class AboutUsPage extends React.Component {
                   onEnter={() => {}}
                   onExited={() => {}}
                 >
-                  <h2>
+                  <h2 className={progress >= 1 && 'about-text-animation-enter-done'}>
                     Our design-centric approach means our products focus on real data and business
                     <br />
                     &nbsp;goals, bringing value and creativity into every solution.
@@ -129,7 +150,7 @@ class AboutUsPage extends React.Component {
                     onEnter={() => {}}
                     onExited={() => {}}
                   >
-                    <div className="pixoul_four_grid_item">
+                    <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={spaceship} alt="Spaceship" />
                       </div>
@@ -148,7 +169,7 @@ class AboutUsPage extends React.Component {
                     onEnter={() => {}}
                     onExited={() => {}}
                   >
-                    <div className="pixoul_four_grid_item">
+                    <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={people} alt="People" />
                       </div>
@@ -168,7 +189,7 @@ class AboutUsPage extends React.Component {
                     onEnter={() => {}}
                     onExited={() => {}}
                   >
-                    <div className="pixoul_four_grid_item">
+                    <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={cloud} alt="Cloud data" />
                       </div>
@@ -186,9 +207,9 @@ class AboutUsPage extends React.Component {
                     timeout={textTimeout}
                     classNames="about-text-animation"
                     onEnter={() => {}}
-                    onExited={() => {this.setState({progress: 2})}}
+                    onExited={() => this.setProgress(2)}
                   >
-                    <div className="pixoul_four_grid_item">
+                    <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={thumbsup} alt="Thumbs up" />
                       </div>
@@ -206,41 +227,42 @@ class AboutUsPage extends React.Component {
               <div className="section">
                 <div className="pixoul_section_heading">
                   <CSSTransition
-                      in={page === 2 && pageLoaded && width > 1199}
+                      in={page === 2 && pageLoaded && width > 1199 && progress <3}
                       timeout={titleTimeout}
                       classNames="about-title-animation"
                       onEnter={() => {}}
                       onExited={() => {}}
                     >
-                    <h1>Our partner network.</h1>
+                    <h1 className={progress >= 2 && 'about-title-animation-enter-done'}>Our partner network.</h1>
                   </CSSTransition>
                   <CSSTransition
-                      in={page === 2 && pageLoaded && width > 1199}
+                      in={page === 2 && pageLoaded && width > 1199 && progress < 3}
                       timeout={textTimeout}
                       classNames="about-text-animation"
                       onEnter={() => {}}
                       onExited={() => {}}
                   >
-                    <h2>
+                    <h2 className={progress >= 2 && 'about-text-animation-enter-done'}>
                       Headquartered in Dallas, we're a global network with team members across North America, and clients around the world.
                     </h2>
                   </CSSTransition>
                 </div>
                 <CSSTransition
-                    in={page === 2 && pageLoaded && width > 1199}
+                    in={page === 2 && pageLoaded && width > 1199 && progress < 3}
                     timeout={imgTimeout}
                     classNames="about-image-animation"
                 >
-                  <div className="about-map-row">
+                  <div className={mapClass}>
                     <img src={map} alt="map" />
                   </div>
                 </CSSTransition>
                 <CSSTransition
-                  in={page === 2 && pageLoaded && width > 1199}
+                  in={page === 2 && pageLoaded && width > 1199 && progress < 3}
                   timeout={imgTimeout}
                   classNames="about-image-animation"
+                  onExited={() => this.setProgress(3)}
                 >
-                <div className="pixoul_button_section">
+                <div className={buttonClass}>
                   <button className="green_button pixoul_button">Recent Work</button>
                 </div>
                 </CSSTransition>
@@ -248,7 +270,7 @@ class AboutUsPage extends React.Component {
               <div className="section">
                 <PixoulContactForm
                   heading="Contact us."
-                  isAnimated={width > 1199 && page === 3 && pageLoaded}
+                  isAnimated={width > 1199 && page === 3 && pageLoaded && progress < 4}
                 />
               </div>
 
