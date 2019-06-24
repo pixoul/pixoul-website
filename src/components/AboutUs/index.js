@@ -64,7 +64,7 @@ class AboutUsPage extends React.Component {
     
     const imgTimeout = {
       appear: 900,
-      enter: 2750,
+      enter: 2450,
       exit: 50,
     };
 
@@ -73,13 +73,14 @@ class AboutUsPage extends React.Component {
     });
 
     const mapClass = cn('about-map-row', {
-      'about-image-animation-enter-done': progress >= 2,
+      'about-image-animation-enter-done': progress >= 5,
     });
 
     const buttonClass = cn('pixoul_button_section', {
-      'about-image-animation-enter-done': progress >= 2,
+      'about-image-animation-enter-done': progress >= 5,
     });
 
+    console.log('progress----', progress);
     return (
       <div className="about-us-page">
         <ReactFullpage
@@ -124,7 +125,7 @@ class AboutUsPage extends React.Component {
                   onEnter={() => {}}
                   onExited={() => {this.setProgress(1)}}
                 >
-                  <h1 className={progress >= 1 && 'about-title-animation-enter-done'}>
+                  <h1 className={progress >= 1 ? 'about-title-animation-enter-done' : ''}>
                     What we value.
                   </h1>
                 </CSSTransition>
@@ -135,7 +136,7 @@ class AboutUsPage extends React.Component {
                   onEnter={() => {}}
                   onExited={() => {}}
                 >
-                  <h2 className={progress >= 1 && 'about-text-animation-enter-done'}>
+                  <h2 className={progress >= 1 ? 'about-text-animation-enter-done' : ''}>
                     Our design-centric approach means our products focus on real data and business
                     <br />
                     &nbsp;goals, bringing value and creativity into every solution.
@@ -231,24 +232,24 @@ class AboutUsPage extends React.Component {
                       timeout={titleTimeout}
                       classNames="about-title-animation"
                       onEnter={() => {}}
-                      onExited={() => {}}
+                      onExited={() => {this.setProgress(3)}}
                     >
-                    <h1 className={progress >= 2 && 'about-title-animation-enter-done'}>Our partner network.</h1>
+                    <h1 className={progress >= 3 ? 'about-title-animation-enter-done' : ''}>Our partner network.</h1>
                   </CSSTransition>
                   <CSSTransition
-                      in={page === 2 && pageLoaded && width > 1199 && progress < 3}
+                      in={page === 2 && pageLoaded && width > 1199 && progress < 4}
                       timeout={textTimeout}
                       classNames="about-text-animation"
                       onEnter={() => {}}
-                      onExited={() => {}}
+                      onExited={() => {this.setProgress(4)}}
                   >
-                    <h2 className={progress >= 2 && 'about-text-animation-enter-done'}>
+                    <h2 className={progress >= 4 ? 'about-text-animation-enter-done' : ''}>
                       Headquartered in Dallas, we're a global network with team members across North America, and clients around the world.
                     </h2>
                   </CSSTransition>
                 </div>
                 <CSSTransition
-                    in={page === 2 && pageLoaded && width > 1199 && progress < 3}
+                    in={page === 2 && pageLoaded && width > 1199 && progress < 5}
                     timeout={imgTimeout}
                     classNames="about-image-animation"
                 >
@@ -257,20 +258,21 @@ class AboutUsPage extends React.Component {
                   </div>
                 </CSSTransition>
                 <CSSTransition
-                  in={page === 2 && pageLoaded && width > 1199 && progress < 3}
+                  in={page === 2 && pageLoaded && width > 1199 && progress < 5}
                   timeout={imgTimeout}
                   classNames="about-image-animation"
-                  onExited={() => this.setProgress(3)}
+                  onExited={() => this.setProgress(5)}
                 >
-                <div className={buttonClass}>
-                  <button className="green_button pixoul_button">Recent Work</button>
-                </div>
+                  <div className={buttonClass}>
+                    <button className="green_button pixoul_button">Recent Work</button>
+                  </div>
                 </CSSTransition>
               </div>
               <div className="section">
                 <PixoulContactForm
                   heading="Contact us."
-                  isAnimated={width > 1199 && page === 3 && pageLoaded && progress < 4}
+                  isAnimated={width > 1199 && page === 3 && pageLoaded && progress <= 6}
+                  onExited={() => this.setProgress(6)}
                 />
               </div>
 
