@@ -12,7 +12,7 @@ const Menu = props => {
     <div className="menu-container">
       <div className="menu">
         <Link className="menu-item" to='/' onClick={props.onMenuClose}>Home</Link>
-        <Link className="menu-item" to='/#01' onClick={props.onMenuClose}>Work</Link>
+        <a className="menu-item" href='/#01' onClick={props.onMenuClose}>Work</a>
         <Link className="menu-item" to='/aboutus' onClick={props.onMenuClose}>About</Link>
         <Link className="menu-item" to='/services' onClick={props.onMenuClose}>Services</Link>
         <Link className="menu-item" to='/blog' onClick={props.onMenuClose}>Blog</Link>
