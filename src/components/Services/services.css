@@ -13,6 +13,17 @@
   transition: all 0.3s ease-in-out;
 }
 
+.blue_button {
+  background: #3180fb;
+  border-radius: 26px;
+  height: 45px;
+  padding: 7px 24px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
 .page_down_button_centered img:hover {
   transform: translateY(5px);
 transition: transform 300ms;
@@ -95,6 +106,10 @@ transition: transform 300ms;
   border-radius: 15px;
 }
 
+.pixoul_grid_column_item-content {
+  flex: 1;
+}
+
 .pixoul_grid_column_item:hover {
   box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 1px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2);
 }
@@ -120,14 +135,18 @@ transition: transform 300ms;
   margin: 0;
 }
 
-.about-map-row {
+.pixoul_grid_column_item a img {
+  transform: rotate(-90deg);
+}
+
+.services-map-row {
   transform: scale(0);
   max-width: 1184px;
   width: 90%;
   margin: 0 auto;
 }
 
-.about-map-row img {
+.services-map-row img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -152,18 +171,41 @@ transition: transform 300ms;
   font-size: 1.4rem;
 }
 
-.pixel_button_section:before {
-  clear: both;
+.service-button-section {
+  margin-top: 126px;
 }
 
-.pixoul_button_section {
-  transform: scale(0);
-  margin: 3rem auto;
+.services-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.pixoul_button_section button {
-  margin: auto;
-  display: block;
+.services-row > div {
+  max-width: 519px;
+  width: 50%;
+}
+
+.services-row h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.services-row h2 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.services-row a {
+  text-decoration: none;
+  color: #3180FB;
+  margin-right: 50px;
+}
+
+.services-row a:hover {
+  text-decoration: underline;
 }
 
 @keyframes textAnimation {
@@ -176,14 +218,14 @@ transition: transform 300ms;
   }
 }
 
-.about-title-animation-enter {
+.services-title-animation-enter {
   animation-name: textAnimation;
   animation-delay: .05s;
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 
-.about-text-animation-enter {
+.services-text-animation-enter {
   animation-name: textAnimation;
   animation-delay: .55s;
   animation-duration: 1s;
@@ -200,18 +242,18 @@ transition: transform 300ms;
   }
 }
 
-.about-image-animation-enter {
+.services-image-animation-enter {
   animation-name: imageAnimation;
   animation-delay: .95s;
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 
-.about-image-animation-enter-done {
+.services-image-animation-enter-done {
   transform: scale(1)!important;
 }
 
-.about-title-animation-enter-done, .about-text-animation-enter-done {
+.services-title-animation-enter-done, .services-text-animation-enter-done {
   opacity: 1!important;
 }
 
@@ -227,7 +269,7 @@ to {
 }
 }
 
-.about-page-button-animation {
+.services-page-button-animation {
 animation-name: aboutPageButton;
 animation-duration: 1s;
 animation-delay: .8s;
@@ -239,7 +281,7 @@ animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   h1, h2, .pixoul_four_grid_item {
       opacity: 1!important;
   }
-  .about-map-row, .pixoul_button_section {
+  .services-map-row {
       transform: scale(1);
   }
 }
