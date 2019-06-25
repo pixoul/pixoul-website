@@ -2,6 +2,7 @@ import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { Link } from 'react-router-dom';
 import { CSSTransition } from "react-transition-group";
+import Slider from "react-slick";
 import PixoulContactForm from "../ContactForm/index";
 import "./services.css";
 
@@ -77,6 +78,14 @@ class ServicesPage extends React.Component {
     const mapClass = cn('services-map-row', {
       'services-image-animation-enter-done': progress >= 5 || width <= 1199,
     });
+
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 1
+    };
 
     return (
       <div className="services-us-page">
@@ -307,7 +316,17 @@ class ServicesPage extends React.Component {
                     classNames="services-image-animation"
                   >
                     <div className={mapClass}>
-                      
+                    <Slider {...settings}>
+                      <div>
+                        <h3>1</h3>
+                      </div>
+                      <div>
+                        <h3>2</h3>
+                      </div>
+                      <div>
+                        <h3>3</h3>
+                      </div>
+                    </Slider>
                     </div>
                   </CSSTransition>
                 </div>
