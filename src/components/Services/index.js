@@ -50,6 +50,7 @@ class ServicesPage extends React.Component {
 
   render() {
     const pageIndex = ["00", "01", "02", "03", "Contact"];
+    const { isMenuVisible } = this.props;
     const { page, pageLoaded, width, progress } = this.state;
     const titleTimeout = {
       appear: 900,
@@ -88,7 +89,9 @@ class ServicesPage extends React.Component {
           fitToSection={false}
           bigSectionsDestination={'top'}
           render={({ state, fullpageApi }) => {
-          
+            if (fullpageApi) {
+              fullpageApi.setAutoScrolling(isMenuVisible);
+            }
           return (
             <ReactFullpage.Wrapper>
               <div className="section">

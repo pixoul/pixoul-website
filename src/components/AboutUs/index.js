@@ -50,6 +50,7 @@ class AboutUsPage extends React.Component {
   render() {
     const pageIndex = ["00", "01", "02", "Contact"];
     const { page, pageLoaded, width, progress } = this.state;
+    const { isMenuVisible } = this.props;
     const titleTimeout = {
       appear: 900,
       enter: 1950,
@@ -79,7 +80,7 @@ class AboutUsPage extends React.Component {
     const buttonClass = cn('pixoul_button_section', {
       'about-image-animation-enter-done': progress >= 5 || width <= 1199,
     });
-
+    
     return (
       <div className="about-us-page">
         <ReactFullpage
@@ -87,10 +88,13 @@ class AboutUsPage extends React.Component {
           onLeave={this.onLeave}
           afterLoad={this.onSlideLoad}
           scrollingSpeed={500}
-          autoScrolling={false}
-          fitToSection={false}
-          bigSectionsDestination={'top'}
+          recordHistory={false}
+          autoScrolling={isMenuVisible}
+          fitToSection={true}
           render={({ state, fullpageApi }) => {
+            if (fullpageApi) {
+              fullpageApi.setAutoScrolling(isMenuVisible);
+            }
           
           return (
             <ReactFullpage.Wrapper>

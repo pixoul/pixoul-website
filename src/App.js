@@ -50,15 +50,23 @@ class App extends React.Component {
           classNames="main-exit-animation"
         >
           <div className={mainClass}>
-          <Header
-            onMenuClick={this.toggleMenu}
-            isAnimated={width > 1199}
-            isHome={true}
-          />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/work" component={Home} />
-          <Route exact path="/aboutus" component={AboutUsPage} />
-          <Route exact path="/services" component={ServicesPage} />
+            <Header
+              onMenuClick={this.toggleMenu}
+              isAnimated={width > 1199}
+              isHome={true}
+            />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/work" component={Home} />
+            <Route
+              exact
+              path="/aboutus"
+              render={(props) => <AboutUsPage {...props} isMenuVisible={showMenu} />}
+            />
+            <Route
+              exact
+              path="/services" 
+              render={(props) => <ServicesPage {...props} isMenuVisible={showMenu} />}
+            />
           </div>
         </CSSTransition>
 
