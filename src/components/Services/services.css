@@ -55,7 +55,7 @@
 }
 
 .pixoul_section_heading {
-  margin: 117px auto 108px auto;
+  margin: 117px auto 60px auto;
 }
 
 .pixoul_section_heading h1 {
@@ -91,7 +91,7 @@
   opacity: 0;
   display: flex;
   align-items: center;
-  padding: 44px 71px 61px 44px;
+  padding: 30px 71px 30px 44px;
   border-radius: 15px;
 }
 
@@ -120,7 +120,7 @@
 
 .pixoul_grid_column_item h3 {
   font-weight: 300;
-  font-size: 25px;
+  font-size: 16px;
   margin: 0;
 }
 
