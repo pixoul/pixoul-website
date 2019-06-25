@@ -56,7 +56,7 @@ class Home extends React.Component {
 
   render() {
     const { readyToMove, page, pageLoaded, autoScrolling, width } = this.state;
-    
+    const { isMenuVisible } = this.props;
     const pageIndex = ["00", "01", "02", "03", "04", "05", "06", "Contact"];
     const labelTimeout = {
       appear: 900,
@@ -96,12 +96,13 @@ class Home extends React.Component {
             onLeave={this.onLeave}
             afterLoad={this.onSlideLoad}
             scrollingSpeed={500}
+            allowScrolling={!isMenuVisible}
             recordHistory={false}
             autoScrolling={autoScrolling}
             fitToSection={false}
             render={({ state, fullpageApi }) => {
               if (fullpageApi) {
-                fullpageApi.setAllowScrolling(readyToMove || width <= 1199);
+                fullpageApi.setAllowScrolling((readyToMove || width <= 1199) && !isMenuVisible);
                 if (width > 1199 && !autoScrolling) {
                   this.setState({ autoScrolling: true }, () => {
                     fullpageApi.setAutoScrolling(true);

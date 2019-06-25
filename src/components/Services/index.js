@@ -85,11 +85,12 @@ class ServicesPage extends React.Component {
           onLeave={this.onLeave}
           afterLoad={this.onSlideLoad}
           scrollingSpeed={500}
-          autoScrolling={false}
+          autoScrolling={isMenuVisible}
+          allowScrolling={!isMenuVisible}
           fitToSection={false}
-          bigSectionsDestination={'top'}
           render={({ state, fullpageApi }) => {
             if (fullpageApi) {
+              fullpageApi.setAllowScrolling(!isMenuVisible);
               fullpageApi.setAutoScrolling(isMenuVisible);
             }
           return (

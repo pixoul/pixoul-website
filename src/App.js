@@ -55,7 +55,11 @@ class App extends React.Component {
               isAnimated={width > 1199}
               isHome={true}
             />
-            <Route exact path="/" component={Home} />
+            <Route
+              exact
+              path="/"
+              render={(props) => <Home {...props} isMenuVisible={showMenu} />}
+            />
             <Route exact path="/work" component={Home} />
             <Route
               exact

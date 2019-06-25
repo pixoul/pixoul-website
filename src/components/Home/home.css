@@ -197,7 +197,7 @@
 	line-height: 689px;
 	top: 121px;
 	left: -210px;
-	z-index: -1;
+	z-index: 1;
 	animation-duration: .75s;
 	animation-delay: 0s;
 	animation-fill-mode: both;

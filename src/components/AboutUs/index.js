@@ -90,9 +90,11 @@ class AboutUsPage extends React.Component {
           scrollingSpeed={500}
           recordHistory={false}
           autoScrolling={isMenuVisible}
+          allowScrolling={!isMenuVisible}
           fitToSection={true}
           render={({ state, fullpageApi }) => {
             if (fullpageApi) {
+              fullpageApi.setAllowScrolling(!isMenuVisible);
               fullpageApi.setAutoScrolling(isMenuVisible);
             }
           
