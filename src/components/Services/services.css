@@ -173,6 +173,14 @@
   flex-wrap: wrap;
 }
 
+.carousel-row {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  margin-bottom: 74px;
+}
+
 .services-row > div {
   width: 50%;
   min-width: 300px;

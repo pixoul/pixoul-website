@@ -3,6 +3,8 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import { Link } from 'react-router-dom';
 import { CSSTransition } from "react-transition-group";
 import Slider from "react-slick";
+
+import CarouselItem from '../CarouselItem/index';
 import PixoulContactForm from "../ContactForm/index";
 import "./services.css";
 
@@ -81,12 +83,28 @@ class ServicesPage extends React.Component {
 
     const settings = {
       dots: true,
-      infinite: true,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 2,
+      arrows: false
     };
 
+    const carouselItems = [
+      {
+        id: 1,
+        title: 'What more could we ask for?',
+        text: "Pixoul is absolutely amazing!  From start to finish, they guided us through our website redesign and held our hand every step of the way.  I couldn't have asked for a better team.",
+        name: 'Kendall Sampson',
+        position: 'Product Manager',
+      },
+      {
+        id: 2,
+        title: 'The smarter first move.',
+        text: "We started working with Pixoul after two failed attempts at other dev agencies.  Since then, we've seen engagement go through the roof and customers are loving our new platform.",
+        name: 'Jake Richards',
+        position: 'CTO',
+      }
+    ];
     return (
       <div className="services-us-page">
         <ReactFullpage
@@ -297,18 +315,16 @@ class ServicesPage extends React.Component {
                     </h2>
                   </CSSTransition>
                 </div>
-                <div className="services-row">
+                <div className="carousel-row">
                   <CSSTransition
                     in={page === 3 && pageLoaded && width > 1199 && progress < 8}
                     timeout={imgTimeout}
                     classNames="services-image-animation"
                     onExited={() => this.setProgress(8)}
                   >
-                    <div>
-                      <div className='service-button-section'>
-                        <button className="blue_button pixoul_button">Let's Work Together</button>
-                      </div>
-                    </div>
+                    
+                    <button className="blue_button pixoul_button">Let's Work Together</button>
+                    
                   </CSSTransition>
                   <CSSTransition
                     in={page === 3 && pageLoaded && width > 1199 && progress < 8}
@@ -316,17 +332,19 @@ class ServicesPage extends React.Component {
                     classNames="services-image-animation"
                   >
                     <div className={mapClass}>
-                    <Slider {...settings}>
-                      <div>
-                        <h3>1</h3>
-                      </div>
-                      <div>
-                        <h3>2</h3>
-                      </div>
-                      <div>
-                        <h3>3</h3>
-                      </div>
-                    </Slider>
+                      <Slider {...settings}>
+                        {
+                          carouselItems.map(item => (
+                            <CarouselItem
+                              key={item.id}
+                              title={item.title}
+                              text={item.text}
+                              name={item.name}
+                              position={item.position}
+                            />
+                          ))
+                        }
+                      </Slider>
                     </div>
                   </CSSTransition>
                 </div>
