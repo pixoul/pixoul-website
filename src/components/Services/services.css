@@ -26,7 +26,7 @@
 
 .page_down_button_centered img:hover {
   transform: translateY(5px);
-transition: transform 300ms;
+  transition: transform 300ms;
 }
 
 

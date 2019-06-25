@@ -60,6 +60,7 @@ input {
 }
 
 .main-exit-animation-enter-done {
+	transform-origin: center;
 	transform: scale(.8) translateX(-300px)!important;
 	pointer-events: none;
 	overflow: hidden;

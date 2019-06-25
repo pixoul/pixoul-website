@@ -49,7 +49,7 @@ class ServicesPage extends React.Component {
   }
 
   render() {
-    const pageIndex = ["00", "01", "02", "Contact"];
+    const pageIndex = ["00", "01", "02", "03", "Contact"];
     const { page, pageLoaded, width, progress } = this.state;
     const titleTimeout = {
       appear: 900,
