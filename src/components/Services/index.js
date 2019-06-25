@@ -77,10 +77,6 @@ class ServicesPage extends React.Component {
       'services-image-animation-enter-done': progress >= 5 || width <= 1199,
     });
 
-    const buttonClass = cn('pixoul_button_section', {
-      'services-image-animation-enter-done': progress >= 5 || width <= 1199,
-    });
-
     return (
       <div className="services-us-page">
         <ReactFullpage

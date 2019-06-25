@@ -29,20 +29,9 @@
 transition: transform 300ms;
 }
 
-.pink_heading {
-  color: #C92E85;
-}
 
 .blue_heading {
   color: #3180fb;
-}
-
-.purple_heading {
-  color: #A731FB;
-}
-
-.orange_heading {
-  color: #FB9B31;
 }
 
 .light_blue_heading {
