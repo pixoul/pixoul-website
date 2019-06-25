@@ -155,7 +155,7 @@ class ServicesPage extends React.Component {
                       <div className="pixoul_grid_column_item-content">
                         <h2>Strategy</h2>
                         <h3>
-                          Capitalize on business opportunity by developing a harmonized digital strategy and transforming your organization.
+                          Reimagine and redefine your organizational approach by developing new ways of approaching your mission-critical KPIs.
                         </h3>
                       </div>
                       <Link to="#">
@@ -175,9 +175,9 @@ class ServicesPage extends React.Component {
                         <img src={computer} alt="computer" />
                       </div>
                       <div className="pixoul_grid_column_item-content">
-                        <h2>Design</h2>
+                        <h2>Human-Centered Design</h2>
                         <h3>
-                          Deliver a world-class experience to your customer through the application of Design Thinking.
+                          Use Design Thinking to create products, services, systems, and experiences that address the core needs of your target audience.
                         </h3>
                       </div>
                       <Link to="#">
@@ -199,7 +199,7 @@ class ServicesPage extends React.Component {
                       <div className="pixoul_grid_column_item-content">
                         <h2>Technology</h2>
                         <h3>
-                          Bring a vision to life and into the hands of your customers, wherever they may be.
+                          Bring your digital solution to life for your customers, and scale it across devices and platforms.
                         </h3>
                       </div>
                       <Link to="#">
