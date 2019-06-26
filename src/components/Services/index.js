@@ -157,11 +157,10 @@ class ServicesPage extends React.Component {
                 <div className="">
                   <div className="">
                       <div className="blue_heading top_about_us_heading mainTitle-animation-enter">
-                        Complex problems deserve elegant solutions
+                        How can we help?
                       </div>
                       <div className="top_about_us_heading_text mainText-animation-enter">
-                        We help brands and organizations&nbsp;<br/>
-                        succeed in the digital age.
+                        We're here to bring life to your digital vision. Got a project in mind?&nbsp;<br/>Let's talk
                       </div>
                   </div>
 
