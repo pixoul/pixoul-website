@@ -82,7 +82,7 @@ class ServicesPage extends React.Component {
     });
 
     const carouselClass = cn('carousel-list-row', {
-      'services-image-animation-enter-done': progress >= 5 || width <= 1199,
+      'services-image-animation-enter-done': progress >= 8 || width <= 1199,
     });
 
     const settings = {
@@ -110,13 +110,27 @@ class ServicesPage extends React.Component {
       },
       {
         key: 3,
+        title: 'What more could we ask for?',
+        text: "Pixoul is absolutely amazing!  From start to finish, they guided us through our website redesign and held our hand every step of the way.  I couldn't have asked for a better team.",
+        name: 'Kendall Sampson',
+        position: 'Product Manager',
+      },
+      {
+        key: 4,
         title: 'The smarter first move.',
         text: "We started working with Pixoul after two failed attempts at other dev agencies.  Since then, we've seen engagement go through the roof and customers are loving our new platform.",
         name: 'Jake Richards',
         position: 'CTO',
       },
       {
-        key: 4,
+        key: 5,
+        title: 'What more could we ask for?',
+        text: "Pixoul is absolutely amazing!  From start to finish, they guided us through our website redesign and held our hand every step of the way.  I couldn't have asked for a better team.",
+        name: 'Kendall Sampson',
+        position: 'Product Manager',
+      },
+      {
+        key: 6,
         title: 'The smarter first move.',
         text: "We started working with Pixoul after two failed attempts at other dev agencies.  Since then, we've seen engagement go through the roof and customers are loving our new platform.",
         name: 'Jake Richards',

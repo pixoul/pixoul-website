@@ -28,7 +28,6 @@
   transition: transform 300ms;
 }
 
-
 .blue_heading {
   color: #3180fb;
 }
@@ -221,11 +220,10 @@
 
 @keyframes textAnimation {
   from {
-      opacity: 0;
+    opacity: 0;
   }
-
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -245,11 +243,11 @@
 
 @keyframes imageAnimation {
   from {
-      transform: scale(0);
+    transform: scale(0);
   }
 
   to {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -269,23 +267,23 @@
 }
 
 @keyframes aboutPageButton {
-from {
-  transform: translateY(-50px);
-  opacity: 0;
-}
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
 
-to {
-  transform: translateY(0);
-  opacity: 1;
-}
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .services-page-button-animation {
-animation-name: aboutPageButton;
-animation-duration: 1s;
-animation-delay: .8s;
-animation-fill-mode: both;
-animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  animation-name: aboutPageButton;
+  animation-duration: 1s;
+  animation-delay: .8s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 @media (max-width: 1199px) {
@@ -307,19 +305,15 @@ animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   .pixoul_adjustable_column {
       padding: 0;
   }
-
   .pixoul_adjustable_columns_item {
       margin: 5px;
   }
-
   .top_about_us_heading_text {
       white-space: normal;
   }
-
   .services-row > div {
     width: 100%!important;
   }
-
   .service-button-section {
     margin: 30px auto;
     text-align: center
