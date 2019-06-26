@@ -81,24 +81,42 @@ class ServicesPage extends React.Component {
       'services-image-animation-enter-done': progress >= 5 || width <= 1199,
     });
 
+    const carouselClass = cn('carousel-list-row', {
+      'services-image-animation-enter-done': progress >= 5 || width <= 1199,
+    });
+
     const settings = {
       dots: true,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       arrows: false
     };
 
     const carouselItems = [
       {
-        id: 1,
+        key: 1,
         title: 'What more could we ask for?',
         text: "Pixoul is absolutely amazing!  From start to finish, they guided us through our website redesign and held our hand every step of the way.  I couldn't have asked for a better team.",
         name: 'Kendall Sampson',
         position: 'Product Manager',
       },
       {
-        id: 2,
+        key: 2,
+        title: 'The smarter first move.',
+        text: "We started working with Pixoul after two failed attempts at other dev agencies.  Since then, we've seen engagement go through the roof and customers are loving our new platform.",
+        name: 'Jake Richards',
+        position: 'CTO',
+      },
+      {
+        key: 3,
+        title: 'The smarter first move.',
+        text: "We started working with Pixoul after two failed attempts at other dev agencies.  Since then, we've seen engagement go through the roof and customers are loving our new platform.",
+        name: 'Jake Richards',
+        position: 'CTO',
+      },
+      {
+        key: 4,
         title: 'The smarter first move.',
         text: "We started working with Pixoul after two failed attempts at other dev agencies.  Since then, we've seen engagement go through the roof and customers are loving our new platform.",
         name: 'Jake Richards',
@@ -321,21 +339,19 @@ class ServicesPage extends React.Component {
                     classNames="services-image-animation"
                     onExited={() => this.setProgress(8)}
                   >
-                    
-                    <button className="blue_button pixoul_button">Let's Work Together</button>
-                    
+                    <button className="blue_button pixoul_button">Let's Work Together</button> 
                   </CSSTransition>
                   <CSSTransition
                     in={page === 3 && pageLoaded && width > 1199 && progress < 8}
                     timeout={imgTimeout}
                     classNames="services-image-animation"
                   >
-                    <div className={mapClass}>
+                    <div className={carouselClass}>
                       <Slider {...settings}>
                         {
                           carouselItems.map(item => (
                             <CarouselItem
-                              key={item.id}
+                              key={item.key}
                               title={item.title}
                               text={item.text}
                               name={item.name}

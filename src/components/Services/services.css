@@ -16,8 +16,7 @@
 .blue_button {
   background: #3180fb;
   border-radius: 26px;
-  height: 45px;
-  padding: 7px 24px;
+  padding: 7px 22px;
   color: white;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
@@ -62,7 +61,7 @@
   font-weight: 500;
   text-align: center;
   font-size: 40px;
-  margin: 20px auto;
+  margin: 0 auto 17px auto; 
   opacity: 0;
 }
 
@@ -130,9 +129,7 @@
 
 .services-map-row {
   transform: scale(0);
-  max-width: 1184px;
   width: 90%;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -176,9 +173,20 @@
 .carousel-row {
   display: flex;
   width: 100%;
-  height: 80vh;
   align-items: center;
   margin-bottom: 74px;
+}
+
+.carousel-row button {
+  margin: 0 2% 0 5%;
+  min-width: 200px;
+}
+
+.carousel-list-row {
+  transform: scale(0);
+  width: 80%;
+  text-align: center;
+  min-width: 600px;
 }
 
 .services-row > div {
@@ -284,8 +292,14 @@ animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   h1, h2, .pixoul_four_grid_item {
       opacity: 1!important;
   }
-  .services-map-row {
+  .services-map-row, .carousel-list-row {
       transform: scale(1);
+  }
+  .carousel-row {
+    flex-wrap: wrap;
+  }
+  .carousel-list-row {
+    width: 100%;
   }
 }
 
