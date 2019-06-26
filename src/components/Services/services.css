@@ -133,11 +133,11 @@
   max-width: 1184px;
   width: 90%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .services-map-row img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
   object-fit: cover;
 }
 

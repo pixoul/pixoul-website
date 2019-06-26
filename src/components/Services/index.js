@@ -117,7 +117,7 @@ class ServicesPage extends React.Component {
           fitToSection={false}
           render={({ state, fullpageApi }) => {
             if (fullpageApi) {
-              //fullpageApi.setAutoScrolling(isMenuVisible);
+              fullpageApi.setAllowScrolling(!isMenuVisible);
             }
           return (
             <ReactFullpage.Wrapper>
