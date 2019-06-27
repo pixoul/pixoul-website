@@ -66,14 +66,14 @@ class PixoulContactForm extends Component {
           <div className="contact_section_form_container">
             <CSSTransition
               in={isAnimated && !loaded}
-              timeout={timeout}
+              timeout={subtitleTimeout}
               classNames={subtitleClass}
             >
               <h2>See how we help ambitious brands&nbsp;<br/> dominate digital</h2>
             </CSSTransition>
             <CSSTransition
               in={isAnimated && !loaded}
-              timeout={timeout}
+              timeout={subtitleTimeout}
               classNames={subtitleClass}
             >
               <h3>Let's talk about your design and strategy needs.</h3>
