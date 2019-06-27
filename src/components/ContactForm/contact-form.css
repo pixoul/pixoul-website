@@ -211,6 +211,12 @@
     }
 }
 
+.contact-title-animation-nodelay-enter {
+    animation-name: stuckSlideShownH2;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+}
+
 .contact-title-animation-enter {
     animation-name: stuckSlideShownH2;
     animation-delay: .9s;
@@ -218,7 +224,15 @@
     animation-fill-mode: both;
 }
 
-.contact-title-animation-enter-done, .contact-title-animation-exit-done {
+.contact-title-animation-exit {
+    animation-name: stuckSlideHiddenH2;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+}
+
+.contact-title-animation-enter-done, 
+.contact-title-animation-nodelay-enter-done,
+.contact-title-animation-nodelay-exit-done {
     height: auto;
 }
 
@@ -228,24 +242,39 @@
     opacity: 0;
 }
 
+.form-slide-animation-nodelay-enter {
+    animation-name: stuckSlideShownSlideDown;
+    animation-delay: .05s;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+}
+
 .form-slide-animation-enter {
     animation-name: stuckSlideShownSlideDown;
     animation-delay: .95s;
-    animation-duration: .3s;
+    animation-duration: .6s;
     animation-fill-mode: both;
 }
 
-.form-animation-enter {
-    animation-name: contactsFormToBottom;
-    animation-delay: 1.4s;
-    animation-duration: .1s;
+.form-slide-animation-exit {
+    animation-name: stuckSlideShownSlideUp;
+    animation-delay: .05s;
+    animation-duration: .6s;
     animation-fill-mode: both;
 }
 
-.form-slide-animation-enter-done, .form-slide-animation-exit-done, 
-.form-animation-enter-done, .form-animation-exit-done {
+.form-slide-animation-enter-done,
+.form-slide-animation-nodelay-enter-done,
+.form-slide-animation-nodelay-exit-done
+{
     height: auto!important;
     opacity: 1!important;
+}
+
+.contact-subtitle-animation-nodelay-enter {
+	animation-name: stuckSlideFadeIn;
+	animation-duration: .6s;
+	animation-fill-mode: both;
 }
 
 .contact-subtitle-animation-enter {
@@ -255,7 +284,15 @@
 	animation-fill-mode: both;
 }
 
-.contact-subtitle-animation-enter-done, .contact-subtitle-animation-exit-done {
+.contact-subtitle-animation-exit {
+	animation-name: stuckSlideFadeOut;
+	animation-duration: .6s;
+	animation-fill-mode: both;
+}
+
+.contact-subtitle-animation-enter-done, 
+.contact-subtitle-animation-nodelay-enter-done,
+.contact-subtitle-animation-nodelay-exit-done {
 	opacity: 1!important;
 }
 

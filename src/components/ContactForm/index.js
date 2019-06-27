@@ -1,36 +1,50 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import { CSSTransition } from "react-transition-group";
 import "./contact-form.css";
 
 class PixoulContactForm extends Component {
+  static propTypes = {
+    delay: PropTypes.number,
+  }
+
+  static defaultProps = {
+    delay: 0,
+  }
+
   state = {
     loaded: false,
   }
 
   onExited = () => {
-    this.setState({ loaded: true });
-    this.props.onExited();
+    const { delay } = this.props;
+    console.log(delay);
+    if(delay === 0) {
+      this.setState({ loaded: true });
+      this.props.onExited();
+    }
   }
 
   render() {
     const { loaded } = this.state;
-    const { heading, isAnimated } = this.props;
-    const subtitleTimeout = {
-      appear: 900,
-      enter: 1500,
-      exit: 600
+    console.log(loaded);
+    const { heading, isAnimated, delay } = this.props;
+    let timeout = {
+      appear: 0 + delay,
+      enter: 600 + delay,
+      exit: 600,
     };
+    const titleClass = delay > 0 ? 'contact-title-animation' : 'contact-title-animation-nodelay';
+    const subtitleClass = delay > 0 ? 'contact-subtitle-animation' : 'contact-subtitle-animation-nodelay';
+    const formClass = delay > 0 ? 'form-slide-animation' : 'form-slide-animation-nodelay';
+
     return (
       <div className="contact_section_container">
         <div className="contact-background" />
         <CSSTransition
           in={isAnimated && !loaded}
-          timeout={{
-            appear: 900,
-            enter: 1250,
-            exit: 300,
-          }}
-          classNames="contact-title-animation"
+          timeout={timeout}
+          classNames={titleClass}
           onEnter={() => {}}
           onExited={() => {}}
         >
@@ -40,15 +54,15 @@ class PixoulContactForm extends Component {
           <div className="contact_section_form_container">
             <CSSTransition
               in={isAnimated && !loaded}
-              timeout={subtitleTimeout}
-              classNames="contact-subtitle-animation"
+              timeout={timeout}
+              classNames={subtitleClass}
             >
               <h2>See how we help ambitious brands&nbsp;<br/> dominate digital</h2>
             </CSSTransition>
             <CSSTransition
               in={isAnimated && !loaded}
-              timeout={subtitleTimeout}
-              classNames="contact-subtitle-animation"
+              timeout={timeout}
+              classNames={subtitleClass}
             >
               <h3>Let's talk about your design and strategy needs.</h3>
               </CSSTransition>
@@ -56,13 +70,8 @@ class PixoulContactForm extends Component {
           <div className="contact_section_form_container">
             <CSSTransition
               in={isAnimated && !loaded}
-              timeout={{
-                appear: 900,
-                enter: 1500,
-                exit: 50,
-              }}
-              classNames="form-slide-animation"
-              onEnter={() => {}}
+              timeout={timeout}
+              classNames={formClass}
               onExited={this.onExited}
             >
               <div className="form-animation-container">

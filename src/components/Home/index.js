@@ -375,6 +375,7 @@ class Home extends React.Component {
                   <div className="section">
                     <PixoulContactForm
                       heading="Contact us."
+                      delay={900}
                       isAnimated={page === 7 && width > 1199 && pageLoaded}
                     />
                   </div>
