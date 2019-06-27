@@ -1,5 +1,6 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
+import { Link } from 'react-router-dom';
 import PixoulContactForm from "../ContactForm/index";
 import downArrow from "../../images/ic_arrow_forward.png";
 import { CSSTransition } from "react-transition-group";
@@ -70,15 +71,15 @@ class AboutUsPage extends React.Component {
     };
 
     const gridClass = cn('pixoul_four_grid_item', {
-      'about-text-animation-enter-done': progress >= 1 || width <= 1199,
+      'about-text-animation-enter-done': progress >= 6 || width <= 1199,
     });
 
     const mapClass = cn('about-map-row', {
-      'about-image-animation-enter-done': progress >= 5 || width <= 1199,
+      'about-image-animation-enter-done': progress >= 9 || width <= 1199,
     });
 
     const buttonClass = cn('pixoul_button_section', {
-      'about-image-animation-enter-done': progress >= 5 || width <= 1199,
+      'about-image-animation-enter-done': progress >= 9 || width <= 1199,
     });
     
     return (
@@ -93,55 +94,132 @@ class AboutUsPage extends React.Component {
           allowScrolling={!isMenuVisible}
           fitToSection={true}
           render={({ state, fullpageApi }) => {
-            if (fullpageApi) {
-              fullpageApi.setAllowScrolling(!isMenuVisible);
-              fullpageApi.setAutoScrolling(isMenuVisible);
-            }
+            // if (fullpageApi) {
+            //   fullpageApi.setAllowScrolling(!isMenuVisible);
+            //   fullpageApi.setAutoScrolling(isMenuVisible);
+            // }
           
           return (
             <ReactFullpage.Wrapper>
               <div className="section">
                 <div className="">
-                  <div className="">
-                      <div className="green_heading top_about_us_heading mainTitle-animation-enter">
-                        How can we help?
-                      </div>
-                      <div className="top_about_us_heading_text mainText-animation-enter">
-                        We’re here to bring life to your digital<br/>
-                        &nbsp;vision. Got a project in mind?<br/>
-                        &nbsp;Let's talk.
-                      </div>
-                  </div>
-
-                  <button
-                    onClick={() => fullpageApi.moveSectionDown()}
-                    className="page_down_button_centered pixoul_button about-page-button-animation"
+                    <div className="green_heading top_about_us_heading mainTitle-animation-enter">
+                      Complex problems deserve elegant solutions.
+                    </div>
+                    <div className="top_about_us_heading_text mainText-animation-enter">
+                      We help brands and organizations succeed in the digital age.
+                    </div>
+                </div>
+                <button
+                  onClick={() => fullpageApi.moveSectionDown()}
+                  className="page_down_button_centered pixoul_button about-page-button-animation"
+                >
+                  <img src={downArrow} alt="downArrow" />
+                </button>
+              </div>
+              
+              <div className="section">
+                <div className="pixoul_section_heading">
+                  <CSSTransition
+                    in={page === 1 && pageLoaded && width > 1199 && progress < 1}
+                    timeout={titleTimeout}
+                    classNames="about-title-animation"
+                    onEnter={() => {}}
+                    onExited={() => {this.setProgress(1)}}
                   >
-                    <img src={downArrow} alt="downArrow" />
-                  </button>
+                    <h1 className={progress >= 1 || width <= 1199 ? 'about-title-animation-enter-done' : ''}>
+                      Who we are
+                    </h1>
+                  </CSSTransition>
+                  <CSSTransition
+                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                    timeout={titleTimeout}
+                    classNames="about-title-animation"
+                    onEnter={() => {}}
+                    onExited={() => {this.setProgress(2)}}
+                  >
+                    <h2 className={progress >= 1 || width <= 1199 ? 'about-text-animation-enter-done' : ''}>
+                      Pixoul is a human-centered design agency and consultancy that helps businesses find their voice in the digital space. Our partners trust us to provide them with exceptional digital products based on the foundations of Design Thinking to achieve business goals and affect bottom lines.
+                    </h2>
+                  </CSSTransition>
+                </div>
+                <div className="pixoul_section_heading">
+                  <CSSTransition
+                    in={page === 1 && pageLoaded && width > 1199 && progress < 3}
+                    timeout={textTimeout}
+                    classNames="about-text-animation"
+                    onExited={() => {this.setProgress(3)}}
+                  >
+                    <h2 className={progress >= 1 || width <= 1199 ? 'about-text-animation-enter-done' : ''}>
+                      Our partners enjoy:
+                    </h2>
+                  </CSSTransition>
+                  <CSSTransition
+                    in={page === 1 && pageLoaded && width > 1199 && progress < 4}
+                    timeout={textTimeout}
+                    classNames="about-text-animation"
+                    onExited={() => {this.setProgress(4)}}
+                  >
+                    <div className="number-section">
+                      <div class="number-item">
+                        <div class="number blue_heading">
+                          219%
+                        </div>
+                        <p>
+                          outperformance vs. design averse companies
+                        </p>
+                        <Link to="#">
+                          Strategy&nbsp;<span>></span>
+                        </Link>
+                      </div>
+                      <div class="number-item">
+                        <div class="number blue_heading">
+                          $250M +
+                        </div>
+                        <p>
+                          in collective designed product value
+                        </p>
+                        <Link to="#">
+                          Design&nbsp;<span>></span>
+                        </Link>
+                      </div>
+                      <div class="number-item">
+                        <div class="number blue_heading">
+                          10x
+                        </div>
+                        <p>
+                          increased product performance
+                        </p>
+                        <Link to="#">
+                          Technology&nbsp;<span>></span>
+                        </Link>
+                      </div>
+                    </div>
+                  </CSSTransition>
                 </div>
               </div>
+
               <div className="section">
                 <div className="pixoul_section_heading">
                 <CSSTransition
-                  in={page === 1 && pageLoaded && width > 1199 && progress < 1}
+                  in={page === 2 && pageLoaded && width > 1199 && progress < 5}
                   timeout={titleTimeout}
                   classNames="about-title-animation"
                   onEnter={() => {}}
-                  onExited={() => {this.setProgress(1)}}
+                  onExited={() => {this.setProgress(5)}}
                 >
-                  <h1 className={progress >= 1 || width <= 1199 ? 'about-title-animation-enter-done' : ''}>
+                  <h1 className={progress >= 5 || width <= 1199 ? 'about-title-animation-enter-done' : ''}>
                     What we value.
                   </h1>
                 </CSSTransition>
                 <CSSTransition
-                  in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                  in={page === 2 && pageLoaded && width > 1199 && progress < 6}
                   timeout={textTimeout}
                   classNames="about-text-animation"
                   onEnter={() => {}}
                   onExited={() => {}}
                 >
-                  <h2 className={progress >= 1 || width <= 1199 ? 'about-text-animation-enter-done' : ''}>
+                  <h2 className={progress >= 6 || width <= 1199 ? 'about-text-animation-enter-done' : ''}>
                     Our design-centric approach means our products focus on real data and business
                     <br />
                     &nbsp;goals, bringing value and creativity into every solution.
@@ -150,7 +228,7 @@ class AboutUsPage extends React.Component {
                 </div>
                 <div className="pixoul_four_grid">
                   <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                    in={page === 2 && pageLoaded && width > 1199 && progress < 6}
                     timeout={textTimeout}
                     classNames="about-text-animation"
                     onEnter={() => {}}
@@ -169,7 +247,7 @@ class AboutUsPage extends React.Component {
                     </div>
                   </CSSTransition>
                   <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                    in={page === 2 && pageLoaded && width > 1199 && progress < 6}
                     timeout={titleTimeout}
                     classNames="about-text-animation"
                     onEnter={() => {}}
@@ -189,7 +267,7 @@ class AboutUsPage extends React.Component {
                     </div>
                   </CSSTransition>
                   <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                    in={page === 2 && pageLoaded && width > 1199 && progress < 6}
                     timeout={textTimeout}
                     classNames="about-text-animation"
                     onEnter={() => {}}
@@ -209,11 +287,11 @@ class AboutUsPage extends React.Component {
                     </div>
                   </CSSTransition>
                   <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                    in={page === 2 && pageLoaded && width > 1199 && progress < 6}
                     timeout={textTimeout}
                     classNames="about-text-animation"
                     onEnter={() => {}}
-                    onExited={() => this.setProgress(2)}
+                    onExited={() => this.setProgress(6)}
                   >
                     <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
@@ -233,28 +311,28 @@ class AboutUsPage extends React.Component {
               <div className="section">
                 <div className="pixoul_section_heading">
                   <CSSTransition
-                      in={page === 2 && pageLoaded && width > 1199 && progress <3}
+                      in={page === 3 && pageLoaded && width > 1199 && progress <7}
                       timeout={titleTimeout}
                       classNames="about-title-animation"
                       onEnter={() => {}}
-                      onExited={() => {this.setProgress(3)}}
+                      onExited={() => {this.setProgress(7)}}
                     >
-                    <h1 className={progress >= 3 || width <= 1199 ? 'about-title-animation-enter-done' : ''}>Our partner network.</h1>
+                    <h1 className={progress >= 7 || width <= 1199 ? 'about-title-animation-enter-done' : ''}>Our partner network.</h1>
                   </CSSTransition>
                   <CSSTransition
-                      in={page === 2 && pageLoaded && width > 1199 && progress < 4}
+                      in={page === 3 && pageLoaded && width > 1199 && progress < 8}
                       timeout={textTimeout}
                       classNames="about-text-animation"
                       onEnter={() => {}}
-                      onExited={() => {this.setProgress(4)}}
+                      onExited={() => {this.setProgress(8)}}
                   >
-                    <h2 className={progress >= 4 || width <= 1199 ? 'about-text-animation-enter-done' : ''}>
+                    <h2 className={progress >= 8 || width <= 1199 ? 'about-text-animation-enter-done' : ''}>
                       Headquartered in Dallas, we're a global network with team members across North America, and clients around the world.
                     </h2>
                   </CSSTransition>
                 </div>
                 <CSSTransition
-                    in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                    in={page === 3 && pageLoaded && width > 1199 && progress < 9}
                     timeout={imgTimeout}
                     classNames="about-image-animation"
                 >
@@ -263,10 +341,10 @@ class AboutUsPage extends React.Component {
                   </div>
                 </CSSTransition>
                 <CSSTransition
-                  in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                  in={page === 3 && pageLoaded && width > 1199 && progress < 9}
                   timeout={imgTimeout}
                   classNames="about-image-animation"
-                  onExited={() => this.setProgress(5)}
+                  onExited={() => this.setProgress(9)}
                 >
                   <div className={buttonClass}>
                     <button className="green_button pixoul_button">Recent Work</button>
@@ -276,8 +354,8 @@ class AboutUsPage extends React.Component {
               <div className="section">
                 <PixoulContactForm
                   heading="Contact us."
-                  isAnimated={width > 1199 && page === 3 && pageLoaded && progress <= 6}
-                  onExited={() => this.setProgress(6)}
+                  isAnimated={width > 1199 && page === 4 && pageLoaded && progress <= 10}
+                  onExited={() => this.setProgress(10)}
                 />
               </div>
 

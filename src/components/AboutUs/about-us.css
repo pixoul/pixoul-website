@@ -210,6 +210,43 @@
     opacity: 1!important;
 }
 
+.number-section {
+    display: flex;
+    width: 90%;
+    margin: 48px auto;
+    justify-content: center;
+}
+
+.number-item {
+    padding: 12px 61px;
+    width: 300px;
+    text-align: center;
+    border-right: 1px solid #979797;
+}
+
+.number-item .number {
+    font-size: 65px;
+    font-weight: 300;
+}
+
+.number-item:last-child {
+    border: none;
+}
+
+.number-item p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.number-item a {
+    text-decoration: none;
+    color: #374050;
+}
+
+.number-item a span {
+    color: #3180fb;
+}
+
 @keyframes aboutPageButton {
 	from {
 		transform: translateY(-50px);
