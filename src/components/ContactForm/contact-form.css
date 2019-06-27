@@ -213,14 +213,14 @@
 
 .contact-title-animation-nodelay-enter {
     animation-name: stuckSlideShownH2;
-    animation-duration: .6s;
+    animation-duration: 1s;
     animation-fill-mode: both;
 }
 
 .contact-title-animation-enter {
     animation-name: stuckSlideShownH2;
     animation-delay: .9s;
-    animation-duration: .6s;
+    animation-duration: 1s;
     animation-fill-mode: both;
 }
 
@@ -244,21 +244,20 @@
 
 .form-slide-animation-nodelay-enter {
     animation-name: stuckSlideShownSlideDown;
-    animation-delay: .05s;
-    animation-duration: .6s;
+    animation-delay: .6s;
+    animation-duration: 1s;
     animation-fill-mode: both;
 }
 
 .form-slide-animation-enter {
     animation-name: stuckSlideShownSlideDown;
-    animation-delay: .95s;
-    animation-duration: .6s;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
     animation-fill-mode: both;
 }
 
 .form-slide-animation-exit {
     animation-name: stuckSlideShownSlideUp;
-    animation-delay: .05s;
     animation-duration: .6s;
     animation-fill-mode: both;
 }
@@ -272,15 +271,16 @@
 }
 
 .contact-subtitle-animation-nodelay-enter {
-	animation-name: stuckSlideFadeIn;
-	animation-duration: .6s;
+    animation-name: stuckSlideFadeIn;
+    animation-delay: .5s;
+	animation-duration: 1s;
 	animation-fill-mode: both;
 }
 
 .contact-subtitle-animation-enter {
 	animation-name: stuckSlideFadeIn;
-	animation-delay: .9s;
-	animation-duration: .6s;
+	animation-delay: 1.4s;
+	animation-duration: 1s;
 	animation-fill-mode: both;
 }
 

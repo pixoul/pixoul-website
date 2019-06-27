@@ -27,13 +27,25 @@ class PixoulContactForm extends Component {
 
   render() {
     const { loaded } = this.state;
-    console.log(loaded);
     const { heading, isAnimated, delay } = this.props;
     let timeout = {
       appear: 0 + delay,
-      enter: 600 + delay,
+      enter: 1000 + delay,
       exit: 600,
     };
+
+    let subtitleTimeout = {
+      appear: 500 + delay,
+      enter: 1000 + delay,
+      exit: 600,
+    };
+
+    let formTimeout = {
+      appear: 600 + delay,
+      enter: 1000 + delay,
+      exit: 600,
+    };
+
     const titleClass = delay > 0 ? 'contact-title-animation' : 'contact-title-animation-nodelay';
     const subtitleClass = delay > 0 ? 'contact-subtitle-animation' : 'contact-subtitle-animation-nodelay';
     const formClass = delay > 0 ? 'form-slide-animation' : 'form-slide-animation-nodelay';
@@ -70,7 +82,7 @@ class PixoulContactForm extends Component {
           <div className="contact_section_form_container">
             <CSSTransition
               in={isAnimated && !loaded}
-              timeout={timeout}
+              timeout={formTimeout}
               classNames={formClass}
               onExited={this.onExited}
             >
