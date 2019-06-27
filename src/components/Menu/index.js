@@ -11,7 +11,7 @@ const Menu = props => {
   return (
     <div className="menu-container">
       <div className="menu">
-        <Link className="menu-item" to='/' onClick={props.onMenuClose}>Home</Link>
+        <a className="menu-item" href='/#00' onClick={props.onMenuClose}>Home</a>
         <a className="menu-item" href='/#01' onClick={props.onMenuClose}>Work</a>
         <Link className="menu-item" to='/aboutus' onClick={props.onMenuClose}>About</Link>
         <Link className="menu-item" to='/services' onClick={props.onMenuClose}>Services</Link>
