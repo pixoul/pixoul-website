@@ -6,12 +6,14 @@ import downArrow from "../../images/ic_arrow_forward.png";
 import { CSSTransition } from "react-transition-group";
 import "./about-us.css";
 
-import spaceship from "../../images/spaceship.png";
-import people from "../../images/people.png";
-import cloud from "../../images/cloud.png";
-import thumbsup from "../../images/thumbsup.png";
+import startup from "../../images/startup.svg";
+import worldwide from "../../images/worldwide.svg";
+import laptop from "../../images/laptop.svg";
+import cloud from "../../images/cloud.svg";
 import map from "../../images/map.svg";
 import arrow from "../../images/arrow.svg";
+
+
 const cn = require('classnames');
 class AboutUsPage extends React.Component {
   state = {
@@ -237,7 +239,7 @@ class AboutUsPage extends React.Component {
                   >
                     <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
-                        <img src={spaceship} alt="Spaceship" />
+                        <img src={startup} alt="Spaceship" />
                       </div>
                       <div>
                         <h3 className="blue_heading">We strive for innovation.</h3>
@@ -256,7 +258,7 @@ class AboutUsPage extends React.Component {
                   >
                     <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
-                        <img src={people} alt="People" />
+                        <img src={worldwide} alt="People" />
                       </div>
                       <div>
                         <h3 className="blue_heading">You're our first priority.</h3>
@@ -296,7 +298,7 @@ class AboutUsPage extends React.Component {
                   >
                     <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
-                        <img src={thumbsup} alt="Thumbs up" />
+                        <img src={laptop} alt="Thumbs up" />
                       </div>
                       <div>
                         <h3 className="blue_heading">Good design is minimal design.</h3>
