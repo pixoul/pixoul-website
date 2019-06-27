@@ -215,6 +215,7 @@
     width: 90%;
     margin: 48px auto;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .number-item {
@@ -241,10 +242,12 @@
 .number-item a {
     text-decoration: none;
     color: #374050;
+    display: flex;
+    justify-content: center;
 }
 
 .number-item a span {
-    color: #3180fb;
+    margin: 5px 0 0 5px;
 }
 
 @keyframes aboutPageButton {
@@ -287,5 +290,8 @@
 
     .top_about_us_heading_text {
         white-space: normal;
+    }
+    .number-item {
+        border: none;
     }
 }

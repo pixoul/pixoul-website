@@ -11,6 +11,7 @@ import people from "../../images/people.png";
 import cloud from "../../images/cloud.png";
 import thumbsup from "../../images/thumbsup.png";
 import map from "../../images/map.svg";
+import arrow from "../../images/arrow.svg";
 const cn = require('classnames');
 class AboutUsPage extends React.Component {
   state = {
@@ -169,7 +170,7 @@ class AboutUsPage extends React.Component {
                           outperformance vs. design averse companies
                         </p>
                         <Link to="#">
-                          Strategy&nbsp;<span>></span>
+                          Strategy&nbsp;<span><img src={arrow} alt="Arrow" /></span>
                         </Link>
                       </div>
                       <div class="number-item">
@@ -180,7 +181,7 @@ class AboutUsPage extends React.Component {
                           in collective designed product value
                         </p>
                         <Link to="#">
-                          Design&nbsp;<span>></span>
+                          Design&nbsp;<span><img src={arrow} alt="Arrow" /></span>
                         </Link>
                       </div>
                       <div class="number-item">
@@ -191,7 +192,7 @@ class AboutUsPage extends React.Component {
                           increased product performance
                         </p>
                         <Link to="#">
-                          Technology&nbsp;<span>></span>
+                          Technology&nbsp;<span><img src={arrow} alt="Arrow" /></span>
                         </Link>
                       </div>
                     </div>
