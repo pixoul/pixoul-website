@@ -3,19 +3,28 @@ import { CSSTransition } from "react-transition-group";
 import "./contact-form.css";
 
 class PixoulContactForm extends Component {
-  
+  state = {
+    loaded: false,
+  }
+
+  onExited = () => {
+    this.setState({ loaded: true });
+    this.props.onExited();
+  }
+
   render() {
+    const { loaded } = this.state;
     const { heading, isAnimated } = this.props;
     const subtitleTimeout = {
       appear: 900,
-      enter: 1850,
-      exit: 900
+      enter: 1500,
+      exit: 600
     };
     return (
       <div className="contact_section_container">
         <div className="contact-background" />
         <CSSTransition
-          in={isAnimated}
+          in={isAnimated && !loaded}
           timeout={{
             appear: 900,
             enter: 1250,
@@ -30,33 +39,31 @@ class PixoulContactForm extends Component {
         <div className="contact-section">
           <div className="contact_section_form_container">
             <CSSTransition
-              in={isAnimated}
+              in={isAnimated && !loaded}
               timeout={subtitleTimeout}
               classNames="contact-subtitle-animation"
-              onEntered={() => this.setState({ readyToMove: true })}
             >
               <h2>See how we help ambitious brands&nbsp;<br/> dominate digital</h2>
             </CSSTransition>
             <CSSTransition
-              in={isAnimated}
+              in={isAnimated && !loaded}
               timeout={subtitleTimeout}
               classNames="contact-subtitle-animation"
-              onEntered={() => this.setState({ readyToMove: true })}
             >
               <h3>Let's talk about your design and strategy needs.</h3>
               </CSSTransition>
           </div>
           <div className="contact_section_form_container">
             <CSSTransition
-              in={isAnimated}
+              in={isAnimated && !loaded}
               timeout={{
                 appear: 900,
                 enter: 1500,
-                exit: 50,
+                exit: 600,
               }}
               classNames="form-slide-animation"
               onEnter={() => {}}
-              onExited={this.props.onExited}
+              onExited={this.onExited}
             >
               <div className="form-animation-container">
               <form className="contact_section_form" autoComplete="on">

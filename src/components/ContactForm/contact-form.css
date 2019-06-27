@@ -53,6 +53,7 @@
     margin: 0;
     overflow: hidden;
     white-space: nowrap;
+    opacity: 0;
 }
 
 .contact_section_form_container h3 {
@@ -62,6 +63,7 @@
     margin-top: 35px;
     overflow: hidden;
     white-space: nowrap;
+    opacity: 0;
 }
 
 .contact_section_form {
@@ -212,18 +214,12 @@
 .contact-title-animation-enter {
     animation-name: stuckSlideShownH2;
     animation-delay: .9s;
-    animation-duration: 1s;
+    animation-duration: .6s;
     animation-fill-mode: both;
 }
 
-.contact-title-animation-exit {
-    animation-name: stuckSlideHiddenH2;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-.contact-title-animation-enter-done {
-    height: 63px;
+.contact-title-animation-enter-done, .contact-title-animation-exit-done {
+    height: auto;
 }
 
 .form-animation-container {
@@ -239,13 +235,6 @@
     animation-fill-mode: both;
 }
 
-.form-slide-animation-exit {
-    animation-name: stuckSlideShownSlideUp;
-    animation-delay: .95s;
-    animation-duration: .3s;
-    animation-fill-mode: both;
-}
-
 .form-animation-enter {
     animation-name: contactsFormToBottom;
     animation-delay: 1.4s;
@@ -253,17 +242,10 @@
     animation-fill-mode: both;
 }
 
-.form-animation-exit {
-    animation-name: contactsFormToTop;
-    animation-delay: 0s;
-    animation-duration: .05s;
-    animation-fill-mode: both;
-}
-
-.form-slide-animation-enter-done,
-.form-animation-enter-done {
-    height: auto;
-    opacity: 1;
+.form-slide-animation-enter-done, .form-slide-animation-exit-done, 
+.form-animation-enter-done, .form-animation-exit-done {
+    height: auto!important;
+    opacity: 1!important;
 }
 
 .contact-subtitle-animation-enter {
@@ -273,13 +255,7 @@
 	animation-fill-mode: both;
 }
 
-.contact-subtitle-animation-exit {
-	animation-name: stuckSlideFadeOut;
-	animation-duration: .6s;
-	animation-fill-mode: both;
-}
-
-.contact-subtitle-animation-enter-done {
+.contact-subtitle-animation-enter-done, .contact-subtitle-animation-exit-done {
 	opacity: 1!important;
 }
 
