@@ -59,7 +59,7 @@ class PixoulContactForm extends Component {
               timeout={{
                 appear: 900,
                 enter: 1500,
-                exit: 600,
+                exit: 50,
               }}
               classNames="form-slide-animation"
               onEnter={() => {}}
@@ -72,7 +72,7 @@ class PixoulContactForm extends Component {
                     type="text"
                     id="given-name"
                     required="required"
-                    name="name"
+                    name="given-name"
                   />
                   <label htmlFor="contact_form_first_name">
                     First Name <span className="asterix">*</span>
@@ -83,7 +83,7 @@ class PixoulContactForm extends Component {
                     type="text"
                     id="family-name"
                     required="required"
-                    name="name"
+                    name="family-name"
                   />
                   <label htmlFor="contact_form_last_name">
                     Last Name <span className="asterix">*</span>
