@@ -240,7 +240,7 @@ class AboutUsPage extends React.Component {
                   <div className={gridClass}>
                     <div className='about-value-item'>
                         <img src={startup} alt="Spaceship" />
-                        <h3 className="blue_heading">Innovation.</h3>
+                        <h3 className="blue_heading">Innovation</h3>
                     </div>
                 
                     <div className='about-value-item'>
@@ -250,7 +250,7 @@ class AboutUsPage extends React.Component {
                   
                     <div className='about-value-item'>
                       <img src={cloud} alt="Cloud data" />
-                      <h3 className="blue_heading">Simple solutions</h3>
+                      <h3 className="blue_heading">Simple Solutions</h3>
                     </div>
 
                     <div className='about-value-item'>
@@ -260,7 +260,7 @@ class AboutUsPage extends React.Component {
                   
                     <div className='about-value-item'>
                       <img src={pencil} alt="Pencil" />
-                      <h3 className="blue_heading">Good design</h3>
+                      <h3 className="blue_heading">Good Design</h3>
                     </div>
                   </div>
                 </CSSTransition>
