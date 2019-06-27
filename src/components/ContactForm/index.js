@@ -32,7 +32,7 @@ class PixoulContactForm extends Component {
             <CSSTransition
               in={isAnimated}
               timeout={subtitleTimeout}
-              classNames="subtitle-animation"
+              classNames="contact-subtitle-animation"
               onEntered={() => this.setState({ readyToMove: true })}
             >
               <h2>See how we help ambitious brands&nbsp;<br/> dominate digital</h2>
@@ -40,7 +40,7 @@ class PixoulContactForm extends Component {
             <CSSTransition
               in={isAnimated}
               timeout={subtitleTimeout}
-              classNames="subtitle-animation"
+              classNames="contact-subtitle-animation"
               onEntered={() => this.setState({ readyToMove: true })}
             >
               <h3>Let's talk about your design and strategy needs.</h3>
