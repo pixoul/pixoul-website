@@ -16,7 +16,7 @@
   width: 320px;
   top: 103px;
   max-height: calc(100vh - 103px);
-  overflow-y: auto;
+  overflow: visible;
 }
 
 .menu a {
