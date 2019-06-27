@@ -14,7 +14,7 @@
   position: absolute;
   right: 0;
   width: 320px;
-  top: 64px;
+  top: 10vh;
   max-height: calc(100vh - 103px);
   overflow: visible;
 }
