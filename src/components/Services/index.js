@@ -8,11 +8,11 @@ import CarouselItem from '../CarouselItem/index';
 import PixoulContactForm from "../ContactForm/index";
 import "./services.css";
 
-import serviceBack from "../../images/service_background.svg";
 import downArrow from "../../images/ic_arrow_forward.png";
 import computer from "../../images/computer.png";
 import web_programming from "../../images/web-programming.png";
 import lightbulb from "../../images/lightbulb.png";
+import oval_shadow from "../../images/oval_shadow.svg";
 
 import work_examples from "../../images/work-examples.svg";
 const cn = require('classnames');
@@ -209,6 +209,7 @@ class ServicesPage extends React.Component {
                     <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={lightbulb} alt="lightbulb" />
+                        <img src={oval_shadow} alt="Oval Shadow" />
                       </div>
                       <div className="pixoul_grid_column_item-content">
                         <h2>Strategy</h2>
@@ -231,6 +232,7 @@ class ServicesPage extends React.Component {
                     <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={computer} alt="computer" />
+                        <img src={oval_shadow} alt="Oval Shadow" />
                       </div>
                       <div className="pixoul_grid_column_item-content">
                         <h2>Human-Centered Design</h2>
@@ -253,6 +255,7 @@ class ServicesPage extends React.Component {
                     <div className={gridClass}>
                       <div className="pixoul_four_grid_item_img_container">
                         <img src={web_programming} alt="Web programming" />
+                        <img src={oval_shadow} alt="Oval Shadow" />
                       </div>
                       <div className="pixoul_grid_column_item-content">
                         <h2>Technology</h2>

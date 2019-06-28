@@ -112,13 +112,25 @@
   box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 1px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2);
 }
 
-.pixoul_grid_column_item_img_container {
-  position: relative;
-  margin-right: 41.5px;
+.pixoul_four_grid_item_img_container {
+  display: flex;
+  flex-direction: column;
 }
 
 .pixoul_four_grid_item_img_container img {
   width: 95px;
+}
+
+.pixoul_four_grid_item_img_container img:first-child {
+  margin-bottom: 20px;
+}
+
+.pixoul_four_grid_item_img_container img:last-child {
+  visibility: hidden;
+}
+
+.pixoul_grid_column_item:hover .pixoul_four_grid_item_img_container img:last-child {
+  visibility: visible!important;
 }
 
 .pixoul_grid_column_item h2 {
