@@ -215,7 +215,7 @@ class ServicesPage extends React.Component {
                           Reimagine and redefine your organizational approach by developing new ways of approaching your mission-critical KPIs.
                         </h3>
                       </div>
-                      <Link to="#">
+                      <Link to="/services-strategy">
                         <img src={downArrow} alt='Downarrow' />
                       </Link>
                     </div>
@@ -237,7 +237,7 @@ class ServicesPage extends React.Component {
                           Use Design Thinking to create products, services, systems, and experiences that address the core needs of your target audience.
                         </h3>
                       </div>
-                      <Link to="#">
+                      <Link to="/services-design">
                         <img src={downArrow} alt='Downarrow' />
                       </Link>
                     </div>
@@ -259,7 +259,7 @@ class ServicesPage extends React.Component {
                           Bring your digital solution to life for your customers, and scale it across devices and platforms.
                         </h3>
                       </div>
-                      <Link to="#">
+                      <Link to="/services-tech">
                         <img src={downArrow} alt='Downarrow' />
                       </Link>
                     </div>
