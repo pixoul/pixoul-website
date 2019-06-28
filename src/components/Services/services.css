@@ -287,6 +287,31 @@
   animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
+/* Strategy, tech, design subpages */
+/* --Circle checkbox section */
+.pixoul_list_with_checkboxes_container {}
+.pixoul_list_with_checkboxes_row {}
+.pixoul_list_with_checkboxes_row_left_side {}
+.pixoul_list_with_checkboxes_row_left_side h2 {}
+.pixoul_list_with_checkboxes_row_left_side p {}
+.pixoul_list_with_checkboxes_row_right_side {}
+.pixoul_list_with_checkboxes_row_right_side img {}
+
+/* --Capabilities section */
+.pixoul_capabilities {}
+.pixoul_six_capabilities_img_container {}
+.pixoul_six_capabilities_img_container img {}
+.pixoul_six_capabilities_grid {}
+.pixoul_six_capabilities_grid_item {}
+.pixoul_six_capabilities_grid_item h3 {}
+.pixoul_six_capabilities_grid_item p {}
+
+/* --Technologies we leverage section */
+.pixoul_tech_logos_container {}
+.pixoul_tech_logos_img_container {}
+.pixoul_tech_logos_img_container img {}
+
+
 @media (max-width: 1199px) {
   h1, h2, .pixoul_four_grid_item {
       opacity: 1!important;
