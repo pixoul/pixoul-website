@@ -95,6 +95,7 @@
 
 .pixoul_grid_column_item-content {
   flex: 1;
+  margin-left: 79px;
 }
 
 .pixoul_grid_column_item:hover {
@@ -325,9 +326,15 @@
   .carousel-list-row {
     width: 100%;
   }
+  .pixoul_grid_column_item-content {
+    margin-left: 40px;
+  }
 }
 
 @media (max-width: 767px) {
+  .pixoul_grid_column {
+    width: 100%;
+  }
   .pixoul_adjustable_column {
       padding: 0;
   }
@@ -343,5 +350,8 @@
   .service-button-section {
     margin: 30px auto;
     text-align: center
+  }
+  .pixoul_grid_column_item {
+    padding: 20px 10px 20px 10px;
   }
 }
