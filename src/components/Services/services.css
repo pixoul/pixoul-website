@@ -56,6 +56,16 @@
   margin: 117px auto 60px auto;
 }
 
+.service-title-background {
+  margin: 0 auto;
+  max-width: 974px;
+  width: 100%;
+  background-image: url('../../images/service_background.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .pixoul_section_heading h1 {
   font-weight: 500;
   text-align: center;

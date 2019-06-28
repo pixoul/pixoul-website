@@ -8,6 +8,7 @@ import CarouselItem from '../CarouselItem/index';
 import PixoulContactForm from "../ContactForm/index";
 import "./services.css";
 
+import serviceBack from "../../images/service_background.svg";
 import downArrow from "../../images/ic_arrow_forward.png";
 import computer from "../../images/computer.png";
 import web_programming from "../../images/web-programming.png";
@@ -155,13 +156,13 @@ class ServicesPage extends React.Component {
             <ReactFullpage.Wrapper>
               <div className="section">
                 <div className="">
-                  <div className="">
-                      <div className="blue_heading top_about_us_heading mainTitle-animation-enter">
-                        How can we help?
-                      </div>
-                      <div className="top_about_us_heading_text mainText-animation-enter">
-                        We're here to bring life to your digital vision. Got a project in mind?&nbsp;<br/>Let's talk
-                      </div>
+                  <div className="service-title-background">
+                    <div className="blue_heading top_about_us_heading mainTitle-animation-enter">
+                      How can we help?
+                    </div>
+                    <div className="top_about_us_heading_text mainText-animation-enter">
+                      We're here to bring life to your digital vision. Got a project in mind?&nbsp;<br/>Let's talk
+                    </div>
                   </div>
 
                   <button
