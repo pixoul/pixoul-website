@@ -6,6 +6,9 @@ import ServicesPage from "./components/Services/index";
 import "./App.css";
 
 import { Header, Menu, Home } from "./components";
+import ServicesStrategySubPage from "./components/Services/strategy";
+import ServicesDesignSubPage from "./components/Services/design";
+import ServicesTechSubPage from "./components/Services/tech";
 
 const cn = require('classnames');
 class App extends React.Component {
@@ -70,6 +73,21 @@ class App extends React.Component {
               exact
               path="/services" 
               render={(props) => <ServicesPage {...props} isMenuVisible={showMenu} />}
+            />
+            <Route
+              exact
+              path="/services-strategy" 
+              render={(props) => <ServicesStrategySubPage {...props} isMenuVisible={showMenu} />}
+            />
+            <Route
+              exact
+              path="/services-design" 
+              render={(props) => <ServicesDesignSubPage {...props} isMenuVisible={showMenu} />}
+            />
+            <Route
+              exact
+              path="/services-tech" 
+              render={(props) => <ServicesTechSubPage {...props} isMenuVisible={showMenu} />}
             />
           </div>
         </CSSTransition>
