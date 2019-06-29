@@ -23,6 +23,7 @@ class ServicesPage extends React.Component {
     pageLoaded: true,
     progress: 0,
     width: window.innerWidth,
+    animateExcellence: false,
   };
 
   componentDidMount() {
@@ -52,10 +53,21 @@ class ServicesPage extends React.Component {
     }
   }
 
+  animateAction = () => {
+    this.setState({ animateExcellence: true });
+  }
+
   render() {
     const pageIndex = ["00", "01", "02", "03", "Contact"];
     const { isMenuVisible } = this.props;
-    const { page, pageLoaded, width, progress } = this.state;
+    const {
+      page,
+      pageLoaded,
+      width,
+      progress,
+      animateExcellence,
+    } = this.state;
+
     const titleTimeout = {
       appear: 900,
       enter: 1950,
@@ -73,6 +85,12 @@ class ServicesPage extends React.Component {
       enter: 2450,
       exit: 50,
     };
+
+    const actionTimeout = {
+      appear: 0,
+      enter: 1550,
+      exit: 0,
+    }
 
     const gridClass = cn('pixoul_grid_column_item', {
       'services-text-animation-enter-done': progress >= 1 || width <= 1199,
@@ -273,20 +291,20 @@ class ServicesPage extends React.Component {
               <div className="section grey-background">
                 <div className="pixoul_section_heading">
                   <CSSTransition
-                      in={page === 2 && pageLoaded && width > 1199 && progress <3}
-                      timeout={titleTimeout}
-                      classNames="services-title-animation"
-                      onEnter={() => {}}
-                      onExited={() => {this.setProgress(3)}}
-                    >
+                    in={page === 2 && pageLoaded && width > 1199 && progress <3}
+                    timeout={titleTimeout}
+                    classNames="services-title-animation"
+                    onEnter={() => {}}
+                    onExited={() => {this.setProgress(3)}}
+                  >
                     <h1 className={progress >= 3 ? 'services-title-animation-enter-done' : ''}>Where we work.</h1>
                   </CSSTransition>
                   <CSSTransition
-                      in={page === 2 && pageLoaded && width > 1199 && progress < 4}
-                      timeout={textTimeout}
-                      classNames="services-text-animation"
-                      onEnter={() => {}}
-                      onExited={() => {this.setProgress(4)}}
+                    in={page === 2 && pageLoaded && width > 1199 && progress < 4}
+                    timeout={textTimeout}
+                    classNames="services-text-animation"
+                    onEnter={() => {}}
+                    onExited={() => {this.setProgress(4)}}
                   >
                     <h2 className={progress >= 4 ? 'services-text-animation-enter-done' : ''}>
                       From venture-backed startups to Fortune 500 corporations, we build solutions for our partners across a variety of industries. Here's just a few.
@@ -295,19 +313,28 @@ class ServicesPage extends React.Component {
                 </div>
                 <div className="services-row">
                   <CSSTransition
-                    in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                    in={page === 2 && pageLoaded && width > 1199 && progress < 5 }
                     timeout={imgTimeout}
                     classNames="services-image-animation"
                     onExited={() => this.setProgress(5)}
                   >
                     <div>
-                      <h1>Excellence in action</h1> 
-                      <h2>From internal tools, to consumer facing products and B2B sales-we've got you covered.</h2>
+                      <CSSTransition
+                        in={animateExcellence}
+                        timeout={actionTimeout}
+                        classNames="mainText-animation"
+                        onEntered={() => this.setState({ animateExcellence: false })}
+                      >
+                        <div>
+                          <h1>Excellence in action</h1> 
+                          <h2>From internal tools, to consumer facing products and B2B sales-we've got you covered.</h2>
+                        </div>
+                      </CSSTransition>
                       <div className="services-link-row">
-                        <Link to="#">Business</Link>
-                        <Link to="#">FinTech</Link>
-                        <Link to="#">Insurance</Link>
-                        <Link to="#">Marketing</Link>
+                        <Link to="#" onClick={this.animateAction}>Business</Link>
+                        <Link to="#" onClick={this.animateAction}>FinTech</Link>
+                        <Link to="#" onClick={this.animateAction}>Insurance</Link>
+                        <Link to="#" onClick={this.animateAction}>Marketing</Link>
                       </div>
                       <div className='service-button-section'>
                         <button className="green_button pixoul_button">Recent Work</button>
@@ -329,12 +356,12 @@ class ServicesPage extends React.Component {
               <div className="section">
                 <div className="pixoul_section_heading">
                   <CSSTransition
-                      in={page === 3 && pageLoaded && width > 1199 && progress < 6}
-                      timeout={titleTimeout}
-                      classNames="services-title-animation"
-                      onEnter={() => {}}
-                      onExited={() => {this.setProgress(6)}}
-                    >
+                    in={page === 3 && pageLoaded && width > 1199 && progress < 6}
+                    timeout={titleTimeout}
+                    classNames="services-title-animation"
+                    onEnter={() => {}}
+                    onExited={() => {this.setProgress(6)}}
+                  >
                     <h1 className={progress >= 6 ? 'services-title-animation-enter-done' : ''}>What everyone is saying.</h1>
                   </CSSTransition>
                   <CSSTransition
