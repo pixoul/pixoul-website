@@ -1,13 +1,18 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import logo from "../../images/logo.svg";
-
+import PropTypes from 'prop-types';
 import "./header.css";
+const cn = require('classnames');
 
 const Header = props => {
   const link = '#Contact';
+  const { whiteMode } = props;
+  const headerClass = cn('header', {
+    'white-header': whiteMode,
+  });
   return (
-    <div className="header">
+    <div className={headerClass}>
       <Link className="logo" to='/'><img src={logo} alt="logoTitle" /></Link>
       <a className="pixoul_button contactus-button" href={link}>  
         <span>Contact Us</span>
@@ -25,5 +30,13 @@ const Header = props => {
     </div>
   );
 };
+
+Header.defaultProps = {
+  whiteMode: false,
+};
+
+Header.propTypes = {
+  whiteMode: PropTypes.bool,
+}
 
 export { Header };

@@ -37,11 +37,17 @@ class App extends React.Component {
     this.setShowMenu(!this.state.showMenu);
   };
 
+  onClick = () => {
+    const { showMenu } = this.state;
+    if(showMenu) {
+      this.toggleMenu();
+    }
+  }
+
   render() {
     const { showMenu, width } = this.state;
-
     const mainClass = cn('', {
-      'main-exit-animation-enter-done': showMenu,
+      'main-exit-animation-enter-done hand-pointer': showMenu,
     });
 
     return (
@@ -52,11 +58,10 @@ class App extends React.Component {
           timeout={300}
           classNames="main-exit-animation"
         >
-          <div className={mainClass}>
+          <div className={mainClass} onClick={this.onClick}>
             <Header
               onMenuClick={this.toggleMenu}
               isAnimated={width > 1199}
-              isHome={true}
             />
             <Route
               exact
