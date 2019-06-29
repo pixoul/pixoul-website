@@ -69,6 +69,14 @@ input {
 	cursor: pointer;
 }
 
+.green_heading {
+  color: #2EC986;
+}
+
+.grey-background {
+  background-color: #f9f9f9!important;
+}
+
 .no-pointer {
 	pointer-events: none;
 }

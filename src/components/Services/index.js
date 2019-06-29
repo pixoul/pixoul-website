@@ -270,7 +270,7 @@ class ServicesPage extends React.Component {
                   </CSSTransition>
                 </div>
               </div>
-              <div className="section">
+              <div className="section grey-background">
                 <div className="pixoul_section_heading">
                   <CSSTransition
                       in={page === 2 && pageLoaded && width > 1199 && progress <3}
