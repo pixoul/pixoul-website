@@ -14,7 +14,14 @@ import web_programming from "../../images/web-programming.png";
 import lightbulb from "../../images/lightbulb.png";
 import oval_shadow from "../../images/oval_shadow.svg";
 
-import work_examples from "../../images/work-examples.svg";
+import example1 from "../../images/examples/Example1.svg";
+import example2 from "../../images/examples/Example2.svg";
+import example3 from "../../images/examples/Example3.svg";
+import example4 from "../../images/examples/Example4.svg";
+import example5 from "../../images/examples/Example5.svg";
+import example6 from "../../images/examples/Example6.svg";
+import decorations from "../../images/examples/Decorations.svg";
+
 const cn = require('classnames');
 class ServicesPage extends React.Component {
   state = {
@@ -347,7 +354,17 @@ class ServicesPage extends React.Component {
                     classNames="services-image-animation"
                   >
                     <div className={mapClass}>
-                      <img src={work_examples} alt="map" />
+                      <img src={decorations} alt="decoration" className='decoration' />
+                      <div>
+                        <img src={example1} className="example-img" id="example-1" alt="example 1" />
+                        <img src={example2} className="example-img" id="example-2" alt="example 2" />
+                        <img src={example3} className="example-img" id="example-3" alt="example 3" />
+                      </div>
+                      <div>
+                        <img src={example4} className="example-img" id="example-4" alt="example 4" />
+                        <img src={example5} className="example-img" id="example-5" alt="example 5" />
+                        <img src={example6} className="example-img" id="example-6" alt="example 6" />
+                      </div>
                     </div>
                   </CSSTransition>
                 </div>
