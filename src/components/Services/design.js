@@ -4,7 +4,7 @@ import PixoulContactForm from "../ContactForm/index";
 import "./services.css";
 
 import downArrow from "../../images/ic_arrow_forward.png";
-import checkmark from "../../images/checkmark-circle.svg";
+// import checkmark from "../../images/checkmark-circle.svg";
 
 import capability_examples from "../../images/capability-examples.svg";
 
@@ -92,7 +92,7 @@ class ServicesDesignSubPage extends React.Component {
                             <p>Supported by our data and research initiatives, we use industry proven Design Thinking techniques to promote strong user- and human-centered design.  Using empathy and creativity, we inspire, ideate, and implement to create solutions at scale.  We recognize our designs have the opportunity to promote goodwill, and impact entire communities.</p>
                         </div>
                         <div className="pixoul_list_with_checkboxes_row_right_side">
-                            <img src={checkmark} alt="checkmark" />
+                            {/* <img src={checkmark} alt="checkmark" /> */}
                         </div>
                     </div>
                     <div className="pixoul_list_with_checkboxes_row">
@@ -101,7 +101,7 @@ class ServicesDesignSubPage extends React.Component {
                             <p>Compelling digital experiences begin with an understanding of your goals.  We create value propositions, product strategies, and cultural probes to bring about great design.  From brainstorming challenges to heuristic evaluations, we’re on the front lines of ensuring our product design is accessible, innovative, and empathetic.</p>
                         </div>
                         <div className="pixoul_list_with_checkboxes_row_right_side">
-                            <img src={checkmark} alt="checkmark" />
+                            {/* <img src={checkmark} alt="checkmark" /> */}
                         </div>
                     </div>
                     <div className="pixoul_list_with_checkboxes_row">
@@ -110,7 +110,7 @@ class ServicesDesignSubPage extends React.Component {
                             <p>At the end of the day, we know that great experiences neccessitate a beautiful design aesthetic.  We employ modern, simplistic design systems that are simultaneously easy to use and phenominally alluring.  Fully scalable systems include not only basic UI layouts, but also content management, animation, and motion interaction.</p>
                         </div>
                         <div className="pixoul_list_with_checkboxes_row_right_side">
-                            <img src={checkmark} alt="checkmark" />
+                            {/* <img src={checkmark} alt="checkmark" /> */}
                         </div>
                     </div>
                     <div className="pixoul_list_with_checkboxes_row">
@@ -119,7 +119,7 @@ class ServicesDesignSubPage extends React.Component {
                             <p>Design begins with great research—and it ends with it, too.  Our agile approach means that testing and iterative design is baked-in to every sprint cycle.  Field studies, guerilla testing, focus groups, and more help us know that every decision is backed by proven data that will significantly impact bottom-line economics.</p>
                         </div>
                         <div className="pixoul_list_with_checkboxes_row_right_side">
-                            <img src={checkmark} alt="checkmark" />
+                            {/* <img src={checkmark} alt="checkmark" /> */}
                         </div>
                     </div>
                 </div>

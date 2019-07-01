@@ -5,7 +5,7 @@ import { CSSTransition } from "react-transition-group";
 import "./services.css";
 
 import downArrow from "../../images/ic_arrow_forward.png";
-import checkmark from "../../images/checkmark-circle.svg";
+// import checkmark from "../../images/checkmark-circle.svg";
 
 import adobe from "../../images/technologies/adobe.svg";
 import android from "../../images/technologies/android.svg";
@@ -111,7 +111,7 @@ class ServicesTechSubPage extends React.Component {
                             <p>We use responsive design to build website and front end web applications.  With powerful digital tools, we’re always leveraging the most updated and secure frameworks to ensure seamless integration into your existing architecture.</p>
                         </div>
                         <div className="pixoul_list_with_checkboxes_row_right_side">
-                            <img src={checkmark} alt="checkmark" />
+                            {/* <img src={checkmark} alt="checkmark" /> */}
                         </div>
                     </div>
                     <div className="pixoul_list_with_checkboxes_row">
@@ -120,7 +120,7 @@ class ServicesTechSubPage extends React.Component {
                             <p>Beyond responsive web and application development, our human-centered design processes help us to build and support iOS and Android applications—including integration with smart phones, wearables, and Internet of Things devices.</p>
                         </div>
                         <div className="pixoul_list_with_checkboxes_row_right_side">
-                            <img src={checkmark} alt="checkmark" />
+                            {/* <img src={checkmark} alt="checkmark" /> */}
                         </div>
                     </div>
                     <div className="pixoul_list_with_checkboxes_row">
@@ -129,7 +129,7 @@ class ServicesTechSubPage extends React.Component {
                             <p>Working alongside Google’s ecommerce standards, we implement solutions from a range of secure providers, integrating payment solutions and affording great design across landing pages, menu and navigation, search, category and product pages, conversion funnels, and optimized forms.</p>
                         </div>
                         <div className="pixoul_list_with_checkboxes_row_right_side">
-                            <img src={checkmark} alt="checkmark" />
+                            {/* <img src={checkmark} alt="checkmark" /> */}
                         </div>
                     </div>
                     <div className="pixoul_list_with_checkboxes_row">
@@ -138,7 +138,7 @@ class ServicesTechSubPage extends React.Component {
                             <p>Our custom builds allow for seamless API integration, cloud opportunities, and assimilation with robust and secure content management systems, like Wordpress, Drupal, and Joomla.</p>
                         </div>
                         <div className="pixoul_list_with_checkboxes_row_right_side">
-                            <img src={checkmark} alt="checkmark" />
+                            {/* <img src={checkmark} alt="checkmark" /> */}
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ class ServicesTechSubPage extends React.Component {
               <div className="section">
                 <div className="pixoul_section_heading">
                     <CSSTransition
-                        in={page === 3 && pageLoaded && width > 1199 && progress < 6}
+                        in={page === 2 && pageLoaded && width > 1199 && progress < 6}
                         timeout={titleTimeout}
                         classNames="services-title-animation"
                         onEnter={() => {}}
@@ -155,7 +155,7 @@ class ServicesTechSubPage extends React.Component {
                         <h1 className={progress >= 6 ? 'services-title-animation-enter-done' : ''}>Technologies we leverage.</h1>
                     </CSSTransition>
                     <CSSTransition
-                        in={page === 3 && pageLoaded && width > 1199 && progress < 7}
+                        in={page === 2 && pageLoaded && width > 1199 && progress < 7}
                         timeout={textTimeout}
                         classNames="services-text-animation"
                         onEnter={() => {}}
@@ -167,14 +167,14 @@ class ServicesTechSubPage extends React.Component {
                     </CSSTransition>
                 </div>
                 <div className="pixoul_tech_logos_container">
-                    <div className="pixoul_tech_logos_img_container"><img src={adobe} alt="adobe" /></div>
-                    <div className="pixoul_tech_logos_img_container"><img src={android} alt="android" /></div>
-                    <div className="pixoul_tech_logos_img_container"><img src={angular} alt="angular" /></div>
-                    <div className="pixoul_tech_logos_img_container"><img src={apple} alt="apple" /></div>
-                    <div className="pixoul_tech_logos_img_container"><img src={atom} alt="atom" /></div>
-                    <div className="pixoul_tech_logos_img_container"><img src={magento} alt="magento" /></div>
-                    <div className="pixoul_tech_logos_img_container"><img src={shopify} alt="shopify" /></div>
                     <div className="pixoul_tech_logos_img_container"><img src={vue} alt="vue" /></div>
+                    <div className="pixoul_tech_logos_img_container"><img src={atom} alt="atom" /></div>
+                    <div className="pixoul_tech_logos_img_container"><img src={apple} alt="apple" /></div>
+                    <div className="pixoul_tech_logos_img_container"><img src={shopify} alt="shopify" /></div>
+                    <div className="pixoul_tech_logos_img_container"><img src={android} alt="android" /></div>
+                    <div className="pixoul_tech_logos_img_container"><img src={adobe} alt="adobe" /></div>
+                    <div className="pixoul_tech_logos_img_container"><img src={angular} alt="angular" /></div>
+                    <div className="pixoul_tech_logos_img_container"><img src={magento} alt="magento" /></div>
                 </div>
               </div>
               <div className="section">

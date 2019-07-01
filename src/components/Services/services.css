@@ -307,27 +307,88 @@
 }
 
 /* Strategy, tech, design subpages */
+.full_width {
+  width: 100%;
+}
 /* --Circle checkbox section */
-.pixoul_list_with_checkboxes_container {}
-.pixoul_list_with_checkboxes_row {}
+.pixoul_list_with_checkboxes_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto 117px auto;
+}
+.pixoul_list_with_checkboxes_row {
+  color: #374050;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 30px 71px 30px 44px;
+}
+.pixoul_list_with_checkboxes_row:hover .pixoul_list_with_checkboxes_row_right_side {
+  background-image: url('../../images/checkmark-circle-green.svg');
+}
 .pixoul_list_with_checkboxes_row_left_side {}
 .pixoul_list_with_checkboxes_row_left_side h2 {}
-.pixoul_list_with_checkboxes_row_left_side p {}
-.pixoul_list_with_checkboxes_row_right_side {}
+.pixoul_list_with_checkboxes_row_left_side p {
+  font-weight: 200;
+  padding-right: 10%;
+}
+.pixoul_list_with_checkboxes_row_right_side {
+  min-width: 100px;
+  min-height: 100px;
+  background-image: url('../../images/checkmark-circle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .pixoul_list_with_checkboxes_row_right_side img {}
 
 /* --Capabilities section */
-.pixoul_capabilities {}
-.pixoul_six_capabilities_img_container {}
-.pixoul_six_capabilities_img_container img {}
-.pixoul_six_capabilities_grid {}
-.pixoul_six_capabilities_grid_item {}
+.pixoul_capabilities {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 12vh;
+}
+.pixoul_six_capabilities_img_container {
+  width: 350px;
+  margin-left: auto;
+  margin-right: 45px;
+}
+.pixoul_six_capabilities_img_container img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.pixoul_six_capabilities_grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin-right: auto;
+}
+.pixoul_six_capabilities_grid_item {
+  width: 250px;
+  margin: 5px 20px;
+}
 .pixoul_six_capabilities_grid_item h3 {}
-.pixoul_six_capabilities_grid_item p {}
+.pixoul_six_capabilities_grid_item p {
+  font-weight: 200;
+}
 
 /* --Technologies we leverage section */
-.pixoul_tech_logos_container {}
-.pixoul_tech_logos_img_container {}
+.pixoul_tech_logos_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 800px;
+  margin: auto;
+}
+.pixoul_tech_logos_img_container {
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+}
 .pixoul_tech_logos_img_container img {}
 
 
@@ -359,9 +420,15 @@
   .pixoul_adjustable_columns_item {
       margin: 5px;
   }
+  .top_about_us_heading {
+    font-size: 25px;
+  }
+
   .top_about_us_heading_text {
       white-space: normal;
+      font-size: 1.6em;
   }
+
   .services-row > div {
     width: 100%!important;
   }
@@ -371,5 +438,31 @@
   }
   .pixoul_grid_column_item {
     padding: 20px 10px 20px 10px;
+  }
+
+
+
+  /* Strategy, tech, design subpages */
+  /* --Circle checkbox section */
+  .pixoul_list_with_checkboxes_row {
+    padding: 0 1.3em;
+  }
+  .pixoul_list_with_checkboxes_row_left_side p {
+    padding: 0;
+  }
+  .pixoul_list_with_checkboxes_row_right_side {
+    display: none;
+  }
+  /* --Capabilities section */
+  .pixoul_six_capabilities_img_container {
+    display: none;
+  }
+  .pixoul_six_capabilities_grid {
+    width: 100vw;
+    justify-content: center;
+  }
+  /* --Technologies we leverage section */
+  .pixoul_tech_logos_container {
+    width: 100%;
   }
 }
