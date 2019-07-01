@@ -146,7 +146,6 @@
 }
 
 .services-map-row {
-  transform: scale(0);
   width: 90%;
   text-align: center;
 }
@@ -154,6 +153,7 @@
 .services-map-row:last-child {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .decoration {
@@ -169,10 +169,11 @@
   height: 166px;
   border-radius: 5px;
   object-fit: cover;
+  transform: scale(0);
 }
 
-#example-4 {
-  margin-top: -30px;
+#example-1 {
+  margin-top: 30px;
 }
 
 #example-3 {
@@ -296,8 +297,8 @@
 
 .services-image-animation-enter {
   animation-name: imageAnimation;
-  animation-delay: .95s;
-  animation-duration: 1s;
+  animation-delay: .2s;
+  animation-duration: .8s;
   animation-fill-mode: both;
 }
 
@@ -419,7 +420,7 @@
   h1, h2, .pixoul_four_grid_item {
       opacity: 1!important;
   }
-  .services-map-row, .carousel-list-row {
+  .example-img, .carousel-list-row {
       transform: scale(1);
   }
   .carousel-row {

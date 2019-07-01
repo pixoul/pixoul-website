@@ -163,6 +163,11 @@ class ServicesPage extends React.Component {
         position: 'CTO',
       }
     ];
+
+    const exampleClass = cn('example-img', {
+      'services-image-animation-enter-done': progress >= 5
+    });
+
     return (
       <div className="services-us-page">
         <ReactFullpage
@@ -348,25 +353,59 @@ class ServicesPage extends React.Component {
                       </div>
                     </div>
                   </CSSTransition>
-                  <CSSTransition
-                    in={page === 2 && pageLoaded && width > 1199 && progress < 5}
-                    timeout={imgTimeout}
-                    classNames="services-image-animation"
-                  >
-                    <div className={mapClass}>
-                      <img src={decorations} alt="decoration" className='decoration' />
-                      <div>
-                        <img src={example1} className="example-img" id="example-1" alt="example 1" />
-                        <img src={example2} className="example-img" id="example-2" alt="example 2" />
-                        <img src={example3} className="example-img" id="example-3" alt="example 3" />
-                      </div>
-                      <div>
-                        <img src={example4} className="example-img" id="example-4" alt="example 4" />
-                        <img src={example5} className="example-img" id="example-5" alt="example 5" />
-                        <img src={example6} className="example-img" id="example-6" alt="example 6" />
-                      </div>
+                  
+                  <div className={mapClass}>
+                    
+                    <div>
+                    <CSSTransition
+                      in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                      timeout={imgTimeout}
+                      classNames="services-image-animation"
+                    >
+                      <img src={example1} className={exampleClass} id="example-1" alt="example 1" />
+                    </CSSTransition>
+                    <CSSTransition
+                      in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                      timeout={imgTimeout}
+                      classNames="services-image-animation"
+                    >
+                      <img src={example2} className={exampleClass} id="example-2" alt="example 2" />
+                    </CSSTransition>
+                    <CSSTransition
+                      in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                      timeout={imgTimeout}
+                      classNames="services-image-animation"
+                    >
+                      <img src={example3} className={exampleClass} id="example-3" alt="example 3" />
+                    </CSSTransition>
                     </div>
-                  </CSSTransition>
+                    <div>
+                      <CSSTransition
+                        in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                        timeout={imgTimeout}
+                        classNames="services-image-animation"
+                      >
+                        <img src={example4} className={exampleClass} id="example-4" alt="example 4" />
+                      </CSSTransition>
+                      <CSSTransition
+                        in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                        timeout={imgTimeout}
+                        classNames="services-image-animation"
+                      >
+                        <img src={example5} className={exampleClass} id="example-5" alt="example 5" />
+                      </CSSTransition>
+                      <CSSTransition
+                        in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                        timeout={imgTimeout}
+                        classNames="services-image-animation"
+                        onExited={() => {this.setProgress(5)}}
+                      >
+                        <img src={example6} className={exampleClass} id="example-6" alt="example 6" />
+                      </CSSTransition>
+                    </div>
+                    <img src={decorations} alt="decoration" className='decoration' />
+                  </div>
+
                 </div>
               </div>
               
