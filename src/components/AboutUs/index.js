@@ -122,7 +122,7 @@ class AboutUsPage extends React.Component {
                 </button>
               </div>
               
-              <div className="section">
+              <div className="section grey-background">
                 <div className="pixoul_section_heading">
                   <CSSTransition
                     in={page === 1 && pageLoaded && width > 1199 && progress < 1}

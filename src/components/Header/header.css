@@ -9,11 +9,12 @@
   align-items: center;
   left: 0;
   right: 0;
+  transition: 300ms;
 }
 
 .white-header {
   top: 0;
-  padding: 44px 41px 10px 38px;
+  padding: 22px 41px 22px 38px;
   background-color: white;
 }
 
