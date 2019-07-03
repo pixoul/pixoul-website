@@ -15,22 +15,34 @@ class App extends React.Component {
   state = {
     showMenu: false,
     width: window.innerWidth,
+    isTop: true,
   };
 
   setShowMenu = showMenu => {
     this.setState({ showMenu });
   };
 
+  isTop(el) {
+    return el.getBoundingClientRect().top >= 0;
+  }
+  
   componentDidMount() {
     window.addEventListener("resize", this.updateWindowDimensions);
+    document.addEventListener('scroll', this.trackScrolling);
   }
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateWindowDimensions);
+    document.removeEventListener('scroll', this.trackScrolling);
   }
 
   updateWindowDimensions = () => {
     this.setState({ width: window.innerWidth });
+  };
+
+  trackScrolling = () => {
+    const wrappedElement = document.getElementsByTagName('body')[0];
+    this.setState({ isTop: this.isTop(wrappedElement)})
   };
 
   toggleMenu = () => {
@@ -45,7 +57,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { showMenu, width } = this.state;
+    const { showMenu, width, isTop } = this.state;
     const mainClass = cn('', {
       'main-exit-animation-enter-done hand-pointer': showMenu,
     });
@@ -62,6 +74,7 @@ class App extends React.Component {
             <Header
               onMenuClick={this.toggleMenu}
               isAnimated={width > 1199}
+              whiteMode={!isTop}
             />
             <Route
               exact

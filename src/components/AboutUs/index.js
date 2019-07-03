@@ -53,7 +53,7 @@ class AboutUsPage extends React.Component {
   }
 
   render() {
-    const pageIndex = ["00", "01", "02", "Contact"];
+    const pageIndex = ["00", "01", "02", "03", "Contact"];
     const { page, pageLoaded, width, progress } = this.state;
     const { isMenuVisible } = this.props;
     const titleTimeout = {
@@ -165,8 +165,8 @@ class AboutUsPage extends React.Component {
                     onExited={() => {this.setProgress(4)}}
                   >
                     <div className="number-section">
-                      <div class="number-item">
-                        <div class="number blue_heading">
+                      <div className="number-item">
+                        <div className="number blue_heading">
                           219%
                         </div>
                         <p>
@@ -176,8 +176,8 @@ class AboutUsPage extends React.Component {
                           Strategy&nbsp;<span><img src={arrow} alt="Arrow" /></span>
                         </Link>
                       </div>
-                      <div class="number-item">
-                        <div class="number blue_heading">
+                      <div className="number-item">
+                        <div className="number blue_heading">
                           $250M +
                         </div>
                         <p>
@@ -187,8 +187,8 @@ class AboutUsPage extends React.Component {
                           Design&nbsp;<span><img src={arrow} alt="Arrow" /></span>
                         </Link>
                       </div>
-                      <div class="number-item">
-                        <div class="number blue_heading">
+                      <div className="number-item">
+                        <div className="number blue_heading">
                           10x
                         </div>
                         <p>
