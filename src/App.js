@@ -3,6 +3,7 @@ import { CSSTransition } from "react-transition-group";
 import { Route } from "react-router-dom";
 import AboutUsPage from "./components/AboutUs/index";
 import ServicesPage from "./components/Services/index";
+import ProductsPage from "./components/Products/index";
 import "./App.css";
 
 import { Header, Menu, Home } from "./components";
@@ -106,6 +107,11 @@ class App extends React.Component {
               exact
               path="/services-tech" 
               render={(props) => <ServicesTechSubPage {...props} isMenuVisible={showMenu} />}
+            />
+            <Route
+              exact
+              path="/products" 
+              render={(props) => <ProductsPage {...props} isMenuVisible={showMenu} />}
             />
           </div>
         </CSSTransition>
