@@ -220,7 +220,7 @@
   margin-bottom: 74px;
 }
 
-.carousel-row button {
+.carousel-row .blue_button {
   margin: 0 2% 0 5%;
   min-width: 200px;
 }
@@ -261,6 +261,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 
 @keyframes textAnimation {
   from {
