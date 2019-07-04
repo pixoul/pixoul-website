@@ -7,7 +7,7 @@ import "./learnmore.css";
 export const LearnMore = props => {
   return (
     <Link
-      className="learn-more pixoul_button"
+      className="learn-more"
       style={props.style}
       to={props.link}
     >

@@ -1,4 +1,5 @@
 .learn-more {
+  position: absolute;
   z-index: 1;
   display: flex;
   justify-content: stretch;
@@ -12,7 +13,7 @@
   text-decoration: none;
 }
 
-.learn-more>div {
+.learn-more > div {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
