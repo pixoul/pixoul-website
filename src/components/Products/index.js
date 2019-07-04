@@ -9,6 +9,7 @@ import "./products.css";
 
 import bg01 from "../../images/bg01.png";
 import buttonX from "../../images/buttonX.svg";
+import fusemap_white from "../../images/fusemap_white.svg";
 import products01 from "../../images/products/products01.png";
 import products02 from "../../images/products/products02.png";
 import products03 from "../../images/products/products03.png";
@@ -60,9 +61,17 @@ class ProductsPage extends React.Component {
   }
 
   render() {
+    const { location } = this.props;
+    const pageId = location.pathname.split('/')[2];
     const pageIndex = ["00", "01"];
     const { page, pageLoaded, width, progress } = this.state;
     const { isMenuVisible } = this.props;
+
+    const coverStyle = cn('parallax-cover', {
+      'blue-cover' : pageId === '01',
+      'green-cover' : pageId !== '01',
+    });
+
     const carouselItems = [
       products01,
       products02,
@@ -116,7 +125,7 @@ class ProductsPage extends React.Component {
                   <Parallax y={[-20, 20]} className="parallax" tagOuter="figure">
                     <img src={bg01} alt='background01' />
                   </Parallax>
-                  <div className="parallax-cover" />
+                  <div className={coverStyle} />
                   <div className="parallax-content about-page-button-animation">
                     <button
                       onClick={() => {}}
@@ -124,7 +133,9 @@ class ProductsPage extends React.Component {
                     >
                       <img src={buttonX} alt="buttonX" />
                     </button>
-                    <div>ikarūs</div>
+                    {
+                      pageId === '01' ? <div>ikarūs</div> : <div className="brand"><img src={fusemap_white} alt="fuse-white" /></div>
+                    }
                   </div>
                 </div>
                   
@@ -140,11 +151,10 @@ class ProductsPage extends React.Component {
                 <Slider {...settings}>
                   {
                     carouselItems.map((item, index) => (
-                      <div>
+                      <div key={index}>
                         <div className='product-item'>
                           <div className='shadow' />
                           <img
-                            key={item}
                             src={item}
                             alt={item}
                           />

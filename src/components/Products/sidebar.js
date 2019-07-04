@@ -5,13 +5,6 @@ import "./products.css";
 
 const cn = require('classnames');
 class SideBar extends React.Component {
-  static defaultProps = {
-    mode: 'ikarūs',
-    text: 'Ikarūs is changing what it means to buy, sell, and trade businesses.  Armed with their vision for a easier and more open business marketplace, we transformed how owners interact with each other, investors, and the public.'
-  }
-
-  state = {
-  };
   
   render() {
     const titleTimeout = {
