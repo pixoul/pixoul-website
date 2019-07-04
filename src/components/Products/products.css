@@ -48,7 +48,7 @@ figure {
   position: absolute;
   top: 0;
   height: 100%;
- }
+}
  
  .parallax-wrapper .parallax-content {
    display: block;
@@ -63,16 +63,17 @@ figure {
    font-size: 62.25px;
  }
 
- .product-content {
-  position: absolute;
-  top: 390px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.product-content {
+  margin-top: 390px;
   padding: 89px 115px 20px 115px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.product-content .description {
+  max-width: 860px;
+  min-width: 320px;
 }
 
 .product-content h2 {
@@ -90,7 +91,7 @@ figure {
 }
 
 .sidebar {
-  min-width: 279px;
+  width: 279px;
 }
 
 .sidebar h4 {
@@ -139,6 +140,10 @@ figure {
   border-radius: 10px;
   border: solid 2px #374050;
   background-color: white;
+}
+
+.slick-slide {
+  max-width: 90vw;
 }
 
 .slick-dots li button:before {
@@ -217,27 +222,23 @@ figure {
 }
 
 @media (max-width: 1199px) {
-    h1, h2, .pixoul_four_grid_item {
-        opacity: 1!important;
-    }
-    .about-map-row, .pixoul_button_section {
-        transform: scale(1);
-    }
+  h1, h2, .pixoul_four_grid_item {
+    opacity: 1!important;
+  }
+  .about-map-row, .pixoul_button_section {
+    transform: scale(1);
+  }
+  .product-content {
+    padding: 30px 30px;
+  }
+  .product-content h3 {
+    margin: 30px 0;
+  }
 }
 
 @media (max-width: 767px) {
-    .pixoul_adjustable_column {
-        padding: 0;
-    }
-
-    .pixoul_adjustable_columns_item {
-        margin: 5px;
-    }
-
-    .top_about_us_heading_text {
-        white-space: normal;
-    }
-    .number-item {
-        border: none;
-    }
+  .product-content {
+    padding: 20px 20px;
+    flex-wrap: wrap;
+  }
 }

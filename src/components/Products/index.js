@@ -93,6 +93,7 @@ class ProductsPage extends React.Component {
       slidesPerRow: 1,
       centerMode: true,
       variableWidth: true,
+      adaptiveHeight: true,
     };
 
     return (
@@ -128,7 +129,7 @@ class ProductsPage extends React.Component {
                 </div>
                   
                 <div className="product-content">
-                  <div>
+                  <div className="description">
                     <h2>Ikarūs is changing what it means to buy, sell, and trade businesses.  Armed with their vision for a easier and more open business marketplace, we transformed how owners interact with each other, investors, and the public.</h2>
                     <h3>Redefining the business marketplace</h3>
                   </div>
