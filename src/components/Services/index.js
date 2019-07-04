@@ -20,7 +20,6 @@ import example3 from "../../images/examples/Example3.svg";
 import example4 from "../../images/examples/Example4.svg";
 import example5 from "../../images/examples/Example5.svg";
 import example6 from "../../images/examples/Example6.svg";
-import decorations from "../../images/examples/Decorations.svg";
 
 const cn = require('classnames');
 class ServicesPage extends React.Component {
@@ -403,7 +402,6 @@ class ServicesPage extends React.Component {
                         <img src={example6} className={exampleClass} id="example-6" alt="example 6" />
                       </CSSTransition>
                     </div>
-                    <img src={decorations} alt="decoration" className='decoration' />
                   </div>
 
                 </div>

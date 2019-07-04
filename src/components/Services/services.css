@@ -148,6 +148,7 @@
 .services-map-row {
   width: 90%;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .services-map-row:last-child {
@@ -156,17 +157,10 @@
   position: relative;
 }
 
-.decoration {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .example-img {
   box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2);
-  width: 300px;
-  height: 166px;
+  width: 270px;
+  height: 149.4px;
   border-radius: 5px;
   object-fit: cover;
   transform: scale(0);

@@ -55,7 +55,6 @@ input {
 
 .main-exit-animation-enter {
 	transform: scale(.8) translateX(-300px)!important;
-	transition: 300ms;
 }
 
 .main-exit-animation-enter-done {
@@ -63,6 +62,7 @@ input {
 	transform: scale(.8) translateX(-300px)!important;
 	overflow: hidden;
 	max-height: 100vh;
+	transition: 300ms;
 }
 
 .hand-pointer {
