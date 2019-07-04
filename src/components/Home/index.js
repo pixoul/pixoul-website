@@ -180,7 +180,7 @@ class Home extends React.Component {
                     <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore />
+                        <LearnMore link='products/01' />
                       </div>
                     </Tilt>
                   </div>
@@ -217,7 +217,7 @@ class Home extends React.Component {
                     <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore />
+                        <LearnMore link='products/02' />
                       </div>
                     </Tilt>
                   </div>
@@ -252,7 +252,7 @@ class Home extends React.Component {
                     <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore />
+                        <LearnMore link='products/03' />
                       </div>
                     </Tilt>
                   </div>
@@ -291,7 +291,7 @@ class Home extends React.Component {
                     <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore />
+                        <LearnMore link='products/04' />
                       </div>
                     </Tilt>
                   </div>
@@ -328,7 +328,7 @@ class Home extends React.Component {
                     <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg05} alt="bg05" id="bg05" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore />
+                        <LearnMore link='products/05' />
                       </div>
                     </Tilt>
                   </div>
@@ -368,7 +368,7 @@ class Home extends React.Component {
                     <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg06} alt="bg06" id="bg06" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore />
+                        <LearnMore link='products/06' />
                       </div>
                     </Tilt>
                   </div>

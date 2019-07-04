@@ -9,6 +9,7 @@
   animation-delay: 0s;
   animation-fill-mode: both;
   transform: translateZ(20px);
+  text-decoration: none;
 }
 
 .learn-more>div {
@@ -19,12 +20,13 @@
   margin-left: 11px;
 }
 
-.learn-more>div span {
+.learn-more > div span {
   height: 21px;
   font-size: 15px;
   margin-bottom: 3px;
   font-family: 'Poppins';
   font-weight: 500;
+  color: #374050;
 }
 
 .separator {

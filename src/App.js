@@ -109,7 +109,6 @@ class App extends React.Component {
               render={(props) => <ServicesTechSubPage {...props} isMenuVisible={showMenu} />}
             />
             <Route
-              exact
               path="/products" 
               render={(props) => <ProductsPage {...props} isMenuVisible={showMenu} />}
             />

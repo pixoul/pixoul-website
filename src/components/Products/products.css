@@ -64,12 +64,15 @@ figure {
  }
 
  .product-content {
-  height: calc(100% - 390px);
   position: absolute;
   top: 390px;
   left: 0;
   right: 0;
-  padding: 118px 115px 20px 115px;
+  bottom: 0;
+  padding: 89px 115px 20px 115px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .product-content h2 {
@@ -86,6 +89,20 @@ figure {
   margin-top: 129px;
 }
 
+.sidebar {
+  min-width: 279px;
+}
+
+.sidebar h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sidebar p {
+  margin: 6px 0 35px 0;
+  font-weight: 300;
+  font-size: 15px;
+}
 
 .about-map-row img {
     width: 100%;

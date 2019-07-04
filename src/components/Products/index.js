@@ -3,6 +3,8 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import { Link } from 'react-router-dom';
 import { Parallax } from 'react-scroll-parallax';
 import { CSSTransition } from "react-transition-group";
+import SideBar from './sidebar';
+
 import "./products.css";
 
 import bg01 from "../../images/bg01.png";
@@ -99,8 +101,11 @@ class ProductsPage extends React.Component {
                 </div>
                   
                 <div className="product-content">
-                  <h2>Ikarūs is changing what it means to buy, sell, and trade businesses.  Armed with their vision for a easier and more open business marketplace, we transformed how owners interact with each other, investors, and the public.</h2>
-                  <h3>Redefining the business marketplace</h3>
+                  <div>
+                    <h2>Ikarūs is changing what it means to buy, sell, and trade businesses.  Armed with their vision for a easier and more open business marketplace, we transformed how owners interact with each other, investors, and the public.</h2>
+                    <h3>Redefining the business marketplace</h3>
+                  </div>
+                  <SideBar />
                 </div>
               </div>
               <div className="section">
