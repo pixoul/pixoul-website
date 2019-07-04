@@ -1,15 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { ParallaxProvider } from 'react-scroll-parallax';
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Route, BrowserRouter } from "react-router-dom";
 const routing = (
-  <BrowserRouter>
-    <div>
-      <Route path="/" component={App} />
-    </div>
-  </BrowserRouter>
+  <ParallaxProvider>
+    <BrowserRouter>
+      <div>
+        <Route path="/" component={App} />
+      </div>
+    </BrowserRouter>
+  </ParallaxProvider>
 );
 ReactDOM.render(routing, document.getElementById("root"));
 

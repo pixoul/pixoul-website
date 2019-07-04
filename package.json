@@ -13,6 +13,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "react-scroll-parallax": "^2.1.2",
     "react-slick": "^0.24.0",
     "react-tilt": "^0.1.4",
     "react-transition-group": "^4.1.0",

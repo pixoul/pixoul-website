@@ -1,14 +1,20 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { Link } from 'react-router-dom';
-
+import { Parallax } from 'react-scroll-parallax';
 import { CSSTransition } from "react-transition-group";
 import "./products.css";
 
+import bg01 from "../../images/bg01.png";
 import buttonX from "../../images/buttonX.svg";
 
 const cn = require('classnames');
 class ProductsPage extends React.Component {
+  static defaultProps = {
+    mode: 'ikarūs',
+    text: 'Ikarūs is changing what it means to buy, sell, and trade businesses.  Armed with their vision for a easier and more open business marketplace, we transformed how owners interact with each other, investors, and the public.'
+  }
+
   state = {
     page: 0,
     showMenu: false,
@@ -16,7 +22,7 @@ class ProductsPage extends React.Component {
     progress: 0,
     width: window.innerWidth,
   };
-
+  
   componentDidMount() {
     window.addEventListener("resize", this.updateWindowDimensions);
   }
@@ -70,101 +76,35 @@ class ProductsPage extends React.Component {
           recordHistory={false}
           autoScrolling={isMenuVisible}
           allowScrolling={!isMenuVisible}
-          fitToSection={true}
+          fitToSection={false}
           render={({ state, fullpageApi }) => {
           
           return (
             <ReactFullpage.Wrapper>
               <div className="section">
-                <div className="">
-                    <div className="green_heading top_about_us_heading mainTitle-animation-enter">
-                      Complex problems deserve elegant solutions.
-                    </div>
-                    <div className="top_about_us_heading_text mainText-animation-enter">
-                      We help brands and organizations succeed in the digital age.
-                    </div>
+                <div className="parallax-wrapper">
+                  <Parallax y={[-20, 20]} className="parallax" tagOuter="figure">
+                    <img src={bg01} alt='background01' />
+                  </Parallax>
+                  <div className="parallax-cover" />
+                  <div className="parallax-content about-page-button-animation">
+                    <button
+                      onClick={() => {}}
+                      className="pixoul_button"
+                    >
+                      <img src={buttonX} alt="buttonX" />
+                    </button>
+                    <div>ikarūs</div>
+                  </div>
                 </div>
-                <button
-                  onClick={() => fullpageApi.moveSectionDown()}
-                  className="page_down_button_centered pixoul_button about-page-button-animation"
-                >
-                  <img src={buttonX} alt="buttonX" />
-                </button>
+                  
+                <div className="product-content">
+                  <h2>Ikarūs is changing what it means to buy, sell, and trade businesses.  Armed with their vision for a easier and more open business marketplace, we transformed how owners interact with each other, investors, and the public.</h2>
+                  <h3>Redefining the business marketplace</h3>
+                </div>
               </div>
-              
               <div className="section">
-                <div className="pixoul_section_heading">
-                  <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199 && progress < 1}
-                    timeout={titleTimeout}
-                    classNames="about-title-animation"
-                    onEnter={() => {}}
-                    onExited={() => {this.setProgress(1)}}
-                  >
-                    <h1 className={progress >= 1 || width <= 1199 ? 'about-title-animation-enter-done' : ''}>
-                      Who we are
-                    </h1>
-                  </CSSTransition>
-                  <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
-                    timeout={titleTimeout}
-                    classNames="about-title-animation"
-                    onEnter={() => {}}
-                    onExited={() => {this.setProgress(2)}}
-                  >
-                    <h2 className={progress >= 1 || width <= 1199 ? 'about-text-animation-enter-done' : ''}>
-                      Pixoul is a human-centered design agency and consultancy that helps businesses find their voice in the digital space. Our partners trust us to provide them with exceptional digital products based on the foundations of Design Thinking to achieve business goals and affect bottom lines.
-                    </h2>
-                  </CSSTransition>
-                </div>
-                <div className="pixoul_section_heading">
-                  <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199 && progress < 3}
-                    timeout={textTimeout}
-                    classNames="about-text-animation"
-                    onExited={() => {this.setProgress(3)}}
-                  >
-                    <h2 className={progress >= 1 || width <= 1199 ? 'about-text-animation-enter-done' : ''}>
-                      Our partners enjoy:
-                    </h2>
-                  </CSSTransition>
-                  <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199 && progress < 4}
-                    timeout={textTimeout}
-                    classNames="about-text-animation"
-                    onExited={() => {this.setProgress(4)}}
-                  >
-                    <div className="number-section">
-                      <div className="number-item">
-                        <div className="number blue_heading">
-                          219%
-                        </div>
-                        <p>
-                          outperformance vs. design averse companies
-                        </p>
-                       
-                      </div>
-                      <div className="number-item">
-                        <div className="number blue_heading">
-                          $250M +
-                        </div>
-                        <p>
-                          in collective designed product value
-                        </p>
-                       
-                      </div>
-                      <div className="number-item">
-                        <div className="number blue_heading">
-                          10x
-                        </div>
-                        <p>
-                          increased product performance
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </CSSTransition>
-                </div>
+
               </div>
             </ReactFullpage.Wrapper>
             );
