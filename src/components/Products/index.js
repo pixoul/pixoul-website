@@ -1,7 +1,9 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import { Parallax } from 'react-scroll-parallax';
+
 import { CSSTransition } from "react-transition-group";
 import SideBar from './sidebar';
 
@@ -127,12 +129,12 @@ class ProductsPage extends React.Component {
                   </Parallax>
                   <div className={coverStyle} />
                   <div className="parallax-content about-page-button-animation">
-                    <button
-                      onClick={() => {}}
+                    <Link
                       className="pixoul_button"
+                      to='/'
                     >
                       <img src={buttonX} alt="buttonX" />
-                    </button>
+                    </Link>
                     {
                       pageId === '01' ? <div>ikarūs</div> : <div className="brand"><img src={fusemap_white} alt="fuse-white" /></div>
                     }
