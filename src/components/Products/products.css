@@ -140,7 +140,6 @@ figure {
   height: 10px;
   background: #374050;
   border-radius: 5px;
-  filter: blur(1px);
 }
 
 .slick-dots .slick-active button {
