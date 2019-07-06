@@ -22,6 +22,13 @@ import example5 from "../../images/examples/Example5.svg";
 import example6 from "../../images/examples/Example6.svg";
 
 const cn = require('classnames');
+
+const workDescriptions = [
+  "From internal tools, to consumer facing products and B2B sales-we've got you covered.",
+  "We're at the fore-front of finance tech, pioneering a new path forward.  Let's talk about our recent work in cryptocurrency and governance platforms.",
+  'We work with local municipalities to redefine their brand, image, and ways of interacting with their community.',
+  'We work on the front lines, helping to standardize medicine—from employee training platforms, to advances in carrier messaging platforms.'
+];
 class ServicesPage extends React.Component {
   state = {
     page: 0,
@@ -356,7 +363,7 @@ class ServicesPage extends React.Component {
                       >
                         <div>
                           <h1>Excellence in action</h1> 
-                          <h2>From internal tools, to consumer facing products and B2B sales-we've got you covered.</h2>
+                          <h2>{workDescriptions[selectedWork]}</h2>
                         </div>
                       </CSSTransition>
                       <div className="services-link-row">
@@ -369,11 +376,11 @@ class ServicesPage extends React.Component {
                           <div className={fintechLineClass} />
                         </div>
                         <div className='label-link'>
-                          <Link to="#" onClick={() => this.selectWork(2)}>Insurance</Link>
+                          <Link to="#" onClick={() => this.selectWork(2)}>Government</Link>
                           <div className={govenmentLineClass} />
                         </div>
                         <div className='label-link'>
-                          <Link to="#" onClick={() => this.selectWork(3)}>Marketing</Link>
+                          <Link to="#" onClick={() => this.selectWork(3)}>Healthcare</Link>
                           <div className={healthcareLineClass} />
                         </div>
                       </div>
