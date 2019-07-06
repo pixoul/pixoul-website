@@ -61,7 +61,7 @@ class ProductsPage extends React.Component {
       this.setState({ progress: newProgress });
     }
   }
-
+  
   render() {
     const { location } = this.props;
     const pageId = location.pathname.split('/')[2];
@@ -100,7 +100,7 @@ class ProductsPage extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
+      arrows: true,
       slidesPerRow: 1,
       centerMode: true,
       variableWidth: true,
