@@ -11,7 +11,7 @@
 
 .parallax-wrapper {
   width: 100%;
-  height: 390px;
+  height: 260px;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -22,7 +22,7 @@
 
 .parallax {
   width: 100%;
-  height: 390px;
+  height: 260px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@ figure {
  }
 
 .product-content {
-  margin-top: 390px;
+  margin-top: 260px;
   padding: 89px 115px 20px 115px;
   display: flex;
   align-items: center;
