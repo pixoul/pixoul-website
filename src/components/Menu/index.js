@@ -13,8 +13,8 @@ const Menu = props => {
       <div className="menu">
         <a className="menu-item" href='/#00' onClick={props.onMenuClose}>Home</a>
         <a className="menu-item" href='/#01' onClick={props.onMenuClose}>Work</a>
-        <Link className="menu-item" to='/aboutus' onClick={props.onMenuClose}>About</Link>
-        <Link className="menu-item" to='/services' onClick={props.onMenuClose}>Services</Link>
+        <Link className="menu-item" to='/aboutus#00' onClick={props.onMenuClose}>About</Link>
+        <Link className="menu-item" to='/services#00' onClick={props.onMenuClose}>Services</Link>
         {/* <Link className="menu-item" to='/blog' onClick={props.onMenuClose}>Blog</Link> */}
         <div className="menu-contact-section">
           <p><a href='tel:6169149356'>(616) 914-9356</a></p>
