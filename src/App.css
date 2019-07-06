@@ -81,6 +81,10 @@ input {
 	pointer-events: none;
 }
 
+.section .fp-tableCell {
+	vertical-align: baseline;
+}
+
 /* Animation */
 
 /* Responsive */

@@ -81,7 +81,7 @@
     flex-wrap: wrap;
     width: 90%;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 20vh auto;
 }
 
 .about-value-item {
@@ -95,6 +95,7 @@
 
 .about-value-item img {
     flex: 1;
+    transform: scale(0.75);
 }
 
 .about-value-item  h3 {
@@ -105,7 +106,7 @@
 
 .about-map-row {
     transform: scale(0);
-    max-width: 1184px;
+    max-width: 50%;
     width: 90%;
     margin: 0 auto;
 }

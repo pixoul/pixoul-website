@@ -172,7 +172,7 @@ class AboutUsPage extends React.Component {
                         <p>
                           outperformance vs. design averse companies
                         </p>
-                        <Link to="#">
+                        <Link to="services-strategy">
                           Strategy&nbsp;<span><img src={arrow} alt="Arrow" /></span>
                         </Link>
                       </div>
@@ -183,7 +183,7 @@ class AboutUsPage extends React.Component {
                         <p>
                           in collective designed product value
                         </p>
-                        <Link to="#">
+                        <Link to="services-design">
                           Design&nbsp;<span><img src={arrow} alt="Arrow" /></span>
                         </Link>
                       </div>
@@ -194,7 +194,7 @@ class AboutUsPage extends React.Component {
                         <p>
                           increased product performance
                         </p>
-                        <Link to="#">
+                        <Link to="services-tech">
                           Technology&nbsp;<span><img src={arrow} alt="Arrow" /></span>
                         </Link>
                       </div>
