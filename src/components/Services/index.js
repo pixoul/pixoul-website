@@ -103,8 +103,8 @@ class ServicesPage extends React.Component {
 
     const actionTimeout = {
       appear: 0,
-      enter: 1550,
-      exit: 0,
+      enter: 1000,
+      exit: 600,
     }
 
     const gridClass = cn('pixoul_grid_column_item', {
@@ -355,17 +355,16 @@ class ServicesPage extends React.Component {
                     onExited={() => this.setProgress(5)}
                   >
                     <div>
+                      <h1>Excellence in action</h1> 
                       <CSSTransition
                         in={animateExcellence}
                         timeout={actionTimeout}
-                        classNames="mainText-animation"
-                        onEntered={() => this.setState({ animateExcellence: false })}
+                        classNames="subtitle-animation"
+                        onEntered={() => this.setState({ animateExcellence: true })}
                       >
-                        <div>
-                          <h1>Excellence in action</h1> 
-                          <h2>{workDescriptions[selectedWork]}</h2>
-                        </div>
+                        <h2 className="subtitle-animation-enter-done">{workDescriptions[selectedWork]}</h2>
                       </CSSTransition>
+
                       <div className="services-link-row">
                         <div className='label-link'>
                           <Link to="#" onClick={() => this.selectWork(0)}>Business</Link>
