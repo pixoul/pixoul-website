@@ -304,7 +304,7 @@ class AboutUsPage extends React.Component {
                   onExited={() => this.setProgress(10)}
                 >
                   <div className={buttonClass}>
-                    <button className="green_button pixoul_button">Recent Work</button>
+                    <Link className="green_button pixoul_button" to="/#01">Recent Work</Link>
                   </div>
                 </CSSTransition>
               </div>

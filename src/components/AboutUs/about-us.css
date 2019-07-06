@@ -145,9 +145,13 @@
     margin: 3rem auto;
 }
 
-.pixoul_button_section button {
+.pixoul_button_section button, .pixoul_button_section a {
     margin: auto;
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 @keyframes textAnimation {
