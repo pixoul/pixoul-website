@@ -164,7 +164,12 @@ figure {
 
 .slick-next:before, .slick-prev:before {
   font-size: 50px;
-  color: grey;
+  color: #aaaaaa;
+  opacity: 0.5;
+}
+
+.slick-next:before:hover, .slick-prev:before:hover {
+  opacity: 1;
 }
 
 .slick-prev {

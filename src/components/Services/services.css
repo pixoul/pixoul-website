@@ -90,7 +90,6 @@
 
 .pixoul_grid_column_item {
   color: #374050;
-  width: 100%;
   position: relative;
   opacity: 0;
   display: flex;
@@ -101,7 +100,7 @@
 
 .pixoul_grid_column_item-content {
   flex: 1;
-  margin-left: 79px;
+  margin: 0 20px 0 79px;
 }
 
 .pixoul_grid_column_item:hover {
@@ -141,7 +140,7 @@
   margin: 0;
 }
 
-.pixoul_grid_column_item a img {
+.pixoul_grid_column_item .arrow {
   transform: rotate(-90deg);
 }
 
@@ -425,7 +424,7 @@
     width: 100%;
   }
   .pixoul_grid_column_item-content {
-    margin-left: 40px;
+    margin: 0 10px 0 40px;
   }
 }
 

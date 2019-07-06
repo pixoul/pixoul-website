@@ -85,6 +85,9 @@ input {
 	vertical-align: baseline;
 }
 
+a {
+	text-decoration: none;
+}
 /* Animation */
 
 /* Responsive */

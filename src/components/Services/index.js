@@ -228,6 +228,7 @@ class ServicesPage extends React.Component {
                   </CSSTransition>
                 </div>
                 <div className="pixoul_grid_column">
+                <Link to="/services-strategy">
                   <CSSTransition
                     in={page === 1 && pageLoaded && width > 1199 && progress < 2}
                     timeout={textTimeout}
@@ -246,57 +247,56 @@ class ServicesPage extends React.Component {
                           Reimagine and redefine your organizational approach by developing new ways of approaching your mission-critical KPIs.
                         </h3>
                       </div>
-                      <Link to="/services-strategy">
-                        <img src={downArrow} alt='Downarrow' />
-                      </Link>
+                      <img src={downArrow} alt='Downarrow' className='arrow' />
                     </div>
                   </CSSTransition>
-                  <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
-                    timeout={titleTimeout}
-                    classNames="services-text-animation"
-                    onEnter={() => {}}
-                    onExited={() => {}}
-                  >
-                    <div className={gridClass}>
-                      <div className="pixoul_four_grid_item_img_container">
-                        <img src={computer} alt="computer" />
-                        <img src={oval_shadow} alt="Oval Shadow" />
+                  </Link>
+                  <Link to="/services-design">
+                    <CSSTransition
+                      in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                      timeout={titleTimeout}
+                      classNames="services-text-animation"
+                      onEnter={() => {}}
+                      onExited={() => {}}
+                    >
+                      <div className={gridClass}>
+                        <div className="pixoul_four_grid_item_img_container">
+                          <img src={computer} alt="computer" />
+                          <img src={oval_shadow} alt="Oval Shadow" />
+                        </div>
+                        <div className="pixoul_grid_column_item-content">
+                          <h2>Human-Centered Design</h2>
+                          <h3>
+                            Use Design Thinking to create products, services, systems, and experiences that address the core needs of your target audience.
+                          </h3>
+                        </div>
+                        <img src={downArrow} alt='Downarrow' className='arrow' />
                       </div>
-                      <div className="pixoul_grid_column_item-content">
-                        <h2>Human-Centered Design</h2>
-                        <h3>
-                          Use Design Thinking to create products, services, systems, and experiences that address the core needs of your target audience.
-                        </h3>
+                    </CSSTransition>
+                  </Link>
+                  <Link to="/services-tech">
+                    <CSSTransition
+                      in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                      timeout={textTimeout}
+                      classNames="services-text-animation"
+                      onEnter={() => {}}
+                      onExited={() => {}}
+                    >
+                      <div className={gridClass}>
+                        <div className="pixoul_four_grid_item_img_container">
+                          <img src={web_programming} alt="Web programming" />
+                          <img src={oval_shadow} alt="Oval Shadow" />
+                        </div>
+                        <div className="pixoul_grid_column_item-content">
+                          <h2>Technology</h2>
+                          <h3>
+                            Bring your digital solution to life for your customers, and scale it across devices and platforms.
+                          </h3>
+                        </div>
+                        <img src={downArrow} alt='Downarrow' className='arrow' />
                       </div>
-                      <Link to="/services-design">
-                        <img src={downArrow} alt='Downarrow' />
-                      </Link>
-                    </div>
-                  </CSSTransition>
-                  <CSSTransition
-                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
-                    timeout={textTimeout}
-                    classNames="services-text-animation"
-                    onEnter={() => {}}
-                    onExited={() => {}}
-                  >
-                    <div className={gridClass}>
-                      <div className="pixoul_four_grid_item_img_container">
-                        <img src={web_programming} alt="Web programming" />
-                        <img src={oval_shadow} alt="Oval Shadow" />
-                      </div>
-                      <div className="pixoul_grid_column_item-content">
-                        <h2>Technology</h2>
-                        <h3>
-                          Bring your digital solution to life for your customers, and scale it across devices and platforms.
-                        </h3>
-                      </div>
-                      <Link to="/services-tech">
-                        <img src={downArrow} alt='Downarrow' />
-                      </Link>
-                    </div>
-                  </CSSTransition>
+                    </CSSTransition>
+                  </Link>
                 </div>
               </div>
               <div className="section grey-background">
