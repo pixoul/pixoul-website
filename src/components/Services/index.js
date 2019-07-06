@@ -30,6 +30,7 @@ class ServicesPage extends React.Component {
     progress: 0,
     width: window.innerWidth,
     animateExcellence: false,
+    selectedWork: 0,
   };
 
   componentDidMount() {
@@ -58,9 +59,9 @@ class ServicesPage extends React.Component {
       this.setState({ progress: newProgress });
     }
   }
-
-  animateAction = () => {
-    this.setState({ animateExcellence: true });
+  
+  selectWork = (selectedWork) => {
+    this.setState({ selectedWork,  animateExcellence: true });
   }
 
   render() {
@@ -72,6 +73,7 @@ class ServicesPage extends React.Component {
       width,
       progress,
       animateExcellence,
+      selectedWork,
     } = this.state;
 
     const titleTimeout = {
@@ -165,6 +167,22 @@ class ServicesPage extends React.Component {
 
     const exampleClass = cn('example-img', {
       'services-image-animation-enter-done': progress >= 5
+    });
+
+    const businessLineClass = cn('blue_line_under_label', {
+      'selected-label': selectedWork === 0
+    });
+
+    const fintechLineClass = cn('blue_line_under_label', {
+      'selected-label': selectedWork === 1
+    });
+
+    const govenmentLineClass = cn('blue_line_under_label', {
+      'selected-label': selectedWork === 2
+    });
+
+    const healthcareLineClass = cn('blue_line_under_label', {
+      'selected-label': selectedWork === 3
     });
 
     return (
@@ -342,10 +360,22 @@ class ServicesPage extends React.Component {
                         </div>
                       </CSSTransition>
                       <div className="services-link-row">
-                        <Link to="#" onClick={this.animateAction}>Business</Link>
-                        <Link to="#" onClick={this.animateAction}>FinTech</Link>
-                        <Link to="#" onClick={this.animateAction}>Insurance</Link>
-                        <Link to="#" onClick={this.animateAction}>Marketing</Link>
+                        <div className='label-link'>
+                          <Link to="#" onClick={() => this.selectWork(0)}>Business</Link>
+                          <div className={businessLineClass} />
+                        </div>
+                        <div className='label-link'>
+                          <Link to="#" onClick={() => this.selectWork(1)}>FinTech</Link>
+                          <div className={fintechLineClass} />
+                        </div>
+                        <div className='label-link'>
+                          <Link to="#" onClick={() => this.selectWork(2)}>Insurance</Link>
+                          <div className={govenmentLineClass} />
+                        </div>
+                        <div className='label-link'>
+                          <Link to="#" onClick={() => this.selectWork(3)}>Marketing</Link>
+                          <div className={healthcareLineClass} />
+                        </div>
                       </div>
                       <div className='service-button-section'>
                         <button className="green_button pixoul_button">Recent Work</button>
@@ -354,7 +384,6 @@ class ServicesPage extends React.Component {
                   </CSSTransition>
                   
                   <div className={mapClass}>
-                    
                     <div>
                     <CSSTransition
                       in={page === 2 && pageLoaded && width > 1199 && progress < 5}

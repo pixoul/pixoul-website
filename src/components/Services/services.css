@@ -240,19 +240,47 @@
   font-weight: 300;
 }
 
-.services-row a {
-  text-decoration: none;
-  color: #3180FB;
+.label-link {
   margin-right: 50px;
 }
 
-.services-row a:hover {
-  text-decoration: underline;
+.label-link a {
+  text-decoration: none;
+  color: #3180FB;
+}
+
+@keyframes servicePageBlueLine {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+a:hover + .blue_line_under_label {
+  animation-name: servicePageBlueLine;
+}
+
+.blue_line_under_label {
+	background: #3180FB;
+	width: 0px;
+  height: 2px;
+  border-radius: 4px;
+	border-radius: 15px;
+  animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.selected-label {
+  width: 100%;
 }
 
 .services-link-row {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 
