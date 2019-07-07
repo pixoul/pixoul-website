@@ -16,7 +16,8 @@ import oval_shadow from "../../images/oval_shadow.svg";
 
 import example1 from "../../images/examples/Example1.svg";
 import example2 from "../../images/examples/Example2.svg";
-import example3 from "../../images/examples/Example3.svg";
+import example3_1 from "../../images/examples/Example3-1.svg";
+import example3_2 from "../../images/examples/Example3-2.svg";
 import example4 from "../../images/examples/Example4.svg";
 import example5 from "../../images/examples/Example5.svg";
 import example6 from "../../images/examples/Example6.svg";
@@ -393,27 +394,36 @@ class ServicesPage extends React.Component {
                   
                   <div className={mapClass}>
                     <div>
-                    <CSSTransition
-                      in={page === 2 && pageLoaded && width > 1199 && progress < 5}
-                      timeout={imgTimeout}
-                      classNames="services-image-animation"
-                    >
-                      <img src={example1} className={exampleClass} id="example-1" alt="example 1" />
-                    </CSSTransition>
-                    <CSSTransition
-                      in={page === 2 && pageLoaded && width > 1199 && progress < 5}
-                      timeout={imgTimeout}
-                      classNames="services-image-animation"
-                    >
-                      <img src={example2} className={exampleClass} id="example-2" alt="example 2" />
-                    </CSSTransition>
-                    <CSSTransition
-                      in={page === 2 && pageLoaded && width > 1199 && progress < 5}
-                      timeout={imgTimeout}
-                      classNames="services-image-animation"
-                    >
-                      <img src={example3} className={exampleClass} id="example-3" alt="example 3" />
-                    </CSSTransition>
+                      <CSSTransition
+                        in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                        timeout={imgTimeout}
+                        classNames="services-image-animation"
+                      >
+                        <img src={example1} className={exampleClass} id="example-1" alt="example 1" />
+                      </CSSTransition>
+                      <CSSTransition
+                        in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                        timeout={imgTimeout}
+                        classNames="services-image-animation"
+                      >
+                        <img src={example2} className={exampleClass} id="example-2" alt="example 2" />
+                      </CSSTransition>
+                      <div>
+                        <CSSTransition
+                          in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                          timeout={imgTimeout}
+                          classNames="services-image-animation"
+                        >
+                          <img src={example3_1} className={exampleClass} id="example-3-1" alt="example 3" />
+                        </CSSTransition>
+                        <CSSTransition
+                          in={page === 2 && pageLoaded && width > 1199 && progress < 5}
+                          timeout={imgTimeout}
+                          classNames="services-image-animation"
+                        >
+                          <img src={example3_2} className={exampleClass} id="example-3-2" alt="example 3" />
+                        </CSSTransition>
+                      </div>
                     </div>
                     <div>
                       <CSSTransition

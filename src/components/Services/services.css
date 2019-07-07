@@ -89,6 +89,10 @@
   margin: 0 auto 117px auto;
 }
 
+.pixoul_grid_column a {
+  width: 100%;
+}
+
 .pixoul_grid_column_item {
   color: #374050;
   position: relative;
@@ -151,10 +155,21 @@
   margin-bottom: 50px;
 }
 
+.services-map-row > div {
+  width: 270px;
+  margin-right: 10px;
+}
+
+.services-map-row > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .services-map-row:last-child {
   display: flex;
   flex-direction: row;
   position: relative;
+  justify-content: space-between;
 }
 
 .example-img {
@@ -170,8 +185,8 @@
   margin-top: 30px;
 }
 
-#example-3 {
-  width: 299px;
+#example-3-1, #example-3-2 {
+  width: 130px;
   height: 231px;
 }
 
@@ -204,7 +219,6 @@
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .carousel-row {
@@ -226,8 +240,7 @@
 }
 
 .services-row > div {
-  width: 50%;
-  min-width: 300px;
+  min-width: 320px;
 }
 
 .services-row h1 {
@@ -239,7 +252,7 @@
   font-size: 20px;
   font-weight: 300;
   width: 0;
-  height: 105px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -481,8 +494,15 @@ a:hover + .blue_line_under_label {
       font-size: 1.6em;
   }
 
+  .services-row {
+    flex-wrap: wrap;
+  }
+
   .services-row > div {
     width: 100%!important;
+  }
+  .services-map-row:last-child {
+    flex-wrap: wrap;
   }
   .service-button-section {
     margin: 30px auto;
