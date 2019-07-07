@@ -5,8 +5,8 @@
 .carousel-item {
   box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 1px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  padding: 78px 53px;
-  min-height: 30vh;
+  padding: 50px 48px;
+  min-height: 35vh;
   display: flex;
   flex-direction: column;
   text-align: left;

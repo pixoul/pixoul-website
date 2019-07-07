@@ -130,31 +130,31 @@ class ServicesPage extends React.Component {
     const carouselItems = [
       {
         key: 1,
-        title: 'What more could we ask for?',
-        text: "Pixoul is absolutely amazing!  From start to finish, they guided us through our website redesign and held our hand every step of the way.  I couldn't have asked for a better team.",
-        name: 'Kendall Sampson',
-        position: 'Product Manager',
+        title: 'We love Pixoul!',
+        text: "The team at Pixoul is incredible. We came to them with a huge list of requests and they created a beautiful, functional enterprise system for us. It was a big undertaking and their whole team pulled it off.",
+        name: 'Danni Parsons',
+        position: 'CMO',
       },
       {
         key: 2,
-        title: 'The smarter first move.',
-        text: "We started working with Pixoul after two failed attempts at other dev agencies.  Since then, we've seen engagement go through the roof and customers are loving our new platform.",
-        name: 'Jake Richards',
-        position: 'CTO',
+        title: 'Thank you!',
+        text: "Thank you to the entire Pixoul team for your all-hands-on-deck mentality. Our customers are over the moon about our new site and we're reaping the rewards..",
+        name: 'Derrick Bradley',
+        position: 'VP of Operations',
       },
       {
         key: 3,
-        title: 'What more could we ask for?',
-        text: "Pixoul is absolutely amazing!  From start to finish, they guided us through our website redesign and held our hand every step of the way.  I couldn't have asked for a better team.",
-        name: 'Kendall Sampson',
-        position: 'Product Manager',
+        title: 'Our ROI keeps rising!',
+        text: "Pixoul spent a day at our offices explaining the fundamentals of Design Thinking and we constantly refer back to their session with us. It informs every decision our team makes when we want to improve our products.",
+        name: 'Quincy Roberts',
+        position: 'CTO',
       },
       {
         key: 4,
-        title: 'The smarter first move.',
-        text: "We started working with Pixoul after two failed attempts at other dev agencies.  Since then, we've seen engagement go through the roof and customers are loving our new platform.",
-        name: 'Jake Richards',
-        position: 'CTO',
+        title: 'Effective planning',
+        text: "Pixoul is more than great design.  Their team helped us pull together a digital roadmap, determine priorities, and organize our efforts from start to finish.",
+        name: 'Josh Porrough',
+        position: 'Digital Director',
       },
       {
         key: 5,
@@ -215,7 +215,7 @@ class ServicesPage extends React.Component {
                       How can we help?
                     </div>
                     <div className="top_about_us_heading_text mainText-animation-enter">
-                      We're here to bring life to your digital vision. Got a project in mind?&nbsp;<br/>Let's talk
+                      We're here to bring life to your digital vision. Got a project in mind?&nbsp;<br/>Let's talk.
                     </div>
                   </div>
 
@@ -384,7 +384,9 @@ class ServicesPage extends React.Component {
                         </div>
                       </div>
                       <div className='service-button-section'>
-                        <button className="green_button pixoul_button">Recent Work</button>
+                        <Link className="green_button pixoul_button" to='/#01'>
+                          Recent Work
+                        </Link>
                       </div>
                     </div>
                   </CSSTransition>
@@ -472,7 +474,9 @@ class ServicesPage extends React.Component {
                     classNames="services-image-animation"
                     onExited={() => this.setProgress(8)}
                   >
-                    <button className="blue_button pixoul_button">Let's Work Together</button> 
+                    <a className="blue_button pixoul_button" href='services#Contact'>
+                      Let's Work Together
+                    </a> 
                   </CSSTransition>
                   <CSSTransition
                     in={page === 3 && pageLoaded && width > 1199 && progress < 8}

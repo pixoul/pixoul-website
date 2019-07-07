@@ -134,26 +134,8 @@ figure {
   object-fit: contain;
 }
 
-.slick-dots li button {
-  width: 10px;
-  height: 10px;
-  background: #374050;
-  border-radius: 5px;
-}
-
-.slick-dots .slick-active button {
-  border-radius: 10px;
-  border: solid 2px #374050;
-  background-color: white;
-}
-
 .slick-slide {
   max-width: 90vw;
-}
-
-.slick-dots li button:before {
-  content: none;
-  border-radius: 5px;
 }
 
 .slick-next {
