@@ -99,14 +99,14 @@
 }
 
 @media (max-width: 1199px) {
-	.menu-close-button  {
-    right: calc(10vw + 350 * 0.8px);
-	}
+  .menu {
+    width: 260px;
+  }
 }
 
 @media (max-width: 767px) {
-	.menu-close-button  {
-		right: calc(10vw + 360 * 0.8px);
+  .menu {
+    width: 260px;
   }
 }
 

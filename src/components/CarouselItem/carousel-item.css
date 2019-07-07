@@ -27,3 +27,12 @@
   font-weight: 300;
   flex: 1;
 }
+
+@media screen and (max-width: 767px) {
+  .carousel-wrapper {
+    padding: 30px 10px;
+  }
+  .slick-slide {
+  
+  }
+}

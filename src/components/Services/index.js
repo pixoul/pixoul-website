@@ -123,9 +123,11 @@ class ServicesPage extends React.Component {
     const settings = {
       dots: true,
       speed: 500,
-      slidesToShow: 2,
+      slidesToShow: width > 767 ? 2 : 1,
       slidesToScroll: 1,
       arrows: true,
+      variableWidth: width < 767,
+      adaptiveHeight: true,
     };
 
     const carouselItems = [

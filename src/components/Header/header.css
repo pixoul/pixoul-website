@@ -128,7 +128,6 @@ button {
 
 @media (max-width: 767px) {
   .header {
-    width: 87%;
     left: 20px;
   }
 
