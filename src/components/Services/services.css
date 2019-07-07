@@ -122,15 +122,19 @@
 }
 
 .pixoul_four_grid_item_img_container img:first-child {
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
 }
 
 .pixoul_four_grid_item_img_container img:last-child {
-  visibility: hidden;
+  display: none;
 }
 
 .pixoul_grid_column_item:hover .pixoul_four_grid_item_img_container img:last-child {
-  visibility: visible!important;
+  display: block!important;
+}
+
+.pixoul_grid_column_item:hover .pixoul_four_grid_item_img_container img:first-child {
+  margin: 0 0 20px 0;
 }
 
 .pixoul_grid_column_item h2 {
@@ -499,6 +503,7 @@ a:hover + .blue_line_under_label {
   }
   .services-map-row:last-child {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .service-button-section {
     margin: 30px auto;
