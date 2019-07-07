@@ -24,7 +24,7 @@ const Menu = props => {
           <div>Contact Us</div>
         </a>
         <div className="menu-link-section">
-          <div>&copy; 2019 Pixoul. All rights reserved.</div>
+          <div>&copy; 2019 Pixoul, Inc. All rights reserved.</div>
           <Link className="small-menu-item" to='/privacy-policy'>Privacy Policy</Link> | <Link className="small-menu-item" to='/tos'>Terms of Service</Link>
         </div>
       </div>

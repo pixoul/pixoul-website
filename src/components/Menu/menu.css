@@ -12,9 +12,10 @@
 
 .menu {
   position: absolute;
-  right: 0;
+  right: 10px;
   width: 320px;
-  top: 10vh;
+  top: 50vh;
+  transform: translateY(-50%);
   max-height: calc(100vh - 103px);
   overflow: visible;
 }
