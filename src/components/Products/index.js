@@ -12,6 +12,7 @@ import "./products.css";
 import bg01 from "../../images/bg01.png";
 import buttonX from "../../images/buttonX.svg";
 import fusemap_white from "../../images/fusemap_white.svg";
+import ikarus from "../../images/ikarus.svg";
 import products01 from "../../images/products/products01.png";
 import products02 from "../../images/products/products02.png";
 import products03 from "../../images/products/products03.png";
@@ -106,6 +107,7 @@ class ProductsPage extends React.Component {
       variableWidth: true,
       adaptiveHeight: true,
     };
+    const logoImage = pageId === '01' ? ikarus : fusemap_white;
 
     return (
       <div className="products-page">
@@ -135,9 +137,9 @@ class ProductsPage extends React.Component {
                     >
                       <img src={buttonX} alt="buttonX" />
                     </Link>
-                    {
-                      pageId === '01' ? <div>ikarūs</div> : <div className="brand"><img src={fusemap_white} alt="fuse-white" /></div>
-                    }
+                    <div className="brand">
+                      <img src={logoImage} alt="Logo" />
+                    </div>
                   </div>
                 </div>
                   
