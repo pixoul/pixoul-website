@@ -113,7 +113,6 @@
 @media (max-height: 767px) {
   .menu {
     max-height: calc(100vh - 23px);
-    top: 23px;
     width: 260px;
   }
 
