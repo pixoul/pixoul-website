@@ -313,6 +313,7 @@
 @media (max-width: 767px) {
     .contact_section_form_container {
         height: auto;
+        width: 100%;
     }
 
     .group {
