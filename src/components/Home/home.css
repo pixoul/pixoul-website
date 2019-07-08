@@ -194,10 +194,11 @@
 	color: #374050;
 	opacity: 0.1;
 	position: absolute;
-	line-height: 689px;
-	top: 121px;
+	line-height: 100%;
+	top: calc((100% + 80px) / 2 - 553px / 2);
 	left: -210px;
 	z-index: 1;
+	overflow: hidden;
 	animation-duration: .75s;
 	animation-delay: 0s;
 	animation-fill-mode: both;
