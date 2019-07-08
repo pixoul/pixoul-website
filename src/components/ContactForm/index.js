@@ -45,7 +45,8 @@ class PixoulContactForm extends Component {
       enter: 1000 + delay,
       exit: 600,
     };
-
+    console.log(this.state);
+    console.log(this.props);
     const titleClass = delay > 0 ? 'contact-title-animation' : 'contact-title-animation-nodelay';
     const subtitleClass = delay > 0 ? 'contact-subtitle-animation' : 'contact-subtitle-animation-nodelay';
     const formClass = delay > 0 ? 'form-slide-animation' : 'form-slide-animation-nodelay';

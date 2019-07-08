@@ -1,24 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { CSSTransition } from "react-transition-group";
 import "./products.css";
 
-const cn = require('classnames');
 class SideBar extends React.Component {
-  
   render() {
-    const titleTimeout = {
-      appear: 900,
-      enter: 1950,
-      exit: 50,
-    };
-
-    const textTimeout = {
-      appear: 900,
-      enter: 2450,
-      exit: 50,
-    };
-    
     return (
       <div className="sidebar">
         <div className="sidebar-item">

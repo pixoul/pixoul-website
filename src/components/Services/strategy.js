@@ -74,22 +74,20 @@ class ServicesStrategySubPage extends React.Component {
             <ReactFullpage.Wrapper>
               <div className="section">
                 <div className="">
-                  <div className="">
-                      <div className="blue_heading top_about_us_heading mainTitle-animation-enter">
-                        Our strategic solutions reduce risk.
-                      </div>
-                      <div className="top_about_us_heading_text mainText-animation-enter">
-                        We'll work with you to find solutions to your most complex challenges.
-                      </div>
-                  </div>
-
-                  <button
-                    onClick={() => fullpageApi.moveSectionDown()}
-                    className="page_down_button_centered pixoul_button services-page-button-animation"
-                  >
-                    <img src={downArrow} alt="downArrow" />
-                  </button>
+                    <div className="blue_heading top_about_us_heading mainTitle-animation-enter">
+                      Our strategic solutions reduce risk.
+                    </div>
+                    <div className="top_about_us_heading_text mainText-animation-enter">
+                      We'll work with you to find solutions to your most complex challenges.
+                    </div>
                 </div>
+
+                <button
+                  onClick={() => fullpageApi.moveSectionDown()}
+                  className="page_down_button_centered pixoul_button services-page-button-animation"
+                >
+                  <img src={downArrow} alt="downArrow" />
+                </button>
               </div>
               <div className="section">
                 <div className="pixoul_list_with_checkboxes_container">
@@ -178,8 +176,8 @@ class ServicesStrategySubPage extends React.Component {
               <div className="section">
                 <PixoulContactForm
                   heading="Contact us."
-                  isAnimated={width > 1199 && page === 3 && pageLoaded && progress <= 9}
-                  onExited={() => this.setProgress(9)}
+                  isAnimated={page === 3}
+                  onExited={() => {}}
                 />
               </div>
             </ReactFullpage.Wrapper>

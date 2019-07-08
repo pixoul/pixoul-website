@@ -180,8 +180,8 @@ class ServicesTechSubPage extends React.Component {
               <div className="section">
                 <PixoulContactForm
                   heading="Contact us."
-                  isAnimated={width > 1199 && page === 4 && pageLoaded && progress <= 9}
-                  onExited={() => this.setProgress(9)}
+                  isAnimated={page === 3}
+                  onExited={() => {}}
                 />
               </div>
             </ReactFullpage.Wrapper>
