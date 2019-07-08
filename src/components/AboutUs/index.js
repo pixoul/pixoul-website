@@ -169,7 +169,7 @@ class AboutUsPage extends React.Component {
                       <div className="number-item">
                         <div className="number blue_heading">
                           {
-                            (progress >= 4 || page >= 1) && <CountUp
+                            (progress >= 3 || page >= 1) && <CountUp
                             start={0}
                             end={219}
                             delay={0.5}
@@ -187,7 +187,7 @@ class AboutUsPage extends React.Component {
                         <div className="number blue_heading">
                           $
                           {
-                            (progress >= 4 || page >= 1) && <CountUp
+                            (progress >= 3 || page >= 1) && <CountUp
                               start={0}
                               end={250}
                               delay={1}

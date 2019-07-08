@@ -199,7 +199,8 @@
     transform: scale(1)!important;
 }
 
-.about-title-animation-enter-done, .about-text-animation-enter-done {
+.about-title-animation-enter-done, .about-text-animation-enter-done, 
+.about-text-animation-exit-done, .about-title-animation-exit-done {
     opacity: 1!important;
 }
 
