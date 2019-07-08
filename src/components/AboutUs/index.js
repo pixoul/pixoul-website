@@ -1,6 +1,7 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { Link } from 'react-router-dom';
+import CountUp, { useCountUp } from 'react-countup';
 import PixoulContactForm from "../ContactForm/index";
 import downArrow from "../../images/ic_arrow_forward.png";
 import { CSSTransition } from "react-transition-group";
@@ -14,8 +15,8 @@ import pencil from "../../images/pencil.svg";
 import map from "../../images/map.svg";
 import arrow from "../../images/arrow.svg";
 
-
 const cn = require('classnames');
+
 class AboutUsPage extends React.Component {
   state = {
     page: 0,
@@ -38,6 +39,7 @@ class AboutUsPage extends React.Component {
   };
 
   onLeave = (origin, destination, direction) => {
+    console.log(destination.index);
     this.setState({ page: destination.index, pageLoaded: false });
   };
 
@@ -167,7 +169,13 @@ class AboutUsPage extends React.Component {
                     <div className="number-section">
                       <div className="number-item">
                         <div className="number blue_heading">
-                          219%
+                          {
+                            (progress >= 4 || page >= 1) && <CountUp
+                            start={0}
+                            end={219}
+                            delay={0.5}
+                          />
+                          }%
                         </div>
                         <p>
                           outperformance vs. design averse companies
@@ -178,7 +186,14 @@ class AboutUsPage extends React.Component {
                       </div>
                       <div className="number-item">
                         <div className="number blue_heading">
-                          $250M +
+                          $
+                          {
+                            (progress >= 4 || page >= 1) && <CountUp
+                              start={0}
+                              end={250}
+                              delay={1}
+                            />
+                          }M +
                         </div>
                         <p>
                           in collective designed product value
@@ -189,7 +204,14 @@ class AboutUsPage extends React.Component {
                       </div>
                       <div className="number-item">
                         <div className="number blue_heading">
-                          10x
+                          {
+                            (progress >= 4 || page >= 1) && <CountUp
+                              start={0}
+                              end={10}
+                              delay={1.5}
+                            />
+                          }
+                          x
                         </div>
                         <p>
                           increased product performance
