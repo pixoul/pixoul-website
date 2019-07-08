@@ -39,7 +39,6 @@ class AboutUsPage extends React.Component {
   };
 
   onLeave = (origin, destination, direction) => {
-    console.log(destination.index);
     this.setState({ page: destination.index, pageLoaded: false });
   };
 
