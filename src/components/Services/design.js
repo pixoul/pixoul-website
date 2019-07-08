@@ -50,9 +50,9 @@ class ServicesDesignSubPage extends React.Component {
     const { isMenuVisible } = this.props;
     const { page, pageLoaded, width, progress } = this.state;
     const titleTimeout = {
-      appear: 900,
-      enter: 1950,
-      exit: 50,
+      appear: 0,
+      enter: 1050,
+      exit: 510,
     };
 
     const textTimeout = {
@@ -93,7 +93,6 @@ class ServicesDesignSubPage extends React.Component {
                         Human-centered design empowers us to rethink user’s needs.
                       </div>
                   </div>
-
                   <button
                     onClick={() => fullpageApi.moveSectionDown()}
                     className="page_down_button_centered pixoul_button services-page-button-animation"
@@ -104,31 +103,30 @@ class ServicesDesignSubPage extends React.Component {
               </div>
               <div className="section">
                 <div className="pixoul_list_with_checkboxes_container">
+                  <CSSTransition
+                    in={page === 1 && pageLoaded && width > 1199 && progress < 1}
+                    timeout={titleTimeout}
+                    classNames="services-title-animation"
+                    onEnter={() => {}}
+                    onExited={() => {this.setProgress(1)}}
+                  >
                     <div className="pixoul_list_with_checkboxes_row">
-                        <div className="pixoul_list_with_checkboxes_row_left_side">
-                          <CSSTransition
-                            in={page === 1 && pageLoaded && width > 1199 && progress < 1}
-                            timeout={titleTimeout}
-                            classNames="services-title-animation"
-                            onEnter={() => {}}
-                            onExited={() => {this.setProgress(1)}}
-                          >
-                            <h2>01. Design Thinking</h2>
-                          </CSSTransition>
-                          <CSSTransition
-                            in={page === 1 && pageLoaded && width > 1199 && progress < 2}
-                            timeout={textTimeout}
-                            classNames="services-text-animation"
-                            onEnter={() => {}}
-                            onExited={() => {}}
-                          >
-                            <p>Supported by our data and research initiatives, we use industry proven Design Thinking techniques to promote strong user- and human-centered design.  Using empathy and creativity, we inspire, ideate, and implement to create solutions at scale.  We recognize our designs have the opportunity to promote goodwill, and impact entire communities.</p>
-                          </CSSTransition>
-                        </div>
-                        <div className="pixoul_list_with_checkboxes_row_right_side">
-                            {/* <img src={checkmark} alt="checkmark" /> */}
-                        </div>
+                      <div className="pixoul_list_with_checkboxes_row_left_side">
+                        <h2>01. Design Thinking</h2>
+                        <p>Supported by our data and research initiatives, we use industry proven Design Thinking techniques to promote strong user- and human-centered design.  Using empathy and creativity, we inspire, ideate, and implement to create solutions at scale.  We recognize our designs have the opportunity to promote goodwill, and impact entire communities.</p>
+                      </div>
+                      <div className="pixoul_list_with_checkboxes_row_right_side">
+                          {/* <img src={checkmark} alt="checkmark" /> */}
+                      </div>
                     </div>
+                  </CSSTransition>
+                  <CSSTransition
+                    in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                    timeout={titleTimeout}
+                    classNames="services-title-animation"
+                    onEnter={() => {}}
+                    onExited={() => {this.setProgress(2)}}
+                  >
                     <div className="pixoul_list_with_checkboxes_row">
                         <div className="pixoul_list_with_checkboxes_row_left_side">
                             <h2>02. User Experience Design</h2>
@@ -138,6 +136,7 @@ class ServicesDesignSubPage extends React.Component {
                             {/* <img src={checkmark} alt="checkmark" /> */}
                         </div>
                     </div>
+                  </CSSTransition>
                     <div className="pixoul_list_with_checkboxes_row">
                         <div className="pixoul_list_with_checkboxes_row_left_side">
                             <h2>03. User Interface Design</h2>
