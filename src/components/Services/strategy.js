@@ -51,10 +51,10 @@ class ServicesStrategySubPage extends React.Component {
     const { page, pageLoaded, width, progress } = this.state;
 
     const titleTimeout = {
-        appear: 900,
-        enter: 1950,
-        exit: 50,
-      };
+      appear: 900,
+      enter: 1950,
+      exit: 50,
+    };
     
     return (
       <div className="services-us-page">

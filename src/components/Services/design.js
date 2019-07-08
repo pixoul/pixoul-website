@@ -1,5 +1,6 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
+import { CSSTransition } from "react-transition-group";
 import PixoulContactForm from "../ContactForm/index";
 import "./services.css";
 
@@ -48,6 +49,23 @@ class ServicesDesignSubPage extends React.Component {
     const pageIndex = ["00", "01", "02", "Contact"];
     const { isMenuVisible } = this.props;
     const { page, pageLoaded, width, progress } = this.state;
+    const titleTimeout = {
+      appear: 900,
+      enter: 1950,
+      exit: 50,
+    };
+
+    const textTimeout = {
+      appear: 900,
+      enter: 2450,
+      exit: 50,
+    };
+    
+    const imgTimeout = {
+      appear: 900,
+      enter: 2450,
+      exit: 50,
+    };
 
     return (
       <div className="services-us-page">
@@ -88,8 +106,24 @@ class ServicesDesignSubPage extends React.Component {
                 <div className="pixoul_list_with_checkboxes_container">
                     <div className="pixoul_list_with_checkboxes_row">
                         <div className="pixoul_list_with_checkboxes_row_left_side">
+                          <CSSTransition
+                            in={page === 1 && pageLoaded && width > 1199 && progress < 1}
+                            timeout={titleTimeout}
+                            classNames="services-title-animation"
+                            onEnter={() => {}}
+                            onExited={() => {this.setProgress(1)}}
+                          >
                             <h2>01. Design Thinking</h2>
+                          </CSSTransition>
+                          <CSSTransition
+                            in={page === 1 && pageLoaded && width > 1199 && progress < 2}
+                            timeout={textTimeout}
+                            classNames="services-text-animation"
+                            onEnter={() => {}}
+                            onExited={() => {}}
+                          >
                             <p>Supported by our data and research initiatives, we use industry proven Design Thinking techniques to promote strong user- and human-centered design.  Using empathy and creativity, we inspire, ideate, and implement to create solutions at scale.  We recognize our designs have the opportunity to promote goodwill, and impact entire communities.</p>
+                          </CSSTransition>
                         </div>
                         <div className="pixoul_list_with_checkboxes_row_right_side">
                             {/* <img src={checkmark} alt="checkmark" /> */}

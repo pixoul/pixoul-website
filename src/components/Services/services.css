@@ -234,6 +234,7 @@
 
 .carousel-row .blue_button {
   margin: 0 2% 0 5%;
+  min-width: 156px;
 }
 
 .carousel-list-row {
