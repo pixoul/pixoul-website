@@ -23,6 +23,11 @@
 	opacity: 0;
 }
 
+.content-wrapper {
+	padding: 0;
+	height: 100%;
+}
+
 #first {
 	overflow: hidden;
 	color: #374050;
@@ -188,6 +193,7 @@
 #content-02 {
 	max-width: 294px;
 }
+
 #content-02 .subtitle {
 	margin-top: 200px;
 }
@@ -521,6 +527,10 @@
 		position: static;
 	}
 
+	.content-wrapper {
+		padding: 0 20px;
+	}
+
 	.first-content {
 		position: relative;
 		left: 0;
@@ -543,10 +553,9 @@
   
   .label, .title, .subtitle {
     position: static;
-    margin-top: 10px;
+    margin-top: 20px!important;
   }
 }
-
 
 @media (max-height: 568px) {
 	.Tilt {

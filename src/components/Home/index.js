@@ -122,6 +122,7 @@ class Home extends React.Component {
               return (
                 <ReactFullpage.Wrapper>
                   <div className="section" id="first">
+                    <div class="content-wrapper">
                     <img data-src={bgImage} alt="bgImage" className="bg-image" />
                     <div className="first-content">
                       <div className="first-content__wrapper">
@@ -149,162 +150,172 @@ class Home extends React.Component {
                         <img src={downArrow} alt="downArrow" />
                       </button>
                     </div>
+                    </div>
                   </div>
                   <div className="section">
-                    <div className="content" id="content-01">
-                      <CSSTransition
-                        in={page === 1 && pageLoaded && width > 1199}
-                        timeout={labelTimeout}
-                        classNames="label-animation"
-                        onEnter={() => {}}
-                      >
-                        <div className="label">E-Commerce Site</div>
-                      </CSSTransition>
-                      <CSSTransition
-                        in={page === 1 && pageLoaded && width > 1199}
-                        timeout={titleTimeout}
-                        classNames="title-animation"
-                        onEnter={() => {}}
-                      >
-                        <div className="title" id="title-01">
-                          <img src={iuzeit} alt="iuzeit" />
-                        </div>
-                      </CSSTransition>
-                      <CSSTransition
-                        in={page === 1 && pageLoaded && width > 1199}
-                        timeout={subtitleTimeout}
-                        classNames="subtitle-animation"
-                        onEntered={() => this.setState({ readyToMove: true })}
-                      >
-                        <div className="subtitle">
-                          is shaping the future of the
-                          <br /> online purchase journey.
-                        </div>
-                      </CSSTransition>
-                    </div>
-                    <Tilt className="Tilt" options={tiltOption}>
-                      <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
-                      <div className="Tilt-inner">
-                        <LearnMore link='products/01' />
+                    <div class="content-wrapper">
+                      <div className="content" id="content-01">
+                        <CSSTransition
+                          in={page === 1 && pageLoaded && width > 1199}
+                          timeout={labelTimeout}
+                          classNames="label-animation"
+                          onEnter={() => {}}
+                        >
+                          <div className="label">E-Commerce Site</div>
+                        </CSSTransition>
+                        <CSSTransition
+                          in={page === 1 && pageLoaded && width > 1199}
+                          timeout={titleTimeout}
+                          classNames="title-animation"
+                          onEnter={() => {}}
+                        >
+                          <div className="title" id="title-01">
+                            <img src={iuzeit} alt="iuzeit" />
+                          </div>
+                        </CSSTransition>
+                        <CSSTransition
+                          in={page === 1 && pageLoaded && width > 1199}
+                          timeout={subtitleTimeout}
+                          classNames="subtitle-animation"
+                          onEntered={() => this.setState({ readyToMove: true })}
+                        >
+                          <div className="subtitle">
+                            is shaping the future of the
+                            <br /> online purchase journey.
+                          </div>
+                        </CSSTransition>
                       </div>
-                    </Tilt>
+                      <Tilt className="Tilt" options={tiltOption}>
+                        <img src={bg01} alt="bg01" id="bg01" className="bg-img" />
+                        <div className="Tilt-inner">
+                          <LearnMore link='products/01' />
+                        </div>
+                      </Tilt>
+                    </div>
                   </div>
                   <div className="section">
-                    <div className="content" id="content-02">
-                      <CSSTransition
-                        in={page === 2 && pageLoaded && width > 1199}
-                        timeout={labelTimeout}
-                        classNames="label-animation"
-                        onEnter={() => {}}
-                      >
-                        <div className="label">Kiosk Interface</div>
-                      </CSSTransition>
-                      <CSSTransition
-                        in={page === 2 && pageLoaded && width > 1199}
-                        timeout={titleTimeout}
-                        classNames="title-animation"
-                        onEnter={() => {}}
-                      >
-                        <div className="title" id="title-02">
-                          <img src={georgia_pacific} alt="georgia_pacific" />
-                        </div>
-                      </CSSTransition>
-                      <CSSTransition
-                        in={page === 2 && pageLoaded && width > 1199}
-                        timeout={subtitleTimeout}
-                        classNames="subtitle-animation"
-                        onEntered={() => this.setState({ readyToMove: true })}
-                      >
-                        <div className="subtitle">
-                          is shaping the future of the
-                          <br /> online purchase journey.
-                        </div>
-                      </CSSTransition>
-                    </div>
-                    <Tilt className="Tilt" options={tiltOption}>
-                      <img src={bg02} alt="bg08" id="bg02" className="bg-img" />
-                      <div className="Tilt-inner">
-                        <LearnMore link='products/02' />
+                    <div class="content-wrapper">
+                      <div className="content" id="content-02">
+                        <CSSTransition
+                          in={page === 2 && pageLoaded && width > 1199}
+                          timeout={labelTimeout}
+                          classNames="label-animation"
+                          onEnter={() => {}}
+                        >
+                          <div className="label">Kiosk Interface</div>
+                        </CSSTransition>
+                        <CSSTransition
+                          in={page === 2 && pageLoaded && width > 1199}
+                          timeout={titleTimeout}
+                          classNames="title-animation"
+                          onEnter={() => {}}
+                        >
+                          <div className="title" id="title-02">
+                            <img src={georgia_pacific} alt="georgia_pacific" />
+                          </div>
+                        </CSSTransition>
+                        <CSSTransition
+                          in={page === 2 && pageLoaded && width > 1199}
+                          timeout={subtitleTimeout}
+                          classNames="subtitle-animation"
+                          onEntered={() => this.setState({ readyToMove: true })}
+                        >
+                          <div className="subtitle">
+                            is shaping the future of the
+                            <br /> online purchase journey.
+                          </div>
+                        </CSSTransition>
                       </div>
-                    </Tilt>
+                      <Tilt className="Tilt" options={tiltOption}>
+                        <img src={bg02} alt="bg08" id="bg02" className="bg-img" />
+                        <div className="Tilt-inner">
+                          <LearnMore link='products/02' />
+                        </div>
+                      </Tilt>
+                      </div>
                   </div>
                   
                   <div className="section">
-                    <div className="content" id="content-03">
-                      <CSSTransition
-                        in={page === 3 && pageLoaded && width > 1199}
-                        timeout={labelTimeout}
-                        classNames="label-animation"
-                      >
-                        <div className="label">Analytics Dashboard</div>
-                      </CSSTransition>
-                      <CSSTransition
-                        in={page === 3 && pageLoaded && width > 1199}
-                        timeout={titleTimeout}
-                        classNames="title-animation"
-                      >
-                        <div className="title">
-                          <img src={stallion} alt="stallion" />
-                        </div>
-                      </CSSTransition>
-                      <CSSTransition
-                        in={page === 3 && pageLoaded && width > 1199}
-                        timeout={subtitleTimeout}
-                        classNames="subtitle-animation"
-                        onEntered={() => this.setState({ readyToMove: true })}
-                      >
-                        <div className="subtitle">
-                          is taking field analytics to a 
-                          <br />
-                          whole new level.
-                        </div>
-                      </CSSTransition>
-                    </div>
-                    <Tilt className="Tilt" options={tiltOption}>
-                      <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
-                      <div className="Tilt-inner">
-                        <LearnMore link='products/03' />
+                    <div className="content-wrapper">
+                      <div className="content" id="content-03">
+                        <CSSTransition
+                          in={page === 3 && pageLoaded && width > 1199}
+                          timeout={labelTimeout}
+                          classNames="label-animation"
+                        >
+                          <div className="label">Analytics Dashboard</div>
+                        </CSSTransition>
+                        <CSSTransition
+                          in={page === 3 && pageLoaded && width > 1199}
+                          timeout={titleTimeout}
+                          classNames="title-animation"
+                        >
+                          <div className="title">
+                            <img src={stallion} alt="stallion" />
+                          </div>
+                        </CSSTransition>
+                        <CSSTransition
+                          in={page === 3 && pageLoaded && width > 1199}
+                          timeout={subtitleTimeout}
+                          classNames="subtitle-animation"
+                          onEntered={() => this.setState({ readyToMove: true })}
+                        >
+                          <div className="subtitle">
+                            is taking field analytics to a 
+                            <br />
+                            whole new level.
+                          </div>
+                        </CSSTransition>
                       </div>
-                    </Tilt>
+                      <Tilt className="Tilt" options={tiltOption}>
+                        <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
+                        <div className="Tilt-inner">
+                          <LearnMore link='products/03' />
+                        </div>
+                      </Tilt>
+                    </div>
                   </div>
                   <div className="section">
-                    <div className="content" id="content-04">
-                      <CSSTransition
-                        in={page === 4 && pageLoaded && width > 1199}
-                        timeout={labelTimeout}
-                        classNames="label-animation"
-                      >
-                        <div className="label">Enterprise System</div>
-                      </CSSTransition>
-                      <CSSTransition
-                        in={page === 4 && pageLoaded && width > 1199}
-                        timeout={titleTimeout}
-                        classNames="title-animation"
-                      >
-                        <div className="title">
-                          <img src={fusemap} alt="fusemap" />
-                        </div>
-                      </CSSTransition>
-                      <CSSTransition
-                        in={page === 4 && pageLoaded && width > 1199}
-                        timeout={subtitleTimeout}
-                        classNames="subtitle-animation"
-                        onEntered={() => this.setState({ readyToMove: true })}
-                      >
-                        <div className="subtitle">
-                          is thinking smarter about how <br />
-                          we power the world.
-                        </div>
-                      </CSSTransition>
-                    </div>
-                    <Tilt className="Tilt" options={tiltOption}>
-                      <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
-                      <div className="Tilt-inner">
-                        <LearnMore link='products/04' />
+                    <div className="content-wrapper">
+                      <div className="content" id="content-04">
+                        <CSSTransition
+                          in={page === 4 && pageLoaded && width > 1199}
+                          timeout={labelTimeout}
+                          classNames="label-animation"
+                        >
+                          <div className="label">Enterprise System</div>
+                        </CSSTransition>
+                        <CSSTransition
+                          in={page === 4 && pageLoaded && width > 1199}
+                          timeout={titleTimeout}
+                          classNames="title-animation"
+                        >
+                          <div className="title">
+                            <img src={fusemap} alt="fusemap" />
+                          </div>
+                        </CSSTransition>
+                        <CSSTransition
+                          in={page === 4 && pageLoaded && width > 1199}
+                          timeout={subtitleTimeout}
+                          classNames="subtitle-animation"
+                          onEntered={() => this.setState({ readyToMove: true })}
+                        >
+                          <div className="subtitle">
+                            is thinking smarter about how <br />
+                            we power the world.
+                          </div>
+                        </CSSTransition>
                       </div>
-                    </Tilt>
+                      <Tilt className="Tilt" options={tiltOption}>
+                        <img src={bg04} alt="bg04" id="bg04" className="bg-img" />
+                        <div className="Tilt-inner">
+                          <LearnMore link='products/04' />
+                        </div>
+                      </Tilt>
+                    </div>
                   </div>
                   <div className="section">
+                    <div className="content-wrapper">
                     <div className="content" id="content-05">
                       <CSSTransition
                         in={page === 5 && pageLoaded && width > 1199}
@@ -340,9 +351,11 @@ class Home extends React.Component {
                         <LearnMore link='products/05' />
                       </div>
                     </Tilt>
+                    </div>
                   </div>
                   
                   <div className="section">
+                  <div className="content-wrapper">
                     <div className="content" id="content-06">
                       <CSSTransition
                         in={page === 6 && pageLoaded && width > 1199}
@@ -381,13 +394,16 @@ class Home extends React.Component {
                         <LearnMore link='products/06' />
                       </div>
                     </Tilt>
+                    </div>
                   </div>
                   <div className="section">
-                    <PixoulContactForm
-                      heading="Contact us."
-                      delay={900}
-                      isAnimated={page === 7 && width > 1199 && pageLoaded}
-                    />
+                    <div className="content-wrapper">
+                      <PixoulContactForm
+                        heading="Contact us."
+                        delay={900}
+                        isAnimated={page === 7 && width > 1199 && pageLoaded}
+                      />
+                    </div>
                   </div>
                 </ReactFullpage.Wrapper>
               );
