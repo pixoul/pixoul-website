@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { Parallax } from 'react-scroll-parallax';
 
 import SideBar from './sidebar';
+import ProductFooter from './footer';
 
 import "./products.css";
 import buttonX from "../../images/buttonX.svg";
@@ -142,6 +143,7 @@ class ProductsPage extends React.Component {
                     ))
                   }
                 </Slider>
+                <ProductFooter />
               </div>
             </ReactFullpage.Wrapper>
             );

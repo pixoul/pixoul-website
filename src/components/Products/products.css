@@ -210,6 +210,92 @@ figure {
     opacity: 1!important;
 }
 
+.product-footer-wrapper {
+  height: 552px;
+  color: white;
+  background-color: #3a4455;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-footer {
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 99px 136px;
+}
+
+.product-footer-row {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-footer-row:last-child {
+  margin-top: 96px;
+  align-items: flex-start;
+}
+
+.product-footer h1, .product-footer h3, .product-footer img, .product-footer p {
+  z-index: 1;
+}
+
+.product-footer p {
+  font-size: 16px;
+  max-width: 357px;
+}
+
+.logo-section img {
+  margin-bottom: 21px;
+}
+
+.product-footer-background {
+  right: 0;
+  width: 39.5vw;
+  height: 0;
+  bottom: 0;
+  border-bottom: 100vh solid #374050;
+  border-left: calc(60vw - 39.5vw) solid transparent;
+  position: absolute;
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-bar-button {
+  border-radius: 5px;
+  color: #3180fb;
+  width: 120px;
+  height: 36px;
+  background-color: white;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bar > div:first-child {
+  margin-right: 93px;
+}
+
+.footer-bar a {
+  color: white;
+}
+
+.footer-bar p {
+  margin-bottom: 21px;
+}
 
 @keyframes aboutPageButton {
 	from {
