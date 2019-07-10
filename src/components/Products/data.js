@@ -12,47 +12,47 @@ import hcp_white from "../../images/hcp-white.svg";
 import fusemap_white from "../../images/fusemap_white.svg";
 import ikarus_white from "../../images/ikarus.svg";
 
-import products01 from "../../images/products/products01.png";
-import products02 from "../../images/products/products02.png";
-import products03 from "../../images/products/products03.png";
-import products04 from "../../images/products/products04.png";
-import products05 from "../../images/products/products05.png";
-import products06 from "../../images/products/products06.png";
+import products01 from "../../images/products/Ikarus/Screen1.png";
+import products02 from "../../images/products/Ikarus/Screen2.png";
+import products03 from "../../images/products/Ikarus/Screen3.png";
+import products04 from "../../images/products/Ikarus/Screen4.png";
+import products05 from "../../images/products/Ikarus/Screen4.png";
+import products06 from "../../images/products/Ikarus/Screen6.png";
 
-import fusemapScreen1 from "../../images/products/fusemapScreen1.png";
-import fusemapScreen2 from "../../images/products/fusemapScreen2.png";
-import fusemapScreen3 from "../../images/products/fusemapScreen3.png";
-import fusemapScreen4 from "../../images/products/fusemapScreen4.png";
-import fusemapScreen5 from "../../images/products/fusemapScreen5.png";
-import fusemapScreen6 from "../../images/products/fusemapScreen6.png";
+import fusemapScreen1 from "../../images/products//Fusemap/Screen1.png";
+import fusemapScreen2 from "../../images/products//Fusemap/Screen2.png";
+import fusemapScreen3 from "../../images/products//Fusemap/Screen3.png";
+import fusemapScreen4 from "../../images/products//Fusemap/Screen4.png";
+import fusemapScreen5 from "../../images/products//Fusemap/Screen5.png";
+import fusemapScreen6 from "../../images/products//Fusemap/Screen6.png";
 
-import GPScreen1 from "../../images/products/GPScreen1.png";
-import GPScreen2 from "../../images/products/GPScreen2.png";
-import GPScreen3 from "../../images/products/GPScreen3.png";
-import GPScreen4 from "../../images/products/GPScreen4.png";
-import GPScreen5 from "../../images/products/GPScreen5.png";
-import GPScreen6 from "../../images/products/GPScreen6.png";
+import GPScreen1 from "../../images/products/Georgia Pacific/Screen1.png";
+import GPScreen2 from "../../images/products/Georgia Pacific/Screen2.png";
+import GPScreen3 from "../../images/products/Georgia Pacific/Screen3.png";
+import GPScreen4 from "../../images/products/Georgia Pacific/Screen4.png";
+import GPScreen5 from "../../images/products/Georgia Pacific/Screen5.png";
+import GPScreen6 from "../../images/products/Georgia Pacific/Screen6.png";
 
-import hcpScreen1 from "../../images/products/hcpScreen1.png";
-import hcpScreen2 from "../../images/products/hcpScreen2.png";
-import hcpScreen3 from "../../images/products/hcpScreen3.png";
-import hcpScreen4 from "../../images/products/hcpScreen4.png";
-import hcpScreen5 from "../../images/products/hcpScreen5.png";
-import hcpScreen6 from "../../images/products/hcpScreen6.png";
+import hcpScreen1 from "../../images/products/HCP/Screen1.png";
+import hcpScreen2 from "../../images/products/HCP/Screen2.png";
+import hcpScreen3 from "../../images/products/HCP/Screen3.png";
+import hcpScreen4 from "../../images/products/HCP/Screen4.png";
+import hcpScreen5 from "../../images/products/HCP/Screen5.png";
+import hcpScreen6 from "../../images/products/HCP/Screen6.png";
 
-import iuzeitScreen1 from "../../images/products/iuzeitScreen1.png";
-import iuzeitScreen2 from "../../images/products/iuzeitScreen2.png";
-import iuzeitScreen3 from "../../images/products/iuzeitScreen3.png";
-import iuzeitScreen4 from "../../images/products/iuzeitScreen4.png";
-import iuzeitScreen5 from "../../images/products/iuzeitScreen5.png";
-import iuzeitScreen6 from "../../images/products/iuzeitScreen6.png";
+import iuzeitScreen1 from "../../images/products/iuzeit/Screen1.png";
+import iuzeitScreen2 from "../../images/products/iuzeit/Screen2.png";
+import iuzeitScreen3 from "../../images/products/iuzeit/Screen3.png";
+import iuzeitScreen4 from "../../images/products/iuzeit/Screen4.png";
+import iuzeitScreen5 from "../../images/products/iuzeit/Screen5.png";
+import iuzeitScreen6 from "../../images/products/iuzeit/Screen6.png";
 
-import stallionScreen1 from "../../images/products/stallionScreen1.png";
-import stallionScreen2 from "../../images/products/stallionScreen2.png";
-import stallionScreen3 from "../../images/products/stallionScreen3.png";
-import stallionScreen4 from "../../images/products/stallionScreen4.png";
-import stallionScreen5 from "../../images/products/stallionScreen5.png";
-import stallionScreen6 from "../../images/products/stallionScreen6.png";
+import stallionScreen1 from "../../images/products/Stallion/Screen1.png";
+import stallionScreen2 from "../../images/products/Stallion/Screen2.png";
+import stallionScreen3 from "../../images/products/Stallion/Screen3.png";
+import stallionScreen4 from "../../images/products/Stallion/Screen4.png";
+import stallionScreen5 from "../../images/products/Stallion/Screen5.png";
+import stallionScreen6 from "../../images/products/Stallion/Screen6.png";
 
 const ikarusScreens = [
   products01,
