@@ -134,6 +134,10 @@ figure {
   border-radius: 15px;
 }
 
+.slick-slider {
+  margin-bottom: 40px;
+}
+
 .slick-slide {
   max-width: 90vw;
 }
