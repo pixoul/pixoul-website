@@ -27,6 +27,11 @@
 	src: url(fonts/Ikaros-Regular.otf);
 }
 
+@font-face {
+	font-family: avenirFont;
+	src: url(fonts/AvenirNextLTPro-Regular.otf);
+}
+
 * {
 	font-family: 'Poppins', sans-serif;
 }

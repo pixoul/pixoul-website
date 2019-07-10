@@ -25,15 +25,15 @@ const ProductFooter = (props) => {
             <div className="footer-bar">
               <div>
                 <p>Capabilities</p>
-                <Link to='services-strategy'>Strategy</Link><br/>
-                <Link to='services-design'>Design</Link><br/>
-                <Link to='service-tech'>Technology</Link>
+                <Link to='/services-strategy'>Strategy</Link><br/>
+                <Link to='/services-design'>Design</Link><br/>
+                <Link to='/service-tech'>Technology</Link>
               </div>
               <div>
                 <p>Learn More</p>
-                <Link to='aboutus'>About</Link><br/>
+                <Link to='/aboutus'>About</Link><br/>
                 <Link to='/#01'>Work</Link><br/>
-                <Link to='services'>Services</Link>
+                <Link to='/services'>Services</Link>
               </div>
             </div>
           </div>

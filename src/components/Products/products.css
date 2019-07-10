@@ -227,8 +227,12 @@ figure {
   right: 0;
   bottom: 0;
   padding: 99px 136px;
+  
 }
 
+.product-footer h1, .product-footer h3, .product-footer p, .footer-bar, .footer-bar a {
+  font-family: avenirFont!important;
+}
 .product-footer-row {
   display: flex;
   flex: 1;
@@ -264,7 +268,7 @@ figure {
   position: absolute;
 }
 
-.footer-bar {
+.product-footer .footer-bar {
   display: flex;
   flex-direction: row;
 }
