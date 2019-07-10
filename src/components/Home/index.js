@@ -17,9 +17,14 @@ import bg04 from "../../images/bg04.png";
 import bg05 from "../../images/bg05.png";
 import bg06 from "../../images/bg06.png";
 import fusemap from "../../images/fusemap.png";
+
 import downArrow from "../../images/ic_arrow_forward.png";
-import artisanLogo from "../../images/artisanLogo.png";
+import ikarus_black from "../../images/ikarus-black.svg";
+import hcp from "../../images/hcp.svg";
 import bgImage from "../../images/bg.png";
+import iuzeit from "../../images/iuzeit.svg";
+import stallion from "../../images/stallion.svg";
+import georgia_pacific from "../../images/georgia-pacific.svg";
 
 class Home extends React.Component {
   state = {
@@ -153,7 +158,7 @@ class Home extends React.Component {
                         classNames="label-animation"
                         onEnter={() => {}}
                       >
-                        <div className="label">Corporate Site</div>
+                        <div className="label">E-Commerce Site</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 1 && pageLoaded && width > 1199}
@@ -162,7 +167,7 @@ class Home extends React.Component {
                         onEnter={() => {}}
                       >
                         <div className="title" id="title-01">
-                          IKAR<span className="lucida-title">Ū</span>S
+                          <img src={iuzeit} alt="iuzeit" />
                         </div>
                       </CSSTransition>
                       <CSSTransition
@@ -172,8 +177,8 @@ class Home extends React.Component {
                         onEntered={() => this.setState({ readyToMove: true })}
                       >
                         <div className="subtitle">
-                          is redefining the business
-                          <br /> marketplace.
+                          is shaping the future of the
+                          <br /> online purchase journey.
                         </div>
                       </CSSTransition>
                     </div>
@@ -190,16 +195,18 @@ class Home extends React.Component {
                         in={page === 2 && pageLoaded && width > 1199}
                         timeout={labelTimeout}
                         classNames="label-animation"
+                        onEnter={() => {}}
                       >
-                        <div className="label">Enterprise System</div>
+                        <div className="label">Kiosk Interface</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 2 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
+                        onEnter={() => {}}
                       >
-                        <div className="title">
-                          <img src={fusemap} alt="fusemap" />
+                        <div className="title" id="title-02">
+                          <img src={georgia_pacific} alt="georgia_pacific" />
                         </div>
                       </CSSTransition>
                       <CSSTransition
@@ -209,18 +216,19 @@ class Home extends React.Component {
                         onEntered={() => this.setState({ readyToMove: true })}
                       >
                         <div className="subtitle">
-                          is thinking smarter about how <br />
-                          we power the world.
+                          is shaping the future of the
+                          <br /> online purchase journey.
                         </div>
                       </CSSTransition>
                     </div>
                     <Tilt className="Tilt" options={tiltOption}>
-                      <img src={bg02} alt="bg02" id="bg02" className="bg-img" />
+                      <img src={bg02} alt="bg08" id="bg02" className="bg-img" />
                       <div className="Tilt-inner">
                         <LearnMore link='products/02' />
                       </div>
                     </Tilt>
                   </div>
+                  
                   <div className="section">
                     <div className="content" id="content-03">
                       <CSSTransition
@@ -228,14 +236,16 @@ class Home extends React.Component {
                         timeout={labelTimeout}
                         classNames="label-animation"
                       >
-                        <div className="label">Dashboard Matrix</div>
+                        <div className="label">Analytics Dashboard</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 3 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
                       >
-                        <div className="title">hcp</div>
+                        <div className="title">
+                          <img src={stallion} alt="stallion" />
+                        </div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 3 && pageLoaded && width > 1199}
@@ -244,15 +254,16 @@ class Home extends React.Component {
                         onEntered={() => this.setState({ readyToMove: true })}
                       >
                         <div className="subtitle">
-                          is setting the standard in <br />
-                          healthcare—literally.
+                          is taking field analytics to a 
+                          <br />
+                          whole new level.
                         </div>
                       </CSSTransition>
                     </div>
                     <Tilt className="Tilt" options={tiltOption}>
                       <img src={bg03} alt="bg03" id="bg03" className="bg-img" />
                       <div className="Tilt-inner">
-                        <LearnMore link='products/03' />
+                        <LearnMore link='products/04' />
                       </div>
                     </Tilt>
                   </div>
@@ -263,7 +274,7 @@ class Home extends React.Component {
                         timeout={labelTimeout}
                         classNames="label-animation"
                       >
-                        <div className="label">Mobile App</div>
+                        <div className="label">Enterprise System</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 4 && pageLoaded && width > 1199}
@@ -271,8 +282,7 @@ class Home extends React.Component {
                         classNames="title-animation"
                       >
                         <div className="title">
-                          Swank
-                          <div className="description">loans & financing</div>
+                          <img src={fusemap} alt="fusemap" />
                         </div>
                       </CSSTransition>
                       <CSSTransition
@@ -282,9 +292,8 @@ class Home extends React.Component {
                         onEntered={() => this.setState({ readyToMove: true })}
                       >
                         <div className="subtitle">
-                          is financing the future of
-                          <br />
-                          personal banking loans.
+                          is thinking smarter about how <br />
+                          we power the world.
                         </div>
                       </CSSTransition>
                     </div>
@@ -302,26 +311,26 @@ class Home extends React.Component {
                         timeout={labelTimeout}
                         classNames="label-animation"
                       >
-                        <div className="label">Mobile App</div>
+                        <div className="label">Dashboard Matrix</div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 5 && pageLoaded && width > 1199}
                         timeout={titleTimeout}
                         classNames="title-animation"
                       >
-                        <div className="title">MODA</div>
+                        <div className="title">
+                          <img src={hcp} alt="hcp" />
+                        </div>
                       </CSSTransition>
                       <CSSTransition
                         in={page === 5 && pageLoaded && width > 1199}
                         timeout={subtitleTimeout}
                         classNames="subtitle-animation"
                         onEntered={() => this.setState({ readyToMove: true })}
-                        onExited={() => {}}
                       >
                         <div className="subtitle">
-                          is reworking your wardrobe, one
-                          <br />
-                          piece at a time.
+                          is setting the standard in <br />
+                          healthcare—l iterally.
                         </div>
                       </CSSTransition>
                     </div>
@@ -332,6 +341,7 @@ class Home extends React.Component {
                       </div>
                     </Tilt>
                   </div>
+                  
                   <div className="section">
                     <div className="content" id="content-06">
                       <CSSTransition
@@ -349,7 +359,7 @@ class Home extends React.Component {
                         onExited={() => {}}
                       >
                         <div className="title">
-                          <img src={artisanLogo} alt="artisan" />
+                          <img src={ikarus_black} alt="ikarus" />
                         </div>
                       </CSSTransition>
                       <CSSTransition
@@ -359,9 +369,9 @@ class Home extends React.Component {
                         onEntered={() => this.setState({ readyToMove: true })}
                       >
                         <div className="subtitle">
-                          is making a treat of wholesale
+                          is redefining the business
                           <br />
-                          subscriptions.
+                          marketplace.
                         </div>
                       </CSSTransition>
                     </div>

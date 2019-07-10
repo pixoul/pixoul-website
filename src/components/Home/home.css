@@ -188,6 +188,9 @@
 #content-02 {
 	max-width: 294px;
 }
+#content-02 .subtitle {
+	margin-top: 200px;
+}
 
 .watermark {
 	font-size: 522px;
