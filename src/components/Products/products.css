@@ -92,7 +92,6 @@ figure {
   font-size: 20px;
   margin: 0;
   font-weight: 300;
-  font-style: italic;
   margin-top: 129px;
 }
 
@@ -119,7 +118,7 @@ figure {
 .product-item .shadow {
   background: #ffffff;
   box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2), 0px 3px 16px 2px rgba(0,0,0,0.12), 0px 9px 12px 1px rgba(0,0,0,0.14);
-  border-radius: 20px;
+  border-radius: 15px;
   position: absolute;
   top: 0;
   left: 0;
@@ -132,6 +131,7 @@ figure {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 15px;
 }
 
 .slick-slide {
