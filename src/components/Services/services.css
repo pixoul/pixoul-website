@@ -101,11 +101,13 @@
   align-items: center;
   padding: 30px 71px 30px 44px;
   border-radius: 15px;
+  flex-wrap: wrap;
 }
 
 .pixoul_grid_column_item-content {
   flex: 1;
   margin: 0 20px 0 79px;
+  min-width: 300px;
 }
 
 .pixoul_grid_column_item:hover {
@@ -511,6 +513,11 @@ a:hover + .blue_line_under_label {
   }
   .pixoul_grid_column_item {
     padding: 20px 10px 20px 10px;
+    justify-content: center;
+  }
+
+  .pixoul_grid_column_item-content {
+    margin: 0 10px 0 10px;
   }
 
   /* Strategy, tech, design subpages */
