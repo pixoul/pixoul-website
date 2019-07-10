@@ -109,7 +109,7 @@ class ProductsPage extends React.Component {
                   <div className="parallax-content about-page-button-animation">
                     <Link
                       className="pixoul_button"
-                      to='/'
+                      to={`/#${pageId}`}
                     >
                       <img src={buttonX} alt="buttonX" />
                     </Link>
