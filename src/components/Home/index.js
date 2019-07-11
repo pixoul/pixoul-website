@@ -221,8 +221,8 @@ class Home extends React.Component {
                           onEntered={() => this.setState({ readyToMove: true })}
                         >
                           <div className="subtitle">
-                            is shaping the future of the
-                            <br /> online purchase journey.
+                            is transforming how logistics 
+                            <br /> gets done.
                           </div>
                         </CSSTransition>
                       </div>
@@ -341,7 +341,7 @@ class Home extends React.Component {
                       >
                         <div className="subtitle">
                           is setting the standard in <br />
-                          healthcare—l iterally.
+                          healthcare—literally.
                         </div>
                       </CSSTransition>
                     </div>
