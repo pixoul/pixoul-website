@@ -262,7 +262,7 @@ class Home extends React.Component {
                         >
                           <div className="subtitle">
                             is taking field analytics to a 
-                            <br />
+                            <br />&nbsp;
                             whole new level.
                           </div>
                         </CSSTransition>
