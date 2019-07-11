@@ -25,15 +25,16 @@ class PixoulContactForm extends Component {
     }
   }
 
-  sendEmail = () => {
+  sendEmail = e => {
+   e.preventDefault();
    var service_id = "default_service";
    var template_id = "template_ZXl459FQ";
 
    emailjs.sendForm(service_id, template_id, '#email-form', 'user_ytg8d5jM3PqNA0AD32EY0')
     .then((response) => {
-       console.log('SUCCESS!', response.status, response.text);
+       alert('Email sent!');
     }, (err) => {
-       console.log('FAILED...', err);
+       alert('Failed, please try again later');
     });
   }
 
@@ -99,7 +100,7 @@ class PixoulContactForm extends Component {
               onExited={this.onExited}
             >
               <div className="form-animation-container">
-              <form className="contact_section_form" autoComplete="on" id="email-form" onSubmit={this.sendEmail}>
+              <form className="contact_section_form" autoComplete="on" id="email-form"  onSubmit={this.sendEmail}>
                 <div className="group">
                   <input
                     type="text"
