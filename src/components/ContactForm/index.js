@@ -38,7 +38,7 @@ class PixoulContactForm extends Component {
    e.preventDefault();
    const { firstName, lastName, phone, email, interestedIn } = this.state;
    const service_id = "default_service";
-   const template_id = "template_ZXl459FQ";
+   const template_id = "template_3l1ZvrRp";
    emailjs.send(service_id,
     template_id, {
       "email": email,
@@ -47,7 +47,7 @@ class PixoulContactForm extends Component {
       "phone": phone,
       "interestedIn": interestedIn,
     }, 
-    'user_ytg8d5jM3PqNA0AD32EY0')
+    'user_y5b1msGPAYKIW4szoHygG')
     .then((response) => {
         alert('Email sent!');
     }, (err) => {
