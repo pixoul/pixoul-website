@@ -534,13 +534,14 @@
 	.first-content {
 		position: relative;
 		left: 0;
-		top: -25px;
-		transform: none;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
 	.first-description {
 		white-space: normal;
 		font-size: 22px;
+		max-width: 100%;
 	}
 
 	.Tilt {
