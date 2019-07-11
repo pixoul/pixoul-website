@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import { CSSTransition } from "react-transition-group";
+import * as emailjs from 'emailjs-com';
 import "./contact-form.css";
 
 class PixoulContactForm extends Component {
@@ -22,6 +23,18 @@ class PixoulContactForm extends Component {
       this.setState({ loaded: true });
       this.props.onExited();
     }
+  }
+
+  sendEmail = () => {
+   var service_id = "default_service";
+   var template_id = "template_ZXl459FQ";
+
+   emailjs.sendForm(service_id, template_id, '#email-form', 'user_ytg8d5jM3PqNA0AD32EY0')
+    .then((response) => {
+       console.log('SUCCESS!', response.status, response.text);
+    }, (err) => {
+       console.log('FAILED...', err);
+    });
   }
 
   render() {
@@ -86,7 +99,7 @@ class PixoulContactForm extends Component {
               onExited={this.onExited}
             >
               <div className="form-animation-container">
-              <form className="contact_section_form" autoComplete="on">
+              <form className="contact_section_form" autoComplete="on" id="email-form" onSubmit={this.sendEmail}>
                 <div className="group">
                   <input
                     type="text"

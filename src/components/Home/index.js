@@ -122,7 +122,7 @@ class Home extends React.Component {
               return (
                 <ReactFullpage.Wrapper>
                   <div className="section" id="first">
-                    <div class="content-wrapper">
+                    <div className="content-wrapper">
                     <img data-src={bgImage} alt="bgImage" className="bg-image" />
                     <div className="first-content">
                       <div className="first-content__wrapper">
@@ -153,7 +153,7 @@ class Home extends React.Component {
                     </div>
                   </div>
                   <div className="section">
-                    <div class="content-wrapper">
+                    <div className="content-wrapper">
                       <div className="content" id="content-01">
                         <CSSTransition
                           in={page === 1 && pageLoaded && width > 1199}
@@ -194,7 +194,7 @@ class Home extends React.Component {
                     </div>
                   </div>
                   <div className="section">
-                    <div class="content-wrapper">
+                    <div className="content-wrapper">
                       <div className="content" id="content-02">
                         <CSSTransition
                           in={page === 2 && pageLoaded && width > 1199}
