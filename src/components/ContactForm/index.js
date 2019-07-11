@@ -11,6 +11,11 @@ class PixoulContactForm extends Component {
 
   static defaultProps = {
     delay: 0,
+    firstName: '',
+    lastName: '',
+    phone: '',
+    email: '',
+    interestedIn: '',
   }
 
   state = {
@@ -25,16 +30,28 @@ class PixoulContactForm extends Component {
     }
   }
 
+  onChange = (item, event) => {
+    this.setState({ [item]: event.target.value });
+  }
+
   sendEmail = e => {
    e.preventDefault();
-   var service_id = "default_service";
-   var template_id = "template_ZXl459FQ";
-
-   emailjs.sendForm(service_id, template_id, '#email-form', 'user_ytg8d5jM3PqNA0AD32EY0')
+   const { firstName, lastName, phone, email, interestedIn } = this.state;
+   const service_id = "default_service";
+   const template_id = "template_ZXl459FQ";
+   emailjs.send(service_id,
+    template_id, {
+      "email": email,
+      "first_name": firstName,
+      "last_name": lastName,
+      "phone": phone,
+      "interestedIn": interestedIn,
+    }, 
+    'user_ytg8d5jM3PqNA0AD32EY0')
     .then((response) => {
-       alert('Email sent!');
+        alert('Email sent!');
     }, (err) => {
-       alert('Failed, please try again later');
+        alert('Failed, please try again later');
     });
   }
 
@@ -107,6 +124,7 @@ class PixoulContactForm extends Component {
                     id="given-name"
                     required="required"
                     name="given-name"
+                    onChange={(text) => this.onChange('firstName', text)}
                   />
                   <label htmlFor="contact_form_first_name">
                     First Name <span className="asterix">*</span>
@@ -118,6 +136,7 @@ class PixoulContactForm extends Component {
                     id="family-name"
                     required="required"
                     name="family-name"
+                    onChange={(text) => this.onChange('lastName', text)}
                   />
                   <label htmlFor="contact_form_last_name">
                     Last Name <span className="asterix">*</span>
@@ -130,6 +149,7 @@ class PixoulContactForm extends Component {
                     id="email"
                     required="required"
                     autoComplete="email"
+                    onChange={(text) => this.onChange('email', text)}
                   />
                   <label htmlFor="contact_form_email">
                     Email <span className="asterix">*</span>
@@ -142,6 +162,7 @@ class PixoulContactForm extends Component {
                     id="contact_form_phone"
                     required="required"
                     autoComplete="tel"
+                    onChange={(text) => this.onChange('phone', text)}
                   />
                   <label htmlFor="contact_form_phone">
                     Phone <span className="asterix">*</span>
@@ -152,6 +173,7 @@ class PixoulContactForm extends Component {
                     type="text"
                     id="contact_form_interest"
                     required="required"
+                    onChange={(text) => this.onChange('interestedIn', text)}
                   />
                   <label htmlFor="contact_form_interest">
                     I'm Interested In...<span className="asterix">*</span>
