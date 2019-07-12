@@ -127,10 +127,6 @@ button {
 }
 
 @media (max-width: 767px) {
-  .header {
-    left: 20px;
-  }
-
   .contactus-button {
     display: none;
   }
