@@ -19,6 +19,7 @@
     "react-slick": "^0.24.0",
     "react-tilt": "^0.1.4",
     "react-transition-group": "^4.1.0",
+    "shards-react": "^1.0.3",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
