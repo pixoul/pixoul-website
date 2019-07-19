@@ -4,6 +4,10 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import App from "app/App";
 import * as serviceWorker from "./serviceWorker";
 import { Route, BrowserRouter } from "react-router-dom";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "shards-ui/dist/css/shards.min.css"
+
 const routing = (
   <ParallaxProvider>
     <BrowserRouter>
