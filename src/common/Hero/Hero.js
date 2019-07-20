@@ -9,23 +9,23 @@ export default function Hero(props){
   }
 
   return(
-    <div class="shards-hero" style={styles}>
-      <div class="shards-hero hero-header">
+    <div className="shards-hero" style={styles}>
+      <div className="shards-hero hero-header">
         { props.header }
       </div>
-      <div class="shards-hero hero-content">
+      <div className="shards-hero hero-content">
         <Container>
           <Row>
             <Col sm="12">
-              <h1 class="text-center">{props.title}</h1>
-              <p class="text-center">{props.tagline}</p>
+              <h1 className="text-center">{props.title}</h1>
+              <p className="text-center">{props.tagline}</p>
             </Col>
           </Row>
         </Container>
       </div>
-      <div class="shards-hero hero-footer">
+      <div className="shards-hero hero-footer">
         {props.footer}
-        <button class="btn">{props.action}</button>
+        <button className="btn">{props.action}</button>
       </div>
     </div>
   )
