@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+
+
+.app-container {
+  background-color: $grey;
+}
+
+
+.side-menu {
+  padding: 75px;
+  background-color: $grey;
+  a {
+    color: $white;
+    font-size: $sidemenu-item-font-size;
+  }
+}

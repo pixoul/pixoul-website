@@ -1,6 +1,5 @@
 import React from "react";
 
-import Header from "common/Header/Header"
 import Hero from "common/Hero/Hero"
 import bg from "images/bg.png"
 import favicon from "images/favicon.svg"
@@ -11,7 +10,6 @@ export default function Home() {
     <div>
       <Hero
         bg={bg}
-        header={<Header />}
         title={<img src={favicon} />}
         tagline="We’re a digital services firm with a focus on design, technology, and strategic innovation."
         action={<img src={arrow} />}

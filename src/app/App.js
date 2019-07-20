@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import "./App.scss"
+
 import Header from "common/Header/Header"
 import SideMenu from "common/SideMenu/SideMenu"
 import Home from "home/Home"
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <SideMenu />
-        <Home />
-      </div>
-    );
-  }
-}
+export default function App(props) {
 
-export default App;
+  const [open, toggleMenu] = useState(false);
+
+  return (
+    <div>
+      <SideMenu open={open} toggleMenu={toggleMenu}>
+        <Header toggleMenu={() => toggleMenu(!open)} />
+        <Home />
+      </SideMenu>
+    </div>
+  );
+}
