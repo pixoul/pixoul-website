@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.footer {
+   height: 270px;
+   padding: 60px 100px;
+   background: linear-gradient(280deg, #{$lightGrey} 50%, #{$darkGrey} 50%);
+
+
+   .list-collection {
+     list-style: none;
+     display: inline-block;
+     margin-right: 85px;
+
+     &.right {
+       margin-right: 0;
+       margin-left: 130px;
+     }
+
+     .list-title {
+       color: $white;
+       font-size: 18px;
+       font-weight: bold;
+       margin-bottom: 20px;
+     }
+
+     .list-subtitle {
+       color: $white;
+       font-size: 18px;
+       font-weight: 500;
+       margin-bottom: 20px;
+     }
+
+     .list-item {
+       margin: 10px 0;
+       color: $white;
+       font-size: 14px;
+       font-weight: 300;
+
+       a {
+         color: $white;
+         text-decoration: none;
+
+         &:hover {
+           opacity: 0.7;
+           transition: opacity .6s;
+         }
+       }
+
+     }
+   }
+}
