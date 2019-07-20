@@ -1,11 +1,18 @@
-import React, { useState } from "react"
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react"
+import { Link, withRouter } from "react-router-dom";
 import { scaleDown as Menu } from 'react-burger-menu'
 import { Button } from "shards-react";
 
 import "./SideMenu.scss"
 
-export default function SideMenu(props){
+function SideMenu(props){
+
+  useEffect(() => {
+    props.history.listen((location, action) => {
+      props.toggleMenu(false)
+    });
+  })
+
   return(
     <div id="outer-container" className="app-container">
       <Menu
@@ -47,3 +54,5 @@ export default function SideMenu(props){
     </div>
   )
 }
+
+export default withRouter(SideMenu)
