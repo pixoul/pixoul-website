@@ -1,6 +1,6 @@
 import React from "react";
 
-import Header from "app/Header"
+import Header from "common/Header/Header"
 import Hero from "common/Hero/Hero"
 import bg from "images/bg.png"
 import favicon from "images/favicon.svg"
