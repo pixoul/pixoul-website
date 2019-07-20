@@ -7,7 +7,9 @@
 }
 
 .side-menu {
-  padding: 75px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 75px;
   background-color: $grey;
 
   .menu-item {
@@ -18,11 +20,7 @@
   }
 
   .menu-footer {
-    position: absolute;
-    bottom: 75px;
-    right: 0;
-    left: 0;
-    padding: 25px 0 0 75px;
+    margin-top: 240px;
     color: $white;
 
     .menu-cta {

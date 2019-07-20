@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
-import { scaleRotate as Menu } from 'react-burger-menu'
+import { scaleDown as Menu } from 'react-burger-menu'
 import { Button } from "shards-react";
 
 import "./SideMenu.scss"
@@ -14,6 +14,7 @@ export default function SideMenu(props){
         scaleDown
         onStateChange={(state) => props.toggleMenu(state.menuOpen)}
         disableAutoFocus
+        noOverlay
         pageWrapId={ "page-wrap" }
         outerContainerId={ "outer-container" }
         width={400}
