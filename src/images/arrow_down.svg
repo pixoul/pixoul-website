@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>DownArrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.00435000011,20.033051 L9.15909091,10.9913793 L0.00435000011,1.9497076 L1.92045455,0.0488505747 L12.9507576,10.9913793 L1.92045455,21.933908 L0.00435000011,20.033051 Z" id="path-1"></path>
+    </defs>
+    <g id="v6.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-692.000000, -672.000000)">
+            <g id="DownArrow" transform="translate(720.000000, 700.000000) scale(1, -1) rotate(270.000000) translate(-720.000000, -700.000000) translate(694.000000, 674.000000)">
+                <circle id="Oval" stroke="#3180FB" stroke-width="2.5" cx="26" cy="26" r="26"></circle>
+                <g id="ic_arrow_forward_24px" transform="translate(19.500000, 15.500000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#3180FB" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
