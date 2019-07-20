@@ -5,7 +5,10 @@ import "./App.scss"
 import Header from "common/Header/Header"
 import Footer from "common/Footer/Footer"
 import SideMenu from "common/SideMenu/SideMenu"
+
+/* Page Components */
 import Home from "home/Home"
+import About from "about/About"
 
 export default function App(props) {
 
@@ -30,7 +33,7 @@ export default function App(props) {
     {
       label: 'About',
       route: '/about',
-      component: Home
+      component: About
     },
     {
       label: 'Blog',
