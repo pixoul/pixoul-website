@@ -15,6 +15,26 @@ export default function App(props) {
       label: 'Home',
       route: '/home',
       component: Home
+    },
+    {
+      label: 'Work',
+      route: '/work',
+      component: Home
+    },
+    {
+      label: 'Capabilities',
+      route: '/capabilities',
+      component: Home
+    },
+    {
+      label: 'About',
+      route: '/about',
+      component: Home
+    },
+    {
+      label: 'Blog',
+      route: '/blog',
+      component: Home
     }
   ]
 
