@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
-import { scaleDown as Menu } from 'react-burger-menu'
+import { scaleRotate as Menu } from 'react-burger-menu'
 import { Button } from "shards-react";
 
 import "./SideMenu.scss"
