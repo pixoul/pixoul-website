@@ -17,7 +17,10 @@ export default function SideMenu(props){
         width={400}
         className={ "side-menu" }
       >
-        <Link className="menu-item" to='/aboutus#00'>About</Link>
+
+        {props.menuItems.map((item, i) => (
+          <Link key={i} className="menu-item" to={item.route}>{item.label}</Link>
+        ))}
       </Menu>
       <main id="page-wrap">
         {props.children}
