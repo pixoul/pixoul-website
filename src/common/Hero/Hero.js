@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col } from "shards-react";
+import { Container, Row, Col, Button } from "shards-react";
 import "./Hero.scss"
 
 export default function Hero(props){
@@ -25,7 +25,7 @@ export default function Hero(props){
       </div>
       <div className="shards-hero hero-footer">
         {props.footer}
-        <button className="btn">{props.action}</button>
+        <Button outline theme="transparent">{props.action}</Button>
       </div>
     </div>
   )
