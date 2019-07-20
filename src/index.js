@@ -7,6 +7,7 @@ import { Route, BrowserRouter } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
+import "typeface-roboto";
 
 const routing = (
   <ParallaxProvider>

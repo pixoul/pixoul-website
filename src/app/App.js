@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import "./App.scss"
 
 import Header from "common/Header/Header"
+import Footer from "common/Footer/Footer"
 import SideMenu from "common/SideMenu/SideMenu"
 import Home from "home/Home"
 
@@ -47,6 +48,7 @@ export default function App(props) {
           <Route key={i} path={item.route} component={item.component} />
         ))}
 
+        <Footer />
       </SideMenu>
     </div>
   );
