@@ -10,10 +10,10 @@ export default function Home() {
     <div>
       <Hero
         bg={bg}
-        title={<img src={favicon} />}
-        tagline="We’re a digital services firm with a focus on design, technology, and strategic innovation."
+        image={<img src={favicon} />}
+        title="We’re a digital services firm with a focus on design, technology, and strategic innovation."
+        tagline="See how we help ambitious brands dominate digital."
         action={<img src={arrow} />}
-        footer="See how we help ambitious brands dominate digital."
       />
     </div>
   )

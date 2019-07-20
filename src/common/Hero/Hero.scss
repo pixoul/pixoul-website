@@ -1,5 +1,4 @@
 /* Hero Component SCSS */
-
 .shards-hero {
   display: flex;
   flex-direction: column;
@@ -13,24 +12,39 @@
   &.hero-header {
     z-index: 2;
   }
-
   // Hero content and footer
   &.hero-content,
   &.hero-footer {
     z-index: 1;
   }
-
   // Hero content
   &.hero-content {
-    margin-top: 7%;
-    margin-bottom: auto;
-    font-size: 45px;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    &.center {
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 45px;
+      font-weight: normal;
+      max-width: 675px;
+      margin: auto;
+    }
+
+  }
   // Hero footer
   &.hero-footer {
     padding: 0.75rem 1.5rem;
     text-align: center;
     margin-bottom: 7%;
+
+    .hero-tagline {
+      margin-top: 130px;
+      font-size: 20px;
+      font-weight: normal;
+    }
   }
 }

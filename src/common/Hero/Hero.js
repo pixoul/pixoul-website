@@ -13,18 +13,18 @@ export default function Hero(props){
       <div className="shards-hero hero-header">
         { props.header }
       </div>
-      <div className="shards-hero hero-content">
+      <div className="shards-hero hero-content center">
         <Container>
           <Row>
             <Col sm="12">
-              <h1 className="text-center">{props.title}</h1>
-              <p className="text-center">{props.tagline}</p>
+              <div className="hero-image">{props.image}</div>
+              <div className="hero-title">{props.title}</div>
             </Col>
           </Row>
         </Container>
       </div>
       <div className="shards-hero hero-footer">
-        {props.footer}
+        <div className="hero-tagline">{props.tagline}</div>
         <Button outline theme="transparent">{props.action}</Button>
       </div>
     </div>
