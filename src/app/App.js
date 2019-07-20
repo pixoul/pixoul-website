@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Route } from "react-router-dom";
 import "./App.scss"
 
-import Header from "common/Header/Header"
-import Footer from "common/Footer/Footer"
-import SideMenu from "common/SideMenu/SideMenu"
+import Header from "Layout/Header/Header"
+import Footer from "Layout/Footer/Footer"
+import SideMenu from "Layout/SideMenu/SideMenu"
 
 /* Page Components */
-import Home from "home/Home"
-import About from "about/About"
+import Home from "Home/Home"
+import About from "About/About"
 
 export default function App(props) {
 

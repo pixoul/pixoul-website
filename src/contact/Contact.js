@@ -1,6 +1,6 @@
 import React from "react";
 
-import Hero from "common/Hero/Hero"
+import Hero from "Utils/Hero/Hero"
 import bg from "images/bg.png"
 import favicon from "images/favicon.svg"
 import arrow from "images/arrow_down.svg"
