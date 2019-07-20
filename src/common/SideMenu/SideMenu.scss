@@ -6,12 +6,27 @@
   background-color: $grey;
 }
 
-
 .side-menu {
   padding: 75px;
   background-color: $grey;
-  a {
+
+  .menu-item {
     color: $white;
     font-size: $sidemenu-item-font-size;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu-footer {
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+    left: 0;
+    padding: 25px 0 0 75px;
+    color: $white;
+
+    .menu-cta {
+      padding: 10px 0;
+    }
   }
 }
