@@ -5,6 +5,9 @@ import { Button } from "shards-react";
 
 import "./SideMenu.scss"
 
+import times from "images/buttonX.svg"
+
+
 function SideMenu(props){
 
   useEffect(() => {
@@ -28,6 +31,11 @@ function SideMenu(props){
         className={ "side-menu" }
       >
 
+        <Button theme="light" className="menu-close" onClick={() => props.toggleMenu(false)}>
+         <span>X</span>
+        </Button>
+
+
         {props.menuItems.map((item, i) => (
           <Link key={i} className="menu-item" to={item.route}>{item.label}</Link>
         ))}
@@ -47,6 +55,9 @@ function SideMenu(props){
           </ul>
         </div>
       </Menu>
+
+
+
       <main id="page-wrap">
         {props.children}
       </main>
