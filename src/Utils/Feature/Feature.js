@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import "./Feature.scss"
@@ -13,11 +14,11 @@ export default function Feature(props){
         <h6 className="feature-title">{title}</h6>
       </div>
       <small className="feature-tagline">{tagline}</small>
-      <a href={actionLink} className="feature-action">
+      <Link to={actionLink} className="feature-action">
         <small>
           <strong>{actionText} <FontAwesomeIcon icon={faLongArrowAltRight} /></strong>
         </small>
-      </a>
+      </Link>
     </div>
   )
 }
