@@ -1,9 +1,10 @@
 import React from "react";
 
 import Hero from "Utils/Hero/Hero"
-import bg from "images/bg.png"
+import bg from "images/bg8.png"
 import favicon from "images/favicon.svg"
 import arrow from "images/arrow_down.svg"
+import browser from "images/browser_window.svg"
 
 export default function About() {
   return(
@@ -12,9 +13,10 @@ export default function About() {
         bg={bg}
         image={<img src={favicon} />}
         title="Complex problems deserve elegant solutions."
-        tagline="We help brands and organizations succeed in the digital age."
+        tagline={<img src={browser} />}
         action={<img src={arrow} />}
       />
+
     </div>
   )
 }
