@@ -8,9 +8,9 @@
 }
 
 .side-menu {
-  padding-top: 100px;
-  padding-bottom: 80px;
-  padding-left: 75px;
+  padding-top: $sidemenu-offset-top;
+  padding-bottom: $sidemenu-offset-bottom;
+  padding-left: $sidemenu-offset-left;
   background-color: $grey;
 
 
