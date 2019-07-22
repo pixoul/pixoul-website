@@ -1,14 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link, withRouter } from "react-router-dom";
+import cn from "classnames"
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Button } from "shards-react";
 import "./Header.scss"
 
 import logo from "images/logo.png"
 import menu from "images/menu.svg"
 
-export default function Header(props) {
+function Header(props) {
+
+  const [fallUnder, setFallUnder] = useState(false);
+
+  const classes = cn('header-container', {
+    'fall-under': fallUnder
+  })
+
+  function evaluateHeader(path){
+    if(path === '/home'){
+      setFallUnder(true)
+    }else{
+      setFallUnder(false)
+    }
+  }
+
+  useEffect(() => {
+    props.history.listen((location, action) => evaluateHeader(location.pathname));
+    evaluateHeader(props.location.pathname)
+  })
+
   return (
-    <div className="header-container">
-      <Navbar type="light" expand="md" theme="transparent">
+    <div className={classes}>
+      <Navbar type="light" expand="md">
         <NavbarBrand href="#"><img src={logo} /></NavbarBrand>
         <Nav className="ml-auto align-items-center">
           <NavItem>
@@ -22,3 +44,5 @@ export default function Header(props) {
     </div>
   );
 }
+
+export default withRouter(Header)

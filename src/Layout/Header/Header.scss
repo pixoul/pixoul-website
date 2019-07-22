@@ -1,10 +1,17 @@
 .header-container {
-  position: absolute;
-  top: 0;
-  right: 150px;
-  left: 150px;
   z-index: 100;
   height: 100px;
+  background-color: white;
+  padding: 0 150px;
+
+  &.fall-under {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    left: 150px;
+    background-color: transparent;
+    padding: 0;
+  }
 }
 
 .menu-icon {
