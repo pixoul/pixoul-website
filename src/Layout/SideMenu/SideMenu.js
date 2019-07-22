@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
+import cn from "classnames"
 import { Link, withRouter } from "react-router-dom";
-import { scaleDown as Menu } from 'react-burger-menu'
+import { scaleRotate as Menu } from 'react-burger-menu'
 import { Button } from "shards-react";
 
 import "./SideMenu.scss"
@@ -16,13 +17,17 @@ function SideMenu(props){
     });
   })
 
+  const classes = cn('menu-close', {
+    'visible': props.open
+  })
+
   return(
     <div id="outer-container" className="app-container">
       <Menu
         isOpen={props.open}
         right
         scaleDown
-        onStateChange={(state) => props.toggleMenu(state.menuOpen)}
+        onStateChange={(state) => props.toggleMenu(state.isOpen)}
         disableAutoFocus
         noOverlay
         pageWrapId={ "page-wrap" }
@@ -31,7 +36,7 @@ function SideMenu(props){
         className={ "side-menu" }
       >
 
-        <Button theme="light" className="menu-close" onClick={() => props.toggleMenu(false)}>
+        <Button theme="light" className={classes} onClick={() => props.toggleMenu(false)}>
          <span>X</span>
         </Button>
 
