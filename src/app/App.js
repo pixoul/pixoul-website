@@ -9,6 +9,7 @@ import SideMenu from "Layout/SideMenu/SideMenu"
 /* Page Components */
 import Home from "Home/Home"
 import About from "About/About"
+import Capabilities from "Capabilities/Capabilities"
 
 export default function App(props) {
 
@@ -28,7 +29,7 @@ export default function App(props) {
     {
       label: 'Capabilities',
       route: '/capabilities',
-      component: Home
+      component: Capabilities
     },
     {
       label: 'About',
