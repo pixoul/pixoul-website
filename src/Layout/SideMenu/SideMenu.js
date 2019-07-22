@@ -61,8 +61,6 @@ function SideMenu(props){
         </div>
       </Menu>
 
-
-
       <main id="page-wrap">
         {props.children}
       </main>
