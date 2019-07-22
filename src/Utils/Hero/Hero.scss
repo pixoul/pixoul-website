@@ -1,7 +1,9 @@
 /* Hero Component SCSS */
-.shards-hero {
+
+@import "../../styles/variables.scss";
+
+.hero {
   display: flex;
-  flex-direction: column;
   width: 100%;
   min-width: 100%;
   height: 100vh;
@@ -9,42 +11,91 @@
   background-size: cover;
   background-position: center center;
 
-  &.hero-header {
+  //Core classes
+  .hero-header,
+  .hero-content,
+  .hero-footer {
     z-index: 2;
   }
-  // Hero content and footer
-  &.hero-content,
-  &.hero-footer {
-    z-index: 1;
-  }
   // Hero content
-  &.hero-content {
-    display: flex;
-    align-items: center;
+  .hero-content {
+    padding-top: 200px;
+  }
+
+  .hero-footer {
+    padding-top: 90px;
+  }
+
+  .hero-media {
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-size: 45px;
+    font-weight: normal;
+  }
+
+  .hero-tagline {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .hero-action {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+
+    .hero-icon {
+      font-size: 50px;
+    }
+  }
+
+  //Theme classes
+  &.light {
+    color: $white;
+
+    .hero-icon {
+      color: $white;
+    }
+  }
+
+  &.dark {
+    color: $black;
+
+    .hero-icon {
+      color: $blue;
+    }
+  }
+
+  &.center {
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
 
-    &.center {
-      text-align: center;
+    .hero-header, .hero-content, .hero-footer {
+      flex-direction: column;
     }
 
-    .hero-title {
-      font-size: 45px;
-      font-weight: normal;
-      max-width: 675px;
-      margin: auto;
-    }
-
-  }
-  // Hero footer
-  &.hero-footer {
-    padding: 0.75rem 1.5rem;
-    text-align: center;
-    margin-bottom: 7%;
-
-    .hero-tagline {
-      margin-top: 130px;
-      font-size: 20px;
-      font-weight: normal;
+    .hero-title, .hero-tagline, .hero-action {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
+
+  &.left {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-action {
+      margin-top: 90px;
+    }
+  }
+
 }
