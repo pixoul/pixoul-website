@@ -1,32 +1,108 @@
 import React from "react"
-import { Container, Row, Col, Button } from "shards-react";
+import cn from "classnames"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
 import "./Hero.scss"
 
-export default function Hero(props){
+
+function HeroTitle(props){
+
+  const styles = {
+    width: props.width ? props.width : 675,
+    fontSize: props.size ? props.size : 45
+  }
+
+  return(
+    <div className="hero-title" style={styles}>
+      {props.text}
+    </div>
+  )
+}
+
+function HeroMedia(props){
+  return(
+    <div className="hero-media">
+      <img src={props.media} alt={props.alt}/>
+    </div>
+  )
+}
+
+function HeroTagline(props){
+  const styles = {
+    width: props.width ? props.width : 500,
+    fontSize: props.size ? props.size : 20
+  }
+
+  return(
+    <div className="hero-tagline" style={styles}>
+      {props.text}
+    </div>
+  )
+}
+
+function HeroAction({ icon = faChevronCircleDown, text}){
+  return(
+    <a className="hero-action">
+      { icon && (
+        <FontAwesomeIcon icon={icon} className="hero-icon" />
+      )}
+
+      {text}
+    </a>
+  )
+}
+
+function HeroHeader(props){
+  return(
+    <div className="hero-header">
+      { props.children }
+    </div>
+  )
+}
+
+function HeroFooter(props){
+  return(
+    <div className="hero-footer">
+      {props.children}
+    </div>
+  )
+}
+
+function HeroContent(props){
+  return(
+    <div className="hero-content">
+      {props.children}
+    </div>
+  )
+}
+
+function Hero(props){
 
   const styles = {
     backgroundImage: 'url('+props.bg+')'
   }
 
+  const classes = cn('hero', {
+    'light': props.theme === 'light',
+    'dark': props.theme === 'dark',
+    'center': props.align === 'center',
+    'left': props.align === 'left'
+  })
+
   return(
-    <div className="shards-hero" style={styles}>
-      <div className="shards-hero hero-header">
-        { props.header }
-      </div>
-      <div className="shards-hero hero-content center">
-        <Container>
-          <Row>
-            <Col sm="12">
-              <div className="hero-image">{props.image}</div>
-              <div className="hero-title">{props.title}</div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="shards-hero hero-footer">
-        <div className="hero-tagline">{props.tagline}</div>
-        <Button outline theme="transparent">{props.action}</Button>
-      </div>
+    <div className={classes} style={styles}>
+      {props.children}
     </div>
   )
+}
+
+export {
+  Hero,
+  HeroHeader,
+  HeroContent,
+  HeroFooter,
+  HeroMedia,
+  HeroTitle,
+  HeroTagline,
+  HeroAction
 }
