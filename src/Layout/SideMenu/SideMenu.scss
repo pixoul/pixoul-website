@@ -4,6 +4,7 @@
 
 .app-container {
   background-color: $grey;
+  height: 100vh;
 }
 
 .side-menu {
@@ -11,6 +12,11 @@
   padding-bottom: 80px;
   padding-left: 75px;
   background-color: $grey;
+
+
+  .bm-item-list {
+    overflow-y: hidden;
+  }
 
   .menu-item {
     color: $white;
@@ -37,7 +43,7 @@
     width: 55px;
     height: 55px;
     box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-    opacity: 1;
+    opacity: 0;
 
     span {
       font-size: 25px;
