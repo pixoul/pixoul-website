@@ -10,20 +10,22 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  overflow: hidden;
+  padding-top: 150px;
 
   //Core classes
   .hero-header,
   .hero-content,
   .hero-footer {
-    z-index: 2;
+    z-index: 0;
   }
   // Hero content
   .hero-content {
-    padding-top: 150px;
+    
   }
 
   .hero-footer {
-    padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   .hero-media {
@@ -72,7 +74,7 @@
   &.center {
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
 
     .hero-header, .hero-content, .hero-footer {
       flex-direction: column;
