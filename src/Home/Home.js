@@ -3,9 +3,8 @@ import React from "react";
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "Utils/Hero/Hero"
 import FeatureCollection from "Capabilities/FeatureCollection/FeatureCollection"
 
-import bg from "images/bg.png"
+import bg from "Home/bg.png"
 import favicon from "images/favicon.svg"
-import arrow from "images/arrow_down.svg"
 
 export default function Home() {
   return(

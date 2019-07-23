@@ -19,9 +19,14 @@ function HeroTitle(props){
 }
 
 function HeroMedia(props){
+
+  const styles = {
+    maxWidth: props.width ? props.width : '100%'
+  }
+
   return(
-    <div className="hero-media">
-      <img src={props.media} alt={props.alt}/>
+    <div className="hero-media" >
+      <img src={props.media} alt={props.alt} style={styles}/>
     </div>
   )
 }
