@@ -1,6 +1,6 @@
 import React from "react"
 
-import ClientSummary from "work/client-summary/client-summary"
+import ClientSummary from "utils/client-summary/client-summary"
 
 import bg from "images/bg01.png"
 import logo from "images/iuzeit.svg"
