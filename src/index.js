@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { ParallaxProvider } from 'react-scroll-parallax';
-import App from "App/App";
+import App from "app/App";
 import * as serviceWorker from "./serviceWorker";
 import { Route, BrowserRouter } from "react-router-dom";
 

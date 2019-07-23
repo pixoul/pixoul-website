@@ -1,10 +1,10 @@
 import React from "react"
 
-import FeatureCollection from "Capabilities/FeatureCollection/FeatureCollection"
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "Utils/Hero/Hero"
+import FeatureCollection from "capabilities/FeatureCollection/FeatureCollection"
+import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/Hero/Hero"
 
-import bg from "Capabilities/bg07.png"
-import phone from "Capabilities/phone-mockup.png"
+import bg from "capabilities/bg07.png"
+import phone from "capabilities/phone-mockup.png"
 
 export default function Capabilities(){
   return(
