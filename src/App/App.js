@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import "./App.scss"
 
 import Header from "Layout/Header/Header"
@@ -51,6 +51,8 @@ export default function App(props) {
         {menuItems.map((item, i) => (
           <Route key={i} path={item.route} component={item.component} />
         ))}
+
+        <Route exact path="/" render={() => (<Redirect to="/home"/>)}/>
 
         <Footer />
       </SideMenu>
