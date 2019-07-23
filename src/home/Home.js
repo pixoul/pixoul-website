@@ -1,9 +1,9 @@
 import React from "react";
 
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "Utils/Hero/Hero"
-import FeatureCollection from "Capabilities/FeatureCollection/FeatureCollection"
+import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/Hero/Hero"
+import FeatureCollection from "capabilities/FeatureCollection/FeatureCollection"
 
-import bg from "Home/bg.png"
+import bg from "home/bg.png"
 import favicon from "images/favicon.svg"
 
 export default function Home() {

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "shards-react";
 import { faPowerOff, faPaintBrush, faCode } from '@fortawesome/free-solid-svg-icons'
 import "./FeatureCollection.scss"
 
-import Feature from "Utils/Feature/Feature"
+import Feature from "utils/Feature/Feature"
 
 export default function FeatureCollection(){
   return(

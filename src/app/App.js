@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import { Route, Redirect } from "react-router-dom";
 import "./App.scss"
 
-import Header from "Layout/Header/Header"
-import Footer from "Layout/Footer/Footer"
-import SideMenu from "Layout/SideMenu/SideMenu"
+import Header from "layout/Header/Header"
+import Footer from "layout/Footer/Footer"
+import SideMenu from "layout/SideMenu/SideMenu"
 
 /* Page Components */
-import Home from "Home/Home"
-import About from "About/About"
-import Capabilities from "Capabilities/Capabilities"
-import Work from "Work/Work"
-import Contact from "Contact/Contact"
+import Home from "home/Home"
+import About from "about/About"
+import Capabilities from "capabilities/Capabilities"
+import Work from "work/Work"
+import Contact from "contact/Contact"
 
 export default function App(props) {
 
