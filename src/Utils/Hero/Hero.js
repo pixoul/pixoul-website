@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
 import "./Hero.scss"
 
-
 function HeroTitle(props){
 
   const styles = {
@@ -79,7 +78,8 @@ function HeroContent(props){
 function Hero(props){
 
   const styles = {
-    backgroundImage: 'url('+props.bg+')'
+    backgroundImage: 'url('+props.bg+')',
+    paddingTop: props.offset ? props.offset : 150
   }
 
   const classes = cn('hero', {

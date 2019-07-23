@@ -10,7 +10,7 @@ import arrow from "images/arrow_down.svg"
 export default function Home() {
   return(
     <div>
-      <Hero bg={bg} theme="dark" align="center">
+      <Hero bg={bg} theme="dark" align="center" offset={120}>
         <HeroContent>
           <HeroMedia media={favicon} />
           <HeroTitle text="We’re a digital services firm with a focus on design, technology, and strategic innovation." />
