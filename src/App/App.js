@@ -10,6 +10,7 @@ import SideMenu from "Layout/SideMenu/SideMenu"
 import Home from "Home/Home"
 import About from "About/About"
 import Capabilities from "Capabilities/Capabilities"
+import Contact from "Contact/Contact"
 
 export default function App(props) {
 
@@ -53,6 +54,7 @@ export default function App(props) {
         ))}
 
         <Route exact path="/" render={() => (<Redirect to="/home"/>)}/>
+        <Route exact path="/contact" component={Contact}/>
 
         <Footer />
       </SideMenu>
