@@ -16,7 +16,7 @@ function Header(props) {
   })
 
   function evaluateHeader(path){
-    if(path === '/home'){
+    if(path === '/home' || '/work'){
       setFallUnder(true)
     }else{
       setFallUnder(false)
