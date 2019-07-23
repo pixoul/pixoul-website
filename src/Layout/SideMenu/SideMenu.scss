@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+#page-wrap {
+  background-color: $white;
+}
+
 .side-menu {
   padding-top: $sidemenu-offset-top;
   padding-bottom: $sidemenu-offset-bottom;
