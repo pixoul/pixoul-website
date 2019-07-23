@@ -3,9 +3,8 @@ import React from "react"
 import FeatureCollection from "Capabilities/FeatureCollection/FeatureCollection"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "Utils/Hero/Hero"
 
-import bg from "images/bg07.png"
-import arrow from "images/arrow_down.svg"
-import phone from "images/phone-mockup.png"
+import bg from "Capabilities/bg07.png"
+import phone from "Capabilities/phone-mockup.png"
 
 export default function Capabilities(){
   return(
@@ -17,7 +16,7 @@ export default function Capabilities(){
           <HeroAction />
         </HeroContent>
         <HeroFooter>
-          <HeroMedia media={phone} />
+          <HeroMedia media={phone} width={350} />
         </HeroFooter>
       </Hero>
 
