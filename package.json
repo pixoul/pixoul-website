@@ -1,6 +1,9 @@
 {
   "name": "pixoul",
   "version": "0.1.0",
+  "engines": {
+    "node": "10.16.0"
+  },
   "private": true,
   "devDependencies": {
     "react-scripts": "3.0.1"
