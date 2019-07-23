@@ -79,7 +79,8 @@ function HeroContent(props){
 function Hero(props){
 
   const styles = {
-    backgroundImage: 'url('+props.bg+')'
+    backgroundImage: 'url('+props.bg+')',
+    paddingTop: props.offset ? props.offset : 150
   }
 
   const classes = cn('hero', {

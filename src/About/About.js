@@ -9,7 +9,7 @@ import browser from "images/browser_window.svg"
 export default function About() {
   return(
     <div>
-    <Hero bg={bg} theme="dark" align="center">
+    <Hero bg={bg} theme="dark" align="center" offset={250}>
       <HeroContent>
         <HeroTitle
           text="Complex problems deserve elegant solutions."
@@ -18,11 +18,13 @@ export default function About() {
         />
         <HeroTagline
           text="We help brands and organizations succeed in the digital age."
+          width={650}
           size={22}
         />
-        <HeroAction />
+
       </HeroContent>
       <HeroFooter>
+        <HeroAction />
         <HeroMedia media={browser} />
       </HeroFooter>
     </Hero>
