@@ -10,6 +10,7 @@ import SideMenu from "Layout/SideMenu/SideMenu"
 import Home from "Home/Home"
 import About from "About/About"
 import Capabilities from "Capabilities/Capabilities"
+import Work from "Work/Work"
 import Contact from "Contact/Contact"
 
 export default function App(props) {
@@ -25,7 +26,7 @@ export default function App(props) {
     {
       label: 'Work',
       route: '/work',
-      component: Home
+      component: Work
     },
     {
       label: 'Capabilities',
@@ -36,11 +37,6 @@ export default function App(props) {
       label: 'About',
       route: '/about',
       component: About
-    },
-    {
-      label: 'Blog',
-      route: '/blog',
-      component: Home
     }
   ]
 
