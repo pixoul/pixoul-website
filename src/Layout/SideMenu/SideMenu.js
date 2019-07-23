@@ -47,7 +47,7 @@ function SideMenu(props){
 
         <div className="menu-footer">
           <div className="menu-cta">
-            <Button squared theme="light">Contact Us</Button>
+            <Button squared theme="light" tag={Link} to="/contact">Contact Us</Button>
           </div>
 
           <ul className="list-unstyled">

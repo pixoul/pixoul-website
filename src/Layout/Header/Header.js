@@ -34,7 +34,7 @@ function Header(props) {
         <NavbarBrand href="#"><img src={logo} /></NavbarBrand>
         <Nav className="ml-auto align-items-center">
           <NavItem>
-            <Button outline >Contact Us</Button>
+            <Button outline tag={Link} to="/contact">Contact Us</Button>
           </NavItem>
           <NavItem>
             <NavLink className="menu-icon" onClick={props.toggleMenu} ><img src={menu} /></NavLink>
