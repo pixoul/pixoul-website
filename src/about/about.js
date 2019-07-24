@@ -8,6 +8,7 @@ import browser from "images/browser_window.svg"
 
 import PartnerStats from "about/partner-stats/partner-stats"
 import OurValue from "about/our-value/our-value"
+import PartnerNetwork from "about/partner-network/partner-network"
 
 export default function About() {
   return(
@@ -36,6 +37,7 @@ export default function About() {
 
     <OurValue />
 
+    <PartnerNetwork />
     </div>
   )
 }
