@@ -15,33 +15,33 @@ export default function CapabilitesCollection(){
       />
       <Row>
         <Col sm="12" md="4">
-          <Feature>
+          <Feature width={343} >
             <FeatureHeader>
               <FeatureIcon icon={faPowerOff} color="#3180fb" />
               <FeatureTitle text="Strategy" />
             </FeatureHeader>
             <FeatureTagline text="Reimagine and redefine your organizational approach by developing new ways of attaining mission-critical KPIs." />
-            <FeatureAction link="/capabilities/strategy" text="Learn More" color="#2ec986" />
+            <FeatureAction link="/capabilities/strategy" text="Learn More" />
           </Feature>
         </Col>
         <Col sm="12" md="4">
-          <Feature>
+          <Feature width={343}>
             <FeatureHeader>
               <FeatureIcon icon={faPaintBrush} color="#3180fb" />
               <FeatureTitle text="Design Thinking" />
             </FeatureHeader>
             <FeatureTagline text="Use Design Thinking to create products, services, systems, and experiences that address core needs of your target users." />
-            <FeatureAction link="/capabilities/design" text="Learn More" color="#2ec986" />
+            <FeatureAction link="/capabilities/design" text="Learn More" />
           </Feature>
         </Col>
         <Col sm="12" md="4">
-          <Feature>
+          <Feature width={343}>
             <FeatureHeader>
               <FeatureIcon icon={faCode} color="#3180fb" />
               <FeatureTitle text="Technology" />
             </FeatureHeader>
             <FeatureTagline text="Bring your digital solution to life with cutting-edge infrastructure that can scale across devices and platforms." />
-            <FeatureAction link="/capabilities/technology" text="Learn More" color="#2ec986" />
+            <FeatureAction link="/capabilities/technology" text="Learn More" />
           </Feature>
         </Col>
       </Row>

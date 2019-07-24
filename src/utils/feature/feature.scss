@@ -2,10 +2,23 @@
 .feature {
   margin: 10px;
 
+  &.center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .feature-action {
     font-weight: 500;
     display: block;
     margin-top: 20px;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.7;
+      transition: opacity .6s;
+    }
   }
 
   .feature-title {
