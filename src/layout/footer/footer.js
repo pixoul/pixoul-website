@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "shards-react";
 
-import "./Footer.scss"
+import "./footer.scss"
 
 export default function Footer(){
   return(
