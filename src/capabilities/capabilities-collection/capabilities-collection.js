@@ -11,7 +11,7 @@ export default function CapabilitesCollection(){
     <Container className="feature-collection">
       <Opening
         title="Our Capabilities"
-        subtitle="Our capabilites cross the spectrum."
+        subtitle="We work across industries and verticals to deliver impactful solutions."
       />
       <Row>
         <Col sm="12" md="4">
