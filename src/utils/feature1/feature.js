@@ -12,8 +12,14 @@ function FeatureTagline(props){
 }
 
 function FeatureAction(props){
+
+  const styles = {
+    fontSize: props.size ? props.size : 20,
+    color: props.color ? props.color : '#2ec986'
+  }
+
   return(
-    <Link to={props.link} className="feature-action">
+    <Link to={props.link} className="feature-action" style={styles}>
       <small>
         <strong>{props.text} <FontAwesomeIcon icon={faLongArrowAltRight} /></strong>
       </small>
@@ -22,8 +28,14 @@ function FeatureAction(props){
 }
 
 function FeatureTitle(props){
+
+  const styles = {
+    fontSize: props.size ? props.size : 20,
+    color: props.color ? props.color : '#000000'
+  }
+
   return(
-    <h6 className="feature-title">{props.text}</h6>
+    <h6 className="feature-title" style={styles}>{props.text}</h6>
   )
 }
 
