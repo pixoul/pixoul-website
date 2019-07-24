@@ -1,4 +1,5 @@
 import React from "react"
+import cn from "classnames"
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
@@ -66,8 +67,18 @@ function FeatureHeader(props){
 }
 
 export default function Feature(props){
+
+  const classes = cn('feature', {
+    'center': props.align === 'center'
+  })
+
+  const styles = {
+    width: props.width ? props.width : 260,
+    height: props.height ? props.height : 224
+  }
+
   return(
-    <div className="feature">
+    <div className={classes} style={styles}>
       {props.children}
     </div>
   )
