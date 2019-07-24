@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/Hero/Hero"
-import FeatureCollection from "capabilities/FeatureCollection/FeatureCollection"
+import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
 import LatestWork from "work/latest-work/latest-work"
 
 import bg from "home/bg.png"
@@ -23,7 +23,7 @@ export default function Home() {
 
       <LatestWork />
 
-      <FeatureCollection />
+      <CapabilitiesCollection />
 
     </div>
   )
