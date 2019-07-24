@@ -6,6 +6,8 @@ import favicon from "images/favicon.svg"
 import arrow from "images/arrow_down.svg"
 import browser from "images/browser_window.svg"
 
+import PartnerStats from "about/partner-stats/partner-stats"
+
 export default function About() {
   return(
     <div>
@@ -28,6 +30,8 @@ export default function About() {
         <HeroMedia media={browser} />
       </HeroFooter>
     </Hero>
+
+    <PartnerStats />
 
     </div>
   )
