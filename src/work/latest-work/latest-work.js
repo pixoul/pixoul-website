@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col, Button } from "shards-react"
-import "./latest.scss"
+import "./latest-work.scss"
 
 import ClientCard from "utils/client-card/client-card"
 import Opening from "utils/opening/opening"
