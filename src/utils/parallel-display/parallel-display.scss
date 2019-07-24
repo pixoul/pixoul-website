@@ -1,0 +1,37 @@
+.parallel-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .parallel-content {
+    margin-right: 80px;
+  }
+
+  .parallel-text {
+    margin-bottom: 25px;
+    font-weight: normal;
+  }
+
+  .parallel-list {
+    display: flex;
+    justify-content: space-evenly;
+
+    .parallel-item {
+      display: flex;
+      flex-direction: column;
+      padding-top: 35px;
+      padding-right: 120px;
+
+      .parallel-item-title {
+        color: #3180fb;
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+
+      .parallel-item-tagline {
+        color: #374050;
+        font-size: 18px;
+      }
+    }
+  }
+}
