@@ -1,0 +1,24 @@
+.product-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .product-media {
+      width: 100px;
+      height: 100px;
+    }
+
+    .product-caption {
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 24px;
+    }
+  }
+}
