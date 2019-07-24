@@ -14,30 +14,30 @@ export default function PartnerStats(props){
       />
       <Row>
         <Col sm="12" md="4">
-          <Feature>
+          <Feature align="center">
             <FeatureHeader>
-              <FeatureTitle text="211%" />
+              <FeatureTitle text="211%" size={50}  color="#3180fb" />
             </FeatureHeader>
-            <FeatureTagline text="outperformance vs. design averse companies" />
-            <FeatureAction link="/capabilities/strategy" text="Strategy" />
+            <FeatureTagline text="outperformance vs. design averse companies" size={20} />
+            <FeatureAction link="/capabilities/strategy" text="Strategy" size={20} color="#374050" />
           </Feature>
         </Col>
         <Col sm="12" md="4">
-          <Feature>
+          <Feature align="center">
             <FeatureHeader>
-              <FeatureTitle text="$250M+" />
+              <FeatureTitle text="$250M+" size={50}  color="#3180fb" />
             </FeatureHeader>
-            <FeatureTagline text="in collective designed product value" />
-            <FeatureAction link="/capabilities/design" text="Design" />
+            <FeatureTagline text="in collective designed product value" size={20} />
+            <FeatureAction link="/capabilities/design" text="Design" size={20} color="#374050" />
           </Feature>
         </Col>
         <Col sm="12" md="4">
-          <Feature>
+          <Feature align="center">
             <FeatureHeader>
-              <FeatureTitle text="10x" />
+              <FeatureTitle text="10x" size={50}  color="#3180fb" />
             </FeatureHeader>
-            <FeatureTagline text="increased product performance" />
-            <FeatureAction link="/capabilities/technology" text="Technology" />
+            <FeatureTagline text="increased product performance" size={20} />
+            <FeatureAction link="/capabilities/technology" text="Technology" size={20} color="#374050" />
           </Feature>
         </Col>
       </Row>
