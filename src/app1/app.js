@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Route, Redirect } from "react-router-dom";
-import "./App.scss"
+import "./app.scss"
 
-import Header from "layout/Header/Header"
-import Footer from "layout/Footer/Footer"
-import SideMenu from "layout/SideMenu/SideMenu"
+import Header from "layout/header/header"
+import Footer from "layout/footer/footer"
+import SideMenu from "layout/side-menu/side-menu"
 
 /* Page Components */
-import Home from "home/Home"
-import About from "about/About"
-import Capabilities from "capabilities/Capabilities"
-import Work from "work/Work"
-import Contact from "contact/Contact"
+import Home from "home/home"
+import About from "about/about"
+import Capabilities from "capabilities/capabilities"
+import Work from "work/work"
+import Contact from "contact/contact"
 
 export default function App(props) {
 

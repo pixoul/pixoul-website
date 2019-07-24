@@ -4,7 +4,7 @@ import { Link, withRouter } from "react-router-dom";
 import { scaleRotate as Menu } from 'react-burger-menu'
 import { Button } from "shards-react";
 
-import "./SideMenu.scss"
+import "./side-menu.scss"
 
 import times from "images/buttonX.svg"
 
