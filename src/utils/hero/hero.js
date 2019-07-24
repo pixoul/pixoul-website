@@ -2,7 +2,7 @@ import React from "react"
 import cn from "classnames"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
-import "./Hero.scss"
+import "./hero.scss"
 
 function HeroTitle(props){
 

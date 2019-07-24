@@ -1,7 +1,7 @@
 import React from "react"
 
 import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/Hero/Hero"
+import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
 
 import bg from "capabilities/bg07.png"
 import phone from "capabilities/phone-mockup.png"
