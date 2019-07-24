@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, withRouter } from "react-router-dom";
 import cn from "classnames"
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Button } from "shards-react";
-import "./Header.scss"
+import "./header.scss"
 
 import logo from "images/logo.png"
 import menu from "images/menu.svg"
