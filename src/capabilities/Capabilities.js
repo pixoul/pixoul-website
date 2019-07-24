@@ -1,6 +1,6 @@
 import React from "react"
 
-import FeatureCollection from "capabilities/FeatureCollection/FeatureCollection"
+import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/Hero/Hero"
 
 import bg from "capabilities/bg07.png"
@@ -20,7 +20,7 @@ export default function Capabilities(){
         </HeroFooter>
       </Hero>
 
-      <FeatureCollection />
+      <CapabilitiesCollection />
     </div>
   )
 }

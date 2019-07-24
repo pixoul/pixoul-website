@@ -1,12 +1,12 @@
 import React from "react"
 import { Container, Row, Col } from "shards-react";
 import { faPowerOff, faPaintBrush, faCode } from '@fortawesome/free-solid-svg-icons'
-import "./FeatureCollection.scss"
+import "./capabilities-collection.scss"
 
 import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline, FeatureAction } from "utils/feature/feature"
 import Opening from "utils/opening/opening"
 
-export default function FeatureCollection(){
+export default function CapabilitesCollection(){
   return(
     <Container className="feature-collection">
       <Opening
