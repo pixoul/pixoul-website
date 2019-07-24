@@ -1,13 +1,19 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInfo, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import "./feature.scss"
 
 
 function FeatureTagline(props){
+
+  const styles = {
+    fontSize: props.size ? props.size : 17,
+    color: props.color ? props.color : '#374050'
+  }
+
   return(
-    <small className="feature-tagline">{props.text}</small>
+    <small className="feature-tagline" style={styles}>{props.text}</small>
   )
 }
 
@@ -40,8 +46,14 @@ function FeatureTitle(props){
 }
 
 function FeatureIcon(props){
+
+  const styles = {
+    fontSize: props.size ? props.size : 35,
+    color: props.color ? props.color : '#3180fb'
+  }
+
   return(
-    <FontAwesomeIcon icon={props.icon} className="feature-icon" />
+    <FontAwesomeIcon icon={props.icon} className="feature-icon" style={styles} />
   )
 }
 
@@ -54,8 +66,6 @@ function FeatureHeader(props){
 }
 
 export default function Feature(props){
-  const { title = "Feature", tagline = "This is a feature.", actionLink = "#", actionText = "Learn More", icon = faInfo} = props
-
   return(
     <div className="feature">
       {props.children}
