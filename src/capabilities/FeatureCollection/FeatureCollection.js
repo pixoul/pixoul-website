@@ -4,10 +4,15 @@ import { faPowerOff, faPaintBrush, faCode } from '@fortawesome/free-solid-svg-ic
 import "./FeatureCollection.scss"
 
 import Feature from "utils/Feature/Feature"
+import Opening from "utils/opening/opening"
 
 export default function FeatureCollection(){
   return(
     <Container className="feature-collection">
+      <Opening
+        title="Our Capabilities"
+        subtitle="Our capabilites cross the spectrum."
+      />
       <Row>
         <Col sm="12" md="4">
           <Feature
