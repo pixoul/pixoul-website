@@ -7,6 +7,7 @@ import arrow from "images/arrow_down.svg"
 import browser from "images/browser_window.svg"
 
 import PartnerStats from "about/partner-stats/partner-stats"
+import OurValue from "about/our-value/our-value"
 
 export default function About() {
   return(
@@ -32,6 +33,8 @@ export default function About() {
     </Hero>
 
     <PartnerStats />
+
+    <OurValue />
 
     </div>
   )
