@@ -27,9 +27,7 @@ function FeatureAction(props){
 
   return(
     <Link to={props.link} className="feature-action" style={styles}>
-      <small>
-        <strong>{props.text} <FontAwesomeIcon icon={faLongArrowAltRight} /></strong>
-      </small>
+        {props.text} <FontAwesomeIcon icon={faLongArrowAltRight} />
     </Link>
   )
 }
