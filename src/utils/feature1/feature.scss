@@ -1,10 +1,8 @@
-@import "../../styles/variables.scss";
 
 .feature {
   margin: 10px;
 
   .feature-action {
-    color: $green;
     font-size: 20px;
     font-weight: 500;
     display: block;
@@ -29,7 +27,6 @@
     .feature-icon {
       font-size: 35px;
       margin-right: 22px;
-      color: $blue;
     }
   }
 }
