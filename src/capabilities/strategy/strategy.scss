@@ -1,0 +1,13 @@
+
+.section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  &.white {
+    background-color: #FFFFFF;
+  }
+
+  &.grey {
+    background-color: #f9fafc;
+  }
+}
