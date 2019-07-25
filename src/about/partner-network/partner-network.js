@@ -1,7 +1,6 @@
 import React from "react"
 import "./partner-network.scss"
 
-import Opening from "utils/opening/opening"
 import {
   ParallelDisplay,
   ParallelContent,
