@@ -37,6 +37,8 @@ function HeroTagline(props){
     fontSize: props.size ? props.size : 20
   }
 
+  if(props.color) styles.color = props.color
+
   return(
     <div className="hero-tagline" style={styles}>
       {props.text}
@@ -86,6 +88,8 @@ function Hero(props){
     backgroundImage: 'url('+props.bg+')',
     paddingTop: props.offset ? props.offset : 150
   }
+
+  if(props.height) styles.height = props.height
 
   const classes = cn('hero', {
     'light': props.theme === 'light',
