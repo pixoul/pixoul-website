@@ -22,7 +22,7 @@ export default function PartnerNetwork(){
         </ParallelContent>
 
 
-        <ParallelContent>
+        <ParallelContent rightGutter={80}>
           <ParallelText
             width={560}
             size={45}
