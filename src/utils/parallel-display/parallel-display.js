@@ -1,12 +1,13 @@
 import React from "react"
+import cn from "classnames"
 import "./parallel-display.scss"
 
 function ParallelImage(props){
 
-  const styles = {
-    height: props.height ? props.height : 560,
-    width: props.width ? props.width : 600,
-  }
+  const styles = {}
+
+  if(props.height) styles.height = props.height
+  if(props.width) styles.width = props.width
 
   return(
     <div className="parallel-media">
@@ -46,8 +47,13 @@ function ParallelItem(props){
 }
 
 function ParallelContent(props){
+
+  const classes = cn('parallel-content', {
+    'multiple-media': props.multiple == true
+  })
+
   return(
-    <div className="parallel-content">
+    <div className={classes}>
       {props.children}
     </div>
   )

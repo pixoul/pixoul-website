@@ -5,6 +5,33 @@
 
   .parallel-content {
     margin-right: 80px;
+
+    &.multiple-media {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .parallel-media {
+        .parallel-image {
+          object-fit: contain;
+          max-width: 400px;
+          max-height: 400px;
+        }
+      }
+
+    }
+
+
+  }
+
+  .parallel-media {
+    &.left {
+      align-self: flex-start;
+    }
+
+    &.right {
+      align-self: flex-end;
+    }
   }
 
   .parallel-text {
@@ -14,13 +41,15 @@
 
   .parallel-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     .parallel-item {
       display: flex;
       flex-direction: column;
+      flex-basis: 50%;
       padding-top: 35px;
-      padding-right: 120px;
+      max-width: 220px;
 
       .parallel-item-title {
         color: #3180fb;
