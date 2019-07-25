@@ -16,7 +16,7 @@ function Header(props) {
   })
 
   function evaluateHeader(path){
-    if(path === '/home' || '/work'){
+    if(path === '/home' || path === '/work'){
       setFallUnder(true)
     }else{
       setFallUnder(false)
@@ -25,6 +25,7 @@ function Header(props) {
 
   useEffect(() => {
     props.history.listen((location, action) => evaluateHeader(location.pathname));
+    console.log(props.location)
     evaluateHeader(props.location.pathname)
   })
 
