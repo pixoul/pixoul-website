@@ -82,7 +82,9 @@
 
   &.left {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
 
     .hero-content {
       display: flex;
