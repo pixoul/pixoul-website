@@ -1,7 +1,10 @@
 @import "../styles/variables.scss";
 
 .contact {
-  padding: 20px;
+  padding-top: 115px;
+  padding-bottom: 190px;
+  background: linear-gradient(280deg, #{$lightGrey} 50%, #{$darkGrey} 50%);
+  color: white;
 }
 
 .list-collection {
@@ -11,16 +14,25 @@
 
   .list-title {
     color: $black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-top: 30px;
+
+    &.light {
+      color: $white;
+    }
   }
 
   .list-item {
     margin: 10px 0;
     color: $black;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: normal;
+
+    &.light {
+      color: $white;
+    }
 
     a {
       color: $black;
