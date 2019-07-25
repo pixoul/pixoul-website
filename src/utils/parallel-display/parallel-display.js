@@ -48,12 +48,16 @@ function ParallelItem(props){
 
 function ParallelContent(props){
 
+  const styles = {}
+  if(props.leftGutter) styles.marginLeft = props.leftGutter
+  if(props.rightGutter) styles.marginRight = props.rightGutter
+
   const classes = cn('parallel-content', {
-    'multiple-media': props.multiple == true
+    'multiple-media': props.multiple == true,
   })
 
   return(
-    <div className={classes}>
+    <div className={classes} style={styles}>
       {props.children}
     </div>
   )
