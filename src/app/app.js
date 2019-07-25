@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Redirect, Switch } from "react-router-dom";
+import { Route, Redirect, Switch, withRouter } from "react-router-dom";
 import "./app.scss"
 
 import Header from "layout/header/header"
@@ -10,10 +10,13 @@ import SideMenu from "layout/side-menu/side-menu"
 import Home from "home/home"
 import About from "about/about"
 import Capabilities from "capabilities/capabilities"
+import Strategy from "capabilities/strategy/strategy"
+import Design from "capabilities/design/design"
+import Technology from "capabilities/technology/technology"
 import Work from "work/work"
 import Contact from "contact/contact"
 
-export default function App(props) {
+function App(props) {
 
   const [open, toggleMenu] = useState(false);
 
@@ -45,15 +48,29 @@ export default function App(props) {
       <SideMenu open={open} toggleMenu={toggleMenu} menuItems={menuItems}>
         <Header toggleMenu={() => toggleMenu(!open)} />
 
-        {menuItems.map((item, i) => (
-          <Route key={i} path={item.route} component={item.component} />
-        ))}
+        <Route render={({ location }) => (
+            <Switch location={location} key={location.key}>
+              {menuItems.map((item, i) => (
+                <Route exact key={i} path={item.route} component={item.component} />
+              ))}
 
-        <Route exact path="/" render={() => (<Redirect to="/home"/>)}/>
-        <Route exact path="/contact" component={Contact}/>
+              <Route exact path="/capabilities/strategy" component={Strategy} />
+              <Route exact path="/capabilities/design" component={Design} />
+              <Route exact path="/capabilities/technology" component={Technology} />
+              <Route exact path="/contact" component={Contact}/>
+
+              <Route exact path='/' render={props => (
+                <Redirect to={{ pathname: "/home", state: { from: props.location } }} />
+              )}/>
+            </Switch>
+          )}
+        />
+
 
         <Footer />
       </SideMenu>
     </div>
   );
 }
+
+export default withRouter(App)
