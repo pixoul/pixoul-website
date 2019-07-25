@@ -9,10 +9,6 @@ import Reviews from "capabilities/reviews/reviews"
 import bg from "capabilities/bg07.png"
 import phone from "capabilities/phone-mockup.png"
 
-import Strategy from "capabilities/strategy/strategy"
-import Design from "capabilities/design/design"
-import Technology from "capabilities/technology/technology"
-
 function Capabilities({ match }){
   return(
     <div>
@@ -33,9 +29,7 @@ function Capabilities({ match }){
 
       <Reviews />
 
-      <Route path={`${match.path}/strategy`} component={Strategy} />
-      <Route path={`${match.path}/design`} component={Design} />
-      <Route path={`${match.path}/technology`} component={Technology} />
+
     </div>
   )
 }
