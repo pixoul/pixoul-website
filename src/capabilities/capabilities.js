@@ -1,8 +1,9 @@
 import React from "react"
 import { Route, withRouter } from "react-router-dom"
 
-import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
+import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
+import PartnerIndustries from "capabilities/partner-industries/partner-industries"
 
 import bg from "capabilities/bg07.png"
 import phone from "capabilities/phone-mockup.png"
@@ -26,6 +27,8 @@ function Capabilities({ match }){
       </Hero>
 
       <CapabilitiesCollection />
+
+      <PartnerIndustries />
 
 
       <Route path={`${match.path}/strategy`} component={Strategy} />
