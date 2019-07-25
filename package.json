@@ -6,11 +6,13 @@
   },
   "private": true,
   "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.9.0",
     "react-scripts": "3.0.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/pro-light-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@fullpage/react-fullpage": "^0.1.14",
     "classnames": "^2.2.6",
