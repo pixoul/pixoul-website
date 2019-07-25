@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "shards-react";
-import { faPowerOff, faPaintBrush, faCode } from '@fortawesome/free-solid-svg-icons'
+import { faPowerOff, faPaintBrush, faCode } from '@fortawesome/pro-light-svg-icons'
 import "./capabilities-collection.scss"
 
 import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline, FeatureAction } from "utils/feature/feature"
