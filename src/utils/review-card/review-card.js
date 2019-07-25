@@ -14,7 +14,7 @@ export default function ReviewCard({
   return(
     <div className="review-card">
       <div className="review-stars">
-        {[...Array(quantity)].map((e, i) => <FontAwesomeIcon icon={faStar} className="star-icon" />)}
+        {[...Array(quantity)].map((e, i) => <FontAwesomeIcon key={i} icon={faStar} className="star-icon" />)}
       </div>
       <div className="review-content">
         <p className="review-text">{review}</p>
