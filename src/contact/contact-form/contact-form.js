@@ -29,7 +29,6 @@ export default function ContactForm(){
   //   });
   // }
 
-
   return(
     <div className="contact-form">
       <Form className="form">
