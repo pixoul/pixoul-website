@@ -1,8 +1,16 @@
 import React from "react"
 import "./strategy.scss"
+/* Third-Party Packages */
+import { Container, Row, Col } from "shards-react";
+import { faPhoneLaptop, faPaintBrush, faExpandWide, faUsersClass, faWheelchair, faUserCheck } from '@fortawesome/pro-light-svg-icons'
+
+/* Utility Components */
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
 import { ParallelDisplay, ParallelContent, ParallelList, ParallelItem, ParallelImage, ParallelText } from "utils/parallel-display/parallel-display"
+import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline, FeatureAction } from "utils/feature/feature"
+import Opening from "utils/opening/opening"
 
+/* Images */
 import bg from "./images/hero-background.jpg"
 import designWorkshops from "./images/design-workshops.jpg"
 import analyticInsights from "./images/analytic-insights.jpg"
@@ -19,7 +27,7 @@ export default function Strategy(){
         </HeroContent>
       </Hero>
 
-      <div className="section white">
+      <div className="section white bottom-gutter">
         <ParallelDisplay>
           <ParallelContent leftGutter={150}>
             <ParallelText
@@ -52,7 +60,7 @@ export default function Strategy(){
         </ParallelDisplay>
       </div>
 
-      <div className="section grey">
+      <div className="section grey bottom-gutter">
         <ParallelDisplay>
 
           <ParallelContent>
@@ -87,7 +95,7 @@ export default function Strategy(){
         </ParallelDisplay>
       </div>
 
-      <div className="section white">
+      <div className="section white bottom-gutter">
         <ParallelDisplay>
           <ParallelContent leftGutter={150}>
             <ParallelText
@@ -120,7 +128,7 @@ export default function Strategy(){
         </ParallelDisplay>
       </div>
 
-      <div className="section grey">
+      <div className="section grey bottom-gutter">
         <ParallelDisplay>
 
           <ParallelContent>
@@ -153,6 +161,77 @@ export default function Strategy(){
             </ParallelList>
           </ParallelContent>
         </ParallelDisplay>
+      </div>
+
+      <div className="section white">
+        <Opening
+          title="Our strategy capabilities."
+          subtitle="Our digital strategy ensures impactful management across the project lifecycle."
+        />
+
+        <Container>
+          <Row>
+            <Col sm="12" md="4">
+              <Feature width={343} >
+                <FeatureHeader>
+                  <FeatureIcon icon={faPhoneLaptop} color="#3180fb" />
+                  <FeatureTitle text="User Experience Design" />
+                </FeatureHeader>
+                <FeatureTagline text="By combining data insights with psychology research, we’re redefining digital." />
+              </Feature>
+            </Col>
+
+            <Col sm="12" md="4">
+              <Feature width={343} >
+                <FeatureHeader>
+                  <FeatureIcon icon={faPaintBrush} color="#3180fb" />
+                  <FeatureTitle text="User Interface Design" />
+                </FeatureHeader>
+                <FeatureTagline text="Beautiful interfaces begin with clean, familiar design systems that encourage easy use." />
+              </Feature>
+            </Col>
+
+            <Col sm="12" md="4">
+              <Feature width={343} >
+                <FeatureHeader>
+                  <FeatureIcon icon={faExpandWide} color="#3180fb" />
+                  <FeatureTitle text="Rapid Prototyping" />
+                </FeatureHeader>
+                <FeatureTagline text="Our iterative, agile methodology promotes a fail-fast approach to designing and implementation." />
+              </Feature>
+            </Col>
+
+            <Col sm="12" md="4">
+              <Feature width={343} >
+                <FeatureHeader>
+                  <FeatureIcon icon={faUsersClass} color="#3180fb" />
+                  <FeatureTitle text="Collaborative Design" />
+                </FeatureHeader>
+                <FeatureTagline text="Our work takes place at the intersection of business objectives, user needs, and IT capabilities." />
+              </Feature>
+            </Col>
+
+            <Col sm="12" md="4">
+              <Feature width={343} >
+                <FeatureHeader>
+                  <FeatureIcon icon={faWheelchair} color="#3180fb" />
+                  <FeatureTitle text="Accessibility" />
+                </FeatureHeader>
+                <FeatureTagline text="From color blindness to varying devices, we regard WCAG guidelines for a positive experience for all." />
+              </Feature>
+            </Col>
+
+            <Col sm="12" md="4">
+              <Feature width={343} >
+                <FeatureHeader>
+                  <FeatureIcon icon={faUserCheck} color="#3180fb" />
+                  <FeatureTitle text="User Testing" />
+                </FeatureHeader>
+                <FeatureTagline text="No design experience is successful without without targeted user feedback, and iterative testing." />
+              </Feature>
+            </Col>
+          </Row>
+        </Container>
       </div>
 
     </div>
