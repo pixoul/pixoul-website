@@ -16,6 +16,8 @@ import Technology from "capabilities/technology/technology"
 import Work from "work/work"
 import Contact from "contact/contact"
 
+import WorkDetail from "work/work-detail/work-detail"
+
 function App(props) {
 
   const [open, toggleMenu] = useState(false);
@@ -58,6 +60,8 @@ function App(props) {
               <Route exact path="/capabilities/design" component={Design} />
               <Route exact path="/capabilities/technology" component={Technology} />
               <Route exact path="/contact" component={Contact}/>
+
+              <Route exact path="/work/detail/iuzeit" component={WorkDetail} />
 
               <Route exact path='/' render={props => (
                 <Redirect to={{ pathname: "/home", state: { from: props.location } }} />
