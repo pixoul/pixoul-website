@@ -11,18 +11,8 @@ import SideMenu from "layout/side-menu/side-menu"
 import Home from "home/home"
 import About from "about/about"
 import Capabilities from "capabilities/capabilities"
-import Strategy from "capabilities/strategy/strategy"
-import Design from "capabilities/design/design"
-import Technology from "capabilities/technology/technology"
 import Work from "work/work"
 import Contact from "contact/contact"
-
-import IuzeitDetail from "work/iuzeit/detail"
-import GeorgiaPacificDetail from "work/georgia-pacific/detail"
-import SofsDetail from "work/sofs/detail"
-import FusemapDetail from "work/fusemap/detail"
-import HcpDetail from "work/hcp/detail"
-import IkarusDetail from "work/ikarus/detail"
 
 function App(props) {
 
@@ -31,15 +21,15 @@ function App(props) {
   const options = {
     from: {
       opacity: 0,
-      transform: 'translate3d(0,100%,0)'
+      // transform: 'translate3d(0,100%,0)'
     },
     enter: {
       opacity: 1,
-      transform: 'translate3d(0,0%,0)'
+      // transform: 'translate3d(0,0%,0)'
     },
     leave: {
       opacity: 0,
-      transform: 'translate3d(0,-100%,0)'
+      // transform: 'translate3d(0,-100%,0)'
     }
   }
 
@@ -75,21 +65,11 @@ function App(props) {
            {transitions.map(({ item, props, key }) => (
              <animated.div key={key} style={props}>
                   <Switch location={item}>
-                      {menuItems.map((item, i) => (
-                        <Route exact key={i} path={item.route} component={item.component} />
-                      ))}
-
-                      <Route exact path="/capabilities/strategy" component={Strategy} />
-                      <Route exact path="/capabilities/design" component={Design} />
-                      <Route exact path="/capabilities/technology" component={Technology} />
-                      <Route exact path="/contact" component={Contact}/>
-
-                      <Route exact path="/work/detail/iuzeit" component={IuzeitDetail} />
-                      <Route exact path="/work/detail/georgia-pacific" component={GeorgiaPacificDetail} />
-                      <Route exact path="/work/detail/sofs" component={SofsDetail} />
-                      <Route exact path="/work/detail/fusemap" component={FusemapDetail} />
-                      <Route exact path="/work/detail/hcp" component={HcpDetail} />
-                      <Route exact path="/work/detail/ikarus" component={IkarusDetail} />
+                      <Route path="/home" component={Home} />
+                      <Route path="/work" component={Work} />
+                      <Route path="/capabilities" component={Capabilities} />
+                      <Route path="/about" component={About} />
+                      <Route path="/contact" component={Contact} />
 
                       <Route exact path='/' render={props => (
                         <Redirect to={{ pathname: "/home", state: { from: props.location } }} />

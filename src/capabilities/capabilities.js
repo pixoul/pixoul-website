@@ -1,15 +1,19 @@
 import React from "react"
-import { withRouter } from "react-router-dom"
+import { withRouter, Route } from "react-router-dom"
 
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
 import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
 import PartnerIndustries from "capabilities/partner-industries/partner-industries"
 import Reviews from "capabilities/reviews/reviews"
 
+import Strategy from "capabilities/strategy/strategy"
+import Design from "capabilities/design/design"
+import Technology from "capabilities/technology/technology"
+
 import bg from "capabilities/bg07.png"
 import phone from "capabilities/phone-mockup.png"
 
-function Capabilities({ match }){
+function Page(){
   return(
     <div>
       <Hero bg={bg} theme="light" align="left">
@@ -28,8 +32,19 @@ function Capabilities({ match }){
       <PartnerIndustries />
 
       <Reviews />
+    </div>
+  )
+}
 
 
+function Capabilities({ match }){
+  console.log(match)
+  return(
+    <div>
+      <Route exact path={`${match.path}/`} component={Page} />
+      <Route path={`${match.path}/strategy`} component={Strategy} />
+      <Route path={`${match.path}/design`} component={Design} />
+      <Route path={`${match.path}/technology`} component={Technology} />
     </div>
   )
 }
