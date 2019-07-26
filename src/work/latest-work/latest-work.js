@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { Container, Row, Col, Button } from "shards-react"
 import "./latest-work.scss"
 
@@ -30,7 +31,7 @@ export default function LatestWork(){
       </Row>
       <Row>
         <Col className="latest-action">
-          <Button outline>More Case Studies</Button>
+          <Button outline tag={Link} to="/work">More Case Studies</Button>
         </Col>
       </Row>
     </Container>
