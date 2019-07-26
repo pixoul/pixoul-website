@@ -4,27 +4,30 @@ import { Link, withRouter } from "react-router-dom";
 import { scaleRotate as Menu } from 'react-burger-menu'
 import { Button } from "shards-react";
 
+import { connect } from 'react-redux'
+import { toggleMenu } from "layout/side-menu/actions"
+
 import "./side-menu.scss"
 
-function SideMenu(props){
-
-  useEffect(() => {
-    props.history.listen((location, action) => {
-      props.toggleMenu(false)
-    });
-  })
+function SideMenu({ history, open, toggleMenu, children, links = []}){
 
   const classes = cn('menu-close', {
-    'visible': props.open
+    'visible': open
+  })
+
+  useEffect(() => {
+    history.listen((location, action) => {
+      toggleMenu(false)
+    });
   })
 
   return(
     <div id="outer-container" className="app-container">
       <Menu
-        isOpen={props.open}
+        isOpen={open}
         right
         scaleDown
-        onStateChange={(state) => props.toggleMenu(state.isOpen)}
+        onStateChange={(state) => toggleMenu(state.isOpen)}
         disableAutoFocus
         noOverlay
         pageWrapId={ "page-wrap" }
@@ -33,12 +36,12 @@ function SideMenu(props){
         className={ "side-menu" }
       >
 
-        <Button theme="light" className={classes} onClick={() => props.toggleMenu(false)}>
+        <Button theme="light" className={classes} onClick={() => toggleMenu(false)}>
          <span>X</span>
         </Button>
 
 
-        {props.menuItems.map((item, i) => (
+        {links.map((item, i) => (
           <Link key={i} className="menu-item" to={item.route}>{item.label}</Link>
         ))}
 
@@ -61,11 +64,32 @@ function SideMenu(props){
       </Menu>
 
       <main id="page-wrap">
-        {props.children}
+        {children}
       </main>
 
     </div>
   )
 }
 
-export default withRouter(SideMenu)
+const mapStateToProps = (state, ownProps) => {
+  return {
+    open: state.menu.open,
+    links: state.menu.links
+  }
+}
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  console.log(ownProps)
+  return {
+    toggleMenu: (open) => {
+      dispatch(toggleMenu(open))
+    }
+  }
+}
+
+const ToggleSideMenu = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withRouter(SideMenu))
+
+export default ToggleSideMenu

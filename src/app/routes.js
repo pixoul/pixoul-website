@@ -1,7 +1,6 @@
 import React, { useContext } from "react"
 import { Route, Redirect, Switch, withRouter, __RouterContext } from "react-router-dom"
 import { useTransition, animated } from 'react-spring'
-import { Transition, config } from 'react-spring'
 
 /* Page Components */
 import Home from "home/home"

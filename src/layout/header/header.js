@@ -1,31 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { Link, withRouter } from "react-router-dom";
+import React from 'react';
+import { Link } from "react-router-dom";
 import cn from "classnames"
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Button } from "shards-react";
 import "./header.scss"
 
+import { connect } from 'react-redux'
+import { toggleMenu } from "layout/side-menu/actions"
+
 import logo from "images/logo.png"
 import menu from "images/menu.svg"
 
-function Header(props) {
-
-  const [fallUnder, setFallUnder] = useState(false);
+function Header({ fixed = false, open, toggleMenu }) {
 
   const classes = cn('header-container', {
-    'fall-under': fallUnder
-  })
-
-  function evaluateHeader(path){
-    if(path === '/home' || path === '/work'){
-      setFallUnder(true)
-    }else{
-      setFallUnder(false)
-    }
-  }
-
-  useEffect(() => {
-    props.history.listen((location, action) => evaluateHeader(location.pathname));
-    evaluateHeader(props.location.pathname)
+    'fall-under': fixed === true
   })
 
   return (
@@ -37,12 +25,32 @@ function Header(props) {
             <Button outline tag={Link} to="/contact">Contact Us</Button>
           </NavItem>
           <NavItem>
-            <NavLink className="menu-icon" onClick={props.toggleMenu} ><img src={menu} alt={menu} /></NavLink>
+            <NavLink className="menu-icon" onClick={() => toggleMenu(!open)} ><img src={menu} alt={menu} /></NavLink>
           </NavItem>
         </Nav>
       </Navbar>
     </div>
-  );
+  )
 }
 
-export default withRouter(Header)
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+    open: state.menu.open
+  }
+}
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    toggleMenu: (open) => {
+      dispatch(toggleMenu(open))
+    }
+  }
+}
+
+const HeaderToggle = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Header)
+
+export default HeaderToggle
