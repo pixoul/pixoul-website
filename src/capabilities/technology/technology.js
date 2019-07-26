@@ -182,7 +182,7 @@ export default function Technology(){
           subtitle="We provide the most up-to-date, comprehensive, and secure implementations."
         />
 
-        <MediaCarousel images={images} />
+        <MediaCarousel images={images} maxSlides={5} />
       </div>
 
     </div>
