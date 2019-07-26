@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Route, Redirect, Switch, withRouter } from "react-router-dom"
-import {useTransition, animated} from 'react-spring'
+import {useTransition, animated, config} from 'react-spring'
 import "./app.scss"
 
 import Header from "layout/header/header"
@@ -27,11 +27,23 @@ import IkarusDetail from "work/ikarus/detail"
 function App(props) {
 
   const [open, toggleMenu] = useState(false);
-  const transitions = useTransition(props.location, location => location.pathname, {
-    from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
-    enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
-    leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' }
-  })
+
+  const options = {
+    from: {
+      opacity: 0,
+      transform: 'translate3d(0,100%,0)'
+    },
+    enter: {
+      opacity: 1,
+      transform: 'translate3d(0,0%,0)'
+    },
+    leave: {
+      opacity: 0,
+      transform: 'translate3d(0,-100%,0)'
+    }
+  }
+
+  const transitions = useTransition(props.location, location => location.pathname, options)
 
   const menuItems = [
     {
@@ -61,8 +73,8 @@ function App(props) {
       <SideMenu open={open} toggleMenu={toggleMenu} menuItems={menuItems}>
         <Header toggleMenu={() => toggleMenu(!open)} />
            {transitions.map(({ item, props, key }) => (
-              <animated.div key={key} style={props}>
-                  <Switch location={item} key={key}>
+             <animated.div key={key} style={props}>
+                  <Switch location={item}>
                       {menuItems.map((item, i) => (
                         <Route exact key={i} path={item.route} component={item.component} />
                       ))}
