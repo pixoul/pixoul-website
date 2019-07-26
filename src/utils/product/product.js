@@ -4,7 +4,7 @@ import "./product.scss"
 function ProductImage(props){
   return(
     <div className="product-item">
-      <img src={props.media} className="product-media" />
+      <img src={props.media} alt={props.media} className="product-media" />
       <span className="product-caption">{props.caption}</span>
     </div>
   )

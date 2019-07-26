@@ -11,7 +11,7 @@ function ParallelImage(props){
 
   return(
     <div className="parallel-media">
-      <img src={props.media} className="parallel-image" style={styles} />
+      <img src={props.media} alt={props.media} className="parallel-image" style={styles} />
     </div>
   )
 }
@@ -53,7 +53,7 @@ function ParallelContent(props){
   if(props.rightGutter) styles.marginRight = props.rightGutter
 
   const classes = cn('parallel-content', {
-    'multiple-media': props.multiple == true,
+    'multiple-media': props.multiple === true,
   })
 
   return(

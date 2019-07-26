@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ParallaxProvider } from 'react-scroll-parallax';
 import App from "app/app";
 import * as serviceWorker from "./serviceWorker";
 import { Route, BrowserRouter } from "react-router-dom";
@@ -10,13 +9,11 @@ import "shards-ui/dist/css/shards.min.css"
 import "styles/fonts.scss";
 
 const routing = (
-  <ParallaxProvider>
-    <BrowserRouter>
-      <div>
-        <Route path="/" component={App} />
-      </div>
-    </BrowserRouter>
-  </ParallaxProvider>
+  <BrowserRouter>
+    <div>
+      <Route path="/" component={App} />
+    </div>
+  </BrowserRouter>
 );
 ReactDOM.render(routing, document.getElementById("root"));
 

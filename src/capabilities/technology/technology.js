@@ -1,15 +1,12 @@
 import React from "react"
 import "./technology.scss"
-/* Third-Party Packages */
-import { Container, Row, Col } from "shards-react";
-import { faPhoneLaptop, faPaintBrush, faExpandWide, faChalkboard, faWheelchair, faUserCheck } from '@fortawesome/pro-light-svg-icons'
 
 /* Utility Components */
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroTitle, HeroTagline} from "utils/hero/hero"
 import { ParallelDisplay, ParallelContent, ParallelList, ParallelItem, ParallelImage, ParallelText } from "utils/parallel-display/parallel-display"
-import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline, FeatureAction } from "utils/feature/feature"
-import Opening from "utils/opening/opening"
+
 import MediaCarousel from "utils/media-carousel/media-carousel"
+import Opening from "utils/opening/opening"
 
 /* Page Images */
 import bg from "./images/hero-background.jpg"

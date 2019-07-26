@@ -46,9 +46,9 @@ function HeroTagline(props){
   )
 }
 
-function HeroAction({ icon = faChevronCircleDown, text}){
+function HeroAction({ icon = faChevronCircleDown, text, action}){
   return(
-    <a className="hero-action">
+    <a className="hero-action" href={action}>
       { icon && (
         <FontAwesomeIcon icon={icon} className="hero-icon" />
       )}

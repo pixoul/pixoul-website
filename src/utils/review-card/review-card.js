@@ -18,7 +18,7 @@ export default function ReviewCard({
       </div>
       <div className="review-content">
         <p className="review-text">{review}</p>
-        <img src={avatar} className="reviewer-avatar"/>
+        <img src={avatar} alt={avatar} className="reviewer-avatar"/>
         <h4 className="reviewer-name">{reviewer}</h4>
         <h6 className="reviewer-designation">{designation}</h6>
       </div>
