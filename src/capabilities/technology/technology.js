@@ -9,16 +9,26 @@ import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTa
 import { ParallelDisplay, ParallelContent, ParallelList, ParallelItem, ParallelImage, ParallelText } from "utils/parallel-display/parallel-display"
 import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline, FeatureAction } from "utils/feature/feature"
 import Opening from "utils/opening/opening"
+import MediaCarousel from "utils/media-carousel/media-carousel"
 
-/* Images */
+/* Page Images */
 import bg from "./images/hero-background.jpg"
 import frontendDev from "./images/frontend-dev.jpg"
 import mobileApps from "./images/mobile-apps.jpg"
 import ecommerceSystems from "./images/ecommerce-systems.jpg"
 import cloudImplementations from "./images/cloud-implementations.jpg"
+/* Carousel Images */
+import adobe from "./images/adobe.svg"
+import android from "./images/android.svg"
+import angular from "./images/angular.svg"
+import apple from "./images/apple.svg"
+import atom from "./images/atom.svg"
+import magento from "./images/magento.svg"
+import shopify from "./images/shopify.svg"
+import vue from "./images/vue.svg"
 
-/* Other Components */
-import TechnologyList from "capabilities/technology/technology-list/technology-list"
+const images = [adobe, android, angular, apple, atom, magento, shopify, vue]
+
 
 export default function Technology(){
   return(
@@ -172,7 +182,7 @@ export default function Technology(){
           subtitle="We provide the most up-to-date, comprehensive, and secure implementations."
         />
 
-        <TechnologyList />
+        <MediaCarousel images={images} />
       </div>
 
     </div>
