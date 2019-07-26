@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import App from "app/app";
 import * as serviceWorker from "./serviceWorker";
 import { Route, BrowserRouter } from "react-router-dom";
+import { Provider } from 'react-redux'
+import { store } from "app/store"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
@@ -10,9 +12,9 @@ import "styles/fonts.scss";
 
 const routing = (
   <BrowserRouter>
-    <div>
+    <Provider store={store}>
       <Route path="/" component={App} />
-    </div>
+    </Provider>
   </BrowserRouter>
 );
 ReactDOM.render(routing, document.getElementById("root"));
