@@ -1,5 +1,6 @@
 import React from "react";
-
+import Header from "layout/header/header"
+import Footer from "layout/footer/footer"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
 import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
 import LatestWork from "work/latest-work/latest-work"
@@ -10,6 +11,8 @@ import favicon from "images/favicon.svg"
 export default function Home() {
   return(
     <div>
+      <Header />
+
       <Hero bg={bg} theme="dark" align="center" offset={120}>
         <HeroContent>
           <HeroMedia media={favicon} />
@@ -25,6 +28,7 @@ export default function Home() {
 
       <CapabilitiesCollection />
 
+      <Footer />
     </div>
   )
 }

@@ -1,8 +1,6 @@
 import React, { useState } from "react"
 import "./app.scss"
 
-import Header from "layout/header/header"
-import Footer from "layout/footer/footer"
 import SideMenu from "layout/side-menu/side-menu"
 import Routes from "./routes"
 
@@ -32,9 +30,7 @@ function App(props) {
   return (
     <div>
       <SideMenu open={open} toggleMenu={toggleMenu} menuItems={menuItems}>
-        <Header toggleMenu={() => toggleMenu(!open)} />
            <Routes />
-        <Footer />
       </SideMenu>
     </div>
   );
