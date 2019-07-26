@@ -20,6 +20,7 @@ import IuzeitDetail from "work/iuzeit/detail"
 import GeorgiaPacificDetail from "work/georgia-pacific/detail"
 import SofsDetail from "work/sofs/detail"
 import FusemapDetail from "work/fusemap/detail"
+import HcpDetail from "work/hcp/detail"
 
 function App(props) {
 
@@ -68,6 +69,7 @@ function App(props) {
               <Route exact path="/work/detail/georgia-pacific" component={GeorgiaPacificDetail} />
               <Route exact path="/work/detail/sofs" component={SofsDetail} />
               <Route exact path="/work/detail/fusemap" component={FusemapDetail} />
+              <Route exact path="/work/detail/hcp" component={HcpDetail} />
 
               <Route exact path='/' render={props => (
                 <Redirect to={{ pathname: "/home", state: { from: props.location } }} />
