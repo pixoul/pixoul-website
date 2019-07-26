@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { Route, Redirect, Switch, withRouter } from "react-router-dom";
+import React, { useState } from "react"
+import { Route, Redirect, Switch, withRouter } from "react-router-dom"
+import {useTransition, animated} from 'react-spring'
 import "./app.scss"
 
 import Header from "layout/header/header"
@@ -26,6 +27,11 @@ import IkarusDetail from "work/ikarus/detail"
 function App(props) {
 
   const [open, toggleMenu] = useState(false);
+  const transitions = useTransition(props.location, location => location.pathname, {
+    from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
+    enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
+    leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' }
+  })
 
   const menuItems = [
     {
@@ -54,33 +60,31 @@ function App(props) {
     <div>
       <SideMenu open={open} toggleMenu={toggleMenu} menuItems={menuItems}>
         <Header toggleMenu={() => toggleMenu(!open)} />
+           {transitions.map(({ item, props, key }) => (
+              <animated.div key={key} style={props}>
+                  <Switch location={item} key={key}>
+                      {menuItems.map((item, i) => (
+                        <Route exact key={i} path={item.route} component={item.component} />
+                      ))}
 
-        <Route render={({ location }) => (
-            <Switch location={location} key={location.key}>
-              {menuItems.map((item, i) => (
-                <Route exact key={i} path={item.route} component={item.component} />
-              ))}
+                      <Route exact path="/capabilities/strategy" component={Strategy} />
+                      <Route exact path="/capabilities/design" component={Design} />
+                      <Route exact path="/capabilities/technology" component={Technology} />
+                      <Route exact path="/contact" component={Contact}/>
 
-              <Route exact path="/capabilities/strategy" component={Strategy} />
-              <Route exact path="/capabilities/design" component={Design} />
-              <Route exact path="/capabilities/technology" component={Technology} />
-              <Route exact path="/contact" component={Contact}/>
+                      <Route exact path="/work/detail/iuzeit" component={IuzeitDetail} />
+                      <Route exact path="/work/detail/georgia-pacific" component={GeorgiaPacificDetail} />
+                      <Route exact path="/work/detail/sofs" component={SofsDetail} />
+                      <Route exact path="/work/detail/fusemap" component={FusemapDetail} />
+                      <Route exact path="/work/detail/hcp" component={HcpDetail} />
+                      <Route exact path="/work/detail/ikarus" component={IkarusDetail} />
 
-              <Route exact path="/work/detail/iuzeit" component={IuzeitDetail} />
-              <Route exact path="/work/detail/georgia-pacific" component={GeorgiaPacificDetail} />
-              <Route exact path="/work/detail/sofs" component={SofsDetail} />
-              <Route exact path="/work/detail/fusemap" component={FusemapDetail} />
-              <Route exact path="/work/detail/hcp" component={HcpDetail} />
-              <Route exact path="/work/detail/ikarus" component={IkarusDetail} />
-
-              <Route exact path='/' render={props => (
-                <Redirect to={{ pathname: "/home", state: { from: props.location } }} />
-              )}/>
-            </Switch>
-          )}
-        />
-
-
+                      <Route exact path='/' render={props => (
+                        <Redirect to={{ pathname: "/home", state: { from: props.location } }} />
+                      )}/>
+                  </Switch>
+              </animated.div>
+            ))}
         <Footer />
       </SideMenu>
     </div>
