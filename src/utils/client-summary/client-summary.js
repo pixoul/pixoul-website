@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
@@ -8,12 +8,12 @@ function ClientSummary(props){
   return(
     <div className="client-summary">
       <div className="client-info">
-        <img src={props.logo} className="client-logo" />
+        <img src={props.logo} alt={props.logo} className="client-logo" />
         <p className="client-tagline">{props.tagline}</p>
         <Link to={props.action} className="client-action">Learn More <FontAwesomeIcon icon={faLongArrowAltRight} /></Link>
       </div>
       <div className="client-media">
-        <img src={props.media} className="summary-media" />
+        <img src={props.media} alt={props.media} className="summary-media" />
       </div>
     </div>
   )

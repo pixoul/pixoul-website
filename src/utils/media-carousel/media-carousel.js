@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 function MediaItem({ media }){
   return(
     <div className="media-item">
-      <img src={media} className="media-image" />
+      <img src={media} alt={media} className="media-image" />
     </div>
   )
 }
@@ -35,7 +35,7 @@ export default function MediaCarousel({ images = [], maxSlides = 5, center }){
     <div className="media-carousel">
       <Slider {...settings} >
         {images.map((media, i) => (
-          <MediaItem media={media} />
+          <MediaItem media={media} key={i} />
         ))}
       </Slider>
     </div>

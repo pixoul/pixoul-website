@@ -1,6 +1,6 @@
 import React from "react"
 import "./contact-form.scss"
-import { Container, Row, Col, Form, FormInput, FormGroup, FormTextarea, Button } from "shards-react";
+import { Row, Col, Form, FormInput, FormGroup, FormTextarea, Button } from "shards-react";
 
 export default function ContactForm(){
 

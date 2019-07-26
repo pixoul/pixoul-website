@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import cn from "classnames"
 import { Link, withRouter } from "react-router-dom";
 import { scaleRotate as Menu } from 'react-burger-menu'
 import { Button } from "shards-react";
 
 import "./side-menu.scss"
-
-import times from "images/buttonX.svg"
-
 
 function SideMenu(props){
 
@@ -52,11 +49,13 @@ function SideMenu(props){
 
           <ul className="list-unstyled">
             <li>&#169; 2019 Pixoul.  All rights reserved.</li>
-            <li><ul className="list-inline">
-              <li className="list-inline-item"><a>Privacy Policy</a></li>
-              <li className="list-inline-item">|</li>
-              <li className="list-inline-item"><a>Terms of Service</a></li>
-            </ul></li>
+            <li>
+              <ul className="list-inline">
+                <li className="list-inline-item"><Link to="/privacy-policy">Privacy Policy</Link></li>
+                <li className="list-inline-item">|</li>
+                <li className="list-inline-item"><Link to="/terms-of-service">Terms of Service</Link></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </Menu>

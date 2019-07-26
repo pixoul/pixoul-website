@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, withRouter } from "react-router-dom"
+import { withRouter } from "react-router-dom"
 
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
 import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"

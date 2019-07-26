@@ -3,7 +3,7 @@ import { Container, Row, Col } from "shards-react"
 import "./partner-stats.scss"
 
 import Opening from "utils/opening/opening"
-import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline, FeatureAction } from "utils/feature/feature"
+import { Feature, FeatureHeader, FeatureTitle, FeatureTagline, FeatureAction } from "utils/feature/feature"
 
 export default function PartnerStats(props){
   return(

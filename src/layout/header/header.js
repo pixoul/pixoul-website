@@ -25,20 +25,19 @@ function Header(props) {
 
   useEffect(() => {
     props.history.listen((location, action) => evaluateHeader(location.pathname));
-    console.log(props.location)
     evaluateHeader(props.location.pathname)
   })
 
   return (
     <div className={classes}>
       <Navbar type="light" expand="md">
-        <NavbarBrand href="#"><img src={logo} /></NavbarBrand>
+        <NavbarBrand href="#"><img src={logo} alt={logo} /></NavbarBrand>
         <Nav className="ml-auto align-items-center">
           <NavItem>
             <Button outline tag={Link} to="/contact">Contact Us</Button>
           </NavItem>
           <NavItem>
-            <NavLink className="menu-icon" onClick={props.toggleMenu} ><img src={menu} /></NavLink>
+            <NavLink className="menu-icon" onClick={props.toggleMenu} ><img src={menu} alt={menu} /></NavLink>
           </NavItem>
         </Nav>
       </Navbar>
