@@ -32,6 +32,10 @@
 
     &.light {
       color: $white;
+
+      a {
+        color: $white;
+      }
     }
 
     a {
