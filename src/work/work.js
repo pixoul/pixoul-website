@@ -1,13 +1,23 @@
 import React from "react"
 import { Route, withRouter } from "react-router-dom"
 import Iuzeit from "work/iuzeit"
+import GeorgiaPacific from "work/georgia-pacific"
+import Sofs from "work/sofs"
+import Fusemap from "work/fusemap"
+import Hcp from "work/hcp"
+import Ikarus from "work/ikarus"
 
 function Work({ match }){
   return(
     <div>
 
       <Iuzeit />
-      <Route path={`${match.path}/detail/iuzeit`} component={Iuzeit} />
+      <GeorgiaPacific />
+      <Sofs />
+      <Fusemap />
+      <Hcp />
+      <Ikarus />
+
     </div>
   )
 }
