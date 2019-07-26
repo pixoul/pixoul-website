@@ -20,7 +20,8 @@ export default function MediaCarousel({ images = [], slidesToShow = 5 }){
       infinite: true,
       speed: 500,
       slidesToShow: slidesToShow,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      centerMode: true
   }
 
   return(
