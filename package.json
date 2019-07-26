@@ -29,6 +29,7 @@
     "react-scroll-parallax": "^2.1.2",
     "react-slick": "^0.24.0",
     "react-spring": "^8.0.27",
+    "redux": "^4.0.4",
     "shards-react": "^1.0.3",
     "slick-carousel": "^1.8.1"
   },
