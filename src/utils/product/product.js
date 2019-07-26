@@ -14,7 +14,7 @@ function ProductCollection({ products = [] }){
   return(
     <div className="product-list">
       {products.map((item, i) => (
-        <ProductImage media={item.media} caption={item.caption} />
+        <ProductImage media={item.media} caption={item.caption} key={i} />
       ))}
     </div>
   )
