@@ -16,7 +16,7 @@ const images = [screen1, screen2, screen3, screen4, screen5, screen6]
 export default function Detail(){
   return(
     <ClientDetail>
-      <DetailHeader industry="E-Commerce Site" logo={logo} />
+      <DetailHeader industry="Kiosk Interface" logo={logo} />
       <DetailContent>
         <DetailSide width={800}>
           <DetailText
