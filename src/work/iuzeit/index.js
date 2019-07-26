@@ -2,8 +2,8 @@ import React from "react"
 
 import ClientSummary from "utils/client-summary/client-summary"
 
-import bg from "./bg01.png"
-import logo from "./iuzeit.svg"
+import bg from "./images/bg.png"
+import logo from "./images/logo.svg"
 
 export default function Iuzeit(){
   return(
