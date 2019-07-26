@@ -17,6 +17,7 @@ import Work from "work/work"
 import Contact from "contact/contact"
 
 import IuzeitDetail from "work/iuzeit/detail"
+import GeorgiaPacificDetail from "work/georgia-pacific/detail"
 
 function App(props) {
 
@@ -62,6 +63,7 @@ function App(props) {
               <Route exact path="/contact" component={Contact}/>
 
               <Route exact path="/work/detail/iuzeit" component={IuzeitDetail} />
+              <Route exact path="/work/detail/georgia-pacific" component={GeorgiaPacificDetail} />
 
               <Route exact path='/' render={props => (
                 <Redirect to={{ pathname: "/home", state: { from: props.location } }} />
