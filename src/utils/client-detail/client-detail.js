@@ -1,8 +1,6 @@
 import React from "react"
-import "./work-detail.scss"
+import "./client-detail.scss"
 import { Button } from "shards-react"
-
-import iuzeitLogo from "./images/iuzeit-logo.svg"
 
 
 function DetailText({ text, size, gutterTop, gutterBottom, italic, bold }){
@@ -64,45 +62,20 @@ function DetailList({ title, items = [] }){
   )
 }
 
-
-export default function WorkDetail(){
+function ClientDetail({ children }){
   return(
-    <div className="work-detail">
-      <DetailHeader industry="E-Commerce Site" logo={iuzeitLogo} />
-      <DetailContent>
-        <DetailSide width={800}>
-          <DetailText
-            size={35}
-            bold
-            text="With iuzeit, finding the product that meets a user’s exact lifestyle need is only a few clicks away.  We refined the challenges of a traditional e-commerce journey to create a markeplace that helps prioritize what products matter most—all in one sleek, modern interface."
-          />
-          <DetailText
-            size={25}
-            italic
-            text="Shaping the future of the online purchase journey."
-            gutterTop={115}
-            gutterBottom={118}
-           />
-        </DetailSide>
-
-        <DetailSide width={250}>
-            <DetailList
-             title="The Ask"
-             items={['Build a seamless design system that prioritizes ratings and reviews in one place.']}
-            />
-           <DetailList
-            title="Services"
-            items={['UX Research & Analysis', 'Prototyping', 'High-Fidelity UI Design', 'User Testing']}
-           />
-           <DetailList
-            title="Tools"
-            items={['Adobe XD', 'Sketch', 'InVision', 'Zeplin']}
-           />
-        </DetailSide>
-      </DetailContent>
-
-
-
+    <div className="client-detail">
+      {children}
     </div>
   )
+}
+
+
+export {
+  ClientDetail,
+  DetailHeader,
+  DetailText,
+  DetailList,
+  DetailContent,
+  DetailSide
 }
