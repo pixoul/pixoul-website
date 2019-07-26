@@ -1,7 +1,7 @@
-import React from "react"
-import { Route, Redirect, Switch, withRouter } from "react-router-dom"
+import React, { useContext } from "react"
+import { Route, Redirect, Switch, withRouter, __RouterContext } from "react-router-dom"
 import { useTransition, animated } from 'react-spring'
-
+import { Transition, config } from 'react-spring'
 
 /* Page Components */
 import Home from "home/home"
@@ -12,24 +12,30 @@ import Contact from "contact/contact"
 
 function Routes(props){
   const options = {
+    initial: {
+      opacity: 0,
+      transform: 'scale3d(0.5,0.5,0.5)'
+    },
     from: {
       opacity: 0,
-      transform: 'translate3d(100%,0,0)'
+      transform: 'scale3d(0.5,0.5,0.5)'
     },
     enter: {
       opacity: 1,
-      transform: 'translate3d(0%,0,0)'
+      transform: 'scale3d(1,1,1)'
     },
     leave: {
       opacity: 0,
-      transform: 'translate3d(-50%,0,0)'
+      transform: 'scale3d(0.5,0.5,0.5)'
     }
   }
 
-  const transitions = useTransition(props.location, item => item.key, options)
+  const { location } = useContext(__RouterContext)
 
-  return transitions.map(({ item, props, key }) => (
-    <animated.div key={key} style={props}>
+  const transitions = useTransition(location, location => location.pathname, options)
+
+  return transitions.map(({ item, props : style, key }) => (
+    <animated.div key={key} style={{...style, position: "absolute", height: "100%", width: "100%"}}>
          <Switch location={item}>
              <Route path="/home" component={Home} />
              <Route path="/work" component={Work} />
