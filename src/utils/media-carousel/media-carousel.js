@@ -13,15 +13,22 @@ function MediaItem({ media }){
   )
 }
 
-export default function MediaCarousel({ images = [], slidesToShow = 5 }){
+export default function MediaCarousel({ images = [], maxSlides = 5, center }){
   const settings = {
       dots: true,
+      arrows: true,
       autoplay: true,
       infinite: true,
       speed: 500,
-      slidesToShow: slidesToShow,
+      slidesToShow: maxSlides,
       slidesToScroll: 1,
-      centerMode: true
+      slidesPerRow: 1
+  }
+
+  if(center) {
+    settings.centerMode = true
+    settings.variableWidth = true
+    settings.adaptiveHeight = true
   }
 
   return(

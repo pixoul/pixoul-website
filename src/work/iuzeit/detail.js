@@ -49,7 +49,7 @@ export default function Detail(){
         </DetailSide>
       </DetailContent>
 
-      <MediaCarousel images={images} slidesToShow={3} />
+      <MediaCarousel images={images} maxSlides={1} center />
     </ClientDetail>
   )
 }
