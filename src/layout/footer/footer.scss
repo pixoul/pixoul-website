@@ -1,51 +1,87 @@
 @import "../../styles/variables.scss";
 
 .footer {
-   height: 270px;
-   padding: 60px 100px;
-   background: linear-gradient(280deg, #{$lightGrey} 50%, #{$darkGrey} 50%);
+  padding: 60px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 
+  &.light {
+    background: white;
+    color: $darkGrey;
+  }
 
-   .list-collection {
-     list-style: none;
-     display: inline-block;
-     margin-right: 85px;
+  &.dark {
+    background: linear-gradient(280deg, #{$lightGrey} 50%, #{$darkGrey} 50%);
+    color: $white;
+  }
 
-     &.right {
-       margin-right: 0;
-       margin-left: 130px;
-     }
+  .footer-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-     .list-title {
-       color: $white;
-       font-size: 18px;
-       font-weight: bold;
-       margin-bottom: 20px;
-     }
+    &.right {
+      padding-right: 150px;
 
-     .list-subtitle {
-       color: $white;
-       font-size: 18px;
-       font-weight: 500;
-       margin-bottom: 20px;
-     }
+      .list-collection {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
 
-     .list-item {
-       margin: 10px 0;
-       color: $white;
-       font-size: 14px;
-       font-weight: 300;
+    &.left {
+      padding-left: 150px;
 
-       a {
-         color: $white;
-         text-decoration: none;
+      .list-collection {
+        padding-right: 85px;
+        padding-left: 0;
+      }
+    }
+  }
 
-         &:hover {
-           opacity: 0.7;
-           transition: opacity .6s;
-         }
-       }
+  .list-collection {
+    list-style: none;
+    margin: 0;
+    max-width: 400px;
 
-     }
-   }
+    .list-title {
+      color: inherit;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .list-subtitle {
+      color: inherit;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .list-item {
+      margin: 10px 0;
+      color: inherit;
+      font-size: 14px;
+      font-weight: 300;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          opacity: 0.7;
+          transition: opacity 0.6s;
+        }
+
+        &.btn-primary {
+          color: $white;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }

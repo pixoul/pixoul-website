@@ -9,30 +9,32 @@ import ContactForm from "contact/contact-form/contact-form"
 
 export default function Contact() {
   return(
-    <div className="contact">
+    <div>
       <Header />
-        <Container>
-          <Opening
-            title="Contact Us"
-            subtitle="See how we help ambitious brands use design thinking to dominate digital."
-          />
+        <div className="contact">
+            <Container>
+              <Opening
+                title="Contact Us"
+                subtitle="See how we help ambitious brands use design thinking to dominate digital."
+              />
 
-          <Row>
-            <Col>
-              <ul className="list-collection">
-                <li className="list-title light">Phone</li>
-                <li className="list-item light"><a href="tel:6169149356">(616) 914-9356</a></li>
-                <li className="list-title light">Email</li>
-                <li className="list-item light"><a href="mailto:hello@pixoulinc.com">hello@pixoulinc.com</a></li>
-              </ul>
-            </Col>
-            <Col>
-              <ContactForm />
-            </Col>
-          </Row>
-        </Container>
+              <Row>
+                <Col>
+                  <ul className="list-collection">
+                    <li className="list-title light">Phone</li>
+                    <li className="list-item light"><a href="tel:6169149356">(616) 914-9356</a></li>
+                    <li className="list-title light">Email</li>
+                    <li className="list-item light"><a href="mailto:hello@pixoulinc.com">hello@pixoulinc.com</a></li>
+                  </ul>
+                </Col>
+                <Col>
+                  <ContactForm />
+                </Col>
+              </Row>
+            </Container>
+        </div>
 
-      <Footer />
+      <Footer theme="light" />
     </div>
   )
 }

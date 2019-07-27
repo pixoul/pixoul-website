@@ -79,7 +79,6 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  console.log(ownProps)
   return {
     toggleMenu: (open) => {
       dispatch(toggleMenu(open))
