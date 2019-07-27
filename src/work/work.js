@@ -34,7 +34,7 @@ function Page(){
 function Work({ match }){
   return(
     <div>
-      <Header />
+      <Header fixed />
         <Route exact path={`${match.path}/`} component={Page} />
         <Route path={`${match.path}/detail/iuzeit`} component={IuzeitDetail} />
         <Route path={`${match.path}/detail/georgia-pacific`} component={GeorgiaPacificDetail} />
