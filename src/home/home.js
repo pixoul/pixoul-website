@@ -5,8 +5,8 @@ import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTa
 import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
 import LatestWork from "work/latest-work/latest-work"
 
-import bg from "home/bg.png"
-import favicon from "images/favicon.svg"
+import bg from "./images/bg.png"
+import favicon from "./images/favicon.svg"
 
 export default function Home() {
   return(

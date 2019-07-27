@@ -12,8 +12,8 @@ import Strategy from "capabilities/strategy/strategy"
 import Design from "capabilities/design/design"
 import Technology from "capabilities/technology/technology"
 
-import bg from "capabilities/bg07.png"
-import phone from "capabilities/phone-mockup.png"
+import bg from "./images/bg.png"
+import phone from "./images/phone-mockup.png"
 
 function Page(){
   return(

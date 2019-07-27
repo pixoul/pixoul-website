@@ -3,11 +3,11 @@ import "./our-value.scss"
 
 import Opening from "utils/opening/opening"
 import { ProductCollection } from "utils/product/product"
-import startup from "images/startup.svg"
-import worldwide from "images/worldwide.svg"
-import cloud from "images/cloud.svg"
-import laptop from "images/laptop.svg"
-import pencil from "images/pencil.svg"
+import startup from "./images/startup.svg"
+import worldwide from "./images/worldwide.svg"
+import cloud from "./images/cloud.svg"
+import laptop from "./images/laptop.svg"
+import pencil from "./images/pencil.svg"
 
 const products = [
   { media: startup, caption: "Innovation" },
