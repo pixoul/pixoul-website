@@ -11,7 +11,7 @@ import favicon from "./images/favicon.svg"
 export default function Home() {
   return(
     <div>
-      <Header />
+      <Header fixed />
 
       <Hero bg={bg} theme="dark" align="center" offset={120}>
         <HeroContent>
