@@ -7,8 +7,8 @@ import "./header.scss"
 import { connect } from 'react-redux'
 import { toggleMenu } from "layout/side-menu/actions"
 
-import logo from "images/logo.png"
-import menu from "images/menu.svg"
+import logo from "./images/logo.svg"
+import menu from "./images/menu.svg"
 
 function Header({ fixed = false, open, toggleMenu }) {
 

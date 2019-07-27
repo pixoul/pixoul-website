@@ -10,7 +10,7 @@ import {
   ParallelText
 } from "utils/parallel-display/parallel-display"
 
-import map from "images/bitmap.jpg"
+import map from "./images/bitmap.jpg"
 
 export default function PartnerNetwork(){
   return(

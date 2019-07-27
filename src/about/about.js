@@ -3,8 +3,8 @@ import React from "react";
 import Header from "layout/header/header"
 import Footer from "layout/footer/footer"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
-import bg from "images/bg08.png"
-import browser from "images/browser_window.svg"
+import bg from "./images/bg.png"
+import browser from "./images/browser-window.svg"
 
 import PartnerStats from "about/partner-stats/partner-stats"
 import OurValue from "about/our-value/our-value"
