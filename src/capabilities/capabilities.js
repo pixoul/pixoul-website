@@ -40,7 +40,6 @@ function Page(){
 
 
 function Capabilities({ match }){
-  console.log(match)
   return(
     <div>
       <Header />
