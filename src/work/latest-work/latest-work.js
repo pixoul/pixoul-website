@@ -6,9 +6,9 @@ import "./latest-work.scss"
 import ClientCard from "utils/client-card/client-card"
 import Opening from "utils/opening/opening"
 
-import iuzeitMedia from "images/bg01.png"
-import georgiaPacificMedia from "images/bg02.png"
-import sofsMedia from "images/bg03.png"
+import iuzeitMedia from "./images/bg01.png"
+import georgiaPacificMedia from "./images/bg02.png"
+import sofsMedia from "./images/bg03.png"
 
 
 export default function LatestWork(){
