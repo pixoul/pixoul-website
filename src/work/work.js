@@ -20,12 +20,14 @@ import IkarusDetail from "work/ikarus/detail"
 function Page(){
   return(
     <div>
-      <Iuzeit />
-      <GeorgiaPacific />
-      <Sofs />
-      <Fusemap />
-      <Hcp />
-      <Ikarus />
+      <Header fixed />
+        <Iuzeit />
+        <GeorgiaPacific />
+        <Sofs />
+        <Fusemap />
+        <Hcp />
+        <Ikarus />
+      <Footer />
     </div>
   )
 }
@@ -34,7 +36,7 @@ function Page(){
 function Work({ match }){
   return(
     <div>
-      <Header fixed />
+
         <Route exact path={`${match.path}/`} component={Page} />
         <Route path={`${match.path}/detail/iuzeit`} component={IuzeitDetail} />
         <Route path={`${match.path}/detail/georgia-pacific`} component={GeorgiaPacificDetail} />
@@ -42,7 +44,7 @@ function Work({ match }){
         <Route path={`${match.path}/detail/fusemap`} component={FusemapDetail} />
         <Route path={`${match.path}/detail/hcp`} component={HcpDetail} />
         <Route path={`${match.path}/detail/ikarus`} component={IkarusDetail} />
-      <Footer />
+
     </div>
   )
 }
