@@ -36,14 +36,13 @@ function SideMenu({ history, open, toggleMenu, children, links = []}){
         className={ "side-menu" }
       >
 
-        <Button theme="light" className={classes} onClick={() => toggleMenu(false)}>
-         <span>X</span>
-        </Button>
-
-
         {links.map((item, i) => (
           <Link key={i} className="menu-item" to={item.route}>{item.label}</Link>
         ))}
+
+        <Button theme="light" className={classes} onClick={() => toggleMenu(false)}>
+         <span>X</span>
+        </Button>
 
         <div className="menu-footer">
           <div className="menu-cta">
@@ -51,8 +50,8 @@ function SideMenu({ history, open, toggleMenu, children, links = []}){
           </div>
 
           <ul className="list-unstyled">
-            <li>&#169; 2019 Pixoul.  All rights reserved.</li>
-            <li>
+            <li className="list-item">&#169; 2019 Pixoul.  All rights reserved.</li>
+            <li className="list-item">
               <ul className="list-inline">
                 <li className="list-inline-item"><Link to="/privacy-policy">Privacy Policy</Link></li>
                 <li className="list-inline-item">|</li>
