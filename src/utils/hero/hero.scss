@@ -89,10 +89,14 @@
     .hero-content {
       display: flex;
       flex-direction: column;
+
+      .hero-tagline {
+        margin-top: 38px;
+      }
     }
 
     .hero-action {
-      margin-top: 90px;
+      margin-top: 119px;
     }
   }
 
