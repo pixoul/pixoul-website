@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowRight } from '@fortawesome/pro-light-svg-icons'
 import "./feature.scss"
-import arrow from "./images/green-arrow.svg"
+import greenArrow from "./images/green-arrow.svg"
 
 function FeatureTagline(props){
 
@@ -24,6 +24,8 @@ function FeatureAction(props){
     fontSize: props.size ? props.size : 20,
     color: props.color ? props.color : '#2ec986'
   }
+
+  const arrow = props.arrowIcon ? props.arrowIcon : greenArrow
 
   return(
     <Link to={props.link} className="feature-action" style={styles}>
