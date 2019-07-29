@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 function MediaItem({ media }){
   return(
     <div className="media-item">
-      <img src={media} alt={media} className="media-image" />
+      <img src={media} alt={media} draggable="false" className="media-image" />
     </div>
   )
 }

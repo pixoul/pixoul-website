@@ -11,7 +11,7 @@ function ParallelImage(props){
 
   return(
     <div className="parallel-media">
-      <img src={props.media} alt={props.media} className="parallel-image" style={styles} />
+      <img src={props.media} alt={props.media} draggable="false" className="parallel-image" style={styles} />
     </div>
   )
 }

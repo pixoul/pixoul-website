@@ -26,7 +26,7 @@ function HeroMedia(props){
 
   return(
     <div className="hero-media" >
-      <img src={props.media} alt={props.alt} style={styles}/>
+      <img src={props.media} alt={props.alt} draggable="false" style={styles}/>
     </div>
   )
 }
