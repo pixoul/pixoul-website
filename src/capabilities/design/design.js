@@ -169,7 +169,7 @@ export default function Design(){
           subtitle="We believe good design is grounded in human understanding."
         />
 
-        <Container>
+        <Container className="design-capabilities">
           <Row>
             <Col sm="12" md="4">
               <Feature width={343} >

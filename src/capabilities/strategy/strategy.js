@@ -169,7 +169,7 @@ export default function Strategy(){
           subtitle="Our digital strategy ensures impactful management across the project lifecycle."
         />
 
-        <Container>
+        <Container className="strategy-capabilities">
           <Row>
             <Col sm="12" md="4">
               <Feature width={343} >
@@ -227,7 +227,7 @@ export default function Strategy(){
                   <FeatureIcon icon={faUserCheck} color="#3180fb" />
                   <FeatureTitle text="User Testing" />
                 </FeatureHeader>
-                <FeatureTagline text="No design experience is successful without without targeted user feedback, and iterative testing." />
+                <FeatureTagline text="No design experience is successful without targeted user feedback, and iterative testing." />
               </Feature>
             </Col>
           </Row>
