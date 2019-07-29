@@ -25,7 +25,7 @@ function DetailHeader({ industry, logo }){
         <img src={logo} alt={logo} className="detail-logo" />
       </div>
       <div className="detail-right">
-        <Button className="detail-action" theme="light" size="lg" outline>View Work</Button>
+        
       </div>
     </div>
   )

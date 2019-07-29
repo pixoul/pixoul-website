@@ -17,7 +17,6 @@ export default function MediaCarousel({ images = [], maxSlides = 5, center }){
   const settings = {
       dots: true,
       arrows: true,
-      autoplay: true,
       infinite: true,
       speed: 500,
       slidesToShow: maxSlides,
