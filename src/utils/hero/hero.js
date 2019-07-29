@@ -46,9 +46,12 @@ function HeroTagline(props){
   )
 }
 
-function HeroAction({ icon = faChevronCircleDown, text, action}){
+function HeroAction({ icon = faChevronCircleDown, action, text, gutterTop}){
+  const styles = {}
+  if(gutterTop) styles.marginTop = gutterTop
+
   return(
-    <a className="hero-action" href={action}>
+    <a className="hero-action" href={action} style={styles}>
       { icon && (
         <FontAwesomeIcon icon={icon} className="hero-icon" />
       )}
