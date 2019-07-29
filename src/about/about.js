@@ -29,7 +29,7 @@ export default function About() {
 
         </HeroContent>
         <HeroFooter>
-          <HeroAction />
+          <HeroAction gutterTop={63} />
           <HeroMedia media={browser} />
         </HeroFooter>
       </Hero>
