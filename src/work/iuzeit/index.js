@@ -11,7 +11,7 @@ export default function Iuzeit(){
       logo={logo}
       action="/work/detail/iuzeit"
       media={bg}
-      tagline="is shapping the future of the online purchase journey"
+      tagline="is shapping the future of the online purchase journey."
     />
   )
 }
