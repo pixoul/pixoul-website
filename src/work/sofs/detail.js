@@ -22,12 +22,12 @@ export default function Detail(){
           <DetailText
             size={35}
             bold
-            text="In partnership with Army of Bees, we designed a new check-in/check-out system that allowed Georgia-Pacific to quickly give their logisitics team an efficiency boost.  We built the product tailor-fit for outdoor professionals, and even designed it to minimzie sun glare."
+            text="Working with Stallion meant taking data visualization to the next level.  By doing a deep-dive into the world of oilfield services, we built a robust interface that simplified complex data streams and allowed snapshot statistics of vital KPIs."
           />
           <DetailText
             size={25}
             italic
-            text="Transforming how logistics gets done."
+            text="Taking field analytics to a whole new level."
             gutterTop={115}
             gutterBottom={118}
            />
@@ -36,15 +36,15 @@ export default function Detail(){
         <DetailSide width={250}>
             <DetailList
              title="The Ask"
-             items={['Build a tablet design for easy check-in/check-out  and logistics coordination.']}
+             items={['Build a display to an analytics engine that fits the needs of businesses and technicians.']}
             />
            <DetailList
             title="Services"
-            items={['Design Partnership', 'UX Research & Analysis', 'Low-Fi Wireframing', 'User Interface Design']}
+            items={['Analytics Review', 'Low-Fi Sketching', 'High-Fi Prototyping', 'Development QA Support']}
            />
            <DetailList
             title="Tools"
-            items={['Balsamiq', 'Figma', 'Sketch', 'InVision']}
+            items={['Pen + Paper', 'Sketch', 'InVision', 'Trello']}
            />
         </DetailSide>
       </DetailContent>
