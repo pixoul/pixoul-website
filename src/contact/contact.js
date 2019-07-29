@@ -16,6 +16,7 @@ export default function Contact() {
               <Opening
                 title="Contact Us"
                 subtitle="See how we help ambitious brands use design thinking to dominate digital."
+                theme="light"
               />
 
               <Row>
