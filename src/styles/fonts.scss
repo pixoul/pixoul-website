@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Avenir Next';
+    font-family: 'AvenirNext';
     src: url('./fonts/AvenirNextLTPro-Regular.otf') format('opentype');
 }
 
-body {
-  font-family: 'Avenir Next';
+body, h1, h2, h3, h4, h5, h6, p {
+  font-family: 'AvenirNext';
   -webkit-font-smoothing: antialiased;
 }
