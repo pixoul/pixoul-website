@@ -7,12 +7,30 @@
     font-size: 45px;
     font-weight: normal;
     margin-bottom: 12px;
-    color: #000000;
   }
 
   .opening-subtitle {
     font-size: 22px;
     font-weight: normal;
-    color: #374050;
+  }
+
+  &.light {
+    .opening-title {
+      color: #FFFFFF;
+    }
+
+    .opening-subtitle {
+      color: #FFFFFF;
+    }
+  }
+
+  &.dark {
+    .opening-title {
+      color: #000000;
+    }
+
+    .opening-subtitle {
+      color: #374050;
+    }
   }
 }
