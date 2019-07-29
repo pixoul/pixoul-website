@@ -10,7 +10,7 @@ export default function CapabilitesCollection(){
   return(
     <Container className="feature-collection">
       <Opening
-        title="Our Capabilities"
+        title="Our capabilities."
         subtitle="We work across industries and verticals to deliver impactful solutions."
       />
       <Row>
