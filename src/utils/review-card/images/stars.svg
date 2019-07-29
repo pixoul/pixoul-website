@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="19px" viewBox="0 0 140 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Stars</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v7.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Capabilities" transform="translate(-650.000000, -2634.000000)">
+            <g id="Testimonials" transform="translate(0.000000, 2301.000000)">
+                <g transform="translate(150.000000, 276.000000)" id="Testimonial-2">
+                    <g transform="translate(391.000000, 0.000000)">
+                        <g id="Stars" transform="translate(107.000000, 55.000000)">
+                            <g id="Star">
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                <polygon id="Path" fill="#FFB401" points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21"></polygon>
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                            </g>
+                            <g id="Star" transform="translate(30.000000, 0.000000)">
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                <polygon id="Path" fill="#FFB401" points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21"></polygon>
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                            </g>
+                            <g id="Star" transform="translate(60.000000, 0.000000)">
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                <polygon id="Path" fill="#FFB401" points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21"></polygon>
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                            </g>
+                            <g id="Star" transform="translate(90.000000, 0.000000)">
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                <polygon id="Path" fill="#FFB401" points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21"></polygon>
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                            </g>
+                            <g id="Star" transform="translate(120.000000, 0.000000)">
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                <polygon id="Path" fill="#FFB401" points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21"></polygon>
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

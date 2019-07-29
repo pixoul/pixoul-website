@@ -1,11 +1,8 @@
 import React from "react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
-
 import "./review-card.scss"
+import stars from "./images/stars.svg"
 
 export default function ReviewCard({
-  quantity = 0,
   review,
   avatar,
   reviewer,
@@ -14,7 +11,7 @@ export default function ReviewCard({
   return(
     <div className="review-card">
       <div className="review-stars">
-        {[...Array(quantity)].map((e, i) => <FontAwesomeIcon key={i} icon={faStar} className="star-icon" />)}
+        <img src={stars} alt={stars} draggable="false" />
       </div>
       <div className="review-content">
         <p className="review-text">{review}</p>
