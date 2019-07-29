@@ -22,10 +22,10 @@ function DetailHeader({ industry, logo }){
     <div className="detail-header">
       <div className="detail-left">
         <div className="detail-industry">{ industry }</div>
-        <img src={logo} alt={logo} className="detail-logo" />
+        <img src={logo} alt={logo} draggable="false" className="detail-logo" />
       </div>
       <div className="detail-right">
-        
+
       </div>
     </div>
   )

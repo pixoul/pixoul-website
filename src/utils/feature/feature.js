@@ -27,7 +27,7 @@ function FeatureAction(props){
 
   return(
     <Link to={props.link} className="feature-action" style={styles}>
-        {props.text} <img src={arrow} alt={arrow} />
+        {props.text} <img src={arrow} alt={arrow} draggable="false" />
     </Link>
   )
 }

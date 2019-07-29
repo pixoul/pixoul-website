@@ -19,13 +19,13 @@ function Header({ fixed = false, open, toggleMenu }) {
   return (
     <div className={classes}>
       <Navbar type="light" expand="md">
-        <NavbarBrand href="#"><img src={logo} alt={logo} /></NavbarBrand>
+        <NavbarBrand href="#"><img src={logo} alt={logo} draggable="false" /></NavbarBrand>
         <Nav className="ml-auto align-items-center">
           <NavItem>
             <Button outline tag={Link} to="/contact">Contact Us</Button>
           </NavItem>
           <NavItem>
-            <NavLink className="menu-icon" onClick={() => toggleMenu(!open)} ><img src={menu} alt={menu} /></NavLink>
+            <NavLink className="menu-icon" onClick={() => toggleMenu(!open)} ><img src={menu} alt={menu} draggable="false" /></NavLink>
           </NavItem>
         </Nav>
       </Navbar>
