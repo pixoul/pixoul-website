@@ -19,7 +19,7 @@ function Header({ fixed = false, open, toggleMenu }) {
   return (
     <div className={classes}>
       <Navbar type="light" expand="md">
-        <NavbarBrand href="#"><img src={logo} alt={logo} draggable="false" /></NavbarBrand>
+        <NavbarBrand tag={Link} to="/home"><img src={logo} alt={logo} draggable="false" /></NavbarBrand>
         <Nav className="ml-auto align-items-center">
           <NavItem>
             <Button outline tag={Link} to="/contact">Contact Us</Button>
