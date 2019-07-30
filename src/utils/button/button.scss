@@ -11,9 +11,17 @@
   letter-spacing: normal;
   text-align: center;
   padding: 15px;
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
 
   &.button-primary {
     background-color: #ffffff !important;
     color: #3180fb !important;
+
+    &:hover {
+      opacity: 0.7;
+      transition: opacity .6s;
+    }
   }
 }
