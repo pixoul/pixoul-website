@@ -5,7 +5,7 @@ import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Button } from "shards-react
 import "./header.scss"
 
 import { connect } from 'react-redux'
-import { toggleMenu } from "layout/side-menu/actions"
+import { toggleMenu } from "layout/navigation-menu/actions"
 
 import logo from "./images/logo.svg"
 import menu from "./images/menu.svg"
