@@ -23,8 +23,10 @@ import atom from "./images/atom.svg"
 import magento from "./images/magento.svg"
 import shopify from "./images/shopify.svg"
 import vue from "./images/vue.svg"
+import react from "./images/react.svg"
+import node from "./images/node.svg"
 
-const images = [adobe, android, angular, apple, atom, magento, shopify, vue]
+const images = [adobe, android, angular, apple, atom, magento, shopify, vue, react, node]
 
 
 export default function Technology(){
