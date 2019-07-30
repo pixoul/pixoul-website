@@ -26,8 +26,17 @@ import vue from "./images/vue.svg"
 import react from "./images/react.svg"
 import node from "./images/node.svg"
 
-const images = [adobe, android, angular, apple, atom, magento, shopify, vue, react, node]
-
+const images = [
+  { media: adobe, action: () => window.open('https://www.adobe.com/', '_blank'), caption: 'Adobe' },
+  { media: android, action: () => window.open('https://developer.android.com/', '_blank'), caption: 'Android' },
+  { media: angular, action: () => window.open('https://angular.io/', '_blank'), caption: 'Angular' },
+  { media: atom, action: () => window.open('https://atom.io/', '_blank'), caption: 'Atom' },
+  { media: magento, action: () => window.open('https://magento.com/', '_blank'), caption: 'Magnento' },
+  { media: shopify, action: () => window.open('https://www.shopify.com/', '_blank'), caption: 'Shopify' },
+  { media: vue, action: () => window.open('https://vuejs.org/', '_blank'), caption: 'Vue.js' },
+  { media: react, action: () => window.open('https://reactjs.org/', '_blank'), caption: 'React.js' },
+  { media: node, action: () => window.open('https://nodejs.org/en/', '_blank'), caption: 'Node.js' }
+]
 
 export default function Technology(){
   return(
