@@ -1,23 +1,28 @@
 import React, { useEffect } from "react"
 import { withRouter } from "react-router-dom"
-import { useSpring, animated, interpolate } from 'react-spring'
+import { useTransition, animated } from 'react-spring'
 
 import MenuContainer from "./menu-container"
 import MenuItems from "./menu-items"
 import MenuFooter from "./menu-footer"
 
-const Menu = ({ children, history, toggleMenu, open, links }) => {
+const Menu = ({ history, toggleMenu, open, links }) => {
 
-  const props = useSpring({
+  const transitions = useTransition(open, null, {
     from: {
       opacity: 0,
-      transform: 'translate3d(-100%, 0, 0)'
+      transform: 'translate3d(0, -100%, 0)'
     },
-    to: {
-      opacity: open === true ? 1 : 0,
-      transform: 'translate3d(0, 0, 0)'
+    enter: {
+      opacity: 1,
+      transform: 'translate3d(0, 0%, 0)'
+    },
+    leave: {
+      opacity: 0,
+      transform: 'translate3d(0, -100%, 0)'
     }
   })
+
 
   useEffect(() => {
     history.listen((location, action) => {
@@ -25,25 +30,14 @@ const Menu = ({ children, history, toggleMenu, open, links }) => {
     });
   })
 
-  return (
-    <div>
-     <animated.div
-      style={{
-        ...props
-      }}
-     >
-        <MenuContainer>
-          <MenuItems items={links} />
-
-          <MenuFooter />
-        </MenuContainer>
-     </animated.div>
-
-     <main className="main-content">
-       {children}
-     </main>
-    </div>
-  )
+  return transitions.map(({ item, key, props }) => item && (
+    <animated.div key={key} style={props} className="menu">
+      <MenuContainer>
+        <MenuItems items={links} />
+        <MenuFooter />
+      </MenuContainer>
+    </animated.div>
+  ))
 
 }
 
