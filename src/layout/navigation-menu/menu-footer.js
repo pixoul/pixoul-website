@@ -8,11 +8,17 @@ const MenuFooter = () => {
   const props = useSpring({
     from: {
       opacity: 0,
-      transform: 'translate3d(0, -100%, 0)'
+      transform: 'translate3d(-100%, 0, 0)'
     },
     to: {
       opacity: 1,
-      transform: 'translate3d(0, 0%, 0)'
+      transform: 'translate3d(0%, 0, 0)'
+    },
+    delay: 500,
+    config: {
+      mass: 1,
+      tension: 280,
+      friction: 120
     }
   })
 
