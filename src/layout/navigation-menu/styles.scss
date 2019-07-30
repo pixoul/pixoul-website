@@ -1,7 +1,7 @@
 
 $menu-primary-bg: #3180fb;
 $menu-secondary-bg: #374050;
-$menu-item-font-size: 35px;
+$menu-item-font-size: 45px;
 
 .menu {
   position: absolute;
@@ -63,7 +63,51 @@ $menu-item-font-size: 35px;
     }
 
     .menu-footer {
+      .menu-cta {
+        margin: 20px 0;
+      }
 
+
+      .list-collection {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        &.light {
+          .list-title {
+            color: #FFFFFF;
+          }
+
+          .list-item {
+            color: #FFFFFF;
+          }
+        }
+
+        .list-title {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 12px;
+          margin-top: 30px;
+        }
+
+        .list-item {
+          margin: 10px 0;
+          font-size: 20px;
+          font-weight: normal;
+
+          a {
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+              opacity: 0.7;
+              transition: opacity .6s;
+            }
+          }
+
+        }
+      }
     }
 
   }

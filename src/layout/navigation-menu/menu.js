@@ -6,7 +6,7 @@ import MenuContainer from "./menu-container"
 import MenuItems from "./menu-items"
 import MenuFooter from "./menu-footer"
 
-const Menu = ({ history, toggleMenu, open, links }) => {
+const Menu = ({ history, toggleMenu, open, links = [] }) => {
 
   const transitions = useTransition(open, null, {
     from: {
