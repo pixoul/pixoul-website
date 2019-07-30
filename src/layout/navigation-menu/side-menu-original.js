@@ -1,8 +1,11 @@
 import React, { useEffect } from "react"
 import cn from "classnames"
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { scaleRotate as Menu } from 'react-burger-menu'
 import { Button } from "shards-react";
+
+import MenuItems from "layout/side-menu/menu-items"
+import MenuFooter from "layout/side-menu/menu-footer"
 
 import { connect } from 'react-redux'
 import { toggleMenu } from "layout/side-menu/actions"
@@ -36,30 +39,14 @@ function SideMenu({ history, open, toggleMenu, children, links = []}){
         className={ "side-menu" }
       >
 
-        {links.map((item, i) => (
-          <Link key={i} className="menu-item" to={item.route}>{item.label}</Link>
-        ))}
+        <MenuItems items={links} />
 
         <Button theme="light" className={classes} onClick={() => toggleMenu(false)}>
          <span>X</span>
         </Button>
 
-        <div className="menu-footer">
-          <div className="menu-cta">
-            <Button squared theme="light" tag={Link} to="/contact">Contact Us</Button>
-          </div>
+        <MenuFooter />
 
-          <ul className="list-unstyled">
-            <li className="list-item">&#169; 2019 Pixoul.  All rights reserved.</li>
-            <li className="list-item">
-              <ul className="list-inline">
-                <li className="list-inline-item"><Link to="/privacy-policy">Privacy Policy</Link></li>
-                <li className="list-inline-item">|</li>
-                <li className="list-inline-item"><Link to="/terms-of-service">Terms of Service</Link></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
       </Menu>
 
       <main id="page-wrap">

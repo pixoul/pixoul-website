@@ -1,16 +1,17 @@
 import React from "react"
 import "./app.scss"
 
-import SideMenu from "layout/side-menu/side-menu"
+import NavigationMenu from "layout/navigation-menu"
 import Routes from "./routes"
 
 function App(props) {
 
   return (
     <div>
-      <SideMenu>
-          <Routes />
-      </SideMenu>
+      <NavigationMenu>
+        <Routes />
+      </NavigationMenu>
+
     </div>
   );
 }
