@@ -20,13 +20,13 @@ export default function LatestWork(){
       />
       <Row>
         <Col sm="12" md="4">
-          <ClientCard media={iuzeitMedia} title="iuzeit" />
+          <ClientCard media={iuzeitMedia} title="iuzeit" action="/work/detail/iuzeit" />
         </Col>
         <Col sm="12" md="4">
-          <ClientCard media={georgiaPacificMedia} title="Georgia-Pacific" />
+          <ClientCard media={georgiaPacificMedia} title="Georgia-Pacific" action="/work/detail/georgia-pacific" />
         </Col>
         <Col sm="12" md="4">
-          <ClientCard media={sofsMedia} title="Stallion Oilfield Services" />
+          <ClientCard media={sofsMedia} title="Stallion Oilfield Services" action="/work/detail/sofs" />
         </Col>
       </Row>
       <Row>
