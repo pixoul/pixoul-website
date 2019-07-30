@@ -10,7 +10,6 @@ import Work from "work/work"
 import Contact from "contact/contact"
 
 function Routes(props){
-  const pageTop = useRef(null);
 
   const options = {
     initial: {
@@ -28,9 +27,6 @@ function Routes(props){
     leave: {
       opacity: 0,
       transform: 'translate3d(100%, 0, 0)'
-    },
-    onRest: () => {
-      pageTop.current.scrollIntoView({behavior: 'smooth'})
     }
   }
 
@@ -39,7 +35,7 @@ function Routes(props){
   const transitions = useTransition(location, location => location.pathname, options)
 
   return transitions.map(({ item, props : style, key }) => (
-      <animated.div key={key} style={{...style, position: "absolute", height: "100%", width: "100%"}} ref={pageTop}>
+      <animated.div key={key} style={{...style, position: "absolute", height: "100%", width: "100%"}}>
            <Switch location={item}>
                <Route path="/home" component={Home} />
                <Route path="/work" component={Work} />

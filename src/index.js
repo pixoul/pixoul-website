@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "app/app";
 import * as serviceWorker from "./serviceWorker";
 import { Route, BrowserRouter } from "react-router-dom";
+import ScrollMemory from 'react-router-scroll-memory';
 import { Provider } from 'react-redux'
 import { store } from "app/store"
 
@@ -13,6 +14,7 @@ import "styles/fonts.scss";
 const routing = (
   <BrowserRouter>
     <Provider store={store}>
+      <ScrollMemory />
       <Route path="/" component={App} />
     </Provider>
   </BrowserRouter>
