@@ -5,12 +5,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function MediaItem({ media }){
-  return(
+function MediaItem({ media, action, caption }){
+
+  const item = (
     <div className="media-item">
       <img src={media} alt={media} draggable="false" className="media-image" />
+      { caption && (
+        <span className="media-caption">{ caption }</span>
+      )}
     </div>
   )
+
+  return action ? (<a onClick={action} className="media-action">{item}</a>) : item
 }
 
 export default function MediaCarousel({ images = [], maxSlides = 5, center }){
@@ -20,7 +26,7 @@ export default function MediaCarousel({ images = [], maxSlides = 5, center }){
       infinite: true,
       speed: 500,
       slidesToShow: maxSlides,
-      slidesToScroll: 1,
+      slidesToScroll: maxSlides,
       slidesPerRow: 1
   }
 
@@ -33,8 +39,8 @@ export default function MediaCarousel({ images = [], maxSlides = 5, center }){
   return(
     <div className="media-carousel">
       <Slider {...settings} >
-        {images.map((media, i) => (
-          <MediaItem media={media} key={i} />
+        {images.map((item, i) => (
+          <MediaItem key={i} {...item} />
         ))}
       </Slider>
     </div>

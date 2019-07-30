@@ -11,7 +11,14 @@ import screen4 from "./images/screen-4.png"
 import screen5 from "./images/screen-5.png"
 import screen6 from "./images/screen-6.png"
 
-const images = [screen1, screen2, screen3, screen4, screen5, screen6]
+const images = [
+  { media: screen1 },
+  { media: screen2 },
+  { media: screen3 },
+  { media: screen4 },
+  { media: screen5 },
+  { media: screen6 },
+]
 
 export default function Detail(){
   return(

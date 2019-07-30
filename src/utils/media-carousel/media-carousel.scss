@@ -1,10 +1,24 @@
 
 .media-carousel {
   margin: 100px;
+
   .media-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .media-caption {
+      padding-top: 10px;
+    }
+
     .media-image {
       margin: 0 auto;
     }
+  }
+
+  .media-action {
+    cursor: pointer;
   }
 
   .slick-prev:before, .slick-next:before {
@@ -12,6 +26,10 @@
     color: black;
     opacity: 0.5;
     z-index: 100;
+  }
+
+  .slick-list {
+    padding-bottom: 25px;
   }
 
   .slick-arrow {
