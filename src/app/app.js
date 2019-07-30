@@ -8,10 +8,8 @@ function App(props) {
 
   return (
     <div>
-      <NavigationMenu>
-        <Routes />
-      </NavigationMenu>
-
+      <NavigationMenu />
+      <Routes />
     </div>
   );
 }
