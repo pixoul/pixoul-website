@@ -2,16 +2,21 @@ import React from "react"
 import "./strategy.scss"
 /* Third-Party Packages */
 import { Container, Row, Col } from "shards-react";
-import { faPhoneLaptop, faPaintBrush, faExpandWide, faUsersClass, faWheelchair, faUserCheck } from '@fortawesome/pro-light-svg-icons'
-
 /* Utility Components */
 import { Hero, HeroContent, HeroTitle, HeroTagline} from "utils/hero/hero"
 import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline } from "utils/feature/feature"
 import Opening from "utils/opening/opening"
 import Capability from "utils/capability/capability"
-
-
+/* Images */
 import bg from "./images/hero-background.jpg"
+/* Icons */
+import screens from "./images/screens.svg"
+import brush from "./images/brush.svg"
+import expand from "./images/expand.svg"
+import devices from "./images/devices.svg"
+import plus from "./images/plus.svg"
+import reload from "./images/reload.svg"
+/* Capability Data */
 import data from "./data"
 
 export default function Strategy(){
@@ -39,7 +44,7 @@ export default function Strategy(){
             <Col sm="12" md="4">
               <Feature width={343} >
                 <FeatureHeader>
-                  <FeatureIcon icon={faPhoneLaptop} color="#3180fb" />
+                  <FeatureIcon svg={screens} />
                   <FeatureTitle text="User Experience Design" />
                 </FeatureHeader>
                 <FeatureTagline text="By combining data insights with psychology research, we’re redefining digital." />
@@ -49,7 +54,7 @@ export default function Strategy(){
             <Col sm="12" md="4">
               <Feature width={343} >
                 <FeatureHeader>
-                  <FeatureIcon icon={faPaintBrush} color="#3180fb" />
+                  <FeatureIcon svg={brush} />
                   <FeatureTitle text="User Interface Design" />
                 </FeatureHeader>
                 <FeatureTagline text="Beautiful interfaces begin with clean, familiar design systems that encourage easy use." />
@@ -59,7 +64,7 @@ export default function Strategy(){
             <Col sm="12" md="4">
               <Feature width={343} >
                 <FeatureHeader>
-                  <FeatureIcon icon={faExpandWide} color="#3180fb" />
+                  <FeatureIcon svg={expand} />
                   <FeatureTitle text="Rapid Prototyping" />
                 </FeatureHeader>
                 <FeatureTagline text="Our iterative, agile methodology promotes a fail-fast approach to designing and implementation." />
@@ -69,7 +74,7 @@ export default function Strategy(){
             <Col sm="12" md="4">
               <Feature width={343} >
                 <FeatureHeader>
-                  <FeatureIcon icon={faUsersClass} color="#3180fb" />
+                  <FeatureIcon svg={devices} />
                   <FeatureTitle text="Collaborative Design" />
                 </FeatureHeader>
                 <FeatureTagline text="Our work takes place at the intersection of business objectives, user needs, and IT capabilities." />
@@ -79,7 +84,7 @@ export default function Strategy(){
             <Col sm="12" md="4">
               <Feature width={343} >
                 <FeatureHeader>
-                  <FeatureIcon icon={faWheelchair} color="#3180fb" />
+                  <FeatureIcon svg={plus} />
                   <FeatureTitle text="Accessibility" />
                 </FeatureHeader>
                 <FeatureTagline text="From color blindness to varying devices, we regard WCAG guidelines for a positive experience for all." />
@@ -89,7 +94,7 @@ export default function Strategy(){
             <Col sm="12" md="4">
               <Feature width={343} >
                 <FeatureHeader>
-                  <FeatureIcon icon={faUserCheck} color="#3180fb" />
+                  <FeatureIcon svg={reload} />
                   <FeatureTitle text="User Testing" />
                 </FeatureHeader>
                 <FeatureTagline text="No design experience is successful without targeted user feedback, and iterative testing." />

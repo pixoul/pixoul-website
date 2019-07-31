@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="38px" viewBox="0 0 40 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v7.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Capabilities_Strategy" transform="translate(-544.000000, -4352.000000)">
+            <g id="Features" transform="translate(0.000000, 4076.000000)">
+                <g transform="translate(149.000000, 270.000000)" id="Feature-2">
+                    <g transform="translate(391.000000, 0.000000)">
+                        <g id="Icon">
+                            <polygon id="Path" points="0.20833375 0 50.2083338 0 50.2083338 50 0.20833375 50"></polygon>
+                            <path d="M14.7916671,29.1666666 C11.3333338,29.1666666 8.54166709,31.9583334 8.54166709,35.4166666 C8.54166709,38.1458334 6.12500041,39.5833334 4.37500041,39.5833334 C6.29166709,42.125 9.56250041,43.75 12.7083338,43.75 C17.3125004,43.75 21.0416671,40.0208334 21.0416671,35.4166666 C21.0416671,31.9583334 18.2500004,29.1666666 14.7916671,29.1666666 Z" id="Path" fill-opacity="0.748743444" fill="#3180FB"></path>
+                            <path d="M43.3541671,9.64583334 L40.5625004,6.85416666 C39.7500004,6.04166666 38.4375004,6.04166666 37.6250004,6.85416666 L18.9583338,25.5208334 L24.6875004,31.25 L43.3541671,12.5833334 C44.1666671,11.7708333 44.1666671,10.4583333 43.3541671,9.64583334 Z" id="Path" fill-opacity="0.503332605" fill="#3180FB"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

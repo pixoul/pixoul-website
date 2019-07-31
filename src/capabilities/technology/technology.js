@@ -1,17 +1,13 @@
 import React from "react"
 import "./technology.scss"
-
 /* Utility Components */
 import { Hero, HeroContent, HeroTitle, HeroTagline} from "utils/hero/hero"
-
 import MediaCarousel from "utils/media-carousel/media-carousel"
 import Opening from "utils/opening/opening"
 import Capability from "utils/capability/capability"
-
-/* Page Images */
+/* Images */
 import bg from "./images/hero-background.jpg"
 import data from "./data"
-
 /* Carousel Images */
 import adobe from "./images/adobe.svg"
 import android from "./images/android.svg"

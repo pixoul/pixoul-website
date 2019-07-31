@@ -1,17 +1,19 @@
 import React, { useRef } from "react"
-import { withRouter, Route } from "react-router-dom"
 
+/* Third-Party Packages */
+import { withRouter, Route } from "react-router-dom"
+/* Utility Components */
 import Header from "layout/header/header"
 import Footer from "layout/footer/footer"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
-import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
-import PartnerIndustries from "capabilities/partner-industries/partner-industries"
-import Reviews from "capabilities/reviews/reviews"
-
-import Strategy from "capabilities/strategy/strategy"
-import Design from "capabilities/design/design"
-import Technology from "capabilities/technology/technology"
-
+/* Presentation Components */
+import CapabilitiesCollection from "./capabilities-collection/capabilities-collection"
+import PartnerIndustries from "./partner-industries/partner-industries"
+import Reviews from "./reviews/reviews"
+import Strategy from "./strategy/strategy"
+import Design from "./design/design"
+import Technology from "./technology/technology"
+/* Images */
 import bg from "./images/bg.png"
 import phone from "./images/phone-mockup.png"
 

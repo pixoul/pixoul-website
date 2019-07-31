@@ -46,16 +46,26 @@ function FeatureTitle(props){
   )
 }
 
-function FeatureIcon(props){
+function FeatureIcon({
+  icon,
+  svg,
+  color,
+  size
+}){
 
-  const styles = {
-    fontSize: props.size ? props.size : 35,
-    color: props.color ? props.color : '#3180fb'
+  const styles = {}
+  if(color) styles.color = color
+  if(size) styles.fontSize = size
+
+  if(svg){
+    return(<img src={svg} alt={svg} className="feature-svg" />)
   }
 
-  return(
-    <FontAwesomeIcon icon={props.icon} className="feature-icon" style={styles} />
-  )
+  if(icon){
+    return(<FontAwesomeIcon icon={icon} className="feature-icon" style={styles} />)
+  }
+
+  return null
 }
 
 function FeatureHeader(props){

@@ -1,10 +1,11 @@
 import React from "react"
 import "./reviews.scss"
+/* Third-Party Packages */
 import { Container, Row, Col } from "shards-react"
-
+/* Utility Components */
 import Opening from "utils/opening/opening"
 import ReviewCard from "utils/review-card/review-card"
-
+/* Images */
 import reviewer1 from "./images/reviewer-1.jpg"
 import reviewer2 from "./images/reviewer-2.jpg"
 import reviewer3 from "./images/reviewer-3.jpg"

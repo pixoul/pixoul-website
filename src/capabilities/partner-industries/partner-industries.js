@@ -1,8 +1,8 @@
 import React from "react"
 import "./partner-industries.scss"
-
+/* Utility Components */
 import Capability from "utils/capability/capability"
-
+/* Images */
 import example1 from "./images/example-1.jpg"
 import example2 from "./images/example-2.jpg"
 import example3 from "./images/example-3.jpg"
