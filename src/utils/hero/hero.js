@@ -1,8 +1,8 @@
 import React from "react"
 import cn from "classnames"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronCircleDown } from '@fortawesome/pro-light-svg-icons'
 import "./hero.scss"
+import blueArrow from "./images/blue-arrow.svg"
+import whiteArrow from "./images/white-arrow.svg"
 
 function HeroTitle(props){
 
@@ -46,17 +46,16 @@ function HeroTagline(props){
   )
 }
 
-function HeroAction({ icon = faChevronCircleDown, action, text, gutterTop}){
+function HeroArrow({ action, gutterTop, gutterBottom, type = 'blue' }){
   const styles = {}
   if(gutterTop) styles.marginTop = gutterTop
+  if(gutterBottom) styles.marginBottom = gutterBottom
+
+  const arrow = type === 'blue' ? blueArrow : whiteArrow
 
   return(
-    <a className="hero-action" href={action} style={styles}>
-      { icon && (
-        <FontAwesomeIcon icon={icon} className="hero-icon" />
-      )}
-
-      {text}
+    <a className="hero-arrow" onClick={action} style={styles}>
+      <img src={arrow} alt={arrow} className="arrow-image" />
     </a>
   )
 }
@@ -116,5 +115,5 @@ export {
   HeroMedia,
   HeroTitle,
   HeroTagline,
-  HeroAction
+  HeroArrow
 }

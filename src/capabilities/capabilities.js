@@ -1,9 +1,9 @@
-import React from "react"
+import React, { useRef } from "react"
 import { withRouter, Route } from "react-router-dom"
 
 import Header from "layout/header/header"
 import Footer from "layout/footer/footer"
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
 import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
 import PartnerIndustries from "capabilities/partner-industries/partner-industries"
 import Reviews from "capabilities/reviews/reviews"
@@ -16,20 +16,30 @@ import bg from "./images/bg.png"
 import phone from "./images/phone-mockup.png"
 
 function Page(){
+  const sectionEl = useRef(null)
+
+  const heroClick = () => {
+    sectionEl.current.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
+
   return(
     <div>
         <Hero bg={bg} theme="light" align="left">
           <HeroContent>
             <HeroTitle text="How can we help?" width={475} size={65} />
             <HeroTagline text="We’re here to bring life to your digital vision. Got a project in mind? Let’s talk." />
-            <HeroAction />
+            <HeroArrow action={heroClick} type="white" />
           </HeroContent>
           <HeroFooter>
             <HeroMedia media={phone} width={350} />
           </HeroFooter>
         </Hero>
 
-        <CapabilitiesCollection />
+        <div ref={sectionEl}>
+          <CapabilitiesCollection />
+        </div>
 
         <PartnerIndustries />
 

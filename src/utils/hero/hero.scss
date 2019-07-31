@@ -33,15 +33,8 @@
     font-weight: normal;
   }
 
-  .hero-action {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+  .hero-arrow {
     cursor: pointer;
-
-    .hero-icon {
-      font-size: 60px;
-    }
   }
 
   //Theme classes
@@ -70,13 +63,9 @@
       flex-direction: column;
     }
 
-    .hero-title, .hero-tagline, .hero-media, .hero-action {
+    .hero-title, .hero-tagline, .hero-media, .hero-arrow {
       margin-left: auto;
       margin-right: auto;
-    }
-
-    .hero-action {
-      padding-top: 30px;
     }
   }
 
@@ -95,7 +84,7 @@
       }
     }
 
-    .hero-action {
+    .hero-arrow {
       margin-top: 119px;
     }
   }
