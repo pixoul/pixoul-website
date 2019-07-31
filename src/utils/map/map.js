@@ -1,5 +1,6 @@
 import React from "react"
-import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl'
+import "./map.scss"
+import ReactMapboxGl, { Marker } from 'react-mapbox-gl'
 
 const Map = () => {
 
@@ -7,19 +8,22 @@ const Map = () => {
     accessToken: 'pk.eyJ1IjoiaGVsbG9waXhvdWwiLCJhIjoiY2p5cnE1OWZ5MDRmaTNscXVlemR3NnZociJ9.jFKbvnZWLtnDp6csFnk95A'
   })
 
+  const homeLocation = [-96.8066700, 32.7830600]
 
   return(
     <div>
       <MapboxMap
-        style="mapbox://styles/mapbox/streets-v9"
+        style="mapbox://styles/hellopixoul/cjyrqnr791ntp1cp21b11ppfa"
         containerStyle={{
-          height: '100vh',
-          width: '100vw'
+          height: '563px',
+          width: '606px'
         }}
+        center={homeLocation}
+        zoom={[12]}
       >
-        <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
-          <Feature coordinates={[-0.481747846041145, 51.3233379650232]} />
-        </Layer>
+        <Marker coordinates={homeLocation} anchor="bottom">
+          <span className="map-icon">Pixoul Headquarters</span>
+        </Marker>
       </MapboxMap>
     </div>
   )

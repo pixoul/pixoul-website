@@ -4,9 +4,9 @@ import Header from "layout/header/header"
 import Footer from "layout/footer/footer"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
 import Capability from "utils/capability/capability"
+import Map from "utils/map/map"
 import bg from "./images/bg.png"
 import browser from "./images/browser-window.svg"
-import map from "./images/bitmap.jpg"
 
 import PartnerStats from "about/partner-stats/partner-stats"
 import OurValue from "about/our-value/our-value"
@@ -51,11 +51,7 @@ export default function About() {
 
       <Capability
         direction='ltr'
-        media={{
-          image: map,
-          width: 606,
-          height: 563
-        }}
+        mediaComponent={<Map />}
         title='Our partner network is always expanding.'
         subtitle='Headquartered in Dallas, TX, we’re proud to have made an impact on communities around the world.'
         details = {{
