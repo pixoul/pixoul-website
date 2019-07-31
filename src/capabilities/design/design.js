@@ -6,16 +6,13 @@ import { faPhoneLaptop, faPaintBrush, faExpandWide, faChalkboard, faWheelchair, 
 
 /* Utility Components */
 import { Hero, HeroContent, HeroTitle, HeroTagline} from "utils/hero/hero"
-import { ParallelDisplay, ParallelContent, ParallelList, ParallelItem, ParallelImage, ParallelText } from "utils/parallel-display/parallel-display"
 import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline } from "utils/feature/feature"
 import Opening from "utils/opening/opening"
+import Capability from "utils/capability/capability"
 
 /* Images */
 import bg from "./images/hero-background.jpg"
-import designThinking from "./images/design-thinking.jpg"
-import userExperience from "./images/user-experience.jpg"
-import userInterface from "./images/user-interface.jpg"
-import iterativeTesting from "./images/iterative-testing.jpg"
+import data from "./data"
 
 export default function Design(){
   return(
@@ -27,141 +24,9 @@ export default function Design(){
         </HeroContent>
       </Hero>
 
-      <div className="section white bottom-gutter">
-        <ParallelDisplay>
-          <ParallelContent leftGutter={150}>
-            <ParallelText
-              width={560}
-              size={45}
-              color="#000000"
-              text="01. Design Thinking Process"
-            />
-            <ParallelText
-              width={530}
-              size={20}
-              text="Supported by our data and research initiatives, we use industry proven Design Thinking techniques to promote strong user- and human-centered design."
-            />
-
-            <ParallelList>
-              <ParallelItem
-                title="Empathy + Creativity"
-                tagline="Design to make purposeful impact on entire communitites."
-              />
-
-              <ParallelItem
-                title="The Three I’s"
-                tagline="Inspire, ideate, and implement solutions that matter."
-              />
-            </ParallelList>
-          </ParallelContent>
-          <ParallelContent rightGutter={0}>
-            <ParallelImage media={designThinking} width={606} height={563} />
-          </ParallelContent>
-        </ParallelDisplay>
-      </div>
-
-      <div className="section grey bottom-gutter">
-        <ParallelDisplay>
-
-          <ParallelContent>
-            <ParallelImage media={userExperience} width={606} height={563} />
-          </ParallelContent>
-
-          <ParallelContent rightGutter={80}>
-            <ParallelText
-              width={560}
-              size={45}
-              color="#000000"
-              text="02. User Experience (UX) Design"
-            />
-            <ParallelText
-              width={530}
-              size={20}
-              text="Compelling digital experiences begin with an understanding of your goals.  "
-            />
-
-            <ParallelList>
-              <ParallelItem
-                title="Brainstorming"
-                tagline="Ensure product is accessible, innovative, and empathetic."
-              />
-
-              <ParallelItem
-                title="Great Design"
-                tagline="Create value propositions and dive into product culture."
-              />
-            </ParallelList>
-          </ParallelContent>
-        </ParallelDisplay>
-      </div>
-
-      <div className="section white bottom-gutter">
-        <ParallelDisplay>
-          <ParallelContent leftGutter={150}>
-            <ParallelText
-              width={560}
-              size={45}
-              color="#000000"
-              text="03. User Interface (UI) Design"
-            />
-            <ParallelText
-              width={530}
-              size={20}
-              text="We know great experiences neccessitate a beautiful design aesthetic."
-            />
-
-            <ParallelList>
-              <ParallelItem
-                title="Modern, Clean Design"
-                tagline="Captivate with an easy-to-use design that’s equally stunning."
-              />
-
-              <ParallelItem
-                title="Scalable Systems"
-                tagline="Become device-agnostic with motion interaction."
-              />
-            </ParallelList>
-          </ParallelContent>
-          <ParallelContent rightGutter={0}>
-            <ParallelImage media={userInterface} width={606} height={563} />
-          </ParallelContent>
-        </ParallelDisplay>
-      </div>
-
-      <div className="section grey bottom-gutter">
-        <ParallelDisplay>
-
-          <ParallelContent>
-            <ParallelImage media={iterativeTesting} width={606} height={563} />
-          </ParallelContent>
-
-          <ParallelContent rightGutter={80}>
-            <ParallelText
-              width={560}
-              size={45}
-              color="#000000"
-              text="04. Iterative Testing & Analysis"
-            />
-            <ParallelText
-              width={530}
-              size={20}
-              text="Design begins with great research—and it ends with it, too. "
-            />
-
-            <ParallelList>
-              <ParallelItem
-                title="Agile Approach"
-                tagline="Testing and iterative design is baked-in to every sprint cycle."
-              />
-
-              <ParallelItem
-                title="Bottom-Line Economics"
-                tagline="Utilize data-driven field studies, guerilla tests, focus groups, etc."
-              />
-            </ParallelList>
-          </ParallelContent>
-        </ParallelDisplay>
-      </div>
+      {data.map((item, i) => (
+        <Capability {...item} />
+      ))}
 
       <div className="section white">
         <Opening

@@ -3,12 +3,13 @@ import React, { useRef } from "react";
 import Header from "layout/header/header"
 import Footer from "layout/footer/footer"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
+import Capability from "utils/capability/capability"
 import bg from "./images/bg.png"
 import browser from "./images/browser-window.svg"
+import map from "./images/bitmap.jpg"
 
 import PartnerStats from "about/partner-stats/partner-stats"
 import OurValue from "about/our-value/our-value"
-import PartnerNetwork from "about/partner-network/partner-network"
 
 export default function About() {
   const sectionEl = useRef(null)
@@ -48,7 +49,16 @@ export default function About() {
 
       <OurValue />
 
-      <PartnerNetwork />
+      <Capability
+        direction='ltr'
+        media={map}
+        title='Our partner network is always expanding.'
+        subtitle='Headquartered in Dallas, TX, we’re proud to have made an impact on communities around the world.'
+        details = {{
+          'Team Members': 'Across North America',
+          'Clients': 'Around the globe'
+        }}
+      />
     <Footer />
     </div>
   )
