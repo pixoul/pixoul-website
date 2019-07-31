@@ -12,16 +12,13 @@ export default function ContactForm(){
 
   const send = e => {
    e.preventDefault();
-   const serviceId = "default_service"
-   const templateId = "template_3l1ZvrRp"
-
    const data = {
       "email": email,
       "name": name,
       "message": message
     }
 
-   emailjs.send(serviceId, templateId, data, 'user_y5b1msGPAYKIW4szoHygG')
+   emailjs.send("default_service", "pixoul_website", data, 'user_y5b1msGPAYKIW4szoHygG')
     .then((response) => {
         setSent(true)
     }, (err) => {
@@ -30,12 +27,19 @@ export default function ContactForm(){
     });
   }
 
+  const clear = () => {
+    setName('')
+    setEmail('')
+    setMessage('')
+    setSent(false)
+  }
+
   return(
     <div className="contact-form">
       { sent ?
         <div className="contact-message">
           <p className="success">Thank you! Someone will be in touch with you soon.</p>
-          <Button className="form-button" onClick={() => setSent(false)}>Send Another Message</Button>
+          <Button className="form-button" onClick={clear}>Send Another Message</Button>
         </div>
         :
         <Form className="form">
