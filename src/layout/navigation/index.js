@@ -6,8 +6,8 @@ import "./styles.scss"
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    open: state.menu.open,
-    links: state.menu.links
+    open: state.navigation.open,
+    links: state.navigation.links
   }
 }
 

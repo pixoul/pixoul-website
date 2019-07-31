@@ -1,9 +1,9 @@
 import { createStore, combineReducers } from 'redux'
 
-import sideMenu from 'layout/navigation-menu/reducers'
+import navigation from 'layout/navigation/reducers'
 
 let pixoulApp = combineReducers({
-  menu: sideMenu
+  navigation: navigation
 })
 
 export const store = createStore(pixoulApp)

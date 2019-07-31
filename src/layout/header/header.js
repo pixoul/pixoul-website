@@ -5,7 +5,7 @@ import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Button } from "shards-react
 import "./header.scss"
 
 import { connect } from 'react-redux'
-import { toggleMenu } from "layout/navigation-menu/actions"
+import { toggleMenu } from "layout/navigation/actions"
 
 import logo from "./images/logo.svg"
 import menu from "./images/menu.svg"
@@ -46,7 +46,7 @@ function Header({ fixed = false, open, toggleMenu }) {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    open: state.menu.open
+    open: state.navigation.open
   }
 }
 
