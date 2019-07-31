@@ -9,7 +9,8 @@ const Capability = ({
   media,
   direction = 'rtl',
   background = direction === 'rtl' ? '#ffffff' : '#f9fafc',
-  equal = false
+  equal = false,
+  mediaComponent
 }) => {
 
   const classes = cn('capability', {
@@ -35,9 +36,10 @@ const Capability = ({
         </div>
         <div className="capability-column">
           <div className="capability-media">
-            { Array.isArray(media) ? media.map((item) => (
-              <img src={item.image} alt={item.image} draggable="false" className="capability-image" width={item.width} height={item.height} />
-            )) : <img src={media.image} alt={media.image} draggable="false" className="capability-image" width={media.width} height={media.height} />}
+            { mediaComponent ? mediaComponent 
+              :
+              Array.isArray(media) ? media.map((item) => (<img src={item.image} alt={item.image} draggable="false" className="capability-image" width={item.width} height={item.height} />))
+              : <img src={media.image} alt={media.image} draggable="false" className="capability-image" width={media.width} height={media.height} />}
           </div>
         </div>
     </div>
