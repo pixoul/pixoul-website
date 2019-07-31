@@ -9,7 +9,11 @@ const list = []
 
 list.push({
   direction: 'rtl',
-  media: designThinking,
+  media: {
+    image: designThinking,
+    width: 606,
+    height: 563
+  },
   title: '01. Design Thinking Process',
   subtitle: 'Supported by our data and research initiatives, we use industry proven Design Thinking techniques to promote strong user- and human-centered design.',
   details: {
@@ -20,7 +24,11 @@ list.push({
 
 list.push({
   direction: 'ltr',
-  media: userExperience,
+  media: {
+    image: userExperience,
+    width: 606,
+    height: 563
+  },
   title: '02. User Experience (UX) Design',
   subtitle: 'Compelling digital experiences begin with an understanding of your goals.',
   details: {
@@ -31,7 +39,11 @@ list.push({
 
 list.push({
   direction: 'rtl',
-  media: userInterface,
+  media: {
+    image: userInterface,
+    width: 606,
+    height: 563
+  },
   title: '03. User Interface (UI) Design',
   subtitle: 'We know great experiences neccessitate a beautiful design aesthetic.',
   details: {
@@ -42,7 +54,11 @@ list.push({
 
 list.push({
   direction: 'ltr',
-  media: iterativeTesting,
+  media: {
+    image: iterativeTesting,
+    width: 606,
+    height: 563
+  },
   title: '04. Iterative Testing & Analysis',
   subtitle: 'Design begins with great research—and it ends with it, too.',
   details: {
