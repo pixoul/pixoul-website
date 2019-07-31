@@ -227,7 +227,7 @@ export default function Design(){
                   <FeatureIcon icon={faUserCheck} color="#3180fb" />
                   <FeatureTitle text="User Testing" />
                 </FeatureHeader>
-                <FeatureTagline text="No design experience is successful without without targeted user feedback, and iterative testing." />
+                <FeatureTagline text="No design experience is successful without targeted user feedback, and iterative testing." />
               </Feature>
             </Col>
           </Row>
