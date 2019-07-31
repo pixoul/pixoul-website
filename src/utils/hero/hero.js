@@ -1,5 +1,6 @@
 import React from "react"
 import cn from "classnames"
+import {useSpring, animated} from 'react-spring'
 import "./hero.scss"
 import blueArrow from "./images/blue-arrow.svg"
 import whiteArrow from "./images/white-arrow.svg"
@@ -53,10 +54,19 @@ function HeroArrow({ action, gutterTop, gutterBottom, type = 'blue' }){
 
   const arrow = type === 'blue' ? blueArrow : whiteArrow
 
+  const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 5, tension: 350, friction: 40 } }))
+  const trans = (x, y) => `perspective(600px) translate(${x}px,${y}px)`
+
   return(
-    <a className="hero-arrow" onClick={action} style={styles}>
-      <img src={arrow} alt={arrow} className="arrow-image" />
-    </a>
+    <animated.a
+      className="hero-arrow"
+      style={{ transform: props.xy.interpolate(trans), ...styles }}
+      onClick={action}
+      onMouseEnter={() => set({ xy: [0, 10] })}
+      onMouseLeave={() => set({ xy: [0, 0] })}
+    >
+        <img src={arrow} alt={arrow} className="arrow-image" />
+    </animated.a>
   )
 }
 
