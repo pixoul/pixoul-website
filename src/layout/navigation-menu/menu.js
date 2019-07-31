@@ -10,16 +10,19 @@ const Menu = ({ history, toggleMenu, open, links = [] }) => {
 
   const transitions = useTransition(open, null, {
     from: {
-      opacity: 0,
-      transform: 'translate3d(0, -100%, 0)'
+      // opacity: 0,
+      transform: 'translate3d(0, -100%, 0)',
+      life: '0%'
     },
-    enter: {
-      opacity: 1,
-      transform: 'translate3d(0, 0%, 0)'
-    },
-    leave: {
-      opacity: 0,
-      transform: 'translate3d(0, -100%, 0)'
+    enter: item => [{
+      // opacity: 1,
+      transform: 'translate3d(0, 0%, 0)',
+      life: '100%'
+    }],
+    leave: item => async (next, cancel) => {
+      await next({life: '0%'})
+      await next({transform: 'translate3d(0, -100%, 0)'})
+      // await next({opacity: 0})
     }
   })
 

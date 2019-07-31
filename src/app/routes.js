@@ -11,33 +11,25 @@ import Contact from "contact/contact"
 
 function Routes(props){
 
-  const options = {
-    initial: {
-      opacity: 0,
-      transform: 'translate3d(0, -100%, 0)'
-    },
-    from: {
-      opacity: 0,
-      transform: 'translate3d(0, -100%, 0)'
-    },
-    enter: {
-      opacity: 1,
-      transform: 'translate3d(0, 0%, 0)'
-    },
-    leave: {
-      opacity: 0,
-      transform: 'translate3d(0, 100%, 0)'
-    },
-    config: {
-      mass: 1,
-      tension: 280,
-      friction: 120
-    }
-  }
-
   const { location } = useContext(__RouterContext)
 
-  const transitions = useTransition(location, location => location.pathname, options)
+  const transitions = useTransition(location, location => location.pathname, {
+    from: {
+      opacity: 0,
+      transform: 'translate3d(0, -100%, 0)',
+      life: '0%'
+    },
+    enter: item => [{
+      opacity: 1,
+      transform: 'translate3d(0, 0%, 0)',
+      life: '100%'
+    }],
+    leave: item => async (next, cancel) => {
+      await next({opacity: 0})
+      await next({transform: 'translate3d(0, 100%, 0)'})
+      await next({life: '0%'})
+    }
+  })
 
   return transitions.map(({ item, props : style, key }) => (
       <animated.div key={key} style={{...style, position: "absolute", height: "100%", width: "100%"}}>

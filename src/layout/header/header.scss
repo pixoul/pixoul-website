@@ -1,11 +1,11 @@
 .header-container {
-  z-index: 100;
+  z-index: 250;
   height: 100px;
   background-color: white;
   padding: 0 150px;
 
   &.fall-under {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 150px;
     left: 150px;
