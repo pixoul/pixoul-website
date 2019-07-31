@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import Header from "layout/header/header"
 import Footer from "layout/footer/footer"
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
 import bg from "./images/bg.png"
 import browser from "./images/browser-window.svg"
 
@@ -11,6 +11,14 @@ import OurValue from "about/our-value/our-value"
 import PartnerNetwork from "about/partner-network/partner-network"
 
 export default function About() {
+  const sectionEl = useRef(null)
+
+  const heroClick = () => {
+    sectionEl.current.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
+
   return(
     <div>
     <Header />
@@ -29,12 +37,14 @@ export default function About() {
 
         </HeroContent>
         <HeroFooter>
-          <HeroAction gutterTop={63} />
+          <HeroArrow gutterTop={63} gutterBottom={-60} action={heroClick} />
           <HeroMedia media={browser} />
         </HeroFooter>
       </Hero>
 
-      <PartnerStats />
+      <div ref={sectionEl}>
+        <PartnerStats />
+      </div>
 
       <OurValue />
 
