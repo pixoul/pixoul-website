@@ -7,13 +7,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     .media-caption {
       padding-top: 10px;
     }
 
     .media-image {
       margin: 0 auto;
+      max-height: 500px;
     }
   }
 
