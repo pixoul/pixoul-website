@@ -8,7 +8,11 @@ const list = []
 
 list.push({
   direction: 'rtl',
-  media: designWorkshops,
+  media: {
+    image: designWorkshops,
+    width: 606,
+    height: 563
+  },
   title: '01. Design Thinking Workshops',
   subtitle: 'As a design community, we believe human interaction is at the heart of everything we build.',
   details: {
@@ -19,7 +23,11 @@ list.push({
 
 list.push({
   direction: 'ltr',
-  media: analyticInsights,
+  media: {
+    image: analyticInsights,
+    width: 606,
+    height: 563
+  },
   title: '02. Data Insights & Analytics',
   subtitle: 'Our research teams believe transformational strategy starts with powerful data and a focus on consumer insights.',
   details: {
@@ -30,7 +38,11 @@ list.push({
 
 list.push({
   direction: 'rtl',
-  media: digitalAudits,
+  media: {
+    image: digitalAudits,
+    width: 606,
+    height: 563
+  },
   title: '03. Comprehensive Digital Audits',
   subtitle: 'Backed with data, we help you uncover new ways of presenting your digital message.',
   details: {
@@ -41,7 +53,11 @@ list.push({
 
 list.push({
   direction: 'ltr',
-  media: digitalPlanning,
+  media: {
+    image: digitalPlanning,
+    width: 606,
+    height: 563
+  },
   title: '04. Digital Planning & Roadmapping',
   subtitle: 'We know each project is unique, and every digital landscape has its own challenges.',
   details: {

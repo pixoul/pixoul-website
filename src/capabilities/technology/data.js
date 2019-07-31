@@ -9,7 +9,11 @@ const list = []
 
 list.push({
   direction: 'rtl',
-  media: frontendDev,
+  media: {
+    image: frontendDev,
+    width: 606,
+    height: 563
+  },
   title: '01. Front End Development',
   subtitle: 'We use responsive design to build websites, desktop applications, progressive web apps, and much more.',
   details: {
@@ -20,7 +24,11 @@ list.push({
 
 list.push({
   direction: 'ltr',
-  media: mobileApps,
+  media: {
+    image: mobileApps,
+    width: 606,
+    height: 563
+  },
   title: '02. Mobile & IoT Applications',
   subtitle: 'Beyond responsive web and application development, our human-centered design processes help us to build and support iOS and Android applications.',
   details: {
@@ -31,7 +39,11 @@ list.push({
 
 list.push({
   direction: 'rtl',
-  media: ecommerceSystems,
+  media: {
+    image: ecommerceSystems,
+    width: 606,
+    height: 563
+  },
   title: '03. Scalable Ecommerce Systems',
   subtitle: 'Working alongside Google’s ecommerce standards, we implement solutions from a range of secure providers.',
   details: {
@@ -42,7 +54,11 @@ list.push({
 
 list.push({
   direction: 'ltr',
-  media: cloudImplementations,
+  media: {
+    image: cloudImplementations,
+    width: 606,
+    height: 563
+  },
   title: '04. API, CMS & Cloud Implementations',
   subtitle: 'Our custom builds allow for seamless API integration, cloud opportunities, and assimilation with robust and secure content management systems.',
   details: {

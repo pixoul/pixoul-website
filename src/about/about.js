@@ -51,7 +51,11 @@ export default function About() {
 
       <Capability
         direction='ltr'
-        media={map}
+        media={{
+          image: map,
+          width: 606,
+          height: 563
+        }}
         title='Our partner network is always expanding.'
         subtitle='Headquartered in Dallas, TX, we’re proud to have made an impact on communities around the world.'
         details = {{

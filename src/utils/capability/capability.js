@@ -9,7 +9,6 @@ const Capability = ({ title, subtitle, details = {}, media, direction = 'rtl' })
     'ltr': direction === 'ltr'
   })
 
-
   return(
     <div className={classes}>
         <div className="capability-column">
@@ -29,7 +28,9 @@ const Capability = ({ title, subtitle, details = {}, media, direction = 'rtl' })
         </div>
         <div className="capability-column">
           <div className="capability-media">
-            <img src={media} alt={media} draggable="false" className="capability-image" />
+            { Array.isArray(media) ? media.map((item) => (
+              <img src={item.image} alt={item.image} draggable="false" className="capability-image" {...item}/>
+            )) : <img src={media.image} alt={media.image} draggable="false" className="capability-image" {...media} />}
           </div>
         </div>
     </div>
