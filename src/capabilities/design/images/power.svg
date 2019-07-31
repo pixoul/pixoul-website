@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Icon Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v7.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Capabilities" transform="translate(-156.000000, -1137.000000)">
+            <g id="Features" transform="translate(0.000000, 1024.000000)">
+                <g transform="translate(150.000000, 107.000000)" id="Feature-2">
+                    <g>
+                        <g id="Icon-Copy">
+                            <polygon id="Path" points="0 0 50 0 50 50 0 50"></polygon>
+                            <polygon id="Path" fill-opacity="0.748606862" fill="#3180FB" points="27.0833334 6.25 22.9166666 6.25 22.9166666 27.0833334 27.0833334 27.0833334"></polygon>
+                            <path d="M37.1458334,10.7708333 L34.1875,13.7291666 C37.4791666,16.375 39.5833334,20.4375 39.5833334,25 C39.5833334,33.0625 33.0625,39.5833334 25,39.5833334 C16.9375,39.5833334 10.4166667,33.0625 10.4166667,25 C10.4166667,20.4375 12.5208334,16.375 15.7916666,13.7083334 L12.8541666,10.7708333 C8.8125,14.2083334 6.25,19.2916666 6.25,25 C6.25,35.3541666 14.6458334,43.75 25,43.75 C35.3541666,43.75 43.75,35.3541666 43.75,25 C43.75,19.2916666 41.1875,14.2083334 37.1458334,10.7708333 Z" id="Path" fill-opacity="0.504124781" fill="#3180FB"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

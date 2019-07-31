@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="38px" viewBox="0 0 46 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v7.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Capabilities_Strategy" transform="translate(-933.000000, -4352.000000)">
+            <g id="Features" transform="translate(0.000000, 4076.000000)">
+                <g transform="translate(149.000000, 270.000000)" id="Feature-3">
+                    <g transform="translate(782.000000, 0.000000)">
+                        <g id="Icon">
+                            <path d="M43.7916663,6.25 L6.29166625,6.25 C3.99999959,6.25 2.12499959,8.125 2.12499959,10.4166667 L2.12499959,39.5833334 C2.12499959,41.875 3.99999959,43.75 6.29166625,43.75 L43.7916663,43.75 C46.0833329,43.75 47.9583329,41.875 47.9583329,39.5833334 L47.9583329,10.4166667 C47.9583329,8.125 46.0833329,6.25 43.7916663,6.25 Z M43.7916663,39.6041666 L6.29166625,39.6041666 L6.29166625,10.3958333 L43.7916663,10.3958333 L43.7916663,39.6041666 Z" id="Shape" fill-opacity="0.504206731" fill="#3180FB" fill-rule="nonzero"></path>
+                            <polygon id="Path" fill-opacity="0.748743444" fill="#3180FB" points="39.6249996 25 35.4583329 25 35.4583329 31.25 29.2083329 31.25 29.2083329 35.4166666 39.6249996 35.4166666"></polygon>
+                            <polygon id="Path" fill-opacity="0.748743444" fill="#3180FB" points="14.6249996 18.75 20.8749996 18.75 20.8749996 14.5833334 10.4583329 14.5833334 10.4583329 25 14.6249996 25"></polygon>
+                            <polygon id="Path" points="0.04166625 0 50.0416663 0 50.0416663 50 0.04166625 50"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
