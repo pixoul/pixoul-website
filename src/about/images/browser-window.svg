@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1233px" height="613px" viewBox="0 0 1233 613" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+<svg width="1233px" height="595px" viewBox="0 0 1233 595" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
     <title>Browser Window</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M11.0000002,0 L1024,0 C1030.07513,-1.11598371e-15 1035,4.92486786 1035,11.0000002 L1035,415 L0,415 L0,11.0000002 C-7.43989142e-16,4.92486786 4.92486786,-6.60373126e-16 11.0000002,0 Z" id="path-1"></path>
-        <filter x="-16.5%" y="-38.4%" width="132.9%" height="182.2%" filterUnits="objectBoundingBox" id="filter-2">
+        <path d="M11.0000002,0 L1024,0 C1030.07513,-1.11598371e-15 1035,4.92486786 1035,11.0000002 L1035,397 L0,397 L0,11.0000002 C-7.43989142e-16,4.92486786 4.92486786,-6.60373126e-16 11.0000002,0 Z" id="path-1"></path>
+        <filter x="-16.5%" y="-40.2%" width="132.9%" height="185.9%" filterUnits="objectBoundingBox" id="filter-2">
             <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="47" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
@@ -39,7 +39,7 @@
             </feMerge>
         </filter>
     </defs>
-    <g id="v6.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="v7.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="About" transform="translate(-104.000000, -539.000000)">
             <g id="Browser-Window" transform="translate(203.000000, 627.000000)">
                 <g id="02---Features">
