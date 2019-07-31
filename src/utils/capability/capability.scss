@@ -6,13 +6,17 @@
   align-items: flex-start;
 
   &.ltr {
-    background-color: #f9fafc;
     flex-direction: row-reverse;
   }
 
   &.rtl {
-    background-color: #ffffff;
     flex-direction: row;
+  }
+
+  &.equal {
+    .capability-column {
+      flex-basis: 50%;
+    }
   }
 
   .capability-column {
@@ -29,13 +33,6 @@
     font-size: 20px;
     color: #374050;
     padding-top: 26px;
-  }
-
-  .capability-media {
-
-    .capability-image {
-
-    }
   }
 
   .capability-content {
@@ -67,6 +64,7 @@
       color: #374050;
       font-size: 17.5px;
       padding-top: 13.3px;
+      padding-bottom: 34.5px;
       line-height: 1.43;
       min-width: 260px;
     }
