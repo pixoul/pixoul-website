@@ -1,7 +1,6 @@
 import React from "react"
 import "./partner-industries.scss"
 
-import { ParallelDisplay, ParallelContent, ParallelList, ParallelItem, ParallelImage, ParallelText } from "utils/parallel-display/parallel-display"
 import Capability from "utils/capability/capability"
 
 import example1 from "./images/example-1.jpg"
