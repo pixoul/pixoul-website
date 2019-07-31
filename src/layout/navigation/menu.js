@@ -2,9 +2,9 @@ import React, { useEffect } from "react"
 import { withRouter } from "react-router-dom"
 import { useTransition, animated } from 'react-spring'
 
-import MenuContainer from "./menu-container"
-import MenuItems from "./menu-items"
-import MenuFooter from "./menu-footer"
+import MenuContainer from "./container"
+import MenuItems from "./items"
+import MenuFooter from "./footer"
 
 const Menu = ({ history, toggleMenu, open, links = [] }) => {
 

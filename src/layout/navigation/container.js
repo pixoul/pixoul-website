@@ -1,5 +1,5 @@
 import React from "react"
-import MenuIcon from "./menu-icon"
+import MenuIcon from "./icon"
 
 const MenuContainer = ({ children }) => {
   return(
