@@ -2,7 +2,8 @@
 
 .client-summary {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   width: 100%;
 
@@ -17,6 +18,7 @@
 
     .client-tagline {
       font-size: 22px;
+      max-width: 280px;
     }
 
     .client-logo {
@@ -37,6 +39,7 @@
   }
 
   .client-media {
+    flex-basis: 910px;
      img {
        width: 910px;
        height: 100vh;
