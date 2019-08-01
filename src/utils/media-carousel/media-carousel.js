@@ -4,8 +4,19 @@ import "./media-carousel.scss"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import next from "./images/next-arrow.svg"
+import prev from "./images/prev-arrow.svg"
 
-function MediaItem({ media, action, caption }){
+const NextArrow = ({ className, style, onClick }) => (
+  <img src={next} alt={next} onClick={onClick} style={style} className={className} />
+)
+
+const PrevArrow = ({ className, style, onClick }) => (
+  <img src={prev} alt={prev} onClick={onClick} style={style} className={className} />
+)
+
+
+const MediaItem = ({ media, action, caption }) => {
 
   const item = (
     <div className="media-item">
@@ -19,7 +30,7 @@ function MediaItem({ media, action, caption }){
   return action ? (<a onClick={action} className="media-action">{item}</a>) : item
 }
 
-export default function MediaCarousel({ images = [], maxSlides = 5, center }){
+const MediaCarousel = ({ images = [], maxSlides = 5, center }) => {
   const settings = {
       dots: true,
       arrows: true,
@@ -27,7 +38,9 @@ export default function MediaCarousel({ images = [], maxSlides = 5, center }){
       speed: 500,
       slidesToShow: maxSlides,
       slidesToScroll: maxSlides,
-      slidesPerRow: 1
+      slidesPerRow: 1,
+      nextArrow: <NextArrow />,
+      prevArrow: <PrevArrow />
   }
 
   if(center) {
@@ -46,3 +59,6 @@ export default function MediaCarousel({ images = [], maxSlides = 5, center }){
     </div>
   )
 }
+
+
+export default MediaCarousel
