@@ -2,17 +2,27 @@ import React from "react"
 import "./social-icons.scss"
 
 
-import facebook from "./images/facebook.svg"
-import instagram from "./images/instagram.svg"
-import linkedin from "./images/linkedin.svg"
+import facebookDark from "./images/facebook-dark.svg"
+import instagramDark from "./images/instagram-dark.svg"
+import linkedinDark from "./images/linkedin-dark.svg"
 
-const SocialIcons = () => {
+import facebookLight from "./images/facebook-light.svg"
+import instagramLight from "./images/instagram-light.svg"
+import linkedinLight from "./images/linkedin-light.svg"
+
+const SocialIcons = ({
+  theme = 'light'
+}) => {
+
+  const facebook = theme === 'light' ? facebookLight : facebookDark
+  const instagram = theme === 'light' ? instagramLight : instagramDark
+  const linkedin = theme === 'light' ? linkedinLight : linkedinDark
 
   return(
     <div className="social-icons">
-      <img src={facebook} alt={facebook} className="social-icon" />
-      <img src={instagram} alt={instagram} className="social-icon" />
-      <img src={linkedin} alt={linkedin} className="social-icon" />
+      <a className="social-link" href=""><img src={facebook} alt={facebook} className="social-icon" /></a>
+      <a className="social-link" href=""><img src={instagram} alt={instagram} className="social-icon" /></a>
+      <a className="social-link" href=""><img src={linkedin} alt={linkedin} className="social-icon" /></a>
     </div>
   )
 }
