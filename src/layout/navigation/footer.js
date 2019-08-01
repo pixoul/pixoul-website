@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { useSpring, animated } from 'react-spring'
 import Button from "utils/button/button"
+import SocialIcons from "utils/social-icons/social-icons"
 
 const MenuFooter = () => {
 
@@ -44,6 +45,9 @@ const MenuFooter = () => {
               <li className="list-inline-item">|</li>
               <li className="list-inline-item"><Link to="/terms-of-service">Terms of Service</Link></li>
             </ul>
+          </li>
+          <li className="list-item">
+            <SocialIcons />
           </li>
         </ul>
       </animated.div>
