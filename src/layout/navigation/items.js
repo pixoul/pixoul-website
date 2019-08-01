@@ -1,8 +1,8 @@
 import React from "react"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useTransition, animated } from 'react-spring'
 
-const MenuItems = ({ items }) => {
+const MenuItems = ({ items, children }) => {
 
   const transitions = useTransition(items, item => item.route, {
     from: {
@@ -25,9 +25,10 @@ const MenuItems = ({ items }) => {
     <ul className="menu-items">
       {transitions.map(({ item, key, props }) => (
         <animated.li key={key} style={props} className="menu-item">
-          <Link className="menu-link" to={item.route}>{item.label}</Link>
+          <NavLink className="menu-link" to={item.route} activeClassName="link-active">{item.label}</NavLink>
         </animated.li>
       ))}
+      { children }
     </ul>
   )
 }
