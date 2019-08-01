@@ -1,44 +1,53 @@
-@import "../styles/variables.scss";
+
+$white: #FFFFFF;
+$black: #000000;
+
+$bg-primary: #f9fafc;
+$bg-secondary: #dfdfdf;
 
 .contact {
   padding-top: 115px;
   padding-bottom: 190px;
-  background: linear-gradient(280deg, #{$lightGrey} 50%, #{$darkGrey} 50%);
-  color: white;
+  background: linear-gradient(45deg,
+    #{$bg-primary} 0%,
+    #{$bg-primary} 40%,
+    #{$bg-secondary} 40%,
+    #{$bg-secondary} 40.2%,
+    #{$bg-primary} 41%,
+    #{$bg-primary} 48%,
+    #{$bg-secondary} 48%,
+    #{$bg-secondary} 48.2%,
+    #{$bg-primary} 49%,
+    #{$bg-primary} 0%,
+  );
+  color: black;
 
-  .list-collection {
+  .social-media {
+    padding-top: 123px;
+    padding-left: 40px;
+  }
+
+  .contact-info {
     list-style: none;
     display: inline-block;
     margin-right: 85px;
 
-    .list-title {
-      color: $black;
+    .contact-title {
+      color: #374050;
       font-size: 20px;
       font-weight: 500;
       margin-bottom: 12px;
       margin-top: 30px;
-
-      &.light {
-        color: $white;
-      }
     }
 
-    .list-item {
+    .contact-item {
       margin: 10px 0;
       color: $black;
       font-size: 20px;
-      font-weight: normal;
-
-      &.light {
-        color: $white;
-
-        a {
-          color: $white;
-        }
-      }
+      font-weight: 500;
 
       a {
-        color: $black;
+        color: #3180fb;
         text-decoration: none;
         cursor: pointer;
 

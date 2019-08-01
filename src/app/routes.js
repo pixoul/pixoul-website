@@ -16,23 +16,20 @@ function Routes(props){
   const transitions = useTransition(location, location => location.pathname, {
     from: {
       opacity: 0,
-      transform: 'translate3d(0, -100%, 0)',
       life: '0%'
     },
     enter: item => [{
       opacity: 1,
-      transform: 'translate3d(0, 0%, 0)',
       life: '100%'
     }],
     leave: item => async (next, cancel) => {
       await next({opacity: 0})
-      await next({transform: 'translate3d(0, 100%, 0)'})
       await next({life: '0%'})
     }
   })
 
   return transitions.map(({ item, props : style, key }) => (
-      <animated.div key={key} style={{...style, position: "absolute", height: "100%", width: "100%"}}>
+      <animated.div key={key} style={{...style, height: "100%", width: "100%"}}>
            <Switch location={item}>
                <Route path="/home" component={Home} />
                <Route path="/work" component={Work} />
