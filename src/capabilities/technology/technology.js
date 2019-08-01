@@ -43,7 +43,7 @@ export default function Technology(){
       </Hero>
 
       {data.map((item, i) => (
-        <Capability {...item} />
+        <Capability key={i} {...item} />
       ))}
 
       <div className="section white">

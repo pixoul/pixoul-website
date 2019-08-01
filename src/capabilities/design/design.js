@@ -30,7 +30,9 @@ export default function Design(){
       </Hero>
 
       {data.map((item, i) => (
-        <Capability {...item} />
+
+          <Capability key={i} {...item}  />
+
       ))}
 
       <div className="section white">
