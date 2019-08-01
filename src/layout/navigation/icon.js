@@ -34,7 +34,7 @@ const MenuIcon = ({
       }}
       className="menu-close"
       onClick={onClick}
-      onMouseEnter={() => set({ xyz: [0, 0, 1.5] })}
+      onMouseEnter={() => set({ xyz: [0, 0, 1.2] })}
       onMouseLeave={() => set({ xyz: [0, 0, 1] })}
     >
         <img src={close} alt={close} />

@@ -19,8 +19,8 @@ const Menu = ({ history, toggleMenu, open, links = [] }) => {
       life: '100%'
     }],
     leave: item => async (next, cancel) => {
-      await next({transform: 'translate3d(0, -100%, 0)'})
       await next({life: '0%'})
+      await next({transform: 'translate3d(0, -100%, 0)'})
     }
   })
 
