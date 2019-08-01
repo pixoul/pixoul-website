@@ -30,7 +30,9 @@ export default function Strategy(){
       </Hero>
 
       {data.map((item, i) => (
-        <Capability {...item} />
+        <div key={i}>
+          <Capability {...item}  />
+        </div>
       ))}
 
       <div className="section white">
