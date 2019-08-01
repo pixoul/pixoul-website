@@ -1,6 +1,4 @@
 import React, { useRef } from "react";
-import Header from "layout/header/header"
-import Footer from "layout/footer/footer"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
 import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
 import LatestWork from "work/latest-work/latest-work"
@@ -19,8 +17,6 @@ export default function Home() {
 
   return(
     <div>
-      <Header fixed />
-
       <Hero bg={bg} theme="dark" align="center" offset={120}>
         <HeroContent>
           <HeroMedia media={favicon} />
@@ -36,8 +32,6 @@ export default function Home() {
       </div>
 
       <CapabilitiesCollection />
-
-      <Footer />
     </div>
   )
 }

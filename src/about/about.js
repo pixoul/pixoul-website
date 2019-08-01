@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
 
-import Header from "layout/header/header"
-import Footer from "layout/footer/footer"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
 import Capability from "utils/capability/capability"
 import Map from "utils/map/map"
@@ -22,7 +20,6 @@ export default function About() {
 
   return(
     <div>
-    <Header />
       <Hero bg={bg} theme="dark" align="center" offset={250}>
         <HeroContent>
           <HeroTitle
@@ -59,7 +56,6 @@ export default function About() {
           'Clients': 'Around the globe'
         }}
       />
-    <Footer />
     </div>
   )
 }

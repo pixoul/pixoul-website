@@ -3,8 +3,6 @@ import React, { useRef } from "react"
 /* Third-Party Packages */
 import { withRouter, Route } from "react-router-dom"
 /* Utility Components */
-import Header from "layout/header/header"
-import Footer from "layout/footer/footer"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
 /* Presentation Components */
 import CapabilitiesCollection from "./capabilities-collection/capabilities-collection"
@@ -54,12 +52,10 @@ function Page(){
 function Capabilities({ match }){
   return(
     <div>
-      <Header />
         <Route exact path={`${match.path}/`} component={Page} />
         <Route path={`${match.path}/strategy`} component={Strategy} />
         <Route path={`${match.path}/design`} component={Design} />
         <Route path={`${match.path}/technology`} component={Technology} />
-      <Footer />
     </div>
   )
 }
