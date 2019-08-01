@@ -8,18 +8,19 @@ $bg-secondary: #dfdfdf;
 .contact {
   padding-top: 115px;
   padding-bottom: 190px;
-  background: linear-gradient(45deg,
-    #{$bg-primary} 0%,
-    #{$bg-primary} 40%,
-    #{$bg-secondary} 40%,
-    #{$bg-secondary} 40.2%,
-    #{$bg-primary} 41%,
-    #{$bg-primary} 48%,
-    #{$bg-secondary} 48%,
-    #{$bg-secondary} 48.2%,
-    #{$bg-primary} 49%,
-    #{$bg-primary} 0%,
-  );
+  // background: linear-gradient(45deg,
+  //   #{$bg-primary} 0%,
+  //   #{$bg-primary} 40%,
+  //   #{$bg-secondary} 40%,
+  //   #{$bg-secondary} 40.2%,
+  //   #{$bg-primary} 41%,
+  //   #{$bg-primary} 48%,
+  //   #{$bg-secondary} 48%,
+  //   #{$bg-secondary} 48.2%,
+  //   #{$bg-primary} 49%,
+  //   #{$bg-primary} 0%,
+  // );
+  background-image: url('./images/bg.png');
   color: black;
 
   .social-media {
