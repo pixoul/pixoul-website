@@ -20,9 +20,15 @@ const SocialIcons = ({
 
   return(
     <div className="social-icons">
-      <a className="social-link" href=""><img src={facebook} alt={facebook} className="social-icon" /></a>
-      <a className="social-link" href=""><img src={instagram} alt={instagram} className="social-icon" /></a>
-      <a className="social-link" href=""><img src={linkedin} alt={linkedin} className="social-icon" /></a>
+      <a className="social-link" href="https://facebook.com/pixoulinc" target="_blank">
+        <img src={facebook} alt={facebook} className="social-icon" />
+      </a>
+      <a className="social-link" href="https://instagram.com/pixoul_inc" target="_blank">
+        <img src={instagram} alt={instagram} className="social-icon" />
+      </a>
+      <a className="social-link" href="https://www.linkedin.com/company/pixoul" target="_blank">
+        <img src={linkedin} alt={linkedin} className="social-icon" />
+      </a>
     </div>
   )
 }
