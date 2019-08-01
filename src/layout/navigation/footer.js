@@ -9,7 +9,7 @@ const MenuFooter = () => {
   const props = useSpring({
     from: {
       opacity: 0,
-      transform: 'translate3d(-100%, 0, 0)'
+      transform: 'translate3d(100%, 0, 0)'
     },
     to: {
       opacity: 1,
@@ -24,34 +24,23 @@ const MenuFooter = () => {
   })
 
   return(
-    <div className="menu-footer">
-      <animated.div style={props}>
-        <ul className="list-collection light">
-          <li className="list-title">Phone</li>
-          <li className="list-item"><a href="tel:6169149356">(616) 914-9356</a></li>
-          <li className="list-title">Email</li>
-          <li className="list-item"><a href="mailto:hello@pixoulinc.com">hello@pixoulinc.com</a></li>
-        </ul>
-
-        <div className="menu-cta">
-          <Button theme="primary" tag={Link} to="/contact">Contact Us</Button>
-        </div>
-
-        <ul className="list-unstyled">
-          <li className="list-item">&#169; 2019 Pixoul.  All rights reserved.</li>
-          <li className="list-item">
-            <ul className="list-inline">
-              <li className="list-inline-item"><Link to="/privacy-policy">Privacy Policy</Link></li>
-              <li className="list-inline-item">|</li>
-              <li className="list-inline-item"><Link to="/terms-of-service">Terms of Service</Link></li>
-            </ul>
-          </li>
-          <li className="list-item">
-            <SocialIcons />
-          </li>
-        </ul>
-      </animated.div>
-    </div>
+    <animated.ul style={props} className="menu-footer">
+        <li className="footer-item">
+          <ul className="list-inline">
+            <li className="list-inline-item">
+              <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+            </li>
+            <li className="list-inline-item">|</li>
+            <li className="list-inline-item">
+              <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
+            </li>
+          </ul>
+        </li>
+        <li className="footer-item">&#169; 2019 Pixoul.  All rights reserved.</li>
+        <li className="footer-item">
+          <SocialIcons />
+        </li>
+    </animated.ul>
   )
 }
 

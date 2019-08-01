@@ -1,7 +1,8 @@
 
-$menu-primary-bg: #3180fb;
-$menu-secondary-bg: #374050;
-$menu-item-font-size: 45px;
+$menu-primary: #ffffff;
+$menu-secondary: #374050;
+$menu-item-font-size: 35px;
+$menu-item-active-color: #3180fb;
 
 .menu {
   position: fixed;
@@ -13,100 +14,104 @@ $menu-item-font-size: 45px;
   width: 100%;
   height: 100%;
 
+  &.lg-device {
+    .menu-container {
+      padding-left: 150px;
+      padding-right: 150px;
+
+      .menu-body {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 120px;
+        padding-top: 120px;
+      }
+
+      .menu-footer {
+        padding-right: 25px;
+        padding-top: 250px;
+      }
+
+      .menu-brand {
+        padding-top: 81px;
+        padding-left: 58px;
+      }
+    }
+  }
+
   .menu-container {
     height: 100%;
     width: 100%;
 
     &.background {
-      background: linear-gradient(280deg, #{$menu-primary-bg} 50%, #{$menu-secondary-bg} 50%);
-      color: #FFFFFF;
-
-      a {
-        color: #FFFFFF;
-      }
+      background: linear-gradient(100deg, #{$menu-primary} 60%, #{$menu-secondary} 40%);
+      color: #{$menu-primary};
     }
 
-    .menu-content {
+    .menu-body {
+      display: flex;
       width: 100%;
       height: 100%;
-      display: flex;
-      flex: 1;
+    }
 
-      &.lg-device {
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        align-items: center;
-      }
+    .menu-close {
+      position: fixed;
+      right: 150px;
+      top: 27px;
+      background: transparent;
+      border: none;
     }
 
     .menu-items {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-start;
       list-style: none;
-
+      margin: 0;
 
       .menu-item {
         font-size: #{$menu-item-font-size};
+        font-weight: bold;
 
         .menu-link {
           text-decoration: none;
+          color: #{$menu-secondary};
           transition: opacity 0.6s;
+          padding-left: 14px;
 
           &:hover {
             opacity: 0.7;
+          }
 
+          &.link-active {
+            border-left: 4px solid #{$menu-item-active-color};
+            padding-left: 10px;
           }
         }
+
       }
     }
 
     .menu-footer {
-      .menu-cta {
-        margin: 20px 0;
-      }
+      list-style: none;
+      margin: 0;
+      padding: 0;
 
+      .footer-item {
+        padding-top: 15px;
 
-      .list-collection {
-        list-style: none;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-
-        &.light {
-          .list-title {
-            color: #FFFFFF;
-          }
-
-          .list-item {
-            color: #FFFFFF;
-          }
-        }
-
-        .list-title {
-          font-size: 20px;
-          font-weight: 500;
-          margin-bottom: 12px;
-          margin-top: 30px;
-        }
-
-        .list-item {
-          margin: 10px 0;
-          font-size: 20px;
+        .footer-link {
+          color: #{$menu-primary};
+          font-size: 15px;
           font-weight: normal;
+          text-decoration: none;
+          cursor: pointer;
 
-          a {
-            text-decoration: none;
-            cursor: pointer;
-
-            &:hover {
-              opacity: 0.7;
-              transition: opacity .6s;
-            }
+          &:hover {
+            opacity: 0.7;
+            transition: opacity .6s;
           }
-
         }
+
       }
     }
 

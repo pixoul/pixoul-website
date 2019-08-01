@@ -17,6 +17,10 @@ const initialState = {
   {
     label: 'About',
     route: '/about'
+  },
+  {
+    label: 'Contact',
+    route: '/contact'
   }]
 }
 
