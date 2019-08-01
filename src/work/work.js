@@ -1,7 +1,5 @@
 import React from "react"
 import { withRouter, Route } from "react-router-dom"
-import Header from "layout/header/header"
-import Footer from "layout/footer/footer"
 
 import Iuzeit from "work/iuzeit"
 import GeorgiaPacific from "work/georgia-pacific"
@@ -20,14 +18,12 @@ import IkarusDetail from "work/ikarus/detail"
 function Page(){
   return(
     <div>
-      <Header fixed />
         <Iuzeit />
         <GeorgiaPacific />
         <Sofs />
         <Fusemap />
         <Hcp />
         <Ikarus />
-      <Footer />
     </div>
   )
 }
@@ -36,7 +32,6 @@ function Page(){
 function Work({ match }){
   return(
     <div>
-
         <Route exact path={`${match.path}/`} component={Page} />
         <Route path={`${match.path}/detail/iuzeit`} component={IuzeitDetail} />
         <Route path={`${match.path}/detail/georgia-pacific`} component={GeorgiaPacificDetail} />
@@ -44,7 +39,6 @@ function Work({ match }){
         <Route path={`${match.path}/detail/fusemap`} component={FusemapDetail} />
         <Route path={`${match.path}/detail/hcp`} component={HcpDetail} />
         <Route path={`${match.path}/detail/ikarus`} component={IkarusDetail} />
-
     </div>
   )
 }
