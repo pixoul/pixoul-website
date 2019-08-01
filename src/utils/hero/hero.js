@@ -2,8 +2,8 @@ import React from "react"
 import cn from "classnames"
 import {useSpring, animated} from 'react-spring'
 import "./hero.scss"
-import blueArrow from "./images/blue-arrow.svg"
-import whiteArrow from "./images/white-arrow.svg"
+import mouseBlue from "./images/mouse-blue.svg"
+import mouseWhite from "./images/mouse-white.svg"
 
 function HeroTitle(props){
 
@@ -52,7 +52,7 @@ function HeroArrow({ action, gutterTop, gutterBottom, type = 'blue' }){
   if(gutterTop) styles.marginTop = gutterTop
   if(gutterBottom) styles.marginBottom = gutterBottom
 
-  const arrow = type === 'blue' ? blueArrow : whiteArrow
+  const arrow = type === 'blue' ? mouseBlue : mouseWhite
 
   const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 5, tension: 350, friction: 40 } }))
   const trans = (x, y) => `perspective(600px) translate(${x}px,${y}px)`
