@@ -1,8 +1,6 @@
 import React from "react"
 import "./client-detail.scss"
 import { Button } from "shards-react"
-import Header from "layout/header/header"
-import Footer from "layout/footer/footer"
 
 function DetailText({ text, size, gutterTop, gutterBottom, italic, bold }){
   const styles = {}
@@ -65,12 +63,8 @@ function DetailList({ title, items = [] }){
 
 function ClientDetail({ children }){
   return(
-    <div>
-      <Header />
-        <div className="client-detail">
-          {children}
-        </div>
-      <Footer />
+    <div className="client-detail">
+      {children}
     </div>
   )
 }
