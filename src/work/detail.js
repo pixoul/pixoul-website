@@ -2,23 +2,7 @@ import React from "react"
 import { withRouter } from 'react-router';
 import ClientDetail from "work/detail/detail"
 
-import fusemap from "clients/fusemap/data"
-import georgiaPacific from "clients/georgia-pacific/data"
-import hcp from "clients/hcp/data"
-import ikarus from "clients/ikarus/data"
-import iuzeit from "clients/iuzeit/data"
-import sofs from "clients/sofs/data"
-
-
-const clients = {
-  'fusemap': fusemap,
-  'georgia-pacific': georgiaPacific,
-  'hcp': hcp,
-  'ikarus': ikarus,
-  'iuzeit': iuzeit,
-  'sofs': sofs
-}
-
+import clients from "clients/data"
 
 const Detail = ({
   match
