@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
 import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
 import ClientLatest from "work/latest/latest"
 
@@ -17,14 +17,14 @@ export default function Home() {
 
   return(
     <div>
-      <Hero bg={bg} theme="dark" align="center" offset={120}>
+      <Hero bg={bg} theme="light" align="center" offset={120}>
         <HeroContent>
-          <HeroMedia media={favicon} />
-          <HeroTitle text="We’re a digital services firm with a focus on design, technology, and strategic innovation." />
+          <HeroTitle text="We’ll help you" />
+
         </HeroContent>
         <HeroFooter>
           <HeroTagline text="See how we help ambitious brands dominate digital." />
-          <HeroArrow gutterTop={31} gutterBottom={0} action={heroClick} />
+          <HeroAction gutterTop={31} gutterBottom={0} action={heroClick} />
         </HeroFooter>
       </Hero>
       <div ref={sectionEl}>
