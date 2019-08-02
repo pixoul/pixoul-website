@@ -3,7 +3,7 @@ import "./strategy.scss"
 /* Third-Party Packages */
 import { Container, Row, Col } from "shards-react";
 /* Utility Components */
-import { Hero, HeroContent, HeroText, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroText} from "utils/hero/hero"
 import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline } from "utils/feature/feature"
 import Opening from "utils/opening/opening"
 import Capability from "utils/capability/capability"
@@ -24,7 +24,7 @@ export default function Strategy(){
     <div>
       <Hero bg={bg} theme="dark" align="left" height={520}>
         <HeroContent>
-          <HeroTagline text="Our strategic solutions reduce risk." color="#2ec986" size={22}/>
+          <HeroText text="Our strategic solutions reduce risk." color="#2ec986" size={22}/>
           <HeroText text="We’ll work with you to find solutions to your most complex challenges." width={689} size={45} />
         </HeroContent>
       </Hero>

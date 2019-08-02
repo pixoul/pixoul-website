@@ -17,15 +17,12 @@ export default function Home() {
 
   return(
     <div>
-      <Hero bg={bg} theme="light" align="center" offset={120}>
+      <Hero bg={bg} theme="light" align="center" >
         <HeroContent>
-          <HeroText text="We’ll help you" />
-
+          <HeroText text="We’ll help you" size={45} />
+          <HeroText text="Dominate Digital" size={85} />
+          <HeroAction action={heroClick} gutterTop={199} />
         </HeroContent>
-        <HeroFooter>
-          <HeroTagline text="See how we help ambitious brands dominate digital." />
-          <HeroAction gutterTop={31} gutterBottom={0} action={heroClick} />
-        </HeroFooter>
       </Hero>
       <div ref={sectionEl}>
         <ClientLatest />
