@@ -1,7 +1,7 @@
 import React from "react"
-import "./media-carousel.scss"
+import "./carousel.scss"
 /* Third-Party Packages */
-import Slider from "react-slick";
+import SlickSlider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import next from "./images/next-arrow.svg"
@@ -15,27 +15,19 @@ const PrevArrow = ({ className, style, onClick }) => (
   <img src={prev} alt={prev} onClick={onClick} style={style} className={className} />
 )
 
+const Slide = ({ children }) => (
+  <div className="slide-item">
+    { children }
+  </div>
+)
 
-const MediaItem = ({ media, action, caption }) => {
-
-  const item = (
-    <div className="media-item">
-      <img src={media} alt={media} draggable="false" className="media-image" />
-      { caption && (
-        <span className="media-caption">{ caption }</span>
-      )}
-    </div>
-  )
-
-  return action ? (<a onClick={action} className="media-action">{item}</a>) : item
-}
-
-const MediaCarousel = ({ images = [], maxSlides = 5, center }) => {
+const Carousel = ({ images = [], maxSlides = 5, center = false, children, autoplay = false }) => {
   const settings = {
       dots: true,
       arrows: true,
       infinite: true,
       speed: 500,
+      autoplay: autoplay,
       slidesToShow: maxSlides,
       slidesToScroll: maxSlides,
       slidesPerRow: 1,
@@ -50,15 +42,13 @@ const MediaCarousel = ({ images = [], maxSlides = 5, center }) => {
   }
 
   return(
-    <div className="media-carousel">
-      <Slider {...settings} >
-        {images.map((item, i) => (
-          <MediaItem key={i} {...item} />
-        ))}
-      </Slider>
+    <div className="dynamic-carousel">
+      <SlickSlider {...settings} >
+        {children}
+      </SlickSlider>
     </div>
   )
 }
 
 
-export default MediaCarousel
+export { Carousel, Slide }
