@@ -7,7 +7,12 @@ import MenuFooter from "./footer"
 import MenuBrand from "./brand"
 import MenuIcon from "./icon"
 
-const Menu = ({ history, toggleMenu, open, links = [] }) => {
+const Menu = ({
+  history,
+  toggleMenu,
+  open,
+  links = []
+}) => {
 
   const transitions = useTransition(open, null, {
     from: {
@@ -26,9 +31,7 @@ const Menu = ({ history, toggleMenu, open, links = [] }) => {
 
 
   useEffect(() => {
-    history.listen((location, action) => {
-      toggleMenu(false)
-    });
+    history.listen((location, action) => toggleMenu(false));
   })
 
   const closeMenu = () => toggleMenu(!open)
