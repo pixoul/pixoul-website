@@ -32,10 +32,9 @@ export default function About() {
             width={650}
             size={22}
           />
-
         </HeroContent>
         <HeroFooter>
-          <HeroArrow gutterTop={63} gutterBottom={-60} action={heroClick} />
+          <HeroArrow gutterTop={63} action={heroClick} />
           <HeroMedia media={browser} />
         </HeroFooter>
       </Hero>
