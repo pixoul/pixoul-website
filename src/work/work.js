@@ -8,12 +8,8 @@ import Fusemap from "work/fusemap"
 import Hcp from "work/hcp"
 import Ikarus from "work/ikarus"
 
-import IuzeitDetail from "work/iuzeit/detail"
-import GeorgiaPacificDetail from "work/georgia-pacific/detail"
-import SofsDetail from "work/sofs/detail"
-import FusemapDetail from "work/fusemap/detail"
-import HcpDetail from "work/hcp/detail"
-import IkarusDetail from "work/ikarus/detail"
+import Summary from "client/summary"
+import Detail from "client/detail"
 
 function Page(){
   return(
@@ -33,12 +29,8 @@ function Work({ match }){
   return(
     <div>
         <Route exact path={`${match.path}/`} component={Page} />
-        <Route path={`${match.path}/detail/iuzeit`} component={IuzeitDetail} />
-        <Route path={`${match.path}/detail/georgia-pacific`} component={GeorgiaPacificDetail} />
-        <Route path={`${match.path}/detail/sofs`} component={SofsDetail} />
-        <Route path={`${match.path}/detail/fusemap`} component={FusemapDetail} />
-        <Route path={`${match.path}/detail/hcp`} component={HcpDetail} />
-        <Route path={`${match.path}/detail/ikarus`} component={IkarusDetail} />
+        <Route path={`${match.path}/summary/:client`} component={Summary} />
+        <Route path={`${match.path}/detail/:client`} component={Detail} />
     </div>
   )
 }
