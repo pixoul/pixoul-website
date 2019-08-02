@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
 import Capability from "utils/capability/capability"
 import Map from "utils/map/map"
 import bg from "./images/bg.png"
@@ -34,7 +34,7 @@ export default function About() {
           />
         </HeroContent>
         <HeroFooter>
-          <HeroArrow gutterTop={63} action={heroClick} />
+          <HeroAction gutterTop={63} action={heroClick} />
           <HeroMedia media={browser} />
         </HeroFooter>
       </Hero>
