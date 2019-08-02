@@ -5,16 +5,22 @@ import "./hero.scss"
 
 import mouse from "./mouse.svg"
 
-function HeroText(props){
+function HeroText({
+  text,
+  width,
+  size,
+  color
+}){
 
-  const styles = {
-    width: props.width ? props.width : 675,
-    fontSize: props.size ? props.size : 45
-  }
+  const styles = {}
+
+  if(width) styles.width = width
+  if(size) styles.fontSize = size
+  if(color) styles.color = color
 
   return(
     <div className="hero-text" style={styles}>
-      {props.text}
+      {text}
     </div>
   )
 }
@@ -49,32 +55,17 @@ function HeroMedia(props){
   )
 }
 
-function HeroTagline(props){
-  const styles = {
-    width: props.width ? props.width : 500,
-    fontSize: props.size ? props.size : 20
-  }
-
-  if(props.color) styles.color = props.color
-
-  return(
-    <div className="hero-tagline" style={styles}>
-      {props.text}
-    </div>
-  )
-}
-
 function HeroAction({ action, gutterTop, gutterBottom }){
   const styles = {}
-  if(gutterTop) styles.marginTop = gutterTop
-  if(gutterBottom) styles.marginBottom = gutterBottom
+  if(gutterTop) styles.paddingTop = gutterTop
+  if(gutterBottom) styles.paddingBottom = gutterBottom
 
   const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 5, tension: 350, friction: 40 } }))
   const trans = (x, y) => `perspective(600px) translate(${x}px,${y}px)`
 
   return(
     <animated.a
-      className="hero-arrow"
+      className="hero-action"
       style={{ transform: props.xy.interpolate(trans), ...styles }}
       onClick={action}
       onMouseEnter={() => set({ xy: [0, 10] })}
@@ -139,6 +130,5 @@ export {
   HeroFooter,
   HeroMedia,
   HeroText,
-  HeroTagline,
   HeroAction
 }

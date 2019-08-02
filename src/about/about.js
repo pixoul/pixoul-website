@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
 import Capability from "utils/capability/capability"
 import Map from "utils/map/map"
 import bg from "./images/bg.png"
@@ -27,7 +27,7 @@ export default function About() {
             width={874}
             size={65}
           />
-          <HeroTagline
+          <HeroText
             text="We help brands and organizations succeed in the digital age."
             width={650}
             size={22}
