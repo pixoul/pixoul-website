@@ -9,7 +9,8 @@ function HeroText({
   text,
   width,
   size,
-  color
+  color,
+  weight
 }){
 
   const styles = {}
@@ -17,6 +18,7 @@ function HeroText({
   if(width) styles.width = width
   if(size) styles.fontSize = size
   if(color) styles.color = color
+  if(weight) styles.fontWeight = weight
 
   return(
     <div className="hero-text" style={styles}>
