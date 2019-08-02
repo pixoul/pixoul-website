@@ -6,7 +6,7 @@
   display: flex;
   width: 100%;
   min-width: 100%;
-  height: calc(100vh + 100px);
+  height: calc(100vh - 100px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -25,11 +25,6 @@
 
   .hero-text {
     font-size: 45px;
-    font-weight: normal;
-  }
-
-  .hero-tagline {
-    font-size: 20px;
     font-weight: normal;
   }
 
@@ -57,7 +52,7 @@
   &.center {
     flex-direction: column;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
     .hero-header, .hero-content, .hero-footer {
       flex-direction: column;
