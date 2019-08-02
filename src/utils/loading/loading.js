@@ -29,7 +29,7 @@ const Loading = ({
     history.listen((location, action) => {
       console.log(location)
       toggleLoading(true)
-      setTimeout(() => toggleLoading(false), 2000)
+      setTimeout(() => toggleLoading(false), 1000)
     });
   })
 
