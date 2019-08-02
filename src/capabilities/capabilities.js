@@ -5,7 +5,7 @@ import { withRouter, Route } from "react-router-dom"
 /* Utility Components */
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
 /* Presentation Components */
-import CapabilitiesCollection from "./capabilities-collection/capabilities-collection"
+import CapabilityFeatures from "./capability-features/capability-features"
 import PartnerIndustries from "./partner-industries/partner-industries"
 import Reviews from "./reviews/reviews"
 import Strategy from "./strategy/strategy"
@@ -46,7 +46,7 @@ function Page(){
         </Hero>
 
         <div ref={sectionEl}>
-          <CapabilitiesCollection />
+          <CapabilityFeatures />
         </div>
 
         <PartnerIndustries />
