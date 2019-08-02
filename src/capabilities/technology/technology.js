@@ -2,7 +2,7 @@ import React from "react"
 import "./technology.scss"
 /* Utility Components */
 import { Hero, HeroContent, HeroTitle, HeroTagline} from "utils/hero/hero"
-import MediaCarousel from "utils/media-carousel/media-carousel"
+import {MediaCarousel} from "utils/carousel"
 import Opening from "utils/opening/opening"
 import Capability from "utils/capability/capability"
 /* Images */

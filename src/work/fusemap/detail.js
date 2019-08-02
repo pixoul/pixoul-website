@@ -1,6 +1,6 @@
 import React from "react"
 import { ClientDetail, DetailHeader, DetailContent, DetailSide, DetailText, DetailList } from "utils/client-detail/client-detail"
-import MediaCarousel from "utils/media-carousel/media-carousel"
+import {MediaCarousel} from "utils/carousel"
 
 /* Images */
 import logo from "./images/logo-white.png"
