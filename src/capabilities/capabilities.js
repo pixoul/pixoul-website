@@ -3,7 +3,7 @@ import React, { useRef } from "react"
 /* Third-Party Packages */
 import { withRouter, Route } from "react-router-dom"
 /* Utility Components */
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction, HeroTagline} from "utils/hero/hero"
 /* Presentation Components */
 import CapabilitiesCollection from "./capabilities-collection/capabilities-collection"
 import PartnerIndustries from "./partner-industries/partner-industries"
@@ -28,7 +28,7 @@ function Page(){
     <div>
         <Hero bg={bg} theme="light" align="left">
           <HeroContent>
-            <HeroTitle text="How can we help?" width={475} size={65} />
+            <HeroText text="How can we help?" width={475} size={65} />
             <HeroTagline text="We’re here to bring life to your digital vision. Got a project in mind? Let’s talk." />
             <HeroAction action={heroClick} />
           </HeroContent>

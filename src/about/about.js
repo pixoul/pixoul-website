@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroAction, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction, HeroTagline} from "utils/hero/hero"
 import Capability from "utils/capability/capability"
 import Map from "utils/map/map"
 import bg from "./images/bg.png"
@@ -22,7 +22,7 @@ export default function About() {
     <div>
       <Hero bg={bg} theme="dark" align="center" offset={250}>
         <HeroContent>
-          <HeroTitle
+          <HeroText
             text="Complex problems deserve elegant solutions."
             width={874}
             size={65}

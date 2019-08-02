@@ -1,7 +1,7 @@
 import React from "react"
 import "./technology.scss"
 /* Utility Components */
-import { Hero, HeroContent, HeroTitle, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroText, HeroTagline} from "utils/hero/hero"
 import {MediaCarousel} from "utils/carousel"
 import Opening from "utils/opening/opening"
 import Capability from "utils/capability/capability"
@@ -38,7 +38,7 @@ export default function Technology(){
       <Hero bg={bg} theme="dark" align="left" height={520}>
         <HeroContent>
           <HeroTagline text="Advanced technological support." color="#2ec986" size={22}/>
-          <HeroTitle text="We deliver solutions on time and on budget through agile development." width={689} size={45} />
+          <HeroText text="We deliver solutions on time and on budget through agile development." width={689} size={45} />
         </HeroContent>
       </Hero>
 

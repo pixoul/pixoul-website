@@ -5,7 +5,7 @@ import "./hero.scss"
 
 import mouse from "./mouse.svg"
 
-function HeroTitle(props){
+function HeroText(props){
 
   const styles = {
     width: props.width ? props.width : 675,
@@ -13,7 +13,7 @@ function HeroTitle(props){
   }
 
   return(
-    <div className="hero-title" style={styles}>
+    <div className="hero-text" style={styles}>
       {props.text}
     </div>
   )
@@ -138,7 +138,7 @@ export {
   HeroContent,
   HeroFooter,
   HeroMedia,
-  HeroTitle,
+  HeroText,
   HeroTagline,
   HeroAction
 }
