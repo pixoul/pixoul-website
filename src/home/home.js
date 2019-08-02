@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
 import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
-import ClientLatest from "client/latest/latest"
+import ClientLatest from "work/latest/latest"
 
 import bg from "./images/bg.png"
 import favicon from "./images/favicon.svg"
