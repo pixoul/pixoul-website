@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroTitle, HeroArrow, HeroTagline} from "utils/hero/hero"
 import CapabilitiesCollection from "capabilities/capabilities-collection/capabilities-collection"
-import LatestWork from "work/latest-work/latest-work"
+import ClientLatest from "client/latest/latest"
 
 import bg from "./images/bg.png"
 import favicon from "./images/favicon.svg"
@@ -28,7 +28,7 @@ export default function Home() {
         </HeroFooter>
       </Hero>
       <div ref={sectionEl}>
-        <LatestWork />
+        <ClientLatest />
       </div>
 
       <CapabilitiesCollection />
