@@ -33,7 +33,7 @@
     font-weight: normal;
   }
 
-  .hero-arrow {
+  .hero-action {
     cursor: pointer;
   }
 
@@ -63,7 +63,7 @@
       flex-direction: column;
     }
 
-    .hero-title, .hero-tagline, .hero-media, .hero-arrow {
+    .hero-title, .hero-tagline, .hero-media, .hero-action {
       margin-left: auto;
       margin-right: auto;
     }
@@ -84,7 +84,7 @@
       }
     }
 
-    .hero-arrow {
+    .hero-action {
       margin-top: 119px;
     }
   }
