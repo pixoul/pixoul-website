@@ -23,6 +23,7 @@
      .reviewer-avatar {
        width: 90px;
        height: 90px;
+       margin: 0 auto;
      }
 
      .reviewer-name {
@@ -41,5 +42,9 @@
    .review-stars {
      text-align: center;
      padding-bottom: 35px;
+
+     img {
+       margin: 0 auto;
+     }
    }
 }

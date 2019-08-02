@@ -4,11 +4,9 @@ import "./reviews.scss"
 import { Container, Row, Col } from "shards-react"
 /* Utility Components */
 import Opening from "utils/opening/opening"
+import { Carousel, Slide } from "utils/carousel"
 import ReviewCard from "utils/review-card/review-card"
-/* Images */
-import reviewer1 from "./images/reviewer-1.jpg"
-import reviewer2 from "./images/reviewer-2.jpg"
-import reviewer3 from "./images/reviewer-3.jpg"
+import data from "./data"
 
 export default function Reviews(){
   return(
@@ -18,39 +16,18 @@ export default function Reviews(){
         subtitle="Don’t just take our word for it."
       />
 
-      <Container>
-        <Row>
-          <Col sm="12" md="4">
-            <ReviewCard
-              review="Pixoul is absolutely amazing!  They guided us through our website redesign and held our hand every step of the way. I couldn't have asked for a better team."
-              avatar={reviewer1}
-              reviewer="Kendall Sampson"
-              designation="Product Manager"
-              quantity={5}
-            />
-          </Col>
-
-          <Col sm="12" md="4">
-            <ReviewCard
-              review="Used Pixoul after two failed attempts at other dev agencies.  Since then, we've seen engagement go through the roof and customers are loving our new platform."
-              avatar={reviewer2}
-              reviewer="Jake Richards"
-              designation="CTO"
-              quantity={5}
-            />
-          </Col>
-
-          <Col sm="12" md="4">
-            <ReviewCard
-              review="Pixoul spent the day at our offices explaining design thinking fundamentals. We constantly refer back to those sessions for every decision we make!!"
-              avatar={reviewer3}
-              reviewer="Quincy Roberts"
-              designation="CTO"
-              quantity={5}
-            />
-          </Col>
-        </Row>
-      </Container>
+      <Carousel maxSlides={3}>
+          {data.map((item, i) => (
+            <Slide key={i}>
+              <ReviewCard
+                review={item.review}
+                avatar={item.avatar}
+                reviewer={item.reviewer}
+                designation={item.designation}
+              />
+            </Slide>
+          ))}
+      </Carousel>
 
     </div>
   )
