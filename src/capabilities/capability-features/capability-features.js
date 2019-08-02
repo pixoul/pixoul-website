@@ -1,22 +1,18 @@
 import React from "react"
-import "./capabilities-collection.scss"
+import "./capability-features.scss"
 /* Third-Party Packages */
 import { Container, Row, Col } from "shards-react";
 /* Utility Components */
 import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline, FeatureAction } from "utils/feature/feature"
-import Opening from "utils/opening/opening"
+
 /* Icons */
 import power from "./images/power.svg"
 import brush from "./images/brush.svg"
 import code from "./images/code.svg"
 
-export default function CapabilitesCollection(){
+const CapabilityFeatures = () => {
   return(
-    <Container className="feature-collection">
-      <Opening
-        title="Our capabilities."
-        subtitle="We work across industries and verticals to deliver impactful solutions."
-      />
+    <Container className="capability-features">
       <Row>
         <Col sm="12" md="4">
           <Feature width={343} >
@@ -52,3 +48,6 @@ export default function CapabilitesCollection(){
     </Container>
   )
 }
+
+
+export default CapabilityFeatures
