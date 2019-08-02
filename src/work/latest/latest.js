@@ -20,7 +20,7 @@ const ClientCard = ({ media, title, action}) => {
   )
 }
 
-const ClientLatest = () => {
+const WorkLatest = () => {
   return(
     <Container className="client-latest">
       <Opening
@@ -48,4 +48,4 @@ const ClientLatest = () => {
 }
 
 
-export default ClientLatest
+export default WorkLatest
