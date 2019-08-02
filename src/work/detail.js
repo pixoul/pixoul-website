@@ -1,13 +1,13 @@
 import React from "react"
 import { withRouter } from 'react-router';
-import ClientDetail from "client/detail/detail"
+import ClientDetail from "work/detail/detail"
 
-import fusemap from "work/fusemap/data"
-import georgiaPacific from "work/georgia-pacific/data"
-import hcp from "work/hcp/data"
-import ikarus from "work/ikarus/data"
-import iuzeit from "work/iuzeit/data"
-import sofs from "work/sofs/data"
+import fusemap from "clients/fusemap/data"
+import georgiaPacific from "clients/georgia-pacific/data"
+import hcp from "clients/hcp/data"
+import ikarus from "clients/ikarus/data"
+import iuzeit from "clients/iuzeit/data"
+import sofs from "clients/sofs/data"
 
 
 const clients = {

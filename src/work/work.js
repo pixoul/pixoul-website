@@ -2,13 +2,13 @@ import React from "react"
 import { withRouter, Route } from "react-router-dom"
 
 
-import Summary from "client/summary"
-import Detail from "client/detail"
+import Summary from "./summary"
+import Detail from "./detail"
 
 function Page(){
   return(
     <div>
-        
+
     </div>
   )
 }
