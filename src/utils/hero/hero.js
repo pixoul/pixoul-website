@@ -25,10 +25,27 @@ function HeroMedia(props){
     maxWidth: props.width ? props.width : '100%'
   }
 
+  const animation = useSpring({
+    from: {
+      opacity: 0,
+      transform: 'translate3d(0, 100%, 0)'
+    },
+    to: {
+      opacity: 1,
+      transform: 'translate3d(0, 0%, 0)'
+    },
+    delay: 500,
+    config: {
+      mass: 1,
+      tension: 280,
+      friction: 120
+    }
+  })
+
   return(
-    <div className="hero-media" >
+    <animated.div style={animation} className="hero-media" >
       <img src={props.media} alt={props.alt} draggable="false" style={styles}/>
-    </div>
+    </animated.div>
   )
 }
 
