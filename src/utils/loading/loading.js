@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react"
 import "./loading.scss"
 import { useTransition, useSpring, animated } from 'react-spring'
 import { withRouter } from "react-router-dom"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSpinner } from '@fortawesome/pro-light-svg-icons'
 
 const Loading = ({
   history
@@ -36,9 +34,7 @@ const Loading = ({
   })
 
   return transitions.map(({ item, key, props }) => item && (
-    <animated.div key={key} style={props} className="loading">
-      <FontAwesomeIcon icon={faSpinner} spin className="loading-icon"/>
-    </animated.div>
+    <animated.div key={key} style={props} className="loading" />
   ))
 }
 
