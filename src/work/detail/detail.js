@@ -3,7 +3,7 @@ import "./detail.scss"
 
 import { Carousel, Slide } from "utils/carousel"
 
-const ClientDetail = ({
+const WorkDetail = ({
   title,
   subtitle,
   industry,
@@ -70,4 +70,4 @@ const ClientDetail = ({
 }
 
 
-export default ClientDetail
+export default WorkDetail

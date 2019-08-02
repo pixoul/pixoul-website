@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import "./summary.scss"
 import arrow from "./blue-arrow.svg"
 
-const ClientSummary = ({
+const WorkSummary = ({
   logo,
   tagline,
   route,
@@ -23,4 +23,4 @@ const ClientSummary = ({
   )
 }
 
-export default ClientSummary
+export default WorkSummary
