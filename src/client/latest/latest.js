@@ -1,19 +1,28 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { Container, Row, Col, Button } from "shards-react"
-import "./latest-work.scss"
+import { Container, Row, Col, Button, Card, CardImg, CardBody } from "shards-react"
+import "./latest.scss"
 
-import ClientCard from "utils/client-card/client-card"
 import Opening from "utils/opening/opening"
 
 import iuzeitMedia from "./images/bg01.png"
 import georgiaPacificMedia from "./images/bg02.png"
 import sofsMedia from "./images/bg03.png"
 
-
-export default function LatestWork(){
+const ClientCard = ({ media, title, action}) => {
   return(
-    <Container className="latest-work">
+    <Card className="client-card" tag={Link} to={action}>
+      <CardImg top src={media} className="client-media" />
+      <CardBody>
+        <h4 className="client-title">{title}</h4>
+      </CardBody>
+    </Card>
+  )
+}
+
+const ClientLatest = () => {
+  return(
+    <Container className="client-latest">
       <Opening
         title="See our latest work."
         subtitle="Explore some of our recent collaborations with major brands."
@@ -37,3 +46,6 @@ export default function LatestWork(){
     </Container>
   )
 }
+
+
+export default ClientLatest
