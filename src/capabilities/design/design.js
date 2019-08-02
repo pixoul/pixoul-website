@@ -3,7 +3,7 @@ import "./design.scss"
 /* Third-Party Packages */
 import { Container, Row, Col } from "shards-react";
 /* Utility Components */
-import { Hero, HeroContent, HeroTitle, HeroTagline} from "utils/hero/hero"
+import { Hero, HeroContent, HeroText, HeroTagline} from "utils/hero/hero"
 import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline } from "utils/feature/feature"
 import Opening from "utils/opening/opening"
 import Capability from "utils/capability/capability"
@@ -25,7 +25,7 @@ export default function Design(){
       <Hero bg={bg} theme="dark" align="left" height={520}>
         <HeroContent>
           <HeroTagline text="Digital experience matters." color="#2ec986" size={22}/>
-          <HeroTitle text="Human-centered design empowers us to rethink user’s needs." width={689} size={45} />
+          <HeroText text="Human-centered design empowers us to rethink user’s needs." width={689} size={45} />
         </HeroContent>
       </Hero>
 
