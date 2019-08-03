@@ -102,25 +102,31 @@ function HeroContent(props){
   )
 }
 
-function Hero(props){
+function Hero({
+  children,
+  bg,
+  offset,
+  height,
+  theme,
+  align
+}){
 
-  const styles = {
-    backgroundImage: 'url('+props.bg+')',
-    paddingTop: props.offset ? props.offset : 150
-  }
+  const styles = {}
 
-  if(props.height) styles.height = props.height
+  if(bg) styles.backgroundImage = 'url('+bg+')'
+  if(height) styles.height = height
+  if(offset) styles.paddingTop = offset
 
   const classes = cn('hero', {
-    'light': props.theme === 'light',
-    'dark': props.theme === 'dark',
-    'center': props.align === 'center',
-    'left': props.align === 'left'
+    'light': theme === 'light',
+    'dark': theme === 'dark',
+    'center': align === 'center',
+    'left': align === 'left'
   })
 
   return(
     <div className={classes} style={styles}>
-      {props.children}
+      {children}
     </div>
   )
 }
