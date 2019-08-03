@@ -20,8 +20,8 @@ export default function About() {
 
   return(
     <div>
-      <Hero bg={bg} theme="dark" align="center" offset={250}>
-        <HeroContent>
+      <Hero bg={bg} theme="dark" align="center" offset={0}>
+
           <HeroText
             text="Complex problems deserve elegant solutions."
             width={874}
@@ -32,11 +32,9 @@ export default function About() {
             width={650}
             size={22}
           />
-        </HeroContent>
-        <HeroFooter>
-          <HeroAction gutterTop={63} action={heroClick} />
+          <HeroAction gutterTop={63} action={heroClick} blue />
           <HeroMedia media={browser} />
-        </HeroFooter>
+
       </Hero>
 
       <div ref={sectionEl}>

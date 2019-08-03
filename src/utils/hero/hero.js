@@ -3,7 +3,8 @@ import cn from "classnames"
 import {useSpring, animated} from 'react-spring'
 import "./hero.scss"
 
-import mouse from "./mouse.svg"
+import whiteMouse from "./images/white-mouse.svg"
+import blueMouse from "./images/blue-mouse.svg"
 
 function HeroText({
   text,
@@ -57,10 +58,12 @@ function HeroMedia(props){
   )
 }
 
-function HeroAction({ action, gutterTop, gutterBottom }){
+function HeroAction({ action, gutterTop, gutterBottom, blue = false }){
   const styles = {}
   if(gutterTop) styles.paddingTop = gutterTop
   if(gutterBottom) styles.paddingBottom = gutterBottom
+
+  const mouse = blue ? blueMouse : whiteMouse
 
   const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 5, tension: 350, friction: 40 } }))
   const trans = (x, y) => `perspective(600px) translate(${x}px,${y}px)`
