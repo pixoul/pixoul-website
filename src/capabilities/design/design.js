@@ -35,7 +35,7 @@ export default function Design(){
 
       ))}
 
-      <div className="section white">
+      <div className="section white bottom-offset">
         <Opening
           title="Our design capabilities."
           subtitle="We believe good design is grounded in human understanding."

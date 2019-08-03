@@ -46,7 +46,7 @@ export default function Technology(){
         <Capability key={i} {...item} />
       ))}
 
-      <div className="section white">
+      <div className="section white bottom-offset">
         <Opening
           title="Technologies we leverage."
           subtitle="We provide the most up-to-date, comprehensive, and secure implementations."

@@ -53,6 +53,8 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
+    padding-top: 134px;
 
     .hero-header, .hero-content, .hero-footer {
       flex-direction: column;
@@ -67,6 +69,7 @@
   &.left {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-left: 150px;
     padding-right: 150px;
 
@@ -75,7 +78,7 @@
       flex-direction: column;
 
       .hero-text {
-        margin-top: 38px;
+        margin-top: 15px;
       }
     }
 

@@ -114,7 +114,10 @@ function Hero({
   const styles = {}
 
   if(bg) styles.backgroundImage = 'url('+bg+')'
-  if(height) styles.height = height
+  if(height) {
+    styles.height = height
+    styles.minHeight = height
+  }
   if(offset) styles.paddingTop = offset
 
   const classes = cn('hero', {
