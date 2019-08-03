@@ -28,11 +28,15 @@ function HeroText({
   )
 }
 
-function HeroMedia(props){
+function HeroMedia({
+  width = '100%',
+  media,
+  alt,
+  offset = '0%'
+}){
 
-  const styles = {
-    maxWidth: props.width ? props.width : '100%'
-  }
+  const styles = {}
+  if(width) styles.maxWidth = width
 
   const animation = useSpring({
     from: {
@@ -41,7 +45,7 @@ function HeroMedia(props){
     },
     to: {
       opacity: 1,
-      transform: 'translate3d(0, 0%, 0)'
+      transform: `translate3d(0, ${offset}, 0)`
     },
     delay: 500,
     config: {
@@ -53,7 +57,7 @@ function HeroMedia(props){
 
   return(
     <animated.div style={animation} className="hero-media" >
-      <img src={props.media} alt={props.alt} draggable="false" style={styles}/>
+      <img src={media} alt={alt} draggable="false" style={styles}/>
     </animated.div>
   )
 }
