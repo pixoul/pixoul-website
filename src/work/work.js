@@ -4,8 +4,8 @@ import { withRouter, Route } from "react-router-dom"
 import ClientSummary from "work/summary/summary"
 import clients from "clients/data"
 
-import Summary from "./summary"
-import Detail from "./detail"
+const Summary = React.lazy(() => import("work/summary"))
+const Detail = React.lazy(() => import("work/detail"))
 
 function Page(){
   return(

@@ -1,21 +1,24 @@
-import React from "react"
+import React, { Suspense } from "react"
 import "./app.scss"
 
-import Header from "layout/header/header"
-import Footer from "layout/footer/footer"
 import LoadingScreen from "utils/loading/loading"
-import NavigationMenu from "layout/navigation"
-import Routes from "./routes"
+
+const Header = React.lazy(() => import("layout/header/header"))
+const Footer = React.lazy(() => import("layout/footer/footer"))
+const Routes = React.lazy(() => import("app/routes"))
+const NavigationMenu =  React.lazy(() => import("layout/navigation"))
 
 function App(props) {
 
   return (
     <div>
-      <Header />
-        <LoadingScreen />
-        <NavigationMenu />
-        <Routes />
-      <Footer />
+      <Suspense fallback={<div className="loading"  />}>
+          <Header />
+            <LoadingScreen watchRoutes />
+            <NavigationMenu />
+              <Routes />
+          <Footer />
+     </Suspense>
     </div>
   );
 }
