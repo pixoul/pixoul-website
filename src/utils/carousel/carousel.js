@@ -21,12 +21,12 @@ const Slide = ({ children }) => (
   </div>
 )
 
-const Carousel = ({ images = [], maxSlides = 5, center = false, children, autoplay = false }) => {
+const Carousel = ({ images = [], maxSlides = 5, center = false, children, autoplay = false, gutter, offset }) => {
   const settings = {
       dots: true,
       arrows: true,
       infinite: true,
-      speed: 500,
+      speed: 1000,
       autoplay: autoplay,
       slidesToShow: maxSlides,
       slidesToScroll: maxSlides,
@@ -41,9 +41,21 @@ const Carousel = ({ images = [], maxSlides = 5, center = false, children, autopl
     settings.adaptiveHeight = true
   }
 
+  const styles = {}
+
+  if(gutter) {
+    styles.paddingLeft = gutter
+    styles.paddingRight = gutter
+  }
+
+  if(offset) {
+    styles.paddingTop = offset
+    styles.paddingBottom = offset
+  }
+
   return(
-    <div className="dynamic-carousel">
-      <SlickSlider {...settings} >
+    <div className="dynamic-carousel" >
+      <SlickSlider style={styles} {...settings} >
         {children}
       </SlickSlider>
     </div>
