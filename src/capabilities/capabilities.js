@@ -26,7 +26,7 @@ function Page(){
 
   return(
     <div className="capabilities">
-        <Hero bg={bg} theme="light" align="left" offset={130}>
+        <Hero bg={bg} theme="light" align="left" offset={60}>
           <HeroContent>
             <HeroText
               width={475}

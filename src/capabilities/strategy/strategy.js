@@ -35,7 +35,7 @@ export default function Strategy(){
         </div>
       ))}
 
-      <div className="section white">
+      <div className="section white bottom-offset">
         <Opening
           title="Our strategy capabilities."
           subtitle="Our digital strategy ensures impactful management across the project lifecycle."
