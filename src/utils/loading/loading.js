@@ -4,7 +4,8 @@ import { useTransition, useSpring, animated } from 'react-spring'
 import { withRouter } from "react-router-dom"
 
 const Loading = ({
-  history
+  history,
+  watchRoutes = false
 }) => {
 
   const [loading, toggleLoading] = useState(false)
@@ -25,13 +26,20 @@ const Loading = ({
     }
   })
 
-  useEffect(() => {
-    history.listen((location, action) => {
-      console.log(location)
-      toggleLoading(true)
-      setTimeout(() => toggleLoading(false), 1000)
-    });
-  })
+
+    useEffect(() => {
+      if(watchRoutes === true){
+        history.listen((location, action) => {
+          toggleLoading(true)
+
+          setTimeout(() => {
+            window.scroll(0, 0)
+            toggleLoading(false)
+          }, 1000)
+        });
+      }
+    })
+
 
   return transitions.map(({ item, key, props }) => item && (
     <animated.div key={key} style={props} className="loading" />

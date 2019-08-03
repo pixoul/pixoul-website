@@ -3,11 +3,11 @@ import { Route, Redirect, Switch, withRouter, __RouterContext } from "react-rout
 import { useTransition, animated } from 'react-spring'
 
 /* Page Components */
-import Home from "home/home"
-import About from "about/about"
-import Capabilities from "capabilities/capabilities"
-import Work from "work/work"
-import Contact from "contact/contact"
+const Home = React.lazy(() => import("home/home"))
+const About = React.lazy(() => import("about/about"))
+const Capabilities = React.lazy(() => import("capabilities/capabilities"))
+const Work = React.lazy(() => import("work/work"))
+const Contact = React.lazy(() => import("contact/contact"))
 
 function Routes(props){
 

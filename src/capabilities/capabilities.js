@@ -8,12 +8,14 @@ import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction} from "u
 import CapabilityFeatures from "./capability-features/capability-features"
 import PartnerIndustries from "./partner-industries/partner-industries"
 import Reviews from "./reviews/reviews"
-import Strategy from "./strategy/strategy"
-import Design from "./design/design"
-import Technology from "./technology/technology"
 /* Images */
 import bg from "./images/bg.png"
 import phone from "./images/phone-mockup.png"
+
+/* Route Components */
+const Strategy = React.lazy(() => import("./strategy/strategy"))
+const Design = React.lazy(() => import("./design/design"))
+const Technology = React.lazy(() => import("./technology/technology"))
 
 function Page(){
   const sectionEl = useRef(null)
