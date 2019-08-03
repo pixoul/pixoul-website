@@ -35,7 +35,7 @@ const Loading = ({
           setTimeout(() => {
             window.scroll(0, 0)
             toggleLoading(false)
-          }, 500)
+          }, 1000)
         });
       }
     })
