@@ -1,5 +1,5 @@
 import React, { useRef } from "react"
-
+import "./capabilities.scss"
 /* Third-Party Packages */
 import { withRouter, Route } from "react-router-dom"
 /* Utility Components */
@@ -25,8 +25,8 @@ function Page(){
   }
 
   return(
-    <div>
-        <Hero bg={bg} theme="light" align="left">
+    <div className="capabilities">
+        <Hero bg={bg} theme="light" align="left" offset={130}>
           <HeroContent>
             <HeroText
               width={475}
@@ -45,7 +45,7 @@ function Page(){
           </HeroFooter>
         </Hero>
 
-        <div ref={sectionEl}>
+        <div ref={sectionEl} className="features-section">
           <CapabilityFeatures />
         </div>
 
