@@ -22,7 +22,7 @@ const Map = () => {
         zoom={[12]}
       >
         <Marker coordinates={homeLocation} anchor="bottom">
-          <span className="map-icon">Pixoul Headquarters</span>
+          <span className="map-icon">Pixoul</span>
         </Marker>
       </MapboxMap>
     </div>
