@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col } from "shards-react"
+import { Container, Row, Col } from 'react-grid-system'
 import "./partner-stats.scss"
 
 import Opening from "utils/opening/opening"
@@ -17,7 +17,7 @@ export default function PartnerStats(props){
       />
       <Container>
         <Row>
-          <Col sm="12" md="4">
+          <Col sm={12} md={4}>
             <Feature align="center">
               <FeatureHeader>
                 <FeatureTitle text="219%" size={50}  color="#3180fb" />
@@ -26,7 +26,7 @@ export default function PartnerStats(props){
               <FeatureAction link="/capabilities/strategy" text="Strategy" size={20} color="#374050" arrowIcon={arrow} />
             </Feature>
           </Col>
-          <Col sm="12" md="4">
+          <Col sm={12} md={4}>
             <Feature align="center">
               <FeatureHeader>
                 <FeatureTitle text="$250M+" size={50}  color="#3180fb" />
@@ -35,7 +35,7 @@ export default function PartnerStats(props){
               <FeatureAction link="/capabilities/design" text="Design" size={20} color="#374050" arrowIcon={arrow} />
             </Feature>
           </Col>
-          <Col sm="12" md="4">
+          <Col sm={12} md={4}>
             <Feature align="center">
               <FeatureHeader>
                 <FeatureTitle text="10x" size={50}  color="#3180fb" />
