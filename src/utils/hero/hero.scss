@@ -1,11 +1,10 @@
 /* Hero Component SCSS */
-
-@import "../../styles/variables.scss";
+$white: #FFFFFF;
+$black: #000000;
+$blue: #3180fb;
 
 .hero {
   display: flex;
-  width: 100%;
-  min-width: 100%;
   min-height: calc(100vh - 100px);
   background-repeat: no-repeat;
   background-size: cover;
