@@ -23,28 +23,26 @@ $menu-item-active-color: #3180fb;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 120px;
-        padding-top: 120px;
       }
 
       .menu-footer {
-        padding-right: 25px;
-        padding-top: 250px;
+        padding-right: 35px;
+        padding-bottom: 180px;
+        align-self: flex-end;
       }
 
       .menu-brand {
         padding-top: 81px;
-        padding-left: 58px;
+        padding-left: 18px;
       }
     }
   }
 
   .menu-container {
     height: 100%;
-    width: 100%;
 
     &.background {
-      background: linear-gradient(100deg, #{$menu-primary} 60%, #{$menu-secondary} 40%);
+      background: linear-gradient(100deg, #{$menu-primary} 60%, #{$menu-secondary} 0%);
       color: #{$menu-primary};
     }
 
@@ -60,6 +58,8 @@ $menu-item-active-color: #3180fb;
       top: 27px;
       background: transparent;
       border: none;
+      outline: none;
+      cursor: pointer;
     }
 
     .menu-items {
@@ -67,6 +67,7 @@ $menu-item-active-color: #3180fb;
       flex-direction: column;
       list-style: none;
       margin: 0;
+      padding: 0;
 
       .menu-item {
         font-size: #{$menu-item-font-size};
