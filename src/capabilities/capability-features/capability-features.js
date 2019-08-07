@@ -13,7 +13,7 @@ import code from "./images/code.svg"
 const CapabilityFeatures = () => {
   return(
     <Container className="capability-features">
-      <Row>
+
         <Col sm={12} md={4}>
           <Feature>
             <FeatureHeader>
@@ -44,7 +44,7 @@ const CapabilityFeatures = () => {
             <FeatureAction link="/capabilities/technology" text="Learn More" />
           </Feature>
         </Col>
-      </Row>
+  
     </Container>
   )
 }
