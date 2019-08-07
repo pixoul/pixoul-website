@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import cn from "classnames"
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Button } from "shards-react";
 import "./header.scss"
+
+import Button from "utils/button/button"
 
 import { connect } from 'react-redux'
 import { toggleMenu } from "layout/navigation/actions"
@@ -19,26 +20,28 @@ function Header({ fixed = false, open, toggleMenu }) {
 
   const [hover, setHover] = useState(false)
 
-  return (
+  return(
     <div className={classes}>
-      <Navbar type="light" expand="md">
-        <NavbarBrand tag={Link} to="/home"><img src={logo} alt={logo} draggable="false" /></NavbarBrand>
-        <Nav className="ml-auto align-items-center">
-          <NavItem>
-            <Button outline tag={Link} to="/contact">Contact Us</Button>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className="menu-icon"
-              onClick={() => toggleMenu(!open)}
-              onMouseEnter={() => setHover(true)}
-              onMouseLeave={() => setHover(false)}
-            >
-              {hover ? <img src={menuHover} alt={menuHover} draggable="false" /> : <img src={menu} alt={menu} draggable="false" />}
-            </NavLink>
-          </NavItem>
-        </Nav>
-      </Navbar>
+      <div className="header-brand">
+        <Link to="/home">
+          <img src={logo} alt={logo} draggable="false" />
+        </Link>
+      </div>
+      <ul className="header-items">
+        <li className="header-item">
+          <Button tag={Link} to="/contact" outline>Contact Us</Button>
+        </li>
+        <li className="header-item">
+          <button
+            className="header-link"
+            onClick={() => toggleMenu(!open)}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            {hover ? <img src={menuHover} alt={menuHover} draggable="false" /> : <img src={menu} alt={menu} draggable="false" />}
+          </button>
+        </li>
+      </ul>
     </div>
   )
 }
