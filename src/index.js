@@ -6,8 +6,6 @@ import { Route, BrowserRouter } from "react-router-dom";
 import { Provider } from 'react-redux'
 import { store } from "app/store"
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css"
 import "styles/fonts.scss";
 
 const routing = (
