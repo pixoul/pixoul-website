@@ -26,15 +26,7 @@ const MenuFooter = () => {
   return(
     <animated.ul style={props} className="menu-footer">
         <li className="footer-item">
-          <ul className="list-inline">
-            <li className="list-inline-item">
-              <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
-            </li>
-            <li className="list-inline-item">|</li>
-            <li className="list-inline-item">
-              <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
-            </li>
-          </ul>
+          <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link> |  <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
         </li>
         <li className="footer-item">&#169; 2019 Pixoul.  All rights reserved.</li>
         <li className="footer-item">
