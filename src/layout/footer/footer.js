@@ -1,7 +1,7 @@
 import React from "react"
 import cn from "classnames"
 import { Link } from "react-router-dom";
-import { Button } from "shards-react";
+import Button from "utils/button/button"
 
 import "./footer.scss"
 
