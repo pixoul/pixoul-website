@@ -68,28 +68,28 @@ function FeatureIcon({
   return null
 }
 
-function FeatureHeader(props){
+function FeatureHeader({
+  children
+}){
   return(
     <div className="feature-media">
-      {props.children}
+      {children}
     </div>
   )
 }
 
-export default function Feature(props){
+export default function Feature({
+  align,
+  children
+}){
 
   const classes = cn('feature', {
-    'center': props.align === 'center'
+    'center': align === 'center'
   })
 
-  const styles = {
-    width: props.width ? props.width : 260,
-    height: props.height ? props.height : 224
-  }
-
   return(
-    <div className={classes} style={styles}>
-      {props.children}
+    <div className={classes}>
+      {children}
     </div>
   )
 }

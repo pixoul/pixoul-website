@@ -5,7 +5,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 30px;
+    padding-top: 116px;
+    padding-bottom: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
 
     .features-title {
       color: #374050;
@@ -14,11 +17,8 @@
       font-weight: 500;
       text-align: center;
       margin: 0 auto;
-      // max-width: 948px;
-      padding-top: 116px;
       padding-bottom: 80px;
-      padding-left: 150px;
-      padding-right: 150px;
+
     }
   }
 }

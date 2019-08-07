@@ -22,8 +22,8 @@ export default function Home() {
   return(
     <div className="home">
       <Hero bg={bg} theme="light" align="center" >
-          <HeroText text="We’ll help you" size={45} />
-          <HeroText text="Dominate Digital" size={85} weight="bold" />
+          <HeroText text="We’ll help you" size={'2.5rem'} />
+          <HeroText text="Dominate Digital" size={'4.5rem'} weight="bold" />
           <HeroAction action={heroClick} gutterTop={160} gutterBottom={60} />
       </Hero>
       <div ref={sectionEl} className="features-section" style={{
