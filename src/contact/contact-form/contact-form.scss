@@ -2,23 +2,41 @@
 .contact-form {
   margin-top: 30px;
 
-  .contact-message{
-    font-size: 25px;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .form-button {
-    margin-top: 15px;
+    margin-top: 25px;
+  }
+}
+
+
+.form {
+
+  .form-group {
+    margin-bottom: 1rem;
+
+    label {
+      color: #374050;
+      font-size: 16px;
+      font-weight: normal;
+      display: inline-block;
+      margin-bottom: .5rem;
+      margin-left: .25rem;
+    }
+  }
+
+  .form-input, .form-textarea {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: .5rem 1rem;
+    font-size: .95rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #becad6;
+    border-radius: .375rem;
+    box-sizing: border-box;
     box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
   }
 
-  .form-message {
-    height: 170px;
-  }
-
-  .form-control {
-    box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  }
 }
