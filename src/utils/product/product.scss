@@ -23,3 +23,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .product-item {
+      margin: 10px;
+    }
+  }
+}

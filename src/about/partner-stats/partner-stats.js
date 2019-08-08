@@ -9,9 +9,8 @@ import arrow from "./images/grey-arrow.svg"
 
 export default function PartnerStats(props){
   return(
-    <div className="partner-stats">
+    <div className="partner-stats gutters">
       <Opening
-        width={980}
         title="Our story by the numbers."
         subtitle="Pixoul is a human-centered design agency and consultancy that helps businesses find their voice in the digital space. Our partners trust us to provide them with exceptional digital products based on the foundations of Design Thinking to achieve business goals and affect bottom lines. "
       />
