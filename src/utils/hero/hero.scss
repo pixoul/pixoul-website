@@ -129,7 +129,13 @@ $blue: #3180fb;
       }
     }
 
+    &.center {
+      padding-top: 0px;
+    }
+
     .hero-text {
+      padding-bottom: 10px;
+      
       &.xl-text {
         font-size: 35px;
       }
