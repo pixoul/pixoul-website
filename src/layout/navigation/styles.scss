@@ -14,32 +14,10 @@ $menu-item-active-color: #3180fb;
   width: 100%;
   height: 100%;
 
-  &.lg-device {
-    .menu-container {
-      padding-left: 150px;
-      padding-right: 150px;
-
-      .menu-body {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .menu-footer {
-        padding-right: 35px;
-        padding-bottom: 180px;
-        align-self: flex-end;
-      }
-
-      .menu-brand {
-        padding-top: 81px;
-        padding-left: 18px;
-      }
-    }
-  }
-
   .menu-container {
     height: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
 
     &.background {
       background: linear-gradient(100deg, #{$menu-primary} 60%, #{$menu-secondary} 0%);
@@ -48,6 +26,9 @@ $menu-item-active-color: #3180fb;
 
     .menu-body {
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       width: 100%;
       height: 100%;
     }
@@ -62,6 +43,11 @@ $menu-item-active-color: #3180fb;
       cursor: pointer;
     }
 
+    .menu-brand {
+      padding-top: 81px;
+      padding-left: 18px;
+    }
+
     .menu-items {
       display: flex;
       flex-direction: column;
@@ -72,6 +58,7 @@ $menu-item-active-color: #3180fb;
       .menu-item {
         font-size: #{$menu-item-font-size};
         font-weight: bold;
+        padding-bottom: 16px;
 
         .menu-link {
           text-decoration: none;
@@ -96,6 +83,9 @@ $menu-item-active-color: #3180fb;
       list-style: none;
       margin: 0;
       padding: 0;
+      padding-right: 35px;
+      padding-bottom: 180px;
+      align-self: flex-end;
 
       .footer-item {
         padding-top: 15px;
@@ -118,4 +108,46 @@ $menu-item-active-color: #3180fb;
 
   }
 
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    .menu-container {
+      padding-left: 35px;
+      padding-right: 10px;
+      padding-top: 35px;
+
+      &.background {
+        background: #{$menu-primary};
+        color: #{$menu-secondary};
+      }
+
+      .menu-close {
+        color: black;
+      }
+
+      .menu-body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .menu-brand {
+        display: none;
+      }
+
+      .menu-footer {
+        align-self: flex-start;
+        padding-left: 14px;
+        padding-top: 86px;
+
+        .footer-item {
+          .footer-link {
+            color: #{$menu-secondary}
+          }
+        }
+      }
+    }
+  }
 }
