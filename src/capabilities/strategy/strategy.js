@@ -22,7 +22,7 @@ import data from "./data"
 export default function Strategy(){
   return(
     <div>
-      <Hero bg={bg} theme="dark" align="left" height={520}>
+      <Hero bg={bg} theme="dark" align="left" height={520} className="gutters">
         <HeroContent>
           <HeroText text="Our strategic solutions reduce risk." color="#2ec986" size="sm" />
           <HeroText text="We’ll work with you to find solutions to your most complex challenges." size="md" />
