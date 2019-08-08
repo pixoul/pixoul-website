@@ -7,8 +7,6 @@
     background-size: cover;
     padding-top: 116px;
     padding-bottom: 80px;
-    padding-left: 150px;
-    padding-right: 150px;
 
     .features-title {
       color: #374050;
@@ -19,16 +17,6 @@
       margin: 0 auto;
       padding-bottom: 80px;
 
-    }
-  }
-}
-
-
-@media (max-width: 768px) {
-  .home {
-    .features-section {
-      padding-left: 10px;
-      padding-right: 10px;
     }
   }
 }

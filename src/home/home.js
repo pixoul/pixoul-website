@@ -26,7 +26,7 @@ export default function Home() {
           <HeroText text="Dominate Digital" size={'4.5rem'} weight="bold" />
           <HeroAction action={heroClick} gutterTop={160} gutterBottom={60} />
       </Hero>
-      <div ref={sectionEl} className="features-section" style={{
+      <div ref={sectionEl} className="features-section gutters" style={{
         backgroundImage: 'url('+logoBg+')'
       }}>
 

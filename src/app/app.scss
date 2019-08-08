@@ -2,3 +2,16 @@ html, body, #root {
   margin: 0;
   padding: 0;
 }
+
+
+.gutters {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media (max-width: 768px) {
+  .gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
