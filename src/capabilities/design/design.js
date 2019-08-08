@@ -22,7 +22,7 @@ import data from "./data"
 export default function Design(){
   return(
     <div>
-      <Hero bg={bg} theme="dark" align="left" height={520}>
+      <Hero bg={bg} theme="dark" align="left" height={520} className="gutters">
         <HeroContent>
           <HeroText text="Digital experience matters." color="#2ec986" size="sm" />
           <HeroText text="Human-centered design empowers us to rethink user’s needs." size="md" />
