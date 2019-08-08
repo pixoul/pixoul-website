@@ -19,9 +19,8 @@ const products = [
 
 export default function OurValue(){
   return(
-    <div className="our-value">
+    <div className="our-value gutters">
       <Opening
-        width={750}
         title="What we value."
         subtitle="Our design-centric approach means our products focus on real data and business goals, bringing value and creativity into every solution."
       />
