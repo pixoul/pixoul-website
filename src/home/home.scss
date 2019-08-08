@@ -22,3 +22,13 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .home {
+    .features-section {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
