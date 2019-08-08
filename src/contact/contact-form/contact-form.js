@@ -45,13 +45,13 @@ export default function ContactForm(){
         :
         <form className="form">
         <Row>
-          <Col sm={6}>
+          <Col sm={12} md={6}>
             <div className="form-group">
               <label htmlFor="#name">Name</label>
               <input className="form-input" id="#name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
             </div>
           </Col>
-          <Col sm={6}>
+          <Col sm={12} md={6}>
             <div className="form-group">
               <label htmlFor="#email">Email</label>
               <input className="form-input" type="email" id="#email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
