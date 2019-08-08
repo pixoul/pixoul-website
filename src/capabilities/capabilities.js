@@ -28,16 +28,14 @@ function Page(){
 
   return(
     <div className="capabilities">
-        <Hero bg={bg} theme="light" align="left" offset={60}>
+        <Hero bg={bg} theme="light" align="left" offset={60} className="gutters">
           <HeroContent>
             <HeroText
-              width={475}
-              size={65}
+              size="lg"
               text="How can we help?"
             />
             <HeroText
-              size={22}
-              width={508}
+              size="sm"
               text="We’re here to bring life to your digital vision. Got a project in mind? Let’s talk."
             />
             <HeroAction action={heroClick} />

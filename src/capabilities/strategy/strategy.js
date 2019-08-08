@@ -24,8 +24,8 @@ export default function Strategy(){
     <div>
       <Hero bg={bg} theme="dark" align="left" height={520}>
         <HeroContent>
-          <HeroText text="Our strategic solutions reduce risk." color="#2ec986" size={22}/>
-          <HeroText text="We’ll work with you to find solutions to your most complex challenges." width={689} size={45} />
+          <HeroText text="Our strategic solutions reduce risk." color="#2ec986" size="sm" />
+          <HeroText text="We’ll work with you to find solutions to your most complex challenges." size="md" />
         </HeroContent>
       </Hero>
 

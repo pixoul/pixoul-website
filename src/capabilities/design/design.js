@@ -24,8 +24,8 @@ export default function Design(){
     <div>
       <Hero bg={bg} theme="dark" align="left" height={520}>
         <HeroContent>
-          <HeroText text="Digital experience matters." color="#2ec986" size={22}/>
-          <HeroText text="Human-centered design empowers us to rethink user’s needs." width={689} size={45} />
+          <HeroText text="Digital experience matters." color="#2ec986" size="sm" />
+          <HeroText text="Human-centered design empowers us to rethink user’s needs." size="md" />
         </HeroContent>
       </Hero>
 
