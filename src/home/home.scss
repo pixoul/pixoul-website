@@ -20,3 +20,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .home {
+    .features-section {
+      .features-title {
+        font-size: 25px;
+        font-weight: normal;
+      }
+    }
+  }
+}
