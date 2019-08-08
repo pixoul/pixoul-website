@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import cn from "classnames"
 import "./header.scss"
 
+import HamburgerMenu from "utils/burger-menu/burger-menu"
 import Button from "utils/button/button"
 
 import { connect } from 'react-redux'
 import { toggleMenu } from "layout/navigation/actions"
 
 import logo from "./images/logo.svg"
-import menu from "./images/menu.svg"
-import menuHover from "./images/menu-hover.svg"
 
 function Header({ fixed = false, open, toggleMenu }) {
 
@@ -31,15 +30,8 @@ function Header({ fixed = false, open, toggleMenu }) {
         <li className="header-item">
           <Button tag={Link} to="/contact" outline>Contact Us</Button>
         </li>
-        <li className="header-item">
-          <button
-            className="header-link"
-            onClick={() => toggleMenu(!open)}
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-          >
-            {hover ? <img src={menuHover} alt={menuHover} draggable="false" /> : <img src={menu} alt={menu} draggable="false" />}
-          </button>
+        <li className="header-item header-link">
+          <HamburgerMenu open={open} onClick={() => toggleMenu(!open)} />
         </li>
       </ul>
     </div>
