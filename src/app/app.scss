@@ -9,6 +9,15 @@ html, body, #root {
   padding-right: 150px;
 }
 
+.button-group {
+  display: flex;
+  justify-content: space-between;
+
+  .button {
+    margin-right: 45px;
+  }
+}
+
 @media (max-width: 768px) {
   .gutters {
     padding-left: 16px;

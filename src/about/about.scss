@@ -1,0 +1,46 @@
+.about {
+
+  .intro-section {
+    background-color: #3c3d41;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .intro-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 50%;
+
+      .intro-tagline, .intro-title, .intro-text {
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0;
+      }
+
+      .intro-tagline {
+        font-size: 13px;
+        letter-spacing: 2.36px;
+        opacity: 0.7;
+        padding-bottom: 39px;
+      }
+
+      .intro-title {
+        font-size: 62px;
+        line-height: 1.06;
+        letter-spacing: -2.38px;
+        padding-bottom: 28px;
+      }
+
+      .intro-text {
+         font-size: 22px;
+         opacity: 0.7;
+         padding-bottom: 100px;
+      }
+    }
+
+  }
+}
