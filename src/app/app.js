@@ -12,7 +12,7 @@ function App(props) {
   return (
     <div>
       <Suspense fallback={<div className="loading"  />}>
-          <Header />
+          <Header fixed />
             <LoadingScreen watchRoutes />
             <Routes />
           <Footer />
