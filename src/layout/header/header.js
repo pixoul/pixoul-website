@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import cn from "classnames"
 import "./header.scss"
 
@@ -16,29 +16,29 @@ function Header({ fixed = false }) {
     <div className={classes}>
       <ul className="header-links">
         <li className="header-link">
-          <Link to="/home">
+          <NavLink to="/home" activeClassName="active-link">
             <img src={logo} alt={logo} draggable="false" />
-          </Link>
+          </NavLink>
         </li>
         <li className="header-link">
-          <Link to="/about">
+          <NavLink to="/about" activeClassName="active-link">
             About
-          </Link>
+          </NavLink>
         </li>
         <li className="header-link">
-          <Link to="/talent">
+          <NavLink to="/talent" activeClassName="active-link">
             Talent
-          </Link>
+          </NavLink>
         </li>
         <li className="header-link">
-          <Link to="/process">
+          <NavLink to="/process" activeClassName="active-link">
             Process
-          </Link>
+          </NavLink>
         </li>
         <li className="header-link">
-          <Link to="/faq">
+          <NavLink to="/faq" activeClassName="active-link">
             FAQ
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <div className="header-action">
