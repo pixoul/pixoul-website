@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 import "./home.scss"
 /* Utility Components */
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
+import Button from "utils/button/button"
 /* Presentational Components */
-import CapabilityFeatures from "capabilities/capability-features/capability-features"
-import WorkLatest from "work/latest/latest"
+
 /* Images */
 import bg from "./images/bg.png"
 import logoBg from "./images/logo-bg.png"
@@ -21,20 +21,22 @@ export default function Home() {
 
   return(
     <div className="home">
-      <Hero bg={bg} theme="light" align="center" className="gutters">
-          <HeroText text="We’ll help you" size="md" />
-          <HeroText text="Dominate Digital" size="xl" bold />
-          <HeroAction action={heroClick} gutterTop={160} gutterBottom={60} />
-      </Hero>
-      <div ref={sectionEl} className="features-section gutters" style={{
-        backgroundImage: 'url('+logoBg+')'
-      }}>
 
-        <h3 className="features-title">We're a digital services firm with a focus on design, technology, and strategic innovation.</h3>
-        <CapabilityFeatures background />
+      <div className="intro-section">
+        <h1 className="intro-text">On Demand IT Talent,</h1>
+        <h1 className="intro-text">Simplified.</h1>
+        <div className="button-group">
+          <Button>Hire the Perfect Match</Button>
+          <Button outline>Join the Team</Button>
+        </div>
       </div>
 
-      <WorkLatest />
+      <div ref={sectionEl} className="difference-section gutters">
+        <h3 className="difference-title">The Pixoul Difference</h3>
+        <h4 className="difference-subtitle">We’re better—let us tell you why.</h4>
+
+      </div>
+
     </div>
   )
 }
