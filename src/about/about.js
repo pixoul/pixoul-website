@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
-
+import "./about.scss"
 import { Hero, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
+import Button from "utils/button/button"
 import Capability from "utils/capability/capability"
 import Map from "utils/map/map"
 import bg from "./images/bg.png"
@@ -19,36 +20,39 @@ export default function About() {
   }
 
   return(
-    <div>
-      <Hero bg={bg} theme="dark" align="center" className="gutters">
-          <HeroText
-            text="Complex problems deserve elegant solutions."
-            size="lg"
-          />
-          <HeroText
-            text="We help brands and organizations succeed in the digital age."
-            size="sm"
-          />
-          <HeroAction gutterTop={63} action={heroClick} blue />
-          <HeroMedia media={browser}/>
-      </Hero>
+    <div className="about">
+      <div className="intro-section gutters">
+        <div className="intro-content">
+          <h4 className="intro-tagline">HIGH PERFORMING TALENT, ON DEMAND.</h4>
+          <h1 className="intro-title">Welcome to your elite talent network.</h1>
+          <p className="intro-text">We hire world-class designers, developers and project managers.  Pixoul talent contributes to the most innovative and profitable companies across the globe. </p>
 
-      <div ref={sectionEl}>
-        <PartnerStats />
+          <div className="button-group">
+            <Button theme="secondary">Hire the Perfect Match</Button>
+            <Button theme="secondary" outline>Join the Team</Button>
+          </div>
+        </div>
+        <div className="intro-media">
+
+        </div>
       </div>
 
-      <OurValue />
+      <div>
+        <Capability
+          direction='rtl'
+          mediaComponent={<Map />}
+          title='Augmented IT Talent.'
+          subtitle='Utilize our full-time or hourly based freelancers to harness technical debt, combat roadmap scope creep, or fill knowledge gaps within your organization.'
+        />
 
-      <Capability
-        direction='ltr'
-        mediaComponent={<Map />}
-        title='Our partner network is always expanding.'
-        subtitle='Headquartered in Dallas, TX, we’re proud to have made an impact on communities around the world.'
-        details = {{
-          'Team Members': 'Across North America',
-          'Clients': 'Around the globe'
-        }}
-      />
+        <Capability
+          direction='ltr'
+          mediaComponent={<Map />}
+          title='Full team Support.'
+          subtitle='Our network can help you source a full team of designers, developers, and project managers—ensuring your next digital project is a smooth success.'
+        />
+      </div>
+
     </div>
   )
 }
