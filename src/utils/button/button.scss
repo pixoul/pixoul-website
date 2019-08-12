@@ -28,6 +28,16 @@
     }
   }
 
+  &.button-secondary {
+    background-color: #4E4F54;
+    color: #FFFFFF;
+    border: solid 1px #4E4F54;
+
+    &.button-outline {
+      background-color: transparent;
+    }
+  }
+
   &.button-light {
     background-color: #3180fb;
     color: #FFFFFF;
