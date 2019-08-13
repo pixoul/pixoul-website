@@ -3,7 +3,7 @@ import "./about.scss"
 import { Hero, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
 import Button from "utils/button/button"
 import Capability from "utils/capability/capability"
-import Map from "utils/map/map"
+
 import bg from "./images/bg.png"
 import browser from "./images/browser-window.svg"
 
@@ -37,14 +37,14 @@ export default function About() {
       <div>
         <Capability
           direction='rtl'
-          mediaComponent={<Map />}
+          media={bg}
           title='Augmented IT Talent.'
           subtitle='Utilize our full-time or hourly based freelancers to harness technical debt, combat roadmap scope creep, or fill knowledge gaps within your organization.'
         />
 
         <Capability
           direction='ltr'
-          mediaComponent={<Map />}
+          media={bg}
           title='Full team Support.'
           subtitle='Our network can help you source a full team of designers, developers, and project managers—ensuring your next digital project is a smooth success.'
         />
