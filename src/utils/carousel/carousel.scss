@@ -45,6 +45,10 @@
 
   .slick-arrow {
     z-index: 100;
+    &.slick-prev, &.slick-next {
+      width: 86px;
+      height: 86px;
+    }
 
     &.slick-next {
       right: 20px;
