@@ -2,6 +2,7 @@ import React from "react"
 /* Third-Party */
 import { Container, Row, Col } from 'react-grid-system'
 /* Utils */
+import Opening from "utils/opening/opening"
 import Feature from "utils/feature/feature"
 /* Icons */
 import thumbsup from "./images/icons/thumbsup.svg"
@@ -15,9 +16,10 @@ const PixoulDifference = () => {
 
   return(
     <div className="difference-section gutters">
-      <h3 className="difference-title">The Pixoul Difference</h3>
-      <h4 className="difference-subtitle">We’re better—let us tell you why.</h4>
-
+      <Opening
+        title="The Pixoul Difference"
+        subtitle="We’re better—let us tell you why."
+      />
 
       <Container>
         <Row>
