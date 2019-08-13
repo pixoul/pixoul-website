@@ -4,11 +4,12 @@ import "./home.scss"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
 import Button from "utils/button/button"
 /* Presentational Components */
-
+import PixoulDifference from "./pixoul-difference"
 /* Images */
 import bg from "./images/bg.png"
 import logoBg from "./images/logo-bg.png"
 import favicon from "./images/favicon.svg"
+import ipad from "./images/ipad.svg"
 
 export default function Home() {
   const sectionEl = useRef(null)
@@ -29,13 +30,12 @@ export default function Home() {
           <Button>Hire the Perfect Match</Button>
           <Button outline>Join the Team</Button>
         </div>
+        <div className="intro-media">
+          <img src={ipad} alt={ipad} className="intro-image" />
+        </div>
       </div>
 
-      <div ref={sectionEl} className="difference-section gutters">
-        <h3 className="difference-title">The Pixoul Difference</h3>
-        <h4 className="difference-subtitle">We’re better—let us tell you why.</h4>
-
-      </div>
+      <PixoulDifference />
 
     </div>
   )
