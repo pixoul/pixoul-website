@@ -1,0 +1,37 @@
+
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .stat-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .stat-value {
+    font-size: 76px;
+    letter-spacing: -4.75px;
+    text-align: center;
+    color: #3c3d41;
+  }
+
+  .stat-description {
+    font-size: 17px;
+    text-align: center;
+    color: #656b6f;
+    overflow-wrap: break-word;
+  }
+
+  circle {
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+}
