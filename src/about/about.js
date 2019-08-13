@@ -7,9 +7,6 @@ import Map from "utils/map/map"
 import bg from "./images/bg.png"
 import browser from "./images/browser-window.svg"
 
-import PartnerStats from "about/partner-stats/partner-stats"
-import OurValue from "about/our-value/our-value"
-
 export default function About() {
   const sectionEl = useRef(null)
 
