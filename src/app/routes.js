@@ -5,8 +5,8 @@ import { useTransition, animated } from 'react-spring'
 /* Page Components */
 const Home = React.lazy(() => import("home/home"))
 const About = React.lazy(() => import("about/about"))
-const Capabilities = React.lazy(() => import("capabilities/capabilities"))
-const Work = React.lazy(() => import("work/work"))
+const Talent = React.lazy(() => import("talent/talent"))
+const Process = React.lazy(() => import("process/process"))
 const Contact = React.lazy(() => import("contact/contact"))
 
 function Routes(props){
@@ -32,8 +32,8 @@ function Routes(props){
       <animated.div key={key} style={{...style, height: "100%", width: "100%"}}>
            <Switch location={item}>
                <Route path="/home" component={Home} />
-               <Route path="/work" component={Work} />
-               <Route path="/capabilities" component={Capabilities} />
+               <Route path="/talent" component={Talent} />
+               <Route path="/process" component={Process} />
                <Route path="/about" component={About} />
                <Route path="/contact" component={Contact} />
 
