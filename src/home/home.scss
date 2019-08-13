@@ -58,6 +58,62 @@
       padding-bottom: 104px;
     }
   }
+
+  .trusted-companies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .trusted-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #3c3d41;
+    }
+
+    .trusted-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 84px;
+      padding-bottom: 84px;
+
+      img {
+        padding-left: 62px;
+      }
+    }
+  }
+
+  .pixoul-video {
+    display: flex;
+    justify-content: center;
+    background-color: #3c3d41;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .video-title {
+      font-size: 62px;
+      font-weight: bold;
+      letter-spacing: -2.38px;
+      color: #ffffff;
+    }
+
+    .video-description {
+      font-size: 22px;
+      color: #ffffff;
+    }
+
+    .video-area {
+      padding-left: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+
+  
 }
 
 @media (max-width: 768px) {

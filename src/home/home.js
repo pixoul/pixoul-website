@@ -3,8 +3,10 @@ import "./home.scss"
 /* Utility Components */
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
 import Button from "utils/button/button"
+import VideoPlayer from "utils/video-player/video-player"
 /* Presentational Components */
 import PixoulDifference from "./pixoul-difference"
+import TrustedCompanies from "./trusted-companies"
 /* Images */
 import bg from "./images/bg.png"
 import logoBg from "./images/logo-bg.png"
@@ -36,6 +38,19 @@ export default function Home() {
       </div>
 
       <PixoulDifference />
+
+      <TrustedCompanies />
+
+      <div className="pixoul-video gutters">
+        <div className="video-content">
+          <h1 className="video-title">Top Designers, Developers, and Project Managers.</h1>
+          <p className="video-description"> Pixoul matches talent for industry-leading organizations, from startups to the Fortune 500.</p>
+          <p className="video-description">Our remote team members are more than freelancers—they’re career-focused individuals who invest their reputation in every project.</p>
+        </div>
+        <div className="video-area">
+          <VideoPlayer />
+        </div>
+      </div>
 
     </div>
   )
