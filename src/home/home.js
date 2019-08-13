@@ -4,6 +4,7 @@ import "./home.scss"
 import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
 import Button from "utils/button/button"
 import VideoPlayer from "utils/video-player/video-player"
+import Stat from "utils/stat/stat"
 /* Presentational Components */
 import PixoulDifference from "./pixoul-difference"
 import TrustedCompanies from "./trusted-companies"
@@ -50,6 +51,32 @@ export default function Home() {
         <div className="video-area">
           <VideoPlayer />
         </div>
+      </div>
+
+      <div className="quality-performance">
+        <h1 className="quality-title">Quality and Perfomance.</h1>
+        <h4 className="quality-tagline">Our most impressive stats speak for themselves.</h4>
+
+        <div className="quality-stats">
+          <Stat
+            value="1.5+"
+            description="Average Project Length (Yrs.)"
+            progress={75}
+          />
+
+          <Stat
+            value="$250M"
+            description="Value of Delivered Solutions"
+            progress={60}
+          />
+
+          <Stat
+            value="300+"
+            description="Team Members Already Working"
+            progress={35}
+          />
+        </div>
+
       </div>
 
     </div>
