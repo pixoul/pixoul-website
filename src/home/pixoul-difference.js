@@ -4,12 +4,12 @@ import { Container, Row, Col } from 'react-grid-system'
 /* Utils */
 import Feature from "utils/feature/feature"
 /* Icons */
-import thumbsup from "./images/thumbsup.svg"
-import money from "./images/money.svg"
-import heart from "./images/heart.svg"
-import lightning from "./images/lightning.svg"
-import clock from "./images/clock.svg"
-import user from "./images/user.svg"
+import thumbsup from "./images/icons/thumbsup.svg"
+import money from "./images/icons/money.svg"
+import heart from "./images/icons/heart.svg"
+import lightning from "./images/icons/lightning.svg"
+import clock from "./images/icons/clock.svg"
+import user from "./images/icons/user.svg"
 
 const PixoulDifference = () => {
 
