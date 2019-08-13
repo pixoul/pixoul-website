@@ -1,15 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="12px" height="18px" viewBox="0 0 12 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
-    <title>‹</title>
-    <desc>Created with Sketch.</desc>
-    <g id="v7.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Capabilities" transform="translate(-102.000000, -2822.000000)" fill="#000000" fill-rule="nonzero">
-            <g id="Testimonials" transform="translate(0.000000, 2301.000000)">
-                <g id="Nav" transform="translate(99.000000, 503.000000)">
-                    <polygon id="‹" points="7.5546875 26.8085938 7.5546875 27.1210938 14.4101562 35.1679688 10.4257812 35.1679688 3.58984375 27.0429688 3.58984375 26.8867188 10.4257812 18.7617188 14.4101562 18.7617188"></polygon>
-                </g>
-            </g>
-        </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="43" cy="43" r="42.4" stroke="#DDD" stroke-width="1.2" transform="matrix(-1 0 0 1 86 0)"/>
+        <path fill="#656B6F" d="M62 42.093H28.839l10.975-11.38L38.16 29 24 43.684l1.652 1.713.118-.123L37.925 58l1.653-1.713-11.33-11.747H62z"/>
     </g>
 </svg>
