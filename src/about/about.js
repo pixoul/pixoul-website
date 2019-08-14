@@ -6,9 +6,10 @@ import Button from "utils/button/button"
 import Capability from "utils/capability/capability"
 
 /* Images */
-import bg from "./images/bg.png"
 import iphoneFront from "./images/iphone-front.svg"
 import iphoneBack from "./images/iphone-back.svg"
+import augmented from "./images/augmented.png"
+import support from "./images/support.png"
 
 export default function About() {
 
@@ -31,20 +32,27 @@ export default function About() {
         </div>
       </div>
 
-      <div>
-        <Capability
-          direction='rtl'
-          media={bg}
-          title='Augmented IT Talent.'
-          subtitle='Utilize our full-time or hourly based freelancers to harness technical debt, combat roadmap scope creep, or fill knowledge gaps within your organization.'
-        />
+      <div className="info-grid">
+        <div className="info-item ltr">
+          <div className="info-content">
+            <span className="info-title">Augmented IT Talent.</span>
+            <span className="info-description">Utilize our full-time or hourly based freelancers to harness technical debt, combat roadmap scope creep, or fill knowledge gaps within your organization.</span>
+          </div>
+          <div className="info-media">
+            <img src={augmented} alt={augmented} className="info-media-image" />
+          </div>
+        </div>
 
-        <Capability
-          direction='ltr'
-          media={bg}
-          title='Full team Support.'
-          subtitle='Our network can help you source a full team of designers, developers, and project managers—ensuring your next digital project is a smooth success.'
-        />
+        <div className="info-item rtl">
+          <div className="info-content">
+            <span className="info-title">Full team Support.</span>
+            <span className="info-description">Our network can help you source a full team of designers, developers, and project managers—ensuring your next digital project is a smooth success.  </span>
+          </div>
+          <div className="info-media">
+            <img src={support} alt={support} className="info-media-image" />
+          </div>
+        </div>
+
       </div>
 
     </div>
