@@ -1,20 +1,16 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./about.scss"
+/* Utils */
 import { Hero, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
 import Button from "utils/button/button"
 import Capability from "utils/capability/capability"
 
+/* Images */
 import bg from "./images/bg.png"
-import browser from "./images/browser-window.svg"
+import iphoneFront from "./images/iphone-front.svg"
+import iphoneBack from "./images/iphone-back.svg"
 
 export default function About() {
-  const sectionEl = useRef(null)
-
-  const heroClick = () => {
-    sectionEl.current.scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
 
   return(
     <div className="about">
@@ -30,7 +26,8 @@ export default function About() {
           </div>
         </div>
         <div className="intro-media">
-
+          <img src={iphoneFront} alt={iphoneFront} className="intro-image front" />
+          <img src={iphoneBack} alt={iphoneBack} className="intro-image back" />
         </div>
       </div>
 

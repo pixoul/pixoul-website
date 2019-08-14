@@ -7,6 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 65px;
 
     .intro-content {
       display: flex;
@@ -14,22 +15,24 @@
       align-items: flex-start;
       justify-content: flex-start;
       width: 50%;
+      height: 100%;
 
       .intro-tagline, .intro-title, .intro-text {
-        font-weight: bold;
         color: #ffffff;
         margin: 0;
       }
 
       .intro-tagline {
         font-size: 13px;
+        font-weight: bold;
         letter-spacing: 2.36px;
-        opacity: 0.7;
         padding-bottom: 39px;
+        padding-top: 65px;
       }
 
       .intro-title {
         font-size: 62px;
+        font-weight: bold;
         line-height: 1.06;
         letter-spacing: -2.38px;
         padding-bottom: 28px;
@@ -37,10 +40,36 @@
 
       .intro-text {
          font-size: 22px;
+         font-weight: normal;
          opacity: 0.7;
          padding-bottom: 100px;
       }
     }
 
+    .intro-media {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .intro-image {
+        position: absolute;
+        max-width: 445px;
+        max-height: 730px;
+
+        &.front {
+          left: 230px;
+          top: 48px;
+          z-index: 1;
+        }
+
+        &.back {
+          left: 110px;
+          top: 0;
+          z-index: 0;
+        }
+      }
+    }
   }
+
+
 }
