@@ -1,16 +1,15 @@
 
 .button {
-  border-radius: 48px;
-  font-size: 12px;
-  line-height: 1.125;
-  text-align: center;
-  padding: 19px 45px;
-  display: inline-block;
   cursor: pointer;
+  display: inline-block;
   white-space: nowrap;
-  text-decoration: none;
-  font-weight: bold;
   letter-spacing: 2.4px;
+  border-radius: 48px;
+  padding: 1.583em 3.75em;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
 
   &:hover {
