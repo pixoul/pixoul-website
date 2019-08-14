@@ -12,7 +12,7 @@ const Reviews = () => {
     <div className="reviews gutters">
       <h3 className="reviews-title">WHAT OUR CLIENTS SAY</h3>
 
-      <Carousel maxSlides={1} offset={76} gutter={20} autoplay>
+      <Carousel maxSlides={1}  >
         <Slide>
           <Review
             review="The process is very low pressure, and highly customizable to our budget and goals.  Highly recommend!"
