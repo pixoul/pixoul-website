@@ -31,7 +31,8 @@
 
      .reviewer-name {
        font-size: 13px;
-       font-weight: 900;
+       font-weight: bold;
+       text-transform: uppercase;
        letter-spacing: 2.36px;
        color: #3c3d41;
        padding-top: 24px;
@@ -39,7 +40,7 @@
 
      .reviewer-designation {
        font-size: 16px;
-       font-weight: 300;
+       font-weight: normal;
        color: #656b6f;
        padding-top: 7px;
      }
