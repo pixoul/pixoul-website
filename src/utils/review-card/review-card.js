@@ -1,6 +1,6 @@
 import React from "react"
 import "./review-card.scss"
-import stars from "./images/stars.svg"
+import quote from "./images/quote.svg"
 
 export default function ReviewCard({
   review,
@@ -10,8 +10,8 @@ export default function ReviewCard({
 }){
   return(
     <div className="review-card">
-      <div className="review-stars">
-        <img src={stars} alt={stars} draggable="false" />
+      <div className="review-quote">
+        <img src={quote} alt={quote} draggable="false" />
       </div>
       <div className="review-content">
         <p className="review-text">{review}</p>
