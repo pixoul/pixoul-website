@@ -72,4 +72,55 @@
   }
 
 
+  .info-grid {
+    .info-item {
+      display: flex;
+
+      &.ltr {
+        flex-direction: row;
+      }
+
+      &.rtl {
+        flex-direction: row-reverse;
+      }
+
+      .info-content, .info-media {
+        width: 50%;
+      }
+
+      .info-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .info-title {
+          font-size: 62px;
+          font-weight: bold;
+          letter-spacing: -2.38px;
+          color: #3c3d41;
+          padding-bottom: 40px;
+          padding-left: 132px;
+          padding-right: 111px;
+        }
+
+        .info-description {
+          font-size: 22px;
+          color: #656b6f;
+          line-height: 1.47;
+          padding-left: 132px;
+          padding-right: 111px;
+        }
+      }
+
+      .info-media {
+
+        .info-media-image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
 }
