@@ -8,7 +8,7 @@ import TrustedCompanies from "./trusted-companies"
 import PixoulVideo from "./pixoul-video"
 import QualityPerformance from "./quality-performance"
 import TopCapabilities from "./top-capabilities"
-import Reviews from "./reviews"
+import ReviewsCarousel from "./reviews-carousel"
 
 const Home = () => {
   return(
@@ -19,7 +19,7 @@ const Home = () => {
       <PixoulVideo />
       <QualityPerformance />
       <TopCapabilities />
-      <Reviews />
+      <ReviewsCarousel />
     </div>
   )
 }
