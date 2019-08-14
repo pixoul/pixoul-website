@@ -1,10 +1,9 @@
 import React from "react";
 import "./about.scss"
 /* Utils */
-import { Hero, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
 import Button from "utils/button/button"
-import Capability from "utils/capability/capability"
-
+/* Presentational Components */
+import LoveMore from "./love-more"
 /* Images */
 import iphoneFront from "./images/iphone-front.svg"
 import iphoneBack from "./images/iphone-back.svg"
@@ -52,8 +51,10 @@ export default function About() {
             <img src={support} alt={support} className="info-media-image" />
           </div>
         </div>
-
       </div>
+
+
+      <LoveMore />
 
     </div>
   )
