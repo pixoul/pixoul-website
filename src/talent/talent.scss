@@ -1,4 +1,42 @@
 
 .talent {
-  
+  .intro-section {
+    background-image: radial-gradient(circle at 19% 22%, #f9f9f9, #f2f2f2);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 130px;
+
+    .intro-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 50%;
+      height: 100%;
+
+      .intro-title {
+        font-size: 62px;
+        font-weight: bold;
+        line-height: 1.06;
+        letter-spacing: -2.38px;
+        padding-bottom: 18px;
+      }
+
+      .intro-text {
+         color: #656b6f;
+         font-size: 24px;
+         padding-bottom: 48px;
+      }
+    }
+
+    .intro-media {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
 }
