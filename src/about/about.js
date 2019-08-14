@@ -4,6 +4,7 @@ import "./about.scss"
 import Button from "utils/button/button"
 /* Presentational Components */
 import LoveMore from "./love-more"
+import RoadmapPromo from "./roadmap-promo"
 /* Images */
 import iphoneFront from "./images/iphone-front.svg"
 import iphoneBack from "./images/iphone-back.svg"
@@ -55,6 +56,8 @@ export default function About() {
 
 
       <LoveMore />
+
+      <RoadmapPromo />
 
     </div>
   )
