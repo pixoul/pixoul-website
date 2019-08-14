@@ -1,37 +1,36 @@
-import React from "react"
-/* Utils */
-import { Carousel, Slide } from "utils/carousel"
-import Review from "utils/review-card/review-card"
+import reviewer1 from "./images/reviewers/reviewer-1.jpg"
+import reviewer2 from "./images/reviewers/reviewer-2.jpg"
+import reviewer3 from "./images/reviewers/reviewer-3.jpg"
+import reviewer4 from "./images/reviewers/reviewer-4.jpg"
 
-/* Images */
-import reviewer1 from "./images/reviewers/reviewer-1.png"
+const list = []
 
-const Reviews = () => {
+list.push({
+  avatar: reviewer1,
+  reviewer: 'Josh Evans',
+  designation: 'Chief Technology Officer',
+  review: "The whole process is simple, smooth, and fast—not to mention they sourced the talent to get our deliverables on track."
+})
 
-  return(
-    <div className="reviews gutters">
-      <h3 className="reviews-title">WHAT OUR CLIENTS SAY</h3>
+list.push({
+  avatar: reviewer2,
+  reviewer: 'Jillian Thompson',
+  designation: 'Chief Marketing Officer',
+  review: "Our design is on point, our site never functioned better, and engagement is WAY UP!  You guys rock :)"
+})
 
-      <Carousel maxSlides={1}  >
-        <Slide>
-          <Review
-            review="The process is very low pressure, and highly customizable to our budget and goals.  Highly recommend!"
-            avatar={reviewer1}
-            reviewer="JOSH EVANS"
-            designation="Chief Technology Officer"
-          />
-        </Slide>
-        <Slide>
-          <Review
-            review="The process is very low pressure, and highly customizable to our budget and goals.  Highly recommend!"
-            avatar={reviewer1}
-            reviewer="JOSH EVANS"
-            designation="Chief Technology Officer"
-          />
-        </Slide>
-      </Carousel>
-    </div>
-  )
-}
+list.push({
+  avatar: reviewer3,
+  reviewer: 'Jordan Franks',
+  designation: 'Product Manager',
+  review: "Their team is the best.  Our Account Manager held our hand through everything and the talent is top-notch!"
+})
 
-export default Reviews
+list.push({
+  avatar: reviewer4,
+  reviewer: 'Emily Munson',
+  designation: 'HR Department Head',
+  review: "These guys will seriously put me out of a job.  Their talent is engaged, and their support is frictionless from start to finish."
+})
+
+export default list
