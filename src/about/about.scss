@@ -71,7 +71,6 @@
     }
   }
 
-
   .info-grid {
     .info-item {
       display: flex;
@@ -123,7 +122,6 @@
     }
   }
 
-
   .love-more {
     padding-top: 130px;
     padding-bottom: 130px;
@@ -160,6 +158,62 @@
       opacity: 0.7;
       font-size: 24px;
       padding-bottom: 72px;
+    }
+  }
+
+  .comparison {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .blue-background {
+      background-color: rgba(10, 104, 251, 0.1);
+    }
+
+    .comparison-list {
+      display: inline-block;
+      margin: 0px;
+
+      padding-left: 43px;
+      padding-right: 20px;
+      padding-top: 0px;
+      padding-bottom: 48px;
+
+      &.check {
+        list-style-image: url('./images/check.svg');
+      }
+
+      &.times {
+        list-style-image: url('./images/times.svg');
+      }
+
+      li {
+        font-size: 22px;
+        color: #656b6f;
+        white-space: nowrap;
+
+        padding-top: 25px;
+        padding-left: 18px;
+
+        &:first-child, &:last-child {
+          list-style: none;
+          padding-bottom: 0px;
+          padding-left: 0;
+          padding-right: 48px;
+        }
+
+        &:first-child {
+          font-size: 13.2px;
+          font-weight: bold;
+          letter-spacing: 2.4px;
+          text-align: center;
+          color: #3c3d41;
+        }
+
+        &:last-child {
+          text-align: center;
+        }
+      }
+
     }
   }
 }
