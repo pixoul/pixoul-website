@@ -18,8 +18,7 @@ const Step = ({
   header,
   title,
   description,
-  color = 'white',
-  key
+  color = 'white'
 }) => {
 
   const classes = cn('step', {
@@ -29,7 +28,7 @@ const Step = ({
   })
 
   return (
-    <div className={classes} key={key}>
+    <div className={classes}>
       <div className="step-header">{header}</div>
       <div className="step-content">
         <div className="step-title">{title}</div>
