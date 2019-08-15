@@ -3,12 +3,13 @@
 
   .intro-section {
     background-image: radial-gradient(circle at 53% 100%, #ffffff, #eeeeee);
-    height: 100%;
+    height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding-top: 120px;
+    overflow: hidden;
 
     .intro-text {
       font-size: 62px;

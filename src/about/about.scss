@@ -2,7 +2,7 @@
 
   .intro-section {
     background-color: #3c3d41;
-    height: 100vh;
+    height: calc(100vh - 120px);
     display: flex;
     flex-direction: row;
     align-items: center;

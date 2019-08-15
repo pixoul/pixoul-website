@@ -2,14 +2,13 @@
 .talent {
   .intro-section {
     background-image: radial-gradient(circle at 19% 22%, #f9f9f9, #f2f2f2);
-    height: 100vh;
+    height: calc(100vh - 300px);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-top: 130px;
     padding-left: 130px;
-    overflow: hidden;
 
     .intro-content {
       display: flex;
