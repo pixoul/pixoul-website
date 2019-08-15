@@ -10,27 +10,18 @@
     "react-scripts": "3.0.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.19",
-    "@fortawesome/free-solid-svg-icons": "^5.9.0",
-    "@fortawesome/pro-light-svg-icons": "^5.9.0",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "@fullpage/react-fullpage": "^0.1.14",
     "classnames": "^2.2.6",
     "emailjs-com": "^2.3.2",
-    "font-awesome": "^4.7.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-fontawesome": "^1.6.1",
     "react-grid-system": "^5.0.2",
-    "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
     "react-router-scroll-memory": "^2.0.3",
     "react-scripts": "3.0.1",
     "react-slick": "^0.24.0",
     "react-spring": "^8.0.27",
-    "redux": "^4.0.4",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
