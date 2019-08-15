@@ -4,6 +4,7 @@ import "./talent.scss"
 /* Presentational Components */
 import Intro from "./intro"
 import FeaturedMember from "./featured-member"
+import TalentTimeline from "./talent-timeline"
 
 const Talent = () => {
 
@@ -11,6 +12,7 @@ const Talent = () => {
     <div className="talent">
       <Intro />
       <FeaturedMember />
+      <TalentTimeline />
     </div>
   )
 }
