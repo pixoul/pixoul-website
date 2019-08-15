@@ -1,0 +1,107 @@
+
+.legend {
+  list-style: none;
+
+  .legend-title {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2.36px;
+    color: #ffffff;
+    list-style: none;
+    padding-bottom: 29px;
+    padding-left: 0px;
+  }
+
+  .legend-item {
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
+    padding-bottom: 17px;
+    padding-left: 17px;
+
+    &:before {
+      content: "\2022";
+      font-weight: bold;
+      display: inline-block;
+      width: 17px;
+      margin-left: -1em;
+    }
+
+    &.clear:before {
+      color: #ffffff;
+      opacity: 0.3;
+    }
+
+    &.white:before {
+      color: #ffffff;
+    }
+
+    &.blue:before {
+      color: #276cf2;
+    }
+  }
+}
+
+
+.timeline {
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+
+  .step {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 67px;
+
+    &:before {
+      content: "\2022";
+      font-size: 2em;
+      font-weight: bold;
+      display: inline-block;
+      width: 1.5em;
+      margin-left: -9px;
+      margin-top: -9px;
+    }
+
+    &.clear:before {
+      color: #ffffff;
+      opacity: 0.3;
+    }
+
+    &.white:before {
+      color: #ffffff;
+    }
+
+    &.blue:before {
+      color: #276cf2;
+    }
+
+    .step-header {
+      font-size: 16px;
+      color: #ffffff;
+      opacity: 0.5;
+      white-space: nowrap;
+      width: 300px;
+    }
+
+    .step-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-left: 170px;
+
+      .step-title {
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.36px;
+        color: #ffffff;
+        padding-bottom: 7px;
+      }
+
+      .step-description {
+        font-size: 16px;
+        color: #ffffff;
+      }
+    }
+  }
+}
