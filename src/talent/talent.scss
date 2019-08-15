@@ -133,4 +133,16 @@
       justify-content: space-between;
     }
   }
+
+  .excel {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .excel-header {
+      text-align: center;
+      .excel-image {
+        padding-bottom: 22px;
+      }
+    }
+  }
 }

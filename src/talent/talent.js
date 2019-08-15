@@ -6,6 +6,7 @@ import Intro from "./intro"
 import FeaturedMember from "./featured-member"
 import TalentTimeline from "./talent-timeline"
 import ClientWork from "./client-work"
+import Excel from "./excel"
 
 const Talent = () => {
 
@@ -15,6 +16,7 @@ const Talent = () => {
       <FeaturedMember />
       <TalentTimeline />
       <ClientWork />
+      <Excel />
     </div>
   )
 }
