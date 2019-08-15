@@ -27,8 +27,8 @@ const Footer = () => {
 
             <ul className="sitemap-list">
               <li className="sitemap-title">Solution</li>
-              <li className="sitemap-item"><Link to={'/capabilities/strategy'}>Talent</Link></li>
-              <li className="sitemap-item"><Link to={'/capabilities/design'}>Process</Link></li>
+              <li className="sitemap-item"><Link to={'/talent'}>Talent</Link></li>
+              <li className="sitemap-item"><Link to={'/process'}>Process</Link></li>
             </ul>
 
             <ul className="sitemap-list">
