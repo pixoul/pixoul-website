@@ -1,25 +1,23 @@
 import React from "react"
 
 /* Images */
-import dribbble from "./images/companies/dribbble.svg"
-import ge from "./images/companies/ge.svg"
-import nike from "./images/companies/nike.svg"
-import tumblr from "./images/companies/tumblr.svg"
-import vans from "./images/companies/vans.svg"
-import wired from "./images/companies/wired.svg"
+import disney from "./images/companies/disney.svg"
+import airbnb from "./images/companies/airbnb.svg"
+import amazon from "./images/companies/amazon.svg"
+import gp from "./images/companies/gp.svg"
+import kw from "./images/companies/kw.svg"
 
 const TrustedCompanies = () => {
 
   return(
     <div className="trusted-companies">
-        <h3 className="trusted-title">TRUSTED BY COMPANIES LIKE:</h3>
+        <h3 className="trusted-title">OUR TALENT NETWORK HAS WORKED FOR COMAPNIES LIKE:</h3>
         <div className="trusted-media">
-          <img src={dribbble} alt={dribbble} />
-          <img src={ge} alt={ge} />
-          <img src={nike} alt={nike} />
-          <img src={tumblr} alt={tumblr} />
-          <img src={vans} alt={vans} />
-          <img src={wired} alt={wired} />
+          <img src={disney} alt={disney} />
+          <img src={airbnb} alt={airbnb} />
+          <img src={amazon} alt={amazon} />
+          <img src={gp} alt={gp} />
+          <img src={kw} alt={kw} />
         </div>
     </div>
   )
