@@ -40,7 +40,6 @@
     }
   }
 
-
   .featured-member {
     background-color: #ffffff;
     display: flex;
@@ -79,6 +78,37 @@
     .member-media {
       img {
         height: 100%;
+      }
+    }
+
+  }
+
+  .talent-timeline {
+    background-color: #3c3d41;
+    display: flex;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .talent-main {
+      padding-left: 180px;
+
+      .talent-header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 90px;
+
+        .talent-title {
+          font-size: 62px;
+          font-weight: bold;
+          letter-spacing: -2.38px;
+          color: #ffffff;
+        }
+
+        .talent-description {
+          font-size: 22px;
+          color: #ffffff;
+          opacity: 0.7;
+        }
       }
     }
 
