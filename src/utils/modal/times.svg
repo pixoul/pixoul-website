@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Close Button</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iuzeit-Modal" transform="translate(-1237.000000, -242.000000)">
+            <g id="Modal" transform="translate(112.000000, 218.000000)">
+                <g id="Close-Button" transform="translate(1126.000000, 25.000000)">
+                    <circle id="Stroke" stroke="#EEEEEE" stroke-width="1.2" opacity="0.6" cx="16" cy="16" r="16"></circle>
+                    <polygon id="Icon" fill="#838D8F" points="17.2241379 16 20 13.2241379 18.7758621 12 16 14.7758621 13.2241379 12 12 13.2241379 14.7758621 16 12 18.7758621 13.2241379 20 16 17.2241379 18.7758621 20 20 18.7758621"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
