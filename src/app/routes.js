@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react"
+import React, { useContext } from "react"
 import { Route, Redirect, Switch, withRouter, __RouterContext } from "react-router-dom"
 import { useTransition, animated } from 'react-spring'
 

@@ -1,15 +1,11 @@
 import React from "react";
 import "./about.scss"
-/* Utils */
-import Button from "utils/button/button"
 /* Presentational Components */
 import Intro from "./intro"
 import LoveMore from "./love-more"
 import RoadmapPromo from "./roadmap-promo"
 import Comparison from "./comparison"
 /* Images */
-import iphoneFront from "./images/iphone-front.svg"
-import iphoneBack from "./images/iphone-back.svg"
 import augmented from "./images/augmented.png"
 import support from "./images/support.png"
 

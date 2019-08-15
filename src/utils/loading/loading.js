@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import "./loading.scss"
-import { useTransition, useSpring, animated } from 'react-spring'
+import { useTransition, animated } from 'react-spring'
 import { withRouter } from "react-router-dom"
 
 const Loading = ({
