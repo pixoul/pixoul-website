@@ -5,6 +5,7 @@ import "./talent.scss"
 import Intro from "./intro"
 import FeaturedMember from "./featured-member"
 import TalentTimeline from "./talent-timeline"
+import ClientWork from "./client-work"
 
 const Talent = () => {
 
@@ -13,6 +14,7 @@ const Talent = () => {
       <Intro />
       <FeaturedMember />
       <TalentTimeline />
+      <ClientWork />
     </div>
   )
 }
