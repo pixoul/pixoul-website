@@ -44,21 +44,22 @@ export default function ContactForm(){
         </div>
         :
         <form className="form">
-        <Row>
-          <Col sm={12} md={6}>
-            <div className="form-group">
-              <label htmlFor="#name">Name</label>
-              <input className="form-input" id="#name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
-            </div>
-          </Col>
-          <Col sm={12} md={6}>
-            <div className="form-group">
-              <label htmlFor="#email">Email</label>
-              <input className="form-input" type="email" id="#email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-            </div>
-          </Col>
-        </Row>
-
+          <Container>
+            <Row>
+              <Col sm={12} md={6}>
+                <div className="form-group">
+                  <label htmlFor="#name">Name</label>
+                  <input className="form-input" id="#name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+                </div>
+              </Col>
+              <Col sm={12} md={6}>
+                <div className="form-group">
+                  <label htmlFor="#email">Email</label>
+                  <input className="form-input" type="email" id="#email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                </div>
+              </Col>
+            </Row>
+          </Container>
           <div className="form-group">
             <label htmlFor="#message">Message</label>
             <textarea className="form-textarea" id="#message" value={message} onChange={(e) => setMessage(e.target.value)} rows={5} />

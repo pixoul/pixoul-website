@@ -1,10 +1,10 @@
 import React from "react"
-import cn from "classnames"
-import { Link } from "react-router-dom";
-import Button from "utils/button/button"
-import SocialIcons from "utils/social-icons/social-icons"
-
 import "./footer.scss"
+/* Third-Party */
+import { Link } from "react-router-dom";
+/* Utils */
+import SocialIcons from "utils/social-icons/social-icons"
+/* Images */
 import logo from "./logo.svg"
 
 const Footer = () => {

@@ -31,6 +31,10 @@ const Button = ({
   )
 }
 
+Button.propTypes = {
+  children: PropTypes.any.isRequired
+}
+
 Button.defaultProps = {
   tag: "button"
 }

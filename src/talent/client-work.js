@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 /* Utils */
 import Project from "utils/project/project"
 /* Images */

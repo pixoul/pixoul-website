@@ -30,6 +30,8 @@
 
   .media-action {
     cursor: pointer;
+    background-color: transparent;
+    border: none;
   }
 
   .slick-prev:before, .slick-next:before {
