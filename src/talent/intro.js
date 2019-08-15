@@ -7,7 +7,7 @@ import Button from "utils/button/button"
 import laptop from "./images/laptop.svg"
 
 const Intro = () => (
-  <div className="intro-section gutters">
+  <div className="intro-section">
     <div className="intro-content">
       <span className="intro-title">Expert Talent.</span>
       <span className="intro-text">Discover why leading companies trust our talent network with their most complex implementations.</span>
