@@ -1,6 +1,6 @@
 import React from "react"
 import "./review-card.scss"
-import quote from "./images/quote.svg"
+import quote from "./quote.svg"
 
 export default function ReviewCard({
   review,
