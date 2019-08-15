@@ -6,7 +6,6 @@
   },
   "private": true,
   "devDependencies": {
-    "@fortawesome/fontawesome-pro": "^5.9.0",
     "react-scripts": "3.0.1"
   },
   "dependencies": {
