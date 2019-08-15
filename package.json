@@ -1,12 +1,11 @@
 {
   "name": "pixoul",
-  "version": "0.1.0",
+  "version": "3.0.0",
   "engines": {
     "node": "10.16.0"
   },
   "private": true,
   "devDependencies": {
-    "@fortawesome/fontawesome-pro": "^5.9.0",
     "react-scripts": "3.0.1"
   },
   "dependencies": {
