@@ -20,16 +20,14 @@ export default function About() {
 
   return(
     <div>
-      <Hero bg={bg} theme="dark" align="center" >
+      <Hero bg={bg} theme="dark" align="center" className="gutters">
           <HeroText
             text="Complex problems deserve elegant solutions."
-            width={874}
-            size={65}
+            size="lg"
           />
           <HeroText
             text="We help brands and organizations succeed in the digital age."
-            width={650}
-            size={22}
+            size="sm"
           />
           <HeroAction gutterTop={63} action={heroClick} blue />
           <HeroMedia media={browser}/>

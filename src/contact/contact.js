@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "shards-react";
+import { Container, Row, Col } from 'react-grid-system'
 import "./contact.scss"
 
 import Opening from "utils/opening/opening"
@@ -16,7 +16,7 @@ export default function Contact() {
           />
 
           <Row>
-            <Col>
+            <Col sm={12} md={6}>
               <ul className="contact-info">
                 <li className="contact-title">Phone</li>
                 <li className="contact-item"><a href="tel:6169149356">(616) 914-9356</a></li>
@@ -28,7 +28,7 @@ export default function Contact() {
                 <SocialIcons theme="dark" />
               </div>
             </Col>
-            <Col>
+            <Col sm={12} md={6}>
               <ContactForm />
             </Col>
           </Row>

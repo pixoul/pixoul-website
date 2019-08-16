@@ -21,12 +21,12 @@ export default function Home() {
 
   return(
     <div className="home">
-      <Hero bg={bg} theme="light" align="center" >
-          <HeroText text="We’ll help you" size={45} />
-          <HeroText text="Dominate Digital" size={85} weight="bold" />
+      <Hero bg={bg} theme="light" align="center" className="gutters">
+          <HeroText text="We’ll help you" size="md" />
+          <HeroText text="Dominate Digital" size="xl" bold />
           <HeroAction action={heroClick} gutterTop={160} gutterBottom={60} />
       </Hero>
-      <div ref={sectionEl} className="features-section" style={{
+      <div ref={sectionEl} className="features-section gutters" style={{
         backgroundImage: 'url('+logoBg+')'
       }}>
 

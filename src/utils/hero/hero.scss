@@ -1,11 +1,10 @@
 /* Hero Component SCSS */
-
-@import "../../styles/variables.scss";
+$white: #FFFFFF;
+$black: #000000;
+$blue: #3180fb;
 
 .hero {
   display: flex;
-  width: 100%;
-  min-width: 100%;
   min-height: calc(100vh - 100px);
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +18,10 @@
     z-index: 0;
   }
 
+  .hero-content {
+    max-width: 50%;
+  }
+
   .hero-footer {
     display: flex;
   }
@@ -26,6 +29,26 @@
   .hero-text {
     font-size: 45px;
     font-weight: normal;
+
+    &.xl-text {
+      font-size: 85px;
+    }
+
+    &.lg-text {
+      font-size: 65px;
+    }
+
+    &.md-text {
+      font-size: 45px;
+    }
+
+    &.sm-text {
+      font-size: 22px;
+    }
+
+    &.bold-text {
+      font-weight: bold;
+    }
   }
 
   .hero-action {
@@ -70,8 +93,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 150px;
-    padding-right: 150px;
 
     .hero-content {
       display: flex;
@@ -87,4 +108,49 @@
     }
   }
 
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 586px;
+    max-height: 586px;
+
+    &.left {
+      flex-direction: column;
+      background-position: right;
+
+      .hero-text {
+        text-align: center;
+      }
+
+      .hero-action {
+        display: none;
+      }
+    }
+
+    &.center {
+      padding-top: 0px;
+    }
+
+    .hero-text {
+      padding-bottom: 10px;
+      
+      &.xl-text {
+        font-size: 35px;
+      }
+
+      &.lg-text, &.md-text {
+        font-size: 25px;
+      }
+
+      &.sm-text {
+        font-size: 15px;
+      }
+    }
+
+    .hero-content {
+      max-width: 100%;
+    }
+  }
 }

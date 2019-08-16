@@ -1,7 +1,7 @@
 import React from "react"
 import "./capability-features.scss"
 /* Third-Party Packages */
-import { Container, Row, Col } from "shards-react";
+import { Container, Row, Col } from 'react-grid-system'
 /* Utility Components */
 import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline, FeatureAction } from "utils/feature/feature"
 
@@ -13,9 +13,9 @@ import code from "./images/code.svg"
 const CapabilityFeatures = () => {
   return(
     <Container className="capability-features">
-      <Row>
-        <Col sm="12" md="4">
-          <Feature width={343} >
+
+        <Col sm={12} md={4}>
+          <Feature>
             <FeatureHeader>
               <FeatureIcon svg={power} />
               <FeatureTitle text="Strategy" />
@@ -24,8 +24,8 @@ const CapabilityFeatures = () => {
             <FeatureAction link="/capabilities/strategy" text="Learn More" />
           </Feature>
         </Col>
-        <Col sm="12" md="4">
-          <Feature width={343}>
+        <Col sm={12} md={4}>
+          <Feature>
             <FeatureHeader>
               <FeatureIcon svg={brush} />
               <FeatureTitle text="Design Thinking" />
@@ -34,8 +34,8 @@ const CapabilityFeatures = () => {
             <FeatureAction link="/capabilities/design" text="Learn More" />
           </Feature>
         </Col>
-        <Col sm="12" md="4">
-          <Feature width={343}>
+        <Col sm={12} md={4}>
+          <Feature>
             <FeatureHeader>
               <FeatureIcon svg={code} />
               <FeatureTitle text="Technology" />
@@ -44,7 +44,7 @@ const CapabilityFeatures = () => {
             <FeatureAction link="/capabilities/technology" text="Learn More" />
           </Feature>
         </Col>
-      </Row>
+  
     </Container>
   )
 }

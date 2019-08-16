@@ -1,7 +1,5 @@
 import React from "react"
 import "./reviews.scss"
-/* Third-Party Packages */
-import { Container, Row, Col } from "shards-react"
 /* Utility Components */
 import Opening from "utils/opening/opening"
 import { Carousel, Slide } from "utils/carousel"

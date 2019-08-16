@@ -1,20 +1,15 @@
 import React from "react"
 import cn from "classnames"
 import { Link } from "react-router-dom";
-import { Button } from "shards-react";
+import Button from "utils/button/button"
 
 import "./footer.scss"
 
-export default function Footer({ theme = 'dark' }){
-
-  const classes = cn('footer', {
-    'light': theme === 'light',
-    'dark': theme === 'dark'
-  })
+const Footer = () => {
 
   return(
-    <footer className={classes}>
-      <div className="footer-side left">
+    <footer className="footer">
+      <div className="footer-side sitemap">
         <ul className="list-collection">
           <li className="list-title">Pixoul, Inc.</li>
           <li className="list-item"><Link to={'/about'}>About</Link></li>
@@ -29,7 +24,7 @@ export default function Footer({ theme = 'dark' }){
           <li className="list-item"><Link to={'/capabilities/technology'}>Technology</Link></li>
         </ul>
       </div>
-      <div className="footer-side right">
+      <div className="footer-side">
         <ul className="list-collection">
           <li className="list-subtitle">We average a 211% increase on ROI.</li>
           <li className="list-item">See how we help ambitous brands use design thinking to dominate digital.</li>
@@ -39,3 +34,5 @@ export default function Footer({ theme = 'dark' }){
     </footer>
   )
 }
+
+export default Footer

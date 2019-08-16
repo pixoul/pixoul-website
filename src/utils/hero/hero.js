@@ -8,21 +8,24 @@ import blueMouse from "./images/blue-mouse.svg"
 
 function HeroText({
   text,
-  width,
-  size,
+  size = 'md',
   color,
-  weight
+  bold = false
 }){
 
   const styles = {}
-
-  if(width) styles.width = width
-  if(size) styles.fontSize = size
   if(color) styles.color = color
-  if(weight) styles.fontWeight = weight
+
+  const classes = cn('hero-text', {
+    'xl-text': size === 'xl',
+    'lg-text': size === 'lg',
+    'md-text': size === 'md',
+    'sm-text': size === 'sm',
+    'bold-text': bold
+  })
 
   return(
-    <div className="hero-text" style={styles}>
+    <div className={classes} style={styles}>
       {text}
     </div>
   )
@@ -110,6 +113,7 @@ function HeroContent(props){
 }
 
 function Hero({
+  className,
   children,
   bg,
   offset,
@@ -127,12 +131,15 @@ function Hero({
   }
   if(offset) styles.paddingTop = offset
 
-  const classes = cn('hero', {
-    'light': theme === 'light',
-    'dark': theme === 'dark',
-    'center': align === 'center',
-    'left': align === 'left'
-  })
+  const classes = cn(
+    className,
+    'hero',
+    {
+      'light': theme === 'light',
+      'dark': theme === 'dark',
+      'center': align === 'center',
+      'left': align === 'left'
+    })
 
   return(
     <div className={classes} style={styles}>

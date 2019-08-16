@@ -1,8 +1,17 @@
 html, body, #root {
-  height: 100% !important;
-  width: 100% !important;
   margin: 0;
   padding: 0;
-  min-height: 100% !important;
-  min-width: 100% !important;
+}
+
+
+.gutters {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media (max-width: 768px) {
+  .gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

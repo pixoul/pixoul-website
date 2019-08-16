@@ -51,7 +51,6 @@
       display: flex;
       flex-direction: column;
       max-width: 50%;
-      padding-right: 33px;
     }
 
     .capability-item-title {
@@ -65,8 +64,34 @@
       font-size: 17.5px;
       padding-top: 13.3px;
       padding-bottom: 34.5px;
+      padding-right: 33px;
       line-height: 1.43;
       min-width: 260px;
     }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .capability {
+    &.ltr, &.rtl {
+      flex-direction: column;
+    }
+
+    .capability-content {
+      max-width: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .capability-column {
+      padding-bottom: 35px;
+      padding-top: 35px;
+    }
+
+    .capability-details {
+      flex-direction: column;
+    }
+
   }
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./contact-form.scss"
-import { Row, Col, Form, FormInput, FormGroup, FormTextarea, Button } from "shards-react";
+import { Container, Row, Col } from 'react-grid-system';
+import Button from "utils/button/button"
 import * as emailjs from 'emailjs-com';
 
 export default function ContactForm(){
@@ -42,27 +43,29 @@ export default function ContactForm(){
           <Button className="form-button" onClick={clear}>Send Another Message</Button>
         </div>
         :
-        <Form className="form">
-          <Row>
-            <Col>
-              <FormGroup>
-                <label htmlFor="#name">Name</label>
-                <FormInput id="#name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)}/>
-              </FormGroup>
-            </Col>
-            <Col>
-              <FormGroup>
-                <label htmlFor="#email">Email</label>
-                <FormInput type="email" id="#email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-              </FormGroup>
-            </Col>
-          </Row>
+        <form className="form">
+        <Row>
+          <Col sm={12} md={6}>
+            <div className="form-group">
+              <label htmlFor="#name">Name</label>
+              <input className="form-input" id="#name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+            </div>
+          </Col>
+          <Col sm={12} md={6}>
+            <div className="form-group">
+              <label htmlFor="#email">Email</label>
+              <input className="form-input" type="email" id="#email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            </div>
+          </Col>
+        </Row>
 
-          <Row>
-            <Col sm="12"><FormTextarea className="form-message" value={message} onChange={(e) => setMessage(e.target.value)} /></Col>
-            <Col sm="12"><Button block className="form-button" onClick={send}>Send Message</Button></Col>
-          </Row>
-        </Form>
+          <div className="form-group">
+            <label htmlFor="#message">Message</label>
+            <textarea className="form-textarea" id="#message" value={message} onChange={(e) => setMessage(e.target.value)} rows={5} />
+          </div>
+
+          <Button block className="form-button" onClick={send}>Send Message</Button>
+        </form>
       }
     </div>
   )

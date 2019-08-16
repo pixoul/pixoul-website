@@ -3,7 +3,7 @@ import "./opening.scss"
 import cn from "classnames"
 
 export default function Opening({
-  width = 800,
+  width,
   theme = 'dark',
   title,
   subtitle

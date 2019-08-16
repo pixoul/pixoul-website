@@ -35,10 +35,10 @@ const images = [
 export default function Technology(){
   return(
     <div>
-      <Hero bg={bg} theme="dark" align="left" height={520}>
+      <Hero bg={bg} theme="dark" align="left" height={520} className="gutters">
         <HeroContent>
-          <HeroText text="Advanced technological support." color="#2ec986" size={22}/>
-          <HeroText text="We deliver solutions on time and on budget through agile development." width={689} size={45} />
+          <HeroText text="Advanced technological support." color="#2ec986" size="sm"/>
+          <HeroText text="We deliver solutions on time and on budget through agile development." size="md" />
         </HeroContent>
       </Hero>
 

@@ -53,3 +53,14 @@ $bg-secondary: #dfdfdf;
   }
 
 }
+
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 51px;
+    padding-bottom: 35px;
+
+    .contact-info, .social-media {
+      display: none;
+    }
+  }
+}

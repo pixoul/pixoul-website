@@ -1,7 +1,7 @@
 import React from "react"
 import "./design.scss"
 /* Third-Party Packages */
-import { Container, Row, Col } from "shards-react";
+import { Container, Row, Col } from 'react-grid-system'
 /* Utility Components */
 import { Hero, HeroContent, HeroText} from "utils/hero/hero"
 import { Feature, FeatureHeader, FeatureTitle, FeatureIcon, FeatureTagline } from "utils/feature/feature"
@@ -22,10 +22,10 @@ import data from "./data"
 export default function Design(){
   return(
     <div>
-      <Hero bg={bg} theme="dark" align="left" height={520}>
+      <Hero bg={bg} theme="dark" align="left" height={520} className="gutters">
         <HeroContent>
-          <HeroText text="Digital experience matters." color="#2ec986" size={22}/>
-          <HeroText text="Human-centered design empowers us to rethink user’s needs." width={689} size={45} />
+          <HeroText text="Digital experience matters." color="#2ec986" size="sm" />
+          <HeroText text="Human-centered design empowers us to rethink user’s needs." size="md" />
         </HeroContent>
       </Hero>
 
@@ -43,7 +43,7 @@ export default function Design(){
 
         <Container className="design-capabilities">
           <Row>
-            <Col sm="12" md="4">
+            <Col sm={12} md={4}>
               <Feature width={343} >
                 <FeatureHeader>
                   <FeatureIcon svg={screens} />
@@ -53,7 +53,7 @@ export default function Design(){
               </Feature>
             </Col>
 
-            <Col sm="12" md="4">
+            <Col sm={12} md={4}>
               <Feature width={343} >
                 <FeatureHeader>
                   <FeatureIcon svg={brush} />
@@ -63,7 +63,7 @@ export default function Design(){
               </Feature>
             </Col>
 
-            <Col sm="12" md="4">
+            <Col sm={12} md={4}>
               <Feature width={343} >
                 <FeatureHeader>
                   <FeatureIcon svg={expand} />
@@ -73,7 +73,7 @@ export default function Design(){
               </Feature>
             </Col>
 
-            <Col sm="12" md="4">
+            <Col sm={12} md={4}>
               <Feature width={343} >
                 <FeatureHeader>
                   <FeatureIcon svg={devices} />
@@ -83,7 +83,7 @@ export default function Design(){
               </Feature>
             </Col>
 
-            <Col sm="12" md="4">
+            <Col sm={12} md={4}>
               <Feature width={343} >
                 <FeatureHeader>
                   <FeatureIcon svg={plus} />
@@ -93,7 +93,7 @@ export default function Design(){
               </Feature>
             </Col>
 
-            <Col sm="12" md="4">
+            <Col sm={12} md={4}>
               <Feature width={343} >
                 <FeatureHeader>
                   <FeatureIcon svg={reload} />
