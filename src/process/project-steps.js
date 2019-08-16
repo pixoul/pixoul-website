@@ -5,10 +5,10 @@ import Opening from "utils/opening/opening"
 import {Wizard, WizardStep} from "utils/wizard/wizard"
 
 /* Icons */
-import marker from "./images/icons/marker-grey.svg"
-import wand from "./images/icons/wand-grey.svg"
-import thumbsup from "./images/icons/thumbsup-grey.svg"
-import rocket from "./images/icons/rocket-grey.svg"
+import marker from "./images/icons/marker.svg"
+import wand from "./images/icons/wand.svg"
+import thumbsup from "./images/icons/thumbsup.svg"
+import rocket from "./images/icons/rocket-circle.svg"
 
 const ProjectSteps = () => (
   <div className="project-steps">
