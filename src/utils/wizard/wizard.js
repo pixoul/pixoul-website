@@ -1,23 +1,20 @@
 import React, { useState } from "react"
 import "./wizard.scss"
-/* Third-Party */
 import cn from "classnames"
-/* Utils */
-
 
 const WizardNavigation = ({
   onClick,
   icon,
   title,
   currentStep,
-  stepIndex
+  step
 }) => {
 
   const [hover, setHover] = useState(false)
 
   const classes = cn('wizard-navigation', {
     'hover': hover === true,
-    'active': currentStep === stepIndex
+    'active': currentStep === step
   })
 
   return(
@@ -29,14 +26,13 @@ const WizardNavigation = ({
   )
 }
 
-
 const WizardStep = ({
-  stepIndex = 0,
+  step = 0,
   currentStep,
   children
 }) => {
 
-  if(currentStep === stepIndex) {
+  if(currentStep === step) {
     return(
       <div className="step">
         {children}
@@ -49,32 +45,63 @@ const WizardStep = ({
 
 
 const Wizard = ({
-  steps = []
+  children,
+  defaultStep = 1
 }) => {
 
-  const [currentStep, setStep] = useState(0)
+  const [currentStep, setStep] = useState(defaultStep)
+
+  /* Loops through the WizardStep children, creating a WizardNavigation for each one, then assigns props to the new navigation */
+  const wizardNavigation = React.Children.map(children, ({ type, props }) => {
+    if(type && type.name === 'WizardStep') {
+      return React.createElement(WizardNavigation, {
+        onClick: () => setStep(props.step),
+        currentStep: currentStep,
+        step: props.step,
+        title: props.title,
+        icon: props.icon
+      }, null);
+    }
+
+    return null
+  });
+
+  /* Loops through the WizardStep children, adding the currentStep to them */
+  const wizardChildren = React.Children.map(children, child => {
+    if(child.type && child.type.name === 'WizardStep') {
+      return React.cloneElement(child, {
+        currentStep: currentStep
+      });
+    }
+
+    return null
+  });
 
   return (
     <div className="wizard">
       <div className="wizard-header">
-        {steps.map(({
-          title,
-          icon
-        }, i) => (
-          <WizardNavigation currentStep={currentStep} stepIndex={i} title={title} icon={icon} onClick={() => setStep(i)} key={i} />
-        ))}
+        {wizardNavigation}
       </div>
       <div className="wizard-body">
-        {steps.map(({
-          component : Component
-        }, i) => (
-          <WizardStep stepIndex={i} currentStep={currentStep} key={i}>
-            <Component />
-          </WizardStep>
-        ))}
+        {wizardChildren}
       </div>
     </div>
   )
+}
+
+/* Validates that each child to Wizard is a WizardStep */
+Wizard.propTypes = {
+  children: function (props, propName, componentName) {
+    const prop = props[propName]
+
+    let error = null
+    React.Children.forEach(prop, function (child) {
+      if (child.type !== WizardStep) {
+        error = new Error('`' + componentName + '` children should be of type `WizardStep`.');
+      }
+    })
+    return error
+  }
 }
 
 export { Wizard, WizardStep }
