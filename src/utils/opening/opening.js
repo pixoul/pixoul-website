@@ -5,6 +5,7 @@ import cn from "classnames"
 export default function Opening({
   width,
   theme = 'dark',
+  align = 'center',
   title,
   subtitle
 }){
@@ -15,7 +16,10 @@ export default function Opening({
 
   const classes = cn('opening', {
     'light': theme === 'light',
-    'dark': theme === 'dark'
+    'dark': theme === 'dark',
+    'center': align === 'center',
+    'left': align === 'left',
+    'right': align === 'right'
   })
 
   return(

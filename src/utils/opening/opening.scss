@@ -1,6 +1,5 @@
 
 .opening {
-  text-align: center;
   margin: 0 auto;
 
   .opening-title {
@@ -37,5 +36,17 @@
     .opening-subtitle {
       color: #374050;
     }
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.left {
+    text-align: left;
+  }
+
+  &.right {
+    text-align: right;
   }
 }
