@@ -5,6 +5,25 @@
     padding-top: 130px;
     padding-bottom: 130px;
 
+    .project-lead {
+      text-align: center;
+      .project-tagline {
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.36px;
+        color: #276cf2;
+        padding-bottom: 21px;
+      }
+
+      .project-title {
+        font-size: 62px;
+        font-weight: bold;
+        letter-spacing: -2.38px;
+        color: #3c3d41;
+        padding-bottom: 155px;
+      }
+    }
+
     .steps-content {
       display: flex;
 

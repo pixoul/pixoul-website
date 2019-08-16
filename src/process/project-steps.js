@@ -1,7 +1,5 @@
 import React from "react"
-
 /* Utils */
-import Opening from "utils/opening/opening"
 import {Wizard, WizardStep} from "utils/wizard/wizard"
 
 /* Icons */
@@ -12,9 +10,10 @@ import rocket from "./images/icons/rocket-circle.svg"
 
 const ProjectSteps = () => (
   <div className="project-steps">
-    <Opening
-      title="How We Engage Every Project."
-    />
+    <div className="project-lead">
+      <div className="project-tagline">STAFF AUGMENTATION OR FULL TEAM SUPPROT</div>
+      <div className="project-title">How We Engage Every Project.</div>
+    </div>
 
     <Wizard defaultStep={1}>
       <WizardStep step={1} title="Talk To An Expert" icon={marker}>
