@@ -7,13 +7,16 @@ const Feature = ({
   title,
   media,
   description,
-  position = 'top-left'
+  position = 'top-left',
+  theme = 'dark'
 }) => {
 
   const classes = cn('feature', {
     'top-left': position === 'top-left',
     'top-center': position === 'top-center',
-    'left': position === 'left'
+    'left': position === 'left',
+    'light': theme === 'light',
+    'dark' : theme === 'dark'
   })
 
   return (

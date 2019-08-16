@@ -2,6 +2,17 @@
 .feature {
   display: flex;
 
+  .feature-title {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.36px;
+  }
+
+  .feature-description {
+    font-size: 16px;
+  }
+
   &.top-left {
     flex-direction: column;
     justify-content: flex-start;
@@ -24,16 +35,26 @@
     }
   }
 
-
-  .feature-title {
-    font-size: 13px;
-    font-weight: bold;
-    color: #3c3d41;
+  &.light {
+    .feature-title {
+      color: #ffffff;
+    }
+    .feature-description {
+      color: #ffffff;
+      opacity: 0.7;
+    }
   }
 
-  .feature-description {
-    font-size: 16px;
-    color: #656b6f;
+  &.dark {
+    .feature-title {
+      color: #3c3d41;
+    }
+    .feature-description {
+      color: #656b6f;
+    }
   }
+
+
+
 
 }
