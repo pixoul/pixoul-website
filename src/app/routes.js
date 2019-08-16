@@ -7,6 +7,7 @@ const Home = React.lazy(() => import("home/home"))
 const About = React.lazy(() => import("about/about"))
 const Talent = React.lazy(() => import("talent/talent"))
 const Process = React.lazy(() => import("process/process"))
+const FAQ = React.lazy(() => import("faq/faq"))
 const Contact = React.lazy(() => import("contact/contact"))
 
 function Routes(props){
@@ -35,6 +36,7 @@ function Routes(props){
                <Route path="/talent" component={Talent} />
                <Route path="/process" component={Process} />
                <Route path="/about" component={About} />
+               <Route path="/faq" component={FAQ} />
                <Route path="/contact" component={Contact} />
 
                <Route exact path='/' render={props => (
