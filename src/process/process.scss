@@ -1,6 +1,25 @@
 
 .process {
 
+  .project-steps {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .steps-content {
+      display: flex;
+
+      .project-paragraph {
+         width: 50%;
+         font-size: 22px;
+         color: #656b6f;
+
+         &:first-child {
+           padding-right: 50px;
+         }
+      }
+    }
+  }
+
   .matching {
     display: flex;
     padding-top: 50px;
