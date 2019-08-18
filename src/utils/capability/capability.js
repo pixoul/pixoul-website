@@ -9,14 +9,12 @@ const Capability = ({
   media,
   direction = 'rtl',
   background = direction === 'rtl' ? '#ffffff' : '#f9fafc',
-  equal = false,
   mediaComponent
 }) => {
 
   const classes = cn('capability', {
     'rtl': direction === 'rtl',
-    'ltr': direction === 'ltr',
-    'equal': equal
+    'ltr': direction === 'ltr'
   })
 
   return(

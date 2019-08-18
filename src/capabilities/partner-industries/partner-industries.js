@@ -14,7 +14,6 @@ import example7 from "./images/example-7.jpg"
 const partnerIndustries = {
   direction: 'ltr',
   background: 'white',
-  equal: true,
   title: 'We’re contributing to every industry.',
   subtitle: 'From venture-backed startups to the Fortune 500, we build solutions for our partners across a variety of industries.  Here’s just a few.',
   details: {
