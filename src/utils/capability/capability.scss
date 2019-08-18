@@ -13,12 +13,6 @@
     flex-direction: row;
   }
 
-  &.equal {
-    .capability-column {
-      flex-basis: 50%;
-    }
-  }
-
   .capability-column {
     padding-top: 150px;
     padding-bottom: 150px;
@@ -36,9 +30,8 @@
   }
 
   .capability-content {
-    padding-left: 130px;
+    padding-left: 50px;
     padding-right: 130px;
-    max-width: 1000px;
   }
 
   .capability-details {
@@ -91,6 +84,11 @@
 
     .capability-details {
       flex-direction: column;
+    }
+
+    .capability-media {
+      display: flex;
+      flex-wrap: wrap;
     }
 
   }
