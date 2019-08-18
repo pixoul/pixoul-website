@@ -12,6 +12,7 @@ function Page(){
     <div>
       {Object.keys(clients).map((client) => (
         <ClientSummary
+          key={client}
           logo={clients[client].logo.color}
           tagline={clients[client].tagline}
           route={clients[client].route}
