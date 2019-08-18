@@ -14,7 +14,7 @@ export default function Reviews(){
         subtitle="Don’t just take our word for it."
       />
 
-      <Carousel maxSlides={3} offset={76} gutter={20} autoplay>
+      <Carousel maxSlides={1} offset={76} gutter={20} autoplay>
           {data.map((item, i) => (
             <Slide key={i}>
               <ReviewCard
