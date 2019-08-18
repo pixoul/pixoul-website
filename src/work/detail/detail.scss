@@ -1,19 +1,6 @@
 
 .client-detail {
-
-  .client-title {
-    font-size: 35px;
-    font-weight: bold;
-    color: #374050;
-  }
-
-  .client-subtitle {
-    font-size: 25px;
-    font-weight: normal;
-    font-style: italic;
-    color: #374050;
-    padding-top: 163px;
-  }
+  padding-bottom: 50px;
 
   .client-screen {
     margin: 0 auto;
@@ -51,6 +38,24 @@
     padding-top: 90px;
     background-color: #f9fafc;
 
+    .client-copy {
+      width: 70%;
+
+      .client-title {
+        font-size: 35px;
+        font-weight: bold;
+        color: #374050;
+      }
+
+      .client-subtitle {
+        font-size: 25px;
+        font-weight: normal;
+        font-style: italic;
+        color: #374050;
+        padding-top: 163px;
+      }
+    }
+
     .client-sidebar {
       width: 30%;
       padding-left: 75px;
@@ -74,9 +79,56 @@
 
     }
 
-    .client-copy {
-      width: 70%;
-    }
+
   }
 
+}
+
+
+@media (max-width: 768px) {
+  .client-detail {
+    .client-header {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .client-content {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 50px;
+
+      .client-copy {
+        width: 100%;
+
+        .client-title {
+          font-size: 20px;
+        }
+
+        .client-subtitle {
+          font-size: 15px;
+          padding-top: 20px;
+        }
+      }
+
+      .client-sidebar {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+
+        .sidebar-list {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .dynamic-carousel {
+      padding-top: 30px;
+    }
+
+    .client-screen {
+      margin: 0;
+      width: 320px;
+    }
+  }
 }
