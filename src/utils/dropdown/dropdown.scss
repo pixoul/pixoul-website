@@ -5,6 +5,7 @@
   margin: 18px;
   width: 100%;
 
+
   .dropdown-toggler {
     width: 100%;
     background-color: rgba(60, 61, 65, 0.5);
@@ -14,6 +15,9 @@
     font-size: 16px;
     cursor: pointer;
     text-align: left;
+    border: 2px solid rgb(238, 238, 238);
+    border-style: inset;
+    border-radius: 4.8px;
 
     &:active {
       opacity: 0.5;
@@ -55,7 +59,7 @@
       cursor: pointer;
 
       &:active, &:hover {
-        opacity: 0.5;
+        opacity: 0.8;
       }
     }
 
