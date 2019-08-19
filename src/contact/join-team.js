@@ -1,15 +1,17 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 /* Third-Party */
 import { Container, Row, Col } from 'react-grid-system'
 import * as emailjs from 'emailjs-com'
 /* Utils */
 import Button from "utils/button/button"
+import Dropdown from "utils/dropdown/dropdown"
 
 const JoinTeam = () => {
+  const fileInput = useRef()
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [experience, setExperience] = useState('')
+  const [experience, setExperience] = useState(undefined)
   const [expertise, setExpertise] = useState('')
   const [resume, setResume] = useState(null)
   const [sent, setSent] = useState(false)
@@ -20,8 +22,9 @@ const JoinTeam = () => {
       "email": email,
       "name": name,
       "experience": experience,
-      "expertise": expertise
-    }
+      "expertise": expertise,
+      "resume": resume
+   }
 
    emailjs.send("default_service", "pixoul_website", data, 'user_y5b1msGPAYKIW4szoHygG')
     .then((response) => setSent(true), (err) => {
@@ -40,6 +43,7 @@ const JoinTeam = () => {
 
   const upload = (event) => {
     event.preventDefault();
+    fileInput.current.click()
     const data = new FormData()
     data.append('file', resume)
   }
@@ -74,17 +78,12 @@ const JoinTeam = () => {
               />
             </Col>
             <Col sm={12} md={4}>
-              <select
-                className="form-select"
-                name="experience"
+              <Dropdown
                 value={experience}
-                onChange={(e) => setExperience(e.target.value)}
-              >
-                <option value="volvo">1</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
+                onChange={value => setExperience(value)}
+                options={['1 - 2 Years', '3 - 5 Years', '5 - 7 Years', '7+ Years']}
+                placeholder="Years of Experience"
+              />
             </Col>
           </Row>
           <Row>
@@ -102,8 +101,8 @@ const JoinTeam = () => {
         </Container>
 
         <div className="form-action">
-          <input type="file" name="file" className="form-file" onChange={(e) => setResume(e.target.files[0])}/>
-          <Button className="form-button" onClick={upload} outline>Attach Resume</Button>
+          <input ref={fileInput} type="file" name="file" className="form-file" onChange={(e) => setResume(e.target.files[0])}/>
+          <Button className="form-button" onClick={upload} outline>{ resume ? 'Resume Uploaded' : 'Attach Resume'}</Button>
           <Button className="form-button" onClick={send}>Apply to Our Team</Button>
         </div>
       </form>

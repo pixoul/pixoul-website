@@ -1,7 +1,6 @@
 import React from "react"
 import "./contact.scss"
 /* Third-Party */
-import { Container, Row, Col } from 'react-grid-system'
 import { Route, withRouter } from "react-router-dom"
 /* Routes */
 import JoinTeam from "./join-team"
@@ -38,4 +37,4 @@ const Contact = ({
 }
 
 
-export default Contact
+export default withRouter(Contact)
