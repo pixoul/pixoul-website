@@ -1,0 +1,219 @@
+.about {
+
+  .intro-section {
+    background-color: #3c3d41;
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 65px;
+
+    .intro-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 50%;
+      height: 100%;
+
+      .intro-tagline, .intro-title, .intro-text {
+        color: #ffffff;
+        margin: 0;
+      }
+
+      .intro-tagline {
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.36px;
+        padding-bottom: 39px;
+        padding-top: 65px;
+      }
+
+      .intro-title {
+        font-size: 62px;
+        font-weight: bold;
+        line-height: 1.06;
+        letter-spacing: -2.38px;
+        padding-bottom: 28px;
+      }
+
+      .intro-text {
+         font-size: 22px;
+         font-weight: normal;
+         opacity: 0.7;
+         padding-bottom: 100px;
+      }
+    }
+
+    .intro-media {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .intro-image {
+        position: absolute;
+        max-width: 445px;
+        max-height: 730px;
+
+        &.front {
+          left: 230px;
+          top: 48px;
+          z-index: 1;
+        }
+
+        &.back {
+          left: 110px;
+          top: 0;
+          z-index: 0;
+        }
+      }
+    }
+  }
+
+  .info-grid {
+    .info-item {
+      display: flex;
+
+      &.ltr {
+        flex-direction: row;
+      }
+
+      &.rtl {
+        flex-direction: row-reverse;
+      }
+
+      .info-content, .info-media {
+        width: 50%;
+      }
+
+      .info-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .info-title {
+          font-size: 62px;
+          font-weight: bold;
+          letter-spacing: -2.38px;
+          color: #3c3d41;
+          padding-bottom: 40px;
+          padding-left: 132px;
+          padding-right: 111px;
+        }
+
+        .info-description {
+          font-size: 22px;
+          color: #656b6f;
+          line-height: 1.47;
+          padding-left: 132px;
+          padding-right: 111px;
+        }
+      }
+
+      .info-media {
+
+        .info-media-image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .love-more {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .feature {
+      padding-bottom: 100px;
+    }
+  }
+
+  .roadmap-promo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    .roadmap-title, .roadmap-tagline {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .roadmap-title {
+      font-size: 62px;
+      font-weight: bold;
+      letter-spacing: -2.38px;
+      padding-bottom: 26px;
+    }
+
+    .roadmap-tagline {
+      opacity: 0.7;
+      font-size: 24px;
+      padding-bottom: 72px;
+    }
+  }
+
+  .comparison {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .blue-background {
+      background-color: rgba(10, 104, 251, 0.1);
+    }
+
+    .comparison-list {
+      display: inline-block;
+      margin: 0px;
+
+      padding-left: 43px;
+      padding-right: 20px;
+      padding-top: 0px;
+      padding-bottom: 48px;
+
+      &.check {
+        list-style-image: url('./images/check.svg');
+      }
+
+      &.times {
+        list-style-image: url('./images/times.svg');
+      }
+
+      li {
+        font-size: 22px;
+        color: #656b6f;
+        white-space: nowrap;
+
+        padding-top: 25px;
+        padding-left: 18px;
+
+        &:first-child, &:last-child {
+          list-style: none;
+          padding-bottom: 0px;
+          padding-left: 0;
+          padding-right: 48px;
+        }
+
+        &:first-child {
+          font-size: 13.2px;
+          font-weight: bold;
+          letter-spacing: 2.4px;
+          text-align: center;
+          color: #3c3d41;
+        }
+
+        &:last-child {
+          text-align: center;
+        }
+      }
+
+    }
+  }
+}

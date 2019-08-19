@@ -30,6 +30,8 @@
 
   .media-action {
     cursor: pointer;
+    background-color: transparent;
+    border: none;
   }
 
   .slick-prev:before, .slick-next:before {
@@ -45,13 +47,17 @@
 
   .slick-arrow {
     z-index: 100;
+    &.slick-prev, &.slick-next {
+      width: 86px;
+      height: 86px;
+    }
 
     &.slick-next {
-      right: 20px;
+      right: 0px;
     }
 
     &.slick-prev {
-      left: 20px;
+      left: 0px;
     }
   }
 }

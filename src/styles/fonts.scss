@@ -1,6 +1,42 @@
+
+// Supported Style: normal, 400
 @font-face {
-    font-family: 'AvenirNext';
-    src: url('./fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+  font-family: 'AvenirNext';
+  src: url('./fonts/AvenirNext-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Supported Style: normal, 400, italic
+@font-face {
+  font-family: 'AvenirNext';
+  src: url('./fonts/AvenirNext-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+ }
+
+// Supported Style: bold, 700
+@font-face {
+  font-family: 'AvenirNext';
+  src: url('./fonts/AvenirNext-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Supported Style: bold, italic, 700
+@font-face {
+  font-family: 'AvenirNext';
+  src: url('./fonts/AvenirNext-Bold-Italic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+// Supported Style: light, 300
+@font-face {
+  font-family: 'AvenirNext';
+  src: url('./fonts/AvenirNext-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {

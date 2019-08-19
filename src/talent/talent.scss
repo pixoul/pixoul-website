@@ -1,0 +1,147 @@
+
+.talent {
+  .intro-section {
+    background-image: radial-gradient(circle at 19% 22%, #f9f9f9, #f2f2f2);
+    height: calc(100vh - 300px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 130px;
+    padding-left: 130px;
+
+    .intro-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 50%;
+      height: 100%;
+
+      .intro-title {
+        font-size: 62px;
+        font-weight: bold;
+        line-height: 1.06;
+        letter-spacing: -2.38px;
+        padding-bottom: 18px;
+      }
+
+      .intro-text {
+         color: #656b6f;
+         font-size: 24px;
+         padding-bottom: 48px;
+      }
+    }
+
+    .intro-media {
+      position: relative;
+      height: 100%;
+    }
+  }
+
+  .featured-member {
+    background-color: #ffffff;
+    display: flex;
+    padding-top: 130px;
+
+    .member-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 96px;
+      padding-right: 130px;
+
+      .member-tagline {
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.36px;
+        text-transform: uppercase;
+        color: #3c3d41;
+        padding-bottom: 41px;
+      }
+
+      .member-title {
+        font-size: 39px;
+        letter-spacing: -0.61px;
+        color: #3c3d41;
+        padding-bottom: 16px;
+      }
+
+      .member-text {
+        font-size: 22px;
+        color: #656b6f;
+        padding-bottom: 60px;
+      }
+    }
+
+    .member-media {
+      img {
+        height: 100%;
+      }
+    }
+
+  }
+
+  .talent-timeline {
+    background-color: #3c3d41;
+    display: flex;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .talent-main {
+      padding-left: 180px;
+
+      .talent-header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 90px;
+
+        .talent-title {
+          font-size: 62px;
+          font-weight: bold;
+          letter-spacing: -2.38px;
+          color: #ffffff;
+        }
+
+        .talent-description {
+          font-size: 22px;
+          color: #ffffff;
+          opacity: 0.7;
+        }
+      }
+    }
+
+  }
+
+  .client-work {
+    background-color: #f9f9f9;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .work-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .work-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .excel {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .excel-header {
+      text-align: center;
+      .excel-image {
+        padding-bottom: 22px;
+      }
+    }
+  }
+}

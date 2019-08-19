@@ -1,36 +1,60 @@
 import React from "react"
-import cn from "classnames"
-import { Link } from "react-router-dom";
-import Button from "utils/button/button"
-
 import "./footer.scss"
+/* Third-Party */
+import { Link } from "react-router-dom";
+/* Utils */
+import SocialIcons from "utils/social-icons/social-icons"
+/* Images */
+import logo from "./logo.svg"
 
 const Footer = () => {
 
   return(
     <footer className="footer">
-      <div className="footer-side sitemap">
-        <ul className="list-collection">
-          <li className="list-title">Pixoul, Inc.</li>
-          <li className="list-item"><Link to={'/about'}>About</Link></li>
-          <li className="list-item"><Link to={'/work'}>Work</Link></li>
-          <li className="list-item"><Link to={'/capabilities'}>Capabilities</Link></li>
-        </ul>
+      <div className="footer-top">
+          <div className="footer-brand">
+            <img src={logo} alt={logo} className="brand-logo"/>
+            <p className="brand-text">We match industry leaders with top-tier, designers, developers, and project managers on demand.</p>
+          </div>
 
-        <ul className="list-collection">
-          <li className="list-title">Capabilities</li>
-          <li className="list-item"><Link to={'/capabilities/strategy'}>Strategy</Link></li>
-          <li className="list-item"><Link to={'/capabilities/design'}>Design</Link></li>
-          <li className="list-item"><Link to={'/capabilities/technology'}>Technology</Link></li>
-        </ul>
+          <div className="footer-sitemap">
+            <ul className="sitemap-list">
+              <li className="sitemap-title">Company</li>
+              <li className="sitemap-item"><Link to={'/home'}>Home</Link></li>
+              <li className="sitemap-item"><Link to={'/about'}>About</Link></li>
+              <li className="sitemap-item"><Link to={'/faq'}>FAQ</Link></li>
+            </ul>
+
+            <ul className="sitemap-list">
+              <li className="sitemap-title">Solution</li>
+              <li className="sitemap-item"><Link to={'/talent'}>Talent</Link></li>
+              <li className="sitemap-item"><Link to={'/process'}>Process</Link></li>
+            </ul>
+
+            <ul className="sitemap-list">
+              <li className="sitemap-title">Resources</li>
+              <li className="sitemap-item"><Link to={'/blog'}>Blog</Link></li>
+              <li className="sitemap-item"><Link to={'/referals'}>Referals</Link></li>
+            </ul>
+          </div>
+
+          <div className="footer-social">
+            <ul className="social-list">
+              <li className="social-title">Follow Us:</li>
+              <li className="social-item"><SocialIcons /></li>
+            </ul>
+          </div>
       </div>
-      <div className="footer-side">
-        <ul className="list-collection">
-          <li className="list-subtitle">We average a 211% increase on ROI.</li>
-          <li className="list-item">See how we help ambitous brands use design thinking to dominate digital.</li>
-          <li className="list-item"><Button theme="primary" tag={Link} to={'/contact'}>Contact Us</Button></li>
-        </ul>
+
+      <div className="footer-bottom">
+        <div className="footer-legal">
+          <Link to="/terms" className="footer-link">Terms and Conditions</Link> /  <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+        </div>
+        <div className="footer-copy">
+          &#169; 2019 Pixoul.  All rights reserved.
+        </div>
       </div>
+
     </footer>
   )
 }

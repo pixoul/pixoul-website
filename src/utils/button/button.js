@@ -18,6 +18,8 @@ const Button = ({
     'button',
     {
       'button-primary': theme === 'primary',
+      'button-secondary': theme === 'secondary',
+      'button-light': theme === 'light',
       'button-outline': outline,
       'button-block': block
     })
@@ -27,6 +29,10 @@ const Button = ({
       {children}
     </Tag>
   )
+}
+
+Button.propTypes = {
+  children: PropTypes.any.isRequired
 }
 
 Button.defaultProps = {

@@ -5,8 +5,17 @@ html, body, #root {
 
 
 .gutters {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+
+  .button {
+    margin-right: 45px;
+  }
 }
 
 @media (max-width: 768px) {

@@ -1,54 +1,49 @@
-import React, { useRef } from "react";
-
-import { Hero, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
-import Capability from "utils/capability/capability"
-import Map from "utils/map/map"
-import bg from "./images/bg.png"
-import browser from "./images/browser-window.svg"
-
-import PartnerStats from "about/partner-stats/partner-stats"
-import OurValue from "about/our-value/our-value"
+import React from "react";
+import "./about.scss"
+/* Presentational Components */
+import Intro from "./intro"
+import LoveMore from "./love-more"
+import RoadmapPromo from "./roadmap-promo"
+import Comparison from "./comparison"
+/* Images */
+import augmented from "./images/augmented.png"
+import support from "./images/support.png"
 
 export default function About() {
-  const sectionEl = useRef(null)
-
-  const heroClick = () => {
-    sectionEl.current.scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
 
   return(
-    <div>
-      <Hero bg={bg} theme="dark" align="center" className="gutters">
-          <HeroText
-            text="Complex problems deserve elegant solutions."
-            size="lg"
-          />
-          <HeroText
-            text="We help brands and organizations succeed in the digital age."
-            size="sm"
-          />
-          <HeroAction gutterTop={63} action={heroClick} blue />
-          <HeroMedia media={browser}/>
-      </Hero>
+    <div className="about">
+      <Intro />
 
-      <div ref={sectionEl}>
-        <PartnerStats />
+      <div className="info-grid">
+        <div className="info-item ltr">
+          <div className="info-content">
+            <span className="info-title">Augmented IT Talent.</span>
+            <span className="info-description">Utilize our full-time or hourly based freelancers to harness technical debt, combat roadmap scope creep, or fill knowledge gaps within your organization.</span>
+          </div>
+          <div className="info-media">
+            <img src={augmented} alt={augmented} className="info-media-image" />
+          </div>
+        </div>
+
+        <div className="info-item rtl">
+          <div className="info-content">
+            <span className="info-title">Full team Support.</span>
+            <span className="info-description">Our network can help you source a full team of designers, developers, and project managers—ensuring your next digital project is a smooth success.  </span>
+          </div>
+          <div className="info-media">
+            <img src={support} alt={support} className="info-media-image" />
+          </div>
+        </div>
       </div>
 
-      <OurValue />
 
-      <Capability
-        direction='ltr'
-        mediaComponent={<Map />}
-        title='Our partner network is always expanding.'
-        subtitle='Headquartered in Dallas, TX, we’re proud to have made an impact on communities around the world.'
-        details = {{
-          'Team Members': 'Across North America',
-          'Clients': 'Around the globe'
-        }}
-      />
+      <LoveMore />
+
+      <RoadmapPromo />
+
+      <Comparison />
+
     </div>
   )
 }

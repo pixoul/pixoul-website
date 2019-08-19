@@ -6,17 +6,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 
   &.fall-under {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 150px;
     left: 150px;
     background-color: transparent;
     padding: 0;
+    box-shadow: none;
   }
 
-  .header-items {
+  .header-links {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -24,24 +26,20 @@
     align-items: center;
     justify-content: space-around;
 
-    .header-item {
-      margin: 10px;
+    .header-link {
+      margin-right: 40px;
+
+      a {
+        color: #3c3d41;
+        text-decoration: none;
+        font-size: 16px;
+
+        &.active-link {
+          font-weight: bold;
+        }
+      }
     }
   }
-
-  .header-button {
-    border: none;
-  }
-
-  .header-link {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    outline: none;
-  }
-
 
 }
 

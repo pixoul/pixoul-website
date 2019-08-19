@@ -1,0 +1,27 @@
+import React from "react"
+
+/* Images */
+import disney from "./images/companies/disney.svg"
+import airbnb from "./images/companies/airbnb.svg"
+import amazon from "./images/companies/amazon.svg"
+import gp from "./images/companies/gp.svg"
+import kw from "./images/companies/kw.svg"
+
+const TrustedCompanies = () => {
+
+  return(
+    <div className="trusted-companies">
+        <h3 className="trusted-title">OUR TALENT NETWORK HAS WORKED FOR COMAPNIES LIKE:</h3>
+        <div className="trusted-media">
+          <img src={disney} alt={disney} />
+          <img src={airbnb} alt={airbnb} />
+          <img src={amazon} alt={amazon} />
+          <img src={gp} alt={gp} />
+          <img src={kw} alt={kw} />
+        </div>
+    </div>
+  )
+}
+
+
+export default TrustedCompanies

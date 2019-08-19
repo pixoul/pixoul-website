@@ -6,61 +6,144 @@ $bg-primary: #f9fafc;
 $bg-secondary: #dfdfdf;
 
 .contact {
-  padding-top: 115px;
-  padding-bottom: 190px;
+  padding-top: 190px;
+  padding-bottom: 76px;
   background-image: url('./images/bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: black;
 
-  .social-media {
-    padding-top: 123px;
-    padding-left: 40px;
-  }
-
-  .contact-info {
-    list-style: none;
-    display: inline-block;
-    margin-right: 85px;
-
+  .contact-intro {
+    padding-left: 100px;
+    padding-right: 100px;
     .contact-title {
-      color: #374050;
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 12px;
-      margin-top: 30px;
-    }
+      font-size: 62px;
+      letter-spacing: -0.62px;
+      text-align: center;
+      color: #3c3d41;
 
-    .contact-item {
-      margin: 10px 0;
-      color: $black;
-      font-size: 20px;
-      font-weight: 500;
-
-      a {
-        color: #3180fb;
-        text-decoration: none;
-        cursor: pointer;
-
-        &:hover {
-          opacity: 0.7;
-          transition: opacity .6s;
-        }
+      .bold {
+        font-weight: bold;
+        letter-spacing: -3.1px;
       }
 
+      .strikethrough {
+        position: relative;
+
+        &:after{
+          content: '';
+           border-bottom: 3px solid #3c3d41;
+           position: absolute;
+           left: 0;
+           top: 50%;
+           width: 100%
+        }
+      }
     }
+
+    .contact-description {
+       font-size: 24px;
+       text-align: center;
+       color: #3c3d41;
+       opacity: 0.7;
+       padding-bottom: 67px;
+    }
+  }
+
+  .companies {
+    .companies-title {
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2.36px;
+      text-align: center;
+      color: #3c3d41;
+      padding-bottom: 84px;
+    }
+
+    .companies-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .companies-image {
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+    }
+  }
+
+  .partnership-program {
+
+  }
+
+  .join-team {
+
+    .incentive-group {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 60px;
+
+      .incentive-list {
+        list-style-image: url('./images/check.svg');
+
+        .incentive-item {
+          padding-left: 14px;
+          padding-bottom: 7px;
+          font-size: 24px;
+          color: #656b6f;
+        }
+      }
+    }
+
+
+  }
+
+  .professional-hire {
+
+  }
+
+  .form {
+
+    .form-input, .form-textarea {
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 17px 0px 15px 18px;
+      margin: 18px;
+      font-size: 16px;
+      color: #ffffff;
+      background-color: rgba(60, 61, 65, 0.5);
+      border-radius: 4.8px;
+      box-sizing: border-box;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+
+    .form-action {
+      padding-top: 36px;
+      padding-bottom: 67px;
+      display: flex;
+      justify-content: flex-end;
+
+      .form-button {
+        margin-left: 45px;
+      }
+    }
+
+    .form-file {
+      display: none;
+    }
+
   }
 
 }
 
 @media (max-width: 768px) {
   .contact {
-    padding-top: 51px;
-    padding-bottom: 35px;
 
-    .contact-info, .social-media {
-      display: none;
-    }
   }
 }

@@ -1,0 +1,98 @@
+
+.process {
+
+  .project-steps {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .project-lead {
+      text-align: center;
+      .project-tagline {
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.36px;
+        color: #276cf2;
+        padding-bottom: 21px;
+      }
+
+      .project-title {
+        font-size: 62px;
+        font-weight: bold;
+        letter-spacing: -2.38px;
+        color: #3c3d41;
+        padding-bottom: 155px;
+      }
+    }
+
+    .steps-content {
+      display: flex;
+
+      .project-paragraph {
+         width: 50%;
+         font-size: 22px;
+         color: #656b6f;
+
+         &:first-child {
+           padding-right: 50px;
+         }
+      }
+    }
+  }
+
+  .matching {
+    display: flex;
+    padding-top: 50px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+
+    .matching-content {
+
+
+      .matching-title {
+        font-size: 62px;
+        font-weight: bold;
+        line-height: 1.06;
+        letter-spacing: -2.38px;
+        color: #3c3d41;
+      }
+
+      .matching-subtitle {
+        font-size: 22px;
+        line-height: 1.47;
+        color: #656b6f;
+      }
+    }
+
+    .matching-media {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-left: 100px;
+      margin-bottom: -100px;
+    }
+
+    .candadite {
+      position: relative;
+      width: 185px;
+      height: 185px;
+      margin: 20px;
+
+      .candadite-status {
+        position: absolute;
+        bottom: 20px;
+        right: 5px;
+      }
+    }
+  }
+
+  .kpi-hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

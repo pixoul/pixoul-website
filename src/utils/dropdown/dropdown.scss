@@ -1,0 +1,69 @@
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 18px;
+  width: 100%;
+
+
+  .dropdown-toggler {
+    width: 100%;
+    background-color: rgba(60, 61, 65, 0.5);
+    padding: 17px 0px 15px 18px;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    border: 2px solid rgb(238, 238, 238);
+    border-style: inset;
+    border-radius: 4.8px;
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    .down-arrow {
+      &:after {
+        content: "\25bc";
+        float: right;
+        margin-right: 27px;
+      }
+    }
+
+    .up-arrow {
+      &:after {
+        content: "\25b2";
+        float: right;
+        margin-right: 27px;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    z-index: 10;
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    width: 100%;
+
+    .dropdown-menu-item {
+      background-color: rgba(60, 61, 65, 0.5);
+      padding: 17px 0px 15px 18px;
+      color: white;
+      outline: none;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:active, &:hover {
+        opacity: 0.8;
+      }
+    }
+
+  }
+
+
+}
