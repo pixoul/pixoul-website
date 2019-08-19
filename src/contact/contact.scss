@@ -78,6 +78,26 @@ $bg-secondary: #dfdfdf;
 
   .join-team {
 
+    .incentive-group {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 60px;
+
+      .incentive-list {
+        list-style-image: url('./images/check.svg');
+
+        .incentive-item {
+          padding-left: 14px;
+          padding-bottom: 7px;
+          font-size: 24px;
+          color: #656b6f;
+        }
+      }
+    }
+
+
   }
 
   .professional-hire {

@@ -5,6 +5,8 @@ import * as emailjs from 'emailjs-com'
 /* Utils */
 import Button from "utils/button/button"
 import Dropdown from "utils/dropdown/dropdown"
+/* Images */
+import check from "./images/check.svg"
 
 const JoinTeam = () => {
   const fileInput = useRef()
@@ -26,7 +28,7 @@ const JoinTeam = () => {
       "resume": resume
    }
 
-   emailjs.send("default_service", "pixoul_website", data, 'user_y5b1msGPAYKIW4szoHygG')
+   emailjs.send("default_service", "join_team", data, 'user_y5b1msGPAYKIW4szoHygG')
     .then((response) => setSent(true), (err) => {
         setSent(false)
         alert('Failed, please try again later');
@@ -41,18 +43,26 @@ const JoinTeam = () => {
     setSent(false)
   }
 
-  const upload = (event) => {
-    event.preventDefault();
+  const upload = e => {
+    e.preventDefault()
     fileInput.current.click()
-    const data = new FormData()
-    data.append('file', resume)
   }
 
   return  (
     <div className="join-team">
       <div className="contact-intro">
         <div className="contact-title">Apply to Join <span className="bold">Our Community</span> of <span className="strikethrough">Freelancers</span> Team Members.</div>
-        <div className="contact-description"></div>
+      </div>
+
+      <div className="incentive-group">
+        <ul className="incentive-list">
+          <li className="incentive-item">Stop Freelancing, Start Building a Business</li>
+          <li className="incentive-item">Work with Fortune 500 Companies</li>
+        </ul>
+        <ul className="incentive-list">
+          <li className="incentive-item">Weekly 1-on-1 Business Advising</li>
+          <li className="incentive-item">Senior-Level Professionals Only</li>
+        </ul>
       </div>
 
       <form className="form">
@@ -102,7 +112,9 @@ const JoinTeam = () => {
 
         <div className="form-action">
           <input ref={fileInput} type="file" name="file" className="form-file" onChange={(e) => setResume(e.target.files[0])}/>
-          <Button className="form-button" onClick={upload} outline>{ resume ? 'Resume Uploaded' : 'Attach Resume'}</Button>
+          <Button className="form-button" onClick={upload} outline>
+            {resume && <img src={check} alt={check} /> }
+            { resume ?  ' Resume Uploaded' : 'Attach Resume'}</Button>
           <Button className="form-button" onClick={send}>Apply to Our Team</Button>
         </div>
       </form>
