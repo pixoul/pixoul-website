@@ -1,38 +1,41 @@
-import React from "react";
-import { Container, Row, Col } from 'react-grid-system'
+import React from "react"
 import "./contact.scss"
+/* Third-Party */
+import { Container, Row, Col } from 'react-grid-system'
+import { Route, withRouter } from "react-router-dom"
+/* Routes */
+import JoinTeam from "./join-team"
+import PartnershipProgram from "./partnership-program"
+import ProfessionalHire from "./professional-hire"
+/* Images */
+import disney from "./images/disney.svg"
+import airbnb from "./images/airbnb.svg"
+import amazon from "./images/amazon.svg"
+import gp from "./images/gp.svg"
+import kw from "./images/kw.svg"
 
-import Opening from "utils/opening/opening"
-import SocialIcons from "utils/social-icons/social-icons"
-import ContactForm from "contact/contact-form/contact-form"
-
-export default function Contact() {
+const Contact = ({
+  match
+}) => {
   return(
-    <div className="contact">
-        <Container>
-          <Opening
-            title="Contact Us"
-            subtitle="See how we help ambitious brands use design thinking to dominate digital."
-          />
+    <div className="contact gutters">
+        <Route path={`${match.path}/join-team`} component={JoinTeam} />
+        <Route path={`${match.path}/partnership-program`} component={PartnershipProgram} />
+        <Route path={`${match.path}/professional-hire`} component={ProfessionalHire} />
 
-          <Row>
-            <Col sm={12} md={6}>
-              <ul className="contact-info">
-                <li className="contact-title">Phone</li>
-                <li className="contact-item"><a href="tel:6169149356">(616) 914-9356</a></li>
-                <li className="contact-title">Email</li>
-                <li className="contact-item"><a href="mailto:hello@pixoulinc.com">hello@pixoulinc.com</a></li>
-              </ul>
-
-              <div className="social-media">
-                <SocialIcons theme="dark" />
-              </div>
-            </Col>
-            <Col sm={12} md={6}>
-              <ContactForm />
-            </Col>
-          </Row>
-        </Container>
+        <div className="companies">
+          <div className="companies-title">OUR TALENT NETWORK HAS WORKED FOR COMAPNIES LIKE:</div>
+          <div className="companies-list">
+            <img src={disney} alt={disney} className="companies-image" />
+            <img src={airbnb} alt={airbnb} className="companies-image" />
+            <img src={amazon} alt={amazon} className="companies-image" />
+            <img src={gp} alt={gp} className="companies-image" />
+            <img src={kw} alt={kw} className="companies-image" />
+          </div>
+        </div>
     </div>
   )
 }
+
+
+export default Contact
