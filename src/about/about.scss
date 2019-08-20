@@ -2,11 +2,11 @@
 
   .intro-section {
     background-color: #3c3d41;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 65px);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 65px;
 
     .intro-content {
@@ -23,7 +23,7 @@
       }
 
       .intro-tagline {
-        font-size: 13px;
+        font-size: 0.8125em;
         font-weight: bold;
         letter-spacing: 2.36px;
         padding-bottom: 39px;
@@ -31,7 +31,7 @@
       }
 
       .intro-title {
-        font-size: 62px;
+        font-size: 3.875em;
         font-weight: bold;
         line-height: 1.06;
         letter-spacing: -2.38px;
@@ -48,13 +48,13 @@
 
     .intro-media {
       position: relative;
-      width: 100%;
+      width: 50%;
       height: 100%;
 
       .intro-image {
         position: absolute;
         max-width: 445px;
-        max-height: 730px;
+        max-height: 700px;
 
         &.front {
           left: 230px;
@@ -99,16 +99,12 @@
           letter-spacing: -2.38px;
           color: #3c3d41;
           padding-bottom: 40px;
-          padding-left: 132px;
-          padding-right: 111px;
         }
 
         .info-description {
           font-size: 22px;
           color: #656b6f;
           line-height: 1.47;
-          padding-left: 132px;
-          padding-right: 111px;
         }
       }
 
@@ -165,18 +161,28 @@
     padding-top: 130px;
     padding-bottom: 130px;
 
-    .blue-background {
-      background-color: rgba(10, 104, 251, 0.1);
+    .comparison-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
     }
 
     .comparison-list {
-      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      width: 376px;
+      height: 480px;
       margin: 0px;
-
+      margin-left: 38px;
       padding-left: 43px;
       padding-right: 20px;
-      padding-top: 0px;
-      padding-bottom: 48px;
+
+      &.blue-background {
+        background-color: rgba(10, 104, 251, 0.1);
+      }
 
       &.check {
         list-style-image: url('./images/check.svg');
@@ -187,10 +193,9 @@
       }
 
       li {
-        font-size: 22px;
+        font-size: 1.375em;
         color: #656b6f;
         white-space: nowrap;
-
         padding-top: 25px;
         padding-left: 18px;
 
@@ -214,6 +219,51 @@
         }
       }
 
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about{
+    .comparison {
+      .comparison-area {
+        flex-direction: column;
+      }
+
+      .comparison-list {
+        width: 100%;
+        margin: 0px 10px;
+        padding-right: 0px;
+      }
+    }
+
+    .info-grid {
+      .info-item {
+        &.ltr {
+          flex-direction: column-reverse;
+        }
+
+        &.rtl {
+          flex-direction: column-reverse;
+        }
+
+        .info-content, .info-media {
+          width: 100%;
+        }
+      }
+    }
+
+    .intro-section {
+      flex-direction: column;
+      height: 100%;
+
+      .intro-content {
+        width: 100%;
+      }
+
+      .intro-media {
+        display: none;
+      }
     }
   }
 }

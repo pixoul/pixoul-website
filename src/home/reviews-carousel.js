@@ -3,6 +3,8 @@ import React from "react"
 import { Carousel, Slide } from "utils/carousel"
 import Review from "utils/review-card/review-card"
 
+import quote from "./images/quote.svg"
+
 /* Review Data */
 import reviews from "./reviews"
 
@@ -11,6 +13,9 @@ const ReviewsCarousel = () => {
   return(
     <div className="reviews gutters">
       <h3 className="reviews-title">What Our Clients Say</h3>
+      <div className="review-quote">
+        <img src={quote} alt={quote} draggable="false" />
+      </div>
 
       <Carousel maxSlides={1}>
         {reviews.map((review, i) => (

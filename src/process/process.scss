@@ -1,6 +1,33 @@
 
 .process {
 
+  .intro {
+    background:linear-gradient(to bottom, rgba(65, 60, 60, 0.6), #3c3d41), url('./images/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .play-button {
+      padding-bottom: 22px;
+      cursor: pointer;
+      transition: opacity .4s;
+
+      &:hover{
+        opacity: 0.6;
+      }
+    }
+
+    .feature {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+  }
+
   .project-steps {
     padding-top: 130px;
     padding-bottom: 130px;
@@ -42,11 +69,13 @@
   .matching {
     display: flex;
     padding-top: 50px;
+    padding-left: 100px;
     background-color: #f9f9f9;
     overflow: hidden;
 
     .matching-content {
-
+      padding-top: 100px;
+      padding-bottom: 100px;
 
       .matching-title {
         font-size: 62px;
@@ -61,14 +90,17 @@
         line-height: 1.47;
         color: #656b6f;
       }
+
+      .feature {
+        margin-right: 40px;
+      }
     }
 
     .matching-media {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
-      padding-left: 100px;
-      margin-bottom: -100px;
+      justify-content: center;
+      margin-bottom: -160px;
     }
 
     .candadite {

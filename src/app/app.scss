@@ -3,7 +3,6 @@ html, body, #root {
   padding: 0;
 }
 
-
 .gutters {
   padding-left: 130px;
   padding-right: 130px;
@@ -22,5 +21,14 @@ html, body, #root {
   .gutters {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    .button {
+      margin-right: 0px;
+      margin-top: 22.5px;
+      margin-bottom: 22.5px;
+    }
   }
 }

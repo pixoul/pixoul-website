@@ -19,7 +19,7 @@ const Footer = () => {
 
           <div className="footer-sitemap">
             <ul className="sitemap-list">
-              <li className="sitemap-title">Company</li>
+              <li className="sitemap-title">Pixoul, Inc.</li>
               <li className="sitemap-item"><Link to={'/home'}>Home</Link></li>
               <li className="sitemap-item"><Link to={'/about'}>About</Link></li>
               <li className="sitemap-item"><Link to={'/faq'}>FAQ</Link></li>

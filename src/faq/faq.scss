@@ -1,7 +1,16 @@
 
 .faq {
   padding-top: 86px;
-  
+
+  .faq-title {
+    font-size: 62px;
+    font-weight: bold;
+    letter-spacing: -2.38px;
+    text-align: center;
+    color: #3c3d41;
+    padding-bottom: 74px;
+  }
+
   .faq-header {
     display: flex;
     flex-direction: row;

@@ -36,7 +36,7 @@ const Candadite = ({
 
 
 const Matching = () => (
-  <div className="matching gutters">
+  <div className="matching">
     <div className="matching-content">
       <Opening
         align="left"
