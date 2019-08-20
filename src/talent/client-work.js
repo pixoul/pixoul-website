@@ -7,14 +7,14 @@ import ikarus from "./images/clients/ikarus.svg"
 import iuzeit from "./images/clients/iuzeit.svg"
 import stallion from "./images/clients/stallion.svg"
 import georgiaPacific from "./images/clients/georgia-pacific.svg"
-import fusemap from "./images/clients/fusemap.svg"
-import hcp from "./images/clients/hcp.svg"
+import fusemap from "./images/clients/fusemap.png"
+import hcp from "./images/clients/hcp.png"
 
 const ClientWork = () => {
 
   return (
     <div className="client-work gutters">
-        <Carousel maxSlides={1}>
+        <Carousel maxSlides={1} autoplay>
           <Slide>
             <Project
               media={ikarus}
