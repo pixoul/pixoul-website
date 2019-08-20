@@ -45,6 +45,13 @@
 
 @media (max-width: 768px) {
   .header-container {
-    padding: 0 25px;
+    padding: 20px 25px;
+    flex-direction: column;
+
+    .header-links {
+      .header-link {
+        margin-right: 20px;
+      }
+    }
   }
 }
