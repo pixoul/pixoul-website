@@ -11,7 +11,7 @@ const style = {
 }
 
 const RoadmapPromo = () => (
-  <div className="roadmap-promo" style={style}>
+  <div className="roadmap-promo gutters" style={style}>
     <span className="roadmap-title">Let’s Improve Your Roadmap.</span>
     <span className="roadmap-tagline">We average a 219% increase in ROI.  Find out how.</span>
     <div className="roadmap-action">
