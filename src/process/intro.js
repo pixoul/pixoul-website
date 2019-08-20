@@ -4,9 +4,14 @@ import { Container, Row, Col } from 'react-grid-system'
 /* Utils */
 import Opening from "utils/opening/opening"
 import Feature from "utils/feature/feature"
+/* Images */
+import play from "./images/play.svg"
 
 const Intro = () => (
   <div className="intro">
+    <div className="play-button">
+      <img src={play} alt={play} />
+    </div>
     <Opening
       theme="light"
       title="How We Work."

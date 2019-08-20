@@ -1,6 +1,33 @@
 
 .process {
 
+  .intro {
+    background:linear-gradient(to bottom, rgba(65, 60, 60, 0.6), #3c3d41), url('./images/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .play-button {
+      padding-bottom: 22px;
+      cursor: pointer;
+      transition: opacity .4s;
+      
+      &:hover{
+        opacity: 0.6;
+      }
+    }
+
+    .feature {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+  }
+
   .project-steps {
     padding-top: 130px;
     padding-bottom: 130px;
