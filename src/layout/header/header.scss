@@ -1,5 +1,6 @@
 .header-container {
-  z-index: 250;
+  position: relative;
+  z-index: 100;
   height: 100px;
   background-color: white;
   padding: 0 150px;
@@ -9,13 +10,10 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 
   &.fall-under {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 150px;
-    left: 150px;
-    background-color: transparent;
-    padding: 0;
-    box-shadow: none;
+    right: 0px;
+    left: 0px;
   }
 
   .header-links {

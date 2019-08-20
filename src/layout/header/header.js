@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink, Link } from "react-router-dom";
 import cn from "classnames"
 import "./header.scss"
@@ -8,8 +8,12 @@ import logo from "./images/logo.svg"
 
 function Header({ fixed = false }) {
 
+  const [prevScrollPos] = useState(window.pageYOffset)
+  const [visible, setVisible] = useState(false)
+
   const classes = cn('header-container', {
-    'fall-under': fixed === true
+    'fall-under': fixed === true,
+    'hidden': visible === true
   })
 
   return(
