@@ -1,19 +1,45 @@
-import React from "react"
+import React, { useState } from "react"
 import "./carousel.scss"
 /* Third-Party Packages */
 import SlickSlider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import next from "./images/next-arrow.svg"
-import prev from "./images/prev-arrow.svg"
+import nextBlue from "./images/next-blue.svg"
+import prevBlue from "./images/prev-blue.svg"
+import nextGrey from "./images/next-grey.svg"
+import prevGrey from "./images/prev-grey.svg"
 
-const NextArrow = ({ className, style, onClick }) => (
-  <img src={next} alt={next} onClick={onClick} style={style} className={className} />
-)
+const NextArrow = ({ className, style, onClick }) => {
+  const [hover, setHover] = useState(false)
+  const icon = hover ? nextBlue : nextGrey
+  return (
+    <img
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      src={icon}
+      alt={icon}
+      onClick={onClick}
+      style={style}
+      className={className}
+    />
+  )
+}
 
-const PrevArrow = ({ className, style, onClick }) => (
-  <img src={prev} alt={prev} onClick={onClick} style={style} className={className} />
-)
+const PrevArrow = ({ className, style, onClick }) => {
+  const [hover, setHover] = useState(false)
+  const icon = hover ? prevBlue : prevGrey
+  return (
+    <img
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      src={icon}
+      alt={icon}
+      onClick={onClick}
+      style={style}
+      className={className}
+    />
+  )
+}
 
 const Slide = ({ children }) => (
   <div className="slide-item">

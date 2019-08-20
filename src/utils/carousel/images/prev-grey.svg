@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-133.000000, -4930.000000)">
+            <g id="Testimonials-#4" transform="translate(0.000000, 4596.000000)">
+                <g id="Arrow" transform="translate(133.000000, 334.000000)">
+                    <circle id="Stroke" stroke="#DDDDDD" stroke-width="1.2" transform="translate(43.000000, 43.000000) scale(-1, 1) translate(-43.000000, -43.000000) " cx="43" cy="43" r="42.4"></circle>
+                    <polygon id="Shape" fill="#656B6F" transform="translate(43.000000, 43.500000) scale(-1, 1) translate(-43.000000, -43.500000) " points="24 42.092827 57.1614907 42.092827 46.1863354 30.7130802 47.8385093 29 62 43.6835443 60.3478261 45.3966245 60.2298137 45.2742616 48.0745342 58 46.4223602 56.2869198 57.7515528 44.5400844 24 44.5400844"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
