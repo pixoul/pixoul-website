@@ -54,10 +54,12 @@
 
     &.slick-next {
       right: 0px;
+      top: 100%;
     }
 
     &.slick-prev {
       left: 0px;
+      top: 100%;
     }
   }
 }
