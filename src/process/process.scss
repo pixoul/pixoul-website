@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +16,7 @@
       padding-bottom: 22px;
       cursor: pointer;
       transition: opacity .4s;
-      
+
       &:hover{
         opacity: 0.6;
       }
