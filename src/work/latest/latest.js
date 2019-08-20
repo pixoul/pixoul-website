@@ -8,7 +8,7 @@ import Opening from "utils/opening/opening"
 
 import iuzeitMedia from "./images/bg01.png"
 import georgiaPacificMedia from "./images/bg02.png"
-import sofsMedia from "./images/bg03.png"
+import ikarusMedia from "./images/bg03.png"
 
 const ClientCard = ({ media, title, action}) => {
   return(
@@ -31,7 +31,7 @@ const WorkLatest = () => {
       <div className="client-cards">
         <ClientCard media={iuzeitMedia} title="iuzeit" action="/work/detail/iuzeit" />
         <ClientCard media={georgiaPacificMedia} title="Georgia-Pacific" action="/work/detail/georgia-pacific" />
-        <ClientCard media={sofsMedia} title="Stallion Oilfield Services" action="/work/detail/sofs" />
+        <ClientCard media={ikarusMedia} title="Ikarūs" action="/work/detail/ikarus" />
       </div>
 
       <div className="latest-action">

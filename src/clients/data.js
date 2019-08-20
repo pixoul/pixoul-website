@@ -5,7 +5,6 @@ import georgiaPacific from "clients/georgia-pacific/data"
 import hcp from "clients/hcp/data"
 import ikarus from "clients/ikarus/data"
 import iuzeit from "clients/iuzeit/data"
-import sofs from "clients/sofs/data"
 
 
 const clients = {
@@ -13,8 +12,7 @@ const clients = {
   'georgia-pacific': georgiaPacific,
   'hcp': hcp,
   'ikarus': ikarus,
-  'iuzeit': iuzeit,
-  'sofs': sofs
+  'iuzeit': iuzeit
 }
 
 export default clients
