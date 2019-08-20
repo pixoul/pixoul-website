@@ -2,11 +2,11 @@
 
   .intro-section {
     background-color: #3c3d41;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 65px);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 65px;
 
     .intro-content {
@@ -48,13 +48,13 @@
 
     .intro-media {
       position: relative;
-      width: 100%;
+      width: 50%;
       height: 100%;
 
       .intro-image {
         position: absolute;
         max-width: 445px;
-        max-height: 730px;
+        max-height: 700px;
 
         &.front {
           left: 230px;
