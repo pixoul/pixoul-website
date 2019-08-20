@@ -42,11 +42,13 @@
   .matching {
     display: flex;
     padding-top: 50px;
+    padding-left: 100px;
     background-color: #f9f9f9;
     overflow: hidden;
 
     .matching-content {
-
+      padding-top: 100px;
+      padding-bottom: 100px;
 
       .matching-title {
         font-size: 62px;
@@ -61,14 +63,17 @@
         line-height: 1.47;
         color: #656b6f;
       }
+
+      .feature {
+        margin-right: 40px;
+      }
     }
 
     .matching-media {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
-      padding-left: 100px;
-      margin-bottom: -100px;
+      justify-content: center;
+      margin-bottom: -160px;
     }
 
     .candadite {
