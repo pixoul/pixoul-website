@@ -15,8 +15,8 @@ const Intro = () => (
       <p className="intro-text">We hire world-class designers, developers and project managers.  Pixoul talent contributes to the most innovative and profitable companies across the globe. </p>
 
       <div className="button-group">
-        <Button theme="secondary" tag={Link} to="/contact">Hire the Perfect Match</Button>
-        <Button theme="secondary" outline tag={Link} to="/contact">Join the Team</Button>
+        <Button theme="secondary" tag={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
+        <Button theme="secondary" outline tag={Link} to="/contact/join-team">Join the Team</Button>
       </div>
     </div>
     <div className="intro-media">

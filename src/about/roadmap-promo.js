@@ -15,7 +15,7 @@ const RoadmapPromo = () => (
     <span className="roadmap-title">Let’s Improve Your Roadmap.</span>
     <span className="roadmap-tagline">We average a 219% increase in ROI.  Find out how.</span>
     <div className="roadmap-action">
-      <Button tag={Link} to="/contact">Get in Touch</Button>
+      <Button tag={Link} to="/contact/professional-hire">Get in Touch</Button>
     </div>
   </div>
 )
