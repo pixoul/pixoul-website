@@ -28,7 +28,7 @@ export default function About() {
 
         <div className="info-item rtl">
           <div className="info-content">
-            <span className="info-title">Full team Support.</span>
+            <span className="info-title">Full Team Support.</span>
             <span className="info-description">Our network can help you source a full team of designers, developers, and project managers—ensuring your next digital project is a smooth success.  </span>
           </div>
           <div className="info-media">
