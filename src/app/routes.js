@@ -30,7 +30,7 @@ function Routes(props){
   })
 
   return transitions.map(({ item, props : style, key }) => (
-      <animated.div key={key} style={{...style, height: "100%", width: "100%"}}>
+      <animated.div key={key} style={{...style, height: "100%", width: "100%"}} className="routes">
            <Switch location={item}>
                <Route path="/home" component={Home} />
                <Route path="/talent" component={Talent} />
