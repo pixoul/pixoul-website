@@ -13,7 +13,7 @@ const Intro = () => (
       <span className="intro-text">Discover why leading companies trust our talent network with their most complex implementations.</span>
 
       <div className="button-group">
-        <Button tag={Link} to="/contact">Hire the Perfect Match</Button>
+        <Button tag={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
       </div>
     </div>
     <div className="intro-media">
