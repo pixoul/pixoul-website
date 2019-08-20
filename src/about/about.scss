@@ -196,7 +196,6 @@
         font-size: 1.375em;
         color: #656b6f;
         white-space: nowrap;
-
         padding-top: 25px;
         padding-left: 18px;
 
@@ -229,6 +228,12 @@
     .comparison {
       .comparison-area {
         flex-direction: column;
+      }
+
+      .comparison-list {
+        width: 100%;
+        margin: 0px 10px;
+        padding-right: 0px;
       }
     }
 
