@@ -12,8 +12,8 @@ const Intro = () => {
       <h1 className="intro-text">On Demand IT Talent,</h1>
       <h1 className="intro-text">Simplified.</h1>
       <div className="button-group">
-        <Button tag={Link} to="/contact">Hire the Perfect Match</Button>
-        <Button outline tag={Link} to="/contact">Join the Team</Button>
+        <Button tag={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
+        <Button outline tag={Link} to="/contact/join-team">Join the Team</Button>
       </div>
       <div className="intro-media">
         <img src={ipad} alt={ipad} className="intro-image" />
