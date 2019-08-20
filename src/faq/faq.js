@@ -2,7 +2,6 @@ import React from "react"
 import "./faq.scss"
 
 /* Utils */
-import Opening from "utils/opening/opening"
 import ExpansionPanel from "utils/expansion-panel/expansion-panel"
 /* Presentation Components */
 import NetworkHero from "./network-hero"
@@ -24,8 +23,7 @@ const FAQ = () => {
 
   return(
     <div className="faq">
-
-      <Opening title="Frequently Asked Questions" />
+      <div className="faq-title">Frequently Asked <br />Questions</div>
 
       <div className="faq-questions gutters">
         {data.map((faq, i) => (
