@@ -1,3 +1,4 @@
+
 .header-container {
   position: relative;
   z-index: 100;
@@ -7,13 +8,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 
-  &.fall-under {
-    position: fixed;
-    top: 0;
-    right: 0px;
-    left: 0px;
+  &.shadow {
+    box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.8);
   }
 
   .header-links {
