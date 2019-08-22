@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-top">
           <div className="footer-brand">
             <img src={logo} alt={logo} className="brand-logo"/>
-            <p className="brand-text">We match industry leaders with top-tier, designers, developers, and project managers on demand.</p>
+            <p className="brand-text">We match industry leaders with top-tier designers, developers, and project managers on demand.</p>
           </div>
 
           <div className="footer-sitemap">
@@ -34,7 +34,7 @@ const Footer = () => {
             <ul className="sitemap-list">
               <li className="sitemap-title">Resources</li>
               <li className="sitemap-item"><Link to={'/blog'}>Blog</Link></li>
-              <li className="sitemap-item"><Link to={'/referals'}>Referals</Link></li>
+              <li className="sitemap-item"><Link to={'/contact/partnership-program'}>Referrals</Link></li>
             </ul>
           </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
           <Link to="/terms" className="footer-link">Terms and Conditions</Link> /  <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
         </div>
         <div className="footer-copy">
-          &#169; 2019 Pixoul.  All rights reserved.
+          &#169; 2019 Pixoul, Inc.  All rights reserved.
         </div>
       </div>
 
