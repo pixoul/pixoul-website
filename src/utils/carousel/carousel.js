@@ -52,7 +52,7 @@ const Carousel = ({ images = [], maxSlides = 5, center = false, children, autopl
       dots: true,
       arrows: true,
       infinite: true,
-      speed: 1000,
+      speed: 5000,
       autoplay: autoplay,
       slidesToShow: maxSlides,
       slidesToScroll: maxSlides,
