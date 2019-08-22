@@ -34,7 +34,7 @@ const Footer = () => {
             <ul className="sitemap-list">
               <li className="sitemap-title">Resources</li>
               <li className="sitemap-item"><Link to={'/blog'}>Blog</Link></li>
-              <li className="sitemap-item"><Link to={'/referals'}>Referals</Link></li>
+              <li className="sitemap-item"><Link to={'/contact/partnership-program'}>Referrals</Link></li>
             </ul>
           </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
           <Link to="/terms" className="footer-link">Terms and Conditions</Link> /  <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
         </div>
         <div className="footer-copy">
-          &#169; 2019 Pixoul.  All rights reserved.
+          &#169; 2019 Pixoul, Inc.  All rights reserved.
         </div>
       </div>
 
