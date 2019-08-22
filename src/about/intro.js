@@ -11,7 +11,7 @@ const Intro = () => (
   <div className="intro-section gutters">
     <div className="intro-content">
       <h4 className="intro-tagline">HIGH PERFORMING TALENT, ON DEMAND.</h4>
-      <h1 className="intro-title">Welcome to your elite talent network.</h1>
+      <h1 className="intro-title">Welcome to Your Elite Talent Network.</h1>
       <p className="intro-text">We hire world-class designers, developers and project managers.  Pixoul talent contributes to the most innovative and profitable companies across the globe. </p>
 
       <div className="button-group">
