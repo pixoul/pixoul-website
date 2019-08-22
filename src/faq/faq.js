@@ -23,7 +23,7 @@ const FAQ = () => {
 
   return(
     <div className="faq">
-      <div className="faq-title">Frequently Asked <br />Questions</div>
+      <div className="faq-title">Frequently Asked <br />Questions.</div>
 
       <div className="faq-questions gutters">
         {data.map((faq, i) => (
