@@ -50,7 +50,7 @@ const ClientWork = () => {
               media={georgiaPacific}
               name="Georgia-Pacific"
               tagline="Transforming how Logistics Gets Done"
-              description="We tailor-fit a new check-in/check-out system for outdoor professionalsthat allowed Georgia-Pacific to quickly give their logisitics team an efficiency boost."
+              description="We tailor-fit a new check-in/check-out system for outdoor professionals that allowed Georgia-Pacific to quickly give their logisitics team an efficiency boost."
               services={['Design Partnership', 'UX/UI Design']}
               tools={['Balsamiq', 'Figma', 'Sketch', 'InVision']}
             />
