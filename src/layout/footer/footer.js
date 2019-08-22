@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-top">
           <div className="footer-brand">
             <img src={logo} alt={logo} className="brand-logo"/>
-            <p className="brand-text">We match industry leaders with top-tier, designers, developers, and project managers on demand.</p>
+            <p className="brand-text">We match industry leaders with top-tier designers, developers, and project managers on demand.</p>
           </div>
 
           <div className="footer-sitemap">
