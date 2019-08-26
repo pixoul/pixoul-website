@@ -108,15 +108,20 @@ const JoinTeam = () => {
               />
             </Col>
           </Row>
+          <Row>
+            <Col sm={12}>
+              <div className="form-action">
+                <input ref={fileInput} type="file" name="file" className="form-file" onChange={(e) => setResume(e.target.files[0])}/>
+                <Button className="form-button" onClick={upload} outline>
+                  {resume && <img src={check} alt={check} /> }
+                  { resume ?  ' Resume Uploaded' : 'Attach Resume'}</Button>
+                <Button className="form-button" onClick={send}>Apply to Our Team</Button>
+              </div>
+            </Col>
+          </Row>
         </Container>
 
-        <div className="form-action">
-          <input ref={fileInput} type="file" name="file" className="form-file" onChange={(e) => setResume(e.target.files[0])}/>
-          <Button className="form-button" onClick={upload} outline>
-            {resume && <img src={check} alt={check} /> }
-            { resume ?  ' Resume Uploaded' : 'Attach Resume'}</Button>
-          <Button className="form-button" onClick={send}>Apply to Our Team</Button>
-        </div>
+
       </form>
     </div>
   )
