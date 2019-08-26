@@ -87,11 +87,14 @@ const PartnershipProgram = () => {
                 />
               </Col>
             </Row>
+            <Row>
+              <Col sm={12}>
+                <div className="form-action">
+                  <Button className="form-button" onClick={send}>Get In Touch</Button>
+                </div>
+              </Col>
+            </Row>
           </Container>
-
-          <div className="form-action">
-            <Button className="form-button" onClick={send}>Get In Touch</Button>
-          </div>
         </form>
     </div>
   )
