@@ -1,6 +1,7 @@
 
 .legend {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
 
   .legend-title {
     display: inline-block;
@@ -11,6 +12,7 @@
     list-style: none;
     padding-bottom: 29px;
     padding-left: 0px;
+    text-transform: uppercase;
   }
 
   .legend-item {
@@ -19,6 +21,7 @@
     color: #ffffff;
     padding-bottom: 17px;
     padding-left: 17px;
+    width: 100%;
 
     &:before {
       content: "\2022";
@@ -96,6 +99,7 @@
         letter-spacing: 2.36px;
         color: #ffffff;
         padding-bottom: 7px;
+        text-transform: uppercase;
       }
 
       .step-description {

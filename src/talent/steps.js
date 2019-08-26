@@ -24,7 +24,7 @@ list.push({
 list.push({
   header: 'Step 4 - Top 3%',
   title: 'Coding or Design Challenge',
-  description: 'Candidates at this stage are asked to complete design, research, or coding challneges.  Only those with expert-level comprehension will move move forward.',
+  description: 'Candidates at this stage are asked to complete design, research, or coding challenges. Only those with expert-level comprehension will move forward.',
   color: 'white'
 })
 
@@ -45,7 +45,7 @@ list.push({
 list.push({
   header: 'Step 7 - Top 1%',
   title: 'One-On-One Assessment',
-  description: 'After being accepted into our network, our Team Members recieve weekly support from their business-strategy advisors and are expected to routinely learn and grow as technology advances.',
+  description: 'After being accepted into our network, our Team Members receive weekly support from their business-strategy advisors and are expected to routinely learn and grow as technology advances.',
   color: 'blue'
 })
 
