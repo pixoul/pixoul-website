@@ -1,4 +1,5 @@
 import React, { Suspense } from "react"
+import { ThemeProvider } from 'react-jss'
 import "./app.scss"
 
 import LoadingScreen from "utils/loading/loading"
@@ -7,6 +8,19 @@ const Header = React.lazy(() => import("layout/header/header"))
 const Footer = React.lazy(() => import("layout/footer/footer"))
 const Routes = React.lazy(() => import("app/routes"))
 
+
+const theme = {
+  color : {
+    primary: '#276cf2',
+    secondary: '#656b6f'
+  },
+  text: {
+    primary: '#3c3d41',
+    secondary: '#656b6f'
+  }
+}
+
+
 function App(props) {
 
   return (
@@ -14,7 +28,9 @@ function App(props) {
       <Suspense fallback={<div className="loading"  />}>
           <Header />
             <LoadingScreen watchRoutes />
-            <Routes />
+            <ThemeProvider theme={theme}>
+              <Routes />
+            </ThemeProvider>
           <Footer />
      </Suspense>
     </div>
