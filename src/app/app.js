@@ -1,25 +1,13 @@
 import React, { Suspense } from "react"
 import { ThemeProvider } from 'react-jss'
 import "./app.scss"
+import theme from "styles/theme"
 
 import LoadingScreen from "utils/loading/loading"
 
 const Header = React.lazy(() => import("layout/header/header"))
 const Footer = React.lazy(() => import("layout/footer/footer"))
 const Routes = React.lazy(() => import("app/routes"))
-
-
-const theme = {
-  color : {
-    primary: '#276cf2',
-    secondary: '#656b6f'
-  },
-  text: {
-    primary: '#3c3d41',
-    secondary: '#656b6f'
-  }
-}
-
 
 function App(props) {
 
