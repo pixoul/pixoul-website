@@ -3,7 +3,7 @@
 
   .intro-section {
     background-image: radial-gradient(circle at 53% 100%, #ffffff, #eeeeee);
-    height: calc(100vh - 150px);
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +97,7 @@
     }
 
   }
-  
+
   .quality-performance {
     text-align: center;
     padding-top: 130px;
