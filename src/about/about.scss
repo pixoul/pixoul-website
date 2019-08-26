@@ -124,6 +124,11 @@
 
     .feature {
       padding-bottom: 100px;
+
+      .feature-description {
+        width: 70%;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -198,6 +203,7 @@
         white-space: nowrap;
         padding-top: 25px;
         padding-left: 18px;
+        margin-left: 36px;
 
         &:first-child, &:last-child {
           list-style: none;

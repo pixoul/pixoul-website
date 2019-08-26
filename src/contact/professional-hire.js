@@ -40,7 +40,7 @@ const ProfessionalHire = () => {
   return (
     <div className="professional-hire">
       <div className="contact-intro">
-        <div className="contact-title">Request Your <span className="bold">Free Estimate</span> and Get to Work.</div>
+        <div className="contact-title">Request Your <span className="bold">Free Estimate</span> <br /> and Get to Work.</div>
         <div className="contact-description">Whether you’re looking for a single designer, developer, or project manager,—or an entire scrum team—we’ll match you with the perfect fit, fast.</div>
       </div>
 
@@ -88,11 +88,14 @@ const ProfessionalHire = () => {
               />
             </Col>
           </Row>
+          <Row>
+            <Col sm={12}>
+              <div className="form-action">
+                <Button className="form-button" onClick={send}>Get In Touch</Button>
+              </div>
+            </Col>
+          </Row>
         </Container>
-
-        <div className="form-action">
-          <Button className="form-button" onClick={send}>Get In Touch</Button>
-        </div>
       </form>
 
     </div>
