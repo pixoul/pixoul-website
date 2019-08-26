@@ -40,7 +40,7 @@ const PartnershipProgram = () => {
   return (
     <div className="partnership-program">
         <div className="contact-intro">
-          <div className="contact-title">Share the Love, and <span className="bold">Get Paid.</span></div>
+          <div className="contact-title">Share the Love, and <br /><span className="bold">Get Paid.</span></div>
           <div className="contact-description">We’re always looking for new clients or additions to our freelancer network.  Got the perfect fit in mind?  Let us know—we pay for every quality connection.</div>
         </div>
         <form className="form">
