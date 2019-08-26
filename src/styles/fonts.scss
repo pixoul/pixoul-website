@@ -39,7 +39,32 @@
   font-style: normal;
 }
 
-body, h1, h2, h3, h4, h5, h6, p {
+body {
   font-family: 'AvenirNext';
-  -webkit-font-smoothing: antialiased;
+  font-size: calc(12px + .35vw); /* Responsive base font size */
+  line-height: calc(12px + 1.05vw); /* Responsive Vertical Rhythm */
+}
+
+h1 {
+  font-size: 3.549em;
+  line-height: calc(18px + 3.8vw); /* Responsive Vertical Rhythm */
+}
+h2 {
+  font-size: 2.856em;
+  line-height: calc(18px + 3vw); /* Responsive Vertical Rhythm */
+}
+h3 {
+  font-size: 2.73em;
+  line-height: calc(18px + 2.7vw); /* Responsive Vertical Rhythm */
+}
+h4 { font-size: 2.486em; }
+h5 { font-size: 2.197em; }
+h6 { font-size: 2.1em; }
+
+h4, h5, h6 {
+  line-height: calc(18px + 2.2vw); /* Responsive Vertical Rhythm */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: calc(12px + 1.05vw) 0; /* Responsive margins */
 }
