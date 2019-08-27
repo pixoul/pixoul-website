@@ -3,14 +3,15 @@ import React from "react"
 import { Link } from "react-router-dom"
 /* Utils */
 import Button from "utils/button/button"
+import Typography from "utils/typography/typography"
 /* Images */
 import ipad from "./images/ipad.svg"
 
 const Intro = () => {
   return(
     <div className="intro-section">
-      <h1 className="intro-text">On Demand IT Talent,</h1>
-      <h1 className="intro-text">Simplified.</h1>
+      <Typography variant="h1" color="primary" align="center" weight="bold">On Demand IT Talent, <br /> Simplified.</Typography>
+
       <div className="button-group">
         <Button tag={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
         <Button outline tag={Link} to="/contact/join-team">Join the Team</Button>

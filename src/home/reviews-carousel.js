@@ -2,6 +2,7 @@ import React from "react"
 /* Utils */
 import { Carousel, Slide } from "utils/carousel"
 import Review from "utils/review-card/review-card"
+import Typography from "utils/typography/typography"
 
 import quote from "./images/quote.svg"
 
@@ -12,7 +13,8 @@ const ReviewsCarousel = () => {
 
   return(
     <div className="reviews gutters">
-      <h3 className="reviews-title">What Our Clients Say</h3>
+
+      <Typography variant="h6" color="primary" align="center" weight="bold" transform="uppercase">What Our Clients Say</Typography>
       <div className="review-quote">
         <img src={quote} alt={quote} draggable="false" />
       </div>

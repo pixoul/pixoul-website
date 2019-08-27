@@ -1,5 +1,7 @@
 import React, { Suspense } from "react"
+import { ThemeProvider } from 'react-jss'
 import "./app.scss"
+import theme from "styles/theme"
 
 import LoadingScreen from "utils/loading/loading"
 
@@ -14,7 +16,9 @@ function App(props) {
       <Suspense fallback={<div className="loading"  />}>
           <Header />
             <LoadingScreen watchRoutes />
-            <Routes />
+            <ThemeProvider theme={theme}>
+              <Routes />
+            </ThemeProvider>
           <Footer />
      </Suspense>
     </div>

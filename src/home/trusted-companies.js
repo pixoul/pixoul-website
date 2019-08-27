@@ -1,5 +1,6 @@
 import React from "react"
-
+/* Utils */
+import Typography from "utils/typography/typography"
 /* Images */
 import disney from "./images/companies/disney.svg"
 import airbnb from "./images/companies/airbnb.svg"
@@ -11,7 +12,7 @@ const TrustedCompanies = () => {
 
   return(
     <div className="trusted-companies">
-        <h3 className="trusted-title">OUR TALENT NETWORK HAS WORKED FOR COMAPNIES LIKE:</h3>
+        <Typography variant="h6" color="primary" align="center" weight="bold" transform="uppercase">OUR TALENT NETWORK HAS WORKED FOR COMAPNIES LIKE:</Typography>
         <div className="trusted-media">
           <img src={disney} alt={disney} />
           <img src={airbnb} alt={airbnb} />

@@ -3,7 +3,7 @@ import React from "react"
 import { Container, Row, Col } from 'react-grid-system'
 import { Link } from "react-router-dom"
 /* Utils */
-import Opening from "utils/opening/opening"
+import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 import Button from "utils/button/button"
 /* Icons */
@@ -15,10 +15,9 @@ const TopCapabilities = () => {
 
   return(
     <div className="top-capabilities">
-        <Opening
-          title="Our Top Capabilities."
-          subtitle="Hire career-focused team members who will grow and support your initiatives."
-        />
+
+        <Typography variant="h1" color="primary" align="center" weight="bold">Our Top Capabilities.</Typography>
+        <Typography variant="h5" color="secondary" align="center">Hire career-focused team members who <br /> will grow and support your initiatives.</Typography>
 
         <Container>
           <Row>
