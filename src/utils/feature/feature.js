@@ -2,6 +2,7 @@ import React from "react"
 import "./feature.scss"
 /* Third-Party */
 import cn from "classnames"
+import Typography from "utils/typography/typography"
 
 const Feature = ({
   title,
@@ -25,8 +26,8 @@ const Feature = ({
         <img src={media} alt={media} />
       </div>
       <div className="feature-content">
-        <h4 className="feature-title">{title}</h4>
-        <p className="feature-description">{description}</p>
+        <Typography variant="p" color="primary" weight="bold" transform="uppercase">{title}</Typography>
+        <Typography variant="p" color="secondary">{description}</Typography>
       </div>
     </div>
   )
