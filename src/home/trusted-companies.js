@@ -11,7 +11,7 @@ import kw from "./images/companies/kw.svg"
 const TrustedCompanies = () => {
 
   return(
-    <div className="trusted-companies">
+    <div className="trusted-companies gutters">
         <Typography variant="h6" color="primary" align="center" weight="bold" transform="uppercase">OUR TALENT NETWORK HAS WORKED FOR COMAPNIES LIKE:</Typography>
         <div className="trusted-media">
           <img src={disney} alt={disney} />
