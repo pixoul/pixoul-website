@@ -1,16 +1,15 @@
 import React from "react"
 /* Utils */
-import Opening from "utils/opening/opening"
+import Typography from "utils/typography/typography"
 import Stat from "utils/stat/stat"
 
 const QualityPerformance = () => {
 
   return(
     <div className="quality-performance">
-      <Opening
-        title="Quality and Perfomance."
-        subtitle="Our most impressive stats speak for themselves."
-      />
+
+      <Typography variant="h1" color="primary" align="center" weight="bold">Quality and Perfomance.</Typography>
+      <Typography variant="h5" color="secondary" align="center">Our most impressive stats speak for <br /> themselves.</Typography>
 
       <div className="quality-stats">
         <Stat
