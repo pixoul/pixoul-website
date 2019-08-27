@@ -7,8 +7,10 @@ import injectSheet from 'react-jss'
 const styles = theme => ({
   typography: props => ({
     fontSize: props.fontSize,
+    fontWeight: props.weight,
     color: theme.text[props.color],
-    textAlign: props.align
+    textAlign: props.align,
+    textTransform: props.transform
   })
 })
 
@@ -26,7 +28,9 @@ const Typography = ({
 Typography.defaultProps = {
   variant: 'div',
   color: 'initial',
-  align: 'inherit'
+  align: 'inherit',
+  weight: 'normal',
+  transform: 'inherit'
 }
 
 export default injectSheet(styles)(Typography)
