@@ -2,7 +2,7 @@ import React from "react"
 /* Third-Party */
 import { Container, Row, Col } from 'react-grid-system'
 /* Utils */
-import Opening from "utils/opening/opening"
+import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 /* Icons */
 import clock from "./images/icons/clock.svg"
@@ -14,7 +14,8 @@ import layout from "./images/icons/layout.svg"
 
 const LoveMore = () => (
   <div className="love-more">
-    <Opening title="More to Love." />
+
+    <Typography variant="h1" color="primary" align="center" weight="bold">More to Love.</Typography>
 
     <Container>
       <Row>
