@@ -2,38 +2,29 @@
 .faq {
   padding-top: 86px;
 
-  .faq-title {
-    font-size: 62px;
-    font-weight: bold;
-    letter-spacing: -2.38px;
-    text-align: center;
-    color: #3c3d41;
-    padding-bottom: 74px;
-  }
-
   .faq-header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     .faq-number {
-      font-size: 15.6px;
-      color: #3c3d41;
-      border: solid 1.2px #dddddd;
+      width: 1.125em;
+      height: 1.125em;
+      padding: 0.5em;
+      text-align: center;
       border-radius: 50%;
-      height: 40px;
-      width: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      font-size: 1em;
+      color: #3c3d41;
+      border: solid 2px #dddddd;
       margin-right: 30px;
     }
 
     .faq-question {
-      font-size: 13.2px;
+      font-size: 0.75em;
       font-weight: bold;
+      text-transform: uppercase;
       letter-spacing: 2.4px;
       color: #3c3d41;
     }
@@ -46,11 +37,8 @@
   .faq-answer {
     font-size: 1em;
     color: #656b6f;
-
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 67px;
-    padding-right: 149px;
   }
 
   .network-hero {
