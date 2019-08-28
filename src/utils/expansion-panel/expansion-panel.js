@@ -1,15 +1,46 @@
 import React, { useState } from "react"
-import "./expansion-panel.scss"
 /* Third-Party */
+import injectSheet from 'react-jss'
 import { useSpring, animated } from 'react-spring'
 import { useMeasure } from "./measure"
 /* Icons */
 import plus from "./plus.svg"
 import minus from "./minus.svg"
 
+const styles = theme => ({
+  panel : {
+    backgroundColor: '#fff',
+    borderTop: '1px solid #dddddd'
+  },
+  header : {
+    minHeight: '100px',
+    zIndex: 1,
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    position: 'relative',
+    cursor: 'pointer',
+    backgroundColor: '#fff'
+  },
+  body: {
+    "&:before": {
+      content: '""',
+      display: 'block',
+      margin: '0 auto',
+      width: '20%',
+      paddingTop: '20px',
+      borderBottom: '1px solid #dddddd'
+    }
+  },
+  action: {
+    marginLeft: 20
+  }
+})
+
 const ExpansionPanel = ({
   header,
-  children
+  children,
+  classes
 }) => {
 
   const [open, togglePannel] = useState(false)
@@ -29,16 +60,16 @@ const ExpansionPanel = ({
   })
 
   return(
-    <div className="expansion-panel">
-      <div className="panel-header">{header}</div>
-      <animated.div className="panel-body" style={props}>
-        <div className="panel-content" {...bind}>{children}</div>
-      </animated.div>
-      <div className="panel-control" onClick={() => togglePannel(!open)}>
-        <img src={open ? minus : plus} alt={open ? minus : plus} className="panel-action" />
+    <div className={classes.panel}>
+      <div className={classes.header} onClick={() => togglePannel(!open)}>
+        {header}
+        <img src={open ? minus : plus} alt={open ? minus : plus} className={classes.action}/>
       </div>
+      <animated.div className={classes.body} style={props}>
+        <div {...bind}>{children}</div>
+      </animated.div>
     </div>
   )
 }
 
-export default ExpansionPanel
+export default injectSheet(styles)(ExpansionPanel)

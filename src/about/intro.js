@@ -3,6 +3,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 /* Utils */
 import Button from "utils/button/button"
+import Typography from "utils/typography/typography"
 /* Images */
 import iphoneFront from "./images/iphone-front.svg"
 import iphoneBack from "./images/iphone-back.svg"
@@ -10,10 +11,10 @@ import iphoneBack from "./images/iphone-back.svg"
 const Intro = () => (
   <div className="intro-section gutters">
     <div className="intro-content">
-      <h4 className="intro-tagline">HIGH PERFORMING TALENT, ON DEMAND.</h4>
-      <h1 className="intro-title">Welcome to Your Elite Talent Network.</h1>
-      <p className="intro-text">We hire world-class designers, developers and project managers.  Pixoul talent contributes to the most innovative and profitable companies across the globe. </p>
-
+      <Typography variant="h6" color="white" align="left" weight="bold">HIGH PERFORMING TALENT, ON DEMAND.</Typography>
+      <Typography variant="h1" color="white" align="left" weight="bold">Welcome to Your Elite Talent Network.</Typography>
+      <Typography variant="p" color="white" align="left" >We hire world-class designers, developers and project managers.  Pixoul talent contributes to the most innovative and profitable companies across the globe.</Typography>
+      
       <div className="button-group">
         <Button theme="secondary" tag={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
         <Button theme="secondary" outline tag={Link} to="/contact/join-team">Join the Team</Button>
