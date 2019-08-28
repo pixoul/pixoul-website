@@ -168,64 +168,7 @@
 
     .comparison-area {
       display: flex;
-      justify-content: center;
-      align-items: center;
       width: 100%;
-    }
-
-    .comparison-list {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      justify-content: center;
-      width: 376px;
-      height: 480px;
-      margin: 0px;
-      margin-left: 38px;
-      padding-left: 43px;
-      padding-right: 20px;
-
-      &.blue-background {
-        background-color: rgba(10, 104, 251, 0.1);
-      }
-
-      &.check {
-        list-style-image: url('./images/check.svg');
-      }
-
-      &.times {
-        list-style-image: url('./images/times.svg');
-      }
-
-      li {
-        font-size: 1.375em;
-        color: #656b6f;
-        white-space: nowrap;
-        padding-top: 25px;
-        padding-left: 18px;
-        margin-left: 36px;
-
-        &:first-child, &:last-child {
-          list-style: none;
-          padding-bottom: 0px;
-          padding-left: 0;
-          padding-right: 48px;
-          text-transform: uppercase;
-        }
-
-        &:first-child {
-          font-size: 13.2px;
-          font-weight: bold;
-          letter-spacing: 2.4px;
-          text-align: center;
-          color: #3c3d41;
-        }
-
-        &:last-child {
-          text-align: center;
-        }
-      }
-
     }
   }
 }
