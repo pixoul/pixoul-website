@@ -3,6 +3,7 @@ import "./faq.scss"
 
 /* Utils */
 import ExpansionPanel from "utils/expansion-panel/expansion-panel"
+import Typography from "utils/typography/typography"
 /* Presentation Components */
 import NetworkHero from "./network-hero"
 /* Data */
@@ -14,7 +15,7 @@ const FAQHeader = ({
   question
 }) => (
   <div className="faq-header">
-    <div className="faq-number"> {number} </div>
+    <div className="faq-number">{number}</div>
     <div className="faq-question">{question}</div>
   </div>
 )
@@ -23,7 +24,7 @@ const FAQ = () => {
 
   return(
     <div className="faq">
-      <div className="faq-title">Frequently Asked <br />Questions.</div>
+      <Typography variant="h1" color="primary" align="center" weight="bold">Frequently Asked <br />Questions.</Typography>
 
       <div className="faq-questions gutters">
         {data.map((faq, i) => (

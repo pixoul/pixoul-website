@@ -27,11 +27,13 @@ const styles = theme => ({
       content: '""',
       display: 'block',
       margin: '0 auto',
-      marginLeft: '67px',
-      width: '5%',
+      width: '20%',
       paddingTop: '20px',
       borderBottom: '1px solid #dddddd'
     }
+  },
+  action: {
+    marginLeft: 20
   }
 })
 
@@ -61,7 +63,7 @@ const ExpansionPanel = ({
     <div className={classes.panel}>
       <div className={classes.header} onClick={() => togglePannel(!open)}>
         {header}
-        <img src={open ? minus : plus} alt={open ? minus : plus} />
+        <img src={open ? minus : plus} alt={open ? minus : plus} className={classes.action}/>
       </div>
       <animated.div className={classes.body} style={props}>
         <div {...bind}>{children}</div>
