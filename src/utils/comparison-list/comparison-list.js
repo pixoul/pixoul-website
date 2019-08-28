@@ -11,8 +11,6 @@ const styles = theme => ({
     flexDirection: 'column',
     alignItems: 'flex-start',
     justifyContent: 'space-evenly',
-    width: '376px',
-    height: '480px',
     margin: {
       top: 0,
       right: 29,
@@ -21,10 +19,11 @@ const styles = theme => ({
     },
     padding : {
       top: 48,
-      right: 20,
+      right: 27,
       bottom: 48,
       left: 27
     },
+    borderRadius: 10,
     backgroundColor: props => props.active ? 'rgba(10, 104, 251, 0.1)' : 'inherit'
   },
   item : {
@@ -36,7 +35,11 @@ const styles = theme => ({
       margin: {
         right: 18
       }
-    }
+    },
+    marginTop: 25
+  },
+  items: {
+    margin: '0 auto'
   },
   title : {
     textTransform: 'uppercase',
@@ -50,7 +53,19 @@ const styles = theme => ({
   action: {
     textTransform: 'uppercase',
     textAlign: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    marginTop: 50
+  },
+  '@media (max-width: 768px)': {
+    list: {
+      margin: {
+        right: 12,
+        left: 12
+      }
+    },
+    item : {
+      fontSize: '1em'
+    }
   }
 
 })
@@ -65,9 +80,11 @@ const ComparisonList = ({
   return (
     <div className={classes.list}>
       <div className={classes.title}>{title}</div>
-      {items.map((item, i) => (
-        <div key={i} className={classes.item}>{item}</div>
-      ))}
+      <div className={classes.items}>
+        {items.map((item, i) => (
+          <div key={i} className={classes.item}>{item}</div>
+        ))}
+      </div>
       <div className={classes.action}>{action}</div>
     </div>
   )

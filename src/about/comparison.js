@@ -4,13 +4,13 @@ import { Link } from "react-router-dom"
 import cn from "classnames"
 import { Container, Row, Col } from 'react-grid-system'
 /* Utils */
-import Opening from "utils/opening/opening"
+import Typography from "utils/typography/typography"
 import Button from "utils/button/button"
 import ComparisonList from "utils/comparison-list/comparison-list"
 
 const Comparison = () => (
-  <div className="comparison gutters">
-    <Opening title="How We Compare." />
+  <div className="comparison">
+    <Typography variant="h1" color="primary" align="center" weight="bold">How We Compare.</Typography>
 
     <div className="comparison-area">
       <ComparisonList

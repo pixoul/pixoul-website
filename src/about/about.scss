@@ -168,6 +168,8 @@
 
     .comparison-area {
       display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
     }
   }
@@ -178,6 +180,7 @@
     .comparison {
       .comparison-area {
         flex-direction: column;
+        align-items: stretch;
       }
 
       .comparison-list {
