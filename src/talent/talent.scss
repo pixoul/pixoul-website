@@ -137,6 +137,44 @@
 
 @media (max-width: 768px) {
   .talent {
+    .intro-section {
+      height: calc(100vh - 150px);
+      flex-direction: column;
+      padding-top: 45px;
+      padding-left: 45px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .intro-content {
+        width: 100%;
+      }
+
+      .intro-media {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .featured-member {
+      flex-direction: column-reverse;
+      padding-top: 86px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .member-content {
+        padding-left: 0px;
+        padding-right: 30px;
+      }
+
+      .member-media {
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
     .client-work {
       padding-top: 45px;
       padding-bottom: 45px;
