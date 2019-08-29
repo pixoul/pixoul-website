@@ -14,7 +14,7 @@ const ClientWork = () => {
 
   return (
     <div className="client-work gutters">
-        <Carousel maxSlides={1} autoplay>
+        <Carousel maxSlides={1}>
           <Slide>
             <Project
               media={ikarus}
