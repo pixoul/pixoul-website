@@ -2,7 +2,7 @@ import React from "react"
 /* Third-Party */
 import { Container, Row, Col } from 'react-grid-system'
 /* Utils */
-import Opening from "utils/opening/opening"
+import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 /* Images */
 import heart from "./images/icons/heart.svg"
@@ -16,10 +16,8 @@ const Excel = () => (
 
     <div className="excel-header">
       <img src={heart} alt={heart} className="excel-image"/>
-      <Opening
-        title="Where We Excel."
-        subtitle="We supply the talent you need, right when you need it.  Our network spans skill in programming languages, branding, research, and more."
-      />
+      <Typography variant="h1" color="primary" align="center" weight="bold">Where We Excel.</Typography>
+      <Typography variant="p" color="secondary" align="center">We supply the talent you need, right when you need it.  Our network spans skill in programming languages, branding, research, and more.</Typography>
     </div>
 
     <Container>
