@@ -9,9 +9,7 @@ import person from "./images/person.svg"
 
 const FeaturedMember = () => (
   <div className="featured-member">
-    <div className="member-media">
-      <img src={person} alt={person} />
-    </div>
+    <img src={person} alt={person} className="member-media" />
     <div className="member-content">
       <Typography variant="h6" color="primary" align="left" weight="bold" transform="uppercase">Featured Team Member</Typography>
       <Typography variant="h3" color="primary" align="left">Hello, I'm Kenny Kimmel, a UX/UI Designer and Front End Developer, based in New York.</Typography>
