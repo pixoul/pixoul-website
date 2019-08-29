@@ -4,8 +4,8 @@ import injectSheet from 'react-jss'
 import { useSpring, animated } from 'react-spring'
 import { useMeasure } from "./measure"
 /* Icons */
-import plus from "./plus.svg"
-import minus from "./minus.svg"
+import PlusIcon from "utils/icons/plus"
+import MinusIcon from "utils/icons/minus"
 
 const styles = theme => ({
   panel : {
@@ -63,7 +63,7 @@ const ExpansionPanel = ({
     <div className={classes.panel}>
       <div className={classes.header} onClick={() => togglePannel(!open)}>
         {header}
-        <img src={open ? minus : plus} alt={open ? minus : plus} className={classes.action}/>
+        <div className={classes.action}>{open ? <MinusIcon color="#3c3d41" /> : <PlusIcon color="#3c3d41" />}</div>
       </div>
       <animated.div className={classes.body} style={props}>
         <div {...bind}>{children}</div>

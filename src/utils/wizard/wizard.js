@@ -19,7 +19,7 @@ const WizardNavigation = ({
 
   return(
     <div className={classes} onClick={onClick} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-      <img src={icon} alt={icon} className="navigation-icon" />
+      <div className="navigation-icon">{icon}</div>
       <span className="navigation-dot" />
       <span className="navigation-title">{title}</span>
     </div>

@@ -7,9 +7,9 @@ import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 import Button from "utils/button/button"
 /* Icons */
-import development from "./images/icons/development.svg"
-import design from "./images/icons/design.svg"
-import pm from "./images/icons/pm.svg"
+import DevelopmentIcon from "utils/icons/development"
+import DesignIcon from "utils/icons/design"
+import ProjectManagementIcon from "utils/icons/project-management"
 
 const TopCapabilities = () => {
 
@@ -25,7 +25,7 @@ const TopCapabilities = () => {
               <Feature
                 position="top-center"
                 title="Development"
-                media={development}
+                icon={<DevelopmentIcon color="#276cf2" />}
                 description="Front-end, back-end, QA testing, and database admin."
               />
             </Col>
@@ -33,7 +33,7 @@ const TopCapabilities = () => {
               <Feature
                 position="top-center"
                 title="UX/UI DESIGN"
-                media={design}
+                icon={<DesignIcon color="#276cf2" />}
                 description="Research, branding, design, animation, and product demos."
               />
             </Col>
@@ -41,7 +41,7 @@ const TopCapabilities = () => {
               <Feature
                 position="top-center"
                 title="PROJECT MANAGEMENT"
-                media={pm}
+                icon={<ProjectManagementIcon color="#276cf2" />}
                 description="Agile and waterfall methodologies, design thinking, and more."
               />
             </Col>

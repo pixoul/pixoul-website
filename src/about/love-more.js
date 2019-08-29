@@ -5,12 +5,12 @@ import { Container, Row, Col } from 'react-grid-system'
 import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 /* Icons */
-import clock from "./images/icons/clock.svg"
-import thumbsup from "./images/icons/thumbsup.svg"
-import heart from "./images/icons/heart.svg"
-import wand from "./images/icons/wand.svg"
-import pm from "./images/icons/pm.svg"
-import layout from "./images/icons/layout.svg"
+import ClockIcon from "utils/icons/clock"
+import ThumbsupIcon from "utils/icons/thumbsup"
+import HeartIcon from "utils/icons/heart"
+import WandIcon from "utils/icons/wand"
+import ProjectManagementIcon from "utils/icons/project-management"
+import LayoutIcon from "utils/icons/layout"
 
 const LoveMore = () => (
   <div className="love-more">
@@ -23,7 +23,7 @@ const LoveMore = () => (
           <Feature
             position="top-center"
             title="Senior Level Expertise"
-            media={clock}
+            icon={<ClockIcon color="#276cf2" />}
             description="Our team is ready to hit the ground running."
           />
         </Col>
@@ -31,7 +31,7 @@ const LoveMore = () => (
           <Feature
             position="top-center"
             title="Higher Quality Teams"
-            media={thumbsup}
+            icon={<ThumbsupIcon color="#276cf2" />}
             description="Plan for clean design and even cleaner code."
           />
         </Col>
@@ -39,7 +39,7 @@ const LoveMore = () => (
           <Feature
             position="top-center"
             title="Expert Management"
-            media={heart}
+            icon={<HeartIcon color="#276cf2" />}
             description="Your account manager will guide every step."
           />
         </Col>
@@ -47,7 +47,7 @@ const LoveMore = () => (
           <Feature
             position="top-center"
             title="Hand-Picked Team"
-            media={wand}
+            icon={<WandIcon color="#276cf2" />}
             description="We’re AI-powered, but hand delivered."
           />
         </Col>
@@ -55,7 +55,7 @@ const LoveMore = () => (
           <Feature
             position="top-center"
             title="Online Platform"
-            media={layout}
+            icon={<LayoutIcon color="#276cf2" />}
             description="Use our powerful tools for all your needs."
           />
         </Col>
@@ -63,7 +63,7 @@ const LoveMore = () => (
           <Feature
             position="top-center"
             title="Automated Payroll"
-            media={pm}
+            icon={<ProjectManagementIcon color="#276cf2" />}
             description="Scale with ease to handle demand."
           />
         </Col>

@@ -1,9 +1,9 @@
 import React from "react"
 /* Third-Party */
 import injectSheet from 'react-jss'
-/* Images */
-import check from "./check.svg"
-import times from "./times.svg"
+/* Icons */
+import CheckIcon from "utils/icons/check"
+import TimesIcon from "utils/icons/times"
 
 const styles = theme => ({
   list: {
@@ -30,13 +30,12 @@ const styles = theme => ({
     fontSize: '1.375em',
     color: '#656b6f',
     whiteSpace: 'nowrap',
-    "&:before": {
-      content: props => `url(${props.type === "times" ? times : check})`,
-      margin: {
-        right: 18
-      }
-    },
     marginTop: 25
+  },
+  icon: {
+    margin: {
+      right: 18
+    }
   },
   items: {
     margin: '0 auto'
@@ -74,6 +73,7 @@ const ComparisonList = ({
   title,
   action,
   items = [],
+  type,
   classes
 }) => {
 
@@ -82,7 +82,10 @@ const ComparisonList = ({
       <div className={classes.title}>{title}</div>
       <div className={classes.items}>
         {items.map((item, i) => (
-          <div key={i} className={classes.item}>{item}</div>
+          <div key={i} className={classes.item}>
+            <span className={classes.icon}>{type === "times" ? <TimesIcon color="#ff0000" /> : <CheckIcon color="#0a68fb" />}</span>
+            <span>{item}</span>
+          </div>
         ))}
       </div>
       <div className={classes.action}>{action}</div>
