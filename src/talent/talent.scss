@@ -117,7 +117,8 @@
     background-color: #f9f9f9;
     padding-top: 130px;
     padding-bottom: 130px;
-    
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
   .excel {
@@ -129,6 +130,18 @@
       .excel-image {
         padding-bottom: 22px;
       }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .talent {
+    .client-work {
+      padding-top: 45px;
+      padding-bottom: 45px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
 }
