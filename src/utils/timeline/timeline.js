@@ -3,7 +3,7 @@ import injectSheet from 'react-jss'
 
 const styles = theme => ({
   timeline: {
-    borderLeft: '2px solid rgba(255, 255, 255, 0.2)'
+    width: '100%'
   }
 })
 

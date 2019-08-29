@@ -7,6 +7,12 @@ const styles = theme => ({
     justifyContent: 'center',
     alignItems: 'flex-start',
     paddingBottom: 67,
+    borderLeft: '2px solid rgba(255, 255, 255, 0.2)',
+    "&:last-child": {
+      borderLeftWidth: 2,
+      borderLeftStyle: 'solid',
+      borderImage: 'linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15)) 1 100%'
+    },
     "&:before" : {
       content: '"\\2022"',
       fontSize: '2em',
@@ -14,13 +20,12 @@ const styles = theme => ({
       display: 'inline-block',
       width: '1.5em',
       margin: {
-        top: -9,
-        left: -9
+        left: -9.5
       },
       color: props => {
         const colors = {
           'white': '#ffffff',
-          'clear': 'rgba(255,255,255,0.3)',
+          'gray': '#99999C',
           'blue': '#276cf2'
         }
         return colors[props.color]
@@ -29,8 +34,7 @@ const styles = theme => ({
   },
   header: {
     fontSize: '1em',
-    color: '#ffffff',
-    opacity: 0.5,
+    color: '#99999C',
     whiteSpace: 'nowrap',
     width: 300
   },
@@ -50,6 +54,30 @@ const styles = theme => ({
   description: {
     fontSize: '1em',
     color: '#ffffff'
+  },
+  '@media (max-width: 768px)': {
+    step: {
+      flexDirection: 'column'
+    },
+    header: {
+      width: '100%',
+      padding: {
+        left: 30
+      },
+      margin: {
+        top: -25
+      }
+    },
+    content: {
+      padding: {
+        left: 30
+      }
+    },
+    description: {
+      padding: {
+        right: 30
+      }
+    }
   }
 })
 

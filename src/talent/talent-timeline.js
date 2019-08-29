@@ -9,7 +9,7 @@ const TalentTimeline = () => (
   <div className="talent-timeline gutters">
     <div className="legend-area">
       <Legend>
-        <LegendItem color="clear">Week 1</LegendItem>
+        <LegendItem color="gray">Week 1</LegendItem>
         <LegendItem color="white">Week 2-4</LegendItem>
         <LegendItem color="blue">Week 4+</LegendItem>
       </Legend>
