@@ -175,6 +175,23 @@
       }
     }
 
+    .talent-timeline {
+      flex-direction: column;
+      padding-top: 57px;
+      padding-bottom: 57px;
+
+      .legend-area {
+        display: none;
+      }
+
+      .talent-main {
+        padding-left: 0px;
+        .talent-header {
+          padding-bottom: 60px;
+        }
+      }
+    }
+
     .client-work {
       padding-top: 45px;
       padding-bottom: 45px;

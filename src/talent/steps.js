@@ -4,21 +4,21 @@ list.push({
   header: 'Step 1 - 100%',
   title: 'All Applicants',
   description: 'Our applicants apply from around the world, seeking a network of business-minded IT professionals.',
-  color: 'clear'
+  color: 'gray'
 })
 
 list.push({
   header: 'Step 2 - Top 40%',
   title: 'Application Review',
   description: 'Pixoul domain experts do a comprehensive review of every application, resume, and portfolio, searching for exceptional, well-rounded individuals.',
-  color: 'clear'
+  color: 'gray'
 })
 
 list.push({
   header: 'Step 3 - Top 10%',
   title: 'Screening Interview',
   description: 'Beginning with a video conference, candidates must command a mastery of English reading, writing, and speaking, as well as show qualities of passion, determination, and a desire to grow their freelance business.',
-  color: 'clear'
+  color: 'gray'
 })
 
 list.push({
