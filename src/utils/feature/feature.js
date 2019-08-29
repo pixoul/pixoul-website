@@ -1,12 +1,25 @@
 import React from "react"
 import "./feature.scss"
 /* Third-Party */
+import injectSheet from 'react-jss'
 import cn from "classnames"
 import Typography from "utils/typography/typography"
 
+const styles = theme => ({
+  feature: {
+    display: 'flex'
+  },
+  content: {
+
+  },
+  media: {
+
+  }
+})
+
 const Feature = ({
   title,
-  media,
+  icon,
   description,
   position = 'top-left',
   theme = 'dark'
@@ -23,7 +36,7 @@ const Feature = ({
   return (
     <div className={classes}>
       <div className="feature-media">
-        <img src={media} alt={media} />
+        {icon}
       </div>
       <div className="feature-content">
         <Typography variant="p" color="primary" weight="bold" transform="uppercase">{title}</Typography>
@@ -33,4 +46,8 @@ const Feature = ({
   )
 }
 
-export default Feature
+Feature.defaultProps = {
+
+}
+
+export default injectSheet(styles)(Feature)

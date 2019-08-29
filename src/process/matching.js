@@ -6,12 +6,12 @@ import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 
 /* Icons */
-import check from "./images/icons/check.svg"
-import times from "./images/icons/times.svg"
-import user from "./images/icons/user.svg"
-import search from "./images/icons/search.svg"
-import plane from "./images/icons/plane.svg"
-import rocket from "./images/icons/rocket.svg"
+import CheckIcon from "utils/icons/check"
+import TimesIcon from "utils/icons/times"
+import UserIcon from "utils/icons/user"
+import SearchIcon from "utils/icons/search"
+import PlaneIcon from "utils/icons/plane"
+import RocketIcon from "utils/icons/rocket"
 /* Images */
 import candadite1 from "./images/candadites/candadite-1.png"
 import candadite2 from "./images/candadites/candadite-2.png"
@@ -29,7 +29,9 @@ const Candadite = ({
 }) => (
   <div className="candadite">
     <img src={media} alt={media} className="candadite-image" />
-    <img src={accepted ? check : times} alt={accepted ? check : times} className="candadite-status"/>
+    <div className="candadite-status">
+      {accepted ? <CheckIcon color="#276cf2" /> : <TimesIcon color="#ff0000" />}
+    </div>
   </div>
 )
 
@@ -47,7 +49,7 @@ const Matching = () => (
             <Feature
               position="top-left"
               title="1. TELL US YOUR NEEDS"
-              media={user}
+              icon={<UserIcon color="#276cf2" />}
               description="Work with your dedicated account manager."
             />
           </Col>
@@ -55,7 +57,7 @@ const Matching = () => (
             <Feature
               position="top-left"
               title="2. IDENTIFY CRITERIA"
-              media={search}
+              icon={<SearchIcon color="#276cf2" />}
               description="Prioritize skill, timezone, communication, and more."
             />
           </Col>
@@ -63,7 +65,7 @@ const Matching = () => (
             <Feature
               position="top-left"
               title="3. GIVE JOB DETAILS"
-              media={plane}
+              icon={<PlaneIcon color="#276cf2" />}
               description="Use our online platform to create your job."
             />
           </Col>
@@ -71,7 +73,7 @@ const Matching = () => (
             <Feature
               position="top-left"
               title="4. LET US DO THE REST"
-              media={rocket}
+              icon={<RocketIcon color="#276cf2" />}
               description="We’ll manually select the best fit based on your needs."
             />
           </Col>
