@@ -47,12 +47,12 @@ const Slide = ({ children }) => (
   </div>
 )
 
-const Carousel = ({ images = [], maxSlides = 5, center = false, children, autoplay = false, gutter, offset }) => {
+const Carousel = ({ images = [], maxSlides = 5, center = false, children, autoplay = false, gutter, offset, speed = 3000 }) => {
   const settings = {
       dots: true,
       arrows: true,
       infinite: true,
-      speed: 5000,
+      speed: speed,
       autoplay: autoplay,
       slidesToShow: maxSlides,
       slidesToScroll: maxSlides,
