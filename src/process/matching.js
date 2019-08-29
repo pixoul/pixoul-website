@@ -2,7 +2,7 @@ import React from "react"
 /* Third-Party */
 import { Container, Row, Col } from 'react-grid-system'
 /* Utils */
-import Opening from "utils/opening/opening"
+import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 
 /* Icons */
@@ -38,11 +38,8 @@ const Candadite = ({
 const Matching = () => (
   <div className="matching">
     <div className="matching-content">
-      <Opening
-        align="left"
-        title="White Glove Matching."
-        subtitle="Powered by our prorpietary AI, we narrow down your talent pool by matching on skills, industry experience, availability, location, and more.  Then, Pixoul hand-selects and presents your team for approval."
-      />
+      <Typography variant="h1" color="primary" align="left" weight="bold">White Glove Matching.</Typography>
+      <Typography variant="h6" color="secondary" align="left">Powered by our prorpietary AI, we narrow down your talent pool by matching on skills, industry experience, availability, location, and more.  Then, Pixoul hand-selects and presents your team for approval.</Typography>
 
       <Container>
         <Row nogutter>

@@ -1,7 +1,7 @@
 import React from "react"
 /* Utils */
 import {Wizard, WizardStep} from "utils/wizard/wizard"
-
+import Typography from "utils/typography/typography"
 /* Icons */
 import marker from "./images/icons/marker.svg"
 import wand from "./images/icons/wand.svg"
@@ -11,8 +11,8 @@ import rocket from "./images/icons/rocket-circle.svg"
 const ProjectSteps = () => (
   <div className="project-steps">
     <div className="project-lead">
-      <div className="project-tagline">STAFF AUGMENTATION OR FULL TEAM SUPPROT</div>
-      <div className="project-title">How We Engage Every Project.</div>
+      <Typography variant="h5" color="primary" align="center" weight="bold" transform="uppercase">STAFF AUGMENTATION OR FULL TEAM SUPPORT</Typography>
+      <Typography variant="h1" color="primary" align="center" weight="bold">How We Engage Every Project.</Typography>
     </div>
 
     <Wizard defaultStep={1}>
