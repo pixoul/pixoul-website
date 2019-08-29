@@ -13,8 +13,8 @@ import hcp from "./images/clients/hcp.png"
 const ClientWork = () => {
 
   return (
-    <div className="client-work gutters">
-        <Carousel maxSlides={1}>
+    <div className="client-work">
+        <Carousel maxSlides={1} autoplay>
           <Slide>
             <Project
               media={ikarus}
