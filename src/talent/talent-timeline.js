@@ -1,6 +1,6 @@
 import React from "react"
 /* Utils */
-import { Legend, Timeline, Step } from "utils/timeline/timeline"
+import { Legend, LegendItem, Timeline, Step } from "utils/timeline"
 import Typography from "utils/typography/typography"
 /* Data */
 import steps from "./steps"
@@ -8,7 +8,11 @@ import steps from "./steps"
 const TalentTimeline = () => (
   <div className="talent-timeline gutters">
     <div className="legend-area">
-      <Legend />
+      <Legend>
+        <LegendItem color="clear">Week 1</LegendItem>
+        <LegendItem color="white">Week 2-4</LegendItem>
+        <LegendItem color="blue">Week 4+</LegendItem>
+      </Legend>
     </div>
     <div className="talent-main">
       <div className="talent-header">
