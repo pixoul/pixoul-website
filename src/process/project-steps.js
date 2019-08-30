@@ -7,10 +7,6 @@ import MarkerIcon from "utils/icons/marker"
 import WandIcon from "utils/icons/wand"
 import ThumbsupIcon from "utils/icons/thumbsup"
 import RocketIcon from "utils/icons/rocket"
-import marker from "./images/icons/marker.svg"
-import wand from "./images/icons/wand.svg"
-import thumbsup from "./images/icons/thumbsup.svg"
-import rocket from "./images/icons/rocket-circle.svg"
 
 const ProjectSteps = () => (
   <div className="project-steps">
