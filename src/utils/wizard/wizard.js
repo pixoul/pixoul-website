@@ -4,7 +4,6 @@ import injectSheet from 'react-jss'
 import cn from "classnames"
 /* Child Components */
 import WizardNavigation from "./navigation"
-import WizardStep from "./step"
 
 const styles = theme => ({
   header: {
@@ -26,8 +25,44 @@ const styles = theme => ({
     padding: {
       top: 50,
       right: 130,
-      bottom: 0,
       left: 130
+    }
+  },
+  '@media (max-width: 768px)': {
+    header: {
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      justifyContent: 'center',
+      margin: {
+        right: 30,
+        left: 30
+      },
+      padding: {
+        bottom: 30
+      },
+      "&:before": {
+        borderTop: 'none',
+      },
+      borderLeft: '1px solid #dddddd',
+      borderImage: 'linear-gradient(to bottom, #ffffff 0%, #dddddd 30%, #dddddd 80%, #ffffff 100%)',
+      borderImageSlice: 1
+    },
+    body: {
+      padding: {
+        top: 15,
+        right: 30,
+        left: 30
+      },
+      "&:before": {
+        content: '""',
+        display: 'block',
+        margin: '0 auto',
+        paddingBottom: 30,
+        width: '50%',
+        borderTop: '1px solid #dddddd',
+        borderImage: 'linear-gradient(to right, #ffffff 0%, #dddddd 30%, #dddddd 80%, #ffffff 100%)',
+        borderImageSlice: 1
+      }
     }
   }
 })
@@ -85,7 +120,7 @@ Wizard.propTypes = {
 
     let error = null
     React.Children.forEach(prop, function (child) {
-      if (child.type !== WizardStep) {
+      if (child.type.displayName !== 'Jss(WizardStep)') {
         error = new Error(`${componentName} children should be of type 'WizardStep'`);
       }
     })
