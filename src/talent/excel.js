@@ -24,7 +24,8 @@ const Excel = () => (
       <Row>
         <Col sm={12} md={3}>
           <Feature
-            position="top-center"
+            position="top"
+            align="center"
             title="Research & Strategy"
             icon={<SearchIcon color="#3c3d41" />}
             description="Branding, Messaging, User Sentiment, etc."
@@ -32,7 +33,8 @@ const Excel = () => (
         </Col>
         <Col sm={12} md={3}>
           <Feature
-            position="top-center"
+            position="top"
+            align="center"
             title="UX/UI Design"
             icon={<DesignIcon color="#3c3d41" />}
             description="Wireframes, High Fidelity Mockups, User Testing, etc."
@@ -40,7 +42,8 @@ const Excel = () => (
         </Col>
         <Col sm={12} md={3}>
           <Feature
-            position="top-center"
+            position="top"
+            align="center"
             title="Development"
             icon={<DevelopmentIcon color="#3c3d41" />}
             description="Front End Implementation, Back End Databases, QA, etc."
@@ -48,7 +51,8 @@ const Excel = () => (
         </Col>
         <Col sm={12} md={3}>
           <Feature
-            position="top-center"
+            position="top"
+            align="center"
             title="Project Management"
             icon={<StackIcon color="#3c3d41" />}
             description="Agile Scrum, Waterfall Methodologies, etc."
