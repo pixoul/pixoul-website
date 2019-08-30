@@ -66,7 +66,7 @@ const PixoulDifference = () => {
             <Feature
               position="left"
               title="DEDICATED ACCOUNT MANAGER"
-              icon={<UserIcon color="#276cf2" />}
+              icon={<UserIcon color="#276cf2" larger/>}
               description="You’ll be matched with a dedicated Account Manager who is always available to ensure a lasting relationship with your freelancer, and guide you every step of the way."
             />
           </Col>

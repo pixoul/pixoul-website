@@ -15,7 +15,7 @@ const Excel = () => (
   <div className="excel gutters">
 
     <div className="excel-header">
-      <HeartIcon color="#276cf2" />
+      <HeartIcon color="#276cf2" circular />
       <Typography variant="h1" color="primary" align="center" weight="bold">Where We Excel.</Typography>
       <Typography variant="p" color="secondary" align="center">We supply the talent you need, right when you need it.  Our network spans skill in programming languages, branding, research, and more.</Typography>
     </div>
