@@ -9,12 +9,7 @@ import HeartIcon from "utils/icons/heart"
 import SearchIcon from "utils/icons/search"
 import DesignIcon from "utils/icons/design"
 import DevelopmentIcon from "utils/icons/development"
-import ProjectManagementIcon from "utils/icons/project-management"
-import heart from "./images/icons/heart.svg"
-import search from "./images/icons/search.svg"
-import design from "./images/icons/design.svg"
-import development from "./images/icons/development.svg"
-import pm from "./images/icons/pm.svg"
+import StackIcon from "utils/icons/stack"
 
 const Excel = () => (
   <div className="excel gutters">
@@ -55,7 +50,7 @@ const Excel = () => (
           <Feature
             position="top-center"
             title="Project Management"
-            icon={<ProjectManagementIcon color="#3c3d41" />}
+            icon={<StackIcon color="#3c3d41" />}
             description="Agile Scrum, Waterfall Methodologies, etc."
           />
         </Col>
