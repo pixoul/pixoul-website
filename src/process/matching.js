@@ -47,7 +47,7 @@ const Matching = () => (
         <Row nogutter>
           <Col sm={12} md={6}>
             <Feature
-              position="top-left"
+              position="left"
               title="1. TELL US YOUR NEEDS"
               icon={<UserIcon color="#276cf2" />}
               description="Work with your dedicated account manager."
@@ -55,7 +55,7 @@ const Matching = () => (
           </Col>
           <Col sm={12} md={6}>
             <Feature
-              position="top-left"
+              position="left"
               title="2. IDENTIFY CRITERIA"
               icon={<SearchIcon color="#276cf2" />}
               description="Prioritize skill, timezone, communication, and more."
@@ -63,7 +63,7 @@ const Matching = () => (
           </Col>
           <Col sm={12} md={6}>
             <Feature
-              position="top-left"
+              position="left"
               title="3. GIVE JOB DETAILS"
               icon={<PlaneIcon color="#276cf2" />}
               description="Use our online platform to create your job."
@@ -71,7 +71,7 @@ const Matching = () => (
           </Col>
           <Col sm={12} md={6}>
             <Feature
-              position="top-left"
+              position="left"
               title="4. LET US DO THE REST"
               icon={<RocketIcon color="#276cf2" />}
               description="We’ll manually select the best fit based on your needs."
