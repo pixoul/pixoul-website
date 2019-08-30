@@ -9,7 +9,7 @@ import Button from "utils/button/button"
 /* Icons */
 import DevelopmentIcon from "utils/icons/development"
 import DesignIcon from "utils/icons/design"
-import ProjectManagementIcon from "utils/icons/project-management"
+import PrintIcon from "utils/icons/print"
 
 const TopCapabilities = () => {
 
@@ -41,7 +41,7 @@ const TopCapabilities = () => {
               <Feature
                 position="top-center"
                 title="PROJECT MANAGEMENT"
-                icon={<ProjectManagementIcon color="#276cf2" />}
+                icon={<PrintIcon color="#276cf2" />}
                 description="Agile and waterfall methodologies, design thinking, and more."
               />
             </Col>
