@@ -30,7 +30,7 @@ const Candadite = ({
   <div className="candadite">
     <img src={media} alt={media} className="candadite-image" />
     <div className="candadite-status">
-      {accepted ? <CheckIcon color="#276cf2" /> : <TimesIcon color="#ff0000" />}
+      {accepted ? <CheckIcon color="#276cf2" circular /> : <TimesIcon color="#ff0000" circular />}
     </div>
   </div>
 )

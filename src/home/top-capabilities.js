@@ -25,7 +25,7 @@ const TopCapabilities = () => {
               <Feature
                 position="top-center"
                 title="Development"
-                icon={<DevelopmentIcon color="#276cf2" />}
+                icon={<DevelopmentIcon color="#276cf2" circular />}
                 description="Front-end, back-end, QA testing, and database admin."
               />
             </Col>
@@ -33,7 +33,7 @@ const TopCapabilities = () => {
               <Feature
                 position="top-center"
                 title="UX/UI DESIGN"
-                icon={<DesignIcon color="#276cf2" />}
+                icon={<DesignIcon color="#276cf2" circular />}
                 description="Research, branding, design, animation, and product demos."
               />
             </Col>
@@ -41,7 +41,7 @@ const TopCapabilities = () => {
               <Feature
                 position="top-center"
                 title="PROJECT MANAGEMENT"
-                icon={<PrintIcon color="#276cf2" />}
+                icon={<PrintIcon color="#276cf2" circular />}
                 description="Agile and waterfall methodologies, design thinking, and more."
               />
             </Col>
