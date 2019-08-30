@@ -5,7 +5,7 @@ import * as emailjs from 'emailjs-com'
 /* Utils */
 import Button from "utils/button/button"
 import Dropdown from "utils/dropdown/dropdown"
-/* Images */
+/* Icons */
 import check from "./images/check.svg"
 
 const JoinTeam = () => {
