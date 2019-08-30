@@ -9,7 +9,7 @@ import ClockIcon from "utils/icons/clock"
 import ThumbsupIcon from "utils/icons/thumbsup"
 import HeartIcon from "utils/icons/heart"
 import WandIcon from "utils/icons/wand"
-import ProjectManagementIcon from "utils/icons/project-management"
+import PrintIcon from "utils/icons/print"
 import LayoutIcon from "utils/icons/layout"
 
 const LoveMore = () => (
@@ -63,7 +63,7 @@ const LoveMore = () => (
           <Feature
             position="top-center"
             title="Automated Payroll"
-            icon={<ProjectManagementIcon color="#276cf2" />}
+            icon={<PrintIcon color="#276cf2" />}
             description="Scale with ease to handle demand."
           />
         </Col>
