@@ -2,7 +2,7 @@ import React from "react"
 /* Third-Party */
 import { Container, Row, Col } from 'react-grid-system'
 /* Utils */
-import Opening from "utils/opening/opening"
+import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 /* Images */
 import play from "./images/play.svg"
@@ -12,12 +12,9 @@ const Intro = () => (
     <div className="play-button">
       <img src={play} alt={play} />
     </div>
-    <Opening
-      theme="light"
-      title="How We Work."
-      subtitle="We make is easy to find dedicated IT professionals (in days, not months)."
-    />
 
+    <Typography variant="h1" color="white" align="center" weight="bold">How We Work.</Typography>
+    <Typography variant="h6" color="white" align="center">We make is easy to find dedicated IT professionals (in days, not months).</Typography>
 
     <Container>
       <Row>

@@ -7,25 +7,26 @@ import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 import Button from "utils/button/button"
 /* Icons */
-import development from "./images/icons/development.svg"
-import design from "./images/icons/design.svg"
-import pm from "./images/icons/pm.svg"
+import DevelopmentIcon from "utils/icons/development"
+import DesignIcon from "utils/icons/design"
+import PrintIcon from "utils/icons/print"
 
 const TopCapabilities = () => {
 
   return(
     <div className="top-capabilities gutters">
-
-        <Typography variant="h1" color="primary" align="center" weight="bold">Our Top Capabilities.</Typography>
-        <Typography variant="h5" color="secondary" align="center">Hire career-focused team members who <br /> will grow and support your initiatives.</Typography>
-
+        <div className="capabilities-header">
+          <Typography variant="h1" color="primary" align="center" weight="bold">Our Top Capabilities.</Typography>
+          <Typography variant="h5" color="secondary" align="center">Hire career-focused team members who <br /> will grow and support your initiatives.</Typography>
+        </div>
+        
         <Container>
           <Row>
             <Col sm={12} md={4}>
               <Feature
                 position="top-center"
                 title="Development"
-                media={development}
+                icon={<DevelopmentIcon color="#276cf2" circular />}
                 description="Front-end, back-end, QA testing, and database admin."
               />
             </Col>
@@ -33,7 +34,7 @@ const TopCapabilities = () => {
               <Feature
                 position="top-center"
                 title="UX/UI DESIGN"
-                media={design}
+                icon={<DesignIcon color="#276cf2" circular />}
                 description="Research, branding, design, animation, and product demos."
               />
             </Col>
@@ -41,7 +42,7 @@ const TopCapabilities = () => {
               <Feature
                 position="top-center"
                 title="PROJECT MANAGEMENT"
-                media={pm}
+                icon={<PrintIcon color="#276cf2" circular />}
                 description="Agile and waterfall methodologies, design thinking, and more."
               />
             </Col>

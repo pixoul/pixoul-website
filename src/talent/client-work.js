@@ -13,7 +13,7 @@ import hcp from "./images/clients/hcp.png"
 const ClientWork = () => {
 
   return (
-    <div className="client-work gutters">
+    <div className="client-work">
         <Carousel maxSlides={1} autoplay>
           <Slide>
             <Project

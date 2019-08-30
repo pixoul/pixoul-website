@@ -2,16 +2,16 @@ import React from "react"
 /* Third-Party */
 import { Container, Row, Col } from 'react-grid-system'
 /* Utils */
-import Opening from "utils/opening/opening"
+import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 
 /* Icons */
-import check from "./images/icons/check.svg"
-import times from "./images/icons/times.svg"
-import user from "./images/icons/user.svg"
-import search from "./images/icons/search.svg"
-import plane from "./images/icons/plane.svg"
-import rocket from "./images/icons/rocket.svg"
+import CheckIcon from "utils/icons/check"
+import TimesIcon from "utils/icons/times"
+import UserIcon from "utils/icons/user"
+import SearchIcon from "utils/icons/search"
+import PlaneIcon from "utils/icons/plane"
+import RocketIcon from "utils/icons/rocket"
 /* Images */
 import candadite1 from "./images/candadites/candadite-1.png"
 import candadite2 from "./images/candadites/candadite-2.png"
@@ -29,7 +29,9 @@ const Candadite = ({
 }) => (
   <div className="candadite">
     <img src={media} alt={media} className="candadite-image" />
-    <img src={accepted ? check : times} alt={accepted ? check : times} className="candadite-status"/>
+    <div className="candadite-status">
+      {accepted ? <CheckIcon color="#276cf2" circular /> : <TimesIcon color="#ff0000" circular />}
+    </div>
   </div>
 )
 
@@ -38,11 +40,8 @@ const Candadite = ({
 const Matching = () => (
   <div className="matching">
     <div className="matching-content">
-      <Opening
-        align="left"
-        title="White Glove Matching."
-        subtitle="Powered by our prorpietary AI, we narrow down your talent pool by matching on skills, industry experience, availability, location, and more.  Then, Pixoul hand-selects and presents your team for approval."
-      />
+      <Typography variant="h1" color="primary" align="left" weight="bold">White Glove Matching.</Typography>
+      <Typography variant="h6" color="secondary" align="left">Powered by our prorpietary AI, we narrow down your talent pool by matching on skills, industry experience, availability, location, and more.  Then, Pixoul hand-selects and presents your team for approval.</Typography>
 
       <Container>
         <Row nogutter>
@@ -50,7 +49,7 @@ const Matching = () => (
             <Feature
               position="top-left"
               title="1. TELL US YOUR NEEDS"
-              media={user}
+              icon={<UserIcon color="#276cf2" />}
               description="Work with your dedicated account manager."
             />
           </Col>
@@ -58,7 +57,7 @@ const Matching = () => (
             <Feature
               position="top-left"
               title="2. IDENTIFY CRITERIA"
-              media={search}
+              icon={<SearchIcon color="#276cf2" />}
               description="Prioritize skill, timezone, communication, and more."
             />
           </Col>
@@ -66,7 +65,7 @@ const Matching = () => (
             <Feature
               position="top-left"
               title="3. GIVE JOB DETAILS"
-              media={plane}
+              icon={<PlaneIcon color="#276cf2" />}
               description="Use our online platform to create your job."
             />
           </Col>
@@ -74,7 +73,7 @@ const Matching = () => (
             <Feature
               position="top-left"
               title="4. LET US DO THE REST"
-              media={rocket}
+              icon={<RocketIcon color="#276cf2" />}
               description="We’ll manually select the best fit based on your needs."
             />
           </Col>

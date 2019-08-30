@@ -1,36 +1,66 @@
 import React from "react"
-import "./feature.scss"
 /* Third-Party */
-import cn from "classnames"
+import injectSheet from 'react-jss'
 import Typography from "utils/typography/typography"
+
+const styles = theme => ({
+  feature: {
+    display: 'flex',
+    flexDirection: props => {
+      const positions = {
+        'top-left': 'column',
+        'top-center': 'column',
+        'left': 'row'
+      }
+      return positions[props.position]
+    },
+    alignItems: props => {
+      const positions = {
+        'top-center': 'center',
+        'left': 'flex-start'
+      }
+      return positions[props.position]
+    },
+    justifyContent: props => {
+      const positions = {
+        'top-left': 'flex-start',
+        'top-center': 'center'
+      }
+      return positions[props.position]
+    },
+    textAlign: props => props.position === 'top-center' && 'center'
+  },
+  content: {
+
+  },
+  media: {
+    padding: props => props.position === 'left' && '15px 30px 0 0'
+  }
+})
 
 const Feature = ({
   title,
-  media,
+  icon,
   description,
-  position = 'top-left',
-  theme = 'dark'
+  theme,
+  classes
 }) => {
 
-  const classes = cn('feature', {
-    'top-left': position === 'top-left',
-    'top-center': position === 'top-center',
-    'left': position === 'left',
-    'light': theme === 'light',
-    'dark' : theme === 'dark'
-  })
-
   return (
-    <div className={classes}>
-      <div className="feature-media">
-        <img src={media} alt={media} />
+    <div className={classes.feature}>
+      <div className={classes.media}>
+        {icon}
       </div>
-      <div className="feature-content">
-        <Typography variant="p" color="primary" weight="bold" transform="uppercase">{title}</Typography>
-        <Typography variant="p" color="secondary">{description}</Typography>
+      <div className={classes.content}>
+        <Typography variant="p" color={theme === 'light' ? 'white': 'primary'} weight="bold" transform="uppercase">{title}</Typography>
+        <Typography variant="p" color={theme === 'light' ? 'white': 'secondary'}>{description}</Typography>
       </div>
     </div>
   )
 }
 
-export default Feature
+Feature.defaultProps = {
+  position: 'top-left'
+}
+
+export default injectSheet(styles)(Feature)

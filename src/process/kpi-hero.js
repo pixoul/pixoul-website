@@ -3,7 +3,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 /* Util */
 import Button from "utils/button/button"
-import Opening from "utils/opening/opening"
+import Typography from "utils/typography/typography"
 /* Images */
 import kpiBg from "./images/kpi-bg.png"
 
@@ -12,11 +12,8 @@ const KPIHero = () => (
     backgroundImage: `url(${kpiBg})`
   }}>
 
-    <Opening
-      theme="light"
-      title="Get Your KPIs Back On Track."
-      subtitle="Hit your fiscal year goals earlier than expected."
-    />
+    <Typography variant="h1" color="white" align="center" weight="bold">Get Your KPIs Back On Track.</Typography>
+    <Typography variant="h6" color="white" align="center">Hit your fiscal year goals earlier than expected.</Typography>
 
     <Button tag={Link} to="/contact">Get in Touch</Button>
 
