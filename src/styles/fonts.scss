@@ -43,6 +43,7 @@ body {
   font-family: 'AvenirNext';
   font-size: calc(12px + .55vh); /* Responsive base font size */
   line-height: calc(12px + 1.55vh); /* Responsive Vertical Rhythm */
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
