@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react"
 import { Container, Row, Col } from 'react-grid-system'
 import * as emailjs from 'emailjs-com'
 /* Utils */
+import Typography from "utils/typography/typography"
 import Button from "utils/button/button"
 import Dropdown from "utils/dropdown/dropdown"
 /* Icons */
@@ -51,7 +52,7 @@ const JoinTeam = () => {
   return  (
     <div className="join-team">
       <div className="contact-intro">
-        <div className="contact-title">Apply to Join <span className="bold">Our Community</span> <br /> of <span className="strikethrough">Freelancers</span> Team Members.</div>
+        <Typography variant="h1" color="primary" align="center">Apply to Join <strong>Our Community</strong> <br /> of <strike>Freelancers</strike> Team Members.</Typography>
       </div>
 
       <div className="incentive-group">
