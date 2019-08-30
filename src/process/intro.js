@@ -13,10 +13,12 @@ const Intro = () => (
       <img src={play} alt={play} />
     </div>
 
-    <Typography variant="h1" color="white" align="center" weight="bold">How We Work.</Typography>
-    <Typography variant="h6" color="white" align="center">We make is easy to find dedicated IT professionals (in days, not months).</Typography>
+    <div className="intro-header">
+      <Typography variant="h1" color="white" align="center" weight="bold">How We Work.</Typography>
+      <Typography variant="h6" color="white" align="center">We make is easy to find dedicated IT professionals (in days, not months).</Typography>
+    </div>
 
-    <Container>
+    <Container className="intro-features">
       <Row>
         <Col sm={12} md={4}>
           <Feature
