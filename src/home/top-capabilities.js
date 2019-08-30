@@ -15,10 +15,11 @@ const TopCapabilities = () => {
 
   return(
     <div className="top-capabilities gutters">
-
-        <Typography variant="h1" color="primary" align="center" weight="bold">Our Top Capabilities.</Typography>
-        <Typography variant="h5" color="secondary" align="center">Hire career-focused team members who <br /> will grow and support your initiatives.</Typography>
-
+        <div className="capabilities-header">
+          <Typography variant="h1" color="primary" align="center" weight="bold">Our Top Capabilities.</Typography>
+          <Typography variant="h5" color="secondary" align="center">Hire career-focused team members who <br /> will grow and support your initiatives.</Typography>
+        </div>
+        
         <Container>
           <Row>
             <Col sm={12} md={4}>
