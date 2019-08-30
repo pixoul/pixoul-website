@@ -19,12 +19,13 @@ const TopCapabilities = () => {
           <Typography variant="h1" color="primary" align="center" weight="bold">Our Top Capabilities.</Typography>
           <Typography variant="h5" color="secondary" align="center">Hire career-focused team members who <br /> will grow and support your initiatives.</Typography>
         </div>
-        
+
         <Container>
           <Row>
             <Col sm={12} md={4}>
               <Feature
-                position="top-center"
+                position="top"
+                align="center"
                 title="Development"
                 icon={<DevelopmentIcon color="#276cf2" circular />}
                 description="Front-end, back-end, QA testing, and database admin."
@@ -32,7 +33,8 @@ const TopCapabilities = () => {
             </Col>
             <Col sm={12} md={4}>
               <Feature
-                position="top-center"
+                position="top"
+                align="center"
                 title="UX/UI DESIGN"
                 icon={<DesignIcon color="#276cf2" circular />}
                 description="Research, branding, design, animation, and product demos."
@@ -40,7 +42,8 @@ const TopCapabilities = () => {
             </Col>
             <Col sm={12} md={4}>
               <Feature
-                position="top-center"
+                position="top"
+                align="center"
                 title="PROJECT MANAGEMENT"
                 icon={<PrintIcon color="#276cf2" circular />}
                 description="Agile and waterfall methodologies, design thinking, and more."

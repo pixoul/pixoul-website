@@ -21,7 +21,8 @@ const LoveMore = () => (
       <Row>
         <Col sm={12} md={4}>
           <Feature
-            position="top-center"
+            position="top"
+            align="center"
             title="Senior Level Expertise"
             icon={<ClockIcon color="#276cf2" />}
             description="Our team is ready to hit the ground running."
@@ -29,7 +30,8 @@ const LoveMore = () => (
         </Col>
         <Col sm={12} md={4}>
           <Feature
-            position="top-center"
+            position="top"
+            align="center"
             title="Higher Quality Teams"
             icon={<ThumbsupIcon color="#276cf2" />}
             description="Plan for clean design and even cleaner code."
@@ -37,7 +39,8 @@ const LoveMore = () => (
         </Col>
         <Col sm={12} md={4}>
           <Feature
-            position="top-center"
+            position="top"
+            align="center"
             title="Expert Management"
             icon={<HeartIcon color="#276cf2" />}
             description="Your account manager will guide every step."
@@ -45,7 +48,8 @@ const LoveMore = () => (
         </Col>
         <Col sm={12} md={4}>
           <Feature
-            position="top-center"
+            position="top"
+            align="center"
             title="Hand-Picked Team"
             icon={<WandIcon color="#276cf2" />}
             description="We’re AI-powered, but hand delivered."
@@ -53,7 +57,8 @@ const LoveMore = () => (
         </Col>
         <Col sm={12} md={4}>
           <Feature
-            position="top-center"
+            position="top"
+            align="center"
             title="Online Platform"
             icon={<LayoutIcon color="#276cf2" />}
             description="Use our powerful tools for all your needs."
@@ -61,7 +66,8 @@ const LoveMore = () => (
         </Col>
         <Col sm={12} md={4}>
           <Feature
-            position="top-center"
+            position="top"
+            align="center"
             title="Automated Payroll"
             icon={<PrintIcon color="#276cf2" />}
             description="Scale with ease to handle demand."
