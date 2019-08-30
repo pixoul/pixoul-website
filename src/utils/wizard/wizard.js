@@ -1,59 +1,48 @@
 import React, { useState } from "react"
-import "./wizard.scss"
+/* Third-Party */
+import injectSheet from 'react-jss'
 import cn from "classnames"
+/* Child Components */
+import WizardNavigation from "./navigation"
+import WizardStep from "./step"
 
-const WizardNavigation = ({
-  onClick,
-  icon,
-  title,
-  currentStep,
-  step
-}) => {
-
-  const [hover, setHover] = useState(false)
-
-  const classes = cn('wizard-navigation', {
-    'hover': hover === true,
-    'active': currentStep === step
-  })
-
-  return(
-    <div className={classes} onClick={onClick} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-      <div className="navigation-icon">{icon}</div>
-      <span className="navigation-dot" />
-      <span className="navigation-title">{title}</span>
-    </div>
-  )
-}
-
-const WizardStep = ({
-  step = 0,
-  currentStep,
-  children
-}) => {
-
-  if(currentStep === step) {
-    return(
-      <div className="step">
-        {children}
-      </div>
-    )
+const styles = theme => ({
+  header: {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    position: 'relative',
+    "&:before": {
+      content: '""',
+      position: 'absolute',
+      top: 72,
+      left: 0,
+      borderTop: '1px solid #dddddd',
+      width: '100%',
+      zIndex: 0
+    }
+  },
+  body: {
+    padding: {
+      top: 50,
+      right: 130,
+      bottom: 0,
+      left: 130
+    }
   }
-
-  return null
-}
-
+})
 
 const Wizard = ({
   children,
-  defaultStep = 1
+  defaultStep = 1,
+  classes
 }) => {
 
   const [currentStep, setStep] = useState(defaultStep)
 
   /* Loops through the WizardStep children, creating a WizardNavigation for each one, then assigns props to the new navigation */
   const wizardNavigation = React.Children.map(children, ({ type, props }) => {
-    if(type && type.name === 'WizardStep') {
+    if(type && type.displayName === 'Jss(WizardStep)') {
       return React.createElement(WizardNavigation, {
         onClick: () => setStep(props.step),
         currentStep: currentStep,
@@ -68,7 +57,7 @@ const Wizard = ({
 
   /* Loops through the WizardStep children, adding the currentStep to them */
   const wizardChildren = React.Children.map(children, child => {
-    if(child.type && child.type.name === 'WizardStep') {
+    if(child.type && child.type.displayName === 'Jss(WizardStep)') {
       return React.cloneElement(child, {
         currentStep: currentStep
       });
@@ -78,11 +67,11 @@ const Wizard = ({
   });
 
   return (
-    <div className="wizard">
-      <div className="wizard-header">
+    <div className={classes.wizard}>
+      <div className={classes.header}>
         {wizardNavigation}
       </div>
-      <div className="wizard-body">
+      <div className={classes.body}>
         {wizardChildren}
       </div>
     </div>
@@ -97,11 +86,11 @@ Wizard.propTypes = {
     let error = null
     React.Children.forEach(prop, function (child) {
       if (child.type !== WizardStep) {
-        error = new Error('`' + componentName + '` children should be of type `WizardStep`.');
+        error = new Error(`${componentName} children should be of type 'WizardStep'`);
       }
     })
     return error
   }
 }
 
-export { Wizard, WizardStep }
+export default injectSheet(styles)(Wizard)
