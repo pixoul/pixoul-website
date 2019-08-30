@@ -54,6 +54,31 @@ const styles = theme => ({
     textAlign: 'center',
     transition: 'color 0.5s ease-out',
     textTransform: 'uppercase'
+  },
+  '@media (max-width: 768px)': {
+    navigation: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      padding: {
+        top: 30
+      }
+    },
+    icon: {
+      order: 2,
+      padding: {
+        right: 15,
+        left: 15
+      }
+    },
+    dot: {
+      order: 1,
+      margin: {
+        left: -6,
+      }
+    },
+    title: {
+      order: 3
+    }
   }
 })
 

@@ -129,3 +129,25 @@
     align-items: center;
   }
 }
+
+
+@media (max-width: 768px) {
+  .process {
+    .project-steps {
+      padding-top: 45px;
+      padding-bottom: 45px;
+      .steps-content {
+        flex-direction: column;
+
+        .project-paragraph {
+          width: 100%;
+
+          &:first-child {
+            padding-right: 0;
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
