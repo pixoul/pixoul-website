@@ -41,13 +41,13 @@ export default injectSheet(styles)(({
           </filter>
         </defs>
 
-        <g fill="none" fill-rule="evenodd">
+        <g fill="none" fillRule="evenodd">
           <g transform="translate(3 2)">
             <use fill="#000" filter="url(#a)"/>
             <use fill="#FFF"/>
           </g>
 
-          <path fill={color} fill-rule="nonzero" d="M17.283 24.508l-4.836-4.851-1.647 1.64 6.483 6.503L31.2 13.84l-1.635-1.64z"/>
+          <path fill={color} fillRule="nonzero" d="M17.283 24.508l-4.836-4.851-1.647 1.64 6.483 6.503L31.2 13.84l-1.635-1.64z"/>
         </g>
      </svg>
     )
