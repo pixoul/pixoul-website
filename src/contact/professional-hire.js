@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { Container, Row, Col } from 'react-grid-system'
 import * as emailjs from 'emailjs-com'
 /* Utils */
+import Typography from "utils/typography/typography"
 import Button from "utils/button/button"
 
 const ProfessionalHire = () => {
@@ -40,8 +41,8 @@ const ProfessionalHire = () => {
   return (
     <div className="professional-hire">
       <div className="contact-intro">
-        <div className="contact-title">Request Your <span className="bold">Free Estimate</span> <br /> and Get to Work.</div>
-        <div className="contact-description">Whether you’re looking for a single designer, developer, or project manager,—or an entire scrum team—we’ll match you with the perfect fit, fast.</div>
+        <Typography variant="h1" color="primary" align="center">Request Your <strong>Free Estimate</strong> <br /> and Get to Work.</Typography>
+        <Typography variant="h5" color="secondary" align="center">Whether you’re looking for a single designer, developer, or project manager,—or an entire scrum team—we’ll match you with the perfect fit, fast.</Typography>
       </div>
 
       <form className="form">
