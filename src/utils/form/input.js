@@ -8,7 +8,7 @@ import CheckIcon from 'utils/icons/check'
 
 const styles = theme => ({
   wrapper: {
-    width: '100%',
+    width: props => props.fullWidth ? '100%' : theme.input.width ? theme.input.width : 320,
     margin: 18
   },
   label: {
@@ -46,6 +46,16 @@ const styles = theme => ({
     pointerEvents: 'none',
     padding: {
       top: 10
+    }
+  },
+  '@media (max-width: 768px)': {
+    wrapper: {
+      margin: {
+        top: 18,
+        right: 0,
+        bottom: 18,
+        left: 0
+      }
     }
   }
 });

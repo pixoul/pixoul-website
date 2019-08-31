@@ -10,6 +10,9 @@ const theme = {
     secondary: '#656b6f',
     white: '#ffffff',
     error: '#ff0000'
+  },
+  input: {
+    width: 320
   }
 }
 
