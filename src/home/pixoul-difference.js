@@ -17,8 +17,8 @@ const PixoulDifference = () => {
   return(
     <div className="difference-section gutters">
 
-      <Typography variant="h1" color="primary" align="center" weight="bold">The Pixoul Difference</Typography>
-      <Typography variant="h5" color="secondary" align="center">We’re better—let us tell you why.</Typography>
+      <Typography variant="header1" align="center">The Pixoul Difference</Typography>
+      <Typography variant="subtitle1" align="center">We’re better—let us tell you why.</Typography>
 
       <Container>
         <Row>
