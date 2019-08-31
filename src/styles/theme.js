@@ -2,7 +2,7 @@
 
 const theme = {
   font: {
-    base: 16
+    base: 22
   },
   color : {
     primary: '#276cf2',
