@@ -51,7 +51,7 @@ const JoinTeam = () => {
   return  (
     <div className="join-team">
       <div className="contact-intro">
-        <Typography variant="h1" color="primary" align="center">Apply to Join <strong>Our Community</strong> <br /> of <strike>Freelancers</strike> Team Members.</Typography>
+        <Typography variant="header1" align="center" weight="normal">Apply to Join <strong>Our Community</strong> <br /> of <strike>Freelancers</strike> Team Members.</Typography>
       </div>
 
       <div className="incentive-group">
