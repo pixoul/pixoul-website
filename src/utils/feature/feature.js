@@ -55,8 +55,8 @@ const Feature = ({
         {icon}
       </div>
       <div className={classes.content}>
-        <Typography variant="p" color={theme === 'light' ? 'white': 'primary'} weight="bold" transform="uppercase">{title}</Typography>
-        <Typography variant="p" color={theme === 'light' ? 'white': 'secondary'}>{description}</Typography>
+        <Typography variant="subtitle2" color={theme === 'light' ? 'white': 'primary'}>{title}</Typography>
+        <Typography variant="body2" color={theme === 'light' ? 'white': 'secondary'}>{description}</Typography>
       </div>
     </div>
   )

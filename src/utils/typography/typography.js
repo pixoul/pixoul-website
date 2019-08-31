@@ -12,14 +12,18 @@ const styles = theme => ({
     textTransform: props.transform
   }),
   body1: {
-    fontSize: theme.font.base
-  },
-  body2: {
-    fontSize: 22,
+    fontSize: theme.font.base,
     lineHeight: '31.5px',
     margin: {
       top: 16,
       bottom: 16
+    }
+  },
+  body2: {
+    fontSize: 16,
+    margin: {
+      top: 6,
+      bottom: 6
     }
   },
   buttonText: {
