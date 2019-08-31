@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 /* Third-Party */
-import { Container, Row, Col } from 'react-grid-system'
 import * as emailjs from 'emailjs-com'
 /* Utils */
 import Typography from "utils/typography/typography"
@@ -45,52 +44,36 @@ const PartnershipProgram = () => {
           <Typography variant="h1" color="primary" align="center">Share the Love, and <br /><strong>Get Paid.</strong></Typography>
           <Typography variant="h5" color="secondary" align="center">We’re always looking for new clients or additions to our freelancer network.  Got the perfect fit in mind?  Let us know—we pay for every quality connection.</Typography>
         </div>
-        <Form
-          label="Apply to Our Team"
-          onSubmit={send}
-        >
-          <Container>
-            <Row>
-              <Col sm={12} md={4}>
-                <Input
-                  type="name"
-                  name="name"
-                  placeholder="Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </Col>
-              <Col sm={12} md={4}>
-                <Input
-                  type="phone"
-                  name="phone"
-                  placeholder="Phone"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                />
-              </Col>
-              <Col sm={12} md={4}>
-                <Input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col sm={12}>
-                <Input
-                  type="comments"
-                  name="comments"
-                  placeholder="Comments"
-                  value={comments}
-                  onChange={(e) => setComments(e.target.value)}
-                />
-              </Col>
-            </Row>
-          </Container>
+        <Form label="Apply to Our Team" onSubmit={send} >
+          <Input
+            type="name"
+            name="name"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Input
+            type="phone"
+            name="phone"
+            placeholder="Phone"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          <Input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <Input
+            type="comments"
+            name="comments"
+            placeholder="Comments"
+            value={comments}
+            onChange={(e) => setComments(e.target.value)}
+            fullWidth
+          />
         </Form>
     </div>
   )

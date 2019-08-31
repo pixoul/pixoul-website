@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react"
 /* Third-Party */
-import { Container, Row, Col } from 'react-grid-system'
 import * as emailjs from 'emailjs-com'
 /* Utils */
 import Typography from "utils/typography/typography"
@@ -67,51 +66,35 @@ const JoinTeam = () => {
         </ul>
       </div>
 
-      <Form
-        label="Apply to Our Team"
-        onSubmit={send}
-      >
-        <Container>
-          <Row>
-            <Col sm={12} md={4}>
-              <Input
-                type="name"
-                name="name"
-                placeholder="Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </Col>
-            <Col sm={12} md={4}>
-              <Input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </Col>
-            <Col sm={12} md={4}>
-              <Dropdown
-                value={experience}
-                onChange={value => setExperience(value)}
-                options={['1 - 2 Years', '3 - 5 Years', '5 - 7 Years', '7+ Years']}
-                placeholder="Years of Experience"
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={12}>
-              <Input
-                type="expertise"
-                name="expertise"
-                placeholder="Your Area of Expertise (Front-End Development, UI Design, QA, etc.)"
-                value={expertise}
-                onChange={(e) => setExpertise(e.target.value)}
-              />
-            </Col>
-          </Row>
-        </Container>
+      <Form label="Apply to Our Team" onSubmit={send}>
+          <Input
+            type="name"
+            name="name"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <Dropdown
+            value={experience}
+            onChange={value => setExperience(value)}
+            options={['1 - 2 Years', '3 - 5 Years', '5 - 7 Years', '7+ Years']}
+            placeholder="Years of Experience"
+          />
+          <Input
+            type="expertise"
+            name="expertise"
+            placeholder="Your Area of Expertise (Front-End Development, UI Design, QA, etc.)"
+            value={expertise}
+            onChange={(e) => setExpertise(e.target.value)}
+            fullWidth
+          />
       </Form>
     </div>
   )
