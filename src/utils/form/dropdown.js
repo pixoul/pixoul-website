@@ -69,6 +69,11 @@ const styles = theme => ({
     "&:active, &:hover": {
       opacity: 0.8
     }
+  },
+  '@media (max-width: 768px)': {
+    dropdown: {
+      margin: '18px 0px'
+    }
   }
 })
 
