@@ -1,6 +1,9 @@
 /* Global Theme Control */
 
 const theme = {
+  font: {
+    base: 16
+  },
   color : {
     primary: '#276cf2',
     secondary: '#656b6f'
@@ -13,6 +16,16 @@ const theme = {
   },
   input: {
     width: 320
+  },
+  spacing: {
+    horizontal: {
+      left: 130,
+      right: 130
+    },
+    vertical: {
+      top: 45,
+      bottom: 45
+    }
   }
 }
 
