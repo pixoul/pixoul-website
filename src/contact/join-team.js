@@ -4,8 +4,7 @@ import * as emailjs from 'emailjs-com'
 /* Utils */
 import Typography from "utils/typography/typography"
 import Button from "utils/button/button"
-import Dropdown from "utils/dropdown/dropdown"
-import { Form, Input } from "utils/form"
+import { Form, Input, Dropdown } from "utils/form"
 /* Icons */
 import check from "./images/check.svg"
 
