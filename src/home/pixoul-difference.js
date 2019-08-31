@@ -24,6 +24,7 @@ const PixoulDifference = () => {
         <Row>
           <Col sm={12} md={6}>
             <Feature
+              shrink
               position="left"
               title="TOP 1% GUARANTEED"
               icon={<ThumbsupIcon color="#276cf2" />}
@@ -32,6 +33,7 @@ const PixoulDifference = () => {
           </Col>
           <Col sm={12} md={6}>
             <Feature
+              shrink
               position="left"
               title="RISK FREE TRIAL"
               icon={<MoneyIcon color="#276cf2" />}
@@ -40,6 +42,7 @@ const PixoulDifference = () => {
           </Col>
           <Col sm={12} md={6}>
             <Feature
+              shrink
               position="left"
               title="AI-POWERED, WHITE GLOVE TREATMENT"
               icon={<HeartIcon color="#276cf2" />}
@@ -48,6 +51,7 @@ const PixoulDifference = () => {
           </Col>
           <Col sm={12} md={6}>
             <Feature
+              shrink
               position="left"
               title="FULL TEAM SUPPORT"
               icon={<LightningIcon color="#276cf2" />}
@@ -56,6 +60,7 @@ const PixoulDifference = () => {
           </Col>
           <Col sm={12} md={6}>
             <Feature
+              shrink
               position="left"
               title="ON DEMAND EXPERTISE"
               icon={<ClockIcon color="#276cf2" />}
@@ -64,6 +69,7 @@ const PixoulDifference = () => {
           </Col>
           <Col sm={12} md={6}>
             <Feature
+              shrink
               position="left"
               title="DEDICATED ACCOUNT MANAGER"
               icon={<UserIcon color="#276cf2" larger/>}
