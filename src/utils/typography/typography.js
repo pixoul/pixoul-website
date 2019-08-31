@@ -21,25 +21,25 @@ const styles = theme => ({
     }
   },
   body2: {
-    fontSize: 16,
+    fontSize: `${(16 / theme.font.base)}em`,
     margin: {
       top: 6,
       bottom: 6
     }
   },
   buttonText: {
-    fontSize: 12,
+    fontSize: `${(12 / theme.font.base)}em`,
     letterSpacing: 2.4
   },
   captionText: {
-    fontSize: 16,
+    fontSize: `${(16 / theme.font.base)}em`,
     lineHeight: 1.05
   },
   overlineText: {
-    fontSize: 14
+    fontSize: `${(14 / theme.font.base)}em`,
   },
   quote: {
-    fontSize: 39,
+    fontSize: `${(39 / theme.font.base)}em`,
     letterSpacing: -0.61,
     color: theme.text.primary,
     margin: {
@@ -48,7 +48,7 @@ const styles = theme => ({
     }
   },
   subtitle1: {
-    fontSize: 24,
+    fontSize: `${(24 / theme.font.base)}em`,
     lineHeight: 1.3,
     color: theme.text.secondary,
     margin: {
@@ -57,7 +57,7 @@ const styles = theme => ({
     }
   },
   subtitle2: {
-    fontSize: 13,
+    fontSize: `${(13 / theme.font.base)}em`,
     fontWeight: "bold",
     letterSpacing: 2.36,
     textTransform: "uppercase",
@@ -68,7 +68,7 @@ const styles = theme => ({
     }
   },
   header1: {
-    fontSize: 62,
+    fontSize: `${(62 / theme.font.base)}em`,
     fontWeight: "bold",
     lineHeight: '66px',
     letterSpacing: -2.38,

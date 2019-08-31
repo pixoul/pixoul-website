@@ -41,5 +41,36 @@
 
 body {
   font-family: 'AvenirNext';
+  font-size: 22px;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 1440px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body {
+    font-size: 19.6px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 15.7px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 11.7px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 16px;
+  }
 }
