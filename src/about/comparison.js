@@ -10,7 +10,7 @@ import ComparisonList from "utils/comparison-list/comparison-list"
 
 const Comparison = () => (
   <div className="comparison">
-    <Typography variant="h1" color="primary" align="center" weight="bold">How We Compare.</Typography>
+    <Typography variant="header1" align="center">How We Compare.</Typography>
 
     <div className="comparison-area">
       <ComparisonList
