@@ -22,6 +22,7 @@ const styles = theme => ({
   },
   body2: {
     fontSize: `${(16 / theme.font.base)}em`,
+    color: theme.text.secondary,
     margin: {
       top: 6,
       bottom: 6
