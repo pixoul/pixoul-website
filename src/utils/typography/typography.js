@@ -13,6 +13,7 @@ const styles = theme => ({
   }),
   body1: {
     fontSize: theme.font.base,
+    color: theme.text.secondary,
     lineHeight: '31.5px',
     margin: {
       top: 16,
@@ -68,7 +69,7 @@ const styles = theme => ({
     letterSpacing: -2.38,
     color: theme.text.primary,
     margin: {
-      top: 10,
+      top: 20,
       bottom: 10
     }
   }
