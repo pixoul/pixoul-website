@@ -16,8 +16,8 @@ const TalentTimeline = () => (
     </div>
     <div className="talent-main">
       <div className="talent-header">
-        <Typography variant="h1" color="white" align="left" weight="bold">Hire the Top 1% of Talent.</Typography>
-        <Typography variant="h6" color="white" align="left">Our network sources only the most elite talent.  Every potential candidate is put through a rigorous vetting and evaluation process.  From there, we use AI-powered insights and white-glove matching to find you the perfect fit for your IT team.</Typography>
+        <Typography variant="header1" color="white">Hire the Top 1% of Talent.</Typography>
+        <Typography variant="body1" color="white">Our network sources only the most elite talent.  Every potential candidate is put through a rigorous vetting and evaluation process.  From there, we use AI-powered insights and white-glove matching to find you the perfect fit for your IT team.</Typography>
       </div>
 
       <div className="timeline-actual">
