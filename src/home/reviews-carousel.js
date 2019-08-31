@@ -14,7 +14,7 @@ const ReviewsCarousel = () => {
   return(
     <div className="reviews gutters">
 
-      <Typography variant="h6" color="primary" align="center" weight="bold" transform="uppercase">What Our Clients Say</Typography>
+      <Typography variant="subtitle2" align="center">What Our Clients Say</Typography>
       <div className="review-quote">
         <img src={quote} alt={quote} draggable="false" />
       </div>

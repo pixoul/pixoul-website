@@ -10,7 +10,7 @@ import ipad from "./images/ipad.svg"
 const Intro = () => {
   return(
     <div className="intro-section">
-      <Typography variant="h1" color="primary" align="center" weight="bold">On Demand IT Talent, <br /> Simplified.</Typography>
+      <Typography variant="header1">On Demand IT Talent, <br /> Simplified.</Typography>
 
       <div className="button-group">
         <Button tag={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
