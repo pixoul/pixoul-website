@@ -72,7 +72,8 @@ const styles = theme => ({
   },
   '@media (max-width: 768px)': {
     dropdown: {
-      margin: '18px 0px'
+      margin: '18px 0px',
+      width: '100% !important'
     }
   }
 })

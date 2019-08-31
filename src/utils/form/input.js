@@ -50,6 +50,7 @@ const styles = theme => ({
   },
   '@media (max-width: 768px)': {
     wrapper: {
+      width: '100% !important',
       margin: {
         top: 18,
         right: 0,
