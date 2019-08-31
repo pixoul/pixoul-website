@@ -46,7 +46,8 @@ const Feature = ({
   description,
   theme,
   position,
-  classes
+  classes,
+  shrink
 }) => {
 
   return (
@@ -56,7 +57,7 @@ const Feature = ({
       </div>
       <div className={classes.content}>
         <Typography variant="subtitle2" color={theme === 'light' ? 'white': 'primary'}>{title}</Typography>
-        <Typography variant="body2" color={theme === 'light' ? 'white': 'secondary'}>{description}</Typography>
+        <Typography variant={shrink ? "body2" : "body1"} color={theme === 'light' ? 'white': 'secondary'}>{description}</Typography>
       </div>
     </div>
   )
