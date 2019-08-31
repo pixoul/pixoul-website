@@ -5,6 +5,7 @@ import * as emailjs from 'emailjs-com'
 /* Utils */
 import Typography from "utils/typography/typography"
 import Button from "utils/button/button"
+import { Form, Input } from "utils/form"
 
 const ProfessionalHire = () => {
 
@@ -45,32 +46,31 @@ const ProfessionalHire = () => {
         <Typography variant="h5" color="secondary" align="center">Whether you’re looking for a single designer, developer, or project manager,—or an entire scrum team—we’ll match you with the perfect fit, fast.</Typography>
       </div>
 
-      <form className="form">
+      <Form>
         <Container>
           <Row>
             <Col sm={12} md={4}>
-              <input
-                className="form-input"
-                id="#name"
+              <Input
+                type="name"
+                name="name"
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </Col>
             <Col sm={12} md={4}>
-              <input
-                className="form-input"
+              <Input
                 type="phone"
-                id="#phone"
+                name="phone"
                 placeholder="Phone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
             </Col>
             <Col sm={12} md={4}>
-              <input
-                className="form-input"
-                type="email" id="#email"
+              <Input
+                type="email"
+                name="email"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -79,10 +79,9 @@ const ProfessionalHire = () => {
           </Row>
           <Row>
             <Col sm={12}>
-              <input
-                className="form-input"
+              <Input
                 type="comments"
-                id="#comments"
+                name="comments"
                 placeholder="Comments"
                 value={comments}
                 onChange={(e) => setComments(e.target.value)}
@@ -97,7 +96,7 @@ const ProfessionalHire = () => {
             </Col>
           </Row>
         </Container>
-      </form>
+      </Form>
 
     </div>
   )
