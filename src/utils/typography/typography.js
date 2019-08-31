@@ -40,7 +40,12 @@ const styles = theme => ({
   },
   quote: {
     fontSize: 39,
-    letterSpacing: -0.61
+    letterSpacing: -0.61,
+    color: theme.text.primary,
+    margin: {
+      top: 29,
+      bottom: 10
+    }
   },
   subtitle1: {
     fontSize: 24,
@@ -56,7 +61,7 @@ const styles = theme => ({
     fontWeight: "bold",
     letterSpacing: 2.36,
     textTransform: "uppercase",
-    color: theme.color.secondary,
+    color: theme.text.primary,
     margin: {
       top: 12,
       bottom: 7

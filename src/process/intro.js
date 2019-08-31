@@ -14,16 +14,18 @@ const Intro = () => (
     </div>
 
     <div className="intro-header">
-      <Typography variant="h1" color="white" align="center" weight="bold">How We Work.</Typography>
-      <Typography variant="h6" color="white" align="center">We make is easy to find dedicated IT professionals (in days, not months).</Typography>
+      <Typography variant="header1" color="white" align="center">How We Work.</Typography>
+      <Typography variant="subtitle1" color="white" align="center">We make is easy to find dedicated IT professionals (in days, not months).</Typography>
     </div>
 
     <Container className="intro-features">
       <Row>
         <Col sm={12} md={4}>
           <Feature
+            shrink
             theme="light"
-            position="top-center"
+            position="top"
+            align="center"
             title="DISCUSS YOUR GOALS"
             description="Work with a dedicated account manager."
           />
@@ -31,8 +33,10 @@ const Intro = () => (
 
         <Col sm={12} md={4}>
           <Feature
+            shrink
             theme="light"
-            position="top-center"
+            position="top"
+            align="center"
             title="WHITE GLOVE SELECTION"
             description="Get matched with the right team member for your needs."
           />
@@ -40,8 +44,10 @@ const Intro = () => (
 
         <Col sm={12} md={4}>
           <Feature
+            shrink
             theme="light"
-            position="top-center"
+            position="top"
+            align="center"
             title="COLLABORATE"
             description="Use our online platform to manage your new team."
           />
