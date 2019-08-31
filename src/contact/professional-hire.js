@@ -46,7 +46,10 @@ const ProfessionalHire = () => {
         <Typography variant="h5" color="secondary" align="center">Whether you’re looking for a single designer, developer, or project manager,—or an entire scrum team—we’ll match you with the perfect fit, fast.</Typography>
       </div>
 
-      <Form>
+      <Form
+        label="Get In Touch"
+        onSubmit={send}
+      >
         <Container>
           <Row>
             <Col sm={12} md={4}>
@@ -86,13 +89,6 @@ const ProfessionalHire = () => {
                 value={comments}
                 onChange={(e) => setComments(e.target.value)}
               />
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={12}>
-              <div className="form-action">
-                <Button className="form-button" onClick={send}>Get In Touch</Button>
-              </div>
             </Col>
           </Row>
         </Container>
