@@ -17,6 +17,7 @@
     "react-dom": "^16.8.6",
     "react-grid-system": "^5.0.2",
     "react-headroom": "^2.2.8",
+    "react-input-mask": "^2.0.4",
     "react-jss": "^8.6.1",
     "react-router-dom": "^5.0.1",
     "react-router-scroll-memory": "^2.0.3",

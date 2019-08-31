@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 /* Third-Party */
-import { Container, Row, Col } from 'react-grid-system'
 import * as emailjs from 'emailjs-com'
 /* Utils */
+import Typography from "utils/typography/typography"
 import Button from "utils/button/button"
+import { Form, Input } from "utils/form"
 
 const PartnershipProgram = () => {
 
@@ -40,62 +41,40 @@ const PartnershipProgram = () => {
   return (
     <div className="partnership-program">
         <div className="contact-intro">
-          <div className="contact-title">Share the Love, and <br /><span className="bold">Get Paid.</span></div>
-          <div className="contact-description">We’re always looking for new clients or additions to our freelancer network.  Got the perfect fit in mind?  Let us know—we pay for every quality connection.</div>
+          <Typography variant="h1" color="primary" align="center">Share the Love, and <br /><strong>Get Paid.</strong></Typography>
+          <Typography variant="h5" color="secondary" align="center">We’re always looking for new clients or additions to our freelancer network.  Got the perfect fit in mind?  Let us know—we pay for every quality connection.</Typography>
         </div>
-        <form className="form">
-          <Container>
-            <Row>
-              <Col sm={12} md={4}>
-                <input
-                  className="form-input"
-                  id="#name"
-                  placeholder="Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </Col>
-              <Col sm={12} md={4}>
-                <input
-                  className="form-input"
-                  type="phone"
-                  id="#phone"
-                  placeholder="Phone"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                />
-              </Col>
-              <Col sm={12} md={4}>
-                <input
-                  className="form-input"
-                  type="email" id="#email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col sm={12}>
-                <input
-                  className="form-input"
-                  type="comments"
-                  id="#comments"
-                  placeholder="Comments"
-                  value={comments}
-                  onChange={(e) => setComments(e.target.value)}
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col sm={12}>
-                <div className="form-action">
-                  <Button className="form-button" onClick={send}>Get In Touch</Button>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </form>
+        <Form label="Apply to Our Team" onSubmit={send} >
+          <Input
+            type="name"
+            name="name"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Input
+            type="phone"
+            name="phone"
+            placeholder="Phone"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          <Input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <Input
+            type="comments"
+            name="comments"
+            placeholder="Comments"
+            value={comments}
+            onChange={(e) => setComments(e.target.value)}
+            fullWidth
+          />
+        </Form>
     </div>
   )
 }

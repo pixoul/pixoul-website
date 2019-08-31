@@ -6,36 +6,38 @@ import Typography from "utils/typography/typography"
 const styles = theme => ({
   feature: {
     display: 'flex',
-    flexDirection: props => {
-      const positions = {
-        'top-left': 'column',
-        'top-center': 'column',
-        'left': 'row'
-      }
-      return positions[props.position]
-    },
-    alignItems: props => {
-      const positions = {
-        'top-center': 'center',
-        'left': 'flex-start'
-      }
-      return positions[props.position]
-    },
-    justifyContent: props => {
-      const positions = {
-        'top-left': 'flex-start',
-        'top-center': 'center'
-      }
-      return positions[props.position]
-    },
-    textAlign: props => props.position === 'top-center' && 'center'
+    alignItems: props => props.align
   },
-  content: {
-
+  top: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    textAlign: props => props.align
   },
-  media: {
-    padding: props => props.position === 'left' && '15px 30px 0 0'
-  }
+  bottom: {
+    flexDirection: 'column-reverse',
+    justifyContent: 'center',
+    textAlign: props => props.align
+  },
+  left: {
+    flexDirection: 'row',
+    "& $media": {
+      padding: {
+        top: 20,
+        right: 30
+      }
+    }
+  },
+  right: {
+    flexDirection: 'row-reverse',
+    "& $media": {
+      padding: {
+        top: 20,
+        right: 30
+      }
+    }
+  },
+  content: {},
+  media: {}
 })
 
 const Feature = ({
@@ -43,11 +45,12 @@ const Feature = ({
   icon,
   description,
   theme,
+  position,
   classes
 }) => {
 
   return (
-    <div className={classes.feature}>
+    <div className={classes.feature + ' ' + classes[position]}>
       <div className={classes.media}>
         {icon}
       </div>
@@ -60,7 +63,8 @@ const Feature = ({
 }
 
 Feature.defaultProps = {
-  position: 'top-left'
+  position: 'top',
+  align: 'flex-start'
 }
 
 export default injectSheet(styles)(Feature)

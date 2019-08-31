@@ -1,6 +1,6 @@
 import React from "react"
 /* Utils */
-import {Wizard, WizardStep} from "utils/wizard/wizard"
+import {Wizard, WizardStep} from "utils/wizard"
 import Typography from "utils/typography/typography"
 /* Icons */
 import MarkerIcon from "utils/icons/marker"

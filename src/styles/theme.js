@@ -8,7 +8,11 @@ const theme = {
   text: {
     primary: '#3c3d41',
     secondary: '#656b6f',
-    white: '#ffffff'
+    white: '#ffffff',
+    error: '#ff0000'
+  },
+  input: {
+    width: 320
   }
 }
 

@@ -16,69 +16,9 @@ $bg-secondary: #dfdfdf;
   .contact-intro {
     padding-left: 10%;
     padding-right: 10%;
-    .contact-title {
-      font-size: 62px;
-      letter-spacing: -0.62px;
-      text-align: center;
-      color: #3c3d41;
-
-      .bold {
-        font-weight: bold;
-        letter-spacing: -3.1px;
-      }
-
-      .strikethrough {
-        position: relative;
-
-        &:after{
-          content: '';
-           border-bottom: 3px solid #3c3d41;
-           position: absolute;
-           left: 0;
-           top: 50%;
-           width: 100%
-        }
-      }
-    }
-
-    .contact-description {
-       font-size: 24px;
-       text-align: center;
-       color: #3c3d41;
-       opacity: 0.7;
-       padding-top: 22px;
-       padding-bottom: 67px;
-    }
-  }
-
-  .companies {
-    .companies-title {
-      font-size: 13px;
-      font-weight: bold;
-      letter-spacing: 2.36px;
-      text-align: center;
-      color: #3c3d41;
-      padding-bottom: 84px;
-    }
-
-    .companies-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-
-      .companies-image {
-        padding-left: 55px;
-        padding-right: 55px;
-      }
-    }
-  }
-
-  .partnership-program {
-
   }
 
   .join-team {
-
     .incentive-group {
       display: flex;
       justify-content: space-evenly;
@@ -96,47 +36,6 @@ $bg-secondary: #dfdfdf;
           color: #656b6f;
         }
       }
-    }
-
-
-  }
-
-  .professional-hire {
-
-  }
-
-  .form {
-
-    .form-input, .form-textarea {
-      display: block;
-      width: 100%;
-      height: auto;
-      padding: 17px 0px 15px 18px;
-      margin: 18px;
-      font-size: 16px;
-      color: #ffffff;
-      background-color: rgba(60, 61, 65, 0.5);
-      border-radius: 4.8px;
-      box-sizing: border-box;
-
-      &::placeholder {
-        color: #ffffff;
-      }
-    }
-
-    .form-action {
-      padding-top: 36px;
-      padding-bottom: 67px;
-      display: flex;
-      justify-content: flex-end;
-
-      .form-button {
-        margin-left: 45px;
-      }
-    }
-
-    .form-file {
-      display: none;
     }
 
   }

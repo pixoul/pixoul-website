@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 /* Third-Party */
-import { Container, Row, Col } from 'react-grid-system'
 import * as emailjs from 'emailjs-com'
 /* Utils */
+import Typography from "utils/typography/typography"
 import Button from "utils/button/button"
+import { Form, Input } from "utils/form"
 
 const ProfessionalHire = () => {
 
@@ -40,63 +41,41 @@ const ProfessionalHire = () => {
   return (
     <div className="professional-hire">
       <div className="contact-intro">
-        <div className="contact-title">Request Your <span className="bold">Free Estimate</span> <br /> and Get to Work.</div>
-        <div className="contact-description">Whether you’re looking for a single designer, developer, or project manager,—or an entire scrum team—we’ll match you with the perfect fit, fast.</div>
+        <Typography variant="h1" color="primary" align="center">Request Your <strong>Free Estimate</strong> <br /> and Get to Work.</Typography>
+        <Typography variant="h5" color="secondary" align="center">Whether you’re looking for a single designer, developer, or project manager,—or an entire scrum team—we’ll match you with the perfect fit, fast.</Typography>
       </div>
 
-      <form className="form">
-        <Container>
-          <Row>
-            <Col sm={12} md={4}>
-              <input
-                className="form-input"
-                id="#name"
-                placeholder="Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </Col>
-            <Col sm={12} md={4}>
-              <input
-                className="form-input"
-                type="phone"
-                id="#phone"
-                placeholder="Phone"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-              />
-            </Col>
-            <Col sm={12} md={4}>
-              <input
-                className="form-input"
-                type="email" id="#email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={12}>
-              <input
-                className="form-input"
-                type="comments"
-                id="#comments"
-                placeholder="Comments"
-                value={comments}
-                onChange={(e) => setComments(e.target.value)}
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={12}>
-              <div className="form-action">
-                <Button className="form-button" onClick={send}>Get In Touch</Button>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </form>
+      <Form label="Get In Touch" onSubmit={send} >
+          <Input
+            type="name"
+            name="name"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Input
+            type="phone"
+            name="phone"
+            placeholder="Phone"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          <Input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <Input
+            type="comments"
+            name="comments"
+            placeholder="Comments"
+            value={comments}
+            onChange={(e) => setComments(e.target.value)}
+            fullWidth
+          />
+      </Form>
 
     </div>
   )
