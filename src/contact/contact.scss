@@ -32,7 +32,7 @@ $bg-secondary: #dfdfdf;
         .incentive-item {
           padding-left: 14px;
           padding-bottom: 7px;
-          font-size: 24px;
+          font-size: '1.5em';
           color: #656b6f;
         }
       }
@@ -44,6 +44,21 @@ $bg-secondary: #dfdfdf;
 
 @media (max-width: 768px) {
   .contact {
+    .join-team {
+      .incentive-group {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 51px;
+        padding-top: 21px;
 
+        .incentive-list{
+          margin: 0px;
+          .incentive-item {
+            padding-bottom: 16px;
+            font-size: '1em';
+          }
+        }
+      }
+    }
   }
 }
