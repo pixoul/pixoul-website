@@ -31,7 +31,7 @@ list.push({
 list.push({
   header: 'Step 5 - Top 2%',
   title: 'Skill Scoring',
-  description: 'We test for every major skill category, so that we know exactly how comfortable each candidate is in a given area of expertise.  This empowers AI and informs our white-glove matchmaking process.',
+  description: 'We test for every major skill category, so that we know exactly how comfortable each candidate is in a given area of expertise. This includes includes an extensive psychographic personality test, which empowers AI and informs our white-glove matchmaking process.',
   color: 'white'
 })
 
