@@ -10,7 +10,7 @@ import RocketIcon from "utils/icons/rocket"
 
 const ProjectSteps = () => (
   <div className="project-steps">
-    <div className="project-lead">
+    <div className="project-header">
       <Typography variant="subtitle2" align="center">STAFF AUGMENTATION OR FULL TEAM SUPPORT</Typography>
       <Typography variant="header1" align="center">How We Engage Every Project.</Typography>
     </div>
