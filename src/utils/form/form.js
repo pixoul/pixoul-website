@@ -66,7 +66,7 @@ const Form = ({
       <div className={classes.fields}>{children}</div>
 
       <div className={classes.action}>
-        <Button className={classes.button} onClick={onSubmit}>{label}</Button>
+        <Button component="div" onClick={onSubmit}>{label}</Button>
       </div>
     </form>
   )

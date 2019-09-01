@@ -36,6 +36,7 @@ const PartnershipProgram = () => {
           <Typography variant="header1" align="center" weight="normal">Share the Love, and <br /><strong>Get Paid.</strong></Typography>
           <Typography variant="subtitle1" align="center">We’re always looking for new clients or additions to our freelancer network.  Got the perfect fit in mind?  Let us know—we pay for every quality connection.</Typography>
         </div>
+        
         <Form label="Apply to Our Team" onSubmit={send} >
           <Input
             type="name"
