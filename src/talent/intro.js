@@ -14,7 +14,7 @@ const Intro = () => (
       <Typography variant="subtitle1">Discover why leading companies trust our talent network with their most complex implementations.</Typography>
 
       <div className="button-group">
-        <Button tag={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
+        <Button component={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
       </div>
     </div>
     <div className="intro-media">

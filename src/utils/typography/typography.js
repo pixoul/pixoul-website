@@ -33,6 +33,8 @@ const styles = theme => ({
   },
   button: {
     fontSize: `${(12 / theme.font.base)}em`,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
     letterSpacing: 2.4
   },
   caption: {

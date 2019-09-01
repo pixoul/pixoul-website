@@ -29,7 +29,7 @@ const Header = () => (
           </Typography>
         </div>
         <div className="header-action">
-          <Button tag={Link} to="/contact" outline theme="light">Log In</Button>
+          <Button component={Link} to="/contact" outline theme="secondary">Log In</Button>
         </div>
       </div>
   </Headroom>

@@ -53,7 +53,7 @@ const TopCapabilities = () => {
         </Container>
 
         <div className="capabilities-button">
-          <Button tag={Link} to="/process">Learn More</Button>
+          <Button component={Link} to="/process">Learn More</Button>
         </div>
     </div>
   )
