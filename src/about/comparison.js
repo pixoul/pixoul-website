@@ -25,7 +25,7 @@ const Comparison = () => (
         type="times"
         title="Marketplaces"
         items={["Poorly Vetted Talent", "Language Barriers", "Generalized Verticals", "Low Retention Rates", "No Account Managers"]}
-        action={<Button component={Link} to="/contact/professional-hire" theme="light" outline>Find an Alternative</Button>}
+        action={<Button component={Link} to="/contact/professional-hire" theme="secondary" outline>Find an Alternative</Button>}
         type="times"
       />
 
@@ -33,7 +33,7 @@ const Comparison = () => (
         type="times"
         title="Agencies"
         items={["Highly Expensive", "Short-Term Commitment", "High Failure Rate", "Slow Onboarding", "Low Scalability"]}
-        action={<Button component={Link} to="/contact/professional-hire" theme="light" outline>Find an Alternative</Button>}
+        action={<Button component={Link} to="/contact/professional-hire" theme="secondary" outline>Find an Alternative</Button>}
         type="times"
       />
     </div>
