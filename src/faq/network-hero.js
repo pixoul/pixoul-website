@@ -13,7 +13,7 @@ const NetworkHero = () => (
       subtitle="Scaling and managing the best on demand talent has never been faster or easier."
     />
 
-    <Button tag={Link} to="/contact">Get Started</Button>
+    <Button component={Link} to="/contact">Get Started</Button>
 
   </div>
 )

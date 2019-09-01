@@ -13,8 +13,8 @@ const Intro = () => {
       <Typography variant="header1" align="center">On Demand IT Talent, <br /> Simplified.</Typography>
 
       <div className="button-group">
-        <Button tag={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
-        <Button outline tag={Link} to="/contact/join-team">Join the Team</Button>
+        <Button component={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
+        <Button outline component={Link} to="/contact/join-team">Join the Team</Button>
       </div>
       <div className="intro-media">
         <img src={ipad} alt={ipad} className="intro-image" />

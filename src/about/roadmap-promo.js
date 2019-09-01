@@ -17,7 +17,7 @@ const RoadmapPromo = () => (
     <Typography variant="subtitle1" color="white" align="center">We average a 219% increase in ROI.  Find out how.</Typography>
 
     <div className="roadmap-action">
-      <Button tag={Link} to="/contact/professional-hire">Get in Touch</Button>
+      <Button component={Link} to="/contact/professional-hire">Get in Touch</Button>
     </div>
   </div>
 )
