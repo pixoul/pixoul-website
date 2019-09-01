@@ -20,33 +20,28 @@
       border: solid 2px #dddddd;
       margin-right: 30px;
     }
-
-    .faq-question {
-      font-size: 0.75em;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 2.4px;
-      color: #3c3d41;
-    }
   }
 
   .faq-questions {
+    padding-top: 58px;
     padding-bottom: 90px;
   }
 
   .faq-answer {
-    font-size: 1em;
-    color: #656b6f;
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
   .network-hero {
     background-color: #f9f9f9;
-    height: 475px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 74px 30px;
+
+    .hero-header {
+      margin-bottom: 8px;
+    }
   }
 }

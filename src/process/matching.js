@@ -40,14 +40,15 @@ const Candadite = ({
 const Matching = () => (
   <div className="matching">
     <div className="matching-content">
-      <Typography variant="h1" color="primary" align="left" weight="bold">White Glove Matching.</Typography>
-      <Typography variant="h6" color="secondary" align="left">Powered by our prorpietary AI, we narrow down your talent pool by matching on skills, industry experience, availability, location, and more.  Then, Pixoul hand-selects and presents your team for approval.</Typography>
+      <Typography variant="header1">White Glove Matching.</Typography>
+      <Typography variant="subtitle1">Powered by our prorpietary AI, we narrow down your talent pool by matching on skills, industry experience, availability, location, and more.  Then, Pixoul hand-selects and presents your team for approval.</Typography>
 
       <Container>
         <Row nogutter>
           <Col sm={12} md={6}>
             <Feature
-              position="left"
+              shrink
+              position="top"
               title="1. TELL US YOUR NEEDS"
               icon={<UserIcon color="#276cf2" />}
               description="Work with your dedicated account manager."
@@ -55,7 +56,8 @@ const Matching = () => (
           </Col>
           <Col sm={12} md={6}>
             <Feature
-              position="left"
+              shrink
+              position="top"
               title="2. IDENTIFY CRITERIA"
               icon={<SearchIcon color="#276cf2" />}
               description="Prioritize skill, timezone, communication, and more."
@@ -63,7 +65,8 @@ const Matching = () => (
           </Col>
           <Col sm={12} md={6}>
             <Feature
-              position="left"
+              shrink
+              position="top"
               title="3. GIVE JOB DETAILS"
               icon={<PlaneIcon color="#276cf2" />}
               description="Use our online platform to create your job."
@@ -71,7 +74,8 @@ const Matching = () => (
           </Col>
           <Col sm={12} md={6}>
             <Feature
-              position="left"
+              shrink
+              position="top"
               title="4. LET US DO THE REST"
               icon={<RocketIcon color="#276cf2" />}
               description="We’ll manually select the best fit based on your needs."

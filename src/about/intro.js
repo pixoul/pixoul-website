@@ -11,13 +11,13 @@ import iphoneBack from "./images/iphone-back.svg"
 const Intro = () => (
   <div className="intro-section gutters">
     <div className="intro-content">
-      <Typography variant="h6" color="white" align="left" weight="bold">HIGH PERFORMING TALENT, ON DEMAND.</Typography>
-      <Typography variant="h1" color="white" align="left" weight="bold">Welcome to Your Elite Talent Network.</Typography>
-      <Typography variant="p" color="white" align="left" >We hire world-class designers, developers and project managers.  Pixoul talent contributes to the most innovative and profitable companies across the globe.</Typography>
-      
+      <Typography variant="subtitle2" color="white" align="left">HIGH PERFORMING TALENT, ON DEMAND.</Typography>
+      <Typography variant="header1" color="white" align="left">Welcome to Your Elite Talent Network.</Typography>
+      <Typography variant="body1" color="white" align="left" >We hire world-class designers, developers and project managers.  Pixoul talent contributes to the most innovative and profitable companies across the globe.</Typography>
+
       <div className="button-group">
-        <Button theme="secondary" tag={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
-        <Button theme="secondary" outline tag={Link} to="/contact/join-team">Join the Team</Button>
+        <Button theme="secondary" component={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
+        <Button theme="white" outline component={Link} to="/contact/join-team">Join the Team</Button>
       </div>
     </div>
     <div className="intro-media">

@@ -16,34 +16,6 @@
       justify-content: flex-start;
       width: 50%;
       height: 100%;
-
-      .intro-tagline, .intro-title, .intro-text {
-        color: #ffffff;
-        margin: 0;
-      }
-
-      .intro-tagline {
-        font-size: 0.8125em;
-        font-weight: bold;
-        letter-spacing: 2.36px;
-        padding-bottom: 39px;
-        padding-top: 65px;
-      }
-
-      .intro-title {
-        font-size: 3.875em;
-        font-weight: bold;
-        line-height: 1.06;
-        letter-spacing: -2.38px;
-        padding-bottom: 28px;
-      }
-
-      .intro-text {
-         font-size: 22px;
-         font-weight: normal;
-         opacity: 0.7;
-         padding-bottom: 100px;
-      }
     }
 
     .intro-media {
@@ -128,6 +100,10 @@
     padding-top: 130px;
     padding-bottom: 130px;
 
+    .love-header {
+      margin-bottom: 57px;
+    }
+
     .feature {
       padding-bottom: 100px;
 
@@ -177,6 +153,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
+      margin-top: 64px;
     }
   }
 }

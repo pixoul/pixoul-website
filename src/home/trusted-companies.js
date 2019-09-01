@@ -12,7 +12,7 @@ const TrustedCompanies = () => {
 
   return(
     <div className="trusted-companies gutters">
-        <Typography variant="h6" color="primary" align="center" weight="bold" transform="uppercase">OUR TALENT NETWORK HAS WORKED FOR COMPANIES LIKE:</Typography>
+        <Typography variant="subtitle2" align="center">OUR TALENT NETWORK HAS WORKED FOR COMPANIES LIKE:</Typography>
         <div className="trusted-media">
           <img src={disney} alt={disney} />
           <img src={airbnb} alt={airbnb} />

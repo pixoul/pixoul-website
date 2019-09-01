@@ -1,6 +1,8 @@
 import React from "react"
 /* Third-Party */
 import injectSheet from 'react-jss'
+/* Utils */
+import Typography from "utils/typography/typography"
 /* Icons */
 import CheckIcon from "utils/icons/check"
 import TimesIcon from "utils/icons/times"
@@ -27,10 +29,9 @@ const styles = theme => ({
     backgroundColor: props => props.active ? 'rgba(10, 104, 251, 0.1)' : 'inherit'
   },
   item : {
-    fontSize: '1.375em',
-    color: '#656b6f',
-    whiteSpace: 'nowrap',
-    marginTop: 25
+    display: 'flex',
+    alignItems: 'center',
+    whiteSpace: 'nowrap'
   },
   icon: {
     margin: {
@@ -41,12 +42,6 @@ const styles = theme => ({
     margin: '0 auto'
   },
   title : {
-    textTransform: 'uppercase',
-    fontSize: 13.2,
-    fontWeight: 'bold',
-    letterSpacing: 2.4,
-    textAlign: 'center',
-    color: '#3c3d41',
     alignSelf: 'center'
   },
   action: {
@@ -57,13 +52,17 @@ const styles = theme => ({
   },
   '@media (max-width: 768px)': {
     list: {
+      width: '100%',
       margin: {
-        right: 12,
-        left: 12
+        left: 13,
+        right: 13
+      },
+      padding: {
+        top: 48,
+        right: 0,
+        bottom: 48,
+        left: 0
       }
-    },
-    item : {
-      fontSize: '1em'
     }
   }
 
@@ -79,12 +78,12 @@ const ComparisonList = ({
 
   return (
     <div className={classes.list}>
-      <div className={classes.title}>{title}</div>
+      <Typography variant="subtitle2" className={classes.title}>{title}</Typography>
       <div className={classes.items}>
         {items.map((item, i) => (
           <div key={i} className={classes.item}>
             <span className={classes.icon}>{type === "times" ? <TimesIcon color="#ff0000" /> : <CheckIcon color="#0a68fb" />}</span>
-            <span>{item}</span>
+            <Typography variant="body1">{item}</Typography>
           </div>
         ))}
       </div>

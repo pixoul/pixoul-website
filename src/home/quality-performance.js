@@ -8,8 +8,8 @@ const QualityPerformance = () => {
   return(
     <div className="quality-performance gutters">
 
-      <Typography variant="h1" color="primary" align="center" weight="bold">Quality and Perfomance.</Typography>
-      <Typography variant="h5" color="secondary" align="center">Our most impressive stats speak for <br /> themselves.</Typography>
+      <Typography variant="header1" align="center">Quality and Perfomance.</Typography>
+      <Typography variant="subtitle1" align="center">Our most impressive stats speak for <br /> themselves.</Typography>
 
       <div className="quality-stats">
         <Stat

@@ -15,7 +15,10 @@ import LayoutIcon from "utils/icons/layout"
 const LoveMore = () => (
   <div className="love-more">
 
-    <Typography variant="h1" color="primary" align="center" weight="bold">More to Love.</Typography>
+    <div className="love-header">
+      <Typography variant="header1" align="center">More to Love.</Typography>
+    </div>
+
 
     <Container>
       <Row>

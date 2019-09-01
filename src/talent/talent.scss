@@ -42,28 +42,6 @@
       justify-content: center;
       padding-left: 96px;
       padding-right: 130px;
-
-      .member-tagline {
-        font-size: 13px;
-        font-weight: bold;
-        letter-spacing: 2.36px;
-        text-transform: uppercase;
-        color: #3c3d41;
-        padding-bottom: 41px;
-      }
-
-      .member-title {
-        font-size: 39px;
-        letter-spacing: -0.61px;
-        color: #3c3d41;
-        padding-bottom: 16px;
-      }
-
-      .member-text {
-        font-size: 22px;
-        color: #656b6f;
-        padding-bottom: 60px;
-      }
     }
 
     .member-media {
@@ -81,25 +59,9 @@
     padding-bottom: 130px;
 
     .talent-main {
-      padding-left: 180px;
-
+      padding-left: 130px;
       .talent-header {
-        display: flex;
-        flex-direction: column;
         padding-bottom: 90px;
-
-        .talent-title {
-          font-size: 62px;
-          font-weight: bold;
-          letter-spacing: -2.38px;
-          color: #ffffff;
-        }
-
-        .talent-description {
-          font-size: 22px;
-          color: #ffffff;
-          opacity: 0.7;
-        }
       }
     }
 
@@ -118,6 +80,7 @@
     padding-bottom: 130px;
 
     .excel-header {
+      padding-bottom: 57px;
       text-align: center;
       .excel-image {
         padding-bottom: 22px;
