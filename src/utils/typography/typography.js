@@ -10,7 +10,8 @@ const styles = theme => ({
     color: theme.text[props.color],
     textAlign: props.align,
     textTransform: props.transform,
-    textDecoration: 'none'
+    textDecoration: 'none',
+    opacity: props.opacity
   }),
   body1: {
     fontSize: theme.font.base,
@@ -97,7 +98,8 @@ const Typography = ({
 Typography.defaultProps = {
   component: 'div',
   variant: 'body1',
-  color: 'initial'
+  color: 'initial',
+  opacity: 1
 }
 
 export default injectSheet(styles)(Typography)
