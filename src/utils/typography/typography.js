@@ -9,7 +9,8 @@ const styles = theme => ({
     fontWeight: props.weight,
     color: theme.text[props.color],
     textAlign: props.align,
-    textTransform: props.transform
+    textTransform: props.transform,
+    textDecoration: 'none'
   }),
   body1: {
     fontSize: theme.font.base,
@@ -28,15 +29,15 @@ const styles = theme => ({
       bottom: 6
     }
   },
-  buttonText: {
+  button: {
     fontSize: `${(12 / theme.font.base)}em`,
     letterSpacing: 2.4
   },
-  captionText: {
+  caption: {
     fontSize: `${(16 / theme.font.base)}em`,
     lineHeight: 1.05
   },
-  overlineText: {
+  overline: {
     fontSize: `${(14 / theme.font.base)}em`,
   },
   quote: {
