@@ -16,14 +16,15 @@ const Excel = () => (
 
     <div className="excel-header">
       <HeartIcon color="#276cf2" circular />
-      <Typography variant="h1" color="primary" align="center" weight="bold">Where We Excel.</Typography>
-      <Typography variant="p" color="secondary" align="center">We supply the talent you need, right when you need it.  Our network spans skill in programming languages, branding, research, and more.</Typography>
+      <Typography variant="header1" align="center">Where We Excel.</Typography>
+      <Typography variant="subtitle1" align="center">We supply the talent you need, right when you need it.  Our network spans skill in programming languages, branding, research, and more.</Typography>
     </div>
 
     <Container>
       <Row>
         <Col sm={12} md={3}>
           <Feature
+            shrink
             position="top"
             align="center"
             title="Research & Strategy"
@@ -33,6 +34,7 @@ const Excel = () => (
         </Col>
         <Col sm={12} md={3}>
           <Feature
+            shrink
             position="top"
             align="center"
             title="UX/UI Design"
@@ -42,6 +44,7 @@ const Excel = () => (
         </Col>
         <Col sm={12} md={3}>
           <Feature
+            shrink
             position="top"
             align="center"
             title="Development"
@@ -51,6 +54,7 @@ const Excel = () => (
         </Col>
         <Col sm={12} md={3}>
           <Feature
+            shrink
             position="top"
             align="center"
             title="Project Management"

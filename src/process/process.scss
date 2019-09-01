@@ -12,6 +12,11 @@
     justify-content: center;
     align-items: center;
 
+    .intro-header {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
     .play-button {
       padding-bottom: 22px;
       cursor: pointer;
@@ -22,9 +27,8 @@
       }
     }
 
-    .feature {
-      margin-right: 50px;
-      margin-left: 50px;
+    .intro-features {
+      margin-top: 90px;
     }
   }
 
@@ -32,36 +36,19 @@
     padding-top: 130px;
     padding-bottom: 130px;
 
-    .project-lead {
-      text-align: center;
-      .project-tagline {
-        font-size: 13px;
-        font-weight: bold;
-        letter-spacing: 2.36px;
-        color: #276cf2;
-        padding-bottom: 21px;
-      }
-
-      .project-title {
-        font-size: 62px;
-        font-weight: bold;
-        letter-spacing: -2.38px;
-        color: #3c3d41;
-        padding-bottom: 155px;
-      }
+    .project-header {
+      margin-bottom: 130px;
     }
 
     .steps-content {
       display: flex;
 
-      .project-paragraph {
-         width: 50%;
-         font-size: 22px;
-         color: #656b6f;
+      > :first-child {
+        margin-right: 50px;
+      }
 
-         &:first-child {
-           padding-right: 50px;
-         }
+      > div {
+        width: 50%;
       }
     }
   }
@@ -127,6 +114,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -152,16 +141,21 @@
     .project-steps {
       padding-top: 45px;
       padding-bottom: 45px;
+
+      .project-header {
+        margin-bottom: 48px;
+      }
+
       .steps-content {
         flex-direction: column;
 
-        .project-paragraph {
-          width: 100%;
+        > :first-child {
+          padding-right: 0;
+          padding-bottom: 30px;
+        }
 
-          &:first-child {
-            padding-right: 0;
-            padding-bottom: 30px;
-          }
+        > div {
+          width: 100%;
         }
       }
     }

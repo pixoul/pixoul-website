@@ -1,16 +1,14 @@
 import React from "react"
 import injectSheet from 'react-jss'
+import Typography from "utils/typography/typography"
 
 const styles = {
   item: {
-    display: 'inline-block',
-    fontSize: '1em',
-    color: '#ffffff',
-    padding: {
-      bottom: 17,
-      left: 17
+    display: 'flex',
+    alignItems: 'center',
+    margin: {
+      bottom: 17
     },
-    width: '100%',
     "&:before": {
       content: '"\\2022"',
       fontWeight: 'bold',
@@ -33,7 +31,7 @@ const LegendItem = ({
   color,
   children,
   classes
-}) => (<span className={classes.item}>{children}</span>)
+}) => (<div className={classes.item}><Typography variant="caption" color="white">{children}</Typography></div>)
 
 LegendItem.defaultProps = {
   color: 'white'

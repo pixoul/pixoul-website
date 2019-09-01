@@ -6,12 +6,24 @@ import Typography from "utils/typography/typography"
 const styles = theme => ({
   feature: {
     display: 'flex',
-    alignItems: props => props.align
+    alignItems: props => props.align,
+    margin: {
+      top: 14,
+      right: 28,
+      bottom: 14,
+      left: 28
+    }
   },
   top: {
     flexDirection: 'column',
     justifyContent: 'center',
-    textAlign: props => props.align
+    textAlign: props => props.align,
+    margin: {
+      top: 14,
+      right: 0,
+      bottom: 14,
+      left: 0
+    }
   },
   bottom: {
     flexDirection: 'column-reverse',
@@ -37,7 +49,17 @@ const styles = theme => ({
     }
   },
   content: {},
-  media: {}
+  media: {},
+  '@media (max-width: 768px)': {
+    feature: {
+      margin: {
+        top: 11,
+        right: 0,
+        bottom: 11,
+        left: 0
+      }
+    }
+  }
 })
 
 const Feature = ({
@@ -46,7 +68,8 @@ const Feature = ({
   description,
   theme,
   position,
-  classes
+  classes,
+  shrink
 }) => {
 
   return (
@@ -55,8 +78,8 @@ const Feature = ({
         {icon}
       </div>
       <div className={classes.content}>
-        <Typography variant="p" color={theme === 'light' ? 'white': 'primary'} weight="bold" transform="uppercase">{title}</Typography>
-        <Typography variant="p" color={theme === 'light' ? 'white': 'secondary'}>{description}</Typography>
+        <Typography variant="subtitle2" color={theme === 'light' ? 'white': 'primary'}>{title}</Typography>
+        <Typography variant={shrink ? "body2" : "body1"} color={theme === 'light' ? 'white': 'secondary'}>{description}</Typography>
       </div>
     </div>
   )
