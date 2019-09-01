@@ -42,7 +42,7 @@ const Button = ({
 }) => {
 
   return(
-    <Component {...attrs} className={classes.button}>
+    <Component className={classes.button} {...attrs}>
       <Typography variant="button">{children}</Typography>
     </Component>
   )
