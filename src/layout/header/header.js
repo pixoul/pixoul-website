@@ -4,39 +4,30 @@ import { NavLink, Link } from "react-router-dom";
 import cn from "classnames"
 import "./header.scss"
 
+import Typography from "utils/typography/typography"
 import Button from "utils/button/button"
 import logo from "./images/logo.svg"
 
 const Header = () => (
     <Headroom>
       <div className="header-container shadow">
-        <ul className="header-links">
-          <li className="header-link">
-            <NavLink to="/home" activeClassName="active-link">
-              <img src={logo} alt={logo} draggable="false" />
-            </NavLink>
-          </li>
-          <li className="header-link">
-            <NavLink to="/about" activeClassName="active-link">
+        <div className="header-links">
+          <NavLink to="/home" activeClassName="active-link">
+            <img src={logo} alt={logo} draggable="false" />
+          </NavLink>
+          <Typography variant="body2" color="primary" component={NavLink} to={'/about'} activeClassName="active-link">
               About
-            </NavLink>
-          </li>
-          <li className="header-link">
-            <NavLink to="/talent" activeClassName="active-link">
+          </Typography>
+          <Typography variant="body2" color="primary" component={NavLink}to={'/talent' }activeClassName="active-link">
               Talent
-            </NavLink>
-          </li>
-          <li className="header-link">
-            <NavLink to="/process" activeClassName="active-link">
+          </Typography>
+          <Typography variant="body2" color="primary" component={NavLink} to={'/process'} activeClassName="active-link">
               Process
-            </NavLink>
-          </li>
-          <li className="header-link">
-            <NavLink to="/faq" activeClassName="active-link">
+          </Typography>
+          <Typography variant="body2" color="primary" component={NavLink} to={'/faq'} activeClassName="active-link">
               FAQ
-            </NavLink>
-          </li>
-        </ul>
+          </Typography>
+        </div>
         <div className="header-action">
           <Button tag={Link} to="/contact" outline theme="light">Log In</Button>
         </div>

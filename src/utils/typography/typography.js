@@ -11,7 +11,8 @@ const styles = theme => ({
     textAlign: props.align,
     textTransform: props.transform,
     textDecoration: 'none',
-    opacity: props.opacity
+    opacity: props.opacity,
+    '-webkit-font-smoothing': 'antialiased'
   }),
   body1: {
     fontSize: theme.font.base,
@@ -87,11 +88,12 @@ const Typography = ({
   variant,
   classes,
   children,
-  component: Component
+  component: Component,
+  ...rest
 }) => {
 
   return(
-    <Component className={classes.typography + ' ' + classes[variant]}>{children}</Component>
+    <Component className={classes.typography + ' ' + classes[variant]} {...rest}>{children}</Component>
   )
 }
 
