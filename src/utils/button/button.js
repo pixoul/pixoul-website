@@ -1,6 +1,5 @@
 import React from "react"
 import injectSheet from 'react-jss'
-
 import Typography from "utils/typography/typography"
 
 const styles = theme => ({
@@ -16,8 +15,8 @@ const styles = theme => ({
     borderStyle: 'solid',
     borderColor: props => theme.color[props.theme],
     "&:hover" : {
-      opacity: 0.7,
-      transition: 'opacity .6s'
+      opacity: 0.8,
+      transition: 'opacity .6s ease-in-out'
     },
     width: props => props.block ? '100%' : 'auto',
     backgroundColor: props => props.outline ? 'transparent' : theme.color[props.theme],
