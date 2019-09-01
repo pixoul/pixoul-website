@@ -1,6 +1,6 @@
 import React from "react"
 import injectSheet from 'react-jss'
-
+import Typography from "utils/typography/typography"
 const styles = theme => ({
   review : {
     padding: {
@@ -84,10 +84,10 @@ const ReviewCard = ({
   return(
     <div className={classes.review}>
       <div className={classes.content}>
-        <div className={classes.text}>{review}</div>
+        <Typography variant="quote">{review}</Typography>
         <img src={avatar} alt={avatar} draggable="false" className={classes.avatar}/>
-        <div className={classes.name}>{reviewer}</div>
-        <div className={classes.designation}>{designation}</div>
+        <Typography variant="subtitle2">{reviewer}</Typography>
+        <Typography variant="body2">{designation}</Typography>
       </div>
     </div>
   )
