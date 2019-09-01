@@ -6,7 +6,13 @@ import Typography from "utils/typography/typography"
 const styles = theme => ({
   feature: {
     display: 'flex',
-    alignItems: props => props.align
+    alignItems: props => props.align,
+    margin: {
+      top: 14,
+      right: 28,
+      bottom: 14,
+      left: 28
+    }
   },
   top: {
     flexDirection: 'column',
@@ -37,7 +43,17 @@ const styles = theme => ({
     }
   },
   content: {},
-  media: {}
+  media: {},
+  '@media (max-width: 768px)': {
+    feature: {
+      margin: {
+        top: 11,
+        right: 0,
+        bottom: 11,
+        left: 0
+      }
+    }
+  }
 })
 
 const Feature = ({
