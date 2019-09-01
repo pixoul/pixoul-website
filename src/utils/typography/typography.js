@@ -96,11 +96,12 @@ const Typography = ({
   classes,
   children,
   component: Component,
+  className,
   ...rest
 }) => {
 
   return(
-    <Component className={classes.typography + ' ' + classes[variant]} {...rest}>{children}</Component>
+    <Component className={classes.typography + ' ' + classes[variant] + ' ' + className} {...rest}>{children}</Component>
   )
 }
 
