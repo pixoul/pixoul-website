@@ -1,7 +1,7 @@
 
 .header-container {
   position: relative;
-  z-index: 100;
+  // z-index: 100;
   height: 100px;
   background-color: white;
   padding: 0 150px;
@@ -30,6 +30,13 @@
     }
   }
 
+}
+
+.headroom {
+  z-index: 100 !important;
+}
+.headroom--scrolled {
+  transition: transform 600ms ease-in-out !important;
 }
 
 @media (max-width: 768px) {
