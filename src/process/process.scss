@@ -12,6 +12,11 @@
     justify-content: center;
     align-items: center;
 
+    .intro-header {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
     .play-button {
       padding-bottom: 22px;
       cursor: pointer;
@@ -127,6 +132,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
