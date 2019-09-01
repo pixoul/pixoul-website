@@ -11,10 +11,6 @@ html, body, #root {
 .button-group {
   display: flex;
   justify-content: space-between;
-
-  .button {
-    margin-right: 45px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -25,10 +21,5 @@ html, body, #root {
 
   .button-group {
     flex-direction: column;
-    .button {
-      margin-right: 0px;
-      margin-top: 22.5px;
-      margin-bottom: 22.5px;
-    }
   }
 }

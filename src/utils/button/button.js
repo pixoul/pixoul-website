@@ -21,7 +21,12 @@ const styles = theme => ({
     width: props => props.block ? '100%' : 'auto',
     backgroundColor: props => props.outline ? 'transparent' : theme.color[props.theme],
     color: props => props.outline ? theme.color[props.theme] : '#FFFFFF',
-    margin: 22.5
+    margin: {
+      top: 22.5,
+      right: 22.5,
+      bottom: 22.5,
+      left: 0
+    }
   }
 })
 
