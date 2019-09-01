@@ -1,5 +1,6 @@
 import React from "react"
 import injectSheet from 'react-jss'
+import Typography from "utils/typography/typography"
 
 const styles = theme => ({
   step: {
@@ -20,7 +21,7 @@ const styles = theme => ({
       display: 'inline-block',
       width: '1.5em',
       margin: {
-        left: -9.5
+        left: -11
       },
       color: props => {
         const colors = {
@@ -33,27 +34,13 @@ const styles = theme => ({
     }
   },
   header: {
-    fontSize: '1em',
-    color: '#99999C',
-    whiteSpace: 'nowrap',
-    width: 300
+    width:'30%',
+    margin: {
+      top: 12
+    }
   },
   content: {
-    display: 'flex',
-    flexDirection: 'column',
-    width: '100%'
-  },
-  title: {
-    fontSize: '0.8125em',
-    fontWeight: 'bold',
-    letterSpacing: 2.36,
-    color: '#ffffff',
-    paddingBottom: 7,
-    textTransform: 'uppercase'
-  },
-  description: {
-    fontSize: '1em',
-    color: '#ffffff'
+    width: '70%',
   },
   '@media (max-width: 768px)': {
     step: {
@@ -61,15 +48,14 @@ const styles = theme => ({
     },
     header: {
       width: '100%',
-      padding: {
-        left: 30
-      },
       margin: {
-        top: -25
+        top: -39,
+        left: 30
       }
     },
     content: {
-      padding: {
+      width: '100%',
+      margin: {
         left: 30
       }
     },
@@ -89,10 +75,12 @@ const Step = ({
   classes
 }) => (
   <div className={classes.step}>
-    <div className={classes.header}>{header}</div>
+    <div className={classes.header}>
+      <Typography variant="caption" color="white" opacity={0.5}>{header}</Typography>
+    </div>
     <div className={classes.content}>
-      <div className={classes.title}>{title}</div>
-      <div className={classes.description}>{description}</div>
+      <Typography variant="subtitle2" color="white">{title}</Typography>
+      <Typography variant="body1" color="white" className={classes.description}>{description}</Typography>
     </div>
   </div>
 )

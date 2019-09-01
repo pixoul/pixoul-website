@@ -1,5 +1,6 @@
 import React from "react"
 import injectSheet from 'react-jss'
+import Typography from "utils/typography/typography"
 
 const styles = {
   legend: {
@@ -17,6 +18,12 @@ const styles = {
       bottom: 29,
       left: 0
     }
+  },
+  items: {
+    width: '100%',
+    margin:{
+      left: 20
+    }
   }
 }
 
@@ -26,7 +33,7 @@ const Legend = ({
   children
 }) => (
   <div className={classes.legend}>
-    <span className={classes.title}>{title}</span>
+    <Typography variant="subtitle2" color="white">{title}</Typography>
     <div className={classes.items}>
       {children}
     </div>
