@@ -17,7 +17,13 @@ const styles = theme => ({
   top: {
     flexDirection: 'column',
     justifyContent: 'center',
-    textAlign: props => props.align
+    textAlign: props => props.align,
+    margin: {
+      top: 14,
+      right: 0,
+      bottom: 14,
+      left: 0
+    }
   },
   bottom: {
     flexDirection: 'column-reverse',
