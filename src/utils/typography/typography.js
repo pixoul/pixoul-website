@@ -44,6 +44,11 @@ const styles = theme => ({
   overline: {
     fontSize: `${(14 / theme.font.base)}em`,
   },
+  lead: {
+    fontSize: `${(76 / theme.font.base)}em`,
+    letterSpacing: -4.75,
+    color: theme.text.primary
+  },
   quote: {
     fontSize: `${(39 / theme.font.base)}em`,
     letterSpacing: -0.61,
