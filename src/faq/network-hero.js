@@ -11,7 +11,7 @@ const NetworkHero = () => (
       <Typography variant="header1" align="center">Tap Into Our Network.</Typography>
       <Typography variant="subtitle1" align="center">Scaling and managing the best on demand talent has never been faster or easier.</Typography>
     </div>
-    <Button component={Link} to="/contact">Get Started</Button>
+    <Button component={Link} to="/contact/professional-hire">Get Started</Button>
 
   </div>
 )
