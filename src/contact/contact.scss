@@ -10,7 +10,7 @@ $bg-secondary: #dfdfdf;
   padding-bottom: 74px;
   background-image: url('./images/bg.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: cover;
 
   .contact-intro {
@@ -21,7 +21,7 @@ $bg-secondary: #dfdfdf;
 
   .join-team {
     padding-bottom: 45px;
-    
+
     .incentive-group {
       display: flex;
       justify-content: center;
