@@ -2,11 +2,11 @@ import React from "react"
 import "./talent.scss"
 
 /* Presentational Components */
-import Intro from "./intro"
-import FeaturedMember from "./featured-member"
-import TalentTimeline from "./talent-timeline"
-import ClientWork from "./client-work"
-import Excel from "./excel"
+const Intro = React.lazy(() => import("./intro"))
+const FeaturedMember = React.lazy(() => import("./featured-member"))
+const TalentTimeline = React.lazy(() => import("./talent-timeline"))
+const ClientWork = React.lazy(() => import("./client-work"))
+const Excel = React.lazy(() => import("./excel"))
 
 const Talent = () => {
 
