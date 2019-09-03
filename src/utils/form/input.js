@@ -24,6 +24,8 @@ const styles = theme => ({
     },
     fontFamily: 'AvenirNext',
     fontSize: 16,
+    outline: 'none',
+    border: 'none',
     color: '#ffffff',
     backgroundColor: 'rgba(60, 61, 65, 0.5)',
     borderRadius: 4.8,
