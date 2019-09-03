@@ -20,6 +20,8 @@ $bg-secondary: #dfdfdf;
   }
 
   .join-team {
+    padding-bottom: 45px;
+    
     .incentive-group {
       display: flex;
       justify-content: center;
@@ -48,6 +50,11 @@ $bg-secondary: #dfdfdf;
 
 @media (max-width: 768px) {
   .contact {
+    .contact-intro {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
     .join-team {
       .incentive-group {
         flex-direction: column;
@@ -57,6 +64,10 @@ $bg-secondary: #dfdfdf;
 
         .incentive-list{
           margin: 0px;
+          &:first-child {
+            margin-right: 0px;
+          }
+
           .incentive-item {
             padding-bottom: 16px;
             font-size: '1em';
