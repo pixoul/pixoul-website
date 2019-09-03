@@ -167,7 +167,6 @@ const Footer = ({
 
             <div className={classes.list}>
               <Typography variant="caption" weight="bold">Resources</Typography>
-              <Typography variant="caption" component={Link} to={'/blog'}>Blog</Typography>
               <Typography variant="caption" component={Link} to={'/contact/partnership-program'}>Referrals</Typography>
             </div>
           </div>
@@ -191,5 +190,8 @@ const Footer = ({
     </footer>
   )
 }
+
+// This goes inside the resources list under sitemap once blog is ready
+//<Typography variant="caption" component={Link} to={'/blog'}>Blog</Typography>
 
 export default injectSheet(styles)(Footer)
