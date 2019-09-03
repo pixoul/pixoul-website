@@ -20,8 +20,14 @@ const styles = theme => ({
     justifyContent: 'space-between'
   },
   message: {
-    margin: '0 auto',
-    color: theme.text.primary
+    textAlign: 'center',
+    color: theme.text.primary,
+    padding: {
+      top: 130,
+      right: 0,
+      bottom: 130,
+      left: 0
+    }
   },
   action: {
     display: 'flex',
@@ -72,13 +78,15 @@ const Form = ({
     onSubmit(e)
   }
 
+  const SubmittedMessage = () => <div className={classes.message}>Thank you and we will be in touch soon!</div>
+
+  if(submitted){
+    return <SubmittedMessage />
+  }
+
   return(
     <form className={classes.form}>
-      {submitted ?
-        <div className={classes.message}>Thank you and we will be in touch soon!</div> :
-        <div className={classes.fields}>{children}</div>
-      }
-
+      <div className={classes.fields}>{children}</div>
       <div className={classes.action}>
         <Button component="div" onClick={performSubmit}>{label}</Button>
       </div>
