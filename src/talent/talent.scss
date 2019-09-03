@@ -2,20 +2,21 @@
 .talent {
   .intro-section {
     background-image: radial-gradient(circle at 19% 22%, #f9f9f9, #f2f2f2);
-    height: calc(100vh - 350px);
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 130px;
     padding-left: 130px;
+    margin-bottom: -400px;
 
     .intro-content {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      width: 35%;
+      width: 55%;
       height: 100%;
 
       .button-group {
@@ -25,6 +26,7 @@
 
     .intro-media {
       height: 100%;
+      width: 100%;
       img {
         width: 100%;
       }
@@ -93,11 +95,11 @@
 @media (max-width: 768px) {
   .talent {
     .intro-section {
-      height: calc(100vh - 125px);
       flex-direction: column;
       align-items: flex-start;
       padding-top: 45px;
       padding-left: 0px;
+      margin-bottom: -100px;
 
 
       .intro-content {
