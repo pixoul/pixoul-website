@@ -9,7 +9,6 @@ const Talent = React.lazy(() => import("talent/talent"))
 const Process = React.lazy(() => import("process/process"))
 const FAQ = React.lazy(() => import("faq/faq"))
 const Contact = React.lazy(() => import("contact/contact"))
-const Test = React.lazy(() => import("utils/test/test"))
 
 function Routes(props){
 
@@ -39,7 +38,6 @@ function Routes(props){
                <Route path="/about" component={About} />
                <Route path="/faq" component={FAQ} />
                <Route path="/contact" component={Contact} />
-               <Route path="/test" component={Test} />
 
                <Route exact path='/' render={props => (
                  <Redirect to={{ pathname: "/home", state: { from: props.location } }} />

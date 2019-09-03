@@ -2,13 +2,13 @@ import React from "react";
 import "./home.scss"
 
 /* Presentational Components */
-import Intro from "./intro"
-import PixoulDifference from "./pixoul-difference"
-import TrustedCompanies from "utils/trusted-companies/trusted-companies"
-import PixoulVideo from "./pixoul-video"
-import QualityPerformance from "./quality-performance"
-import TopCapabilities from "./top-capabilities"
-import ReviewsCarousel from "./reviews-carousel"
+const Intro = React.lazy(() => import("./intro"))
+const PixoulDifference = React.lazy(() => import("./pixoul-difference"))
+const TrustedCompanies = React.lazy(() => import("./intro"))
+const PixoulVideo = React.lazy(() => import("utils/trusted-companies/trusted-companies"))
+const QualityPerformance = React.lazy(() => import("./pixoul-video"))
+const TopCapabilities = React.lazy(() => import("./top-capabilities"))
+const ReviewsCarousel = React.lazy(() => import("./reviews-carousel"))
 
 const Home = () => {
   return(
