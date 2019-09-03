@@ -12,22 +12,17 @@ const ProfessionalHire = () => {
   const [phone, setPhone] = useState('')
   const [email, setEmail] = useState('')
   const [comments, setComments] = useState('')
-  const [sent, setSent] = useState(false)
 
   const send = e => {
-   e.preventDefault();
-   const data = {
-      "phone": phone,
-      "email": email,
-      "name": name,
-      "comments": comments
-    }
+     e.preventDefault();
+     const data = {
+        "phone": phone,
+        "email": email,
+        "name": name,
+        "comments": comments
+      }
 
-   emailjs.send("default_service", "pixoul_website", data, 'user_y5b1msGPAYKIW4szoHygG')
-    .then((response) => setSent(true), (err) => {
-        setSent(false)
-        alert('Failed, please try again later');
-    });
+    emailjs.send("default_service", "general_contact", data, 'user_y5b1msGPAYKIW4szoHygG')
   }
 
   const clear = () => {
@@ -35,7 +30,6 @@ const ProfessionalHire = () => {
     setPhone('')
     setEmail('')
     setComments('')
-    setSent(false)
   }
 
   return (
