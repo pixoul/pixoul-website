@@ -12,12 +12,15 @@ const styles = theme => ({
     padding: {
       left: 45,
       right: 45
-    }
+    },
+    maxWidth: 1080,
+    margin: '0 auto'
   },
   fields: {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'space-between'
+    justifyContent: 'center',
+    margin: '0 auto'
   },
   message: {
     textAlign: 'center',
@@ -33,8 +36,7 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'flex-end',
     padding: {
-      top: 36,
-      right: 18,
+      top: 18,
       bottom: 67
     }
   },
