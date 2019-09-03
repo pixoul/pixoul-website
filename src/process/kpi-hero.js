@@ -15,7 +15,7 @@ const KPIHero = () => (
     <Typography variant="header1" color="white" align="center">Get Your KPIs Back On Track.</Typography>
     <Typography variant="subtitle1" color="white" align="center">Hit your fiscal year goals earlier than expected.</Typography>
 
-    <Button component={Link} to="/contact">Get in Touch</Button>
+    <Button component={Link} to="/contact/professional-hire">Get in Touch</Button>
 
   </div>
 )
