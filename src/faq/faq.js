@@ -1,13 +1,12 @@
 import React from "react"
 import "./faq.scss"
-
 /* Utils */
 import ExpansionPanel from "utils/expansion-panel/expansion-panel"
 import Typography from "utils/typography/typography"
-/* Presentation Components */
-import NetworkHero from "./network-hero"
 /* Data */
 import data from "./data"
+/* Presentation Components */
+const NetworkHero = React.lazy(() => import("./network-hero"))
 
 
 const FAQHeader = ({

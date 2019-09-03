@@ -5,10 +5,9 @@ import { Route, withRouter } from "react-router-dom"
 /* Utils */
 import TrustedCompanies from "utils/trusted-companies/trusted-companies"
 /* Routes */
-import JoinTeam from "./join-team"
-import PartnershipProgram from "./partnership-program"
-import ProfessionalHire from "./professional-hire"
-
+const JoinTeam = React.lazy(() => import("./join-team"))
+const PartnershipProgram = React.lazy(() => import("./partnership-program"))
+const ProfessionalHire = React.lazy(() => import("./professional-hire"))
 
 const Contact = ({
   match

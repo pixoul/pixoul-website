@@ -2,10 +2,10 @@ import React from "react"
 import "./process.scss"
 
 /* Presentation Components */
-import Intro from "./intro"
-import ProjectSteps from "./project-steps"
-import Matching from "./matching"
-import KPIHero from "./kpi-hero"
+const Intro = React.lazy(() => import("./intro"))
+const ProjectSteps = React.lazy(() => import("./project-steps"))
+const Matching = React.lazy(() => import("./matching"))
+const KPIHero = React.lazy(() => import("./kpi-hero"))
 
 const Process = () => {
 

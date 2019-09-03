@@ -3,7 +3,6 @@ import React, { useState } from "react"
 import * as emailjs from 'emailjs-com'
 /* Utils */
 import Typography from "utils/typography/typography"
-import Button from "utils/button/button"
 import { Form, Input } from "utils/form"
 
 const PartnershipProgram = () => {
