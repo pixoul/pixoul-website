@@ -5,6 +5,8 @@ import injectSheet from 'react-jss'
 const styles = theme => ({
   dropdown: {
     position: 'relative',
+    fontFamily: 'AvenirNext',
+    fontSize: 16,
     display: 'inline-block',
     margin: 9,
     width: props => props.fullWidth ? `calc(100% - 78px)` : theme.input.width ? theme.input.width : 320
@@ -15,16 +17,16 @@ const styles = theme => ({
     padding: {
       top: 17,
       right: 0,
-      bottom: 15,
+      bottom: 14,
       left: 18
     },
     color: 'white',
+    fontFamily: 'AvenirNext',
+    fontSize: 16,
     outline: 'none',
-    fontSize: '1em',
+    border: 'none',
     cursor: 'pointer',
     textAlign: 'left',
-    border: '2px solid rgb(238, 238, 238)',
-    borderStyle: 'inset',
     borderRadius: 4.8,
     "&:active": {
       opacity: 0.5
@@ -35,7 +37,7 @@ const styles = theme => ({
       content: '"\\25b2"',
       float: 'right',
       marginRight: 27,
-      fontSize: 15
+      fontSize: 12
     }
   },
   downArrow: {
@@ -43,7 +45,7 @@ const styles = theme => ({
       content: '"\\25bc"',
       float: 'right',
       marginRight: 27,
-      fontSize: 15
+      fontSize: 12
     }
   },
   menu: {
