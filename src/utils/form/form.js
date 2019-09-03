@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import injectSheet from 'react-jss'
 /* Utils */
 import Button from "utils/button/button"
-import { isValidInput, getRule, applyMask } from './validate'
 
 const styles = theme => ({
   form: {

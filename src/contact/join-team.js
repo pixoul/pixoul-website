@@ -3,10 +3,7 @@ import React, { useState, useRef } from "react"
 import * as emailjs from 'emailjs-com'
 /* Utils */
 import Typography from "utils/typography/typography"
-import Button from "utils/button/button"
 import { Form, Input, Dropdown } from "utils/form"
-/* Icons */
-import check from "./images/check.svg"
 
 const JoinTeam = () => {
   const fileInput = useRef()
@@ -28,13 +25,6 @@ const JoinTeam = () => {
    }
 
    emailjs.send("default_service", "join_team", data, 'user_y5b1msGPAYKIW4szoHygG')
-  }
-
-  const clear = () => {
-    setName('')
-    setExperience('')
-    setEmail('')
-    setExpertise('')
   }
 
   const upload = e => {

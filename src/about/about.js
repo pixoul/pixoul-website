@@ -1,12 +1,11 @@
 import React from "react";
 import "./about.scss"
 /* Presentational Components */
-import Intro from "./intro"
-import InfoGrid from "./info-grid"
-import LoveMore from "./love-more"
-import RoadmapPromo from "./roadmap-promo"
-import Comparison from "./comparison"
-
+const Intro = React.lazy(() => import("./intro"))
+const InfoGrid = React.lazy(() => import("./info-grid"))
+const LoveMore = React.lazy(() => import("./love-more"))
+const RoadmapPromo = React.lazy(() => import("./roadmap-promo"))
+const Comparison = React.lazy(() => import("./comparison"))
 
 export default function About() {
 

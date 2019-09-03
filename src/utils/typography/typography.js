@@ -1,6 +1,5 @@
 import React from "react"
 /* Third-Party */
-import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
 
 const styles = theme => ({
