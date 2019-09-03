@@ -83,7 +83,7 @@ const JoinTeam = () => {
           <Input
             type="expertise"
             name="expertise"
-            placeholder="Your Area of Expertise (Front-End Development, UI Design, QA, etc.)"
+            placeholder="Your Area of Expertise"
             value={expertise}
             onChange={(e) => setExpertise(e.target.value)}
             fullWidth
