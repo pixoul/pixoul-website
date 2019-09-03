@@ -16,6 +16,7 @@ $bg-secondary: #dfdfdf;
   .contact-intro {
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 44px;
   }
 
   .join-team {
@@ -23,7 +24,6 @@ $bg-secondary: #dfdfdf;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-top: 44px;
       padding-bottom: 50px;
 
       .incentive-list {
