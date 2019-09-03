@@ -28,7 +28,7 @@ const ProfessionalHire = () => {
     <div className="professional-hire">
       <div className="contact-intro">
         <Typography variant="header1" align="center" weight="normal">Request Your <strong>Free Estimate</strong> <br /> and Get to Work.</Typography>
-        <Typography variant="subtitle1" align="center">Whether you’re looking for a single designer, developer, or project manager, - or an entire scrum team — we’ll match you with the perfect fit, fast.</Typography>
+        <Typography variant="subtitle1" align="center">Whether you’re looking for a single designer, developer, project manager, or an entire scrum team, we’ll match you with the perfect fit fast.</Typography>
       </div>
 
       <Form label="Get In Touch" onSubmit={send} >
