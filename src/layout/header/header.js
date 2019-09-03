@@ -7,7 +7,7 @@ import injectSheet from 'react-jss'
 import Typography from "utils/typography/typography"
 import Button from "utils/button/button"
 /* Images */
-import logo from "./images/logo.svg"
+import logo from "./logo.svg"
 
 const styles = theme => ({
   headroom: {
