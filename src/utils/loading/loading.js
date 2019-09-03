@@ -1,11 +1,28 @@
 import React, { useEffect, useState } from "react"
-import "./loading.scss"
+/* Third-Party */
+import injectSheet from 'react-jss'
 import { useTransition, animated } from 'react-spring'
 import { withRouter } from "react-router-dom"
 
+const styles = theme => ({
+  loading: {
+    backgroundColor: 'white',
+    position: 'fixed',
+    zIndex: 9999,
+    top: 0,
+    bottom: 0,
+    right: 0,
+    left: 0,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+})
+
 const Loading = ({
   history,
-  watchRoutes = false
+  watchRoutes = false,
+  classes
 }) => {
 
   const [loading, toggleLoading] = useState(false)
@@ -42,8 +59,8 @@ const Loading = ({
 
 
   return transitions.map(({ item, key, props }) => item && (
-    <animated.div key={key} style={props} className="loading" />
+    <animated.div key={key} style={props} className={classes.loading} />
   ))
 }
 
-export default withRouter(Loading)
+export default withRouter(injectSheet(styles)(Loading))
