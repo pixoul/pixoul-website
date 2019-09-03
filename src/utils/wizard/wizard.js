@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 /* Third-Party */
 import injectSheet from 'react-jss'
-import cn from "classnames"
 /* Child Components */
 import WizardNavigation from "./navigation"
 

@@ -1,7 +1,6 @@
 import React from "react"
 import injectSheet from 'react-jss'
 /* Utils */
-import Button from "utils/button/button"
 import Typography from "utils/typography/typography"
 
 const styles = theme => ({

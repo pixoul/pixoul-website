@@ -1,7 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 /* Third-Party */
 import injectSheet from 'react-jss'
-import cn from "classnames"
 
 const styles = theme => ({
   navigation: {

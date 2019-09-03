@@ -3,7 +3,6 @@ import React, { useState } from "react"
 import * as emailjs from 'emailjs-com'
 /* Utils */
 import Typography from "utils/typography/typography"
-import Button from "utils/button/button"
 import { Form, Input } from "utils/form"
 
 const ProfessionalHire = () => {
@@ -23,13 +22,6 @@ const ProfessionalHire = () => {
       }
 
     emailjs.send("default_service", "general_contact", data, 'user_y5b1msGPAYKIW4szoHygG')
-  }
-
-  const clear = () => {
-    setName('')
-    setPhone('')
-    setEmail('')
-    setComments('')
   }
 
   return (

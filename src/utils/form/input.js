@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 import injectSheet from 'react-jss'
 /* Utils */
 import { isValidInput, getRule, applyMask } from './validate'
-/* Icons */
-import CheckIcon from 'utils/icons/check'
 
 const styles = theme => ({
   wrapper: {

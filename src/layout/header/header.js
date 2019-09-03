@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 /* Third-Party */
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Headroom from "react-headroom"
 import injectSheet from 'react-jss'
 /* Utils */
 import Typography from "utils/typography/typography"
-import Button from "utils/button/button"
+// import Button from "utils/button/button"
 /* Images */
 import logo from "./logo.svg"
 
