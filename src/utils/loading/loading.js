@@ -12,7 +12,7 @@ const Loading = ({
 
   const transitions = useTransition(loading, null, {
     from: {
-      backgroundColor: '#3180fb',
+      backgroundColor: '#276CF2',
       transform: 'translate3d(0, -100%, 0)',
       life: '0%'
     },
