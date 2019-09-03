@@ -19,6 +19,10 @@ const styles = theme => ({
     flexWrap: 'wrap',
     justifyContent: 'space-between'
   },
+  message: {
+    margin: '0 auto',
+    color: theme.text.primary
+  },
   action: {
     display: 'flex',
     justifyContent: 'flex-end',
@@ -61,12 +65,22 @@ const Form = ({
   classes
 }) => {
 
+  const [submitted, setSubmitted] = useState(false)
+
+  const performSubmit = () => {
+    setSubmitted(true)
+    onSubmit()
+  }
+
   return(
     <form className={classes.form}>
-      <div className={classes.fields}>{children}</div>
+      {submitted ?
+        <div className={classes.message}>Thank you and we will be in touch soon!</div> :
+        <div className={classes.fields}>{children}</div>
+      }
 
       <div className={classes.action}>
-        <Button component="div" onClick={onSubmit}>{label}</Button>
+        <Button component="div" onClick={performSubmit}>{label}</Button>
       </div>
     </form>
   )
