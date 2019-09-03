@@ -37,16 +37,6 @@ const ClientWork = () => {
           </Slide>
           <Slide>
             <Project
-              media={stallion}
-              name="Stallion Oilfield Services"
-              tagline="Taking Field Analytics To A New Level"
-              description="We took data vizualization to the next level by building a robust interface that simplified complex data streams and allowed snapshot statistics of vital KPIs."
-              services={['UX/UI Design', 'QA Testing', 'Development']}
-              tools={['Pen + Paper', 'Sketch', 'InVision', 'Trello']}
-            />
-          </Slide>
-          <Slide>
-            <Project
               media={georgiaPacific}
               name="Georgia-Pacific"
               tagline="Transforming how Logistics Gets Done"
@@ -82,5 +72,16 @@ const ClientWork = () => {
   )
 }
 
+//Temporarily removing stallion while in courtship
+// <Slide>
+//   <Project
+//     media={stallion}
+//     name="Stallion Oilfield Services"
+//     tagline="Taking Field Analytics To A New Level"
+//     description="We took data vizualization to the next level by building a robust interface that simplified complex data streams and allowed snapshot statistics of vital KPIs."
+//     services={['UX/UI Design', 'QA Testing', 'Development']}
+//     tools={['Pen + Paper', 'Sketch', 'InVision', 'Trello']}
+//   />
+// </Slide>
 
 export default ClientWork
