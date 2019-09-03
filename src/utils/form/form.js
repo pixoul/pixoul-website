@@ -67,9 +67,9 @@ const Form = ({
 
   const [submitted, setSubmitted] = useState(false)
 
-  const performSubmit = () => {
+  const performSubmit = e => {
     setSubmitted(true)
-    onSubmit()
+    onSubmit(e)
   }
 
   return(
