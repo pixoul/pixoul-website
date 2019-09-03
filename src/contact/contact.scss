@@ -6,8 +6,8 @@ $bg-primary: #f9fafc;
 $bg-secondary: #dfdfdf;
 
 .contact {
-  padding-top: 166px;
-  padding-bottom: 76px;
+  padding-top: 130px;
+  padding-bottom: 74px;
   background-image: url('./images/bg.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -21,13 +21,17 @@ $bg-secondary: #dfdfdf;
   .join-team {
     .incentive-group {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       padding-top: 44px;
-      padding-bottom: 58px;
+      padding-bottom: 50px;
 
       .incentive-list {
         list-style-image: url('./images/check.svg');
+
+        &:first-child {
+          margin-right: 50px;
+        }
 
         .incentive-item {
           padding-left: 14px;
