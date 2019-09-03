@@ -45,6 +45,7 @@ const styles = theme => ({
       },
       borderLeft: '1px solid #dddddd',
       borderImage: 'linear-gradient(to bottom, #ffffff 0%, #dddddd 30%, #dddddd 80%, #ffffff 100%)',
+      borderWidth: '0 0 0 1px',
       borderImageSlice: 1
     },
     body: {
@@ -61,6 +62,7 @@ const styles = theme => ({
         width: '50%',
         borderTop: '1px solid #dddddd',
         borderImage: 'linear-gradient(to right, #ffffff 0%, #dddddd 30%, #dddddd 80%, #ffffff 100%)',
+        borderWidth: '1px 0 0 0',
         borderImageSlice: 1
       }
     }

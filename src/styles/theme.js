@@ -16,7 +16,8 @@ const theme = {
     error: '#ff0000'
   },
   input: {
-    width: 320
+    width: 320,
+    color: 'rgba(60, 61, 65, 0.5)'
   },
   spacing: {
     horizontal: {
