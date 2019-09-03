@@ -6,8 +6,8 @@ $bg-primary: #f9fafc;
 $bg-secondary: #dfdfdf;
 
 .contact {
-  padding-top: 166px;
-  padding-bottom: 76px;
+  padding-top: 130px;
+  padding-bottom: 74px;
   background-image: url('./images/bg.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -16,18 +16,24 @@ $bg-secondary: #dfdfdf;
   .contact-intro {
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 44px;
   }
 
   .join-team {
+    padding-bottom: 45px;
+    
     .incentive-group {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
-      padding-top: 44px;
-      padding-bottom: 58px;
+      padding-bottom: 50px;
 
       .incentive-list {
         list-style-image: url('./images/check.svg');
+
+        &:first-child {
+          margin-right: 50px;
+        }
 
         .incentive-item {
           padding-left: 14px;
@@ -44,6 +50,11 @@ $bg-secondary: #dfdfdf;
 
 @media (max-width: 768px) {
   .contact {
+    .contact-intro {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
     .join-team {
       .incentive-group {
         flex-direction: column;
@@ -53,6 +64,10 @@ $bg-secondary: #dfdfdf;
 
         .incentive-list{
           margin: 0px;
+          &:first-child {
+            margin-right: 0px;
+          }
+
           .incentive-item {
             padding-bottom: 16px;
             font-size: '1em';

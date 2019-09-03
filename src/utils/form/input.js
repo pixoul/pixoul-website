@@ -8,8 +8,8 @@ import CheckIcon from 'utils/icons/check'
 
 const styles = theme => ({
   wrapper: {
-    width: props => props.fullWidth ? '100%' : theme.input.width ? theme.input.width : 320,
-    margin: 18
+    width: props => props.fullWidth ? `calc(100% - 78px)` : theme.input.width ? theme.input.width : 320,
+    margin: 9
   },
   label: {
     color: theme.text.primary

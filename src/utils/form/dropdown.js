@@ -6,12 +6,12 @@ const styles = theme => ({
   dropdown: {
     position: 'relative',
     display: 'inline-block',
-    margin: 18,
-    width: props => props.fullWidth ? '100%' : theme.input.width ? theme.input.width : 320
+    margin: 9,
+    width: props => props.fullWidth ? `calc(100% - 78px)` : theme.input.width ? theme.input.width : 320
   },
   toggler: {
     width: '100%',
-    backgroundColor: 'rgba(60, 61, 65, 0.5)',
+    backgroundColor: theme.input.color,
     padding: {
       top: 17,
       right: 0,
@@ -34,14 +34,16 @@ const styles = theme => ({
     "&:after": {
       content: '"\\25b2"',
       float: 'right',
-      marginRight: 27
+      marginRight: 27,
+      fontSize: 15
     }
   },
   downArrow: {
     "&:after": {
       content: '"\\25bc"',
       float: 'right',
-      marginRight: 27
+      marginRight: 27,
+      fontSize: 15
     }
   },
   menu: {
@@ -55,7 +57,7 @@ const styles = theme => ({
     width: '100%'
   },
   item: {
-    backgroundColor: 'rgba(60, 61, 65, 0.5)',
+    backgroundColor: theme.input.color,
     padding: {
       top: 17,
       right: 0,

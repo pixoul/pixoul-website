@@ -27,13 +27,14 @@ const styles = theme => ({
       left: 0
     },
     '& img' : {
-      paddingLeft: '62px',
+      padding: 30,
       filter: props => props.light ? 'opacity(0.2)' : 'none'
     }
   },
   '@media (max-width: 768px)': {
     media: {
-      flexDirection: 'column',
+      flexDirection: 'row',
+      flexWrap: 'wrap',
       padding: {
         top: 30,
         right: 0,
@@ -41,12 +42,7 @@ const styles = theme => ({
         left: 0
       },
       '& img': {
-        padding: {
-          top: 30,
-          right: 0,
-          bottom: 0,
-          left: 0
-        }
+        width: '30%'
       }
     }
   }
@@ -57,7 +53,7 @@ const TrustedCompanies = ({
   classes
 }) => (
   <div className={classes.root}>
-      <Typography variant="h6" color="primary" align="center" weight="bold" transform="uppercase">{title}</Typography>
+      <Typography variant="subtitle2" align="center">{title}</Typography>
       <div className={classes.media}>
         <img src={disney} alt={disney} />
         <img src={airbnb} alt={airbnb} />

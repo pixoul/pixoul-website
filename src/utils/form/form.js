@@ -12,19 +12,31 @@ const styles = theme => ({
     padding: {
       left: 45,
       right: 45
-    }
+    },
+    maxWidth: 1080,
+    margin: '0 auto'
   },
   fields: {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'space-between'
+    justifyContent: 'center',
+    margin: '0 auto'
+  },
+  message: {
+    textAlign: 'center',
+    color: theme.text.primary,
+    padding: {
+      top: 130,
+      right: 0,
+      bottom: 130,
+      left: 0
+    }
   },
   action: {
     display: 'flex',
     justifyContent: 'flex-end',
     padding: {
-      top: 36,
-      right: 18,
+      top: 18,
       bottom: 67
     }
   },
@@ -61,12 +73,24 @@ const Form = ({
   classes
 }) => {
 
+  const [submitted, setSubmitted] = useState(false)
+
+  const performSubmit = e => {
+    setSubmitted(true)
+    onSubmit(e)
+  }
+
+  const SubmittedMessage = () => <div className={classes.message}>Thank you and we will be in touch soon!</div>
+
+  if(submitted){
+    return <SubmittedMessage />
+  }
+
   return(
     <form className={classes.form}>
       <div className={classes.fields}>{children}</div>
-
       <div className={classes.action}>
-        <Button component="div" onClick={onSubmit}>{label}</Button>
+        <Button component="div" onClick={performSubmit}>{label}</Button>
       </div>
     </form>
   )

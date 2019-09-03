@@ -16,7 +16,6 @@ const JoinTeam = () => {
   const [experience, setExperience] = useState(undefined)
   const [expertise, setExpertise] = useState('')
   const [resume, setResume] = useState(null)
-  const [sent, setSent] = useState(false)
 
   const send = e => {
    e.preventDefault();
@@ -29,10 +28,6 @@ const JoinTeam = () => {
    }
 
    emailjs.send("default_service", "join_team", data, 'user_y5b1msGPAYKIW4szoHygG')
-    .then((response) => setSent(true), (err) => {
-        setSent(false)
-        alert('Failed, please try again later');
-    });
   }
 
   const clear = () => {
@@ -40,7 +35,6 @@ const JoinTeam = () => {
     setExperience('')
     setEmail('')
     setExpertise('')
-    setSent(false)
   }
 
   const upload = e => {
@@ -89,7 +83,7 @@ const JoinTeam = () => {
           <Input
             type="expertise"
             name="expertise"
-            placeholder="Your Area of Expertise (Front-End Development, UI Design, QA, etc.)"
+            placeholder="Your Area of Expertise"
             value={expertise}
             onChange={(e) => setExpertise(e.target.value)}
             fullWidth

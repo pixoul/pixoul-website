@@ -12,22 +12,17 @@ const PartnershipProgram = () => {
   const [phone, setPhone] = useState('')
   const [email, setEmail] = useState('')
   const [comments, setComments] = useState('')
-  const [sent, setSent] = useState(false)
 
   const send = e => {
-   e.preventDefault();
-   const data = {
-      "phone": phone,
-      "email": email,
-      "name": name,
-      "comments": comments
-    }
+     e.preventDefault();
+     const data = {
+        "phone": phone,
+        "email": email,
+        "name": name,
+        "comments": comments
+      }
 
-   emailjs.send("default_service", "pixoul_website", data, 'user_y5b1msGPAYKIW4szoHygG')
-    .then((response) => setSent(true), (err) => {
-        setSent(false)
-        alert('Failed, please try again later');
-    });
+     emailjs.send("default_service", "general_contact", data, 'user_y5b1msGPAYKIW4szoHygG')
   }
 
   return (
@@ -36,7 +31,7 @@ const PartnershipProgram = () => {
           <Typography variant="header1" align="center" weight="normal">Share the Love, and <br /><strong>Get Paid.</strong></Typography>
           <Typography variant="subtitle1" align="center">We’re always looking for new clients or additions to our freelancer network.  Got the perfect fit in mind?  Let us know—we pay for every quality connection.</Typography>
         </div>
-        
+
         <Form label="Apply to Our Team" onSubmit={send} >
           <Input
             type="name"
