@@ -9,7 +9,7 @@ export default {
   },
   "phone": {
     message: "Invalid phone number",
-    regex: /^\(\d{3}\)\s\d{3}\-\d{4}$/,
+    regex: /^\(\d{3}\)\s\d{3}-\d{4}$/,
     mask: "(###) ###-####"
   },
   "username": {
