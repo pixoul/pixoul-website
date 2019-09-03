@@ -23,9 +23,14 @@ const styles = theme => ({
     color: props => props.outline ? theme.color[props.theme] : '#FFFFFF',
     margin: {
       top: 22.5,
-      right: 22.5,
-      bottom: 22.5,
-      left: 0
+      bottom: 22.5
+    },
+    "&:not(:first-child)": {
+      margin: {
+        top: 22.5,
+        bottom: 22.5,
+        left: 22.5
+      }
     }
   }
 })
