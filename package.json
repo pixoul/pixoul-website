@@ -25,6 +25,7 @@
     "react-scripts": "3.0.1",
     "react-slick": "^0.24.0",
     "react-spring": "^8.0.27",
+    "react-visibility-sensor": "^5.1.1",
     "resize-observer-polyfill": "^1.5.1",
     "slick-carousel": "^1.8.1"
   },
