@@ -28,9 +28,12 @@ const withAnimation = WrappedComponent => ({ ...props }) => {
 const Animate = ({
   children,
   delay = 100,
-  partial = false
+  partial = false,
+  once = false
 }) => {
   const [isVisible, setVisibility] = useState(false)
+  const [active, setActive] = useState(true)
+
   const animation = useSpring({
     from: {
       opacity: 0,
@@ -45,8 +48,16 @@ const Animate = ({
     delay: delay
   })
 
+  const performChange = isVisible => {
+    if(once && isVisible) {
+      setActive(false)
+    }
+
+    setVisibility(isVisible)
+  }
+
   return(
-    <VisibilitySensor partialVisibility={partial} onChange={(isVisible) => setVisibility(isVisible)}>
+    <VisibilitySensor active={active} partialVisibility={partial} onChange={performChange}>
       <animated.div style={animation}>
         {children}
       </animated.div>
