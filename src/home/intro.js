@@ -13,7 +13,7 @@ const Intro = () => {
     <div className="intro-section">
         <Typography variant="header1" align="center">On Demand IT Talent, <br /> Simplified.</Typography>
 
-      <Animate delay={300}>
+      <Animate delay={300} once>
         <div className="button-group">
           <Button component={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
           <Button outline component={Link} to="/contact/join-team">Join the Team</Button>
