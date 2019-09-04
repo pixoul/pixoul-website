@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import injectSheet from 'react-jss'
 import { useSpring, animated } from 'react-spring'
 import VisibilitySensor from "react-visibility-sensor"
@@ -61,10 +61,9 @@ const Stat = ({
     },
     config: {
       mass: 1,
-      tension: 300,
-      friction: 180
-    },
-    delay: 200
+      tension: 120,
+      friction: 110
+    }
   })
 
   const performChange = isVisible => {
@@ -75,7 +74,7 @@ const Stat = ({
   }
 
   return(
-    <VisibilitySensor active={active} onChange={performChange}>
+    <VisibilitySensor active={active} onChange={performChange} partialVisibility>
       <div className={classes.stat}>
         <svg height={size} width={size}>
           <circle
