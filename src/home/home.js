@@ -15,7 +15,7 @@ const Home = () => {
     <div className="home">
       <Intro />
       <PixoulDifference />
-      <TrustedCompanies light />
+      <TrustedCompanies light animateOnce />
       <PixoulVideo />
       <QualityPerformance />
       <TopCapabilities />

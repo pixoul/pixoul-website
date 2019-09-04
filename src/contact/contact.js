@@ -18,7 +18,7 @@ const Contact = ({
         <Route path={`${match.path}/partnership-program`} component={PartnershipProgram} />
         <Route path={`${match.path}/professional-hire`} component={ProfessionalHire} />
 
-        <TrustedCompanies />
+        <TrustedCompanies animateOnce />
     </div>
   )
 }
