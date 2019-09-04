@@ -53,7 +53,7 @@ const TopCapabilities = () => {
           </Row>
         </Container>
 
-        <Animate delay={300}>
+        <Animate delay={300} once>
           <div className="capabilities-button">
             <Button component={Link} to="/process">Learn More</Button>
           </div>
