@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 /* Utils */
 import Button from "utils/button/button"
 import Typography from "utils/typography/typography"
+import { Animate } from "utils/animate/animate"
 /* Images */
 import roadmapPromo from "./images/roadmap-promo.png"
 
@@ -16,9 +17,11 @@ const RoadmapPromo = () => (
     <Typography variant="header1" color="white" align="center">Let’s Improve Your Roadmap.</Typography>
     <Typography variant="subtitle1" color="white" align="center">We average a 219% increase in ROI.  Find out how.</Typography>
 
-    <div className="roadmap-action">
-      <Button component={Link} to="/contact/professional-hire">Get in Touch</Button>
-    </div>
+    <Animate delay={300} once>
+      <div className="roadmap-action">
+        <Button component={Link} to="/contact/professional-hire">Get in Touch</Button>
+      </div>
+    </Animate>
   </div>
 )
 

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 /* Util */
 import Button from "utils/button/button"
 import Typography from "utils/typography/typography"
+import { Animate } from "utils/animate/animate"
 /* Images */
 import kpiBg from "./images/kpi-bg.png"
 
@@ -15,8 +16,9 @@ const KPIHero = () => (
     <Typography variant="header1" color="white" align="center">Get Your KPIs Back On Track.</Typography>
     <Typography variant="subtitle1" color="white" align="center">Hit your fiscal year goals earlier than expected.</Typography>
 
-    <Button component={Link} to="/contact/professional-hire">Get in Touch</Button>
-
+    <Animate delay={300} once>
+      <Button component={Link} to="/contact/professional-hire">Get in Touch</Button>
+    </Animate>
   </div>
 )
 
