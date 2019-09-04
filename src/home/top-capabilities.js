@@ -17,48 +17,38 @@ const TopCapabilities = () => {
   return(
     <div className="top-capabilities gutters">
         <div className="capabilities-header">
-          <Animate delay={100}>
-            <Typography variant="header1" align="center">Our Top Capabilities.</Typography>
-          </Animate>
-          <Animate delay={200}>
-            <Typography variant="subtitle1" align="center">Hire career-focused team members who <br /> will grow and support your initiatives.</Typography>
-          </Animate>
+          <Typography variant="header1" align="center">Our Top Capabilities.</Typography>
+          <Typography variant="subtitle1" align="center">Hire career-focused team members who <br /> will grow and support your initiatives.</Typography>
         </div>
 
         <Container>
           <Row>
             <Col sm={12} md={4}>
-              <Animate delay={300}>
-                <Feature
-                  position="top"
-                  align="center"
-                  title="Development"
-                  icon={<DevelopmentIcon color="#276cf2" circular />}
-                  description="Front-end, back-end, QA testing, and database admin."
-                />
-              </Animate>
+              <Feature
+                position="top"
+                align="center"
+                title="Development"
+                icon={<DevelopmentIcon color="#276cf2" circular />}
+                description="Front-end, back-end, QA testing, and database admin."
+              />
             </Col>
             <Col sm={12} md={4}>
-              <Animate delay={400}>
-                <Feature
-                  position="top"
-                  align="center"
-                  title="UX/UI DESIGN"
-                  icon={<DesignIcon color="#276cf2" circular />}
-                  description="Research, branding, design, animation, and product demos."
-                />
-              </Animate>
+              <Feature
+                position="top"
+                align="center"
+                title="UX/UI DESIGN"
+                icon={<DesignIcon color="#276cf2" circular />}
+                description="Research, branding, design, animation, and product demos."
+              />
             </Col>
             <Col sm={12} md={4}>
-              <Animate delay={500}>
-                <Feature
-                  position="top"
-                  align="center"
-                  title="PROJECT MANAGEMENT"
-                  icon={<PrintIcon color="#276cf2" circular />}
-                  description="Agile and waterfall methodologies, design thinking, and more."
-                />
-              </Animate>
+              <Feature
+                position="top"
+                align="center"
+                title="PROJECT MANAGEMENT"
+                icon={<PrintIcon color="#276cf2" circular />}
+                description="Agile and waterfall methodologies, design thinking, and more."
+              />
             </Col>
           </Row>
         </Container>
