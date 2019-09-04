@@ -17,6 +17,7 @@ const QualityPerformance = () => {
           decimal={1}
           description="Average Project Length (Yrs.)"
           progress={75}
+          animateOnce
         />
         <Stat
           value={250}
@@ -24,12 +25,14 @@ const QualityPerformance = () => {
           symbol="$"
           description="Value of Delivered Solutions"
           progress={60}
+          animateOnce
         />
         <Stat
           value={300}
           unit="+"
           description="Team Members Already Working"
           progress={35}
+          animateOnce
         />
       </div>
     </div>

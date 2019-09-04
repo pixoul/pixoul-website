@@ -41,9 +41,11 @@ const Stat = ({
   size = 300,
   stroke = 6,
   progress = 100,
+  animateOnce = false,
   classes
 }) => {
   const [isVisible, setVisibility] = useState(false)
+  const [active, setActive] = useState(true)
 
   const radius = size / 2
   const normalizedRadius = radius - stroke * 2
@@ -57,11 +59,23 @@ const Stat = ({
       x: circumference,
       value: 0
     },
+    config: {
+      mass: 1,
+      tension: 300,
+      friction: 180
+    },
     delay: 200
   })
 
+  const performChange = isVisible => {
+    if(animateOnce && isVisible){
+      setActive(false)
+    }
+    setVisibility(isVisible)
+  }
+
   return(
-    <VisibilitySensor onChange={(isVisible) => setVisibility(isVisible)}>
+    <VisibilitySensor active={active} onChange={performChange}>
       <div className={classes.stat}>
         <svg height={size} width={size}>
           <circle
