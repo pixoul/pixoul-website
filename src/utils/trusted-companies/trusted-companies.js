@@ -2,6 +2,7 @@ import React from "react"
 import injectSheet from 'react-jss'
 /* Utils */
 import Typography from "utils/typography/typography"
+import { Animate } from "utils/animate/animate"
 /* Images */
 import disney from "./images/disney.svg"
 import airbnb from "./images/airbnb.svg"
@@ -53,7 +54,10 @@ const TrustedCompanies = ({
   classes
 }) => (
   <div className={classes.root}>
-      <Typography variant="subtitle2" align="center">{title}</Typography>
+      <Animate delay={100}>
+        <Typography variant="subtitle2" align="center">{title}</Typography>
+      </Animate>
+      <Animate delay={200}>
       <div className={classes.media}>
         <img src={disney} alt={disney} />
         <img src={airbnb} alt={airbnb} />
@@ -61,6 +65,7 @@ const TrustedCompanies = ({
         <img src={gp} alt={gp} />
         <img src={kw} alt={kw} />
       </div>
+      </Animate>
   </div>
 )
 
