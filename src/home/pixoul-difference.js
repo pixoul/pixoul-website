@@ -4,7 +4,6 @@ import { Container, Row, Col } from 'react-grid-system'
 /* Utils */
 import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
-import { Animate } from "utils/animate/animate"
 /* Icons */
 import ThumbsupIcon from "utils/icons/thumbsup"
 import MoneyIcon from "utils/icons/money"
