@@ -1,5 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import injectSheet from 'react-jss'
+import { useTrail, animated } from 'react-spring'
+import VisibilitySensor from "react-visibility-sensor"
 /* Utils */
 import Typography from "utils/typography/typography"
 /* Images */
@@ -8,6 +10,7 @@ import airbnb from "./images/airbnb.svg"
 import amazon from "./images/amazon.svg"
 import gp from "./images/gp.svg"
 import kw from "./images/kw.svg"
+const images = [disney, airbnb, amazon, gp, kw]
 
 const styles = theme => ({
   root: {
@@ -50,20 +53,50 @@ const styles = theme => ({
 
 const TrustedCompanies = ({
   title,
-  classes
-}) => (
-  <div className={classes.root}>
-  
-      <Typography variant="subtitle2" align="center">{title}</Typography>
-      <div className={classes.media}>
-        <img src={disney} alt={disney} />
-        <img src={airbnb} alt={airbnb} />
-        <img src={amazon} alt={amazon} />
-        <img src={gp} alt={gp} />
-        <img src={kw} alt={kw} />
+  classes,
+  animateOnce
+}) => {
+  const [isVisible, setVisibility] = useState(false)
+  const [active, setActive] = useState(true)
+
+  const performChange = isVisible => {
+    if(animateOnce && isVisible){
+      setActive(false)
+    }
+    setVisibility(isVisible)
+  }
+
+  const trail = useTrail(images.length, {
+    opacity: isVisible ? 1 : 0,
+    x: isVisible ? 0 : 300,
+    from: {
+      opacity: 0,
+      x: 20
+    },
+    config: {
+      tension: 280,
+      friction: 60
+    }
+  })
+
+  return (
+    <VisibilitySensor active={active} onChange={performChange} partialVisibility>
+      <div className={classes.root}>
+          <Typography variant="subtitle2" align="center">{title}</Typography>
+          <div className={classes.media}>
+            {trail.map(({ x, ...rest }, index) => (
+                <animated.img
+                  key={index}
+                  style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`)}}
+                  src={images[index]}
+                  alt={images[index]}
+                />
+            ))}
+          </div>
       </div>
-  </div>
-)
+    </VisibilitySensor>
+  )
+}
 
 TrustedCompanies.defaultProps = {
   title: 'Our Talent Network has Worked For Companies Like:',
