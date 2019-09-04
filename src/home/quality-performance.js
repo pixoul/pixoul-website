@@ -18,21 +18,26 @@ const QualityPerformance = () => {
       <div className="quality-stats">
         <Animate delay={300}>
           <Stat
-            value="1.5+"
+            value={1.5}
+            unit="+"
+            decimal={1}
             description="Average Project Length (Yrs.)"
             progress={75}
           />
         </Animate>
         <Animate delay={400}>
           <Stat
-            value="$250M"
+            value={250}
+            unit="M"
+            symbol="$"
             description="Value of Delivered Solutions"
             progress={60}
           />
         </Animate>
         <Animate delay={500}>
           <Stat
-            value="300+"
+            value={300}
+            unit="+"
             description="Team Members Already Working"
             progress={35}
           />

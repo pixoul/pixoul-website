@@ -1,5 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import injectSheet from 'react-jss'
+import { useSpring, animated } from 'react-spring'
+import VisibilitySensor from "react-visibility-sensor"
+
 import Typography from "utils/typography/typography"
 
 const styles = theme => ({
@@ -31,49 +34,70 @@ const styles = theme => ({
 
 const Stat = ({
   value,
+  symbol = "",
+  unit="",
   description,
+  decimal = 0,
   size = 300,
   stroke = 6,
   progress = 100,
   classes
 }) => {
+  const [isVisible, setVisibility] = useState(false)
 
   const radius = size / 2
   const normalizedRadius = radius - stroke * 2
   const circumference = normalizedRadius * 2 * Math.PI
   const strokeDashoffset = circumference - progress / 100 * circumference;
 
-  return(
-    <div className={classes.stat}>
-      <svg height={size} width={size}>
-        <circle
-          r={ normalizedRadius }
-          cx={ radius }
-          cy={ radius }
-          fill="none"
-          stroke="#eeeeee"
-          strokeWidth={ stroke }
-          className={classes.circle}
-        />
-        <circle
-          stroke="#2e71f0"
-          fill="transparent"
-          strokeWidth={ stroke }
-          strokeDasharray={ circumference + ' ' + circumference }
-          style={ { strokeDashoffset } }
-          r={ normalizedRadius }
-          cx={ radius }
-          cy={ radius }
-          className={classes.circle}
-         />
-      </svg>
+  const animation = useSpring({
+    x: isVisible ? strokeDashoffset : circumference,
+    value: isVisible ? value : 0,
+    from: {
+      x: circumference,
+      value: 0
+    },
+    delay: 200
+  })
 
-      <div className={classes.content}>
-        <Typography variant="lead">{value}</Typography>
-        <Typography variant="caption">{description}</Typography>
+  return(
+    <VisibilitySensor onChange={(isVisible) => setVisibility(isVisible)}>
+      <div className={classes.stat}>
+        <svg height={size} width={size}>
+          <circle
+            r={ normalizedRadius }
+            cx={ radius }
+            cy={ radius }
+            fill="none"
+            stroke="#eeeeee"
+            strokeWidth={ stroke }
+            className={classes.circle}
+          />
+          <animated.circle
+            stroke="#2e71f0"
+            fill="transparent"
+            strokeWidth={ stroke }
+            strokeDasharray={ circumference + ' ' + circumference }
+            strokeDashoffset={animation.x}
+            r={ normalizedRadius }
+            cx={ radius }
+            cy={ radius }
+            className={classes.circle}
+           />
+        </svg>
+
+        <div className={classes.content}>
+          <Typography variant="lead">
+            {symbol}
+            <animated.span>
+              {animation.value.interpolate(val => val.toFixed(decimal))}
+            </animated.span>
+            {unit}
+          </Typography>
+          <Typography variant="caption">{description}</Typography>
+        </div>
       </div>
-    </div>
-  )
-}
+    </VisibilitySensor>
+)}
 
 export default injectSheet(styles)(Stat)
