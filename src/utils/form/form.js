@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import injectSheet from 'react-jss'
 /* Utils */
 import Button from "utils/button/button"
+import { Animate } from "utils/animate/animate"
 
 const styles = theme => ({
   form: {
@@ -89,7 +90,9 @@ const Form = ({
     <form className={classes.form}>
       <div className={classes.fields}>{children}</div>
       <div className={classes.action}>
-        <Button component="div" onClick={performSubmit}>{label}</Button>
+        <Animate delay={300} once>
+          <Button component="div" onClick={performSubmit}>{label}</Button>
+        </Animate>
       </div>
     </form>
   )

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 /* Utils */
 import Button from "utils/button/button"
 import Typography from "utils/typography/typography"
+import { Animate } from "utils/animate/animate"
 /* Images */
 import iphoneFront from "./images/iphone-front.svg"
 import iphoneBack from "./images/iphone-back.svg"
@@ -15,10 +16,12 @@ const Intro = () => (
       <Typography variant="header1" color="white" align="left">Welcome to Your Elite Talent Network.</Typography>
       <Typography variant="body1" color="white" align="left" >We hire world-class designers, developers and project managers.  Pixoul talent contributes to the most innovative and profitable companies across the globe.</Typography>
 
-      <div className="button-group">
-        <Button theme="secondary" component={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
-        <Button theme="white" outline component={Link} to="/contact/join-team">Join the Team</Button>
-      </div>
+      <Animate delay={300} once>
+        <div className="button-group">
+          <Button theme="secondary" component={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
+          <Button theme="white" outline component={Link} to="/contact/join-team">Join the Team</Button>
+        </div>
+      </Animate>
     </div>
     <div className="intro-media">
       <img src={iphoneFront} alt={iphoneFront} className="intro-image front" />

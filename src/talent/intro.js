@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 /* Utils */
 import Button from "utils/button/button"
 import Typography from "utils/typography/typography"
+import { Animate } from "utils/animate/animate"
 /* Images */
 import laptop from "./images/laptop.svg"
 
@@ -13,9 +14,11 @@ const Intro = () => (
       <Typography variant="header1">Expert Talent.</Typography>
       <Typography variant="subtitle1">Discover why leading companies trust our talent network with their most complex implementations.</Typography>
 
-      <div className="button-group">
-        <Button component={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
-      </div>
+      <Animate delay={300} once>
+        <div className="button-group">
+          <Button component={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
+        </div>
+      </Animate>
     </div>
     <div className="intro-media">
       <img src={laptop} alt={laptop} className="intro-image" />
