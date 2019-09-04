@@ -9,9 +9,6 @@ import play from "./images/play.svg"
 
 const Intro = () => (
   <div className="intro">
-    <div className="play-button">
-      <img src={play} alt={play} />
-    </div>
 
     <div className="intro-header">
       <Typography variant="header1" color="white" align="center">How We Work.</Typography>
@@ -56,5 +53,10 @@ const Intro = () => (
     </Container>
   </div>
 )
+
+// This is the play button for the video background
+// <div className="play-button">
+//   <img src={play} alt={play} />
+// </div>
 
 export default Intro
