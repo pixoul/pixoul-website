@@ -11,9 +11,7 @@ import ipad from "./images/ipad.svg"
 const Intro = () => {
   return(
     <div className="intro-section">
-      <Animate delay={100}>
         <Typography variant="header1" align="center">On Demand IT Talent, <br /> Simplified.</Typography>
-      </Animate>
 
       <Animate delay={300}>
         <div className="button-group">
@@ -22,11 +20,9 @@ const Intro = () => {
         </div>
       </Animate>
 
-      <Animate delay={400} partial>
-        <div className="intro-media">
-          <img src={ipad} alt={ipad} className="intro-image" />
-        </div>
-      </Animate>
+      <div className="intro-media">
+        <img src={ipad} alt={ipad} className="intro-image" />
+      </div>
     </div>
   )
 }
