@@ -13,7 +13,7 @@ const styles = theme => ({
   },
   video: {
     width: '100%',
-    height: '100%',
+    height: props => props.overlay ? '100vh' : '100%',
     verticalAlign: 'middle',
     objectFit: 'cover',
     "&::-webkit-media-controls": {
