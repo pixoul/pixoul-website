@@ -1,29 +1,66 @@
-import React, { useRef } from "react"
-import "./video-player.scss"
+import React, { useState, useRef, useEffect } from "react"
+/* Third-Party */
+import VisibilitySensor from "react-visibility-sensor"
+import injectSheet from 'react-jss'
+/* Images */
+import defaultPoster from "./poster.png"
 
-import play from "./play-blue.svg"
+const styles = theme => ({
+  wrapper: {
+    position: 'relative',
+    height: '100%',
+    width: '100%'
+  },
+  video: {
+    width: '100%',
+    height: '100%',
+    verticalAlign: 'middle',
+    objectFit: 'cover',
+    "&::-webkit-media-controls": {
+      display: props => props.controls ? 'normal' : 'none'
+    }
+  },
+  content: {
+    background: props => props.overlay ? 'linear-gradient(to bottom, rgba(65, 60, 60, 0.6), #3c3d41)' : 'none',
+    position: 'absolute',
+    display: 'block',
+    width: '100%',
+    height: '100%',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0
+  }
+})
 
 const VideoPlayer = ({
   src = "//clips.vorwaerts-gmbh.de/VfE_html5.mp4",
-  poster = "//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/poster.png",
-  size = 468
+  poster = defaultPoster,
+  overlay = false,
+  autoplay = false,
+  children,
+  classes,
+  theme,
+  ...rest
 }) => {
-
   const video = useRef(null)
 
-  const playVideo = (e) => {
-      e.target.classList.add('is-hidden')
+  const toggleVideo = isVisible => {
+    if(autoplay && isVisible){
       video.current.play()
-      video.current.classList.remove('has-media-controls-hidden')
-      video.current.setAttribute('controls', 'controls')
+    }else{
+      video.current.pause()
+    }
   }
 
   return(
-    <div className="video-wrapper">
-      <img src={play} alt={play} className="video-overlay-play-button" onClick={playVideo} />
-      <video src={src} poster={poster} ref={video} className="has-media-controls-hidden" width={size} ></video>
-    </div>
+    <VisibilitySensor active={autoplay} partialVisibility onChange={toggleVideo}>
+      <div className={classes.wrapper}>
+        <div className={classes.content}>{children}</div>
+        <video src={src} poster={poster} ref={video} className={classes.video} {...rest}></video>
+      </div>
+    </VisibilitySensor>
   )
 }
 
-export default VideoPlayer
+export default injectSheet(styles)(VideoPlayer)
