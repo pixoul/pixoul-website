@@ -3,6 +3,10 @@ html, body, #root {
   padding: 0;
 }
 
+.app-content {
+  margin-top: 50px;
+}
+
 .gutters {
   padding-left: 130px;
   padding-right: 130px;
@@ -14,6 +18,10 @@ html, body, #root {
 }
 
 @media (max-width: 768px) {
+  .app-content {
+    margin-top: 120px;
+  }
+
   .gutters {
     padding-left: 30px;
     padding-right: 30px;
