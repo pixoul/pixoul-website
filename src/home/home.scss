@@ -41,28 +41,21 @@
   .pixoul-video {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #3c3d41;
     padding-top: 130px;
     padding-bottom: 130px;
 
-    .video-title {
-      font-size: 62px;
-      font-weight: bold;
-      letter-spacing: -2.38px;
-      color: #ffffff;
-    }
-
-    .video-description {
-      font-size: 22px;
-      color: #ffffff;
+    .video-content {
+      margin-right: 150px;
     }
 
     .video-area {
-      padding-left: 150px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: 100%;
     }
 
   }

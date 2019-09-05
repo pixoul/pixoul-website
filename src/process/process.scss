@@ -2,10 +2,7 @@
 .process {
 
   .intro {
-    background:linear-gradient(to bottom, rgba(65, 60, 60, 0.6), #3c3d41), url('./images/bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
     height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
