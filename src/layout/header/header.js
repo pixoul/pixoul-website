@@ -44,7 +44,9 @@ const styles = theme => ({
   },
   "@media (max-width: 768px)": {
     header: {
+      height: 120,
       justifyContent: 'center',
+      flexDirection: 'column',
       padding: {
         top: 0,
         right: 30,
@@ -53,6 +55,10 @@ const styles = theme => ({
       }
     },
     links: {
+      borderBottom: '1px solid #dddddd',
+      margin: {
+        bottom: 16
+      },
       "& a": {
         marginRight: 20
       }
@@ -82,7 +88,7 @@ const Header = ({
       </Typography>
     </div>
 
-    <Button component={Link} to="/contact/professional-hire" outline theme="primary" size="xs">Find the perfect fit</Button>
+    <Button component={Link} to="/contact/professional-hire" theme="primary" size="xs">Find the perfect fit</Button>
 
   </div>
 )
