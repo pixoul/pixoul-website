@@ -40,8 +40,6 @@ const styles = theme => ({
     },
     "&:not(:first-child)": {
       margin: {
-        top: 22.5,
-        bottom: 22.5,
         left: 22.5
       }
     }
