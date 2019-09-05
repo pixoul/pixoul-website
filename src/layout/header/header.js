@@ -82,7 +82,7 @@ const Header = ({
       </Typography>
     </div>
 
-    <Button component={Link} to="/contact/professional-hire" outline theme="secondary" size="xs">Find the perfect fit</Button>
+    <Button component={Link} to="/contact/professional-hire" outline theme="primary" size="xs">Find the perfect fit</Button>
 
   </div>
 )
