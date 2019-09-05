@@ -1,24 +1,21 @@
 import React from 'react';
 /* Third-Party */
-import { NavLink } from "react-router-dom";
-import Headroom from "react-headroom"
+import { NavLink, Link } from "react-router-dom"
 import injectSheet from 'react-jss'
 /* Utils */
 import Typography from "utils/typography/typography"
-// import Button from "utils/button/button"
+import Button from "utils/button/button"
 /* Images */
 import logo from "./logo.svg"
 
 const styles = theme => ({
-  headroom: {
-    "& .headroom": {
-      zIndex: '100 !important',
-      transition: 'transform 600ms ease-in-out !important'
-    }
-  },
   header: {
-    position: 'relative',
-    height: 100,
+    position: 'fixed',
+    zIndex: 100,
+    height: 50,
+    top: 0,
+    right: 0,
+    left: 0,
     backgroundColor: theme.color.white,
     padding: {
       top: 0,
@@ -66,33 +63,29 @@ const styles = theme => ({
 const Header = ({
   classes
 }) => (
-    <Headroom className={classes.headroom}>
-      <div className={classes.header}>
-        <div className={classes.links}>
-          <NavLink to="/home" activeClassName={classes.activeLink}>
-            <img src={logo} alt={logo} draggable="false" />
-          </NavLink>
-          <Typography variant="body2" color="primary" component={NavLink} to={'/about'} activeClassName={classes.activeLink}>
-              About
-          </Typography>
-          <Typography variant="body2" color="primary" component={NavLink}to={'/talent' } activeClassName={classes.activeLink}>
-              Talent
-          </Typography>
-          <Typography variant="body2" color="primary" component={NavLink} to={'/process'} activeClassName={classes.activeLink}>
-              Process
-          </Typography>
-          <Typography variant="body2" color="primary" component={NavLink} to={'/faq'} activeClassName={classes.activeLink}>
-              FAQ
-          </Typography>
-        </div>
+  <div className={classes.header}>
+    <div className={classes.links}>
+      <NavLink to="/home" activeClassName={classes.activeLink}>
+        <img src={logo} alt={logo} draggable="false" />
+      </NavLink>
+      <Typography variant="body2" color="primary" component={NavLink} to={'/about'} activeClassName={classes.activeLink}>
+          About
+      </Typography>
+      <Typography variant="body2" color="primary" component={NavLink}to={'/talent' } activeClassName={classes.activeLink}>
+          Talent
+      </Typography>
+      <Typography variant="body2" color="primary" component={NavLink} to={'/process'} activeClassName={classes.activeLink}>
+          Process
+      </Typography>
+      <Typography variant="body2" color="primary" component={NavLink} to={'/faq'} activeClassName={classes.activeLink}>
+          FAQ
+      </Typography>
+    </div>
 
-      </div>
-  </Headroom>
+    <Button component={Link} to="/contact/professional-hire" outline theme="secondary" size="xs">Find the perfect fit</Button>
+
+  </div>
 )
 
-// This goes beneath the header links once its ready to be enabled
-// <div className="header-action">
-//   <Button component={Link} to="/contact" outline theme="secondary">Log In</Button>
-// </div>
 
 export default injectSheet(styles)(Header)
