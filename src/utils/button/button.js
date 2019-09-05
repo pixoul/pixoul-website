@@ -29,18 +29,13 @@ const styles = theme => ({
     width: props => props.block ? '100%' : 'auto',
     backgroundColor: props => props.outline ? 'transparent' : theme.color[props.theme],
     color: props => props.outline ? theme.color[props.theme] : '#FFFFFF',
-    margin: props => {
-      const sizes = {
-        'xs': "0px 0px",
-        'sm': "0px 0px",
-        'md': "22.5px 0px",
-        'lg': "27.5px 0px"
-      }
-      return sizes[props.size]
-    },
-    "&:not(:first-child)": {
+    margin: 22.5
+  },
+  "@media (max-width: 768px)": {
+    button: {
       margin: {
-        left: 22.5
+        top: 22.5,
+        bottom: 22.5
       }
     }
   }
