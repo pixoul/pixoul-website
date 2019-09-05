@@ -48,7 +48,7 @@ const styles = theme => ({
       justifyContent: 'center',
       flexDirection: 'column',
       padding: {
-        top: 0,
+        top: 30,
         right: 30,
         bottom: 0,
         left: 30
@@ -56,9 +56,6 @@ const styles = theme => ({
     },
     links: {
       borderBottom: '1px solid #dddddd',
-      margin: {
-        bottom: 16
-      },
       "& a": {
         marginRight: 20
       }
