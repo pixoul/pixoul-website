@@ -8,7 +8,15 @@ const styles = theme => ({
     display: props => props.block ? 'block' : 'inline-block',
     whiteSpace: 'nowrap',
     borderRadius: 48,
-    padding: '0.8636em 2.045em',
+    padding: props => {
+      const sizes = {
+        'xs': "0.5454em 1.3636em",
+        'sm': "0.6818em 1.5909em",
+        'md': "0.8636em 2.045em",
+        'lg': "1em 2.2727em"
+      }
+      return sizes[props.size]
+    },
     textAlign: 'center',
     textDecoration: 'none',
     borderWidth: 1,
@@ -21,9 +29,14 @@ const styles = theme => ({
     width: props => props.block ? '100%' : 'auto',
     backgroundColor: props => props.outline ? 'transparent' : theme.color[props.theme],
     color: props => props.outline ? theme.color[props.theme] : '#FFFFFF',
-    margin: {
-      top: 22.5,
-      bottom: 22.5
+    margin: props => {
+      const sizes = {
+        'xs': "0px 0px",
+        'sm': "0px 0px",
+        'md': "22.5px 0px",
+        'lg': "27.5px 0px"
+      }
+      return sizes[props.size]
     },
     "&:not(:first-child)": {
       margin: {
@@ -55,7 +68,8 @@ const Button = ({
 
 Button.defaultProps = {
   component: "button",
-  theme: "primary"
+  theme: "primary",
+  size: "md"
 }
 
 export default injectSheet(styles)(Button)
