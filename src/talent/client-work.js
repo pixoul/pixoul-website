@@ -3,9 +3,9 @@ import React from "react"
 import Project from "utils/project/project"
 import { Carousel, Slide } from "utils/carousel"
 /* Images */
-import ikarus from "./images/clients/ikarus.svg"
-import iuzeit from "./images/clients/iuzeit.svg"
-import georgiaPacific from "./images/clients/georgia-pacific.svg"
+import ikarus from "./images/clients/ikarus.png"
+import iuzeit from "./images/clients/iuzeit.png"
+import georgiaPacific from "./images/clients/georgia-pacific.png"
 import fusemap from "./images/clients/fusemap.png"
 import hcp from "./images/clients/hcp.png"
 
