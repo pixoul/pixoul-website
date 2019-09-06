@@ -12,7 +12,7 @@ const styles = theme => ({
   header: {
     position: 'fixed',
     zIndex: 100,
-    height: 50,
+    height: 65,
     top: 0,
     right: 0,
     left: 0,
@@ -85,7 +85,7 @@ const Header = ({
       </Typography>
     </div>
 
-    <Button component={Link} to="/contact/professional-hire" theme="primary" size="xs">Find the perfect fit</Button>
+    <Button component={Link} to="/contact/professional-hire" theme="primary" size="xs">Hire the perfect Match</Button>
 
   </div>
 )
