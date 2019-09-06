@@ -1,6 +1,7 @@
 {
   "name": "pixoul",
   "version": "3.0.0",
+  "homepage": "https://www.pixoulinc.com",
   "engines": {
     "node": "10.16.0"
   },
