@@ -29,18 +29,15 @@ const Animate = ({
   children,
   delay = 100,
   partial = false,
-  once = false
+  once = false,
+  type = 'fade'
 }) => {
   const [isVisible, setVisibility] = useState(false)
   const [active, setActive] = useState(true)
 
   const animation = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: isVisible ? 1 : 0
-    },
+    from: generateProps(type, isVisible),
+    to: generateProps(type, isVisible),
     config: {
       tension: 280,
       friction: 120
@@ -63,6 +60,23 @@ const Animate = ({
       </animated.div>
     </VisibilitySensor>
   )
+}
+
+const generateProps = (type = 'fade', isVisible) => {
+  const styles = {
+    'fade': {
+      opacity: isVisible ? 1 : 0
+    },
+    'slideLeft': {
+      opacity: isVisible ? 1 : 0,
+      transform: isVisible ? 'translate3d(0px,0px,0px)' : 'translate3d(400px,0px,0px)'
+    },
+    'slideUp': {
+      opacity: isVisible ? 1 : 0,
+      transform: isVisible ? 'translate3d(0px,0px,0px)' : 'translate3d(0px,400px,0px)'
+    }
+  }
+  return styles[type]
 }
 
 export { withAnimation, Animate }
