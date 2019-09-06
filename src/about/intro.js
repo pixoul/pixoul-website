@@ -6,8 +6,8 @@ import Button from "utils/button/button"
 import Typography from "utils/typography/typography"
 import { Animate } from "utils/animate/animate"
 /* Images */
-import iphoneFront from "./images/iphone-front.svg"
-import iphoneBack from "./images/iphone-back.svg"
+import iphoneFront from "./images/iphone-front.png"
+import iphoneBack from "./images/iphone-back.png"
 
 const Intro = () => (
   <div className="intro-section gutters">
