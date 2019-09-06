@@ -4,6 +4,7 @@ import VisibilitySensor from "react-visibility-sensor"
 import injectSheet from 'react-jss'
 /* Images */
 import defaultPoster from "./poster.png"
+import defaultVideo from "./video.mp4"
 
 const styles = theme => ({
   wrapper: {
@@ -34,7 +35,7 @@ const styles = theme => ({
 })
 
 const VideoPlayer = ({
-  src = "//clips.vorwaerts-gmbh.de/VfE_html5.mp4",
+  src = defaultVideo,
   poster = defaultPoster,
   overlay = false,
   autoplay = false,
