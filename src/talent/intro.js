@@ -21,7 +21,9 @@ const Intro = () => (
       </Animate>
     </div>
     <div className="intro-media">
-      <img src={laptop} alt={laptop} className="intro-image" />
+      <Animate type="slideLeft" delay={300} partial once>
+        <img src={laptop} alt={laptop} className="intro-image" />
+      </Animate>
     </div>
   </div>
 )
