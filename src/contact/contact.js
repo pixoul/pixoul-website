@@ -1,38 +1,27 @@
-import React from "react";
-import { Container, Row, Col } from 'react-grid-system'
+import React from "react"
 import "./contact.scss"
+/* Third-Party */
+import { Route, withRouter } from "react-router-dom"
+/* Utils */
+import TrustedCompanies from "utils/trusted-companies/trusted-companies"
+/* Routes */
+const JoinTeam = React.lazy(() => import("./join-team"))
+const PartnershipProgram = React.lazy(() => import("./partnership-program"))
+const ProfessionalHire = React.lazy(() => import("./professional-hire"))
 
-import Opening from "utils/opening/opening"
-import SocialIcons from "utils/social-icons/social-icons"
-import ContactForm from "contact/contact-form/contact-form"
-
-export default function Contact() {
+const Contact = ({
+  match
+}) => {
   return(
-    <div className="contact">
-        <Container>
-          <Opening
-            title="Contact Us"
-            subtitle="See how we help ambitious brands use design thinking to dominate digital."
-          />
+    <div className="contact gutters">
+        <Route path={`${match.path}/join-team`} component={JoinTeam} />
+        <Route path={`${match.path}/partnership-program`} component={PartnershipProgram} />
+        <Route path={`${match.path}/professional-hire`} component={ProfessionalHire} />
 
-          <Row>
-            <Col sm={12} md={6}>
-              <ul className="contact-info">
-                <li className="contact-title">Phone</li>
-                <li className="contact-item"><a href="tel:6169149356">(616) 914-9356</a></li>
-                <li className="contact-title">Email</li>
-                <li className="contact-item"><a href="mailto:hello@pixoulinc.com">hello@pixoulinc.com</a></li>
-              </ul>
-
-              <div className="social-media">
-                <SocialIcons theme="dark" />
-              </div>
-            </Col>
-            <Col sm={12} md={6}>
-              <ContactForm />
-            </Col>
-          </Row>
-        </Container>
+        <TrustedCompanies animateOnce />
     </div>
   )
 }
+
+
+export default withRouter(Contact)

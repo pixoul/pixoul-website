@@ -3,16 +3,16 @@ import ReactDOM from "react-dom";
 import App from "app/app";
 import * as serviceWorker from "./serviceWorker";
 import { Route, BrowserRouter } from "react-router-dom";
-import { Provider } from 'react-redux'
-import { store } from "app/store"
+import { ThemeProvider } from 'react-jss'
 
+import theme from "styles/theme"
 import "styles/fonts.scss";
 
 const routing = (
   <BrowserRouter>
-    <Provider store={store}>
+    <ThemeProvider theme={theme}>
       <Route path="/" component={App} />
-    </Provider>
+    </ThemeProvider>
   </BrowserRouter>
 );
 ReactDOM.render(routing, document.getElementById("root"));

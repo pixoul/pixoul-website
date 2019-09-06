@@ -13,7 +13,7 @@ const MediaSlide = ({ media, action, caption }) => {
     </div>
   )
 
-  return action ? (<a onClick={action} className="media-action">{item}</a>) : item
+  return action ? (<button onClick={action} className="media-action">{item}</button>) : item
 }
 
 

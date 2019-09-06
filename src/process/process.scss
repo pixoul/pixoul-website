@@ -1,0 +1,180 @@
+
+.process {
+
+  .intro {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .intro-header {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .play-button {
+      padding-bottom: 22px;
+      cursor: pointer;
+      transition: opacity .4s;
+
+      &:hover{
+        opacity: 0.6;
+      }
+    }
+
+    .intro-features {
+      margin-top: 90px;
+    }
+  }
+
+  .project-steps {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .project-header {
+      margin-bottom: 130px;
+    }
+
+    .steps-content {
+      display: flex;
+
+      > :first-child {
+        margin-right: 50px;
+      }
+
+      > div {
+        width: 50%;
+      }
+    }
+  }
+
+  .matching {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 100px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+
+    .matching-content {
+      padding-top: 100px;
+      padding-bottom: 30px;
+
+      .matching-title {
+        font-size: 62px;
+        font-weight: bold;
+        line-height: 1.06;
+        letter-spacing: -2.38px;
+        color: #3c3d41;
+      }
+
+      .matching-subtitle {
+        font-size: 22px;
+        line-height: 1.47;
+        color: #656b6f;
+      }
+
+      .feature {
+        margin-right: 40px;
+        margin-bottom: 70px;
+      }
+    }
+
+    .matching-media {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: -10%;
+    }
+
+    .candadite {
+      position: relative;
+      width: 185px;
+      height: 185px;
+      margin: 20px;
+
+      .candadite-status {
+        position: absolute;
+        bottom: 0px;
+        right: 5px;
+      }
+    }
+  }
+
+  .kpi-hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .process {
+
+    .project-steps {
+      padding-top: 45px;
+      padding-bottom: 45px;
+
+      .project-header {
+        margin-bottom: 48px;
+      }
+
+      .steps-content {
+        flex-direction: column;
+
+        > :first-child {
+          padding-right: 0;
+          padding-bottom: 30px;
+        }
+
+        > div {
+          width: 100%;
+        }
+      }
+    }
+
+    .matching {
+      flex-direction: column;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      padding-left: 0px;
+
+      .matching-content {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+      }
+
+      .matching-media {
+        margin: 0 auto;
+
+        .candadite {
+          width: auto;
+          height: auto;
+
+          .candadite-image {
+            height: 126px;
+            width: 126px;
+          }
+
+          .candadite-status {
+            width: 42px;
+            height: 42px;
+            right: 0px;
+            bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

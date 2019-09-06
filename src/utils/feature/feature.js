@@ -1,105 +1,93 @@
 import React from "react"
-import cn from "classnames"
-import { Link } from "react-router-dom"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLongArrowRight } from '@fortawesome/pro-light-svg-icons'
-import "./feature.scss"
-import greenArrow from "./images/green-arrow.svg"
+/* Third-Party */
+import injectSheet from 'react-jss'
+import Typography from "utils/typography/typography"
 
-function FeatureTagline(props){
-
-  const styles = {
-    fontSize: props.size ? props.size : 17,
-    color: props.color ? props.color : '#374050'
+const styles = theme => ({
+  feature: {
+    display: 'flex',
+    alignItems: props => props.align,
+    margin: {
+      top: 14,
+      right: 28,
+      bottom: 14,
+      left: 28
+    }
+  },
+  top: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    textAlign: props => props.align,
+    margin: {
+      top: 14,
+      right: 0,
+      bottom: 14,
+      left: 0
+    }
+  },
+  bottom: {
+    flexDirection: 'column-reverse',
+    justifyContent: 'center',
+    textAlign: props => props.align
+  },
+  left: {
+    flexDirection: 'row',
+    "& $media": {
+      padding: {
+        top: 20,
+        right: 30
+      }
+    }
+  },
+  right: {
+    flexDirection: 'row-reverse',
+    "& $media": {
+      padding: {
+        top: 20,
+        right: 30
+      }
+    }
+  },
+  content: {},
+  media: {},
+  '@media (max-width: 768px)': {
+    feature: {
+      margin: {
+        top: 11,
+        right: 0,
+        bottom: 11,
+        left: 0
+      }
+    }
   }
+})
 
-  return(
-    <small className="feature-tagline" style={styles}>{props.text}</small>
-  )
-}
-
-function FeatureAction(props){
-
-  const styles = {
-    fontSize: props.size ? props.size : 20,
-    color: props.color ? props.color : '#2ec986'
-  }
-
-  const arrow = props.arrowIcon ? props.arrowIcon : greenArrow
-
-  return(
-    <Link to={props.link} className="feature-action" style={styles}>
-        {props.text} <img src={arrow} alt={arrow} draggable="false" />
-    </Link>
-  )
-}
-
-function FeatureTitle(props){
-
-  const styles = {
-    fontSize: props.size ? props.size : 20,
-    color: props.color ? props.color : '#000000'
-  }
-
-  return(
-    <h6 className="feature-title" style={styles}>{props.text}</h6>
-  )
-}
-
-function FeatureIcon({
+const Feature = ({
+  title,
   icon,
-  svg,
-  color,
-  size
-}){
+  description,
+  theme,
+  position,
+  classes,
+  shrink
+}) => {
 
-  const styles = {}
-  if(color) styles.color = color
-  if(size) styles.fontSize = size
-
-  if(svg){
-    return(<img src={svg} alt={svg} className="feature-svg" />)
-  }
-
-  if(icon){
-    return(<FontAwesomeIcon icon={icon} className="feature-icon" style={styles} />)
-  }
-
-  return null
-}
-
-function FeatureHeader({
-  children
-}){
-  return(
-    <div className="feature-media">
-      {children}
+  return (
+    <div className={classes.feature + ' ' + classes[position]}>
+      <div className={classes.media}>
+        {icon}
+      </div>
+      <div className={classes.content}>
+        <Typography variant="subtitle2" color={theme === 'light' ? 'white': 'primary'}>{title}</Typography>
+        <Typography variant={shrink ? "body2" : "body1"} color={theme === 'light' ? 'white': 'secondary'}>{description}</Typography>
+      </div>
     </div>
   )
 }
 
-export default function Feature({
-  align,
-  children
-}){
-
-  const classes = cn('feature', {
-    'center': align === 'center'
-  })
-
-  return(
-    <div className={classes}>
-      {children}
-    </div>
-  )
+Feature.defaultProps = {
+  position: 'top',
+  align: 'flex-start'
 }
 
-
-export {
-  Feature,
-  FeatureHeader,
-  FeatureTitle,
-  FeatureIcon,
-  FeatureTagline,
-  FeatureAction
-}
+export default injectSheet(styles)(Feature)

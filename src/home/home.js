@@ -1,40 +1,27 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./home.scss"
-/* Utility Components */
-import { Hero, HeroContent, HeroFooter, HeroMedia, HeroText, HeroAction} from "utils/hero/hero"
+
 /* Presentational Components */
-import CapabilityFeatures from "capabilities/capability-features/capability-features"
-import WorkLatest from "work/latest/latest"
-/* Images */
-import bg from "./images/bg.png"
-import logoBg from "./images/logo-bg.png"
-import favicon from "./images/favicon.svg"
+const Intro = React.lazy(() => import("./intro"))
+const PixoulDifference = React.lazy(() => import("./pixoul-difference"))
+const TrustedCompanies = React.lazy(() => import("utils/trusted-companies/trusted-companies"))
+const PixoulVideo = React.lazy(() => import("./pixoul-video"))
+const QualityPerformance = React.lazy(() => import("./quality-performance"))
+const TopCapabilities = React.lazy(() => import("./top-capabilities"))
+const ReviewsCarousel = React.lazy(() => import("./reviews-carousel"))
 
-export default function Home() {
-  const sectionEl = useRef(null)
-
-  const heroClick = () => {
-    sectionEl.current.scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
-
+const Home = () => {
   return(
     <div className="home">
-      <Hero bg={bg} theme="light" align="center" className="gutters">
-          <HeroText text="We’ll help you" size="md" />
-          <HeroText text="Dominate Digital" size="xl" bold />
-          <HeroAction action={heroClick} gutterTop={160} gutterBottom={60} />
-      </Hero>
-      <div ref={sectionEl} className="features-section gutters" style={{
-        backgroundImage: 'url('+logoBg+')'
-      }}>
-
-        <h3 className="features-title">We're a digital services firm with a focus on design, technology, and strategic innovation.</h3>
-        <CapabilityFeatures background />
-      </div>
-
-      <WorkLatest />
+      <Intro />
+      <PixoulDifference />
+      <TrustedCompanies light animateOnce />
+      <PixoulVideo />
+      <QualityPerformance />
+      <TopCapabilities />
+      <ReviewsCarousel />
     </div>
   )
 }
+
+export default Home

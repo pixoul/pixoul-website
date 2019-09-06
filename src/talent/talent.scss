@@ -1,0 +1,168 @@
+
+.talent {
+  .intro-section {
+    background-image: radial-gradient(circle at 19% 22%, #f9f9f9, #f2f2f2);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 130px;
+    padding-left: 130px;
+    margin-bottom: -400px;
+
+    .intro-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 55%;
+      height: 100%;
+
+      .button-group {
+        padding-top: 48px;
+      }
+    }
+
+    .intro-media {
+      height: 100%;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .featured-member {
+    background-color: #ffffff;
+    display: flex;
+    padding-top: 130px;
+
+    .member-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 96px;
+      padding-right: 130px;
+    }
+
+    .member-media {
+      img {
+        height: 100%;
+      }
+    }
+
+  }
+
+  .talent-timeline {
+    background-color: #3c3d41;
+    display: flex;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .talent-main {
+      padding-left: 130px;
+      .talent-header {
+        padding-bottom: 90px;
+      }
+    }
+
+  }
+
+  .client-work {
+    background-color: #f9f9f9;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .excel {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .excel-header {
+      padding-bottom: 57px;
+      text-align: center;
+      .excel-image {
+        padding-bottom: 22px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .talent {
+    .intro-section {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 45px;
+      padding-left: 0px;
+      margin-bottom: -100px;
+
+
+      .intro-content {
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .button-group {
+          padding-top: 35px;
+          padding-bottom: 35px;
+        }
+      }
+
+      .intro-media {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .featured-member {
+      flex-direction: column-reverse;
+      padding-top: 86px;
+
+
+      .member-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 45px;
+
+        .member-action {
+          margin: 0 auto;
+        }
+      }
+
+      .member-media {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .talent-timeline {
+      flex-direction: column;
+      padding-top: 57px;
+      padding-bottom: 57px;
+
+      .legend-area {
+        display: none;
+      }
+
+      .talent-main {
+        padding-left: 0px;
+        .talent-header {
+          padding-bottom: 60px;
+        }
+      }
+    }
+
+    .client-work {
+      padding-top: 45px;
+      padding-bottom: 45px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}

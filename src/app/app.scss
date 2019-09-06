@@ -3,15 +3,31 @@ html, body, #root {
   padding: 0;
 }
 
+.app-content {
+  margin-top: 65px;
+}
 
 .gutters {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
+  .app-content {
+    margin-top: 150px;
+  }
+
   .gutters {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .button-group {
+    flex-direction: column;
   }
 }

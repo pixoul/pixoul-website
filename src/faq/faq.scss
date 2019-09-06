@@ -1,0 +1,47 @@
+
+.faq {
+  padding-top: 86px;
+
+  .faq-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .faq-number {
+      width: 1.125em;
+      height: 1.125em;
+      padding: 0.5em;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 1em;
+      color: #3c3d41;
+      border: solid 2px #dddddd;
+      margin-right: 30px;
+    }
+  }
+
+  .faq-questions {
+    padding-top: 58px;
+    padding-bottom: 90px;
+  }
+
+  .faq-answer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .network-hero {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 74px 30px;
+
+    .hero-header {
+      margin-bottom: 8px;
+    }
+  }
+}

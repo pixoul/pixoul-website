@@ -1,32 +1,154 @@
 
 .home {
 
-  .features-section {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 116px;
-    padding-bottom: 80px;
+  .intro-section {
+    background-image: radial-gradient(circle at 53% 100%, #ffffff, #eeeeee);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px;
+    overflow: hidden;
 
-    .features-title {
-      color: #374050;
-      line-height: 1.2;
-      font-size: 45px;
-      font-weight: 500;
+    .intro-text {
+      font-size: 62px;
+      font-weight: bold;
+      color: #3c3d41;
+      margin: 0;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.06;
+      letter-spacing: -2.38px;
       text-align: center;
-      margin: 0 auto;
-      padding-bottom: 80px;
+    }
 
+    .intro-media {
+      padding-top: 120px;
+
+      img {
+        width: 100%;
+      }
     }
   }
+
+  .difference-section {
+    padding-top: 120px;
+    padding-bottom: 170px;
+
+  }
+
+  .pixoul-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c3d41;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .video-content {
+      margin-right: 150px;
+    }
+
+    .video-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+  }
+
+  .quality-performance {
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .quality-stats {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 72px;
+    }
+  }
+
+  .top-capabilities {
+    background-color: #f9f9f9;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .capabilities-header {
+      padding-bottom: 70px;
+    }
+
+    .capabilities-button {
+      text-align: center;
+      padding-top: 72px;
+    }
+  }
+
+  .reviews {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .review-quote {
+      text-align: center;
+      padding-top: 41px;
+
+      img {
+        margin: 0 auto;
+        height: 30px;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 768px) {
   .home {
+    .intro-section {
+      .button-group {
+        .button {
+          margin-right: 0px;
+        }
+      }
+    }
+
+
     .features-section {
       .features-title {
         font-size: 25px;
         font-weight: normal;
+      }
+    }
+
+    .pixoul-video {
+      flex-direction: column;
+      padding-top: 55px;
+      padding-bottom: 20px;
+
+      .video-content {
+        margin-right: 0px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .quality-performance {
+      .quality-stats {
+        flex-direction: column;
+      }
+    }
+
+    .reviews {
+
+      .review-card {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .review-text {
+          font-size: 20px;
+        }
       }
     }
   }

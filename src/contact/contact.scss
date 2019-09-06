@@ -6,61 +6,74 @@ $bg-primary: #f9fafc;
 $bg-secondary: #dfdfdf;
 
 .contact {
-  padding-top: 115px;
-  padding-bottom: 190px;
+  padding-top: 130px;
+  padding-bottom: 74px;
   background-image: url('./images/bg.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: cover;
-  color: black;
 
-  .social-media {
-    padding-top: 123px;
-    padding-left: 40px;
+  .contact-intro {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 44px;
   }
 
-  .contact-info {
-    list-style: none;
-    display: inline-block;
-    margin-right: 85px;
+  .join-team {
+    padding-bottom: 45px;
 
-    .contact-title {
-      color: #374050;
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 12px;
-      margin-top: 30px;
-    }
+    .incentive-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50px;
 
-    .contact-item {
-      margin: 10px 0;
-      color: $black;
-      font-size: 20px;
-      font-weight: 500;
+      .incentive-list {
+        list-style-image: url('./images/check.svg');
 
-      a {
-        color: #3180fb;
-        text-decoration: none;
-        cursor: pointer;
+        &:first-child {
+          margin-right: 50px;
+        }
 
-        &:hover {
-          opacity: 0.7;
-          transition: opacity .6s;
+        .incentive-item {
+          padding-left: 14px;
+          padding-bottom: 7px;
+          font-size: '1.5em';
+          color: #656b6f;
         }
       }
-
     }
+
   }
 
 }
 
 @media (max-width: 768px) {
   .contact {
-    padding-top: 51px;
-    padding-bottom: 35px;
+    .contact-intro {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
 
-    .contact-info, .social-media {
-      display: none;
+    .join-team {
+      .incentive-group {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 51px;
+        padding-top: 21px;
+
+        .incentive-list{
+          margin: 0px;
+          &:first-child {
+            margin-right: 0px;
+          }
+
+          .incentive-item {
+            padding-bottom: 16px;
+            font-size: '1em';
+          }
+        }
+      }
     }
   }
 }
