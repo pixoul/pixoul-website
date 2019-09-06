@@ -6,7 +6,6 @@ import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 import VideoPlayer from "utils/video-player/video-player"
 /* Images */
-import play from "./images/play.svg"
 import bg from "./images/bg.png"
 
 const Intro = () => (
@@ -56,10 +55,5 @@ const Intro = () => (
     </div>
   </VideoPlayer>
 )
-
-// This is the play button for the video background
-// <div className="play-button">
-//   <img src={play} alt={play} />
-// </div>
 
 export default Intro

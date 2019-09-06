@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useRef } from "react"
 /* Third-Party */
 import VisibilitySensor from "react-visibility-sensor"
 import injectSheet from 'react-jss'

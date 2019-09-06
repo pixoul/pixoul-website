@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useState } from "react"
 import injectSheet from 'react-jss'
 import { useSpring, animated } from 'react-spring'
 import VisibilitySensor from "react-visibility-sensor"

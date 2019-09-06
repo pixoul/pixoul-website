@@ -5,7 +5,6 @@ import { Carousel, Slide } from "utils/carousel"
 /* Images */
 import ikarus from "./images/clients/ikarus.svg"
 import iuzeit from "./images/clients/iuzeit.svg"
-import stallion from "./images/clients/stallion.svg"
 import georgiaPacific from "./images/clients/georgia-pacific.svg"
 import fusemap from "./images/clients/fusemap.png"
 import hcp from "./images/clients/hcp.png"
