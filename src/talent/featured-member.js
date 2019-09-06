@@ -6,7 +6,7 @@ import Button from "utils/button/button"
 import Typography from "utils/typography/typography"
 import { Animate } from "utils/animate/animate"
 /* Images */
-import person from "./images/person.svg"
+import person from "./images/person.png"
 
 const FeaturedMember = () => (
   <div className="featured-member">

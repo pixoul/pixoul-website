@@ -1,6 +1,7 @@
 import React, { Suspense } from "react"
 import "./app.scss"
 
+import ScrollRestoration from "utils/scroll-restoration/scroll-restoration"
 const Header = React.lazy(() => import("layout/header/header"))
 const Footer = React.lazy(() => import("layout/footer/footer"))
 const Routes = React.lazy(() => import("app/routes"))
@@ -8,7 +9,7 @@ const Routes = React.lazy(() => import("app/routes"))
 function App(props) {
 
   return (
-    <div>
+    <ScrollRestoration>
       <Suspense fallback={<div className="loading"  />}>
         <Header />
 
@@ -18,7 +19,7 @@ function App(props) {
 
         <Footer />
      </Suspense>
-    </div>
+    </ScrollRestoration>
   );
 }
 

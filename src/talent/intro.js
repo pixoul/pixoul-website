@@ -6,7 +6,7 @@ import Button from "utils/button/button"
 import Typography from "utils/typography/typography"
 import { Animate } from "utils/animate/animate"
 /* Images */
-import laptop from "./images/laptop.svg"
+import laptop from "./images/laptop.png"
 
 const Intro = () => (
   <div className="intro-section">
