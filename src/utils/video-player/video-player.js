@@ -47,10 +47,14 @@ const VideoPlayer = ({
   const video = useRef(null)
 
   const toggleVideo = isVisible => {
-    if(autoplay && isVisible){
-      video.current.play()
-    }else{
-      video.current.pause()
+    try{
+      if(autoplay && isVisible){
+        video.current.play()
+      }else{
+        video.current.pause()
+      }
+    }catch(e){
+      console.error(e)
     }
   }
 
