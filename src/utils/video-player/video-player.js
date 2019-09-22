@@ -14,7 +14,7 @@ const styles = theme => ({
   },
   video: {
     width: '100%',
-    height: props => props.overlay ? '100vh' : '100%',
+    height: props => props.fullScreen ? '100vh' : '100%',
     verticalAlign: 'middle',
     objectFit: 'cover',
     "&::-webkit-media-controls": {
@@ -46,22 +46,24 @@ const VideoPlayer = ({
 }) => {
   const video = useRef(null)
 
-  const toggleVideo = isVisible => {
+  const toggleVideo = async (isVisible) => {
     try{
       if(autoplay && isVisible){
-        video.current.play()
+        await video.current.play()
       }else{
-        video.current.pause()
+        await video.current.pause()
       }
     }catch(e){
-      console.error(e)
+      console.log(e)
     }
   }
 
   return(
     <VisibilitySensor active={autoplay} partialVisibility onChange={toggleVideo}>
       <div className={classes.wrapper}>
-        <div className={classes.content}>{children}</div>
+        <div className={classes.content}>
+          {children}
+        </div>
         <video src={src} poster={poster} ref={video} className={classes.video} {...rest}></video>
       </div>
     </VisibilitySensor>

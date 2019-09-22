@@ -5,11 +5,9 @@ import { Container, Row, Col } from 'react-grid-system'
 import Typography from "utils/typography/typography"
 import Feature from "utils/feature/feature"
 import VideoPlayer from "utils/video-player/video-player"
-/* Images */
-import bg from "./images/bg.png"
 
 const Intro = () => (
-  <VideoPlayer poster={bg} overlay autoplay loop muted>
+  <VideoPlayer overlay fullScreen autoplay loop muted>
     <div className="intro">
         <div className="intro-header">
           <Typography variant="header1" color="white" align="center">How We Work.</Typography>
