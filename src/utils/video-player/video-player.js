@@ -5,7 +5,6 @@ import injectSheet from 'react-jss'
 /* Images */
 import defaultPoster from "./poster.png"
 import defaultVideo from "./video.mp4"
-import playIcon from "./play.svg"
 
 const styles = theme => ({
   wrapper: {
@@ -15,7 +14,7 @@ const styles = theme => ({
   },
   video: {
     width: '100%',
-    height: props => props.overlay ? '100vh' : '100%',
+    height: props => props.fullScreen ? '100vh' : '100%',
     verticalAlign: 'middle',
     objectFit: 'cover',
     "&::-webkit-media-controls": {
@@ -62,7 +61,9 @@ const VideoPlayer = ({
   return(
     <VisibilitySensor active={autoplay} partialVisibility onChange={toggleVideo}>
       <div className={classes.wrapper}>
-        <div className={classes.content}>{children}</div>
+        <div className={classes.content}>
+          {children}
+        </div>
         <video src={src} poster={poster} ref={video} className={classes.video} {...rest}></video>
       </div>
     </VisibilitySensor>

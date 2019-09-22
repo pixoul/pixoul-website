@@ -11,7 +11,7 @@ const PixoulVideo = () => (
         <Typography variant="body1" color="white">Our remote team members are more than freelancers—they’re career-focused individuals who invest their reputation in every project.</Typography>
       </div>
 
-      <VideoPlayer autoplay muted />
+      <VideoPlayer autoplay muted loop />
   </div>
 )
 
