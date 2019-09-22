@@ -5,6 +5,7 @@ import injectSheet from 'react-jss'
 /* Images */
 import defaultPoster from "./poster.png"
 import defaultVideo from "./video.mp4"
+import playIcon from "./play.svg"
 
 const styles = theme => ({
   wrapper: {
@@ -46,15 +47,15 @@ const VideoPlayer = ({
 }) => {
   const video = useRef(null)
 
-  const toggleVideo = isVisible => {
+  const toggleVideo = async (isVisible) => {
     try{
       if(autoplay && isVisible){
-        video.current.play()
+        await video.current.play()
       }else{
-        video.current.pause()
+        await video.current.pause()
       }
     }catch(e){
-      console.error(e)
+      console.log(e)
     }
   }
 
