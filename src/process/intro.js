@@ -7,7 +7,7 @@ import Feature from "utils/feature/feature"
 import VideoPlayer from "utils/video-player/video-player"
 
 const Intro = () => (
-  <VideoPlayer overlay fullScreen autoplay loop muted>
+  <VideoPlayer color="white" fullscreen autoplay loop muted>
     <div className="intro">
         <div className="intro-header">
           <Typography variant="header1" color="white" align="center">How We Work.</Typography>
