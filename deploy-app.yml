@@ -206,3 +206,12 @@ Resources:
             QueryString: true
           TargetOriginId: !Ref DeployBucket
           ViewerProtocolPolicy: "redirect-to-https"
+        CustomErrorResponses:
+          - ErrorCode: '403'
+            ResponsePagePath: "/index.html"
+            ResponseCode: '200'
+            ErrorCachingMinTTL: '300'
+          - ErrorCode: '404'
+            ResponsePagePath: "/index.html"
+            ResponseCode: '200'
+            ErrorCachingMinTTL: '300'
