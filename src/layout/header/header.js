@@ -1,6 +1,6 @@
 import React from 'react';
 /* Third-Party */
-import { NavLink, Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import * as typeformEmbed from '@typeform/embed'
 import injectSheet from 'react-jss'
 /* Utils */
