@@ -1,6 +1,5 @@
 import React from "react"
 /* Third-Party */
-import { Link } from "react-router-dom"
 import * as typeformEmbed from '@typeform/embed'
 /* Utils */
 import Button from "utils/button/button"
