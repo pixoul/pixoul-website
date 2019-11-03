@@ -7,7 +7,6 @@ const About = React.lazy(() => import("about/about"))
 const Talent = React.lazy(() => import("talent/talent"))
 const Process = React.lazy(() => import("process/process"))
 const FAQ = React.lazy(() => import("faq/faq"))
-const Contact = React.lazy(() => import("contact/contact"))
 
 const Routes = ({
   location
@@ -18,7 +17,6 @@ const Routes = ({
       <Route path="/process" component={Process} />
       <Route path="/about" component={About} />
       <Route path="/faq" component={FAQ} />
-      <Route path="/contact" component={Contact} />
 
       <Route exact path='/' render={props => (
         <Redirect to={{ pathname: "/home", state: { from: location } }} />
