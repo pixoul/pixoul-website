@@ -1,6 +1,7 @@
 import React from "react"
 /* Third-Party */
 import { Link } from "react-router-dom";
+import * as typeformEmbed from '@typeform/embed'
 import injectSheet from 'react-jss'
 /* Utils */
 import Typography from "utils/typography/typography"
@@ -141,6 +142,14 @@ const Footer = ({
   classes
 }) => {
 
+  const openReferralForm = () => {
+    typeformEmbed.makePopup('https://pixoulinc.typeform.com/to/rzapFB', {
+        mode: 'popup',
+        autoOpen: true,
+        hideScrollbars: true
+    })
+  }
+
   return(
     <footer className={classes.footer}>
       <div className={classes.top}>
@@ -167,7 +176,7 @@ const Footer = ({
 
             <div className={classes.list}>
               <Typography variant="caption" weight="bold">Resources</Typography>
-              <Typography variant="caption" component={Link} to={'/contact/partnership-program'}>Referrals</Typography>
+              <Typography variant="caption" component="a" onClick={openReferralForm}>Referrals</Typography>
             </div>
           </div>
 
