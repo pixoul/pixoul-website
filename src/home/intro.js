@@ -1,6 +1,7 @@
 import React from "react"
 /* Third-Party */
 import { Link } from "react-router-dom"
+import * as typeformEmbed from '@typeform/embed'
 /* Utils */
 import Button from "utils/button/button"
 import Typography from "utils/typography/typography"
@@ -9,14 +10,30 @@ import { Animate } from "utils/animate/animate"
 import ipad from "./images/ipad.svg"
 
 const Intro = () => {
+  const openHireForm = () => {
+    typeformEmbed.makePopup('https://pixoulinc.typeform.com/to/sMpWk0', {
+        mode: 'popup',
+        autoOpen: true,
+        hideScrollbars: true
+    })
+  }
+
+  const openTeamForm = () => {
+    typeformEmbed.makePopup('https://pixoulinc.typeform.com/to/fD6XxD', {
+        mode: 'popup',
+        autoOpen: true,
+        hideScrollbars: true
+    })
+  }
+
   return(
     <div className="intro-section">
-        <Typography variant="header1" align="center">On Demand IT Talent, <br /> Simplified.</Typography>
+      <Typography variant="header1" align="center">On Demand IT Talent, <br /> Simplified.</Typography>
 
       <Animate delay={300} once>
         <div className="button-group">
-          <Button component={Link} to="/contact/professional-hire">Hire the Perfect Match</Button>
-          <Button outline component={Link} to="/contact/join-team">Join the Team</Button>
+          <Button component="a" onClick={openHireForm}>Hire the Perfect Match</Button>
+          <Button outline component="a" onClick={openTeamForm}>Join the Team</Button>
         </div>
       </Animate>
 

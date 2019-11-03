@@ -9,6 +9,7 @@
     "react-scripts": "3.0.1"
   },
   "dependencies": {
+    "@typeform/embed": "^0.14.1",
     "classnames": "^2.2.6",
     "emailjs-com": "^2.3.2",
     "node-sass": "^4.12.0",
