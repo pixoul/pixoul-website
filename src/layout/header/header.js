@@ -1,6 +1,7 @@
 import React from 'react';
 /* Third-Party */
 import { NavLink, Link } from "react-router-dom"
+import * as typeformEmbed from '@typeform/embed'
 import injectSheet from 'react-jss'
 /* Utils */
 import Typography from "utils/typography/typography"
@@ -65,30 +66,40 @@ const styles = theme => ({
 
 const Header = ({
   classes
-}) => (
-  <div className={classes.header}>
-    <div className={classes.links}>
-      <NavLink to="/home" activeClassName={classes.activeLink}>
-        <img src={logo} alt={logo} draggable="false" />
-      </NavLink>
-      <Typography variant="body2" color="primary" component={NavLink} to={'/about'} activeClassName={classes.activeLink}>
-          About
-      </Typography>
-      <Typography variant="body2" color="primary" component={NavLink}to={'/talent' } activeClassName={classes.activeLink}>
-          Talent
-      </Typography>
-      <Typography variant="body2" color="primary" component={NavLink} to={'/process'} activeClassName={classes.activeLink}>
-          Process
-      </Typography>
-      <Typography variant="body2" color="primary" component={NavLink} to={'/faq'} activeClassName={classes.activeLink}>
-          FAQ
-      </Typography>
+}) => {
+  const openHireForm = () => {
+    typeformEmbed.makePopup('https://pixoulinc.typeform.com/to/sMpWk0', {
+        mode: 'popup',
+        autoOpen: true,
+        hideScrollbars: true
+    })
+  }
+
+  return(
+    <div className={classes.header}>
+      <div className={classes.links}>
+        <NavLink to="/home" activeClassName={classes.activeLink}>
+          <img src={logo} alt={logo} draggable="false" />
+        </NavLink>
+        <Typography variant="body2" color="primary" component={NavLink} to={'/about'} activeClassName={classes.activeLink}>
+            About
+        </Typography>
+        <Typography variant="body2" color="primary" component={NavLink}to={'/talent' } activeClassName={classes.activeLink}>
+            Talent
+        </Typography>
+        <Typography variant="body2" color="primary" component={NavLink} to={'/process'} activeClassName={classes.activeLink}>
+            Process
+        </Typography>
+        <Typography variant="body2" color="primary" component={NavLink} to={'/faq'} activeClassName={classes.activeLink}>
+            FAQ
+        </Typography>
+      </div>
+
+      <Button component="a" theme="primary" size="xs" onClick={openHireForm}>Hire the perfect Match</Button>
+
     </div>
-
-    <Button component={Link} to="/contact/professional-hire" theme="primary" size="xs">Hire the perfect Match</Button>
-
-  </div>
-)
+  )
+}
 
 
 export default injectSheet(styles)(Header)
