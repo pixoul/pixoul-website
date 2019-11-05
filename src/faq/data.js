@@ -27,7 +27,7 @@ list.push({
 
 list.push({
   question: "WHAT MAKES PIXOUL DIFFERENT FROM OTHER MARKEPLACES OR AGENCIES?",
-  answer: "We take pride in our matchmaking approach, which utilizes both AI and a manual, hand-selected process.  Every team member is more than a freelancer—their a business-minded professional looking to grow their own portfolio of work.  Unlike most other platforms, we don’t merely align you with good talent.  We stick with you through every step of the process to ensure excellent service and timely delivery."
+  answer: "We take pride in our matchmaking approach, which utilizes both AI and a manual, hand-selected process.  Every team member is more than a freelancer—they're a business-minded professional looking to grow their own portfolio of work.  Unlike most other platforms, we don’t merely align you with good talent.  We stick with you through every step of the process to ensure excellent service and timely delivery."
 })
 
 list.push({
