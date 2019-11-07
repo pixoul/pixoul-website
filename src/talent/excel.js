@@ -28,7 +28,7 @@ const Excel = () => (
             position="top"
             align="center"
             title="Research & Strategy"
-            icon={<SearchIcon color="#3c3d41" />}
+            icon={<SearchIcon color="#000000" />}
             description="Branding, Messaging, User Sentiment, etc."
           />
         </Col>
@@ -38,7 +38,7 @@ const Excel = () => (
             position="top"
             align="center"
             title="UX/UI Design"
-            icon={<DesignIcon color="#3c3d41" />}
+            icon={<DesignIcon color="#000000" />}
             description="Wireframes, High Fidelity Mockups, User Testing, etc."
           />
         </Col>
@@ -48,7 +48,7 @@ const Excel = () => (
             position="top"
             align="center"
             title="Development"
-            icon={<DevelopmentIcon color="#3c3d41" />}
+            icon={<DevelopmentIcon color="#000000" />}
             description="Front End Implementation, Back End Databases, QA, etc."
           />
         </Col>
@@ -58,7 +58,7 @@ const Excel = () => (
             position="top"
             align="center"
             title="Project Management"
-            icon={<StackIcon color="#3c3d41" />}
+            icon={<StackIcon color="#000000" />}
             description="Agile Scrum, Waterfall Methodologies, etc."
           />
         </Col>
