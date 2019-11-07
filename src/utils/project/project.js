@@ -18,7 +18,7 @@ const styles = theme => ({
   },
   item: {
     fontStyle: 'italic',
-    color: '#3c3d41',
+    color: '#000000',
     "&:after" : {
       content: '", "'
     },

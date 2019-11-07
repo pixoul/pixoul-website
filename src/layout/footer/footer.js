@@ -21,7 +21,7 @@ const styles = theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#3c3d41',
+    backgroundColor: '#000000',
     color: '#FFFFFF'
   },
   top: {
