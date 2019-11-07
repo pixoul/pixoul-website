@@ -43,6 +43,9 @@ const styles = theme => ({
   activeLink: {
     fontWeight: 'bold'
   },
+  logo: {
+    maxHeight: 35
+  },
   "@media (max-width: 768px)": {
     header: {
       height: 120,
@@ -79,7 +82,7 @@ const Header = ({
     <div className={classes.header}>
       <div className={classes.links}>
         <NavLink to="/home" activeClassName={classes.activeLink}>
-          <img src={logo} alt={logo} draggable="false" />
+          <img src={logo} alt={logo} draggable="false" className={classes.logo}/>
         </NavLink>
         <Typography variant="body2" color="primary" component={NavLink} to={'/about'} activeClassName={classes.activeLink}>
             About
