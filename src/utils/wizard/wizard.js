@@ -91,11 +91,11 @@ const Wizard = ({
     return null
   });
 
-  console.log('WizardNavigation', wizardNavigation)
-
   /* Loops through the WizardStep children, adding the currentStep to them */
   const wizardChildren = React.Children.map(children, child => {
+    console.log('wizard child', child)
     if(child.type && child.type.displayName === 'Jss(WizardStep)') {
+      console.log('inside if for Jss(WizardStep)')
       return React.cloneElement(child, {
         currentStep: currentStep
       });
