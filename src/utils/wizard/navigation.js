@@ -16,7 +16,7 @@ const styles = theme => ({
         backgroundColor: '#276cf2'
       },
       "& $title": {
-        color: '#3c3d41'
+        color: '#000000'
       }
     }
   },
@@ -46,7 +46,7 @@ const styles = theme => ({
     transition: 'background-color 0.5s ease-out'
   },
   title: {
-    color: props => props.isActive(props) ? '#3c3d41' : '#aaaaaa',
+    color: props => props.isActive(props) ? '#000000' : '#aaaaaa',
     fontSize: 13,
     fontWeight: 'bold',
     letterSpacing: 2.36,

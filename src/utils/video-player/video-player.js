@@ -77,7 +77,7 @@ const VideoPlayer = ({
   const animation = useSpring({
     opacity: playing ? 0 : 1,
     transform: playing ? 'translate3d(0px,-200px,0px)' : 'translate3d(0px,0px,0px)',
-    background:  'linear-gradient(to bottom, rgba(65, 60, 60, 0.6), #3c3d41)'
+    background:  'linear-gradient(to bottom, rgba(65, 60, 60, 0.6), #000000)'
   })
 
   const toggleVideo = async () => {

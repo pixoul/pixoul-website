@@ -63,7 +63,7 @@ const ExpansionPanel = ({
     <div className={classes.panel}>
       <div className={classes.header} onClick={() => togglePannel(!open)}>
         {header}
-        <div className={classes.action}>{open ? <MinusIcon color="#3c3d41" /> : <PlusIcon color="#3c3d41" />}</div>
+        <div className={classes.action}>{open ? <MinusIcon color="#000000" /> : <PlusIcon color="#000000" />}</div>
       </div>
       <animated.div className={classes.body} style={props}>
         <div {...bind}>{children}</div>
