@@ -12,6 +12,7 @@ const Process = () => {
   return(
     <div className="process">
       <Intro />
+      <ProjectSteps />
       <Matching />
       <KPIHero />
     </div>
