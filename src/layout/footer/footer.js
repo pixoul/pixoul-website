@@ -166,8 +166,8 @@ const Footer = ({
               We match industry leaders with top-tier designers, developers, and project managers on demand.
             </Typography>
             <div className={`${classes.list} ${classes.noSpace}`}>
-               <Typography variant="caption" weight="bold" component="a" href={`mail:${email}`}>Email: {email}</Typography>
-               <Typography variant="caption" weight="bold" component="a" href={`tel:${phone}`}>Phone: {phone}</Typography>
+               <Typography variant="caption" component="a" href={`mail:${email}`}>Email: {email}</Typography>
+               <Typography variant="caption" component="a" href={`tel:${phone}`}>Phone: {phone}</Typography>
             </div>
           </div>
 
