@@ -101,6 +101,10 @@ const styles = theme => ({
       bottom: 24
     }
   },
+  noSpace: {
+    margin: 0,
+    padding: 0
+  },
   "@media (max-width: 768px)": {
     footer: {
       flexDirection: 'column',
@@ -142,6 +146,9 @@ const Footer = ({
   classes
 }) => {
 
+  const phone = '(830) 321-0359'
+  const email = 'hello@pixoulinc.com'
+
   const openReferralForm = () => {
     typeformEmbed.makePopup('https://pixoulinc.typeform.com/to/rzapFB', {
         mode: 'popup',
@@ -158,6 +165,10 @@ const Footer = ({
             <Typography variant="body2" color="white" opacity={0.5}>
               We match industry leaders with top-tier designers, developers, and project managers on demand.
             </Typography>
+            <div className={`${classes.list} ${classes.noSpace}`}>
+               <Typography variant="caption" component="a" href={`mailto:${email}`}>Email: {email}</Typography>
+               <Typography variant="caption" component="a" href={`tel:${phone}`}>Phone: {phone}</Typography>
+            </div>
           </div>
 
           <div className={classes.sitemap}>

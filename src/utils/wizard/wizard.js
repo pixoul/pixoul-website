@@ -78,7 +78,7 @@ const Wizard = ({
 
   /* Loops through the WizardStep children, creating a WizardNavigation for each one, then assigns props to the new navigation */
   const wizardNavigation = React.Children.map(children, ({ type, props }) => {
-    if(type && type.displayName === 'Jss(WizardStep)') {
+    // if(type && type.displayName === 'Jss(WizardStep)') {
       return React.createElement(WizardNavigation, {
         onClick: () => setStep(props.step),
         currentStep: currentStep,
@@ -86,18 +86,18 @@ const Wizard = ({
         title: props.title,
         icon: props.icon
       }, null);
-    }
+    // }
 
     return null
   });
 
   /* Loops through the WizardStep children, adding the currentStep to them */
   const wizardChildren = React.Children.map(children, child => {
-    if(child.type && child.type.displayName === 'Jss(WizardStep)') {
+    // if(child.type && child.type.displayName === 'Jss(WizardStep)') {
       return React.cloneElement(child, {
         currentStep: currentStep
       });
-    }
+    // }
 
     return null
   });
