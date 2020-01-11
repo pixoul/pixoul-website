@@ -157,7 +157,6 @@ Resources:
     Properties:
       Name: !Sub ${AWS::StackName}-codebuild
       ServiceRole: !GetAtt CodeBuildRole.Arn
-      BadgeEnabled: true
       Artifacts:
         Type: CODEPIPELINE
         Name: !Sub ${AWS::StackName}-codepipeline
