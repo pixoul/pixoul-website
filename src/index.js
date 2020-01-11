@@ -22,4 +22,5 @@ ReactDOM.render(routing, document.getElementById("root"));
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-import 'snippets.js';
+import chat from 'chat.js';
+chat.init('5dbde2dee4c2fa4b6bd9b229')
