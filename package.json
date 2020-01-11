@@ -1,5 +1,6 @@
 {
-  "name": "pixoul",
+  "name": "pixoul-website",
+  "description": "Pixoul Inc. is an internet based platform that uses modern and intelligent technology to match industry leaders with top-tier designers, developers, and project managers on demand. This is the marketing website for the platform.",
   "version": "3.1.0",
   "engines": {
     "node": "10.16.0"
