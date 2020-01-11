@@ -59,6 +59,7 @@ Resources:
     Properties:
       Name: !Sub ${AWS::StackName}-codebuild
       ServiceRole: !GetAtt CodeBuildRole.Arn
+      BadgeEnabled: true
       Artifacts:
         Type: S3
         Name: !Sub ${AWS::StackName}-codebuild
