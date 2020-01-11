@@ -1,5 +1,5 @@
 # Pixoul Inc. Website
-![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiRXpmbitRNFVQNmR4WkZhSHVSdkM1OXRuSTJiT29TTSs0VVh6aWoxeDBlK010Y0xId1N4U0FnSVVLRVg5WUpKTlA4VTZNT1pzRnpwMng1bEU0by9EejlVPSIsIml2UGFyYW1ldGVyU3BlYyI6Ikc3cjJsVGxHUERrSG9NZWoiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiRXpmbitRNFVQNmR4WkZhSHVSdkM1OXRuSTJiT29TTSs0VVh6aWoxeDBlK010Y0xId1N4U0FnSVVLRVg5WUpKTlA4VTZNT1pzRnpwMng1bEU0by9EejlVPSIsIml2UGFyYW1ldGVyU3BlYyI6Ikc3cjJsVGxHUERrSG9NZWoiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=develop)
 
 <h1 align="center" style="background-color: white; padding: 25px;">
   <img src="https://pixoulinc.com/static/media/logo.45c36b05.svg" alt="Foco" width="160">
