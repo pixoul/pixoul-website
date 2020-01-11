@@ -67,6 +67,7 @@ Resources:
       Source:
         Type: GITHUB
         Location: !Ref ProjectSource
+      SourceVersion: !Ref GithubBranch
       Environment:
         ComputeType: !Ref CodeBuildEnvironmentComputeType
         Image: !Ref CodeBuildImage
