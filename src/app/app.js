@@ -10,7 +10,7 @@ const Routes = React.lazy(() => import("app/routes"))
 function App(props) {
 
   useEffect(() => {
-    chat.init();
+    chat.init('5dbde2dee4c2fa4b6bd9b229');
   }, []);
 
   return (
