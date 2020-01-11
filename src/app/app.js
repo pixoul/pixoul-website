@@ -10,7 +10,9 @@ const Routes = React.lazy(() => import("app/routes"))
 function App(props) {
 
   useEffect(() => {
-    chat.init('5dbde2dee4c2fa4b6bd9b229', (tawk) => tawk.toggle());
+    chat.init('5dbde2dee4c2fa4b6bd9b229', (tawk) => {
+      setTimeout(() => tawk.toggle(), 3000);
+    });
   }, []);
 
   return (
