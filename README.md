@@ -1,64 +1,86 @@
-## Front end project for pixoul
+# Pixoul Inc. Website
+[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center" style="background-color: white; padding: 25px;">
+  <img src="https://pixoulinc.com/static/media/logo.45c36b05.svg" alt="Foco" width="160">
+</h1>
 
-## Available Scripts
+<h4 align="center">A cloud-based AWS S3 website built with
+  <a href="https://reactjs.org/" target="_blank">ReactJS</a>.
+</h4>
 
-In the project directory, you can run:
+Pixoul Inc. is an internet based platform that uses modern and intelligent technology to match industry leaders with top-tier designers, developers, and project managers on demand. This is the marketing website for the platform.
 
-### `npm start`
+## Installation
+[FR]: https://github.com/akashnimare/foco/releases
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Quick Setup
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. Clone the repo to your local machine, wherever you keep git project.
+2. Make sure you have Node.JS 10.16.0+ and NPM or Yarn installed on your local machine.
+3. Start the app by navigating to the git repo via terminal and type:
 
-### `npm test`
+`npm install && npm start`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Step by Step Setup
+Use your package manager to install `npm` and `nodejs`.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+$ sudo post install npm nodejs
+```
+***Depending on your package manager, you may have a different command to install nodejs and npm***
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Clone the source locally to your desired git directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+$ git clone git@github.com:pixoul/pixoul.git
+$ cd pixoul
+```
 
-### `npm run eject`
+Install project dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```sh
+$ npm install
+```
+Start the app:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+$ npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Build Local Prod
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Build production app for development
+```sh
+$ npm run build
+```
 
-### Code Splitting
+## Features
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- [x] About Page
+- [x] Capabilities Page
+- [x] FAQ Page
+- [x] Home Page
+- [x] Process Page
+- [x] Talent Page
+- [x] UI Utilities (utils)
+- [x] Tawk.IO
+- [ ] Google Analytics
+- [ ] Blog Page
 
-### Analyzing the Bundle Size
+## Mainly built with
+- [ReactJS](https://reactjs.org)
+- [React Router](https://reacttraining.com/react-router/)
+- [React JSS](https://cssinjs.org/react-jss/)
+- [React Spring](https://www.react-spring.io/)
+- See package.json for addiitonal packages
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Understanding this project
+This project follows a domain driven design approach to development. This means that the project is organized into "domains" of knowledge. Additionally, the code that beneath each domain represents an "interface" or "entry point" into the software. If you have questions, please feel free to reach out to [Ryan Thompson](https://github.com/ryanencoded).
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+GNU LGPL  © [Pixoul Inc.](https://pixoulinc.com/)
