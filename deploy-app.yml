@@ -141,6 +141,18 @@ Resources:
       WebsiteConfiguration:
         IndexDocument: !Ref IndexDocument
         ErrorDocument: !Ref ErrorDocument
+  BucketPolicyPublic:
+     Type: 'AWS::S3::BucketPolicy'
+     Properties:
+       Bucket: !Ref DeployBucket
+       PolicyDocument:
+         Version: '2012-10-17'
+         Statement:
+         - Principal: '*'
+           Action: 's3:GetObject'
+           Effect: Allow
+           Resource: !Sub '${DeployBucket.Arn}/*'
+
  # Certificate for HTTPS accesss through CloudFront
   Certificate:
     Type: "AWS::CertificateManager::Certificate"
@@ -264,6 +276,8 @@ Resources:
                   - "s3:GetBucketVersioning"
                   - "s3:PutObject"
                   - "s3:PutObjectAcl"
+                  - "s3:GetBucketPolicy"
+                  - "s3:PutBucketPolicy"
                 Resource:
                   - !GetAtt DeployBucket.Arn
                   - !Join ['', [!GetAtt DeployBucket.Arn, "/*"]]
