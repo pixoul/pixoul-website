@@ -21,6 +21,3 @@ ReactDOM.render(routing, document.getElementById("root"));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
-import chat from 'chat.js';
-chat.init('5dbde2dee4c2fa4b6bd9b229')
