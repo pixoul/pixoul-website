@@ -1,7 +1,5 @@
 # Pixoul Inc. Website
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiRXpmbitRNFVQNmR4WkZhSHVSdkM1OXRuSTJiT29TTSs0VVh6aWoxeDBlK010Y0xId1N4U0FnSVVLRVg5WUpKTlA4VTZNT1pzRnpwMng1bEU0by9EejlVPSIsIml2UGFyYW1ldGVyU3BlYyI6Ikc3cjJsVGxHUERrSG9NZWoiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
 <h1 align="center" style="background-color: white; padding: 25px;">
   <img src="https://pixoulinc.com/static/media/logo.45c36b05.svg" alt="Foco" width="160">
