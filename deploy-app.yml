@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   ProjectSource:
     Type: String
-    Default: "https://github.com/pixoul/pixoul"
+    Default: "https://github.com/pixoul/pixoul-website"
     Description: "Source control URL (e.g. Github)"
   GithubOwner:
     Type: String
@@ -10,6 +10,9 @@ Parameters:
   GithubRepo:
     Type: String
     Default: pixoul
+  GithubBranch:
+    Type: String
+    Default: master
   GithubOAuthToken:
     Type: String
     Description: "Github personal access token"
@@ -39,7 +42,7 @@ Resources:
               Configuration:
                 Owner: !Ref GithubOwner
                 Repo: !Ref GithubRepo
-                Branch: master
+                Branch: !Ref GithubBranch
                 OAuthToken: !Ref GithubOAuthToken
         -
           Name: Build
@@ -53,10 +56,10 @@ Resources:
                 Provider: CodeBuild
               InputArtifacts:
                 -
-                  Name: MyApp
+                  Name: !Sub ${AWS::StackName}-codedeployment
               OutputArtifacts:
                 -
-                  Name: MyAppBuild
+                  Name: !Sub ${AWS::StackName}-codebuild
               Configuration:
                 ProjectName: !Ref CodeBuild
   CodeBuildRole:
@@ -145,11 +148,12 @@ Resources:
   CodeBuild:
     Type: 'AWS::CodeBuild::Project'
     Properties:
-      Name: !Sub ${AWS::StackName}-CodeBuild
+      Name: !Sub ${AWS::StackName}-codebuild
       ServiceRole: !GetAtt CodeBuildRole.Arn
+      BadgeEnabled: true
       Artifacts:
         Type: CODEPIPELINE
-        Name: PixoulWebsite
+        Name: !Sub ${AWS::StackName}-codepipeline
       Source:
         Type: CODEPIPELINE
       Environment:
