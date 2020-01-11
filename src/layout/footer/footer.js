@@ -203,7 +203,7 @@ const Footer = ({
           <Typography variant="overline" opacity={0.5} component={Link} to={'/privacy-policy'}>Privacy Policy</Typography>
         </div>
         <Typography variant="overline" opacity={0.5}>
-          &#169; 2019 Pixoul, Inc.  All rights reserved.
+          &#169; 2020 Pixoul, Inc.  All rights reserved.
         </Typography>
       </div>
 
