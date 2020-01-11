@@ -9,7 +9,7 @@ Parameters:
     Default: pixoul
   GithubRepo:
     Type: String
-    Default: pixoul
+    Default: pixoul-website
   GithubBranch:
     Type: String
     Default: master
@@ -45,7 +45,7 @@ Resources:
                 Version: 1
               OutputArtifacts:
                 -
-                  Name: MyApp
+                  Name: !Sub ${AWS::StackName}-codedeployment
               Configuration:
                 Owner: !Ref GithubOwner
                 Repo: !Ref GithubRepo
