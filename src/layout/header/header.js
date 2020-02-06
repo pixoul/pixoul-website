@@ -77,9 +77,6 @@ const Header = ({
         hideScrollbars: true
     })
   }
-  function refreshPage() {
-    window.location.reload(false);
-  }
   return(
     <div className={classes.header}>
       <div className={classes.links}>
@@ -98,7 +95,7 @@ const Header = ({
         <Typography variant="body2" color="primary" component={NavLink} to={'/faq'} activeClassName={classes.activeLink}>
             FAQ
         </Typography>
-        <Typography variant="body2" color="primary" component={NavLink} to={'/blog'} onClick={refreshPage} activeClassName={classes.activeLink}>
+        <Typography variant="body2" color="primary" component={NavLink} to={'/blog'} activeClassName={classes.activeLink}>
             Blog
         </Typography>
       </div>
