@@ -77,7 +77,6 @@ const Header = ({
         hideScrollbars: true
     })
   }
-
   return(
     <div className={classes.header}>
       <div className={classes.links}>
@@ -95,6 +94,9 @@ const Header = ({
         </Typography>
         <Typography variant="body2" color="primary" component={NavLink} to={'/faq'} activeClassName={classes.activeLink}>
             FAQ
+        </Typography>
+        <Typography variant="body2" color="primary" component={NavLink} to={'/blog'} activeClassName={classes.activeLink}>
+            Blog
         </Typography>
       </div>
 
