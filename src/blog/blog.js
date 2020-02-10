@@ -4,15 +4,25 @@ import "./blog.scss"
 
 export default function Blog() {
 
-  const blogurl = () => {
+  const addBlogScript = () => {
     var s = document.createElement("script");
+    s.id = 'blogScript';
     s.type = "text/javascript";
     s.src = "https://dropinblog.com/js/embed.js";
     document.getElementsByTagName('head')[0].appendChild(s);
   }
 
+  const removeBlogScript = () => {
+    const el = document.getElementById('blogScript');
+    return el.parentNode.removeChild(el);
+  }
+
   useEffect(() => {
-    blogurl();
+    addBlogScript();
+
+    return () => {
+      removeBlogScript();
+    }
   })
   return(
     <div className="blog">
