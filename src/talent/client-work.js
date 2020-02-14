@@ -3,6 +3,7 @@ import React from "react"
 import Project from "utils/project/project"
 import { Carousel, Slide } from "utils/carousel"
 /* Images */
+import stallion from "./images/clients/stallion.png";
 import ikarus from "./images/clients/ikarus.png"
 import iuzeit from "./images/clients/iuzeit.png"
 import georgiaPacific from "./images/clients/georgia-pacific.png"
@@ -14,6 +15,16 @@ const ClientWork = () => {
   return (
     <div className="client-work">
         <Carousel maxSlides={1} autoplay>
+          <Slide>
+            <Project
+              media={stallion}
+              name="Stallion Oilfield Services"
+              tagline="Taking Field Analytics To A New Level"
+              description="We took data vizualization to the next level by building a robust interface that simplified complex data streams and allowed snapshot statistics of vital KPIs."
+              services={['UX/UI Design', 'QA Testing', 'Development']}
+              tools={['Pen + Paper', 'Sketch', 'InVision', 'Trello']}
+            />
+          </Slide>
           <Slide>
             <Project
               media={ikarus}
@@ -70,17 +81,5 @@ const ClientWork = () => {
     </div>
   )
 }
-
-//Temporarily removing stallion while in courtship
-// <Slide>
-//   <Project
-//     media={stallion}
-//     name="Stallion Oilfield Services"
-//     tagline="Taking Field Analytics To A New Level"
-//     description="We took data vizualization to the next level by building a robust interface that simplified complex data streams and allowed snapshot statistics of vital KPIs."
-//     services={['UX/UI Design', 'QA Testing', 'Development']}
-//     tools={['Pen + Paper', 'Sketch', 'InVision', 'Trello']}
-//   />
-// </Slide>
 
 export default ClientWork
