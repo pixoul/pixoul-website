@@ -9,12 +9,18 @@ export default function Blog() {
     s.id = 'blogScript';
     s.type = "text/javascript";
     s.src = "https://dropinblog.com/js/embed.js";
-    document.getElementsByTagName('head')[0].appendChild(s);
+    document.getElementsByTagName('body')[0].appendChild(s);
   }
 
   const removeBlogScript = () => {
-    const el = document.getElementById('blogScript');
-    return el.parentNode.removeChild(el);
+    try {
+      const list = document.querySelectorAll("script[src^='https://dropinblog.com']");
+      for(const item of list){
+        document.getElementsByTagName('body')[0].removeChild(item);
+      }
+    } catch(err){
+      console.error('failed to clean blog scripts up.');
+    }
   }
 
   useEffect(() => {

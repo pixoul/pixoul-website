@@ -26,7 +26,7 @@ exports.init = function(tawkToId, readyCallback) {
 
     var check = function(callback) {
         if (window && window.Tawk_API && window.Tawk_API.getStatus() !== undefined) {
-            callback(window.Tawk_API);
+            if(callback) callback(window.Tawk_API);
             return
         }
         setTimeout(function() {
