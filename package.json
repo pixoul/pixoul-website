@@ -7,7 +7,7 @@
   },
   "private": true,
   "devDependencies": {
-    "react-scripts": "3.0.1"
+    "react-scripts": "5.0.1"
   },
   "dependencies": {
     "@typeform/embed": "^0.14.1",
@@ -21,7 +21,7 @@
     "react-jss": "^8.6.1",
     "react-router-dom": "^5.0.1",
     "react-router-scroll-memory": "^2.0.3",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-slick": "^0.24.0",
     "react-spring": "^8.0.27",
     "react-visibility-sensor": "^5.1.1",
